@@ -7,7 +7,7 @@ from pathlib import Path
 
 from .models import Disclosure, EarningsEvent
 
-_IR_SOURCES = {"official_ir", "gemini_grounded_ir"}
+_IR_SOURCES = {"official_ir", "gemini_grounded_ir", "openai_web_ir"}
 
 
 class StateStore:
@@ -19,9 +19,10 @@ class StateStore:
 
     def _read(self) -> dict:
         if not self.path.exists():
-            return {"schema_version": 1, "documents": {}, "events": {}, "source_checks": {}}
+            return {"schema_version": 1, "documents": {}, "events": {}, "source_checks": {}, "provider_health": {}}
         data = json.loads(self.path.read_text(encoding="utf-8"))
         data.setdefault("source_checks", {})
+        data.setdefault("provider_health", {})
         return data
 
     def save(self) -> None:
@@ -70,3 +71,9 @@ class StateStore:
 
     def mark_source_checked(self, source: str, day: str) -> None:
         self.data["source_checks"][source] = day
+
+    def get_provider_health(self, provider: str) -> dict:
+        return dict(self.data.get("provider_health", {}).get(provider, {}))
+
+    def put_provider_health(self, provider: str, value: dict) -> None:
+        self.data.setdefault("provider_health", {})[provider] = dict(value)
