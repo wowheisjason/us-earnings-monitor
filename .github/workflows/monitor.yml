@@ -2,8 +2,8 @@ name: US earnings monitor
 
 on:
   schedule:
-    # Market-window-aware checks in America/New_York. Gemini is only invoked
-    # when SEC has an active earnings event, so extra checks remain cheap.
+    # America/New_York handles DST natively. Gemini is invoked only for active
+    # SEC earnings events whose event-local retry clock is due.
     - cron: "15 2 * * 1-5"
       timezone: "America/New_York"
     - cron: "15 4 * * 1-5"
@@ -36,7 +36,7 @@ on:
         default: false
         type: boolean
       preview:
-        description: "Run Gemini research + analysis and print report; no Telegram or state write"
+        description: "Run live IR research + Gemini analysis and print report; no Telegram or state write"
         required: false
         default: false
         type: boolean
@@ -74,6 +74,12 @@ jobs:
       - name: Run monitor
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_IR_MODEL: ${{ vars.GEMINI_IR_MODEL || 'gemini-3.6-flash' }}
+          GEMINI_IR_FALLBACK_MODEL: ${{ vars.GEMINI_IR_FALLBACK_MODEL || 'gemini-3.5-flash' }}
+          GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
+          GEMINI_ANALYSIS_FALLBACK_MODEL: ${{ vars.GEMINI_ANALYSIS_FALLBACK_MODEL || 'gemini-flash-lite-latest' }}
+          GEMINI_IR_TIMEOUT_SECONDS: ${{ vars.GEMINI_IR_TIMEOUT_SECONDS || '60' }}
+          IR_DIRECT_TIMEOUT_SECONDS: ${{ vars.IR_DIRECT_TIMEOUT_SECONDS || '8' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
