@@ -16,7 +16,7 @@ from .extract import EvidenceExtractor
 from .gemini import GeminiClient
 from .grouping import align_companion_periods, attach, classify_document, ready_for_analysis, title_is_earnings
 from .models import Disclosure, EarningsEvent, now_iso
-from .quality import publication_gate
+from .quality import publication_gate, update_collection_status
 from .sources import OfficialIrAdapter, SecEdgarAdapter, active_events_for_ir
 from .state import StateStore
 from .telegram import send_report
@@ -120,8 +120,12 @@ def ingest(disclosures: list[Disclosure], store: StateStore, patterns: list[str]
     return list(changed.values()), ignored
 
 
+def _event_documents(event: EarningsEvent, store: StateStore) -> list[Disclosure]:
+    return [store.get_document(key) for key in event.documents]
+
+
 def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: datetime) -> str:
-    docs = [store.get_document(key) for key in event.documents]
+    docs = _event_documents(event, store)
     allowed, reasons, manifest = publication_gate(event, docs, now)
     LOG.info("%s source manifest: %s", event.event_id, manifest)
     if not allowed:
@@ -133,6 +137,7 @@ def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: d
     evidence = [EvidenceExtractor().fetch(doc) for doc in docs]
     client = GeminiClient()
     facts = client.extract_facts(event, evidence)
+    facts["collection_status"] = event.collection_status
     if event.status == "published" and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents)):
         event.last_analyzed_document_count = len(event.documents)
         event.updated_at = now_iso(now)
@@ -199,6 +204,15 @@ def main() -> int:
         changed = list(changed_by_id.values())
         ignored += ir_ignored
         LOG.info("Official IR enrichment discovered %d document(s) for %d active event(s).", len(ir_disclosures), len(active_ir_events))
+
+        # Persist the collection state even when the IR page returned no new file.
+        # This distinguishes "not yet found" from "not checked" and allows retries.
+        for active in active_ir_events:
+            current = store.get_event(active.event_id) or active
+            update_collection_status(current, _event_documents(current, store), now, official_ir_checked=True)
+            current.updated_at = now_iso(now)
+            store.put_event(current)
+
     LOG.info("Discovered %d; changed events=%s; ignored=%d", len(disclosures), [e.event_id for e in changed], ignored)
 
     if args.baseline:
