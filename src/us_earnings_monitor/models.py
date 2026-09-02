@@ -12,6 +12,7 @@ class Company:
     cik: str
     ir_index_url: str | None = None
     ir_additional_urls: list[str] = field(default_factory=list)
+    official_domains: list[str] = field(default_factory=list)
 
 
 @dataclass

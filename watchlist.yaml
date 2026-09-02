@@ -1,15 +1,24 @@
 # CIK values are validated against SEC company_tickers.json. SEC EDGAR is the
-# primary source; company IR pages are event-triggered, best-effort enrichment.
+# deterministic primary source; official IR is event-triggered enrichment with
+# provider fallback and issuer-domain provenance checks.
 companies:
   - {ticker: FN, name: Fabrinet, cik: "0001408710", ir_index_url: "https://investor.fabrinet.com/"}
-  - {ticker: MSFT, name: Microsoft, cik: "0000789019", ir_index_url: "https://www.microsoft.com/en-us/Investor/earnings/"}
+  - ticker: MSFT
+    name: Microsoft
+    cik: "0000789019"
+    ir_index_url: "https://www.microsoft.com/en-us/Investor/earnings/"
+    official_domains: ["microsoft.com"]
   - {ticker: AAPL, name: Apple, cik: "0000320193", ir_index_url: "https://investor.apple.com/"}
   - {ticker: GOOGL, name: Alphabet, cik: "0001652044", ir_index_url: "https://abc.xyz/investor/"}
   - {ticker: TSLA, name: Tesla, cik: "0001318605", ir_index_url: "https://ir.tesla.com/"}
   - {ticker: SPCX, name: SpaceX, cik: "0001181412", ir_index_url: "https://ir.spacex.com/"}
   - {ticker: META, name: Meta Platforms, cik: "0001326801", ir_index_url: "https://investor.atmeta.com/"}
   - {ticker: AMZN, name: Amazon, cik: "0001018724", ir_index_url: "https://ir.aboutamazon.com/"}
-  - {ticker: NVDA, name: NVIDIA, cik: "0001045810", ir_index_url: "https://investor.nvidia.com/"}
+  - ticker: NVDA
+    name: NVIDIA
+    cik: "0001045810"
+    ir_index_url: "https://investor.nvidia.com/"
+    official_domains: ["nvidia.com"]
   - {ticker: AMD, name: AMD, cik: "0000002488", ir_index_url: "https://ir.amd.com/"}
   - {ticker: INTC, name: Intel, cik: "0000050863", ir_index_url: "https://www.intc.com/"}
   - {ticker: AVGO, name: Broadcom, cik: "0001730168", ir_index_url: "https://investors.broadcom.com/"}
@@ -43,6 +52,7 @@ companies:
     ir_index_url: "https://investors.delltechnologies.com/"
     ir_additional_urls:
       - "https://investors.delltechnologies.com/financial-information/quarterly-results"
+    official_domains: ["delltechnologies.com"]
 
 earnings_title_patterns:
   - "form 10-q"

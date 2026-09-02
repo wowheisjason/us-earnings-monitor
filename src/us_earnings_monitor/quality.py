@@ -6,6 +6,7 @@ from .models import Disclosure, EarningsEvent, now_iso
 
 PRIMARY_KINDS = {"financial_results", "financial_tables", "performance_review"}
 TRANSCRIPT_KINDS = {"transcript", "qa", "prepared_remarks"}
+OFFICIAL_IR_SOURCES = {"official_ir", "gemini_grounded_ir", "openai_web_ir"}
 
 TRANSCRIPT_FOUND = "FOUND"
 TRANSCRIPT_EXPECTED = "EXPECTED_NOT_YET_AVAILABLE"
@@ -37,12 +38,27 @@ def source_manifest(documents: list[Disclosure]) -> dict:
         "kinds": kinds,
         "sources": sources,
         "has_primary_results": any(doc.document_kind in PRIMARY_KINDS for doc in documents),
-        "has_official_ir": any(doc.source == "official_ir" for doc in documents),
+        "has_official_ir": any(doc.source in OFFICIAL_IR_SOURCES for doc in documents),
         "has_transcript_or_qa": any(doc.document_kind in TRANSCRIPT_KINDS for doc in documents),
         "has_financial_tables": kinds.get("financial_tables", 0) > 0,
         "has_performance_review": kinds.get("performance_review", 0) > 0,
         "has_presentation": kinds.get("presentation", 0) > 0,
     }
+
+
+def sec_first_fallback_active(event: EarningsEvent, documents: list[Disclosure]) -> bool:
+    """Allow a prompt SEC-only v1 after an attempted but incomplete IR retrieval.
+
+    This is deliberately narrower than simply 'IR missing': an IR attempt must
+    have occurred and failed/incompletely returned. The event remains eligible
+    for later IR retries; any newly collected transcript/Q&A can produce v2.
+    """
+    manifest = source_manifest(documents)
+    return bool(
+        manifest["has_primary_results"]
+        and not manifest["has_official_ir"]
+        and event.collection_status.get("official_ir_last_attempt_incomplete")
+    )
 
 
 def update_collection_status(
@@ -51,7 +67,7 @@ def update_collection_status(
     now: datetime,
     *,
     official_ir_checked: bool,
-    transcript_wait_hours: int = 24,
+    transcript_wait_hours: int = 4,
 ) -> dict:
     """Persist source-discovery state separately from report-generation state."""
     manifest = source_manifest(documents)
@@ -82,31 +98,50 @@ def publication_gate(
     event: EarningsEvent,
     documents: list[Disclosure],
     now: datetime,
-    transcript_wait_hours: int = 24,
+    transcript_wait_hours: int = 4,
 ) -> tuple[bool, list[str], dict]:
     """Deterministic pre-LLM completeness gate.
 
-    A missing transcript during the first collection window means "not yet
-    available", never "officially not published". After repeated IR checks and
-    the wait window, the report may publish but must describe the transcript as
-    not found after retries unless an issuer-specific rule confirms no official
-    transcript is published.
+    Preferred path: publish when transcript/Q&A is found, or after the normal
+    collection window and a completed official-IR check.
+
+    Degraded path: if SEC primary results are already present and IR retrieval
+    was attempted but could not complete, publish an immediate SEC-only v1.
+    The event continues to be retried for IR; later official IR or transcript
+    evidence can create a v2 report instead of delaying the time-sensitive v1.
     """
     manifest = source_manifest(documents)
     reasons: list[str] = []
     if not manifest["has_primary_results"]:
         reasons.append("missing_primary_results")
 
+    sec_only_v1 = sec_first_fallback_active(event, documents)
+    if sec_only_v1:
+        manifest = {
+            **manifest,
+            "transcript_status": event.collection_status.get("transcript_status", TRANSCRIPT_UNKNOWN),
+            "official_ir_checked_at": event.collection_status.get("official_ir_checked_at"),
+            "publication_mode": "sec_only_v1_ir_pending",
+        }
+        return not reasons, reasons, manifest
+
     transcript_status = event.collection_status.get("transcript_status", TRANSCRIPT_UNKNOWN)
-    if transcript_status == TRANSCRIPT_UNKNOWN and _event_age(event, now) < timedelta(hours=transcript_wait_hours):
+    age = _event_age(event, now)
+    if transcript_status == TRANSCRIPT_UNKNOWN and age < timedelta(hours=transcript_wait_hours):
         transcript_status = TRANSCRIPT_EXPECTED
     if transcript_status == TRANSCRIPT_EXPECTED:
-        reasons.append("transcript_collection_window_open")
+        if age < timedelta(hours=transcript_wait_hours):
+            reasons.append("transcript_collection_window_open")
+        elif event.collection_status.get("official_ir_checked_at"):
+            transcript_status = TRANSCRIPT_NOT_FOUND
 
-    # Do not publish before the company IR source has been checked at least once.
     if not event.collection_status.get("official_ir_checked_at"):
         reasons.append("official_ir_not_checked")
 
-    manifest = {**manifest, "transcript_status": transcript_status,
-                "official_ir_checked_at": event.collection_status.get("official_ir_checked_at")}
+    manifest = {
+        **manifest,
+        "transcript_status": transcript_status,
+        "official_ir_checked_at": event.collection_status.get("official_ir_checked_at"),
+        "publication_mode": "integrated_ir" if manifest["has_official_ir"] else "post_ir_check_v1",
+    }
     return not reasons, reasons, manifest

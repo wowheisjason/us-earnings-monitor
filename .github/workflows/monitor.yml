@@ -2,21 +2,51 @@ name: US earnings monitor
 
 on:
   schedule:
-    # America/New_York: pre-market and after-market collection; one 20:00 analysis.
-    - cron: "15 7 * * 1-5"
+    # America/New_York handles DST natively.
+    # After-hours cadence is intentionally dense through 19:35 ET so the
+    # SEC-first v1 has enough runtime to reach Telegram before 09:00 JST.
+    - cron: "15 2 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 4 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 6 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 8 * * 1-5"
       timezone: "America/New_York"
     - cron: "15 9 * * 1-5"
       timezone: "America/New_York"
-    - cron: "15 16 * * 1-5"
+    - cron: "15 12 * * 1-5"
       timezone: "America/New_York"
-    - cron: "30 17 * * 1-5"
+    - cron: "5 16 * * 1-5"
       timezone: "America/New_York"
-    - cron: "0 20 * * 1-5"
+    - cron: "25 16 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "50 16 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 17 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "45 17 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 18 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "45 18 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 19 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "35 19 * * 1-5"
+      timezone: "America/New_York"
+    # Late enrichment pass for IR/transcript v2; this does not delay SEC v1.
+    - cron: "30 20 * * 1-5"
       timezone: "America/New_York"
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Discover and group only; no AI, Telegram, or state write"
+        description: "SEC/direct discovery only; no LLM, Telegram, or state write"
+        required: false
+        default: false
+        type: boolean
+      preview:
+        description: "Run live IR research + analysis and print report; no Telegram or state write"
         required: false
         default: false
         type: boolean
@@ -51,13 +81,19 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Run tests
-        env:
-          PYTHONPATH: src
-        run: pytest -q
       - name: Run monitor
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Optional. If absent, no OpenAI request is made and no OpenAI cost is incurred.
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_IR_MODEL: ${{ vars.GEMINI_IR_MODEL || 'gemini-3.6-flash' }}
+          GEMINI_IR_FALLBACK_MODEL: ${{ vars.GEMINI_IR_FALLBACK_MODEL || 'gemini-3.5-flash' }}
+          GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
+          GEMINI_ANALYSIS_FALLBACK_MODEL: ${{ vars.GEMINI_ANALYSIS_FALLBACK_MODEL || 'gemini-flash-lite-latest' }}
+          OPENAI_IR_MODEL: ${{ vars.OPENAI_IR_MODEL || 'gpt-5.6-luna' }}
+          GEMINI_IR_TIMEOUT_SECONDS: ${{ vars.GEMINI_IR_TIMEOUT_SECONDS || '60' }}
+          OPENAI_IR_TIMEOUT_SECONDS: ${{ vars.OPENAI_IR_TIMEOUT_SECONDS || '60' }}
+          IR_DIRECT_TIMEOUT_SECONDS: ${{ vars.IR_DIRECT_TIMEOUT_SECONDS || '8' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
@@ -67,16 +103,16 @@ jobs:
         run: |
           args=()
           if [ "${{ inputs.dry_run }}" = "true" ]; then args+=(--dry-run); fi
+          if [ "${{ inputs.preview }}" = "true" ]; then args+=(--preview); fi
           if [ "${{ inputs.initialize_baseline }}" = "true" ]; then args+=(--baseline); fi
           if [ -n "$TEST_AT" ]; then args+=(--at "$TEST_AT"); fi
           if [ -n "$TEST_TICKERS" ]; then args+=(--tickers "$TEST_TICKERS"); fi
           python -m us_earnings_monitor "${args[@]}"
       - name: Persist monitor state
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.preview }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/state.json
           git diff --cached --quiet || git commit -m "chore: update monitor state"
           git push
-

@@ -1,23 +1,36 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import os
 import re
 import time
+from datetime import datetime
 from typing import Any
+from urllib.parse import urlparse
 
 import requests
 
-from .models import EarningsEvent, Evidence
+from .models import Company, Disclosure, EarningsEvent, Evidence
 
 EVIDENCE_TOTAL_MAX_CHARS = 48_000
 LOG = logging.getLogger("us_earnings_monitor")
 TRANSIENT_STATUS_CODES = {429, 500, 502, 503, 504}
+_GROUNDED_IR_KINDS = {
+    "earnings_release": "Earnings Release",
+    "financial_tables": "Financial Tables",
+    "performance_review": "Performance Review",
+    "presentation": "Earnings Presentation",
+    "prepared_remarks": "Prepared Remarks",
+    "transcript": "Transcript",
+    "qa": "Q&A",
+    "supplement": "Supplement",
+}
 
 
 class GeminiClient:
-    """REST client with strict JSON outputs and no implicit numerical guessing."""
+    """REST client for grounded IR research, evidence extraction, analysis, and audit."""
 
     def __init__(self, api_key: str | None = None, model: str | None = None, session: requests.Session | None = None):
         self.api_key = api_key or os.getenv("GEMINI_API_KEY")
@@ -79,15 +92,48 @@ class GeminiClient:
         LOG.info("Gemini usage stage=%s model=%s prompt=%d output=%d thoughts=%d total=%d cumulative=%d",
                  stage, model, prompt, output, thoughts, total, self.usage["total_tokens"])
 
-    def _json(self, prompt: str, stage: str) -> dict[str, Any]:
+    @staticmethod
+    def _candidate_text(payload: dict) -> str:
+        parts = payload.get("candidates", [{}])[0].get("content", {}).get("parts", [])
+        text = "".join(str(part.get("text", "")) for part in parts if part.get("text"))
+        text = text.strip()
+        if text.startswith("```"):
+            text = re.sub(r"^```(?:json)?\s*", "", text)
+            text = re.sub(r"\s*```$", "", text)
+        return text
+
+    @staticmethod
+    def _grounding_metadata(payload: dict) -> dict[str, Any]:
+        candidate = payload.get("candidates", [{}])[0]
+        grounding = candidate.get("groundingMetadata", {}) or {}
+        url_context = candidate.get("urlContextMetadata", {}) or candidate.get("url_context_metadata", {}) or {}
+        urls: list[str] = []
+        for chunk in grounding.get("groundingChunks", []) or []:
+            web = chunk.get("web", {}) if isinstance(chunk, dict) else {}
+            uri = web.get("uri")
+            if uri:
+                urls.append(str(uri))
+        for item in url_context.get("urlMetadata", []) or url_context.get("url_metadata", []) or []:
+            uri = item.get("retrievedUrl") or item.get("retrieved_url")
+            if uri:
+                urls.append(str(uri))
+        return {
+            "search_queries": grounding.get("webSearchQueries", []) or grounding.get("web_search_queries", []),
+            "retrieved_urls": list(dict.fromkeys(urls)),
+        }
+
+    def _json(self, prompt: str, stage: str, tools: list[dict[str, Any]] | None = None) -> dict[str, Any]:
         last_error: Exception | None = None
         for model in self._available_models()[:5]:
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
             for attempt in range(2):
-                response = self.session.post(url, params={"key": self.api_key}, json={
+                body: dict[str, Any] = {
                     "contents": [{"role": "user", "parts": [{"text": prompt}]}],
                     "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1},
-                }, timeout=120)
+                }
+                if tools:
+                    body["tools"] = tools
+                response = self.session.post(url, params={"key": self.api_key}, json=body, timeout=120)
                 try:
                     response.raise_for_status()
                 except requests.HTTPError as exc:
@@ -104,11 +150,138 @@ class GeminiClient:
                 if self._models:
                     self._models = [model] + [item for item in self._models if item != model]
                 self._record_usage(stage, model, payload)
-                text = payload["candidates"][0]["content"]["parts"][0]["text"]
-                return json.loads(text)
+                value = json.loads(self._candidate_text(payload))
+                if tools:
+                    value["_grounding"] = self._grounding_metadata(payload)
+                return value
         if last_error:
             raise last_error
         raise RuntimeError("No available Gemini model completed the request")
+
+    @staticmethod
+    def _official_hosts(company: Company) -> set[str]:
+        hosts: set[str] = set()
+        values = [company.ir_index_url, *company.ir_additional_urls, *company.official_domains]
+        for value in values:
+            if not value:
+                continue
+            candidate = value if "://" in value else f"https://{value.lstrip('*.')}"
+            host = (urlparse(candidate).hostname or "").casefold()
+            if host:
+                hosts.add(host)
+        return hosts
+
+    @classmethod
+    def _official_url(cls, company: Company, url: str) -> bool:
+        host = (urlparse(url).hostname or "").casefold()
+        return bool(host) and any(host == allowed or host.endswith("." + allowed)
+                                  for allowed in cls._official_hosts(company))
+
+    def research_official_ir(self, company: Company, event: EarningsEvent, now: datetime) -> tuple[list[Disclosure], dict[str, Any]]:
+        """Use Google Search + URL Context to collect official issuer IR evidence.
+
+        Search discovers heterogeneous issuer pages; URL Context reads the official
+        HTML/PDF assets. Python still enforces the issuer allowlist before evidence
+        can enter the event, so search results are never trusted by hostname alone.
+        """
+        period = f"FY{event.fiscal_year} {event.quarter}" if event.fiscal_year and event.quarter else event.event_id
+        official_home = company.ir_index_url or ""
+        prompt = f"""You are an evidence-retrieval agent for an automated US earnings monitor. Return JSON only.
+
+Event: {event.event_id}
+Issuer: {company.name} ({company.ticker})
+Fiscal period: {period}
+SEC event first detected: {event.first_seen_at}
+Official IR home: {official_home}
+
+Use Google Search to find THIS EXACT earnings event, then use URL Context to read the relevant official issuer pages/documents. Search broadly enough to find event-detail pages and assets, but RETURN ONLY issuer-official IR sources. Do not use SEC, news, aggregators, Seeking Alpha, Motley Fool, StockTitan, transcripts copied by third parties, or search-result snippets as evidence.
+
+Collect every official item available for the event:
+- earnings release / press release
+- financial tables
+- performance review / shareholder letter
+- earnings presentation / supplemental slides
+- prepared remarks
+- official transcript
+- official Q&A, including Q&A embedded in a transcript
+
+For each source, evidence_text must contain a dense source-backed extract suitable for a second analyst model. Preserve reported numbers, guidance ranges, management wording, and all material analyst Q&A on demand, pricing, supply, margins, guidance, customers, inventory, competition, capex and risk. Do not add your own investment conclusions. For transcript/Q&A, include analyst and management speaker names when available and enough context to preserve the meaning of answers.
+
+Also identify the earnings-call scheduled time/status if the official source states it. Do not claim that a transcript is officially not published unless an official source explicitly establishes that fact.
+
+Schema:
+{{
+  "event_id": "{event.event_id}",
+  "call": {{"scheduled_at": string|null, "status": "scheduled"|"completed"|"unknown"}},
+  "transcript_status": "FOUND"|"EXPECTED_NOT_YET_AVAILABLE"|"CONFIRMED_NOT_PUBLISHED"|"UNKNOWN",
+  "sources": [
+    {{
+      "kind": "earnings_release"|"financial_tables"|"performance_review"|"presentation"|"prepared_remarks"|"transcript"|"qa"|"supplement",
+      "title": string,
+      "url": string,
+      "published_at": string|null,
+      "evidence_text": string,
+      "structured_facts": [object]
+    }}
+  ],
+  "research_notes": [string]
+}}
+"""
+        result = self._json(prompt, "ir_research", tools=[{"url_context": {}}, {"google_search": {}}])
+        grounding = result.pop("_grounding", {})
+        documents: list[Disclosure] = []
+        rejected_urls: list[str] = []
+        for source in result.get("sources", []) or []:
+            if not isinstance(source, dict):
+                continue
+            kind = str(source.get("kind", "")).casefold()
+            url = str(source.get("url", "")).strip()
+            evidence_text = str(source.get("evidence_text", "")).strip()
+            if kind not in _GROUNDED_IR_KINDS or not url or not evidence_text:
+                continue
+            if not self._official_url(company, url):
+                rejected_urls.append(url)
+                continue
+            content_hash = hashlib.sha256(evidence_text.encode("utf-8")).hexdigest()[:12]
+            source_id = hashlib.sha256(f"{url}|{content_hash}".encode("utf-8")).hexdigest()[:24]
+            raw_title = str(source.get("title", "")).strip()
+            label = _GROUNDED_IR_KINDS[kind]
+            title = f"{label} — {raw_title}" if raw_title and label.casefold() not in raw_title.casefold() else (raw_title or label)
+            published_at = str(source.get("published_at") or now.isoformat(timespec="seconds"))
+            documents.append(Disclosure(
+                source="gemini_grounded_ir",
+                source_id=source_id,
+                ticker=company.ticker,
+                title=title,
+                published_at=published_at,
+                url=url,
+                document_url=url,
+                fiscal_year=event.fiscal_year,
+                quarter=event.quarter,
+                period_end=event.period_end,
+                document_kind=kind,
+                metadata={
+                    "service": "gemini_grounded_ir",
+                    "retrieval_method": "google_search+url_context",
+                    "format": "grounded_text",
+                    "grounded_evidence": evidence_text,
+                    "structured_facts": source.get("structured_facts", []) or [],
+                    "retrieved_at": now.isoformat(timespec="seconds"),
+                    "content_hash": content_hash,
+                },
+            ))
+        status = {
+            "research_complete": True,
+            "document_count": len(documents),
+            "transcript_status": result.get("transcript_status", "UNKNOWN"),
+            "call": result.get("call", {}) or {},
+            "research_notes": result.get("research_notes", []) or [],
+            "grounding": grounding,
+            "rejected_unofficial_urls": rejected_urls,
+        }
+        LOG.info("%s grounded IR research: docs=%d transcript=%s rejected_unofficial=%d",
+                 event.event_id, len(documents), status["transcript_status"], len(rejected_urls))
+        return documents, status
 
     @staticmethod
     def _evidence(event: EarningsEvent, evidence: list[Evidence]) -> str:
@@ -123,6 +296,7 @@ class GeminiClient:
         return self._json("""You are a strict evidence extractor for US-listed-company earnings. Return JSON only.
 Use ONLY the official evidence below. Do not estimate, infer, invent, or silently normalize a company-defined metric. Missing values must be null.
 Every extracted item must include evidence.document_key and a short supporting quote or structured concept.
+Use URL Context on the supplied official evidence URLs when available to validate source-backed excerpts against the original document.
 
 Rules:
 1. Preserve GAAP, non-GAAP, adjusted, and company-defined metric labels exactly. Never call Adjusted FCF simply FCF.
@@ -147,7 +321,7 @@ Schema:
   market_consensus:[],
   unknowns:[...]
 }
-Evidence:\n""" + self._evidence(event, evidence), "facts")
+Evidence:\n""" + self._evidence(event, evidence), "facts", tools=[{"url_context": {}}])
 
     def analyze(self, event: EarningsEvent, facts: dict, evidence: list[Evidence]) -> dict:
         return self._json("""你是專業機構投資人。請以台灣繁體中文撰寫並只回傳 JSON；專業術語與正式名稱保留英文原文。
@@ -197,7 +371,7 @@ Structured facts:\n""" + json.dumps({"event_id": event.event_id, "facts": facts}
 
     def audit(self, event: EarningsEvent, facts: dict, analysis: dict, evidence: list[Evidence]) -> dict:
         return self._json("""你是該企業所屬產業的資深產業專家與 reject-oriented evidence auditor。請以台灣繁體中文撰寫並只回傳 JSON。
-你的目標不是幫第一次分析找理由通過，而是主動找出足以拒絕發布的問題。逐項把數字、因果、財測、Q&A 與措辭對回 ORIGINAL official evidence。
+你的目標不是幫第一次分析找理由通過，而是主動找出足以拒絕發布的問題。逐項把數字、因果、財測、Q&A 與措辭對回 ORIGINAL official evidence；可使用 URL Context 重新檢查輸入中的官方 URL。
 
 以下任何 critical issue 存在時 pass 必須為 false：
 - unsupported number/claim 或證據對不上。
@@ -212,7 +386,8 @@ corrected_telegram_draft 必須沿用完整標題、emoji、欄位順序與簡�
 Schema: {overall_score:0-100, industry_cross_check:[string], unsupported_claims:[string], numerical_errors:[string], missing_material_points:[string], misleading_inferences:[string], critical_issues:[string], pass:boolean, corrected_telegram_draft:string}.
 Pass can only be true if overall_score>=90 and unsupported_claims, numerical_errors, and critical_issues are all empty.
 Input:\n""" + json.dumps({"event_id": event.event_id, "facts": facts, "analysis": analysis,
-                                      "evidence": json.loads(self._evidence(event, evidence))}, ensure_ascii=False), "auditor")
+                                      "evidence": json.loads(self._evidence(event, evidence))}, ensure_ascii=False),
+                          "auditor", tools=[{"url_context": {}}])
 
     def revise(self, facts: dict, analysis: dict, audit: dict) -> dict:
         return self._json("""依稽核結果修訂台灣繁體中文投資人分析。移除所有 unsupported/misleading claim，修正 guidance range/midpoint、GAAP/non-GAAP、FCF taxonomy、Consensus 與 Transcript 狀態措辭。只回傳相同 analyst JSON schema，不得增加新事實。telegram_draft 保留完整標題、emoji、欄位順序與簡易表格，少於 3200 字，不輸出資料來源段落。
