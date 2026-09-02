@@ -55,7 +55,7 @@ pytest -q
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_CHAT_ID`
 
-另在 **Variables** 新增非敏感變數 `SEC_USER_AGENT`，例如 `us-earnings-monitor/0.1 your-email@example.com`。SEC 要求自動化客戶明確識別身分；不需要 SEC API key。將 Actions 的 workflow permissions 設成 **Read and write permissions**，讓它提交 `data/state.json` 作為可審查的去重狀態。
+另在 **Variables** 新增非敏感變數 `SEC_USER_AGENT`，例如 `us-earnings-monitor/0.1 your-email@example.com`。SEC 要求自動化客戶明確識別身分；不需要 SEC API key。這個值同時用於 submissions 偵測與 filing 附件下載。將 Actions 的 workflow permissions 設成 **Read and write permissions**，讓它提交 `data/state.json` 作為可審查的去重狀態。
 
 不要把任何 key 放進 `.env.example`、程式碼或 git commit。Telegram bot 必須已被加入目標群組／頻道並有發訊權限。
 
