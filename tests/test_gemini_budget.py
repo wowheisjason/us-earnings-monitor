@@ -1,5 +1,7 @@
 import json
 
+import requests
+
 from us_earnings_monitor.gemini import EVIDENCE_TOTAL_MAX_CHARS, GeminiClient
 from us_earnings_monitor.models import EarningsEvent, Evidence
 
@@ -22,6 +24,28 @@ class FakeResponse:
 class FakeSession:
     def get(self, *args, **kwargs):
         return FakeResponse()
+
+
+class GenerationResponse:
+    def raise_for_status(self):
+        return None
+
+    def json(self):
+        return {
+            "candidates": [{"content": {"parts": [{"text": '{"ok": true}'}]}}],
+            "usageMetadata": {"promptTokenCount": 10, "candidatesTokenCount": 2, "totalTokenCount": 12},
+        }
+
+
+class TimeoutThenFallbackSession(FakeSession):
+    def __init__(self):
+        self.posts = []
+
+    def post(self, url, **kwargs):
+        self.posts.append(url)
+        if "gemini-3.7-flash" in url:
+            raise requests.ReadTimeout("simulated timeout")
+        return GenerationResponse()
 
 
 def test_evidence_budget_is_shared_across_all_documents():
@@ -54,3 +78,13 @@ def test_usage_metadata_is_accumulated_for_reporting():
         "thought_tokens": 30, "total_tokens": 150, "calls": 1,
     }
 
+
+def test_network_timeout_falls_back_to_next_available_model(monkeypatch):
+    monkeypatch.setattr("us_earnings_monitor.gemini.time.sleep", lambda _: None)
+    session = TimeoutThenFallbackSession()
+    client = GeminiClient(api_key="test-key", session=session)
+    result = client._json("test", "facts")
+    assert result == {"ok": True}
+    assert client.model == "gemini-3.5-flash-lite"
+    assert sum("gemini-3.7-flash" in url for url in session.posts) == 2
+    assert any("gemini-3.5-flash-lite" in url for url in session.posts)
