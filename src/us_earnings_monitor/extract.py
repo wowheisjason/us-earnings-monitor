@@ -15,15 +15,30 @@ from openpyxl import load_workbook
 from .models import Disclosure, Evidence
 from .transport import ChromeImpersonatingSession
 
-_KEYWORDS = ("revenue", "net sales", "operating income", "net income", "eps", "guidance",
-             "outlook", "orders", "demand", "margin", "cash flow", "capital expenditure", "segment",
-             "backlog", "supply", "pricing", "price", "inventory", "customer", "capacity")
+_KEYWORDS = (
+    "revenue", "net sales", "operating income", "net income", "eps", "guidance",
+    "outlook", "orders", "demand", "margin", "cash flow", "free cash flow",
+    "adjusted free cash flow", "capital expenditure", "capitalized software", "segment",
+    "backlog", "supply", "pricing", "price", "inventory", "customer", "capacity",
+    "reconciliation", "financing receivables", "operating leases", "equipment under operating leases",
+)
 _TRANSCRIPT_KINDS = {"transcript", "qa", "prepared_remarks"}
 
 
 def _relevant_text(text: str, max_chars: int = 18000) -> str:
-    chunks = re.split(r"(?:\n\s*\n|(?<=[。.!?])\s+)", text)
-    selected = [chunk.strip() for chunk in chunks if any(k in chunk.casefold() for k in _KEYWORDS)]
+    """Keep matching financial chunks plus adjacent context needed for reconciliations.
+
+    Company reconciliation tables frequently put the label on one line and the
+    adjustment components on following lines. Keeping neighboring chunks avoids
+    dropping items such as financing receivables or operating-lease equipment.
+    """
+    chunks = [chunk.strip() for chunk in re.split(r"(?:\n\s*\n|(?<=[。.!?])\s+)", text) if chunk.strip()]
+    matched = {index for index, chunk in enumerate(chunks) if any(k in chunk.casefold() for k in _KEYWORDS)}
+    selected_indexes: set[int] = set()
+    for index in matched:
+        for candidate in range(max(0, index - 1), min(len(chunks), index + 3)):
+            selected_indexes.add(candidate)
+    selected = [chunks[index] for index in sorted(selected_indexes)]
     value = "\n".join(selected) or text
     return value[:max_chars]
 
