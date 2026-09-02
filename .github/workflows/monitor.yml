@@ -30,6 +30,11 @@ on:
         required: false
         default: ""
         type: string
+      test_tickers:
+        description: "Optional comma-separated watchlist tickers, to scope an authorized manual test"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -57,12 +62,14 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
           TEST_AT: ${{ inputs.test_at }}
+          TEST_TICKERS: ${{ inputs.test_tickers }}
           PYTHONPATH: src
         run: |
           args=()
           if [ "${{ inputs.dry_run }}" = "true" ]; then args+=(--dry-run); fi
           if [ "${{ inputs.initialize_baseline }}" = "true" ]; then args+=(--baseline); fi
           if [ -n "$TEST_AT" ]; then args+=(--at "$TEST_AT"); fi
+          if [ -n "$TEST_TICKERS" ]; then args+=(--tickers "$TEST_TICKERS"); fi
           python -m us_earnings_monitor "${args[@]}"
       - name: Persist monitor state
         if: ${{ !inputs.dry_run }}
