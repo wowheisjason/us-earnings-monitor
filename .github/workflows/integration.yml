@@ -1,0 +1,55 @@
+name: US earnings monitor live integration
+
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: "Comma-separated subset; default regression set is DELL,MSFT,NVDA"
+        required: false
+        default: "DELL,MSFT,NVDA"
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  e2e:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - ticker: DELL
+            at: "2026-09-02T20:30:00-04:00"
+          - ticker: MSFT
+            at: "2026-07-29T21:00:00-04:00"
+          - ticker: NVDA
+            at: "2026-08-26T21:00:00-04:00"
+    if: ${{ contains(format(',{0},', inputs.tickers), format(',{0},', matrix.ticker)) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Live E2E ${{ matrix.ticker }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_IR_MODEL: ${{ vars.GEMINI_IR_MODEL || 'gemini-3.6-flash' }}
+          GEMINI_IR_FALLBACK_MODEL: ${{ vars.GEMINI_IR_FALLBACK_MODEL || 'gemini-3.5-flash' }}
+          GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
+          OPENAI_IR_MODEL: ${{ vars.OPENAI_IR_MODEL || 'gpt-5.6-luna' }}
+          GEMINI_IR_TIMEOUT_SECONDS: "60"
+          GEMINI_IR_ATTEMPTS: "1"
+          OPENAI_IR_TIMEOUT_SECONDS: "60"
+          IR_DIRECT_TIMEOUT_SECONDS: "5"
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PYTHONPATH: src
+        run: |
+          set -o pipefail
+          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{}}\n' > /tmp/e2e-state.json
+          python -m us_earnings_monitor --state /tmp/e2e-state.json --preview --at "${{ matrix.at }}" --tickers "${{ matrix.ticker }}" 2>&1 | tee e2e.log
+          grep -q "PREVIEW_REPORT_BEGIN" e2e.log
+          ! grep -q "億美元\|兆美元\|億美金\|兆美金" e2e.log
+          ! grep -q "needs_human_review" e2e.log
