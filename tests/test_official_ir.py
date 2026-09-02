@@ -7,12 +7,17 @@ from us_earnings_monitor.state import StateStore
 
 
 class FakeResponse:
-    def __init__(self, html: str): self.content = html.encode()
-    def raise_for_status(self): return None
+    def __init__(self, html: str):
+        self.content = html.encode()
+
+    def raise_for_status(self):
+        return None
 
 
 class FakeSession:
-    def __init__(self, html: str | dict[str, str]): self.html, self.calls = html, []
+    def __init__(self, html: str | dict[str, str]):
+        self.html, self.calls = html, []
+
     def get(self, url, **kwargs):
         self.calls.append((url, kwargs))
         if isinstance(self.html, dict):
@@ -22,6 +27,10 @@ class FakeSession:
 
 def event(updated="2026-08-04T16:00:00-04:00"):
     return EarningsEvent("SPCX_2026-06-30_Q2", "SPCX", 2026, "Q2", updated, period_end="2026-06-30", updated_at=updated)
+
+
+def dell_event(updated="2026-09-01T16:10:00-04:00"):
+    return EarningsEvent("DELL_FY2027_Q2", "DELL", 2027, "Q2", updated, updated_at=updated)
 
 
 def test_ir_is_event_triggered_period_matched_and_host_allowlisted():
@@ -61,6 +70,22 @@ def test_ir_follows_one_same_host_event_page_for_assets():
     assert any(call[0] == detail for call in session.calls)
 
 
+def test_dell_q2_fy2027_event_page_discovers_official_transcript():
+    index = "https://investors.delltechnologies.com/"
+    detail = "https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results"
+    transcript = "https://investors.delltechnologies.com/static-files/a24f97e4-63b2-460d-a4be-44738826e8ce"
+    session = FakeSession({
+        index: f"<a href='{detail}'>Dell Technologies Fiscal Year 2027 Second Quarter Results</a>",
+        detail: f"<h1>Dell Technologies Fiscal Year 2027 Second Quarter Results</h1><a href='{transcript}'>Transcript</a>",
+    })
+    company = Company("DELL", "Dell Technologies", "0001571996", index)
+    docs = OfficialIrAdapter([dell_event()], session=session).discover([company], date(2026, 9, 2))
+    assert len(docs) == 1
+    assert docs[0].title == "Transcript"
+    assert docs[0].document_url == transcript
+    assert (docs[0].fiscal_year, docs[0].quarter) == (2027, "Q2")
+
+
 def test_ir_does_not_make_network_request_without_primary_event():
     session = FakeSession("<a href='/earnings.pdf'>Earnings Presentation</a>")
     company = Company("SPCX", "SpaceX", "0001181412", "https://ir.example/ir/")
@@ -78,6 +103,7 @@ def test_ir_mirror_of_primary_title_is_suppressed(tmp_path):
     store = StateStore(tmp_path / "state.json")
     primary = Disclosure("sec_edgar", "p1", "SPCX", "Form 10-Q — Q2 2026 Financial Results", "2026-08-04T16:00:00-04:00", "https://primary.example/p1.htm")
     store.add_document(primary)
-    current = event(); current.documents.append(primary.key)
+    current = event()
+    current.documents.append(primary.key)
     mirror = Disclosure("official_ir", "i1", "SPCX", "Form 10-Q — Q2 2026 Financial Results", "2026-08-04T16:10:00-04:00", "https://ir.example/i1.htm")
     assert store.equivalent_primary_document(mirror, current)
