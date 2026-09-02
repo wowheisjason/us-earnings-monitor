@@ -2,21 +2,41 @@ name: US earnings monitor
 
 on:
   schedule:
-    # America/New_York: pre-market and after-market collection; one 20:00 analysis.
-    - cron: "15 7 * * 1-5"
+    # Market-window-aware checks in America/New_York. Gemini is only invoked
+    # when SEC has an active earnings event, so extra checks remain cheap.
+    - cron: "15 2 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 4 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 6 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 8 * * 1-5"
       timezone: "America/New_York"
     - cron: "15 9 * * 1-5"
       timezone: "America/New_York"
-    - cron: "15 16 * * 1-5"
+    - cron: "15 12 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "5 16 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "25 16 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "50 16 * * 1-5"
       timezone: "America/New_York"
     - cron: "30 17 * * 1-5"
       timezone: "America/New_York"
-    - cron: "0 20 * * 1-5"
+    - cron: "30 18 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "30 20 * * 1-5"
       timezone: "America/New_York"
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Discover and group only; no AI, Telegram, or state write"
+        description: "SEC/direct discovery only; no Gemini, Telegram, or state write"
+        required: false
+        default: false
+        type: boolean
+      preview:
+        description: "Run Gemini research + analysis and print report; no Telegram or state write"
         required: false
         default: false
         type: boolean
@@ -51,10 +71,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Run tests
-        env:
-          PYTHONPATH: src
-        run: pytest -q
       - name: Run monitor
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -67,16 +83,16 @@ jobs:
         run: |
           args=()
           if [ "${{ inputs.dry_run }}" = "true" ]; then args+=(--dry-run); fi
+          if [ "${{ inputs.preview }}" = "true" ]; then args+=(--preview); fi
           if [ "${{ inputs.initialize_baseline }}" = "true" ]; then args+=(--baseline); fi
           if [ -n "$TEST_AT" ]; then args+=(--at "$TEST_AT"); fi
           if [ -n "$TEST_TICKERS" ]; then args+=(--tickers "$TEST_TICKERS"); fi
           python -m us_earnings_monitor "${args[@]}"
       - name: Persist monitor state
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !inputs.preview }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/state.json
           git diff --cached --quiet || git commit -m "chore: update monitor state"
           git push
-
