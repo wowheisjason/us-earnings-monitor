@@ -7,6 +7,8 @@ from pathlib import Path
 
 from .models import Disclosure, EarningsEvent
 
+_IR_SOURCES = {"official_ir", "gemini_grounded_ir"}
+
 
 class StateStore:
     """Small, reviewable state store. GitHub Actions commits this file after a run."""
@@ -36,12 +38,12 @@ class StateStore:
 
     def equivalent_primary_document(self, disclosure: Disclosure, event: EarningsEvent | None) -> bool:
         """Suppress an IR mirror of a document already collected from a primary source."""
-        if disclosure.source != "official_ir" or event is None:
+        if disclosure.source not in _IR_SOURCES or event is None:
             return False
         candidate = self._normalized_title(disclosure.title)
         for key in event.documents:
             existing = self.get_document(key)
-            if existing.source == "official_ir" or existing.metadata.get("format") == "ixbrl":
+            if existing.source in _IR_SOURCES or existing.metadata.get("format") == "ixbrl":
                 continue
             if self._normalized_title(existing.title) == candidate:
                 return True
@@ -68,4 +70,3 @@ class StateStore:
 
     def mark_source_checked(self, source: str, day: str) -> None:
         self.data["source_checks"][source] = day
-
