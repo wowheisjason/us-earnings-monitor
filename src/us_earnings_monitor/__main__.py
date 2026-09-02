@@ -10,17 +10,18 @@ from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 
-from .analysis import AnalysisClient, build_analysis_client
+from .analysis import AnalysisClient, build_analysis_client, build_ir_research_client
 from .calendar import is_likely_trading_day
 from .config import load_watchlist
 from .extract import EvidenceExtractor
 from .grouping import align_companion_periods, attach, classify_document, ready_for_analysis, title_is_earnings
 from .models import Disclosure, EarningsEvent, now_iso
 from .quality import TRANSCRIPT_CONFIRMED_NONE, publication_gate, update_collection_status
-from .sources import OfficialIrAdapter, SecEdgarAdapter, active_events_for_ir
+from .retrieval import IrRetrievalRouter, schedule_next_ir_retry, should_attempt_ir
+from .sources import SecEdgarAdapter, active_events_for_ir
 from .state import StateStore
 from .telegram import send_report
-from .validation import validate_extracted_facts
+from .validation import validate_extracted_facts, validate_report_text
 
 ET = ZoneInfo("America/New_York")
 LOG = logging.getLogger("us_earnings_monitor")
@@ -64,7 +65,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--state", default="data/state.json")
     parser.add_argument("--fixture", help="Use normalized disclosure fixture instead of network sources")
     parser.add_argument("--dry-run", action="store_true", help="No Gemini, Telegram, or state write; direct-source discovery only")
-    parser.add_argument("--preview", action="store_true", help="Run live Gemini research + analysis, print report, no Telegram or state write")
+    parser.add_argument("--preview", action="store_true", help="Run live IR research + Gemini analysis, print report, no Telegram or state write")
     parser.add_argument("--baseline", action="store_true", help="Record current documents as already processed; never analyze or notify")
     parser.add_argument("--at", help="ISO datetime for deterministic tests; defaults to current America/New_York time")
     parser.add_argument("--tickers", help="Comma-separated ticker allowlist for an authorized manual test")
@@ -151,14 +152,21 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
     analysis = client.analyze(event, facts, evidence)
     audit = client.audit(event, facts, analysis, evidence)
     draft = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
+    report_issues = validate_report_text(draft)
+    if report_issues:
+        LOG.warning("%s deterministic report validation issues: %s", event.event_id, report_issues)
+
     if (audit.get("overall_score", 0) < 90 or audit.get("unsupported_claims") or audit.get("numerical_errors")
-            or audit.get("critical_issues") or deterministic_issues or len(draft) > REPORT_MAX_CHARS):
+            or audit.get("critical_issues") or deterministic_issues or report_issues or len(draft) > REPORT_MAX_CHARS):
+        facts["deterministic_report_issues"] = report_issues
         analysis = client.revise(facts, analysis, audit)
         audit = client.audit(event, facts, analysis, evidence)
+        draft = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
+        report_issues = validate_report_text(draft)
 
     if (audit.get("overall_score", 0) >= 90 and not audit.get("unsupported_claims")
             and not audit.get("numerical_errors") and not audit.get("critical_issues")
-            and not deterministic_issues and audit.get("pass") is True):
+            and not deterministic_issues and not report_issues and audit.get("pass") is True):
         text = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
         if text:
             rendered = _compose_report(text, docs)
@@ -203,6 +211,7 @@ def main() -> int:
     if not is_likely_trading_day(now):
         LOG.info("Not a weekday in America/New_York; no discovery run.")
         return 0
+
     companies, patterns = load_watchlist(args.watchlist)
     if args.tickers:
         requested = {ticker.strip().upper() for ticker in args.tickers.split(",") if ticker.strip()}
@@ -210,6 +219,7 @@ def main() -> int:
         if not companies:
             raise SystemExit("None of --tickers matched watchlist.yaml")
     company_by_ticker = {company.ticker: company for company in companies}
+
     store = StateStore(args.state)
     disclosures, _ = discover(args, companies, now)
     changed, ignored = ingest(disclosures, store, patterns, now)
@@ -217,74 +227,59 @@ def main() -> int:
     analysis_client: AnalysisClient | None = None
     active_ir_events = active_events_for_ir(store.all_events(), now)
     if active_ir_events and not args.fixture:
-        research_status: dict[str, dict] = {}
-        grounded_docs: list[Disclosure] = []
-        grounded_complete: set[str] = set()
-        fallback_events: list[EarningsEvent] = []
-
-        if not args.dry_run:
-            analysis_client = build_analysis_client()
-            for active in active_ir_events:
-                company = company_by_ticker.get(active.ticker)
-                if not company:
-                    continue
-                try:
-                    docs, status = analysis_client.research_official_ir(company, active, now)
-                    grounded_docs.extend(docs)
-                    research_status[active.event_id] = status
-                    if status.get("research_complete"):
-                        grounded_complete.add(active.event_id)
-                    else:
-                        fallback_events.append(active)
-                except Exception as exc:  # noqa: BLE001
-                    LOG.warning("Gemini grounded IR research failed for %s: %s", active.event_id, exc)
-                    fallback_events.append(active)
-        else:
-            fallback_events = list(active_ir_events)
-
-        if grounded_docs:
-            grounded_changed, grounded_ignored = ingest(grounded_docs, store, patterns, now)
-            changed = list({event.event_id: event for event in [*changed, *grounded_changed]}.values())
-            ignored += grounded_ignored
-
-        direct_docs: list[Disclosure] = []
-        direct_adapter = OfficialIrAdapter(fallback_events) if fallback_events else None
-        if direct_adapter:
-            direct_docs = direct_adapter.discover(companies, now.date())
-            direct_changed, direct_ignored = ingest(direct_docs, store, patterns, now)
-            changed = list({event.event_id: event for event in [*changed, *direct_changed]}.values())
-            ignored += direct_ignored
+        research_client = None if args.dry_run else build_ir_research_client()
+        router = IrRetrievalRouter(research_client)
+        retrieval_results = {}
+        ir_documents: list[Disclosure] = []
 
         for active in active_ir_events:
-            current = store.get_event(active.event_id) or active
-            status = research_status.get(active.event_id, {})
-            if status:
-                current.collection_status["gemini_ir_research_at"] = now_iso(now)
-                current.collection_status["gemini_ir_research_notes"] = status.get("research_notes", [])
-                current.collection_status["gemini_ir_grounding"] = status.get("grounding", {})
-                current.collection_status["gemini_ir_rejected_unofficial_urls"] = status.get("rejected_unofficial_urls", [])
-                call = status.get("call", {}) or {}
-                if call.get("scheduled_at"):
-                    current.collection_status["earnings_call_scheduled_at"] = call["scheduled_at"]
-                if call.get("status"):
-                    current.collection_status["earnings_call_status"] = call["status"]
-                if status.get("transcript_status") == TRANSCRIPT_CONFIRMED_NONE:
-                    current.collection_status["transcript_status"] = TRANSCRIPT_CONFIRMED_NONE
+            if not should_attempt_ir(active, now):
+                continue
+            company = company_by_ticker.get(active.ticker)
+            if not company:
+                continue
+            result = router.collect(company, active, now, dry_run=args.dry_run)
+            retrieval_results[active.event_id] = result
+            ir_documents.extend(result.documents)
 
-            direct_checked = bool(direct_adapter and current.ticker in direct_adapter.checked_tickers)
-            complete_check = active.event_id in grounded_complete or direct_checked
-            update_collection_status(current, _event_documents(current, store), now, official_ir_checked=complete_check)
-            if not complete_check:
+        if ir_documents:
+            ir_changed, ir_ignored = ingest(ir_documents, store, patterns, now)
+            changed = list({event.event_id: event for event in [*changed, *ir_changed]}.values())
+            ignored += ir_ignored
+
+        for active in active_ir_events:
+            result = retrieval_results.get(active.event_id)
+            if result is None:
+                continue
+            current = store.get_event(active.event_id) or active
+            status = result.status
+            current.collection_status["ir_retrieval_provider"] = status.get("provider")
+            current.collection_status["ir_retrieval_attempts"] = status.get("attempts", result.attempts)
+            current.collection_status["ir_retrieval_last_at"] = now_iso(now)
+            current.collection_status["gemini_ir_research_notes"] = status.get("research_notes", [])
+            current.collection_status["gemini_ir_grounding"] = status.get("grounding", {})
+            current.collection_status["gemini_ir_rejected_unofficial_urls"] = status.get("rejected_unofficial_urls", [])
+            if status.get("model"):
+                current.collection_status["gemini_ir_model"] = status["model"]
+            call = status.get("call", {}) or {}
+            if call.get("scheduled_at"):
+                current.collection_status["earnings_call_scheduled_at"] = call["scheduled_at"]
+            if call.get("status"):
+                current.collection_status["earnings_call_status"] = call["status"]
+            if status.get("transcript_status") == TRANSCRIPT_CONFIRMED_NONE:
+                current.collection_status["transcript_status"] = TRANSCRIPT_CONFIRMED_NONE
+
+            update_collection_status(current, _event_documents(current, store), now, official_ir_checked=result.complete)
+            if not result.complete:
                 current.collection_status["official_ir_last_attempt_incomplete"] = now_iso(now)
             else:
                 current.collection_status.pop("official_ir_last_attempt_incomplete", None)
+            schedule_next_ir_retry(current, now)
             current.updated_at = now_iso(now)
             store.put_event(current)
 
-        LOG.info(
-            "IR enrichment: grounded=%d direct_fallback=%d active_events=%d grounded_complete=%s",
-            len(grounded_docs), len(direct_docs), len(active_ir_events), sorted(grounded_complete),
-        )
+        LOG.info("IR enrichment: documents=%d active_events=%d attempted=%d",
+                 len(ir_documents), len(active_ir_events), len(retrieval_results))
 
     LOG.info("Discovered %d SEC/fixture document(s); changed events=%s; ignored=%d",
              len(disclosures), [e.event_id for e in changed], ignored)
@@ -309,6 +304,7 @@ def main() -> int:
             pending = pending or outcome == "collection_pending"
         else:
             pending = True
+
     if pending:
         LOG.info("Documents collected; analysis is waiting for event completeness or additional official IR material.")
     if not args.dry_run and not args.preview:
