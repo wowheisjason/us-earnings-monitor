@@ -2,9 +2,6 @@ name: US earnings monitor live integration
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - feat/gemini-grounded-ir-event-clock
 
 permissions:
   contents: read
