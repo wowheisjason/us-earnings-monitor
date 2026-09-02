@@ -20,6 +20,7 @@ from .quality import publication_gate, update_collection_status
 from .sources import OfficialIrAdapter, SecEdgarAdapter, active_events_for_ir
 from .state import StateStore
 from .telegram import send_report
+from .validation import validate_extracted_facts
 
 ET = ZoneInfo("America/New_York")
 LOG = logging.getLogger("us_earnings_monitor")
@@ -137,20 +138,29 @@ def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: d
     evidence = [EvidenceExtractor().fetch(doc) for doc in docs]
     client = build_analysis_client()
     facts = client.extract_facts(event, evidence)
+    deterministic_issues = validate_extracted_facts(facts)
     facts["collection_status"] = event.collection_status
+    facts["deterministic_validation_issues"] = deterministic_issues
+    if deterministic_issues:
+        LOG.warning("%s deterministic fact validation issues: %s", event.event_id, deterministic_issues)
+
     if event.status == "published" and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents)):
         event.last_analyzed_document_count = len(event.documents)
         event.updated_at = now_iso(now)
         store.put_event(event)
         return "no_material_update"
+
     analysis = client.analyze(event, facts, evidence)
     audit = client.audit(event, facts, analysis, evidence)
     draft = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
-    if audit.get("overall_score", 0) < 90 or audit.get("unsupported_claims") or audit.get("numerical_errors") or len(draft) > REPORT_MAX_CHARS:
+    if (audit.get("overall_score", 0) < 90 or audit.get("unsupported_claims") or audit.get("numerical_errors")
+            or audit.get("critical_issues") or deterministic_issues or len(draft) > REPORT_MAX_CHARS):
         analysis = client.revise(facts, analysis, audit)
         audit = client.audit(event, facts, analysis, evidence)
+
     if (audit.get("overall_score", 0) >= 90 and not audit.get("unsupported_claims")
-            and not audit.get("numerical_errors") and audit.get("pass") is True):
+            and not audit.get("numerical_errors") and not audit.get("critical_issues")
+            and not deterministic_issues and audit.get("pass") is True):
         text = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
         if text:
             send_report(_compose_report(text, docs), parse_mode="HTML")
@@ -160,6 +170,7 @@ def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: d
             event.updated_at = now_iso(now)
             store.put_event(event)
             return "published"
+
     event.status = "needs_human_review"
     event.updated_at = now_iso(now)
     store.put_event(event)
