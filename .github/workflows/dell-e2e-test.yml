@@ -16,29 +16,62 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - run: |
-          pip install -r requirements.txt
-          pip install 'curl_cffi>=0.13,<0.14'
-      - name: Probe Dell with curl_cffi Chrome impersonation
+      - run: pip install -r requirements.txt
+      - name: Run full test suite
+        env:
+          PYTHONPATH: src
+        run: pytest -q
+      - name: Show Dell state before E2E
         run: |
           python - <<'PY'
-          import time
-          from curl_cffi import requests
-          urls = [
-              'https://investors.delltechnologies.com/',
-              'https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results',
-              'https://investors.delltechnologies.com/static-files/a24f97e4-63b2-460d-a4be-44738826e8ce',
-              'https://investors.delltechnologies.com/static-files/5d15be71-1d9a-45ec-8308-8987fb41084d',
-              'https://investors.delltechnologies.com/static-files/86d4752c-0d07-45e8-b920-d83e8727005b',
-          ]
-          for profile in ('chrome', 'chrome136'):
-              print('=== PROFILE', profile, '===')
-              for url in urls:
-                  start=time.monotonic()
-                  try:
-                      r=requests.get(url, impersonate=profile, timeout=12, allow_redirects=True)
-                      print(url, 'status=', r.status_code, 'bytes=', len(r.content), 'seconds=', round(time.monotonic()-start,3), 'ctype=', r.headers.get('content-type'), 'final=', r.url)
-                      print(r.content[:120].replace(b'\n', b' '))
-                  except Exception as exc:
-                      print(url, type(exc).__name__, str(exc), 'seconds=', round(time.monotonic()-start,3))
+          import json
+          state=json.load(open('data/state.json', encoding='utf-8'))
+          print(json.dumps(state.get('events', {}).get('DELL_FY2027_Q2'), ensure_ascii=False, indent=2))
+          PY
+      - name: Run Dell E2E on updated system
+        env:
+          ANALYSIS_PROVIDER: gemini
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PYTHONPATH: src
+        run: python -m us_earnings_monitor --at 2026-09-02T20:00:00-04:00 --tickers DELL
+      - name: Validate Dell E2E state
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, sys
+          state=json.load(open('data/state.json', encoding='utf-8'))
+          event=state.get('events', {}).get('DELL_FY2027_Q2')
+          print('=== DELL EVENT ===')
+          print(json.dumps(event, ensure_ascii=False, indent=2))
+          print('=== DELL DOCUMENTS ===')
+          docs=[]
+          if event:
+              for key in event.get('documents', []):
+                  doc=state.get('documents', {}).get(key)
+                  docs.append(doc)
+                  print(json.dumps(doc, ensure_ascii=False, indent=2))
+          if not event:
+              raise SystemExit('DELL_FY2027_Q2 missing')
+          kinds={d.get('document_kind') for d in docs if d}
+          collection=event.get('collection_status', {})
+          failures=[]
+          if 'transcript' not in kinds:
+              failures.append('transcript document missing')
+          if not ({'performance_review','financial_tables'} & kinds):
+              failures.append('supporting IR financial material missing')
+          if collection.get('transcript_status') != 'FOUND':
+              failures.append(f"transcript_status={collection.get('transcript_status')!r}")
+          if not collection.get('official_ir_checked_at'):
+              failures.append('official_ir_checked_at missing')
+          if event.get('report_version', 0) < 2:
+              failures.append(f"report_version={event.get('report_version')}")
+          if event.get('last_analyzed_document_count', 0) <= 1:
+              failures.append(f"last_analyzed_document_count={event.get('last_analyzed_document_count')}")
+          if failures:
+              print('E2E VALIDATION FAIL:', failures)
+              sys.exit(1)
+          print('E2E VALIDATION PASS')
           PY
