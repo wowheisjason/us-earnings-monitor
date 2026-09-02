@@ -15,7 +15,9 @@ from openpyxl import load_workbook
 from .models import Disclosure, Evidence
 
 _KEYWORDS = ("revenue", "net sales", "operating income", "net income", "eps", "guidance",
-             "outlook", "orders", "demand", "margin", "cash flow", "capital expenditure", "segment")
+             "outlook", "orders", "demand", "margin", "cash flow", "capital expenditure", "segment",
+             "backlog", "supply", "pricing", "price", "inventory", "customer", "capacity")
+_TRANSCRIPT_KINDS = {"transcript", "qa", "prepared_remarks"}
 
 
 def _relevant_text(text: str, max_chars: int = 18000) -> str:
@@ -25,8 +27,13 @@ def _relevant_text(text: str, max_chars: int = 18000) -> str:
     return value[:max_chars]
 
 
+def _transcript_text(text: str, max_chars: int = 42000) -> str:
+    """Preserve conversational context; keyword filtering destroys analyst Q&A continuity."""
+    cleaned = re.sub(r"\n{3,}", "\n\n", text).strip()
+    return cleaned[:max_chars]
+
+
 def _xbrl_facts(blob: bytes) -> list[dict]:
-    """Extract a compact, source-labelled set of numerical XBRL facts from a ZIP."""
     facts: list[dict] = []
     try:
         with zipfile.ZipFile(io.BytesIO(blob)) as archive:
@@ -52,7 +59,6 @@ def _xbrl_facts(blob: bytes) -> list[dict]:
 
 
 def _inline_xbrl_facts(blob: bytes) -> list[dict]:
-    """Extract compact facts from JPX inline-XBRL HTML without an AI call."""
     soup = BeautifulSoup(blob, "lxml")
     facts: list[dict] = []
     concepts = ("revenue", "sales", "operatingincome", "profit", "eps", "netincome")
@@ -79,7 +85,6 @@ def _inline_xbrl_facts(blob: bytes) -> list[dict]:
 
 
 def _xlsx_relevant_text(blob: bytes, max_chars: int = 18000) -> str:
-    """Read formula results from official supplementary workbooks, row by row."""
     workbook = load_workbook(io.BytesIO(blob), read_only=True, data_only=True)
     selected: list[str] = []
     for sheet in workbook.worksheets[:20]:
@@ -105,21 +110,25 @@ class EvidenceExtractor:
         user_agent = os.getenv(
             "SEC_USER_AGENT",
             "us-earnings-monitor/0.1 contact: research@example.com",
-        ) if disclosure.source == "sec_edgar" else "us-earnings-monitor/0.1"
+        ) if disclosure.source == "sec_edgar" else "us-earnings-monitor/0.2"
         response = self.session.get(disclosure.document_url, timeout=45, headers={"User-Agent": user_agent})
         response.raise_for_status()
         content_type = response.headers.get("content-type", "").casefold()
         blob = response.content
-        if "spreadsheet" in content_type or disclosure.document_url.casefold().split("?", 1)[0].endswith(".xlsx"):
+        bare_url = disclosure.document_url.casefold().split("?", 1)[0]
+
+        if "spreadsheet" in content_type or bare_url.endswith(".xlsx"):
             return Evidence(disclosure.key, disclosure.title, disclosure.url, _xlsx_relevant_text(blob))
         if "zip" in content_type or blob[:2] == b"PK":
             facts = _xbrl_facts(blob)
             return Evidence(disclosure.key, disclosure.title, disclosure.url, "", facts)
-        if "pdf" in content_type or disclosure.document_url.casefold().split("?", 1)[0].endswith(".pdf"):
+        if "pdf" in content_type or bare_url.endswith(".pdf") or blob[:5] == b"%PDF-":
             reader = PdfReader(io.BytesIO(blob))
-            text = "\n".join((page.extract_text() or "") for page in reader.pages[:30])
+            page_limit = 80 if disclosure.document_kind in _TRANSCRIPT_KINDS else 40
+            text = "\n".join((page.extract_text() or "") for page in reader.pages[:page_limit])
         else:
             text = BeautifulSoup(blob, "html.parser").get_text("\n", strip=True)
-        facts = _inline_xbrl_facts(blob) if "html" in content_type or disclosure.document_url.casefold().endswith((".htm", ".html")) else []
-        return Evidence(disclosure.key, disclosure.title, disclosure.url, _relevant_text(text), facts)
 
+        facts = _inline_xbrl_facts(blob) if "html" in content_type or bare_url.endswith((".htm", ".html")) else []
+        selected_text = _transcript_text(text) if disclosure.document_kind in _TRANSCRIPT_KINDS else _relevant_text(text)
+        return Evidence(disclosure.key, disclosure.title, disclosure.url, selected_text, facts)

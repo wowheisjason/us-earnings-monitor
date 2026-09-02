@@ -7,9 +7,11 @@ from datetime import datetime, time
 
 from .models import Disclosure, EarningsEvent, now_iso
 
-_FY = re.compile(r"(?:FY\s*)?(20\d{2})(?:年?\d{1,2}月期)?", re.IGNORECASE)
+_FY = re.compile(r"(?:(?:FY\s*)|(?:Fiscal\s+Year\s+))?(20\d{2})(?:年?\d{1,2}月期)?", re.IGNORECASE)
 _Q = re.compile(r"(?:第?([1-4])四半期|Q([1-4])|([1-4])Q|([1-4])(?:st|nd|rd|th)\s+quarter)", re.IGNORECASE)
-_RESULT_ANCHORS = ("form 10-q", "form 10-k", "form 20-f", "financial results", "earnings results")
+_Q_WORD = re.compile(r"\b(first|second|third|fourth)\s+quarter\b", re.IGNORECASE)
+_Q_WORD_MAP = {"first": "1", "second": "2", "third": "3", "fourth": "4"}
+_RESULT_ANCHORS = ("form 10-q", "form 10-k", "form 20-f", "financial results", "earnings results", "quarter results")
 
 
 def classify_document(title: str) -> str:
@@ -18,11 +20,17 @@ def classify_document(title: str) -> str:
         return "qa"
     if "transcript" in lower or "逐語" in title:
         return "transcript"
+    if "prepared remarks" in lower:
+        return "prepared_remarks"
+    if "financial tables" in lower:
+        return "financial_tables"
+    if "performance review" in lower:
+        return "performance_review"
     if "説明会" in title or "presentation" in lower:
         return "presentation"
-    if "補足" in title or "supplementary" in lower:
+    if "補足" in title or "supplementary" in lower or "supplement" in lower:
         return "supplement"
-    if "決算" in title or "financial results" in lower or "earnings" in lower:
+    if "決算" in title or "financial results" in lower or "earnings" in lower or "press release" in lower:
         return "financial_results"
     return "other"
 
@@ -33,8 +41,11 @@ def infer_period(disclosure: Disclosure) -> tuple[int | None, str | None]:
     title = unicodedata.normalize("NFKC", disclosure.title)
     fy_match = _FY.search(title)
     q_match = _Q.search(title)
+    q_word_match = _Q_WORD.search(title)
     fiscal_year = disclosure.fiscal_year or (int(fy_match.group(1)) if fy_match else None)
     quarter = disclosure.quarter or next((g for g in (q_match.groups() if q_match else ()) if g), None)
+    if not quarter and q_word_match:
+        quarter = _Q_WORD_MAP[q_word_match.group(1).casefold()]
     if not quarter and fiscal_year and any(marker in title.casefold() for marker in ("annual", "full year", "year ended", "通期")):
         quarter = "4"
     return fiscal_year, f"Q{quarter}" if quarter and not str(quarter).upper().startswith("Q") else quarter
@@ -54,16 +65,13 @@ def event_id(disclosure: Disclosure) -> str | None:
 
 def title_is_earnings(title: str, patterns: list[str]) -> bool:
     value = title.casefold()
+    if classify_document(title) != "other":
+        return True
     return any(pattern in value for pattern in patterns)
 
 
 def align_companion_periods(disclosures: list[Disclosure]) -> None:
-    """Attach same-day companion documents to one unambiguous result period.
-
-    Forecast revisions often mention the next interim period (for example Q2)
-    even when published alongside Q1 results.  Treating every title in
-    isolation would split one earnings event into two reports.
-    """
+    """Attach same-day companion documents to one unambiguous result period."""
     groups: dict[tuple[str, str], list[Disclosure]] = defaultdict(list)
     for disclosure in disclosures:
         if disclosure.ticker:
@@ -100,7 +108,6 @@ def attach(event: EarningsEvent | None, disclosure: Disclosure, now: datetime) -
 
 
 def ready_for_analysis(event: EarningsEvent | None, now: datetime) -> bool:
-    """Run Gemini only in the daily 20:00 America/New_York window."""
+    """Run LLM analysis only in the daily 20:00 America/New_York window."""
     local_time = now.timetz().replace(tzinfo=None)
     return local_time >= time(20, 0)
-

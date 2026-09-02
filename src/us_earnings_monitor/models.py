@@ -63,6 +63,7 @@ class EarningsEvent:
     report_version: int = 0
     last_analyzed_document_count: int = 0
     updated_at: str | None = None
+    collection_status: dict[str, Any] = field(default_factory=dict)
 
     def as_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -74,4 +75,3 @@ class EarningsEvent:
 
 def now_iso(now: datetime) -> str:
     return now.isoformat(timespec="seconds")
-

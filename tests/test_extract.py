@@ -2,7 +2,8 @@ from io import BytesIO
 
 from openpyxl import Workbook
 
-from us_earnings_monitor.extract import _inline_xbrl_facts, _xlsx_relevant_text
+from us_earnings_monitor.extract import EvidenceExtractor, _inline_xbrl_facts, _xlsx_relevant_text
+from us_earnings_monitor.models import Disclosure
 
 
 def test_xlsx_extraction_keeps_financial_rows_only():
@@ -35,3 +36,36 @@ def test_inline_xbrl_extraction_keeps_structured_financial_fact():
         "source_file": "inline-xbrl",
     }]
 
+
+class FakeResponse:
+    def __init__(self, content: bytes, content_type: str = "text/html"):
+        self.content = content
+        self.headers = {"content-type": content_type}
+
+    def raise_for_status(self):
+        return None
+
+
+class FakeSession:
+    def __init__(self, response: FakeResponse):
+        self.response = response
+
+    def get(self, *args, **kwargs):
+        return self.response
+
+
+def test_transcript_extraction_preserves_non_keyword_qa_context():
+    transcript = b"""<html><body>
+    <p>Operator: We will now begin the question-and-answer session.</p>
+    <p>Analyst: Is the recent server demand mostly a pull-forward?</p>
+    <p>CFO: No. We see broad modernization across several customer groups and the installed base remains old.</p>
+    </body></html>"""
+    disclosure = Disclosure(
+        "official_ir", "t1", "DELL", "Transcript", "2026-09-01T20:00:00-04:00",
+        "https://ir.example/static-files/uuid", document_url="https://ir.example/static-files/uuid",
+        fiscal_year=2027, quarter="Q2", document_kind="transcript",
+    )
+    evidence = EvidenceExtractor(session=FakeSession(FakeResponse(transcript))).fetch(disclosure)
+    assert "question-and-answer session" in evidence.text
+    assert "pull-forward" in evidence.text
+    assert "installed base remains old" in evidence.text

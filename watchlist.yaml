@@ -37,7 +37,12 @@ companies:
   - {ticker: ENTG, name: Entegris, cik: "0001101302", ir_index_url: "https://investor.entegris.com/"}
   - {ticker: LRCX, name: Lam Research, cik: "0000707549", ir_index_url: "https://investor.lamresearch.com/"}
   - {ticker: CBRS, name: Cerebras Systems, cik: "0002021728", ir_index_url: "https://investors.cerebras.ai/"}
-  - {ticker: DELL, name: Dell Technologies, cik: "0001571996", ir_index_url: "https://investors.delltechnologies.com/"}
+  - ticker: DELL
+    name: Dell Technologies
+    cik: "0001571996"
+    ir_index_url: "https://investors.delltechnologies.com/"
+    ir_additional_urls:
+      - "https://investors.delltechnologies.com/financial-information/quarterly-results"
 
 earnings_title_patterns:
   - "form 10-q"
@@ -53,4 +58,3 @@ earnings_title_patterns:
   - "shareholder letter"
   - "q&a"
   - "transcript"
-
