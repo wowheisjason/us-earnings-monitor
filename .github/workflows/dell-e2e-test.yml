@@ -21,6 +21,30 @@ jobs:
         env:
           PYTHONPATH: src
         run: pytest -q
+      - name: Probe Dell official IR endpoints from GitHub runner
+        shell: bash
+        run: |
+          set +e
+          urls=(
+            "https://investors.delltechnologies.com/"
+            "https://investors.delltechnologies.com/rss/events.xml"
+            "https://investors.delltechnologies.com/rss/news-releases.xml"
+            "https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results"
+            "https://investors.delltechnologies.com/static-files/a909096f-5091-4dcf-8291-019f6f9fb887"
+          )
+          i=0
+          for url in "${urls[@]}"; do
+            i=$((i+1))
+            echo "=== PROBE $i: $url ==="
+            curl -L --connect-timeout 5 --max-time 10 -A "${SEC_USER_AGENT:-us-earnings-monitor/0.2}" \
+              -o "/tmp/dell-probe-$i" -sS \
+              -w "http=%{http_code} connect=%{time_connect} start=%{time_starttransfer} total=%{time_total} bytes=%{size_download}\n" \
+              "$url"
+            head -c 500 "/tmp/dell-probe-$i" 2>/dev/null | tr '\n' ' ' || true
+            echo
+          done
+        env:
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
       - name: Show Dell state before test
         run: |
           python - <<'PY'
