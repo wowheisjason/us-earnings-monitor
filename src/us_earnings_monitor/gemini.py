@@ -62,6 +62,9 @@ class GeminiClient:
         self._models = sorted(candidates, key=self._model_rank, reverse=True)
         return self._models
 
+    def _resolve_model(self) -> str:
+        return self._available_models()[0]
+
     def _record_usage(self, stage: str, model: str, payload: dict) -> None:
         usage = payload.get("usageMetadata", {})
         prompt = int(usage.get("promptTokenCount", 0) or 0)
