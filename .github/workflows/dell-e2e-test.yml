@@ -1,0 +1,53 @@
+name: Dell E2E updated-main test
+
+on:
+  push:
+    branches:
+      - "test/dell-e2e-updated-main"
+
+permissions:
+  contents: read
+
+jobs:
+  dell-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run full test suite
+        env:
+          PYTHONPATH: src
+        run: pytest -q
+      - name: Show Dell state before test
+        run: |
+          python - <<'PY'
+          import json
+          state=json.load(open('data/state.json', encoding='utf-8'))
+          print(json.dumps(state.get('events', {}).get('DELL_FY2027_Q2'), ensure_ascii=False, indent=2))
+          PY
+      - name: Run Dell E2E on updated system
+        env:
+          ANALYSIS_PROVIDER: gemini
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PYTHONPATH: src
+        run: python -m us_earnings_monitor --at 2026-09-02T20:00:00-04:00 --tickers DELL
+      - name: Show Dell state and collected documents after test
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          state=json.load(open('data/state.json', encoding='utf-8'))
+          event=state.get('events', {}).get('DELL_FY2027_Q2')
+          print('=== DELL EVENT ===')
+          print(json.dumps(event, ensure_ascii=False, indent=2))
+          print('=== DELL DOCUMENTS ===')
+          if event:
+              for key in event.get('documents', []):
+                  print(json.dumps(state.get('documents', {}).get(key), ensure_ascii=False, indent=2))
+          PY
