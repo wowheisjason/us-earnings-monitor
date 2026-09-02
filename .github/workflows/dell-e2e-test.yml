@@ -17,21 +17,25 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Inspect Dell official event RSS
+      - name: Probe Dell official GCS mirror
         run: |
           python - <<'PY'
-          import requests
-          from xml.etree import ElementTree as ET
-          url='https://investors.delltechnologies.com/rss/events.xml'
-          r=requests.get(url, headers={'User-Agent':'us-earnings-monitor/0.2'}, timeout=(4,7))
-          print('status', r.status_code, 'bytes', len(r.content), 'ctype', r.headers.get('content-type'))
-          root=ET.fromstring(r.content)
-          for item in root.findall('./channel/item'):
-              title=(item.findtext('title') or '').strip()
-              if 'Fiscal Year 2027 Second Quarter' not in title:
-                  continue
-              print('=== MATCHED ITEM ===')
-              print(ET.tostring(item, encoding='unicode'))
-              for child in item:
-                  print('FIELD', child.tag, '=>', repr(child.text))
+          import requests, time
+          urls = [
+              'https://delltechnologies.gcs-web.com/',
+              'https://delltechnologies.gcs-web.com/rss/events.xml',
+              'https://delltechnologies.gcs-web.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results',
+              'https://delltechnologies.gcs-web.com/static-files/a24f97e4-63b2-460d-a4be-44738826e8ce',
+              'https://delltechnologies.gcs-web.com/static-files/5d15be71-1d9a-45ec-8308-8987fb41084d',
+              'https://delltechnologies.gcs-web.com/static-files/86d4752c-0d07-45e8-b920-d83e8727005b',
+          ]
+          headers={'User-Agent':'us-earnings-monitor/0.2','Accept':'*/*','Connection':'close'}
+          for url in urls:
+              start=time.monotonic()
+              try:
+                  r=requests.get(url, headers=headers, timeout=(4,10))
+                  print(url, 'status=', r.status_code, 'bytes=', len(r.content), 'seconds=', round(time.monotonic()-start,3), 'ctype=', r.headers.get('content-type'), 'final=', r.url)
+                  print(r.content[:160].replace(b'\n', b' '))
+              except Exception as exc:
+                  print(url, type(exc).__name__, str(exc), 'seconds=', round(time.monotonic()-start,3))
           PY
