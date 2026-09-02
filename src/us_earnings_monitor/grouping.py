@@ -7,9 +7,14 @@ from datetime import datetime, time
 
 from .models import Disclosure, EarningsEvent, now_iso
 
-_FY = re.compile(r"(?:FY\s*)?(20\d{2})(?:年?\d{1,2}月期)?", re.IGNORECASE)
-_Q = re.compile(r"(?:第?([1-4])四半期|Q([1-4])|([1-4])Q|([1-4])(?:st|nd|rd|th)\s+quarter)", re.IGNORECASE)
+_FY = re.compile(r"(?:(?:FY|Fiscal\s+Year)\s*)?(20\d{2})(?:年?\d{1,2}月期)?", re.IGNORECASE)
+_Q = re.compile(
+    r"(?:第?([1-4])四半期|Q([1-4])|([1-4])Q|([1-4])(?:st|nd|rd|th)\s+quarter|"
+    r"(first|second|third|fourth)\s+quarter)",
+    re.IGNORECASE,
+)
 _RESULT_ANCHORS = ("form 10-q", "form 10-k", "form 20-f", "financial results", "earnings results")
+_WORD_QUARTERS = {"first": "1", "second": "2", "third": "3", "fourth": "4"}
 
 
 def classify_document(title: str) -> str:
@@ -40,7 +45,10 @@ def infer_period(disclosure: Disclosure) -> tuple[int | None, str | None]:
     fy_match = _FY.search(title)
     q_match = _Q.search(title)
     fiscal_year = disclosure.fiscal_year or (int(fy_match.group(1)) if fy_match else None)
-    quarter = disclosure.quarter or next((g for g in (q_match.groups() if q_match else ()) if g), None)
+    quarter = disclosure.quarter
+    if not quarter and q_match:
+        raw = next((g for g in q_match.groups() if g), None)
+        quarter = _WORD_QUARTERS.get(str(raw).casefold(), raw) if raw else None
     if not quarter and fiscal_year and any(marker in title.casefold() for marker in ("annual", "full year", "year ended", "通期")):
         quarter = "4"
     return fiscal_year, f"Q{quarter}" if quarter and not str(quarter).upper().startswith("Q") else quarter
