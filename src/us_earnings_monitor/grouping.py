@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 import unicodedata
 from collections import defaultdict
-from datetime import datetime, time
+from datetime import datetime, timedelta
 
 from .models import Disclosure, EarningsEvent, now_iso
 
@@ -107,7 +107,24 @@ def attach(event: EarningsEvent | None, disclosure: Disclosure, now: datetime) -
     return event
 
 
-def ready_for_analysis(event: EarningsEvent | None, now: datetime) -> bool:
-    """Run LLM analysis only in the daily 20:00 America/New_York window."""
-    local_time = now.timetz().replace(tzinfo=None)
-    return local_time >= time(20, 0)
+def ready_for_analysis(event: EarningsEvent | None, now: datetime, fallback_wait_hours: int = 4) -> bool:
+    """Analyze when the event evidence is ready, not at a fixed wall-clock time."""
+    if event is None:
+        return False
+    status = event.collection_status
+    transcript_status = status.get("transcript_status")
+    if transcript_status == "FOUND":
+        return True
+    if not status.get("official_ir_checked_at"):
+        return False
+    if transcript_status in {"NOT_FOUND_AFTER_RETRY", "CONFIRMED_NOT_PUBLISHED"}:
+        return True
+    try:
+        first_seen = datetime.fromisoformat(event.first_seen_at)
+        if first_seen.tzinfo is None and now.tzinfo is not None:
+            first_seen = first_seen.replace(tzinfo=now.tzinfo)
+        if now.tzinfo is not None:
+            first_seen = first_seen.astimezone(now.tzinfo)
+        return now - first_seen >= timedelta(hours=fallback_wait_hours)
+    except (TypeError, ValueError):
+        return False
