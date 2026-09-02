@@ -49,6 +49,7 @@ class FallbackIrResearchClient:
                     "ok": False,
                     "seconds": round(time.monotonic() - started, 3),
                     "error": f"{type(exc).__name__}: {exc}"[:500],
+                    "category": getattr(exc, "category", None),
                 })
         return [], {**last_status, "research_complete": False, "provider_attempts": attempts}
 
@@ -65,16 +66,21 @@ def build_analysis_client(provider: str | None = None) -> AnalysisClient:
     raise RuntimeError(f"Unsupported ANALYSIS_PROVIDER={selected!r}. Currently supported: 'gemini'.")
 
 
-def build_ir_research_client(provider: str | None = None) -> IrResearchClient:
+def build_ir_research_client(provider: str | None = None, *, disabled_providers: set[str] | None = None) -> IrResearchClient:
     """Build a resilient IR discovery chain.
 
-    Gemini is primary. OpenAI Responses Web Search is enabled only when an
-    OPENAI_API_KEY exists, so adding redundancy never creates hidden spend.
+    Gemini is primary when its Search capability is healthy. OpenAI Responses
+    Web Search is enabled only when an OPENAI_API_KEY exists, so redundancy
+    never creates hidden spend. Provider-health state can temporarily bypass a
+    known-broken provider without changing configuration or code.
     """
     selected = _provider(provider, "IR_RESEARCH_PROVIDER")
     if selected not in {"gemini", "auto"}:
         raise RuntimeError(f"Unsupported IR_RESEARCH_PROVIDER={selected!r}. Currently supported: 'gemini' or 'auto'.")
-    providers: list[tuple[str, IrResearchClient]] = [("gemini_search", GeminiV2Client())]
-    if os.getenv("OPENAI_API_KEY") and os.getenv("OPENAI_IR_ENABLED", "1") != "0":
+    disabled = disabled_providers or set()
+    providers: list[tuple[str, IrResearchClient]] = []
+    if "gemini_search" not in disabled:
+        providers.append(("gemini_search", GeminiV2Client()))
+    if "openai_web_search" not in disabled and os.getenv("OPENAI_API_KEY") and os.getenv("OPENAI_IR_ENABLED", "1") != "0":
         providers.append(("openai_web_search", OpenAIWebIrClient()))
     return FallbackIrResearchClient(providers)
