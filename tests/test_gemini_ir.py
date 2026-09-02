@@ -3,15 +3,18 @@ from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from us_earnings_monitor.extract import EvidenceExtractor
-from us_earnings_monitor.gemini import GeminiClient
+from us_earnings_monitor.gemini_v2 import GeminiV2Client
 from us_earnings_monitor.grouping import ready_for_analysis
 from us_earnings_monitor.models import Company, EarningsEvent
+from us_earnings_monitor.retrieval import schedule_next_ir_retry, should_attempt_ir
+from us_earnings_monitor.validation import validate_report_text
 
 
 class FakeResponse:
     def __init__(self, payload, status_code=200):
         self._payload = payload
         self.status_code = status_code
+        self.headers = {}
 
     def json(self):
         return self._payload
@@ -26,14 +29,6 @@ class FakeGeminiSession:
         self.research_payload = research_payload
         self.posts = []
 
-    def get(self, url, **kwargs):
-        return FakeResponse({
-            "models": [{
-                "name": "models/gemini-3.7-flash",
-                "supportedGenerationMethods": ["generateContent"],
-            }]
-        })
-
     def post(self, url, **kwargs):
         self.posts.append((url, kwargs))
         return FakeResponse({
@@ -42,12 +37,6 @@ class FakeGeminiSession:
                 "groundingMetadata": {
                     "webSearchQueries": ["Dell FY2027 Q2 official transcript"],
                     "groundingChunks": [{"web": {"uri": "https://investors.delltechnologies.com/"}}],
-                },
-                "urlContextMetadata": {
-                    "urlMetadata": [{
-                        "retrievedUrl": "https://investors.delltechnologies.com/static-files/transcript-uuid",
-                        "urlRetrievalStatus": "URL_RETRIEVAL_STATUS_SUCCESS",
-                    }]
                 },
             }],
             "usageMetadata": {"promptTokenCount": 10, "candidatesTokenCount": 5, "totalTokenCount": 15},
@@ -63,8 +52,8 @@ def dell_event(first_seen="2026-09-01T16:10:00-04:00"):
     return EarningsEvent("DELL_FY2027_Q2", "DELL", 2027, "Q2", first_seen, updated_at=first_seen)
 
 
-def test_grounded_ir_research_uses_search_url_context_and_rejects_unofficial_hosts():
-    payload = {
+def research_payload():
+    return {
         "event_id": "DELL_FY2027_Q2",
         "call": {"scheduled_at": "2026-09-01T16:30:00-04:00", "status": "completed"},
         "transcript_status": "FOUND",
@@ -88,45 +77,38 @@ def test_grounded_ir_research_uses_search_url_context_and_rejects_unofficial_hos
         ],
         "research_notes": [],
     }
-    session = FakeGeminiSession(payload)
-    client = GeminiClient(api_key="test", session=session)
-    company = Company("DELL", "Dell Technologies", "0001571996", "https://investors.delltechnologies.com/")
+
+
+def test_v2_ir_research_uses_search_only_and_rejects_unofficial_hosts(monkeypatch):
+    monkeypatch.setenv("GEMINI_IR_MODEL", "gemini-3.6-flash")
+    session = FakeGeminiSession(research_payload())
+    client = GeminiV2Client(api_key="test", session=session)
+    company = Company("DELL", "Dell Technologies", "0001571996", "https://investors.delltechnologies.com/",
+                      official_domains=["delltechnologies.com"])
     now = datetime(2026, 9, 2, 9, 15, tzinfo=ZoneInfo("America/New_York"))
 
     docs, status = client.research_official_ir(company, dell_event(), now)
 
     assert len(docs) == 1
     assert docs[0].source == "gemini_grounded_ir"
-    assert docs[0].metadata["grounded_evidence"].startswith("Analyst Q&A")
+    assert docs[0].metadata["retrieval_method"] == "google_search_grounding"
+    assert status["model"] == "gemini-3.6-flash"
     assert status["transcript_status"] == "FOUND"
     assert status["rejected_unofficial_urls"] == ["https://example.com/dell-transcript"]
-    body = session.posts[0][1]["json"]
-    assert {tuple(tool.keys()) for tool in body["tools"]} == {("url_context",), ("google_search",)}
+    url, kwargs = session.posts[0]
+    assert "gemini-3.6-flash:generateContent" in url
+    assert kwargs["json"]["tools"] == [{"google_search": {}}]
 
 
 def test_grounded_evidence_extractor_never_refetches_issuer_site():
-    payload = {
-        "event_id": "DELL_FY2027_Q2",
-        "call": {"scheduled_at": None, "status": "completed"},
-        "transcript_status": "FOUND",
-        "sources": [{
-            "kind": "transcript",
-            "title": "Transcript",
-            "url": "https://investors.delltechnologies.com/static-files/transcript-uuid",
-            "published_at": None,
-            "evidence_text": "Complete grounded transcript extract with Q&A.",
-            "structured_facts": [{"metric": "AI server orders", "value": "60.9B"}],
-        }],
-        "research_notes": [],
-    }
-    client = GeminiClient(api_key="test", session=FakeGeminiSession(payload))
-    company = Company("DELL", "Dell Technologies", "0001571996", "https://investors.delltechnologies.com/")
+    client = GeminiV2Client(api_key="test", session=FakeGeminiSession(research_payload()))
+    company = Company("DELL", "Dell Technologies", "0001571996", "https://investors.delltechnologies.com/",
+                      official_domains=["delltechnologies.com"])
     now = datetime(2026, 9, 2, 9, 15, tzinfo=ZoneInfo("America/New_York"))
     docs, _ = client.research_official_ir(company, dell_event(), now)
 
     evidence = EvidenceExtractor(session=NoNetworkSession()).fetch(docs[0])
-    assert evidence.text == "Complete grounded transcript extract with Q&A."
-    assert evidence.structured_facts[0]["metric"] == "AI server orders"
+    assert evidence.text.startswith("Analyst Q&A")
 
 
 def test_event_clock_analyzes_immediately_when_transcript_found():
@@ -145,3 +127,23 @@ def test_event_clock_waits_for_short_collection_window_then_allows_v1():
     }
     assert not ready_for_analysis(event, first_seen + timedelta(hours=2))
     assert ready_for_analysis(event, first_seen + timedelta(hours=4, minutes=1))
+
+
+def test_event_local_retry_clock_stops_after_transcript():
+    now = datetime(2026, 9, 1, 17, 0, tzinfo=ZoneInfo("America/New_York"))
+    event = dell_event("2026-09-01T16:10:00-04:00")
+    event.collection_status = {"transcript_status": "EXPECTED_NOT_YET_AVAILABLE"}
+    schedule_next_ir_retry(event, now)
+    assert not should_attempt_ir(event, now)
+    assert should_attempt_ir(event, now + timedelta(hours=1))
+    event.collection_status["transcript_status"] = "FOUND"
+    event.collection_status["official_ir_checked_at"] = now.isoformat()
+    schedule_next_ir_retry(event, now)
+    assert "next_ir_retry_at" not in event.collection_status
+    assert not should_attempt_ir(event, now + timedelta(days=1))
+
+
+def test_report_validator_rejects_llm_generated_chinese_currency_conversion():
+    assert validate_report_text("AI backlog 95 億美元") == ["report_contains_model_generated_currency_unit_conversion"]
+    assert validate_report_text("AI backlog $95B") == []
+    assert "report_contains_self_correction_language" in validate_report_text("營收 46.971 億美元（應為 469.71 億美元）")
