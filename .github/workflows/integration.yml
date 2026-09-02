@@ -41,7 +41,7 @@ jobs:
           PYTHONPATH: src
         run: |
           set -o pipefail
-          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{}}\n' > /tmp/e2e-state.json
+          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{},"provider_health":{}}\n' > /tmp/e2e-state.json
           python -m us_earnings_monitor --state /tmp/e2e-state.json --preview --at "${{ matrix.at }}" --tickers "${{ matrix.ticker }}" 2>&1 | tee e2e.log
           grep -q "PREVIEW_REPORT_BEGIN" e2e.log
           ! grep -q "億美元\|兆美元\|億美金\|兆美金" e2e.log
