@@ -1,0 +1,9 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+work/
+data/*.lock
+data/reports/
+
