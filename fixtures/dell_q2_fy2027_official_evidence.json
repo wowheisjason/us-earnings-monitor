@@ -1,0 +1,37 @@
+{
+  "event": {
+    "event_id": "DELL_FY2027_Q2",
+    "ticker": "DELL",
+    "fiscal_year": 2027,
+    "quarter": "Q2",
+    "first_seen_at": "2026-09-01T16:10:00-04:00",
+    "collection_status": {
+      "official_ir_checked_at": "2026-09-02T09:15:00-04:00",
+      "transcript_status": "FOUND",
+      "earnings_call_status": "completed"
+    }
+  },
+  "evidence": [
+    {
+      "document_key": "sec_edgar:0001571996-26-000039:exhibit991earnings8kq2fy27.htm",
+      "title": "Dell Technologies Form 8-K — Q2 FY2027 earnings release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000039/exhibit991earnings8kq2fy27.htm",
+      "text": "SEC Exhibit 99.1 reports Q2 FY2027 revenue of $47.0B, up 58% YoY; diluted GAAP EPS $6.34, up 273%; non-GAAP diluted EPS $7.04, up 203%; operating cash flow $2.2B. Dell raised FY2027 revenue guidance from $167.0B to $192.0B midpoint, GAAP diluted EPS to $24.37 and non-GAAP diluted EPS to $25.50. Q3 FY2027 guidance is revenue $49.0B midpoint, GAAP diluted EPS $6.10 and non-GAAP diluted EPS $6.50. AI server orders were $60.9B, AI server revenue $16.4B, and ending AI backlog $95B. ISG revenue was $31.8B, up 89%; CSG revenue was $15.0B, up 20%.",
+      "structured_facts": []
+    },
+    {
+      "document_key": "gemini_grounded_ir:dell-q2-financial-tables",
+      "title": "Financial Tables — Dell Technologies Q2 FY2027",
+      "url": "https://investors.delltechnologies.com/static-files/0a4db8b2-db3e-456d-8b27-3648451afbf7",
+      "text": "Official financial tables: total net revenue $46.971B versus $29.776B, +58% YoY; gross margin $9.830B; operating income $5.385B, +204%; net income $4.133B, +255%; diluted EPS $6.34. Operating cash flow $2.225B. Capital expenditures plus capitalized software development costs were $1.239B, implying standard free cash flow of $0.986B using CFO minus capex/capitalized software. AI-Optimized Servers revenue was $16.401B, +100%; Traditional Servers and Networking $10.531B, +122%; Storage $4.850B, +26%; total ISG revenue $31.782B, +89%, with ISG operating income $4.781B and 15.0% segment operating margin. CSG revenue was $15.034B, +20%, and CSG operating income $1.142B. Adjusted free cash flow was $8.149B; the reconciliation includes a $6.667B adjustment for financing receivables and $0.496B for equipment under operating leases, so Adjusted FCF must not be presented as standard FCF.",
+      "structured_facts": []
+    },
+    {
+      "document_key": "gemini_grounded_ir:dell-q2-transcript",
+      "title": "Transcript — Dell Technologies Q2 FY2027 earnings call",
+      "url": "https://investors.delltechnologies.com/static-files/a24f97e4-63b2-460d-a4be-44738826e8ce",
+      "text": "Official earnings-call transcript with analyst Q&A. Management said Q2 AI server orders were $60.9B, AI server revenue $16.4B and ending backlog $95B, while the pipeline was described as multiples of backlog. Dell has more than 6,500 AI Factory customers; enterprise customer counts, repeat buyers, enterprise AI revenue and pipeline all increased. In Mark Newman's Q&A, Jeff Clarke said the 122% growth in traditional servers/networking was primarily from historical enterprise customers and emphasized that demand exceeds supply; AI demand is also growing across neocloud, HFT and enterprise customers. In Katherine Murphy's margin question, management identified scale/operating leverage and a richer Dell-IP storage mix as the main drivers of margin improvement; Dell-IP storage contributes higher-margin revenue. Management guided CSG operating income rate to around 6% in Q3 and Q4. In Wamsi Mohan's Q&A on pricing, demand and receivables, management said larger customers are investing ahead of prior infrastructure and AI plans; many would prefer product sooner, but supply limits current shipments. Customers are ordering further in advance to secure supply. Financing receivables growth was described as a consequence of overall business and AI expansion. In Asiya Merchant's supply question, management said supply remains insufficient and Dell is optimizing available components/configurations; the $25B increase in full-year revenue guidance reflects better ability to shape demand and maximize shipments. These are management statements, not independently verified objective industry facts.",
+      "structured_facts": []
+    }
+  ]
+}
