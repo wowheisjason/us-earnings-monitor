@@ -76,7 +76,7 @@ def schedule_next_ir_retry(event: EarningsEvent, now: datetime) -> None:
 
 
 class IrRetrievalRouter:
-    """Primary Gemini grounded search with a bounded deterministic IR fallback."""
+    """Multi-provider research first, bounded deterministic direct-IR fallback last."""
 
     def __init__(self, research_client: IrResearchClient | None = None):
         self.research_client = research_client
@@ -84,22 +84,34 @@ class IrRetrievalRouter:
     def collect(self, company: Company, event: EarningsEvent, now: datetime, *, dry_run: bool = False) -> RetrievalResult:
         attempts: list[dict[str, Any]] = []
 
-        if not dry_run and self.research_client is not None and os.getenv("GEMINI_IR_ENABLED", "1") != "0":
+        if not dry_run and self.research_client is not None:
             started = time.monotonic()
             try:
                 documents, status = self.research_client.research_official_ir(company, event, now)
-                elapsed = round(time.monotonic() - started, 3)
-                attempts.append({"provider": "gemini_search", "ok": True, "seconds": elapsed,
-                                 "documents": len(documents), "model": status.get("model")})
+                provider_attempts = status.get("provider_attempts", []) or []
+                if provider_attempts:
+                    attempts.extend(provider_attempts)
+                else:
+                    attempts.append({
+                        "provider": status.get("provider", "research_provider"),
+                        "ok": bool(documents and status.get("research_complete")),
+                        "seconds": round(time.monotonic() - started, 3),
+                        "documents": len(documents),
+                        "model": status.get("model"),
+                    })
                 if documents and status.get("research_complete"):
-                    status = {**status, "provider": "gemini_search", "attempts": attempts}
-                    return RetrievalResult(documents, True, status, attempts)
-                attempts[-1]["reason"] = "no_eligible_official_documents"
+                    final_status = {**status, "attempts": attempts}
+                    return RetrievalResult(documents, True, final_status, attempts)
+                if attempts:
+                    attempts[-1].setdefault("reason", "no_eligible_official_documents")
             except Exception as exc:  # noqa: BLE001
-                elapsed = round(time.monotonic() - started, 3)
-                attempts.append({"provider": "gemini_search", "ok": False, "seconds": elapsed,
-                                 "error": f"{type(exc).__name__}: {exc}"[:500]})
-                LOG.warning("Gemini IR retrieval failed for %s: %s", event.event_id, exc)
+                attempts.append({
+                    "provider": "research_chain",
+                    "ok": False,
+                    "seconds": round(time.monotonic() - started, 3),
+                    "error": f"{type(exc).__name__}: {exc}"[:500],
+                })
+                LOG.warning("IR research chain failed for %s: %s", event.event_id, exc)
 
         started = time.monotonic()
         adapter = FastOfficialIrAdapter([event])
