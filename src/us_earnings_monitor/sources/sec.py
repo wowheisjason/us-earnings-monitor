@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
+import re
 from datetime import date, timedelta
 from urllib.parse import urljoin
 
@@ -20,6 +21,7 @@ _RELEVANT_TERMS = (
     "earnings", "financial results", "quarterly results", "annual results", "shareholder letter",
     "investor presentation", "earnings presentation", "results presentation", "press release",
 )
+_EXHIBIT_PERIOD = re.compile(r"(?:q([1-4])|([1-4])q)[^a-z0-9]*fy(20)?(\d{2})", re.IGNORECASE)
 
 
 class SecEdgarAdapter(SourceAdapter):
@@ -145,12 +147,18 @@ class SecEdgarAdapter(SourceAdapter):
         for description, document_type, document_url in rows:
             is_primary = document_type == form
             is_exhibit = document_type.startswith("EX-99")
-            relevant_text = f"{description} {record.get('primaryDocDescription', '')}".casefold()
+            filename = document_url.rsplit("/", 1)[-1]
+            relevant_text = f"{description} {record.get('primaryDocDescription', '')} {filename}".casefold()
             if form in _CURRENT_FORMS and not is_primary and not (is_exhibit and any(term in relevant_text for term in _RELEVANT_TERMS)):
                 continue
             if form.startswith("6-K") and not (is_primary or any(term in relevant_text for term in _RELEVANT_TERMS)):
                 continue
-            title = f"{company.name} Form {form} — {description}"
+            exhibit_period = _EXHIBIT_PERIOD.search(filename)
+            filename_fy = (int(f"20{exhibit_period.group(4)}") if exhibit_period.group(3)
+                           else 2000 + int(exhibit_period.group(4))) if exhibit_period else None
+            filename_quarter = f"Q{exhibit_period.group(1) or exhibit_period.group(2)}" if exhibit_period else None
+            display_description = filename if is_exhibit and exhibit_period else description
+            title = f"{company.name} Form {form} — {display_description}"
             probe = Disclosure("sec_edgar", "probe", company.ticker, title, filing_date, document_url)
             inferred_fy, inferred_quarter = infer_period(probe)
             accepted = str(record.get("acceptanceDateTime") or "")
@@ -163,8 +171,8 @@ class SecEdgarAdapter(SourceAdapter):
                 published_at=published_at,
                 url=document_url,
                 document_url=document_url,
-                fiscal_year=fiscal_year or inferred_fy,
-                quarter=quarter or inferred_quarter,
+                fiscal_year=filename_fy or fiscal_year or inferred_fy,
+                quarter=filename_quarter or quarter or inferred_quarter,
                 period_end=report_date,
                 metadata={"service": self.source_name, "cik": company.cik, "accession": accession,
                           "form": form, "document_type": document_type, "filing_date": filing_date},
