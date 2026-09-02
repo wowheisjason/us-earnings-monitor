@@ -18,11 +18,17 @@ def classify_document(title: str) -> str:
         return "qa"
     if "transcript" in lower or "逐語" in title:
         return "transcript"
+    if "prepared remarks" in lower:
+        return "prepared_remarks"
+    if "financial tables" in lower:
+        return "financial_tables"
+    if "performance review" in lower:
+        return "performance_review"
     if "説明会" in title or "presentation" in lower:
         return "presentation"
-    if "補足" in title or "supplementary" in lower:
+    if "補足" in title or "supplementary" in lower or "supplement" in lower:
         return "supplement"
-    if "決算" in title or "financial results" in lower or "earnings" in lower:
+    if "決算" in title or "financial results" in lower or "earnings" in lower or "press release" in lower:
         return "financial_results"
     return "other"
 
@@ -54,16 +60,13 @@ def event_id(disclosure: Disclosure) -> str | None:
 
 def title_is_earnings(title: str, patterns: list[str]) -> bool:
     value = title.casefold()
+    if classify_document(title) != "other":
+        return True
     return any(pattern in value for pattern in patterns)
 
 
 def align_companion_periods(disclosures: list[Disclosure]) -> None:
-    """Attach same-day companion documents to one unambiguous result period.
-
-    Forecast revisions often mention the next interim period (for example Q2)
-    even when published alongside Q1 results.  Treating every title in
-    isolation would split one earnings event into two reports.
-    """
+    """Attach same-day companion documents to one unambiguous result period."""
     groups: dict[tuple[str, str], list[Disclosure]] = defaultdict(list)
     for disclosure in disclosures:
         if disclosure.ticker:
@@ -100,7 +103,6 @@ def attach(event: EarningsEvent | None, disclosure: Disclosure, now: datetime) -
 
 
 def ready_for_analysis(event: EarningsEvent | None, now: datetime) -> bool:
-    """Run Gemini only in the daily 20:00 America/New_York window."""
+    """Run LLM analysis only in the daily 20:00 America/New_York window."""
     local_time = now.timetz().replace(tzinfo=None)
     return local_time >= time(20, 0)
-
