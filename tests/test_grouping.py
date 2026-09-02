@@ -20,20 +20,24 @@ def test_multiple_documents_share_one_event():
     assert event.documents == ["fixture:a", "fixture:b"]
 
 
-def test_period_and_final_window():
+def test_period_and_missing_event_never_analyzes():
     assert infer_period(disclosure("FY2026 Q2 Financial Results")) == (2026, "Q2")
     assert not ready_for_analysis(None, datetime(2026, 8, 4, 17, 30, tzinfo=ZoneInfo("America/New_York")))
-    assert ready_for_analysis(None, datetime(2026, 8, 4, 20, 0, tzinfo=ZoneInfo("America/New_York")))
+    assert not ready_for_analysis(None, datetime(2026, 8, 4, 20, 0, tzinfo=ZoneInfo("America/New_York")))
 
 
 def test_dell_worded_fiscal_period_title():
     assert infer_period(disclosure("Dell Technologies Fiscal Year 2027 Second Quarter Results")) == (2027, "Q2")
 
 
-def test_only_daily_20h_run_closes_event_aggregation_window():
+def test_event_requires_official_ir_check_instead_of_fixed_20h_clock():
     event = EarningsEvent("SPCX_2026-06-30_Q2", "SPCX", 2026, "Q2", "2026-08-04T16:00:00-04:00", period_end="2026-06-30")
-    assert not ready_for_analysis(event, datetime(2026, 8, 4, 17, 30, tzinfo=ZoneInfo("America/New_York")))
-    assert ready_for_analysis(event, datetime(2026, 8, 4, 20, 0, tzinfo=ZoneInfo("America/New_York")))
+    assert not ready_for_analysis(event, datetime(2026, 8, 4, 20, 0, tzinfo=ZoneInfo("America/New_York")))
+    event.collection_status = {
+        "official_ir_checked_at": "2026-08-04T17:00:00-04:00",
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+    }
+    assert ready_for_analysis(event, datetime(2026, 8, 4, 20, 1, tzinfo=ZoneInfo("America/New_York")))
 
 
 def test_annual_period():
