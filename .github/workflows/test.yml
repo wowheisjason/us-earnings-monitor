@@ -21,7 +21,7 @@ jobs:
           PYTHONPATH: src
         run: pytest -q
 
-  dell-url-context-probe:
+  dell-search-probe:
     if: ${{ github.event_name == 'pull_request' && github.head_ref == 'feat/gemini-grounded-ir-event-clock' }}
     runs-on: ubuntu-latest
     steps:
@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Probe Dell official IR with URL Context only
+      - name: Probe Dell official IR with 2.5 Flash-Lite Search
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PYTHONPATH: src
@@ -38,9 +38,9 @@ jobs:
           python - <<'PY'
           import json
           from us_earnings_monitor.gemini import GeminiClient
-          client = GeminiClient(model="gemini-3.5-flash-lite")
-          result = client._json('''Return JSON only. Use URL Context to inspect these two official Dell Technologies IR URLs:\nhttps://investors.delltechnologies.com/\nhttps://investors.delltechnologies.com/financial-information/quarterly-results\nFor Dell Technologies Fiscal Year 2027 Second Quarter Results, list any exact event-detail or official asset URLs visible in the provided pages. Do not fetch nested links. Schema: {"event_urls":[string],"asset_urls":[string],"titles":[string]}.''', 'dell_url_probe', tools=[{"url_context": {}}])
-          print("URL_CONTEXT_PROBE_BEGIN")
+          client = GeminiClient(model="gemini-2.5-flash-lite")
+          result = client._json('''Return JSON only. Use Google Search to find Dell Technologies Fiscal Year 2027 Second Quarter official investor-relations materials. Return ONLY URLs on investors.delltechnologies.com. Find the exact earnings event page, press release/financial tables/performance review if available, and official transcript. Schema: {"event_urls":[string],"asset_urls":[string],"titles":[string]}.''', 'dell_search_probe', tools=[{"google_search": {}}])
+          print("SEARCH_PROBE_BEGIN")
           print(json.dumps(result, ensure_ascii=False, indent=2))
-          print("URL_CONTEXT_PROBE_END")
+          print("SEARCH_PROBE_END")
           PY
