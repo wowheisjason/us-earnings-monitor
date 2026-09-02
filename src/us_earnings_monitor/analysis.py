@@ -3,11 +3,10 @@ from __future__ import annotations
 import os
 from typing import Protocol
 
-from .gemini import GeminiClient
+from .gemini_v2 import GeminiV2Client
 
 
 class AnalysisClient(Protocol):
-    def research_official_ir(self, company, event, now): ...
     def extract_facts(self, event, evidence) -> dict: ...
     def analyze(self, event, facts: dict, evidence) -> dict: ...
     def audit(self, event, facts: dict, analysis: dict, evidence) -> dict: ...
@@ -15,17 +14,25 @@ class AnalysisClient(Protocol):
     def material_update(self, facts: dict, previous_count: int, current_count: int) -> bool: ...
 
 
-def build_analysis_client(provider: str | None = None) -> AnalysisClient:
-    """Return the configured analysis adapter.
+class IrResearchClient(Protocol):
+    def research_official_ir(self, company, event, now): ...
 
-    Automated production defaults to Gemini because the project already has a
-    Gemini API key and can stay within its free tier. The rest of the pipeline
-    depends only on this protocol, so another provider can be added without
-    changing SEC discovery, validation, state, or Telegram delivery.
-    """
-    selected = (provider or os.getenv("ANALYSIS_PROVIDER", "gemini")).strip().casefold()
+
+def _provider(value: str | None, env_name: str) -> str:
+    return (value or os.getenv(env_name, "gemini")).strip().casefold()
+
+
+def build_analysis_client(provider: str | None = None) -> AnalysisClient:
+    """Build the LLM analysis adapter independently from retrieval."""
+    selected = _provider(provider, "ANALYSIS_PROVIDER")
     if selected == "gemini":
-        return GeminiClient()
-    raise RuntimeError(
-        f"Unsupported ANALYSIS_PROVIDER={selected!r}. Automated production currently supports 'gemini'."
-    )
+        return GeminiV2Client()
+    raise RuntimeError(f"Unsupported ANALYSIS_PROVIDER={selected!r}. Currently supported: 'gemini'.")
+
+
+def build_ir_research_client(provider: str | None = None) -> IrResearchClient:
+    """Build the official-IR discovery provider independently from analysis."""
+    selected = _provider(provider, "IR_RESEARCH_PROVIDER")
+    if selected == "gemini":
+        return GeminiV2Client()
+    raise RuntimeError(f"Unsupported IR_RESEARCH_PROVIDER={selected!r}. Currently supported: 'gemini'.")
