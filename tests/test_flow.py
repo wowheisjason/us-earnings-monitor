@@ -23,8 +23,8 @@ def test_filter_dedup_and_event_grouping(tmp_path):
 
 def test_full_watchlist_has_ciks_and_ir_allowlist():
     companies, _ = load_watchlist(ROOT / "watchlist.yaml")
-    assert len(companies) == 36
-    assert {company.ticker for company in companies} >= {"SPCX", "CBRS", "SKHY", "NVDA", "MSFT"}
+    assert len(companies) == 37
+    assert {company.ticker for company in companies} >= {"SPCX", "CBRS", "SKHY", "NVDA", "MSFT", "DELL"}
     assert all(company.cik.isdigit() and len(company.cik) == 10 for company in companies)
     assert all(company.ir_index_url and company.ir_index_url.startswith("https://") for company in companies)
 
