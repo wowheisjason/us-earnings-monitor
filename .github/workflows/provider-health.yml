@@ -2,12 +2,6 @@ name: Provider capability preflight
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - feat/gemini-grounded-ir-event-clock
-    paths:
-      - scripts/provider_preflight.py
-      - .github/workflows/provider-health.yml
 
 permissions:
   contents: read
