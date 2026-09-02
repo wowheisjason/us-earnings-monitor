@@ -1,0 +1,6 @@
+[
+  {"source":"sec_edgar","source_id":"demo-spcx-10q","ticker":"SPCX","title":"SpaceX Form 10-Q — Q2 2026 Financial Results","published_at":"2026-08-04T16:00:00-04:00","url":"https://example.test/spcx/10q.htm","document_url":"https://example.test/spcx/10q.htm","fiscal_year":2026,"quarter":"Q2","period_end":"2026-06-30","document_kind":"financial_results","metadata":{"form":"10-Q"}},
+  {"source":"sec_edgar","source_id":"demo-spcx-release","ticker":"SPCX","title":"SpaceX Form 8-K — Q2 2026 Earnings Release","published_at":"2026-08-04T16:02:00-04:00","url":"https://example.test/spcx/release.htm","document_url":"https://example.test/spcx/release.htm","fiscal_year":2026,"quarter":"Q2","period_end":"2026-06-30","document_kind":"financial_results","metadata":{"form":"8-K"}},
+  {"source":"sec_edgar","source_id":"demo-spcx-director","ticker":"SPCX","title":"SpaceX Form 8-K — Director appointment","published_at":"2026-08-04T16:04:00-04:00","url":"https://example.test/spcx/other.htm","document_url":"https://example.test/spcx/other.htm","document_kind":"other","metadata":{"form":"8-K"}}
+]
+
