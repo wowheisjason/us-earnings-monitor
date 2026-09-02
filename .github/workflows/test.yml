@@ -21,7 +21,7 @@ jobs:
           PYTHONPATH: src
         run: pytest -q
 
-  dell-capability-probe:
+  dell-downstream-preview:
     if: ${{ github.event_name == 'pull_request' && github.head_ref == 'feat/gemini-grounded-ir-event-clock' }}
     runs-on: ubuntu-latest
     steps:
@@ -30,21 +30,44 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Probe available models and known Dell transcript URL
+      - name: Analyze verified Dell FY2027 Q2 official evidence
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PYTHONPATH: src
         run: |
           python - <<'PY'
           import json
+          from pathlib import Path
           from us_earnings_monitor.gemini import GeminiClient
-          catalog_client = GeminiClient()
-          print("MODEL_CATALOG_BEGIN")
-          print(json.dumps(catalog_client._available_models(), ensure_ascii=False, indent=2))
-          print("MODEL_CATALOG_END")
-          client = GeminiClient(model="gemini-3.5-flash-lite")
-          result = client._json('''Return JSON only. Use URL Context to read this official Dell Technologies transcript URL:\nhttps://investors.delltechnologies.com/static-files/a24f97e4-63b2-460d-a4be-44738826e8ce\nConfirm whether it is Dell Technologies Fiscal Year 2027 Second Quarter Results transcript and extract: the earnings-call Q&A speaker names plus two material Q&A topics. Schema: {"is_target_transcript":boolean,"speakers":[string],"qa_topics":[string]}.''', 'dell_transcript_url_probe', tools=[{"url_context": {}}])
-          print("TRANSCRIPT_URL_CONTEXT_BEGIN")
-          print(json.dumps(result, ensure_ascii=False, indent=2))
-          print("TRANSCRIPT_URL_CONTEXT_END")
+          from us_earnings_monitor.models import EarningsEvent, Evidence
+          from us_earnings_monitor.validation import validate_extracted_facts
+
+          class NoToolGeminiClient(GeminiClient):
+              def _json(self, prompt, stage, tools=None):
+                  return super()._json(prompt, stage, tools=None)
+
+          fixture = json.loads(Path('fixtures/dell_q2_fy2027_official_evidence.json').read_text(encoding='utf-8'))
+          event = EarningsEvent(**fixture['event'])
+          evidence = [Evidence(**item) for item in fixture['evidence']]
+          client = NoToolGeminiClient(model='gemini-3.5-flash-lite')
+
+          facts = client.extract_facts(event, evidence)
+          issues = validate_extracted_facts(facts)
+          facts['collection_status'] = event.collection_status
+          facts['deterministic_validation_issues'] = issues
+          analysis = client.analyze(event, facts, evidence)
+          audit = client.audit(event, facts, analysis, evidence)
+          if audit.get('overall_score', 0) < 90 or audit.get('unsupported_claims') or audit.get('numerical_errors') or audit.get('critical_issues') or issues or audit.get('pass') is not True:
+              analysis = client.revise(facts, analysis, audit)
+              audit = client.audit(event, facts, analysis, evidence)
+
+          print('DELL_PREVIEW_FACTS_BEGIN')
+          print(json.dumps(facts, ensure_ascii=False, indent=2))
+          print('DELL_PREVIEW_FACTS_END')
+          print('DELL_PREVIEW_AUDIT_BEGIN')
+          print(json.dumps(audit, ensure_ascii=False, indent=2))
+          print('DELL_PREVIEW_AUDIT_END')
+          print('DELL_PREVIEW_REPORT_BEGIN')
+          print(audit.get('corrected_telegram_draft') or analysis.get('telegram_draft') or '')
+          print('DELL_PREVIEW_REPORT_END')
           PY
