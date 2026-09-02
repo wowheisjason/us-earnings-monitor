@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup
 
 from ..grouping import classify_document, infer_period
 from ..models import Company, Disclosure, EarningsEvent
+from ..transport import ChromeImpersonatingSession
 
 LOG = logging.getLogger(__name__)
 
@@ -93,7 +94,9 @@ class OfficialIrAdapter:
         self.events_by_ticker: dict[str, list[EarningsEvent]] = {}
         for event in events:
             self.events_by_ticker.setdefault(event.ticker, []).append(event)
-        self.session = session or requests.Session()
+        # Production IR fetches use a Chrome-compatible TLS/HTTP fingerprint.
+        # Tests may inject a deterministic requests-like fake session.
+        self.session = session if session is not None else ChromeImpersonatingSession()
         self.headers = {"User-Agent": os.getenv("USER_AGENT", "us-earnings-monitor/0.2")}
         self.checked_tickers: set[str] = set()
         self.partial_failure_tickers: set[str] = set()
@@ -129,9 +132,6 @@ class OfficialIrAdapter:
         event_pages: list[str] = []
         seen_urls: set[str] = set()
 
-        # Only an explicit H1 may define the whole page's fiscal event. Broad
-        # IR indexes often contain many H2 quarter headings and must not inherit
-        # the first quarter across unrelated historical assets.
         h1 = soup.find("h1")
         page_heading = h1.get_text(" ", strip=True) if h1 is not None else ""
         page_event = self._matching_event(page_heading, events, day) if page_heading else None
@@ -149,8 +149,6 @@ class OfficialIrAdapter:
             if event is None:
                 continue
 
-            # An HTML earnings page may itself be useful evidence AND contain
-            # additional assets. Follow it before classifying it as a document.
             if allow_event_links and _looks_like_event_page(target, context):
                 event_pages.append(target)
 
@@ -228,7 +226,6 @@ class OfficialIrAdapter:
 
 
 def active_events_for_ir(events: list[EarningsEvent], now: datetime, days: int = 14) -> list[EarningsEvent]:
-    """Return events within a bounded retry window measured from first detection."""
     cutoff = now - timedelta(days=days)
     selected: list[EarningsEvent] = []
     for event in events:
