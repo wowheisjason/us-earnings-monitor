@@ -2,12 +2,6 @@ name: US earnings monitor live integration
 
 on:
   workflow_dispatch:
-    inputs:
-      tickers:
-        description: "Comma-separated subset; default regression set is DELL,MSFT,NVDA"
-        required: false
-        default: "DELL,MSFT,NVDA"
-        type: string
 
 permissions:
   contents: read
@@ -24,7 +18,6 @@ jobs:
             at: "2026-07-29T21:00:00-04:00"
           - ticker: NVDA
             at: "2026-08-26T21:00:00-04:00"
-    if: ${{ contains(format(',{0},', inputs.tickers), format(',{0},', matrix.ticker)) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
