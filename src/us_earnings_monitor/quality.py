@@ -46,6 +46,21 @@ def source_manifest(documents: list[Disclosure]) -> dict:
     }
 
 
+def sec_first_fallback_active(event: EarningsEvent, documents: list[Disclosure]) -> bool:
+    """Allow a prompt SEC-only v1 after an attempted but incomplete IR retrieval.
+
+    This is deliberately narrower than simply 'IR missing': an IR attempt must
+    have occurred and failed/incompletely returned. The event remains eligible
+    for later IR retries; any newly collected transcript/Q&A can produce v2.
+    """
+    manifest = source_manifest(documents)
+    return bool(
+        manifest["has_primary_results"]
+        and not manifest["has_official_ir"]
+        and event.collection_status.get("official_ir_last_attempt_incomplete")
+    )
+
+
 def update_collection_status(
     event: EarningsEvent,
     documents: list[Disclosure],
@@ -87,15 +102,28 @@ def publication_gate(
 ) -> tuple[bool, list[str], dict]:
     """Deterministic pre-LLM completeness gate.
 
-    Publish as soon as a transcript/Q&A is found. If no transcript is found,
-    keep a short event-specific collection window open, then allow a v1 report
-    after at least one completed official-IR search. A later transcript creates
-    new evidence and can trigger a material v2 update.
+    Preferred path: publish when transcript/Q&A is found, or after the normal
+    collection window and a completed official-IR check.
+
+    Degraded path: if SEC primary results are already present and IR retrieval
+    was attempted but could not complete, publish an immediate SEC-only v1.
+    The event continues to be retried for IR; later official IR or transcript
+    evidence can create a v2 report instead of delaying the time-sensitive v1.
     """
     manifest = source_manifest(documents)
     reasons: list[str] = []
     if not manifest["has_primary_results"]:
         reasons.append("missing_primary_results")
+
+    sec_only_v1 = sec_first_fallback_active(event, documents)
+    if sec_only_v1:
+        manifest = {
+            **manifest,
+            "transcript_status": event.collection_status.get("transcript_status", TRANSCRIPT_UNKNOWN),
+            "official_ir_checked_at": event.collection_status.get("official_ir_checked_at"),
+            "publication_mode": "sec_only_v1_ir_pending",
+        }
+        return not reasons, reasons, manifest
 
     transcript_status = event.collection_status.get("transcript_status", TRANSCRIPT_UNKNOWN)
     age = _event_age(event, now)
@@ -110,6 +138,10 @@ def publication_gate(
     if not event.collection_status.get("official_ir_checked_at"):
         reasons.append("official_ir_not_checked")
 
-    manifest = {**manifest, "transcript_status": transcript_status,
-                "official_ir_checked_at": event.collection_status.get("official_ir_checked_at")}
+    manifest = {
+        **manifest,
+        "transcript_status": transcript_status,
+        "official_ir_checked_at": event.collection_status.get("official_ir_checked_at"),
+        "publication_mode": "integrated_ir" if manifest["has_official_ir"] else "post_ir_check_v1",
+    }
     return not reasons, reasons, manifest
