@@ -13,6 +13,10 @@ from .sources import OfficialIrAdapter
 LOG = logging.getLogger("us_earnings_monitor")
 
 
+class FastOfficialIrAdapter(OfficialIrAdapter):
+    timeout = int(os.getenv("IR_DIRECT_TIMEOUT_SECONDS", "8"))
+
+
 class IrResearchClient(Protocol):
     def research_official_ir(self, company: Company, event: EarningsEvent, now: datetime) -> tuple[list[Disclosure], dict[str, Any]]: ...
 
@@ -72,14 +76,7 @@ def schedule_next_ir_retry(event: EarningsEvent, now: datetime) -> None:
 
 
 class IrRetrievalRouter:
-    """Primary Gemini grounded search with a short deterministic IR fallback.
-
-    The router isolates retrieval failures from analysis. A provider timeout or
-    quota error is telemetry, not a reason to corrupt or discard existing SEC
-    evidence. Gemini Search is the preferred heterogeneous-site discovery path;
-    the legacy crawler remains a bounded fallback rather than a production
-    dependency.
-    """
+    """Primary Gemini grounded search with a bounded deterministic IR fallback."""
 
     def __init__(self, research_client: IrResearchClient | None = None):
         self.research_client = research_client
@@ -105,7 +102,7 @@ class IrRetrievalRouter:
                 LOG.warning("Gemini IR retrieval failed for %s: %s", event.event_id, exc)
 
         started = time.monotonic()
-        adapter = OfficialIrAdapter([event])
+        adapter = FastOfficialIrAdapter([event])
         try:
             documents = adapter.discover([company], now.date())
             complete = company.ticker in adapter.checked_tickers
