@@ -81,6 +81,20 @@ def test_ir_follows_one_same_host_event_page_for_assets():
     assert any(call[0] == detail for call in session.calls)
 
 
+def test_ir_follows_html_event_page_and_keeps_nested_transcript():
+    index = "https://ir.example/"
+    detail = "https://ir.example/events/q2-results.html"
+    transcript = "https://ir.example/static-files/transcript-uuid"
+    session = FakeSession({
+        index: f"<a href='{detail}'>Q2 2026 Financial Results</a>",
+        detail: f"<h1>Q2 2026 Financial Results</h1><a href='{transcript}'>Transcript</a>",
+    })
+    company = Company("SPCX", "SpaceX", "0001181412", index)
+    docs = OfficialIrAdapter([event()], session=session).discover([company], date(2026, 8, 4))
+    assert any(doc.document_url == detail for doc in docs)
+    assert any(doc.document_url == transcript and doc.title == "Transcript" for doc in docs)
+
+
 def test_dell_q2_fy2027_event_page_discovers_official_transcript():
     index = "https://investors.delltechnologies.com/"
     detail = "https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results"
