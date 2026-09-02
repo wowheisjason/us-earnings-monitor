@@ -30,11 +30,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Clean-state Dell E2E with Gemini 2.5 Search
+      - name: Clean-state Dell E2E with Gemini 3.6 Interactions Search
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_IR_MODEL: gemini-2.5-flash
-          GEMINI_IR_FALLBACK_MODEL: gemini-2.5-flash-lite
+          GEMINI_IR_MODEL: gemini-3.6-flash
+          GEMINI_IR_FALLBACK_MODEL: gemini-3.5-flash
           GEMINI_ANALYSIS_MODEL: gemini-3.5-flash-lite
           GEMINI_ANALYSIS_FALLBACK_MODEL: gemini-flash-lite-latest
           GEMINI_IR_TIMEOUT_SECONDS: "60"
