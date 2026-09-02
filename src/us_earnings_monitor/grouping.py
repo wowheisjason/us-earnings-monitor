@@ -108,12 +108,16 @@ def attach(event: EarningsEvent | None, disclosure: Disclosure, now: datetime) -
 
 
 def ready_for_analysis(event: EarningsEvent | None, now: datetime, fallback_wait_hours: int = 4) -> bool:
-    """Analyze when the event evidence is ready, not at a fixed wall-clock time."""
+    """Analyze when evidence is ready; allow SEC-first v1 during IR degradation."""
     if event is None:
         return False
     status = event.collection_status
     transcript_status = status.get("transcript_status")
     if transcript_status == "FOUND":
+        return True
+    # IR retrieval was attempted but could not complete. The publication gate
+    # will still require primary SEC results before allowing SEC-only v1.
+    if status.get("official_ir_last_attempt_incomplete"):
         return True
     if not status.get("official_ir_checked_at"):
         return False
