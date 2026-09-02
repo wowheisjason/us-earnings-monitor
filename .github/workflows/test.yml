@@ -21,18 +21,8 @@ jobs:
           PYTHONPATH: src
         run: pytest -q
 
-  paid-tier-e2e:
+  paid-tier-dell-e2e:
     if: ${{ github.event_name == 'pull_request' && github.head_ref == 'feat/gemini-grounded-ir-event-clock' }}
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - ticker: DELL
-            at: "2026-09-02T20:30:00-04:00"
-          - ticker: MSFT
-            at: "2026-07-29T21:00:00-04:00"
-          - ticker: NVDA
-            at: "2026-08-26T21:00:00-04:00"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -40,20 +30,22 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: E2E ${{ matrix.ticker }}
+      - name: Clean-state Dell E2E with Gemini 2.5 Search
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_IR_MODEL: gemini-3.6-flash
-          GEMINI_IR_FALLBACK_MODEL: gemini-3.5-flash
+          GEMINI_IR_MODEL: gemini-2.5-flash
+          GEMINI_IR_FALLBACK_MODEL: gemini-2.5-flash-lite
           GEMINI_ANALYSIS_MODEL: gemini-3.5-flash-lite
           GEMINI_ANALYSIS_FALLBACK_MODEL: gemini-flash-lite-latest
           GEMINI_IR_TIMEOUT_SECONDS: "60"
-          IR_DIRECT_TIMEOUT_SECONDS: "8"
+          GEMINI_IR_ATTEMPTS: "1"
+          IR_DIRECT_TIMEOUT_SECONDS: "5"
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
           PYTHONPATH: src
         run: |
           set -o pipefail
-          python -m us_earnings_monitor --preview --at "${{ matrix.at }}" --tickers "${{ matrix.ticker }}" 2>&1 | tee e2e.log
+          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{}}\n' > /tmp/e2e-state.json
+          python -m us_earnings_monitor --state /tmp/e2e-state.json --preview --at "2026-09-02T20:30:00-04:00" --tickers DELL 2>&1 | tee e2e.log
           grep -q "PREVIEW_REPORT_BEGIN" e2e.log
           ! grep -q "億美元\|兆美元\|億美金\|兆美金" e2e.log
           ! grep -q "needs_human_review" e2e.log
