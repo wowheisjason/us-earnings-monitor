@@ -7,6 +7,7 @@ from us_earnings_monitor.quality import (
     TRANSCRIPT_FOUND,
     TRANSCRIPT_NOT_FOUND,
     publication_gate,
+    source_manifest,
     update_collection_status,
 )
 
@@ -21,9 +22,9 @@ def result_doc() -> Disclosure:
     )
 
 
-def transcript_doc() -> Disclosure:
+def transcript_doc(source="official_ir") -> Disclosure:
     return Disclosure(
-        "official_ir", "t1", "DELL", "Transcript",
+        source, "t1", "DELL", "Transcript",
         "2026-09-01T20:00:00-04:00", "https://ir.example/static-files/uuid",
         document_url="https://ir.example/static-files/uuid", fiscal_year=2027, quarter="Q2",
         document_kind="transcript",
@@ -65,3 +66,9 @@ def test_found_transcript_allows_early_publication():
     assert allowed
     assert reasons == []
     assert manifest["has_transcript_or_qa"]
+
+
+def test_openai_grounded_transcript_counts_as_official_ir():
+    manifest = source_manifest([result_doc(), transcript_doc("openai_web_ir")])
+    assert manifest["has_official_ir"] is True
+    assert manifest["has_transcript_or_qa"] is True
