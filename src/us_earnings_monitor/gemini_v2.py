@@ -17,14 +17,28 @@ _NO_UNIT_CONVERSION = """
 """
 
 
-class GeminiV2Client(GeminiClient):
-    """Production Gemini client with explicit per-stage model routing.
+def _safe_error_detail(response: requests.Response | None) -> str:
+    """Expose provider quota/status diagnostics without logging credentials."""
+    if response is None:
+        return ""
+    try:
+        payload = response.json()
+    except ValueError:
+        return response.text[:600].replace("\n", " ")
+    error = payload.get("error", payload) if isinstance(payload, dict) else payload
+    if isinstance(error, dict):
+        compact = {
+            "code": error.get("code"),
+            "status": error.get("status"),
+            "message": error.get("message"),
+            "details": error.get("details"),
+        }
+        return json.dumps(compact, ensure_ascii=False)[:1200]
+    return str(error)[:600]
 
-    The legacy client enumerated and retried many models and used URL Context in
-    analysis/audit. V2 pins a small model set, uses Google Search only for IR
-    discovery, and analyzes the already-persisted evidence bundle without a
-    second network dependency.
-    """
+
+class GeminiV2Client(GeminiClient):
+    """Production Gemini client with explicit per-stage model routing."""
 
     def _stage_models(self, stage: str) -> list[str]:
         if stage == "ir_research":
@@ -62,17 +76,20 @@ class GeminiV2Client(GeminiClient):
                     response.raise_for_status()
                 except requests.HTTPError as exc:
                     last_error = exc
-                    status = exc.response.status_code if exc.response is not None else 0
+                    provider_response = exc.response
+                    status = provider_response.status_code if provider_response is not None else 0
+                    detail = _safe_error_detail(provider_response)
                     if status not in _TRANSIENT:
-                        LOG.warning("Gemini model=%s stage=%s rejected request HTTP %s", model, stage, status)
+                        LOG.warning("Gemini model=%s stage=%s rejected HTTP=%s detail=%s", model, stage, status, detail)
                         break
                     retry_after = 0.0
-                    if exc.response is not None:
+                    if provider_response is not None:
                         try:
-                            retry_after = float(exc.response.headers.get("Retry-After", "0") or 0)
+                            retry_after = float(provider_response.headers.get("Retry-After", "0") or 0)
                         except ValueError:
                             retry_after = 0.0
-                    LOG.warning("Gemini model=%s stage=%s transient HTTP %s attempt=%d", model, stage, status, attempt + 1)
+                    LOG.warning("Gemini model=%s stage=%s transient HTTP=%s attempt=%d detail=%s",
+                                model, stage, status, attempt + 1, detail)
                     if attempt + 1 < attempts:
                         time.sleep(min(5.0, max(1.0, retry_after)))
                     continue
