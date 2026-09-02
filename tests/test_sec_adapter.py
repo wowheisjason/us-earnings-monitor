@@ -22,7 +22,7 @@ class Session:
             }}})
         html = b'''<table class="tableFile"><tr><th>Seq</th></tr>
         <tr><td>1</td><td>8-K</td><td><a href="spcx-8k.htm">spcx-8k.htm</a></td><td>8-K</td><td>1</td></tr>
-        <tr><td>2</td><td>Q2 2026 Earnings Release</td><td><a href="earnings.htm">earnings.htm</a></td><td>EX-99.1</td><td>1</td></tr>
+        <tr><td>2</td><td>EX-99.1</td><td><a href="exhibit991earnings8kq2fy27.htm">exhibit991earnings8kq2fy27.htm</a></td><td>EX-99.1</td><td>1</td></tr>
         <tr><td>3</td><td>Employment agreement</td><td><a href="other.htm">other.htm</a></td><td>EX-10.1</td><td>1</td></tr></table>'''
         return Response(content=html)
 
@@ -33,5 +33,14 @@ def test_sec_discovers_periodic_filing_and_relevant_earnings_exhibit():
     assert len(docs) == 3
     assert {doc.metadata["document_type"] for doc in docs} == {"8-K", "EX-99.1", "10-Q"}
     assert all(doc.period_end == "2026-06-30" for doc in docs)
-    assert all((doc.fiscal_year, doc.quarter) == (2026, "Q2") for doc in docs)
+    periodic = next(doc for doc in docs if doc.metadata["document_type"] == "10-Q")
+    assert (periodic.fiscal_year, periodic.quarter) == (2026, "Q2")
+
+
+def test_sec_exhibit_filename_supplies_earnings_period_when_10q_is_not_yet_filed():
+    company = Company("DELL", "Dell Technologies", "0001571996")
+    docs = SecEdgarAdapter(session=Session()).discover([company], date(2026, 8, 4))
+    exhibit = next(doc for doc in docs if doc.metadata["document_type"] == "EX-99.1")
+    assert "earnings" in exhibit.title.casefold()
+    assert (exhibit.fiscal_year, exhibit.quarter) == (2027, "Q2")
 
