@@ -21,7 +21,7 @@ jobs:
           PYTHONPATH: src
         run: pytest -q
 
-  dell-live-preview:
+  dell-url-context-probe:
     if: ${{ github.event_name == 'pull_request' && github.head_ref == 'feat/gemini-grounded-ir-event-clock' }}
     runs-on: ubuntu-latest
     steps:
@@ -30,9 +30,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Run Dell FY2027 Q2 live preview
+      - name: Probe Dell official IR with URL Context only
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
           PYTHONPATH: src
-        run: python -m us_earnings_monitor --preview --at "2026-09-02T20:30:00-04:00" --tickers DELL
+        run: |
+          python - <<'PY'
+          import json
+          from us_earnings_monitor.gemini import GeminiClient
+          client = GeminiClient()
+          result = client._json('''Return JSON only. Use URL Context to inspect these two official Dell Technologies IR URLs:\nhttps://investors.delltechnologies.com/\nhttps://investors.delltechnologies.com/financial-information/quarterly-results\nFor Dell Technologies Fiscal Year 2027 Second Quarter Results, list any exact event-detail or official asset URLs visible in the provided pages. Do not fetch nested links. Schema: {"event_urls":[string],"asset_urls":[string],"titles":[string]}.''', 'dell_url_probe', tools=[{"url_context": {}}])
+          print("URL_CONTEXT_PROBE_BEGIN")
+          print(json.dumps(result, ensure_ascii=False, indent=2))
+          print("URL_CONTEXT_PROBE_END")
+          PY
