@@ -45,6 +45,8 @@ pytest -q
 
 乾跑不下載文件、不呼叫 Gemini、不寫 state、不發 Telegram。首次部署請用 workflow dispatch 勾選 `initialize_baseline` 一次，將現有文件視為已處理，避免把舊申報當成新財報；不要同時勾選 `dry_run`。
 
+需要端到端驗證時，workflow dispatch 可填 `test_at`（America/New_York ISO 時間），以該日期的 SEC 申報跑一次；這會使用 Gemini 並推送 Telegram，僅限人工授權測試。
+
 ## GitHub 設定
 
 在 **Settings → Secrets and variables → Actions** 新增三個 secrets：
