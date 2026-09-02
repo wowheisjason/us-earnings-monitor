@@ -1,0 +1,11 @@
+beautifulsoup4==4.13.4
+lxml==5.3.1
+PyYAML==6.0.2
+requests==2.32.3
+pypdf==5.4.0
+cryptography>=43.0.0
+openpyxl==3.1.5
+python-dotenv==1.1.0
+tzdata==2025.2
+pytest==8.3.5
+
