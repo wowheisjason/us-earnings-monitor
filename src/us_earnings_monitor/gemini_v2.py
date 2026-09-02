@@ -17,6 +17,14 @@ _NO_UNIT_CONVERSION = """
 """
 
 
+class GeminiSearchUnavailable(RuntimeError):
+    """Search-specific provider outage/quota state; inference may still be healthy."""
+
+    def __init__(self, message: str, *, category: str = "search_unavailable"):
+        super().__init__(message)
+        self.category = category
+
+
 def _safe_error_detail(response: requests.Response | None) -> str:
     if response is None:
         return ""
@@ -34,6 +42,22 @@ def _safe_error_detail(response: requests.Response | None) -> str:
         }
         return json.dumps(compact, ensure_ascii=False)[:1200]
     return str(error)[:600]
+
+
+def _shared_search_quota_failure(status: int, detail: str) -> bool:
+    """Detect account/project-level Search Grounding quota blocks.
+
+    Interactions currently often omits quota IDs, so the stable signal is the
+    generic billing/quota 429 returned identically across Gemini 3.x models.
+    Treat it as shared Search capability failure instead of wasting fallback
+    model calls inside the same run.
+    """
+    value = detail.casefold()
+    return status == 429 and (
+        "check your plan and billing details" in value
+        or "exceeded your current quota" in value
+        or "resource_exhausted" in value
+    )
 
 
 def _interaction_text(payload: dict[str, Any]) -> str:
@@ -74,6 +98,10 @@ def _interaction_grounding(payload: dict[str, Any]) -> dict[str, Any]:
 class GeminiV2Client(GeminiClient):
     """Production Gemini client with explicit stage routing and modern IR search."""
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._search_circuit_reason: str | None = None
+
     def _stage_models(self, stage: str) -> list[str]:
         if stage == "ir_research":
             primary = os.getenv("GEMINI_IR_MODEL", "gemini-3.6-flash")
@@ -84,6 +112,9 @@ class GeminiV2Client(GeminiClient):
         return list(dict.fromkeys(model.removeprefix("models/") for model in (primary, fallback) if model))
 
     def _interaction_json(self, prompt: str, stage: str) -> dict[str, Any]:
+        if self._search_circuit_reason:
+            raise GeminiSearchUnavailable(self._search_circuit_reason, category="search_quota_blocked")
+
         timeout = int(os.getenv("GEMINI_IR_TIMEOUT_SECONDS", "60"))
         attempts = int(os.getenv("GEMINI_IR_ATTEMPTS", "2"))
         last_error: Exception | None = None
@@ -107,6 +138,9 @@ class GeminiV2Client(GeminiClient):
                     detail = _safe_error_detail(provider_response)
                     LOG.warning("Gemini Interactions model=%s stage=%s HTTP=%s attempt=%d detail=%s",
                                 model, stage, status, attempt + 1, detail)
+                    if _shared_search_quota_failure(status, detail):
+                        self._search_circuit_reason = f"Gemini Search Grounding quota blocked: {detail[:500]}"
+                        raise GeminiSearchUnavailable(self._search_circuit_reason, category="search_quota_blocked") from exc
                     if status not in _TRANSIENT:
                         break
                     if attempt + 1 < attempts:
