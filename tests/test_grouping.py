@@ -26,6 +26,10 @@ def test_period_and_final_window():
     assert ready_for_analysis(None, datetime(2026, 8, 4, 20, 0, tzinfo=ZoneInfo("America/New_York")))
 
 
+def test_dell_worded_fiscal_period_title():
+    assert infer_period(disclosure("Dell Technologies Fiscal Year 2027 Second Quarter Results")) == (2027, "Q2")
+
+
 def test_only_daily_20h_run_closes_event_aggregation_window():
     event = EarningsEvent("SPCX_2026-06-30_Q2", "SPCX", 2026, "Q2", "2026-08-04T16:00:00-04:00", period_end="2026-06-30")
     assert not ready_for_analysis(event, datetime(2026, 8, 4, 17, 30, tzinfo=ZoneInfo("America/New_York")))
@@ -42,4 +46,3 @@ def test_same_day_earnings_release_uses_10q_anchor_period():
     align_companion_periods([result, release])
     assert event_id(result) == "SPCX_2026-06-30_Q2"
     assert event_id(release) == "SPCX_2026-06-30_Q2"
-
