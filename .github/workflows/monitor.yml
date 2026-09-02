@@ -25,6 +25,11 @@ on:
         required: false
         default: false
         type: boolean
+      test_at:
+        description: "Optional historical America/New_York ISO time, for an authorized end-to-end test"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -51,12 +56,14 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          TEST_AT: ${{ inputs.test_at }}
           PYTHONPATH: src
         run: |
-          args=""
-          if [ "${{ inputs.dry_run }}" = "true" ]; then args="--dry-run"; fi
-          if [ "${{ inputs.initialize_baseline }}" = "true" ]; then args="--baseline"; fi
-          python -m us_earnings_monitor $args
+          args=()
+          if [ "${{ inputs.dry_run }}" = "true" ]; then args+=(--dry-run); fi
+          if [ "${{ inputs.initialize_baseline }}" = "true" ]; then args+=(--baseline); fi
+          if [ -n "$TEST_AT" ]; then args+=(--at "$TEST_AT"); fi
+          python -m us_earnings_monitor "${args[@]}"
       - name: Persist monitor state
         if: ${{ !inputs.dry_run }}
         run: |
