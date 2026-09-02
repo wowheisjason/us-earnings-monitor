@@ -2,8 +2,10 @@ import json
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
+import requests
+
 from us_earnings_monitor.extract import EvidenceExtractor
-from us_earnings_monitor.gemini_v2 import GeminiV2Client
+from us_earnings_monitor.gemini_v2 import GeminiSearchUnavailable, GeminiV2Client
 from us_earnings_monitor.grouping import ready_for_analysis
 from us_earnings_monitor.models import Company, EarningsEvent
 from us_earnings_monitor.retrieval import schedule_next_ir_retry, should_attempt_ir
@@ -22,7 +24,9 @@ class FakeResponse:
 
     def raise_for_status(self):
         if self.status_code >= 400:
-            raise RuntimeError(f"HTTP {self.status_code}")
+            error = requests.HTTPError(f"HTTP {self.status_code}")
+            error.response = self
+            raise error
 
 
 class FakeGeminiSession:
@@ -46,6 +50,20 @@ class FakeGeminiSession:
             "candidates": [{"content": {"parts": [{"text": json.dumps(self.research_payload)}]}}],
             "usageMetadata": {"promptTokenCount": 10, "candidatesTokenCount": 5, "totalTokenCount": 15},
         })
+
+
+class QuotaBlockedSession:
+    def __init__(self):
+        self.posts = []
+
+    def post(self, url, **kwargs):
+        self.posts.append((url, kwargs))
+        return FakeResponse({
+            "error": {
+                "code": "too_many_requests",
+                "message": "You exceeded your current quota, please check your plan and billing details.",
+            }
+        }, status_code=429)
 
 
 class NoNetworkSession:
@@ -105,6 +123,30 @@ def test_v2_ir_research_uses_interactions_search_and_rejects_unofficial_hosts(mo
     assert kwargs["json"]["model"] == "gemini-3.6-flash"
     assert kwargs["json"]["tools"] == [{"type": "google_search"}]
     assert kwargs["json"]["response_format"]["mime_type"] == "application/json"
+
+
+def test_search_quota_429_opens_client_circuit_without_trying_second_model(monkeypatch):
+    monkeypatch.setenv("GEMINI_IR_MODEL", "gemini-3.6-flash")
+    monkeypatch.setenv("GEMINI_IR_FALLBACK_MODEL", "gemini-3.5-flash")
+    session = QuotaBlockedSession()
+    client = GeminiV2Client(api_key="test", session=session)
+    company = Company("DELL", "Dell Technologies", "0001571996", "https://investors.delltechnologies.com/",
+                      official_domains=["delltechnologies.com"])
+    now = datetime(2026, 9, 2, 9, 15, tzinfo=ZoneInfo("America/New_York"))
+
+    try:
+        client.research_official_ir(company, dell_event(), now)
+        assert False, "quota block should raise"
+    except GeminiSearchUnavailable as exc:
+        assert exc.category == "search_quota_blocked"
+    assert len(session.posts) == 1
+
+    try:
+        client.research_official_ir(company, dell_event(), now)
+        assert False, "open circuit should raise without network"
+    except GeminiSearchUnavailable:
+        pass
+    assert len(session.posts) == 1
 
 
 def test_grounded_evidence_extractor_never_refetches_issuer_site():
