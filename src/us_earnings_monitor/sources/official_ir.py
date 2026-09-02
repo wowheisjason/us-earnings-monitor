@@ -116,8 +116,6 @@ class OfficialIrAdapter:
         if kind not in _COMPANION_KINDS or len(events) != 1:
             return None
         if linked_date is None:
-            # On a period-specific event page the parent heading often carries
-            # the period while individual asset labels do not repeat it.
             return events[0]
         return events[0] if abs((day - linked_date).days) <= 14 else None
 
@@ -181,8 +179,6 @@ class OfficialIrAdapter:
         configured_urls = [item for item in [company.ir_index_url, *company.ir_additional_urls] if item]
         found, event_pages = self._parse_page(company, index_url, day, configured_urls, allow_event_links=True)
 
-        # One-level event-page enrichment catches IR layouts where the index page
-        # links to a quarter-specific detail page and documents only live there.
         for event_page in list(dict.fromkeys(event_pages))[:8]:
             try:
                 child_docs, _ = self._parse_page(company, event_page, day, configured_urls, allow_event_links=False)
@@ -216,15 +212,14 @@ class OfficialIrAdapter:
 
 
 def active_events_for_ir(events: list[EarningsEvent], now: datetime, days: int = 14) -> list[EarningsEvent]:
-    """Return only recent events; company IR is never polled without a primary event."""
+    """Return events within a bounded retry window measured from first detection."""
     cutoff = now - timedelta(days=days)
     selected: list[EarningsEvent] = []
     for event in events:
         if event.status not in {"collecting", "published", "needs_human_review"}:
             continue
-        timestamp = event.updated_at or event.first_seen_at
         try:
-            if datetime.fromisoformat(timestamp) >= cutoff:
+            if datetime.fromisoformat(event.first_seen_at) >= cutoff:
                 selected.append(event)
         except (TypeError, ValueError):
             continue
