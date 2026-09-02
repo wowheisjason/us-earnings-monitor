@@ -6,6 +6,7 @@ from .models import Disclosure, EarningsEvent, now_iso
 
 PRIMARY_KINDS = {"financial_results", "financial_tables", "performance_review"}
 TRANSCRIPT_KINDS = {"transcript", "qa", "prepared_remarks"}
+OFFICIAL_IR_SOURCES = {"official_ir", "gemini_grounded_ir"}
 
 TRANSCRIPT_FOUND = "FOUND"
 TRANSCRIPT_EXPECTED = "EXPECTED_NOT_YET_AVAILABLE"
@@ -37,7 +38,7 @@ def source_manifest(documents: list[Disclosure]) -> dict:
         "kinds": kinds,
         "sources": sources,
         "has_primary_results": any(doc.document_kind in PRIMARY_KINDS for doc in documents),
-        "has_official_ir": any(doc.source == "official_ir" for doc in documents),
+        "has_official_ir": any(doc.source in OFFICIAL_IR_SOURCES for doc in documents),
         "has_transcript_or_qa": any(doc.document_kind in TRANSCRIPT_KINDS for doc in documents),
         "has_financial_tables": kinds.get("financial_tables", 0) > 0,
         "has_performance_review": kinds.get("performance_review", 0) > 0,
@@ -51,7 +52,7 @@ def update_collection_status(
     now: datetime,
     *,
     official_ir_checked: bool,
-    transcript_wait_hours: int = 24,
+    transcript_wait_hours: int = 4,
 ) -> dict:
     """Persist source-discovery state separately from report-generation state."""
     manifest = source_manifest(documents)
@@ -82,15 +83,14 @@ def publication_gate(
     event: EarningsEvent,
     documents: list[Disclosure],
     now: datetime,
-    transcript_wait_hours: int = 24,
+    transcript_wait_hours: int = 4,
 ) -> tuple[bool, list[str], dict]:
     """Deterministic pre-LLM completeness gate.
 
-    A missing transcript during the first collection window means "not yet
-    available", never "officially not published". After repeated IR checks and
-    the wait window, the report may publish but must describe the transcript as
-    not found after retries unless an issuer-specific rule confirms no official
-    transcript is published.
+    Publish as soon as a transcript/Q&A is found. If no transcript is found,
+    keep a short event-specific collection window open, then allow a v1 report
+    after at least one completed official-IR search. A later transcript creates
+    new evidence and can trigger a material v2 update.
     """
     manifest = source_manifest(documents)
     reasons: list[str] = []
@@ -98,12 +98,15 @@ def publication_gate(
         reasons.append("missing_primary_results")
 
     transcript_status = event.collection_status.get("transcript_status", TRANSCRIPT_UNKNOWN)
-    if transcript_status == TRANSCRIPT_UNKNOWN and _event_age(event, now) < timedelta(hours=transcript_wait_hours):
+    age = _event_age(event, now)
+    if transcript_status == TRANSCRIPT_UNKNOWN and age < timedelta(hours=transcript_wait_hours):
         transcript_status = TRANSCRIPT_EXPECTED
     if transcript_status == TRANSCRIPT_EXPECTED:
-        reasons.append("transcript_collection_window_open")
+        if age < timedelta(hours=transcript_wait_hours):
+            reasons.append("transcript_collection_window_open")
+        elif event.collection_status.get("official_ir_checked_at"):
+            transcript_status = TRANSCRIPT_NOT_FOUND
 
-    # Do not publish before the company IR source has been checked at least once.
     if not event.collection_status.get("official_ir_checked_at"):
         reasons.append("official_ir_not_checked")
 
