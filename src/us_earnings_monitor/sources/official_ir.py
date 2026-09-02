@@ -149,6 +149,11 @@ class OfficialIrAdapter:
             if event is None:
                 continue
 
+            # An HTML earnings page may itself be useful evidence AND contain
+            # additional assets. Follow it before classifying it as a document.
+            if allow_event_links and _looks_like_event_page(target, context):
+                event_pages.append(target)
+
             if _looks_like_document(target, context):
                 anchor_text = anchor.get_text(" ", strip=True)
                 title = anchor_text if any(term in anchor_text.casefold() for term in _IR_TERMS) else context[:200]
@@ -168,8 +173,6 @@ class OfficialIrAdapter:
                     period_end=event.period_end,
                     metadata={"service": self.source_name, "format": suffix, "index_url": page_url},
                 ))
-            elif allow_event_links and _looks_like_event_page(target, context):
-                event_pages.append(target)
 
         return found, event_pages
 
