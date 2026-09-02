@@ -10,10 +10,10 @@ from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 
+from .analysis import build_analysis_client
 from .calendar import is_likely_trading_day
 from .config import load_watchlist
 from .extract import EvidenceExtractor
-from .gemini import GeminiClient
 from .grouping import align_companion_periods, attach, classify_document, ready_for_analysis, title_is_earnings
 from .models import Disclosure, EarningsEvent, now_iso
 from .quality import publication_gate, update_collection_status
@@ -62,7 +62,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--watchlist", default="watchlist.yaml")
     parser.add_argument("--state", default="data/state.json")
     parser.add_argument("--fixture", help="Use normalized disclosure fixture instead of network sources")
-    parser.add_argument("--dry-run", action="store_true", help="Never call Gemini, Telegram, or write state")
+    parser.add_argument("--dry-run", action="store_true", help="Never call the analysis provider, Telegram, or write state")
     parser.add_argument("--baseline", action="store_true", help="Record current documents as already processed; never analyze or notify")
     parser.add_argument("--at", help="ISO datetime for deterministic tests; defaults to current America/New_York time")
     parser.add_argument("--tickers", help="Comma-separated ticker allowlist for an authorized manual test")
@@ -135,7 +135,7 @@ def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: d
         return "dry_run"
 
     evidence = [EvidenceExtractor().fetch(doc) for doc in docs]
-    client = GeminiClient()
+    client = build_analysis_client()
     facts = client.extract_facts(event, evidence)
     facts["collection_status"] = event.collection_status
     if event.status == "published" and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents)):
@@ -205,8 +205,6 @@ def main() -> int:
         ignored += ir_ignored
         LOG.info("Official IR enrichment discovered %d document(s) for %d active event(s).", len(ir_disclosures), len(active_ir_events))
 
-        # Persist the collection state even when the IR page returned no new file.
-        # This distinguishes "not yet found" from "not checked" and allows retries.
         for active in active_ir_events:
             current = store.get_event(active.event_id) or active
             update_collection_status(current, _event_documents(current, store), now, official_ir_checked=True)
@@ -216,7 +214,7 @@ def main() -> int:
     LOG.info("Discovered %d; changed events=%s; ignored=%d", len(disclosures), [e.event_id for e in changed], ignored)
 
     if args.baseline:
-        LOG.info("Baseline recorded for %d events; no AI or Telegram calls were made.", mark_baseline(store, now))
+        LOG.info("Baseline recorded for %d events; no analysis-provider or Telegram calls were made.", mark_baseline(store, now))
         store.save()
         return 0
 
