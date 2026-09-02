@@ -6,7 +6,7 @@ from .models import Disclosure, EarningsEvent, now_iso
 
 PRIMARY_KINDS = {"financial_results", "financial_tables", "performance_review"}
 TRANSCRIPT_KINDS = {"transcript", "qa", "prepared_remarks"}
-OFFICIAL_IR_SOURCES = {"official_ir", "gemini_grounded_ir"}
+OFFICIAL_IR_SOURCES = {"official_ir", "gemini_grounded_ir", "openai_web_ir"}
 
 TRANSCRIPT_FOUND = "FOUND"
 TRANSCRIPT_EXPECTED = "EXPECTED_NOT_YET_AVAILABLE"
