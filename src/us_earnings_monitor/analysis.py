@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import os
+import time
 from typing import Protocol
 
 from .gemini_v2 import GeminiV2Client
+from .openai_ir import OpenAIWebIrClient
 
 
 class AnalysisClient(Protocol):
@@ -16,6 +18,39 @@ class AnalysisClient(Protocol):
 
 class IrResearchClient(Protocol):
     def research_official_ir(self, company, event, now): ...
+
+
+class FallbackIrResearchClient:
+    """Try independent web-retrieval providers without coupling them to analysis."""
+
+    def __init__(self, providers: list[tuple[str, IrResearchClient]]):
+        self.providers = providers
+
+    def research_official_ir(self, company, event, now):
+        attempts = []
+        last_status = {"research_complete": False, "provider": "none"}
+        for name, client in self.providers:
+            started = time.monotonic()
+            try:
+                documents, status = client.research_official_ir(company, event, now)
+                attempts.append({
+                    "provider": name,
+                    "ok": bool(documents and status.get("research_complete")),
+                    "seconds": round(time.monotonic() - started, 3),
+                    "documents": len(documents),
+                    "model": status.get("model"),
+                })
+                last_status = status
+                if documents and status.get("research_complete"):
+                    return documents, {**status, "provider": name, "provider_attempts": attempts}
+            except Exception as exc:  # noqa: BLE001
+                attempts.append({
+                    "provider": name,
+                    "ok": False,
+                    "seconds": round(time.monotonic() - started, 3),
+                    "error": f"{type(exc).__name__}: {exc}"[:500],
+                })
+        return [], {**last_status, "research_complete": False, "provider_attempts": attempts}
 
 
 def _provider(value: str | None, env_name: str) -> str:
@@ -31,8 +66,15 @@ def build_analysis_client(provider: str | None = None) -> AnalysisClient:
 
 
 def build_ir_research_client(provider: str | None = None) -> IrResearchClient:
-    """Build the official-IR discovery provider independently from analysis."""
+    """Build a resilient IR discovery chain.
+
+    Gemini is primary. OpenAI Responses Web Search is enabled only when an
+    OPENAI_API_KEY exists, so adding redundancy never creates hidden spend.
+    """
     selected = _provider(provider, "IR_RESEARCH_PROVIDER")
-    if selected == "gemini":
-        return GeminiV2Client()
-    raise RuntimeError(f"Unsupported IR_RESEARCH_PROVIDER={selected!r}. Currently supported: 'gemini'.")
+    if selected not in {"gemini", "auto"}:
+        raise RuntimeError(f"Unsupported IR_RESEARCH_PROVIDER={selected!r}. Currently supported: 'gemini' or 'auto'.")
+    providers: list[tuple[str, IrResearchClient]] = [("gemini_search", GeminiV2Client())]
+    if os.getenv("OPENAI_API_KEY") and os.getenv("OPENAI_IR_ENABLED", "1") != "0":
+        providers.append(("openai_web_search", OpenAIWebIrClient()))
+    return FallbackIrResearchClient(providers)
