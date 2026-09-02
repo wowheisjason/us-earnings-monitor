@@ -21,30 +21,54 @@ jobs:
         env:
           PYTHONPATH: src
         run: pytest -q
-      - name: Probe Dell official IR endpoints from GitHub runner
+      - name: Probe Dell transport variants from GitHub runner
         shell: bash
         run: |
           set +e
+          BROWSER_UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
           urls=(
-            "https://investors.delltechnologies.com/"
             "https://investors.delltechnologies.com/rss/events.xml"
-            "https://investors.delltechnologies.com/rss/news-releases.xml"
             "https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results"
             "https://investors.delltechnologies.com/static-files/a909096f-5091-4dcf-8291-019f6f9fb887"
           )
-          i=0
           for url in "${urls[@]}"; do
-            i=$((i+1))
-            echo "=== PROBE $i: $url ==="
-            curl -L --connect-timeout 5 --max-time 10 -A "${SEC_USER_AGENT:-us-earnings-monitor/0.2}" \
-              -o "/tmp/dell-probe-$i" -sS \
-              -w "http=%{http_code} connect=%{time_connect} start=%{time_starttransfer} total=%{time_total} bytes=%{size_download}\n" \
-              "$url"
-            head -c 500 "/tmp/dell-probe-$i" 2>/dev/null | tr '\n' ' ' || true
+            echo "=== HTTP/1.1 + browser UA: $url ==="
+            curl --http1.1 -L --connect-timeout 4 --max-time 7 \
+              -A "$BROWSER_UA" -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' \
+              -H 'Accept-Language: en-US,en;q=0.9' -H 'Connection: close' \
+              -o /tmp/dell-browser -sS \
+              -w "http=%{http_code} connect=%{time_connect} start=%{time_starttransfer} total=%{time_total} bytes=%{size_download}\n" "$url"
+            head -c 300 /tmp/dell-browser 2>/dev/null | tr '\n' ' ' || true
+            echo
+            echo "=== HTTP/1.1 + monitor UA: $url ==="
+            curl --http1.1 -L --connect-timeout 4 --max-time 7 \
+              -A 'us-earnings-monitor/0.2' -H 'Connection: close' \
+              -o /tmp/dell-monitor -sS \
+              -w "http=%{http_code} connect=%{time_connect} start=%{time_starttransfer} total=%{time_total} bytes=%{size_download}\n" "$url"
             echo
           done
-        env:
-          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          echo '=== Python requests + browser headers ==='
+          python - <<'PY'
+          import requests, time
+          urls = [
+              'https://investors.delltechnologies.com/rss/events.xml',
+              'https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results',
+              'https://investors.delltechnologies.com/static-files/a909096f-5091-4dcf-8291-019f6f9fb887',
+          ]
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',
+              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+              'Accept-Language': 'en-US,en;q=0.9',
+              'Connection': 'close',
+          }
+          for url in urls:
+              start=time.monotonic()
+              try:
+                  r=requests.get(url, headers=headers, timeout=(4,7))
+                  print(url, 'status=', r.status_code, 'bytes=', len(r.content), 'seconds=', round(time.monotonic()-start,3), 'ctype=', r.headers.get('content-type'))
+              except Exception as exc:
+                  print(url, type(exc).__name__, str(exc), 'seconds=', round(time.monotonic()-start,3))
+          PY
       - name: Show Dell state before test
         run: |
           python - <<'PY'
