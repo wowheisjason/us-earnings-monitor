@@ -25,6 +25,15 @@ class FakeSession:
         return FakeResponse(self.html)
 
 
+class FailingSession:
+    def __init__(self):
+        self.calls = []
+
+    def get(self, url, **kwargs):
+        self.calls.append((url, kwargs))
+        raise RuntimeError("network unavailable")
+
+
 def event(updated="2026-08-04T16:00:00-04:00"):
     return EarningsEvent("SPCX_2026-06-30_Q2", "SPCX", 2026, "Q2", updated, period_end="2026-06-30", updated_at=updated)
 
@@ -39,10 +48,12 @@ def test_ir_is_event_triggered_period_matched_and_host_allowlisted():
     <h2>Q4 2025 Financial Results</h2><a href='/ir/old.pdf'>Earnings Presentation</a>"""
     session = FakeSession(page)
     company = Company("SPCX", "SpaceX", "0001181412", "https://ir.example/ir/")
-    docs = OfficialIrAdapter([event()], session=session).discover([company], date(2026, 8, 4))
+    adapter = OfficialIrAdapter([event()], session=session)
+    docs = adapter.discover([company], date(2026, 8, 4))
     assert len(docs) == 2
     assert all((doc.fiscal_year, doc.quarter) == (2026, "Q2") for doc in docs)
     assert all(doc.url.startswith("https://ir.example/") for doc in docs)
+    assert adapter.checked_tickers == {"SPCX"}
 
 
 def test_ir_accepts_extensionless_labelled_transcript():
@@ -79,11 +90,34 @@ def test_dell_q2_fy2027_event_page_discovers_official_transcript():
         detail: f"<h1>Dell Technologies Fiscal Year 2027 Second Quarter Results</h1><a href='{transcript}'>Transcript</a>",
     })
     company = Company("DELL", "Dell Technologies", "0001571996", index)
-    docs = OfficialIrAdapter([dell_event()], session=session).discover([company], date(2026, 9, 2))
+    adapter = OfficialIrAdapter([dell_event()], session=session)
+    docs = adapter.discover([company], date(2026, 9, 2))
     assert len(docs) == 1
     assert docs[0].title == "Transcript"
     assert docs[0].document_url == transcript
     assert (docs[0].fiscal_year, docs[0].quarter) == (2027, "Q2")
+    assert adapter.checked_tickers == {"DELL"}
+
+
+def test_ir_partial_failure_is_not_marked_complete():
+    root = "https://ir.example/"
+    additional = "https://ir.example/quarterly"
+    session = FakeSession({root: "<h1>Q2 2026 Financial Results</h1><a href='/q2.pdf'>Earnings Presentation</a>"})
+    company = Company("SPCX", "SpaceX", "0001181412", root, [additional])
+    adapter = OfficialIrAdapter([event()], session=session)
+    docs = adapter.discover([company], date(2026, 8, 4))
+    assert len(docs) == 1
+    assert adapter.checked_tickers == set()
+    assert adapter.partial_failure_tickers == {"SPCX"}
+    assert adapter.failed_tickers == set()
+
+
+def test_ir_total_failure_is_not_marked_checked():
+    company = Company("SPCX", "SpaceX", "0001181412", "https://ir.example/")
+    adapter = OfficialIrAdapter([event()], session=FailingSession())
+    assert adapter.discover([company], date(2026, 8, 4)) == []
+    assert adapter.checked_tickers == set()
+    assert adapter.failed_tickers == {"SPCX"}
 
 
 def test_ir_does_not_make_network_request_without_primary_event():
