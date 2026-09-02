@@ -12,11 +12,7 @@ def _number(value):
 
 
 def validate_extracted_facts(facts: dict) -> list[str]:
-    """Validate only invariants that are safe to check without interpretation.
-
-    This intentionally avoids guessing units, comparison periods, or accounting
-    definitions. Anything requiring semantic judgment remains with the auditor.
-    """
+    """Validate only invariants that are safe to check without interpretation."""
     issues: list[str] = []
 
     consensus = facts.get("market_consensus") or []
@@ -48,4 +44,20 @@ def validate_extracted_facts(facts: dict) -> list[str]:
         if is_adjusted and not reconciliation:
             issues.append(f"cash_flow_and_capex[{index}]_adjusted_metric_missing_reconciliation")
 
+    return issues
+
+
+def validate_report_text(text: str) -> list[str]:
+    """Reject deterministic presentation errors that an LLM auditor can miss.
+
+    Reports preserve source USD million/billion units. This avoids the exact
+    10x conversion error observed when an audited Dell preview turned $10.531B
+    into 10.531 億美元 while still receiving an auditor score of 100.
+    """
+    issues: list[str] = []
+    forbidden_units = ("億美元", "兆美元", "億美金", "兆美金")
+    if any(token in text for token in forbidden_units):
+        issues.append("report_contains_model_generated_currency_unit_conversion")
+    if "應為" in text or "更正為" in text:
+        issues.append("report_contains_self_correction_language")
     return issues
