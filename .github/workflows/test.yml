@@ -21,8 +21,18 @@ jobs:
           PYTHONPATH: src
         run: pytest -q
 
-  dell-downstream-preview:
+  paid-tier-e2e:
     if: ${{ github.event_name == 'pull_request' && github.head_ref == 'feat/gemini-grounded-ir-event-clock' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - ticker: DELL
+            at: "2026-09-02T20:30:00-04:00"
+          - ticker: MSFT
+            at: "2026-07-29T21:00:00-04:00"
+          - ticker: NVDA
+            at: "2026-08-26T21:00:00-04:00"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -30,44 +40,20 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Analyze verified Dell FY2027 Q2 official evidence
+      - name: E2E ${{ matrix.ticker }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_IR_MODEL: gemini-3.6-flash
+          GEMINI_IR_FALLBACK_MODEL: gemini-3.5-flash
+          GEMINI_ANALYSIS_MODEL: gemini-3.5-flash-lite
+          GEMINI_ANALYSIS_FALLBACK_MODEL: gemini-flash-lite-latest
+          GEMINI_IR_TIMEOUT_SECONDS: "60"
+          IR_DIRECT_TIMEOUT_SECONDS: "8"
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
           PYTHONPATH: src
         run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          from us_earnings_monitor.gemini import GeminiClient
-          from us_earnings_monitor.models import EarningsEvent, Evidence
-          from us_earnings_monitor.validation import validate_extracted_facts
-
-          class NoToolGeminiClient(GeminiClient):
-              def _json(self, prompt, stage, tools=None):
-                  return super()._json(prompt, stage, tools=None)
-
-          fixture = json.loads(Path('fixtures/dell_q2_fy2027_official_evidence.json').read_text(encoding='utf-8'))
-          event = EarningsEvent(**fixture['event'])
-          evidence = [Evidence(**item) for item in fixture['evidence']]
-          client = NoToolGeminiClient(model='gemini-3.5-flash-lite')
-
-          facts = client.extract_facts(event, evidence)
-          issues = validate_extracted_facts(facts)
-          facts['collection_status'] = event.collection_status
-          facts['deterministic_validation_issues'] = issues
-          analysis = client.analyze(event, facts, evidence)
-          audit = client.audit(event, facts, analysis, evidence)
-          if audit.get('overall_score', 0) < 90 or audit.get('unsupported_claims') or audit.get('numerical_errors') or audit.get('critical_issues') or issues or audit.get('pass') is not True:
-              analysis = client.revise(facts, analysis, audit)
-              audit = client.audit(event, facts, analysis, evidence)
-
-          print('DELL_PREVIEW_FACTS_BEGIN')
-          print(json.dumps(facts, ensure_ascii=False, indent=2))
-          print('DELL_PREVIEW_FACTS_END')
-          print('DELL_PREVIEW_AUDIT_BEGIN')
-          print(json.dumps(audit, ensure_ascii=False, indent=2))
-          print('DELL_PREVIEW_AUDIT_END')
-          print('DELL_PREVIEW_REPORT_BEGIN')
-          print(audit.get('corrected_telegram_draft') or analysis.get('telegram_draft') or '')
-          print('DELL_PREVIEW_REPORT_END')
-          PY
+          set -o pipefail
+          python -m us_earnings_monitor --preview --at "${{ matrix.at }}" --tickers "${{ matrix.ticker }}" 2>&1 | tee e2e.log
+          grep -q "PREVIEW_REPORT_BEGIN" e2e.log
+          ! grep -q "億美元\|兆美元\|億美金\|兆美金" e2e.log
+          ! grep -q "needs_human_review" e2e.log
