@@ -37,7 +37,7 @@ companies:
   - {ticker: SNDK, name: Sandisk, cik: "0002023554", ir_index_url: "https://investor.sandisk.com/"}
   - {ticker: TXN, name: Texas Instruments, cik: "0000097476", ir_index_url: "https://investor.ti.com/"}
   - {ticker: CLS, name: Celestica, cik: "0001030894", ir_index_url: "https://corporate.celestica.com/investor-relations"}
-  - {ticker: ORCL, name: Oracle, cik: "0001341435", ir_index_url: "https://investor.oracle.com/"}
+  - {ticker: ORCL, name: Oracle, cik: "0001341439", ir_index_url: "https://investor.oracle.com/"}
   - {ticker: NBIS, name: Nebius Group, cik: "0001513845", ir_index_url: "https://group.nebius.com/investors"}
   - {ticker: CRWV, name: CoreWeave, cik: "0001769628", ir_index_url: "https://investors.coreweave.com/"}
   - {ticker: NET, name: Cloudflare, cik: "0001477333", ir_index_url: "https://cloudflare.net/"}
