@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 from dotenv import load_dotenv
 
 from .analysis import build_analysis_client
+from .analysis_errors import AnalysisProviderUnavailable
 from .calendar import is_likely_trading_day
 from .config import load_watchlist
 from .extract import EvidenceExtractor
@@ -125,6 +126,16 @@ def _event_documents(event: EarningsEvent, store: StateStore) -> list[Disclosure
     return [store.get_document(key) for key in event.documents]
 
 
+def _mark_provider_unavailable(event: EarningsEvent, store: StateStore, now: datetime, exc: Exception) -> str:
+    event.collection_status["analysis_status"] = "PROVIDER_UNAVAILABLE"
+    event.collection_status["analysis_last_error_at"] = now_iso(now)
+    event.collection_status["analysis_last_error"] = f"{type(exc).__name__}: {exc}"[:500]
+    event.updated_at = now_iso(now)
+    store.put_event(event)
+    LOG.warning("%s analysis provider unavailable; official evidence is retained for retry: %s", event.event_id, exc)
+    return "analysis_provider_unavailable"
+
+
 def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: datetime) -> str:
     docs = _event_documents(event, store)
     allowed, reasons, manifest = publication_gate(event, docs, now)
@@ -136,27 +147,33 @@ def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: d
         return "dry_run"
 
     evidence = [EvidenceExtractor().fetch(doc) for doc in docs]
-    client = build_analysis_client()
-    facts = client.extract_facts(event, evidence)
-    deterministic_issues = validate_extracted_facts(facts)
-    facts["collection_status"] = event.collection_status
-    facts["deterministic_validation_issues"] = deterministic_issues
-    if deterministic_issues:
-        LOG.warning("%s deterministic fact validation issues: %s", event.event_id, deterministic_issues)
+    try:
+        client = build_analysis_client()
+        facts = client.extract_facts(event, evidence)
+        deterministic_issues = validate_extracted_facts(facts)
+        facts["collection_status"] = event.collection_status
+        facts["deterministic_validation_issues"] = deterministic_issues
+        if deterministic_issues:
+            LOG.warning("%s deterministic fact validation issues: %s", event.event_id, deterministic_issues)
 
-    if event.status == "published" and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents)):
-        event.last_analyzed_document_count = len(event.documents)
-        event.updated_at = now_iso(now)
-        store.put_event(event)
-        return "no_material_update"
+        if event.status == "published" and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents)):
+            event.last_analyzed_document_count = len(event.documents)
+            event.collection_status["analysis_status"] = "NO_MATERIAL_UPDATE"
+            event.collection_status.pop("analysis_last_error", None)
+            event.collection_status.pop("analysis_last_error_at", None)
+            event.updated_at = now_iso(now)
+            store.put_event(event)
+            return "no_material_update"
 
-    analysis = client.analyze(event, facts, evidence)
-    audit = client.audit(event, facts, analysis, evidence)
-    draft = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
-    if (audit.get("overall_score", 0) < 90 or audit.get("unsupported_claims") or audit.get("numerical_errors")
-            or audit.get("critical_issues") or deterministic_issues or len(draft) > REPORT_MAX_CHARS):
-        analysis = client.revise(facts, analysis, audit)
+        analysis = client.analyze(event, facts, evidence)
         audit = client.audit(event, facts, analysis, evidence)
+        draft = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
+        if (audit.get("overall_score", 0) < 90 or audit.get("unsupported_claims") or audit.get("numerical_errors")
+                or audit.get("critical_issues") or deterministic_issues or len(draft) > REPORT_MAX_CHARS):
+            analysis = client.revise(facts, analysis, audit)
+            audit = client.audit(event, facts, analysis, evidence)
+    except AnalysisProviderUnavailable as exc:
+        return _mark_provider_unavailable(event, store, now, exc)
 
     if (audit.get("overall_score", 0) >= 90 and not audit.get("unsupported_claims")
             and not audit.get("numerical_errors") and not audit.get("critical_issues")
@@ -167,11 +184,17 @@ def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: d
             event.status = "published"
             event.report_version += 1
             event.last_analyzed_document_count = len(event.documents)
+            event.collection_status["analysis_status"] = "PUBLISHED"
+            event.collection_status.pop("analysis_last_error", None)
+            event.collection_status.pop("analysis_last_error_at", None)
             event.updated_at = now_iso(now)
             store.put_event(event)
             return "published"
 
     event.status = "needs_human_review"
+    event.collection_status["analysis_status"] = "NEEDS_HUMAN_REVIEW"
+    event.collection_status.pop("analysis_last_error", None)
+    event.collection_status.pop("analysis_last_error_at", None)
     event.updated_at = now_iso(now)
     store.put_event(event)
     return "needs_human_review"
@@ -246,11 +269,11 @@ def main() -> int:
         if ready_for_analysis(event, now):
             outcome = _run_analysis(event, store, args.dry_run, now)
             LOG.info("%s: %s", event.event_id, outcome)
-            pending = pending or outcome == "collection_pending"
+            pending = pending or outcome in {"collection_pending", "analysis_provider_unavailable"}
         else:
             pending = True
     if pending:
-        LOG.info("Documents collected; analysis is waiting for the scheduled window or additional official IR material.")
+        LOG.info("Documents collected; analysis is waiting for the scheduled window, provider retry, or additional official IR material.")
     if not args.dry_run:
         store.save()
     return 0
