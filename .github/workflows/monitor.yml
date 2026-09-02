@@ -2,8 +2,9 @@ name: US earnings monitor
 
 on:
   schedule:
-    # America/New_York handles DST natively. Paid web retrieval is invoked only
-    # for active SEC earnings events whose event-local retry clock is due.
+    # America/New_York handles DST natively.
+    # After-hours cadence is intentionally dense through 19:35 ET so the
+    # SEC-first v1 has enough runtime to reach Telegram before 09:00 JST.
     - cron: "15 2 * * 1-5"
       timezone: "America/New_York"
     - cron: "15 4 * * 1-5"
@@ -22,10 +23,19 @@ on:
       timezone: "America/New_York"
     - cron: "50 16 * * 1-5"
       timezone: "America/New_York"
-    - cron: "30 17 * * 1-5"
+    - cron: "15 17 * * 1-5"
       timezone: "America/New_York"
-    - cron: "30 18 * * 1-5"
+    - cron: "45 17 * * 1-5"
       timezone: "America/New_York"
+    - cron: "15 18 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "45 18 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 19 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "35 19 * * 1-5"
+      timezone: "America/New_York"
+    # Late enrichment pass for IR/transcript v2; this does not delay SEC v1.
     - cron: "30 20 * * 1-5"
       timezone: "America/New_York"
   workflow_dispatch:
