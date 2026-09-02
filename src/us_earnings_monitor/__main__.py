@@ -4,7 +4,7 @@ import argparse
 import html
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -57,6 +57,48 @@ def _compose_report(text: str, documents: list[Disclosure]) -> str:
     if body != text.strip():
         body = body.rstrip("…") + "…"
     return _format_report_html(body) + sources
+
+
+def _provider_is_blocked(store: StateStore, provider: str, now: datetime) -> bool:
+    health = store.get_provider_health(provider)
+    raw = health.get("blocked_until")
+    if not raw:
+        return False
+    try:
+        blocked_until = datetime.fromisoformat(str(raw))
+        if blocked_until.tzinfo is None:
+            blocked_until = blocked_until.replace(tzinfo=now.tzinfo)
+        return now < blocked_until.astimezone(now.tzinfo)
+    except (TypeError, ValueError):
+        return False
+
+
+def _record_provider_health(store: StateStore, attempts: list[dict], now: datetime) -> None:
+    """Persist only provider-level health, never per-document content.
+
+    Search quota/billing failures are cooled down for six hours. Network/model
+    failures remain event-local and are retried by the normal event clock.
+    A successful provider attempt clears the circuit immediately.
+    """
+    for attempt in attempts:
+        provider = attempt.get("provider")
+        if not provider:
+            continue
+        if attempt.get("ok"):
+            store.put_provider_health(provider, {
+                "status": "healthy",
+                "last_success_at": now_iso(now),
+                "blocked_until": None,
+            })
+            continue
+        category = attempt.get("category")
+        if category == "search_quota_blocked":
+            store.put_provider_health(provider, {
+                "status": "search_quota_blocked",
+                "last_failure_at": now_iso(now),
+                "blocked_until": now_iso(now + timedelta(hours=6)),
+                "error": str(attempt.get("error", ""))[:500],
+            })
 
 
 def parse_args() -> argparse.Namespace:
@@ -227,7 +269,11 @@ def main() -> int:
     analysis_client: AnalysisClient | None = None
     active_ir_events = active_events_for_ir(store.all_events(), now)
     if active_ir_events and not args.fixture:
-        research_client = None if args.dry_run else build_ir_research_client()
+        disabled_providers: set[str] = set()
+        if _provider_is_blocked(store, "gemini_search", now):
+            disabled_providers.add("gemini_search")
+            LOG.warning("Gemini Search circuit is open from persisted provider-health state; skipping it this run.")
+        research_client = None if args.dry_run else build_ir_research_client(disabled_providers=disabled_providers)
         router = IrRetrievalRouter(research_client)
         retrieval_results = {}
         ir_documents: list[Disclosure] = []
@@ -241,6 +287,7 @@ def main() -> int:
             result = router.collect(company, active, now, dry_run=args.dry_run)
             retrieval_results[active.event_id] = result
             ir_documents.extend(result.documents)
+            _record_provider_health(store, result.status.get("attempts", result.attempts), now)
 
         if ir_documents:
             ir_changed, ir_ignored = ingest(ir_documents, store, patterns, now)
@@ -299,14 +346,20 @@ def main() -> int:
                 outcome = "dry_run"
             else:
                 analysis_client = analysis_client or build_analysis_client()
-                outcome = _run_analysis(event, store, analysis_client, args.preview, now)
+                try:
+                    outcome = _run_analysis(event, store, analysis_client, args.preview, now)
+                except Exception as exc:  # noqa: BLE001
+                    # Provider outages are operational failures, not evidence-quality failures.
+                    # Leave the event collectable/retriable rather than poisoning it as human review.
+                    LOG.warning("%s analysis provider unavailable: %s", event.event_id, exc)
+                    outcome = "analysis_provider_unavailable"
             LOG.info("%s: %s", event.event_id, outcome)
-            pending = pending or outcome == "collection_pending"
+            pending = pending or outcome in {"collection_pending", "analysis_provider_unavailable"}
         else:
             pending = True
 
     if pending:
-        LOG.info("Documents collected; analysis is waiting for event completeness or additional official IR material.")
+        LOG.info("Documents collected; analysis is waiting for event completeness or provider recovery.")
     if not args.dry_run and not args.preview:
         store.save()
     return 0
