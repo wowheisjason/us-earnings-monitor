@@ -1,0 +1,68 @@
+name: US earnings monitor
+
+on:
+  schedule:
+    # America/New_York: pre-market and after-market collection; one 20:00 analysis.
+    - cron: "15 7 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 9 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 16 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "30 17 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "0 20 * * 1-5"
+      timezone: "America/New_York"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Discover and group only; no AI, Telegram, or state write"
+        required: false
+        default: false
+        type: boolean
+      initialize_baseline:
+        description: "Record current filings without AI or Telegram; run once before launch"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: us-earnings-monitor
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run tests
+        env:
+          PYTHONPATH: src
+        run: pytest -q
+      - name: Run monitor
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PYTHONPATH: src
+        run: |
+          args=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then args="--dry-run"; fi
+          if [ "${{ inputs.initialize_baseline }}" = "true" ]; then args="--baseline"; fi
+          python -m us_earnings_monitor $args
+      - name: Persist monitor state
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json
+          git diff --cached --quiet || git commit -m "chore: update monitor state"
+          git push
+
