@@ -105,6 +105,14 @@ class EvidenceExtractor:
         self.session = session if session is not None else requests.Session()
 
     def fetch(self, disclosure: Disclosure) -> Evidence:
+        if disclosure.source == "gemini_grounded_ir":
+            return Evidence(
+                disclosure.key,
+                disclosure.title,
+                disclosure.url,
+                str(disclosure.metadata.get("grounded_evidence", "")),
+                list(disclosure.metadata.get("structured_facts", []) or []),
+            )
         if not disclosure.document_url:
             return Evidence(disclosure.key, disclosure.title, disclosure.url, "")
         user_agent = os.getenv(
