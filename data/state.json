@@ -1,7 +1,44 @@
 {
   "schema_version": 1,
-  "documents": {},
-  "events": {},
+  "documents": {
+    "sec_edgar:0001571996-26-000039:exhibit991earnings8kq2fy27.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001571996-26-000039:exhibit991earnings8kq2fy27.htm",
+      "ticker": "DELL",
+      "title": "Dell Technologies Form 8-K — exhibit991earnings8kq2fy27.htm",
+      "published_at": "2026-09-01T20:10:14.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000039/exhibit991earnings8kq2fy27.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000039/exhibit991earnings8kq2fy27.htm",
+      "fiscal_year": 2027,
+      "quarter": "Q2",
+      "period_end": null,
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001571996",
+        "accession": "0001571996-26-000039",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-09-01"
+      }
+    }
+  },
+  "events": {
+    "DELL_FY2027_Q2": {
+      "event_id": "DELL_FY2027_Q2",
+      "ticker": "DELL",
+      "fiscal_year": 2027,
+      "quarter": "Q2",
+      "first_seen_at": "2026-09-01T20:00:00-04:00",
+      "period_end": null,
+      "documents": [
+        "sec_edgar:0001571996-26-000039:exhibit991earnings8kq2fy27.htm"
+      ],
+      "status": "published",
+      "report_version": 1,
+      "last_analyzed_document_count": 1,
+      "updated_at": "2026-09-02T03:29:35-04:00"
+    }
+  },
   "source_checks": {}
 }
-
