@@ -9,6 +9,7 @@ from typing import Any
 
 import requests
 
+from .analysis_errors import AnalysisProviderUnavailable
 from .models import EarningsEvent, Evidence
 
 EVIDENCE_TOTAL_MAX_CHARS = 48_000
@@ -17,7 +18,7 @@ TRANSIENT_STATUS_CODES = {429, 500, 502, 503, 504}
 
 
 class GeminiClient:
-    """REST client with strict JSON outputs and no implicit numerical guessing."""
+    """REST client with strict JSON outputs, bounded retries, and model fallback."""
 
     def __init__(self, api_key: str | None = None, model: str | None = None, session: requests.Session | None = None):
         self.api_key = api_key or os.getenv("GEMINI_API_KEY")
@@ -46,11 +47,14 @@ class GeminiClient:
             return [self.explicit_model.removeprefix("models/")]
         if self._models is not None:
             return self._models
-        response = self.session.get(
-            "https://generativelanguage.googleapis.com/v1beta/models",
-            params={"key": self.api_key, "pageSize": 1000}, timeout=30,
-        )
-        response.raise_for_status()
+        try:
+            response = self.session.get(
+                "https://generativelanguage.googleapis.com/v1beta/models",
+                params={"key": self.api_key, "pageSize": 1000}, timeout=(10, 30),
+            )
+            response.raise_for_status()
+        except requests.RequestException as exc:
+            raise AnalysisProviderUnavailable(f"Gemini model discovery failed: {exc}") from exc
         candidates = []
         for item in response.json().get("models", []):
             name = str(item.get("name", "")).removeprefix("models/")
@@ -58,7 +62,7 @@ class GeminiClient:
             if name.startswith("gemini-") and "generateContent" in methods:
                 candidates.append(name)
         if not candidates:
-            raise RuntimeError("No Gemini model supporting generateContent is available for this API key")
+            raise AnalysisProviderUnavailable("No Gemini model supporting generateContent is available for this API key")
         self._models = sorted(candidates, key=self._model_rank, reverse=True)
         return self._models
 
@@ -81,34 +85,52 @@ class GeminiClient:
 
     def _json(self, prompt: str, stage: str) -> dict[str, Any]:
         last_error: Exception | None = None
-        for model in self._available_models()[:5]:
+        models = self._available_models()[:5]
+        for model in models:
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
             for attempt in range(2):
-                response = self.session.post(url, params={"key": self.api_key}, json={
-                    "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-                    "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1},
-                }, timeout=120)
                 try:
+                    response = self.session.post(url, params={"key": self.api_key}, json={
+                        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                        "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1},
+                    }, timeout=(10, 60))
                     response.raise_for_status()
                 except requests.HTTPError as exc:
                     last_error = exc
-                    if response.status_code not in TRANSIENT_STATUS_CODES:
+                    status = getattr(getattr(exc, "response", None), "status_code", None)
+                    if status not in TRANSIENT_STATUS_CODES:
+                        LOG.warning("Gemini %s rejected %s request (HTTP %s); trying another model.", model, stage, status)
                         break
-                    LOG.warning("Gemini %s temporarily unavailable for %s (HTTP %d, attempt %d)",
-                                model, stage, response.status_code, attempt + 1)
+                    LOG.warning("Gemini %s temporarily unavailable for %s (HTTP %s, attempt %d)",
+                                model, stage, status, attempt + 1)
                     if attempt == 0:
                         time.sleep(2)
                     continue
-                payload = response.json()
+                except requests.RequestException as exc:
+                    last_error = exc
+                    LOG.warning("Gemini %s network failure for %s (%s, attempt %d)",
+                                model, stage, type(exc).__name__, attempt + 1)
+                    if attempt == 0:
+                        time.sleep(2)
+                    continue
+
+                try:
+                    payload = response.json()
+                    text = payload["candidates"][0]["content"]["parts"][0]["text"]
+                    parsed = json.loads(text)
+                except (ValueError, KeyError, IndexError, TypeError) as exc:
+                    last_error = exc
+                    LOG.warning("Gemini %s returned malformed JSON for %s; trying another model.", model, stage)
+                    break
+
                 self.model = model
                 if self._models:
                     self._models = [model] + [item for item in self._models if item != model]
                 self._record_usage(stage, model, payload)
-                text = payload["candidates"][0]["content"]["parts"][0]["text"]
-                return json.loads(text)
-        if last_error:
-            raise last_error
-        raise RuntimeError("No available Gemini model completed the request")
+                return parsed
+
+        detail = f"{type(last_error).__name__}: {last_error}" if last_error else "no model completed the request"
+        raise AnalysisProviderUnavailable(f"Gemini {stage} unavailable after trying {len(models)} model(s): {detail}") from last_error
 
     @staticmethod
     def _evidence(event: EarningsEvent, evidence: list[Evidence]) -> str:
