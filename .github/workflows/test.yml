@@ -20,3 +20,19 @@ jobs:
         env:
           PYTHONPATH: src
         run: pytest -q
+
+  dell-live-preview:
+    if: ${{ github.event_name == 'pull_request' && github.head_ref == 'feat/gemini-grounded-ir-event-clock' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run Dell FY2027 Q2 live preview
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PYTHONPATH: src
+        run: python -m us_earnings_monitor --preview --at "2026-09-02T20:30:00-04:00" --tickers DELL
