@@ -113,10 +113,8 @@ class OfficialIrAdapter:
 
         kind = classify_document(context)
         linked_date = _nearby_date(context)
-        if kind not in _COMPANION_KINDS or len(events) != 1:
+        if kind not in _COMPANION_KINDS or len(events) != 1 or linked_date is None:
             return None
-        if linked_date is None:
-            return events[0]
         return events[0] if abs((day - linked_date).days) <= 14 else None
 
     def _parse_page(
