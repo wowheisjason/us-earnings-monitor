@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import io
+import os
 import re
 import zipfile
 from pathlib import PurePosixPath
@@ -96,13 +97,16 @@ def _xlsx_relevant_text(blob: bytes, max_chars: int = 18000) -> str:
 
 class EvidenceExtractor:
     def __init__(self, session: requests.Session | None = None):
-        self.session = session or requests.Session()
+        self.session = session if session is not None else requests.Session()
 
     def fetch(self, disclosure: Disclosure) -> Evidence:
         if not disclosure.document_url:
             return Evidence(disclosure.key, disclosure.title, disclosure.url, "")
-        response = self.session.get(disclosure.document_url, timeout=45, headers={
-            "User-Agent": "us-earnings-monitor/0.1 https://github.com/wowheisjason/us-earnings-monitor"})
+        user_agent = os.getenv(
+            "SEC_USER_AGENT",
+            "us-earnings-monitor/0.1 contact: research@example.com",
+        ) if disclosure.source == "sec_edgar" else "us-earnings-monitor/0.1"
+        response = self.session.get(disclosure.document_url, timeout=45, headers={"User-Agent": user_agent})
         response.raise_for_status()
         content_type = response.headers.get("content-type", "").casefold()
         blob = response.content
