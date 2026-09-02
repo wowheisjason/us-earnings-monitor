@@ -1,0 +1,55 @@
+# CIK values are validated against SEC company_tickers.json. SEC EDGAR is the
+# primary source; company IR pages are event-triggered, best-effort enrichment.
+companies:
+  - {ticker: FN, name: Fabrinet, cik: "0001408710", ir_index_url: "https://investor.fabrinet.com/"}
+  - {ticker: MSFT, name: Microsoft, cik: "0000789019", ir_index_url: "https://www.microsoft.com/en-us/Investor/earnings/"}
+  - {ticker: AAPL, name: Apple, cik: "0000320193", ir_index_url: "https://investor.apple.com/"}
+  - {ticker: GOOGL, name: Alphabet, cik: "0001652044", ir_index_url: "https://abc.xyz/investor/"}
+  - {ticker: TSLA, name: Tesla, cik: "0001318605", ir_index_url: "https://ir.tesla.com/"}
+  - {ticker: SPCX, name: SpaceX, cik: "0001181412", ir_index_url: "https://ir.spacex.com/"}
+  - {ticker: META, name: Meta Platforms, cik: "0001326801", ir_index_url: "https://investor.atmeta.com/"}
+  - {ticker: AMZN, name: Amazon, cik: "0001018724", ir_index_url: "https://ir.aboutamazon.com/"}
+  - {ticker: NVDA, name: NVIDIA, cik: "0001045810", ir_index_url: "https://investor.nvidia.com/"}
+  - {ticker: AMD, name: AMD, cik: "0000002488", ir_index_url: "https://ir.amd.com/"}
+  - {ticker: INTC, name: Intel, cik: "0000050863", ir_index_url: "https://www.intc.com/"}
+  - {ticker: AVGO, name: Broadcom, cik: "0001730168", ir_index_url: "https://investors.broadcom.com/"}
+  - {ticker: MRVL, name: Marvell Technology, cik: "0001835632", ir_index_url: "https://investor.marvell.com/"}
+  - {ticker: LITE, name: Lumentum, cik: "0001633978", ir_index_url: "https://investor.lumentum.com/"}
+  - {ticker: COHR, name: Coherent, cik: "0000820318", ir_index_url: "https://investors.coherent.com/"}
+  - {ticker: GLW, name: Corning, cik: "0000024741", ir_index_url: "https://investor.corning.com/"}
+  - {ticker: APH, name: Amphenol, cik: "0000820313", ir_index_url: "https://investors.amphenol.com/"}
+  - {ticker: Q, name: Qnity Electronics, cik: "0002058873", ir_index_url: "https://investors.qnity.com/"}
+  - {ticker: KLAC, name: KLA, cik: "0000319201", ir_index_url: "https://ir.kla.com/"}
+  - {ticker: ASML, name: ASML, cik: "0000937966", ir_index_url: "https://www.asml.com/en/investors"}
+  - {ticker: AMAT, name: Applied Materials, cik: "0000006951", ir_index_url: "https://ir.appliedmaterials.com/"}
+  - {ticker: TSM, name: TSMC, cik: "0001046179", ir_index_url: "https://investor.tsmc.com/"}
+  - {ticker: SKHY, name: SK hynix, cik: "0002120882", ir_index_url: "https://www.skhynix.com/ir/"}
+  - {ticker: MU, name: Micron Technology, cik: "0000723125", ir_index_url: "https://investors.micron.com/"}
+  - {ticker: SNDK, name: Sandisk, cik: "0002023554", ir_index_url: "https://investor.sandisk.com/"}
+  - {ticker: TXN, name: Texas Instruments, cik: "0000097476", ir_index_url: "https://investor.ti.com/"}
+  - {ticker: CLS, name: Celestica, cik: "0001030894", ir_index_url: "https://corporate.celestica.com/investor-relations"}
+  - {ticker: ORCL, name: Oracle, cik: "0001341439", ir_index_url: "https://investor.oracle.com/"}
+  - {ticker: NBIS, name: Nebius Group, cik: "0001513845", ir_index_url: "https://group.nebius.com/investors"}
+  - {ticker: CRWV, name: CoreWeave, cik: "0001769628", ir_index_url: "https://investors.coreweave.com/"}
+  - {ticker: NET, name: Cloudflare, cik: "0001477333", ir_index_url: "https://cloudflare.net/"}
+  - {ticker: CRWD, name: CrowdStrike, cik: "0001535527", ir_index_url: "https://ir.crowdstrike.com/"}
+  - {ticker: PLTR, name: Palantir Technologies, cik: "0001321655", ir_index_url: "https://investors.palantir.com/"}
+  - {ticker: ENTG, name: Entegris, cik: "0001101302", ir_index_url: "https://investor.entegris.com/"}
+  - {ticker: LRCX, name: Lam Research, cik: "0000707549", ir_index_url: "https://investor.lamresearch.com/"}
+  - {ticker: CBRS, name: Cerebras Systems, cik: "0002021728", ir_index_url: "https://investors.cerebras.ai/"}
+
+earnings_title_patterns:
+  - "form 10-q"
+  - "form 10-k"
+  - "form 20-f"
+  - "form 40-f"
+  - "earnings"
+  - "financial results"
+  - "quarterly results"
+  - "annual results"
+  - "press release"
+  - "investor presentation"
+  - "shareholder letter"
+  - "q&a"
+  - "transcript"
+
