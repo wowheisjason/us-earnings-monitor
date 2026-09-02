@@ -171,6 +171,19 @@ Schema:
 }
 Evidence:\n""" + self._evidence(event, evidence), "facts")
 
+    def repair_cash_flow_reconciliation(self, event: EarningsEvent, facts: dict, evidence: list[Evidence], issues: list[str]) -> dict:
+        """Repair only the deterministic adjusted-cash-flow gap from official evidence."""
+        return self._json("""Return JSON only. The deterministic validator found adjusted cash-flow entries without a reconciliation.
+Use ONLY ORIGINAL official evidence to repair those exact entries. Do not alter values, guidance, segments, Q&A, or analysis.
+Schema: {cash_flow_and_capex:[{index,metric_type,reconciliation:[{item,value,unit,evidence:{document_key,quote}}],evidence:{document_key,quote}}]}.
+Each reconciliation must retain all stated line items, including financing receivables and equipment under operating leases when present.
+Input:\n""" + json.dumps({
+            "event_id": event.event_id,
+            "issues": issues,
+            "cash_flow_and_capex": facts.get("cash_flow_and_capex", []),
+            "official_evidence": json.loads(self._evidence(event, evidence)),
+        }, ensure_ascii=False), "cash_flow_reconciliation_repair")
+
     def analyze(self, event: EarningsEvent, facts: dict, evidence: list[Evidence]) -> dict:
         return self._json("""你是專業機構投資人。請以台灣繁體中文撰寫並只回傳 JSON；專業術語與正式名稱保留英文原文。
 只能使用 structured facts 與 collection_status。客觀事實、管理層說法、投資判讀必須分開，不提供目標價或買賣建議。

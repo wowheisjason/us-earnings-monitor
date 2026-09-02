@@ -95,6 +95,23 @@ def test_ir_follows_html_event_page_and_keeps_nested_transcript():
     assert any(doc.document_url == transcript and doc.title == "Transcript" for doc in docs)
 
 
+def test_ir_rejects_homepage_and_self_links_despite_document_context():
+    index = "https://ir.example/"
+    detail = "https://ir.example/events/q2-results"
+    transcript = "https://ir.example/static-files/transcript-uuid"
+    session = FakeSession({
+        index: f"""<h2>Q2 2026 Financial Results</h2>
+          <a href='/'>Transcript</a><a href='{index}'>Financial Tables</a>
+          <a href='{detail}'>Q2 2026 Financial Results</a>""",
+        detail: f"""<h1>Q2 2026 Financial Results</h1>
+          <a href='{detail}'>Transcript</a><a href='{transcript}'>Transcript</a>""",
+    })
+    docs = OfficialIrAdapter([event()], session=session).discover(
+        [Company("SPCX", "SpaceX", "0001181412", index)], date(2026, 8, 4)
+    )
+    assert [doc.document_url for doc in docs] == [transcript]
+
+
 def test_dell_q2_fy2027_event_page_discovers_official_transcript():
     index = "https://investors.delltechnologies.com/"
     detail = "https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results"

@@ -2,7 +2,7 @@ from io import BytesIO
 
 from openpyxl import Workbook
 
-from us_earnings_monitor.extract import EvidenceExtractor, _inline_xbrl_facts, _xlsx_relevant_text
+from us_earnings_monitor.extract import EvidenceExtractor, _inline_xbrl_facts, _relevant_text, _xlsx_relevant_text
 from us_earnings_monitor.models import Disclosure
 
 
@@ -69,3 +69,10 @@ def test_transcript_extraction_preserves_non_keyword_qa_context():
     assert "question-and-answer session" in evidence.text
     assert "pull-forward" in evidence.text
     assert "installed base remains old" in evidence.text
+
+
+def test_financial_relevance_keeps_adjusted_fcf_reconciliation_lines():
+    text = """Operating cash flow was $2.225 billion.\n\nAdjusted free cash flow was $8.149 billion.\n\nReconciliation: financing receivables of $6.667 billion and equipment under operating leases of $0.496 billion were added back."""
+    retained = _relevant_text(text)
+    for value in ("Adjusted free cash flow", "Reconciliation", "financing receivables", "equipment under operating leases"):
+        assert value in retained

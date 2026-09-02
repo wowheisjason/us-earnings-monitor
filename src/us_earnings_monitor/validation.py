@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from numbers import Real
+from copy import deepcopy
 
 
 def _number(value):
@@ -49,3 +50,18 @@ def validate_extracted_facts(facts: dict) -> list[str]:
             issues.append(f"cash_flow_and_capex[{index}]_adjusted_metric_missing_reconciliation")
 
     return issues
+
+
+def merge_cash_flow_reconciliation_repair(facts: dict, repair: dict) -> dict:
+    """Merge a narrow repair without letting a provider replace unrelated facts."""
+    merged = deepcopy(facts)
+    cash_flow = merged.get("cash_flow_and_capex") or []
+    for item in repair.get("cash_flow_and_capex") or []:
+        index = item.get("index")
+        if not isinstance(index, int) or not 0 <= index < len(cash_flow):
+            continue
+        # Only reconciliation/taxonomy fields are allowed back from this repair.
+        for key in ("metric_type", "reconciliation", "evidence"):
+            if item.get(key) not in (None, "", [], {}):
+                cash_flow[index][key] = item[key]
+    return merged

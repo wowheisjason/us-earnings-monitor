@@ -21,7 +21,7 @@ from .quality import publication_gate, update_collection_status
 from .sources import OfficialIrAdapter, SecEdgarAdapter, active_events_for_ir
 from .state import StateStore
 from .telegram import send_report
-from .validation import validate_extracted_facts
+from .validation import merge_cash_flow_reconciliation_repair, validate_extracted_facts
 
 ET = ZoneInfo("America/New_York")
 LOG = logging.getLogger("us_earnings_monitor")
@@ -151,6 +151,11 @@ def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: d
         client = build_analysis_client()
         facts = client.extract_facts(event, evidence)
         deterministic_issues = validate_extracted_facts(facts)
+        reconciliation_issues = [issue for issue in deterministic_issues if issue.endswith("adjusted_metric_missing_reconciliation")]
+        if reconciliation_issues:
+            repair = client.repair_cash_flow_reconciliation(event, facts, evidence, reconciliation_issues)
+            facts = merge_cash_flow_reconciliation_repair(facts, repair)
+            deterministic_issues = validate_extracted_facts(facts)
         facts["collection_status"] = event.collection_status
         facts["deterministic_validation_issues"] = deterministic_issues
         if deterministic_issues:
@@ -193,6 +198,10 @@ def _run_analysis(event: EarningsEvent, store: StateStore, dry_run: bool, now: d
 
     event.status = "needs_human_review"
     event.collection_status["analysis_status"] = "NEEDS_HUMAN_REVIEW"
+    event.collection_status["deterministic_issues"] = deterministic_issues
+    event.collection_status["audit_critical_issues"] = audit.get("critical_issues") or []
+    event.collection_status["audit_numerical_errors"] = audit.get("numerical_errors") or []
+    event.collection_status["audit_unsupported_claims"] = audit.get("unsupported_claims") or []
     event.collection_status.pop("analysis_last_error", None)
     event.collection_status.pop("analysis_last_error_at", None)
     event.updated_at = now_iso(now)

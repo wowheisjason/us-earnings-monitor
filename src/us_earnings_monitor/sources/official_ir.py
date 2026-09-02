@@ -68,6 +68,12 @@ def _link_context(anchor) -> str:
     return " ".join(dict.fromkeys(piece for piece in pieces if piece))
 
 
+def _is_root_or_self_link(target: str, page_url: str) -> bool:
+    """Navigation must never become evidence merely because its context is financial."""
+    parsed = urlparse(target)
+    return _canonical_url(target) == _canonical_url(page_url) or parsed.path.rstrip("/") == ""
+
+
 def _looks_like_document(target: str, context: str) -> bool:
     path = urlparse(target).path.casefold()
     if path.endswith(_DOCUMENT_SUFFIXES):
@@ -138,9 +144,13 @@ class OfficialIrAdapter:
 
         for anchor in soup.select("a[href]"):
             context = _link_context(anchor)
+            target = _canonical_url(urljoin(page_url, anchor["href"]))
+            # Test URL identity before context: footer/header links often sit in
+            # an earnings-labelled container and otherwise look like documents.
+            if _is_root_or_self_link(target, page_url):
+                continue
             if not any(term in context.casefold() for term in _IR_TERMS):
                 continue
-            target = _canonical_url(urljoin(page_url, anchor["href"]))
             if target in seen_urls or not _host_allowed(target, configured_urls):
                 continue
             seen_urls.add(target)
