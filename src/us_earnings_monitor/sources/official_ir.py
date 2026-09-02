@@ -18,10 +18,16 @@ LOG = logging.getLogger(__name__)
 _IR_TERMS = (
     "決算", "業績", "説明", "質疑", "qa", "q&a", "transcript", "financial results",
     "earnings", "presentation", "supplement", "briefing", "fact book", "quarterly",
-    "quarter", "investor relations", "shareholder",
+    "quarter", "investor relations", "shareholder", "financial tables", "performance review",
+    "prepared remarks", "webcast", "conference call",
 )
-_COMPANION_KINDS = {"qa", "transcript", "presentation", "supplement"}
-_DOCUMENT_SUFFIXES = (".pdf", ".htm", ".html", ".xlsx", ".xls")
+_DOCUMENT_TERMS = (
+    "qa", "q&a", "transcript", "presentation", "supplement", "financial tables",
+    "performance review", "prepared remarks", "earnings release", "press release",
+)
+_COMPANION_KINDS = {"qa", "transcript", "presentation", "supplement", "financial_tables", "performance_review", "prepared_remarks"}
+_DOCUMENT_SUFFIXES = (".pdf", ".htm", ".html", ".xlsx", ".xls", ".txt")
+_HTML_SUFFIXES = ("", ".htm", ".html", ".php", ".aspx")
 _DATE_PATTERNS = (
     re.compile(r"(20\d{2})[./年-](\d{1,2})[./月-](\d{1,2})日?"),
     re.compile(r"(20\d{2})(\d{2})(\d{2})"),
@@ -61,12 +67,30 @@ def _link_context(anchor) -> str:
     return " ".join(dict.fromkeys(piece for piece in pieces if piece))
 
 
+def _looks_like_document(target: str, context: str) -> bool:
+    """Accept normal files plus labelled extensionless IR assets (e.g. /static-files/<uuid>)."""
+    path = urlparse(target).path.casefold()
+    if path.endswith(_DOCUMENT_SUFFIXES):
+        return True
+    return any(term in context.casefold() for term in _DOCUMENT_TERMS)
+
+
+def _looks_like_event_page(target: str, context: str) -> bool:
+    """Identify same-host HTML/event-detail pages worth following exactly one level."""
+    path = urlparse(target).path.casefold()
+    suffix = "." + path.rsplit(".", 1)[-1] if "." in path.rsplit("/", 1)[-1] else ""
+    if suffix not in _HTML_SUFFIXES:
+        return False
+    lower = context.casefold()
+    return any(term in lower for term in ("earnings", "financial results", "quarterly results", "results", "fiscal year", "quarter"))
+
+
 class OfficialIrAdapter:
     """Conservative, event-triggered adapter for allowlisted company IR pages.
 
-    This adapter only reads ordinary static HTML and directly linked documents.
-    It does not execute JavaScript, crawl a whole site, bypass robots/access
-    controls, or follow links onto an unconfigured host.
+    Reads ordinary static HTML, directly linked documents, and one level of
+    same-host earnings event/detail pages. It never executes JavaScript or
+    follows links onto an unconfigured host.
     """
 
     source_name = "official_ir"
@@ -77,7 +101,7 @@ class OfficialIrAdapter:
         for event in events:
             self.events_by_ticker.setdefault(event.ticker, []).append(event)
         self.session = session or requests.Session()
-        self.headers = {"User-Agent": os.getenv("USER_AGENT", "us-earnings-monitor/0.1")}
+        self.headers = {"User-Agent": os.getenv("USER_AGENT", "us-earnings-monitor/0.2")}
 
     @staticmethod
     def _matching_event(context: str, events: list[EarningsEvent], day: date) -> EarningsEvent | None:
@@ -89,54 +113,94 @@ class OfficialIrAdapter:
 
         kind = classify_document(context)
         linked_date = _nearby_date(context)
-        if kind not in _COMPANION_KINDS or len(events) != 1 or linked_date is None:
+        if kind not in _COMPANION_KINDS or len(events) != 1:
             return None
-        # A date is required for period-less companion documents so a historical
-        # IR-library link cannot be accidentally attached to the current event.
+        if linked_date is None:
+            # On a period-specific event page the parent heading often carries
+            # the period while individual asset labels do not repeat it.
+            return events[0]
         return events[0] if abs((day - linked_date).days) <= 14 else None
 
-    def _page(self, company: Company, index_url: str, day: date) -> list[Disclosure]:
-        configured_urls = [item for item in [company.ir_index_url, *company.ir_additional_urls] if item]
-        response = self.session.get(index_url, headers=self.headers, timeout=self.timeout)
+    def _parse_page(
+        self,
+        company: Company,
+        page_url: str,
+        day: date,
+        configured_urls: list[str],
+        allow_event_links: bool,
+    ) -> tuple[list[Disclosure], list[str]]:
+        response = self.session.get(page_url, headers=self.headers, timeout=self.timeout)
         response.raise_for_status()
         soup = BeautifulSoup(response.content, "lxml")
         events = self.events_by_ticker.get(company.ticker, [])
         found: list[Disclosure] = []
+        event_pages: list[str] = []
         seen_urls: set[str] = set()
+
+        page_heading = " ".join(tag.get_text(" ", strip=True) for tag in soup.select("h1, h2")[:4])
+        page_event = self._matching_event(page_heading, events, day) if page_heading else None
+
         for anchor in soup.select("a[href]"):
             context = _link_context(anchor)
             if not any(term in context.casefold() for term in _IR_TERMS):
                 continue
-            target = _canonical_url(urljoin(index_url, anchor["href"]))
-            if not urlparse(target).path.casefold().endswith(_DOCUMENT_SUFFIXES):
-                continue
+            target = _canonical_url(urljoin(page_url, anchor["href"]))
             if target in seen_urls or not _host_allowed(target, configured_urls):
                 continue
-            event = self._matching_event(context, events, day)
+            seen_urls.add(target)
+
+            event = self._matching_event(context, events, day) or page_event
             if event is None:
                 continue
-            seen_urls.add(target)
-            anchor_text = anchor.get_text(" ", strip=True)
-            title = anchor_text if any(term in anchor_text.casefold() for term in _IR_TERMS) else context[:200]
-            source_id = hashlib.sha256(target.encode("utf-8")).hexdigest()[:24]
-            found.append(Disclosure(
-                source=self.source_name,
-                source_id=source_id,
-                ticker=company.ticker,
-                title=title,
-                published_at=f"{day.isoformat()}T00:00:00-04:00",
-                url=target,
-                document_url=target,
-                fiscal_year=event.fiscal_year,
-                quarter=event.quarter,
-                period_end=event.period_end,
-                metadata={"service": self.source_name, "format": urlparse(target).path.rsplit(".", 1)[-1].lower(),
-                          "index_url": index_url},
-            ))
-        if not found:
+
+            if _looks_like_document(target, context):
+                anchor_text = anchor.get_text(" ", strip=True)
+                title = anchor_text if any(term in anchor_text.casefold() for term in _IR_TERMS) else context[:200]
+                source_id = hashlib.sha256(target.encode("utf-8")).hexdigest()[:24]
+                path = urlparse(target).path
+                suffix = path.rsplit(".", 1)[-1].lower() if "." in path.rsplit("/", 1)[-1] else "unknown"
+                found.append(Disclosure(
+                    source=self.source_name,
+                    source_id=source_id,
+                    ticker=company.ticker,
+                    title=title,
+                    published_at=f"{day.isoformat()}T00:00:00-04:00",
+                    url=target,
+                    document_url=target,
+                    fiscal_year=event.fiscal_year,
+                    quarter=event.quarter,
+                    period_end=event.period_end,
+                    metadata={"service": self.source_name, "format": suffix, "index_url": page_url},
+                ))
+            elif allow_event_links and _looks_like_event_page(target, context):
+                event_pages.append(target)
+
+        return found, event_pages
+
+    def _page(self, company: Company, index_url: str, day: date) -> list[Disclosure]:
+        configured_urls = [item for item in [company.ir_index_url, *company.ir_additional_urls] if item]
+        found, event_pages = self._parse_page(company, index_url, day, configured_urls, allow_event_links=True)
+
+        # One-level event-page enrichment catches IR layouts where the index page
+        # links to a quarter-specific detail page and documents only live there.
+        for event_page in list(dict.fromkeys(event_pages))[:8]:
+            try:
+                child_docs, _ = self._parse_page(company, event_page, day, configured_urls, allow_event_links=False)
+                found.extend(child_docs)
+            except Exception as exc:  # noqa: BLE001
+                LOG.warning("IR event page unavailable for %s (%s): %s", company.ticker, event_page, exc)
+
+        deduped: list[Disclosure] = []
+        seen: set[str] = set()
+        for item in found:
+            if item.document_url in seen:
+                continue
+            seen.add(item.document_url or "")
+            deduped.append(item)
+        if not deduped:
             LOG.warning("No eligible static IR documents for %s at %s; the page may require JavaScript or a company adapter.",
                         company.ticker, index_url)
-        return found
+        return deduped
 
     def discover(self, companies: list[Company], day: date) -> list[Disclosure]:
         found: list[Disclosure] = []
@@ -156,7 +220,7 @@ def active_events_for_ir(events: list[EarningsEvent], now: datetime, days: int =
     cutoff = now - timedelta(days=days)
     selected: list[EarningsEvent] = []
     for event in events:
-        if event.status not in {"collecting", "published"}:
+        if event.status not in {"collecting", "published", "needs_human_review"}:
             continue
         timestamp = event.updated_at or event.first_seen_at
         try:
@@ -165,4 +229,3 @@ def active_events_for_ir(events: list[EarningsEvent], now: datetime, days: int =
         except (TypeError, ValueError):
             continue
     return selected
-
