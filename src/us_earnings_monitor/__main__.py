@@ -209,16 +209,26 @@ def main() -> int:
 
     active_ir_events = active_events_for_ir(store.all_events(), now)
     if active_ir_events and not args.fixture:
-        ir_disclosures = OfficialIrAdapter(active_ir_events).discover(companies, now.date())
+        ir_adapter = OfficialIrAdapter(active_ir_events)
+        ir_disclosures = ir_adapter.discover(companies, now.date())
         ir_changed, ir_ignored = ingest(ir_disclosures, store, patterns, now)
         changed_by_id = {event.event_id: event for event in [*changed, *ir_changed]}
         changed = list(changed_by_id.values())
         ignored += ir_ignored
-        LOG.info("Official IR enrichment discovered %d document(s) for %d active event(s).", len(ir_disclosures), len(active_ir_events))
+        LOG.info(
+            "Official IR enrichment discovered %d document(s) for %d active event(s); complete=%s partial=%s failed=%s",
+            len(ir_disclosures), len(active_ir_events), sorted(ir_adapter.checked_tickers),
+            sorted(ir_adapter.partial_failure_tickers), sorted(ir_adapter.failed_tickers),
+        )
 
         for active in active_ir_events:
             current = store.get_event(active.event_id) or active
-            update_collection_status(current, _event_documents(current, store), now, official_ir_checked=True)
+            complete_check = current.ticker in ir_adapter.checked_tickers
+            update_collection_status(current, _event_documents(current, store), now, official_ir_checked=complete_check)
+            if not complete_check:
+                current.collection_status["official_ir_last_attempt_incomplete"] = now_iso(now)
+            else:
+                current.collection_status.pop("official_ir_last_attempt_incomplete", None)
             current.updated_at = now_iso(now)
             store.put_event(current)
 
