@@ -15,6 +15,7 @@ class FakeResponse:
         self._payload = payload
         self.status_code = status_code
         self.headers = {}
+        self.text = json.dumps(payload)
 
     def json(self):
         return self._payload
@@ -31,14 +32,18 @@ class FakeGeminiSession:
 
     def post(self, url, **kwargs):
         self.posts.append((url, kwargs))
+        if url.endswith("/interactions"):
+            return FakeResponse({
+                "id": "int_test",
+                "status": "completed",
+                "steps": [
+                    {"type": "google_search_call", "arguments": {"queries": ["Dell FY2027 Q2 official transcript"]}},
+                    {"type": "google_search_result", "result": [{"url": "https://investors.delltechnologies.com/"}]},
+                    {"type": "model_output", "content": [{"type": "text", "text": json.dumps(self.research_payload)}]},
+                ],
+            })
         return FakeResponse({
-            "candidates": [{
-                "content": {"parts": [{"text": json.dumps(self.research_payload)}]},
-                "groundingMetadata": {
-                    "webSearchQueries": ["Dell FY2027 Q2 official transcript"],
-                    "groundingChunks": [{"web": {"uri": "https://investors.delltechnologies.com/"}}],
-                },
-            }],
+            "candidates": [{"content": {"parts": [{"text": json.dumps(self.research_payload)}]}}],
             "usageMetadata": {"promptTokenCount": 10, "candidatesTokenCount": 5, "totalTokenCount": 15},
         })
 
@@ -79,7 +84,7 @@ def research_payload():
     }
 
 
-def test_v2_ir_research_uses_search_only_and_rejects_unofficial_hosts(monkeypatch):
+def test_v2_ir_research_uses_interactions_search_and_rejects_unofficial_hosts(monkeypatch):
     monkeypatch.setenv("GEMINI_IR_MODEL", "gemini-3.6-flash")
     session = FakeGeminiSession(research_payload())
     client = GeminiV2Client(api_key="test", session=session)
@@ -91,13 +96,15 @@ def test_v2_ir_research_uses_search_only_and_rejects_unofficial_hosts(monkeypatc
 
     assert len(docs) == 1
     assert docs[0].source == "gemini_grounded_ir"
-    assert docs[0].metadata["retrieval_method"] == "google_search_grounding"
+    assert docs[0].metadata["retrieval_method"] == "gemini_interactions_google_search"
     assert status["model"] == "gemini-3.6-flash"
     assert status["transcript_status"] == "FOUND"
     assert status["rejected_unofficial_urls"] == ["https://example.com/dell-transcript"]
     url, kwargs = session.posts[0]
-    assert "gemini-3.6-flash:generateContent" in url
-    assert kwargs["json"]["tools"] == [{"google_search": {}}]
+    assert url.endswith("/interactions")
+    assert kwargs["json"]["model"] == "gemini-3.6-flash"
+    assert kwargs["json"]["tools"] == [{"type": "google_search"}]
+    assert kwargs["json"]["response_format"]["mime_type"] == "application/json"
 
 
 def test_grounded_evidence_extractor_never_refetches_issuer_site():
