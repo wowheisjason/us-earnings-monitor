@@ -66,6 +66,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dry-run", action="store_true", help="Never call Gemini, Telegram, or write state")
     parser.add_argument("--baseline", action="store_true", help="Record current documents as already processed; never analyze or notify")
     parser.add_argument("--at", help="ISO datetime for deterministic tests; defaults to current America/New_York time")
+    parser.add_argument("--tickers", help="Comma-separated ticker allowlist for an authorized manual test")
     return parser.parse_args()
 
 
@@ -181,6 +182,11 @@ def main() -> int:
         LOG.info("Not a weekday in America/New_York; no discovery run.")
         return 0
     companies, patterns = load_watchlist(args.watchlist)
+    if args.tickers:
+        requested = {ticker.strip().upper() for ticker in args.tickers.split(",") if ticker.strip()}
+        companies = [company for company in companies if company.ticker.upper() in requested]
+        if not companies:
+            raise SystemExit("None of --tickers matched watchlist.yaml")
     store = StateStore(args.state)
     disclosures, _ = discover(args, companies, now)
     changed, ignored = ingest(disclosures, store, patterns, now)
