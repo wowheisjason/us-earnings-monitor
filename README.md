@@ -13,7 +13,7 @@ SEC EDGAR submissions + filing attachments
                公司官方 IR（僅 SEC 已建立事件後補件）
 ```
 
-- 追蹤名單在 `watchlist.yaml`，目前 36 家，包含 `SPCX`、`CBRS`、`SKHY`。
+- 追蹤名單在 `watchlist.yaml`，目前 37 家，包含 `SPCX`、`CBRS`、`SKHY`、`DELL`。
 - SEC 的 10-Q、10-K、20-F、40-F 為主錨點；8-K 的 2.02/7.01 與相關 EX-99 earnings release 才會保留。
 - 同公司同一 `period_end` 歸併，例如 `SPCX_2026-06-30_Q2`。10-Q、8-K earnings release、presentation、Q&A、transcript 只生成一份事件報告。
 - 公司 IR 不會主動掃描或啟動 AI；只有 SEC 已發現的近期事件才讀取 allowlist 的靜態頁面。這避免歷史文件、一般新聞與重複分析。
