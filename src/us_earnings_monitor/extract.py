@@ -13,6 +13,7 @@ from pypdf import PdfReader
 from openpyxl import load_workbook
 
 from .models import Disclosure, Evidence
+from .transport import ChromeImpersonatingSession
 
 _KEYWORDS = ("revenue", "net sales", "operating income", "net income", "eps", "guidance",
              "outlook", "orders", "demand", "margin", "cash flow", "capital expenditure", "segment",
@@ -102,7 +103,9 @@ def _xlsx_relevant_text(blob: bytes, max_chars: int = 18000) -> str:
 
 class EvidenceExtractor:
     def __init__(self, session: requests.Session | None = None):
-        self.session = session if session is not None else requests.Session()
+        self.session = session
+        self._sec_session = requests.Session() if session is None else None
+        self._ir_session = ChromeImpersonatingSession() if session is None else None
 
     def fetch(self, disclosure: Disclosure) -> Evidence:
         if not disclosure.document_url:
@@ -111,7 +114,14 @@ class EvidenceExtractor:
             "SEC_USER_AGENT",
             "us-earnings-monitor/0.1 contact: research@example.com",
         ) if disclosure.source == "sec_edgar" else "us-earnings-monitor/0.2"
-        response = self.session.get(disclosure.document_url, timeout=45, headers={"User-Agent": user_agent})
+        if self.session is not None:
+            transport = self.session
+        elif disclosure.source == "official_ir":
+            transport = self._ir_session
+        else:
+            transport = self._sec_session
+        assert transport is not None
+        response = transport.get(disclosure.document_url, timeout=45, headers={"User-Agent": user_agent})
         response.raise_for_status()
         content_type = response.headers.get("content-type", "").casefold()
         blob = response.content
