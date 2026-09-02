@@ -17,85 +17,21 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Run full test suite
-        env:
-          PYTHONPATH: src
-        run: pytest -q
-      - name: Probe Dell transport variants from GitHub runner
-        shell: bash
-        run: |
-          set +e
-          BROWSER_UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
-          urls=(
-            "https://investors.delltechnologies.com/rss/events.xml"
-            "https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results"
-            "https://investors.delltechnologies.com/static-files/a909096f-5091-4dcf-8291-019f6f9fb887"
-          )
-          for url in "${urls[@]}"; do
-            echo "=== HTTP/1.1 + browser UA: $url ==="
-            curl --http1.1 -L --connect-timeout 4 --max-time 7 \
-              -A "$BROWSER_UA" -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' \
-              -H 'Accept-Language: en-US,en;q=0.9' -H 'Connection: close' \
-              -o /tmp/dell-browser -sS \
-              -w "http=%{http_code} connect=%{time_connect} start=%{time_starttransfer} total=%{time_total} bytes=%{size_download}\n" "$url"
-            head -c 300 /tmp/dell-browser 2>/dev/null | tr '\n' ' ' || true
-            echo
-            echo "=== HTTP/1.1 + monitor UA: $url ==="
-            curl --http1.1 -L --connect-timeout 4 --max-time 7 \
-              -A 'us-earnings-monitor/0.2' -H 'Connection: close' \
-              -o /tmp/dell-monitor -sS \
-              -w "http=%{http_code} connect=%{time_connect} start=%{time_starttransfer} total=%{time_total} bytes=%{size_download}\n" "$url"
-            echo
-          done
-          echo '=== Python requests + browser headers ==='
-          python - <<'PY'
-          import requests, time
-          urls = [
-              'https://investors.delltechnologies.com/rss/events.xml',
-              'https://investors.delltechnologies.com/events/event-details/dell-technologies-fiscal-year-2027-second-quarter-results',
-              'https://investors.delltechnologies.com/static-files/a909096f-5091-4dcf-8291-019f6f9fb887',
-          ]
-          headers = {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',
-              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-              'Accept-Language': 'en-US,en;q=0.9',
-              'Connection': 'close',
-          }
-          for url in urls:
-              start=time.monotonic()
-              try:
-                  r=requests.get(url, headers=headers, timeout=(4,7))
-                  print(url, 'status=', r.status_code, 'bytes=', len(r.content), 'seconds=', round(time.monotonic()-start,3), 'ctype=', r.headers.get('content-type'))
-              except Exception as exc:
-                  print(url, type(exc).__name__, str(exc), 'seconds=', round(time.monotonic()-start,3))
-          PY
-      - name: Show Dell state before test
+      - name: Inspect Dell official event RSS
         run: |
           python - <<'PY'
-          import json
-          state=json.load(open('data/state.json', encoding='utf-8'))
-          print(json.dumps(state.get('events', {}).get('DELL_FY2027_Q2'), ensure_ascii=False, indent=2))
-          PY
-      - name: Run Dell E2E on updated system
-        env:
-          ANALYSIS_PROVIDER: gemini
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
-          PYTHONPATH: src
-        run: python -m us_earnings_monitor --at 2026-09-02T20:00:00-04:00 --tickers DELL
-      - name: Show Dell state and collected documents after test
-        if: always()
-        run: |
-          python - <<'PY'
-          import json
-          state=json.load(open('data/state.json', encoding='utf-8'))
-          event=state.get('events', {}).get('DELL_FY2027_Q2')
-          print('=== DELL EVENT ===')
-          print(json.dumps(event, ensure_ascii=False, indent=2))
-          print('=== DELL DOCUMENTS ===')
-          if event:
-              for key in event.get('documents', []):
-                  print(json.dumps(state.get('documents', {}).get(key), ensure_ascii=False, indent=2))
+          import requests
+          from xml.etree import ElementTree as ET
+          url='https://investors.delltechnologies.com/rss/events.xml'
+          r=requests.get(url, headers={'User-Agent':'us-earnings-monitor/0.2'}, timeout=(4,7))
+          print('status', r.status_code, 'bytes', len(r.content), 'ctype', r.headers.get('content-type'))
+          root=ET.fromstring(r.content)
+          for item in root.findall('./channel/item'):
+              title=(item.findtext('title') or '').strip()
+              if 'Fiscal Year 2027 Second Quarter' not in title:
+                  continue
+              print('=== MATCHED ITEM ===')
+              print(ET.tostring(item, encoding='unicode'))
+              for child in item:
+                  print('FIELD', child.tag, '=>', repr(child.text))
           PY
