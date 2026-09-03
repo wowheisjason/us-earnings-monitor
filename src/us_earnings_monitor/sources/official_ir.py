@@ -24,7 +24,7 @@ _IR_TERMS = (
 _DOCUMENT_TERMS = (
     "qa", "q&a", "transcript", "presentation", "supplement", "financial tables",
     "performance review", "prepared remarks", "earnings release", "press release",
-    "webcast", "audio replay", "replay",
+    "financial results", "earnings", "webcast", "audio replay", "replay",
 )
 _COMPANION_KINDS = {"qa", "transcript", "presentation", "supplement", "financial_tables", "performance_review", "prepared_remarks"}
 _DOCUMENT_SUFFIXES = (".pdf", ".htm", ".html", ".xlsx", ".xls", ".txt")
@@ -32,6 +32,7 @@ _HTML_SUFFIXES = ("", ".htm", ".html", ".php", ".aspx")
 _DATE_PATTERNS = (
     re.compile(r"(20\d{2})[./年-](\d{1,2})[./月-](\d{1,2})日?"),
     re.compile(r"(20\d{2})(\d{2})(\d{2})"),
+    re.compile(r"(\d{1,2})/(\d{1,2})/(\d{2})"),
 )
 
 
