@@ -155,3 +155,17 @@ def test_ir_mirror_of_primary_title_is_suppressed(tmp_path):
     current.documents.append(primary.key)
     mirror = Disclosure("official_ir", "i1", "SPCX", "Form 10-Q — Q2 2026 Financial Results", "2026-08-04T16:10:00-04:00", "https://ir.example/i1.htm")
     assert store.equivalent_primary_document(mirror, current)
+
+
+def test_dated_broadcom_ir_release_attaches_when_sec_event_has_no_fiscal_label():
+    page = """<p>09/02/26 <a href='/news-releases/news-release-details/q3-results'>
+    Broadcom Announces Third Quarter Fiscal Year 2026 Financial Results</a></p>"""
+    current = EarningsEvent(
+        "AVGO_2026-08-02", "AVGO", None, None,
+        "2026-09-02T16:05:00-04:00", period_end="2026-08-02",
+    )
+    company = Company("AVGO", "Broadcom", "0001730168", "https://investors.broadcom.com/")
+    docs = OfficialIrAdapter([current], session=FakeSession(page)).discover([company], date(2026, 9, 2))
+    assert len(docs) == 1
+    assert docs[0].ticker == "AVGO"
+    assert docs[0].document_url.endswith("/q3-results")
