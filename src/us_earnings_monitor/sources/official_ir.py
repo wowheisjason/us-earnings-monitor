@@ -249,7 +249,7 @@ def active_events_for_ir(events: list[EarningsEvent], now: datetime, days: int =
     cutoff = now - timedelta(days=days)
     selected: list[EarningsEvent] = []
     for event in events:
-        if event.status not in {"collecting", "published", "needs_human_review"}:
+        if event.status not in {"collecting", "published", "published_sec_pending", "needs_human_review"}:
             continue
         try:
             if datetime.fromisoformat(event.first_seen_at) >= cutoff:
