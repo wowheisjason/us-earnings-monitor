@@ -21,7 +21,14 @@ companies:
     official_domains: ["nvidia.com"]
   - {ticker: AMD, name: AMD, cik: "0000002488", ir_index_url: "https://ir.amd.com/"}
   - {ticker: INTC, name: Intel, cik: "0000050863", ir_index_url: "https://www.intc.com/"}
-  - {ticker: AVGO, name: Broadcom, cik: "0001730168", ir_index_url: "https://investors.broadcom.com/"}
+  - ticker: AVGO
+    name: Broadcom
+    cik: "0001730168"
+    ir_index_url: "https://investors.broadcom.com/"
+    ir_additional_urls:
+      - "https://investors.broadcom.com/financial-information/quarterly-results"
+      - "https://investors.broadcom.com/events-and-presentations"
+    official_domains: ["investors.broadcom.com", "broadcom.com"]
   - {ticker: MRVL, name: Marvell Technology, cik: "0001835632", ir_index_url: "https://investor.marvell.com/"}
   - {ticker: LITE, name: Lumentum, cik: "0001633978", ir_index_url: "https://investor.lumentum.com/"}
   - {ticker: COHR, name: Coherent, cik: "0000820318", ir_index_url: "https://investors.coherent.com/"}
