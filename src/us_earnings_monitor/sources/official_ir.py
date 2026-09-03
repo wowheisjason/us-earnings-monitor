@@ -24,6 +24,7 @@ _IR_TERMS = (
 _DOCUMENT_TERMS = (
     "qa", "q&a", "transcript", "presentation", "supplement", "financial tables",
     "performance review", "prepared remarks", "earnings release", "press release",
+    "financial results", "earnings", "webcast", "audio replay", "replay",
 )
 _COMPANION_KINDS = {"qa", "transcript", "presentation", "supplement", "financial_tables", "performance_review", "prepared_remarks"}
 _DOCUMENT_SUFFIXES = (".pdf", ".htm", ".html", ".xlsx", ".xls", ".txt")
@@ -31,6 +32,7 @@ _HTML_SUFFIXES = ("", ".htm", ".html", ".php", ".aspx")
 _DATE_PATTERNS = (
     re.compile(r"(20\d{2})[./年-](\d{1,2})[./月-](\d{1,2})日?"),
     re.compile(r"(20\d{2})(\d{2})(\d{2})"),
+    re.compile(r"(\d{1,2})/(\d{1,2})/(\d{2})"),
 )
 
 
@@ -46,13 +48,20 @@ def _host_allowed(candidate: str, configured_urls: list[str]) -> bool:
 
 
 def _nearby_date(value: str) -> date | None:
-    for pattern in _DATE_PATTERNS:
+    for index, pattern in enumerate(_DATE_PATTERNS):
         match = pattern.search(value)
-        if match:
-            try:
-                return date(*(int(part) for part in match.groups()))
-            except ValueError:
-                pass
+        if not match:
+            continue
+        try:
+            parts = tuple(int(part) for part in match.groups())
+            # IR index pages commonly render release dates as 09/02/26.
+            # Treat these as publication dates, never as a fiscal period.
+            if index == 2:
+                month, day_value, short_year = parts
+                return date(2000 + short_year, month, day_value)
+            return date(*parts)
+        except ValueError:
+            pass
     return None
 
 
@@ -69,6 +78,10 @@ def _link_context(anchor) -> str:
 
 def _looks_like_document(target: str, context: str) -> bool:
     path = urlparse(target).path.casefold()
+    # Event detail pages are traversed for their assets, but are not themselves
+    # duplicate evidence unless they are an explicit HTML document.
+    if "/events/" in path and not path.endswith((".htm", ".html")):
+        return False
     if path.endswith(_DOCUMENT_SUFFIXES):
         return True
     return any(term in context.casefold() for term in _DOCUMENT_TERMS)
@@ -105,13 +118,23 @@ class OfficialIrAdapter:
         fiscal_year, quarter = infer_period(probe)
         if fiscal_year and quarter:
             matches = [event for event in events if (event.fiscal_year, event.quarter) == (fiscal_year, quarter)]
-            return matches[0] if len(matches) == 1 else None
+            if len(matches) == 1:
+                return matches[0]
 
         kind = classify_document(context)
         linked_date = _nearby_date(context)
-        if kind not in _COMPANION_KINDS or len(events) != 1 or linked_date is None:
-            return None
-        return events[0] if abs((day - linked_date).days) <= 14 else None
+        if kind in _COMPANION_KINDS and len(events) == 1 and linked_date is not None:
+            return events[0] if abs((day - linked_date).days) <= 14 else None
+
+        # Some SEC 8-K exhibits do not expose FY/Q in the filing title.  When
+        # there is exactly one fresh event for the issuer, a dated official IR
+        # release/event page is still safe to attach.  This deliberately does
+        # not inherit an undated link from a broad historical index.
+        if len(events) == 1 and linked_date is not None:
+            fresh_terms = ("earnings", "financial results", "quarterly results", "conference call")
+            if any(term in context.casefold() for term in fresh_terms) and abs((day - linked_date).days) <= 7:
+                return events[0]
+        return None
 
     def _parse_page(
         self,
@@ -232,7 +255,7 @@ def active_events_for_ir(events: list[EarningsEvent], now: datetime, days: int =
     cutoff = now - timedelta(days=days)
     selected: list[EarningsEvent] = []
     for event in events:
-        if event.status not in {"collecting", "published", "needs_human_review"}:
+        if event.status not in {"collecting", "published", "published_sec_pending", "needs_human_review"}:
             continue
         try:
             if datetime.fromisoformat(event.first_seen_at) >= cutoff:
