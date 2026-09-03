@@ -14,7 +14,9 @@ LOG = logging.getLogger("us_earnings_monitor")
 
 
 class FastOfficialIrAdapter(OfficialIrAdapter):
-    timeout = int(os.getenv("IR_DIRECT_TIMEOUT_SECONDS", "8"))
+    # Investor Relations sites commonly have slower anti-bot/CDN handshakes than
+    # SEC.  Eight seconds turns a reachable issuer site into a false failure.
+    timeout = int(os.getenv("IR_DIRECT_TIMEOUT_SECONDS", "30"))
 
 
 class IrResearchClient(Protocol):
