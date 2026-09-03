@@ -145,3 +145,17 @@ def publication_gate(
         "publication_mode": "integrated_ir" if manifest["has_official_ir"] else "post_ir_check_v1",
     }
     return not reasons, reasons, manifest
+
+
+def requires_deterministic_enrichment_followup(event: EarningsEvent, documents: list[Disclosure]) -> bool:
+    """Return true when an official IR artifact must generate a v2 report.
+
+    A transcript, presentation, release, or event-page from an allowlisted
+    official IR source is material by policy.  Do not ask an LLM to decide
+    whether newly available management evidence matters to an investor.
+    """
+    return bool(
+        event.status in {"published", "published_sec_pending"}
+        and len(documents) > event.last_analyzed_document_count
+        and any(document.source in OFFICIAL_IR_SOURCES for document in documents)
+    )
