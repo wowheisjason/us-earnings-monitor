@@ -57,6 +57,8 @@ def _compose_report(text: str, documents: list[Disclosure], publication_mode: st
         source_lines.append(f'• <a href="{html.escape(item.url, quote=True)}">{html.escape(key[0])}</a>')
     sources = "\n\n資料來源:\n" + "\n".join(source_lines)
     body = text.strip()
+    if publication_mode == "sec_only_v1_ir_pending":
+        body = "⚠️ SEC 快報｜官方 IR／逐字稿仍在蒐集中，收到後將補發完整 v2。\n\n" + body
     while body and len(_format_report_html(body)) + len(sources) > REPORT_MAX_CHARS:
         body = body[:-100].rstrip()
     if body != text.strip():
@@ -226,7 +228,9 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
             else:
                 message_id = send_report(rendered, parse_mode="HTML")
                 LOG.info("%s Telegram delivery accepted (message_id=%s)", event.event_id, message_id)
-            event.status = "published"
+            event.status = ("published_sec_pending"
+                            if manifest["publication_mode"] == "sec_only_v1_ir_pending"
+                            else "published")
             event.report_version += 1
             event.last_analyzed_document_count = len(event.documents)
             event.updated_at = now_iso(now)
