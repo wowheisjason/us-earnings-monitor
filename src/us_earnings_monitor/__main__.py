@@ -190,7 +190,9 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
     if deterministic_issues:
         LOG.warning("%s deterministic fact validation issues: %s", event.event_id, deterministic_issues)
 
-    if (event.status in {"published", "published_sec_pending"}\n            and not requires_deterministic_enrichment_followup(event, docs)\n            and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents))):
+    if (event.status in {"published", "published_sec_pending"}
+            and not requires_deterministic_enrichment_followup(event, docs)
+            and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents))):
         event.last_analyzed_document_count = len(event.documents)
         event.updated_at = now_iso(now)
         store.put_event(event)
