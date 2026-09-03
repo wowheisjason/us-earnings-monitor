@@ -7,6 +7,7 @@ from us_earnings_monitor.quality import (
     TRANSCRIPT_FOUND,
     TRANSCRIPT_NOT_FOUND,
     publication_gate,
+    requires_deterministic_enrichment_followup,
     source_manifest,
     update_collection_status,
 )
