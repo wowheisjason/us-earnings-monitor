@@ -133,7 +133,12 @@ class SecEdgarAdapter(SourceAdapter):
         report_date = str(record.get("reportDate") or "") or None
         quarter = self._quarter(record, records)
         if form in _CURRENT_FORMS:
-            report_date, quarter = self._period_for_current(record, records)
+            # An earnings 8-K is frequently filed before the corresponding 10-Q.
+            # Keep its reported event date when no periodic filing is available,
+            # so the release can still create an event and receive IR enrichment.
+            related_report_date, related_quarter = self._period_for_current(record, records)
+            report_date = related_report_date or report_date
+            quarter = related_quarter or quarter
         fiscal_year = self._fiscal_year(record, report_date)
 
         if form in _PERIODIC_FORMS:
