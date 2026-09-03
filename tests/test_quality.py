@@ -93,3 +93,18 @@ def test_openai_grounded_transcript_counts_as_official_ir():
     manifest = source_manifest([result_doc(), transcript_doc("openai_web_ir")])
     assert manifest["has_official_ir"] is True
     assert manifest["has_transcript_or_qa"] is True
+
+
+def test_official_ir_artifact_forces_v2_after_sec_alert():
+    current = event()
+    current.status = "published_sec_pending"
+    current.last_analyzed_document_count = 1
+    docs = [result_doc(), transcript_doc()]
+    assert requires_deterministic_enrichment_followup(current, docs)
+
+
+def test_no_new_ir_artifact_does_not_force_duplicate_v2():
+    current = event()
+    current.status = "published_sec_pending"
+    current.last_analyzed_document_count = 1
+    assert not requires_deterministic_enrichment_followup(current, [result_doc()])
