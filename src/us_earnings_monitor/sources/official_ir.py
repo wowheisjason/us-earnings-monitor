@@ -78,6 +78,10 @@ def _link_context(anchor) -> str:
 
 def _looks_like_document(target: str, context: str) -> bool:
     path = urlparse(target).path.casefold()
+    # Event detail pages are traversed for their assets, but are not themselves
+    # duplicate evidence unless they are an explicit HTML document.
+    if "/events/" in path and not path.endswith((".htm", ".html")):
+        return False
     if path.endswith(_DOCUMENT_SUFFIXES):
         return True
     return any(term in context.casefold() for term in _DOCUMENT_TERMS)
@@ -114,7 +118,8 @@ class OfficialIrAdapter:
         fiscal_year, quarter = infer_period(probe)
         if fiscal_year and quarter:
             matches = [event for event in events if (event.fiscal_year, event.quarter) == (fiscal_year, quarter)]
-            return matches[0] if len(matches) == 1 else None
+            if len(matches) == 1:
+                return matches[0]
 
         kind = classify_document(context)
         linked_date = _nearby_date(context)
