@@ -83,7 +83,7 @@
           {
             "provider": "none",
             "ok": false,
-            "seconds": 0.0,
+            "seconds": 0,
             "documents": 0,
             "model": null,
             "reason": "no_eligible_official_documents"
@@ -113,7 +113,7 @@
       "documents": [
         "sec_edgar:0001730168-26-000076:avgo-08022026x8kxex99.htm"
       ],
-      "status": "published",
+      "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
       "updated_at": "2026-09-03T12:00:00-04:00",
@@ -158,7 +158,8 @@
         "last_collection_check_at": "2026-09-03T12:00:00-04:00",
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
         "official_ir_last_attempt_incomplete": "2026-09-03T12:00:00-04:00",
-        "next_ir_retry_at": "2026-09-03T12:15:00-04:00"
+        "next_ir_retry_at": "2026-09-03T12:15:00-04:00",
+        "last_published_mode": "sec_only_v1_ir_pending"
       }
     }
   },
