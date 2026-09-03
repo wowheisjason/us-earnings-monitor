@@ -16,7 +16,12 @@ from .config import load_watchlist
 from .extract import EvidenceExtractor
 from .grouping import align_companion_periods, attach, classify_document, ready_for_analysis, title_is_earnings
 from .models import Disclosure, EarningsEvent, now_iso
-from .quality import (\n    TRANSCRIPT_CONFIRMED_NONE,\n    publication_gate,\n    requires_deterministic_enrichment_followup,\n    update_collection_status,\n)
+from .quality import (
+    TRANSCRIPT_CONFIRMED_NONE,
+    publication_gate,
+    requires_deterministic_enrichment_followup,
+    update_collection_status,
+)
 from .retrieval import IrRetrievalRouter, schedule_next_ir_retry, should_attempt_ir
 from .sources import SecEdgarAdapter, active_events_for_ir
 from .state import StateStore
@@ -39,7 +44,7 @@ def _format_report_html(text: str) -> str:
             + "</pre>\n\n🏢 業務部門:" + html.escape(after))
 
 
-def _compose_report(text: str, documents: list[Disclosure], publication_mode: str) -> str:
+def _compose_report(text: str, documents: list[Disclosure], publication_mode: str = "integrated_ir") -> str:
     source_lines: list[str] = []
     seen: set[tuple[str, str]] = set()
     for item in documents:
