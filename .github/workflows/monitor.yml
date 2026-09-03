@@ -93,7 +93,7 @@ jobs:
           OPENAI_IR_MODEL: ${{ vars.OPENAI_IR_MODEL || 'gpt-5.6-luna' }}
           GEMINI_IR_TIMEOUT_SECONDS: ${{ vars.GEMINI_IR_TIMEOUT_SECONDS || '60' }}
           OPENAI_IR_TIMEOUT_SECONDS: ${{ vars.OPENAI_IR_TIMEOUT_SECONDS || '60' }}
-          IR_DIRECT_TIMEOUT_SECONDS: ${{ vars.IR_DIRECT_TIMEOUT_SECONDS || '8' }}
+          IR_DIRECT_TIMEOUT_SECONDS: ${{ vars.IR_DIRECT_TIMEOUT_SECONDS || '30' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
