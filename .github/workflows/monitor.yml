@@ -109,7 +109,7 @@ jobs:
           if [ -n "$TEST_TICKERS" ]; then args+=(--tickers "$TEST_TICKERS"); fi
           python -m us_earnings_monitor "${args[@]}"
       - name: Persist monitor state
-        if: ${{ !inputs.dry_run && !inputs.preview }}
+        if: ${{ always() && !inputs.dry_run && !inputs.preview }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

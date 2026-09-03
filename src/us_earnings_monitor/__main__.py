@@ -142,7 +142,8 @@ def ingest(disclosures: list[Disclosure], store: StateStore, patterns: list[str]
     ignored = 0
     for disclosure in disclosures:
         disclosure.document_kind = classify_document(disclosure.title)
-        if not disclosure.ticker or not title_is_earnings(disclosure.title, patterns):
+        is_earnings = title_is_earnings(disclosure.title, patterns) or bool(disclosure.metadata.get("earnings_event"))
+        if not disclosure.ticker or not is_earnings:
             ignored += 1
             continue
         if store.seen_document(disclosure):
@@ -150,7 +151,8 @@ def ingest(disclosures: list[Disclosure], store: StateStore, patterns: list[str]
         from .grouping import event_id
         eid = event_id(disclosure)
         if not eid:
-            LOG.info("Skipped ungroupable earnings disclosure: %s", disclosure.title)
+            LOG.warning("Skipped ungroupable earnings disclosure: ticker=%s title=%s url=%s",
+                        disclosure.ticker, disclosure.title, disclosure.url)
             ignored += 1
             continue
         existing_event = store.get_event(eid)
@@ -338,6 +340,7 @@ def main() -> int:
         return 0
 
     pending = False
+    failed = False
     for event in store.all_events():
         if event.status not in {"collecting", "published", "needs_human_review"} or len(event.documents) <= event.last_analyzed_document_count:
             continue
@@ -349,12 +352,17 @@ def main() -> int:
                 try:
                     outcome = _run_analysis(event, store, analysis_client, args.preview, now)
                 except Exception as exc:  # noqa: BLE001
-                    # Provider outages are operational failures, not evidence-quality failures.
-                    # Leave the event collectable/retriable rather than poisoning it as human review.
-                    LOG.warning("%s analysis provider unavailable: %s", event.event_id, exc)
+                    # Provider/delivery outages are operational failures, not evidence-quality
+                    # failures. Leave the event collectable/retriable for the next cron wake-up.
+                    LOG.warning("%s analysis or delivery unavailable: %s", event.event_id, exc)
+                    event.collection_status["last_delivery_error"] = f"{type(exc).__name__}: {exc}"[:500]
+                    event.collection_status["last_delivery_error_at"] = now_iso(now)
+                    event.updated_at = now_iso(now)
+                    store.put_event(event)
                     outcome = "analysis_provider_unavailable"
             LOG.info("%s: %s", event.event_id, outcome)
             pending = pending or outcome in {"collection_pending", "analysis_provider_unavailable"}
+            failed = failed or outcome in {"analysis_provider_unavailable", "needs_human_review"}
         else:
             pending = True
 
@@ -362,7 +370,9 @@ def main() -> int:
         LOG.info("Documents collected; analysis is waiting for event completeness or provider recovery.")
     if not args.dry_run and not args.preview:
         store.save()
-    return 0
+    if failed:
+        LOG.error("One or more events were not delivered; state was saved for retry.")
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

@@ -44,3 +44,27 @@ def test_sec_exhibit_filename_supplies_earnings_period_when_10q_is_not_yet_filed
     assert "earnings" in exhibit.title.casefold()
     assert (exhibit.fiscal_year, exhibit.quarter) == (2027, "Q2")
 
+
+class BroadcomSession:
+    def get(self, url, **kwargs):
+        if "submissions" in url:
+            return Response({"fiscalYearEnd": "1031", "filings": {"recent": {
+                "accessionNumber": ["0001730168-26-000076"],
+                "filingDate": ["2026-09-02"], "reportDate": ["2026-09-02"],
+                "acceptanceDateTime": ["2026-09-02T20:26:04.000Z"],
+                "form": ["8-K"], "primaryDocument": ["avgo-20260902.htm"],
+                "primaryDocDescription": ["8-K"], "items": ["2.02,8.01,9.01"]
+            }}})
+        html = b'''<table class="tableFile">
+        <tr><td>1</td><td>8-K</td><td><a href="avgo-20260902.htm">avgo-20260902.htm</a></td><td>8-K</td><td>1</td></tr>
+        <tr><td>2</td><td>EX-99.1</td><td><a href="avgo-08022026x8kxex99.htm">avgo-08022026x8kxex99.htm</a></td><td>EX-99.1</td><td>1</td></tr></table>'''
+        return Response(content=html)
+
+
+def test_sec_current_8k_uses_attachment_period_before_10q_exists():
+    company = Company("AVGO", "Broadcom", "0001730168")
+    docs = SecEdgarAdapter(session=BroadcomSession()).discover([company], date(2026, 9, 2))
+    assert len(docs) == 2
+    assert all(doc.metadata["earnings_event"] for doc in docs)
+    assert all((doc.fiscal_year, doc.quarter, doc.period_end) == (2026, "Q3", "2026-08-02") for doc in docs)
+
