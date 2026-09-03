@@ -137,27 +137,27 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-03T12:00:00-04:00",
+      "updated_at": "2026-09-03T12:26:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
-            "seconds": 0.256,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked",
+            "seconds": 0.0,
+            "documents": 0,
+            "model": null,
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 24.179,
+            "seconds": 90.517,
             "documents": 0,
             "partial": false
           }
         ],
-        "ir_retrieval_last_at": "2026-09-03T12:00:00-04:00",
+        "ir_retrieval_last_at": "2026-09-03T12:26:16-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -176,10 +176,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-03T12:00:00-04:00",
+        "last_collection_check_at": "2026-09-03T12:26:16-04:00",
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "official_ir_last_attempt_incomplete": "2026-09-03T12:00:00-04:00",
-        "next_ir_retry_at": "2026-09-03T12:15:00-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-03T12:26:16-04:00",
+        "next_ir_retry_at": "2026-09-03T12:41:16-04:00",
         "last_published_mode": "sec_only_v1_ir_pending"
       }
     },
@@ -196,7 +196,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-03T09:26:57-04:00",
+      "updated_at": "2026-09-03T12:26:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -211,12 +211,12 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.204,
+            "seconds": 0.285,
             "documents": 0,
             "partial": false
           }
         ],
-        "ir_retrieval_last_at": "2026-09-03T09:26:57-04:00",
+        "ir_retrieval_last_at": "2026-09-03T12:26:16-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -235,11 +235,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-03T09:26:57-04:00",
-        "official_ir_checked_at": "2026-09-03T09:26:57-04:00",
-        "official_ir_check_count": 2,
+        "last_collection_check_at": "2026-09-03T12:26:16-04:00",
+        "official_ir_checked_at": "2026-09-03T12:26:16-04:00",
+        "official_ir_check_count": 3,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-09-03T09:41:57-04:00"
+        "next_ir_retry_at": "2026-09-03T12:56:16-04:00"
       }
     }
   },
@@ -253,7 +253,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-03T09:26:57-04:00",
+      "last_success_at": "2026-09-03T12:26:16-04:00",
       "blocked_until": null
     }
   }
