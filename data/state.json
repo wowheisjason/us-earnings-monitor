@@ -21,6 +21,27 @@
         "document_type": "EX-99.1",
         "filing_date": "2026-09-01"
       }
+    },
+    "sec_edgar:0001730168-26-000076:avgo-08022026x8kxex99.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001730168-26-000076:avgo-08022026x8kxex99.htm",
+      "ticker": "AVGO",
+      "title": "Broadcom Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-09-02T20:26:04.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "period_end": "2026-09-02",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001730168",
+        "accession": "0001730168-26-000076",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-09-02"
+      }
     }
   },
   "events": {
@@ -81,14 +102,72 @@
         "gemini_ir_rejected_unofficial_urls": [],
         "next_ir_retry_at": "2026-09-03T08:44:11-04:00"
       }
+    },
+    "AVGO_2026-09-02": {
+      "event_id": "AVGO_2026-09-02",
+      "ticker": "AVGO",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "first_seen_at": "2026-09-03T12:00:00-04:00",
+      "period_end": "2026-09-02",
+      "documents": [
+        "sec_edgar:0001730168-26-000076:avgo-08022026x8kxex99.htm"
+      ],
+      "status": "published",
+      "report_version": 1,
+      "last_analyzed_document_count": 1,
+      "updated_at": "2026-09-03T12:00:00-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.256,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": false,
+            "seconds": 24.179,
+            "documents": 0,
+            "partial": false
+          }
+        ],
+        "ir_retrieval_last_at": "2026-09-03T12:00:00-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-09-03T12:00:00-04:00",
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "official_ir_last_attempt_incomplete": "2026-09-03T12:00:00-04:00",
+        "next_ir_retry_at": "2026-09-03T12:15:00-04:00"
+      }
     }
   },
   "source_checks": {},
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-09-02T16:21:21-04:00",
-      "blocked_until": "2026-09-02T22:21:21-04:00",
+      "last_failure_at": "2026-09-03T12:00:00-04:00",
+      "blocked_until": "2026-09-03T18:00:00-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     }
   }
