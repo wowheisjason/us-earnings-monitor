@@ -149,7 +149,10 @@ class SecEdgarAdapter(SourceAdapter):
             is_exhibit = document_type.startswith("EX-99")
             filename = document_url.rsplit("/", 1)[-1]
             relevant_text = f"{description} {record.get('primaryDocDescription', '')} {filename}".casefold()
-            if form in _CURRENT_FORMS and not is_primary and not (is_exhibit and any(term in relevant_text for term in _RELEVANT_TERMS)):
+            # Item 2.02 earnings 8-K filings commonly label Exhibit 99.1 only
+            # by a vendor filename (for example avgo-20260802ex991.htm).  The
+            # filing item itself is the authoritative relevance signal.
+            if form in _CURRENT_FORMS and not is_primary and not is_exhibit:
                 continue
             if form.startswith("6-K") and not (is_primary or any(term in relevant_text for term in _RELEVANT_TERMS)):
                 continue
@@ -158,6 +161,8 @@ class SecEdgarAdapter(SourceAdapter):
                            else 2000 + int(exhibit_period.group(4))) if exhibit_period else None
             filename_quarter = f"Q{exhibit_period.group(1) or exhibit_period.group(2)}" if exhibit_period else None
             display_description = filename if is_exhibit and exhibit_period else description
+            if is_exhibit and form in _CURRENT_FORMS:
+                display_description = f"Earnings Release / Exhibit {document_type} — {display_description}"
             title = f"{company.name} Form {form} — {display_description}"
             probe = Disclosure("sec_edgar", "probe", company.ticker, title, filing_date, document_url)
             inferred_fy, inferred_quarter = infer_period(probe)
