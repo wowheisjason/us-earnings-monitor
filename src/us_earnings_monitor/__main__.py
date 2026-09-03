@@ -224,7 +224,8 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
                 print(rendered)
                 print("PREVIEW_REPORT_END")
             else:
-                send_report(rendered, parse_mode="HTML")
+                message_id = send_report(rendered, parse_mode="HTML")
+                LOG.info("%s Telegram delivery accepted (message_id=%s)", event.event_id, message_id)
             event.status = "published"
             event.report_version += 1
             event.last_analyzed_document_count = len(event.documents)
