@@ -16,7 +16,7 @@ from .config import load_watchlist
 from .extract import EvidenceExtractor
 from .grouping import align_companion_periods, attach, classify_document, ready_for_analysis, title_is_earnings
 from .models import Disclosure, EarningsEvent, now_iso
-from .quality import TRANSCRIPT_CONFIRMED_NONE, publication_gate, update_collection_status
+from .quality import (\n    TRANSCRIPT_CONFIRMED_NONE,\n    publication_gate,\n    requires_deterministic_enrichment_followup,\n    update_collection_status,\n)
 from .retrieval import IrRetrievalRouter, schedule_next_ir_retry, should_attempt_ir
 from .sources import SecEdgarAdapter, active_events_for_ir
 from .state import StateStore
@@ -39,7 +39,7 @@ def _format_report_html(text: str) -> str:
             + "</pre>\n\n🏢 業務部門:" + html.escape(after))
 
 
-def _compose_report(text: str, documents: list[Disclosure]) -> str:
+def _compose_report(text: str, documents: list[Disclosure], publication_mode: str) -> str:
     source_lines: list[str] = []
     seen: set[tuple[str, str]] = set()
     for item in documents:
@@ -185,7 +185,7 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
     if deterministic_issues:
         LOG.warning("%s deterministic fact validation issues: %s", event.event_id, deterministic_issues)
 
-    if event.status == "published" and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents)):
+    if (event.status in {"published", "published_sec_pending"}\n            and not requires_deterministic_enrichment_followup(event, docs)\n            and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents))):
         event.last_analyzed_document_count = len(event.documents)
         event.updated_at = now_iso(now)
         store.put_event(event)
@@ -211,7 +211,7 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
             and not deterministic_issues and not report_issues and audit.get("pass") is True):
         text = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
         if text:
-            rendered = _compose_report(text, docs)
+            rendered = _compose_report(text, docs, manifest["publication_mode"])
             if preview:
                 print("PREVIEW_REPORT_BEGIN")
                 print(rendered)
@@ -339,7 +339,7 @@ def main() -> int:
 
     pending = False
     for event in store.all_events():
-        if event.status not in {"collecting", "published", "needs_human_review"} or len(event.documents) <= event.last_analyzed_document_count:
+        if event.status not in {"collecting", "published", "published_sec_pending", "needs_human_review"} or len(event.documents) <= event.last_analyzed_document_count:
             continue
         if ready_for_analysis(event, now):
             if args.dry_run:
