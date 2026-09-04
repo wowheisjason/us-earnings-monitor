@@ -22,7 +22,7 @@ jobs:
         env:
           PYTHONPATH: src
         run: pytest -q
-      - name: Build one-off SNOW watchlist
+      - name: Build official SNOW FY2027 Q2 evidence fixture
         run: |
           cat > /tmp/snow-watchlist.yaml <<'EOF'
           companies:
@@ -30,35 +30,66 @@ jobs:
               name: Snowflake
               cik: '0001640147'
               ir_index_url: 'https://investors.snowflake.com/'
-              ir_additional_urls:
-                - 'https://investors.snowflake.com/financials/quarterly-results/default.aspx'
-                - 'https://investors.snowflake.com/events-and-presentations/default.aspx'
-              official_domains: ['investors.snowflake.com', 'snowflake.com']
+              official_domains: ['investors.snowflake.com', 'snowflake.com', 's26.q4cdn.com']
           earnings_title_patterns:
-            - 'form 10-q'
-            - 'form 10-k'
             - 'form 8-k'
             - 'earnings'
             - 'financial results'
-            - 'quarterly results'
-            - 'press release'
             - 'investor presentation'
-            - 'q&a'
             - 'transcript'
+          EOF
+          cat > /tmp/snow-fixture.json <<'EOF'
+          [
+            {
+              "source": "sec_edgar",
+              "source_id": "0001640147-26-000033-ex991",
+              "ticker": "SNOW",
+              "title": "Snowflake Reports Financial Results for the Second Quarter of Fiscal 2027",
+              "published_at": "2026-09-02T16:08:29-04:00",
+              "url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/0001640147-26-000033-index.html",
+              "document_url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm",
+              "fiscal_year": 2027,
+              "quarter": "Q2",
+              "period_end": "2026-07-31",
+              "document_kind": "earnings_release",
+              "metadata": {"format": "html", "test_provenance": "official_sec"}
+            },
+            {
+              "source": "official_ir",
+              "source_id": "snow-q2-fy2027-investor-presentation",
+              "ticker": "SNOW",
+              "title": "Q2 FY2027 Investor Presentation",
+              "published_at": "2026-09-02T17:00:00-04:00",
+              "url": "https://s26.q4cdn.com/463892824/files/content_files/Q2-FY2027-Investor-Presentation_vFF.pdf",
+              "document_url": "https://s26.q4cdn.com/463892824/files/content_files/Q2-FY2027-Investor-Presentation_vFF.pdf",
+              "fiscal_year": 2027,
+              "quarter": "Q2",
+              "period_end": "2026-07-31",
+              "document_kind": "presentation",
+              "metadata": {"format": "pdf", "test_provenance": "official_ir"}
+            },
+            {
+              "source": "official_ir",
+              "source_id": "snow-q2-fy2027-corrected-transcript",
+              "ticker": "SNOW",
+              "title": "Q2 FY2027 Earnings Call Corrected Transcript",
+              "published_at": "2026-09-02T19:30:00-04:00",
+              "url": "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+              "document_url": "https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf",
+              "fiscal_year": 2027,
+              "quarter": "Q2",
+              "period_end": "2026-07-31",
+              "document_kind": "transcript",
+              "metadata": {"format": "pdf", "test_provenance": "official_ir"}
+            }
+          ]
           EOF
           printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{},"provider_health":{}}\n' > /tmp/snow-v3-state.json
       - name: Run SNOW FY2027 Q2 through production V3 and send Telegram
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GEMINI_IR_MODEL: ${{ vars.GEMINI_IR_MODEL || 'gemini-3.6-flash' }}
-          GEMINI_IR_FALLBACK_MODEL: ${{ vars.GEMINI_IR_FALLBACK_MODEL || 'gemini-3.5-flash' }}
           GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
           GEMINI_ANALYSIS_FALLBACK_MODEL: ${{ vars.GEMINI_ANALYSIS_FALLBACK_MODEL || 'gemini-flash-lite-latest' }}
-          OPENAI_IR_MODEL: ${{ vars.OPENAI_IR_MODEL || 'gpt-5.6-luna' }}
-          GEMINI_IR_TIMEOUT_SECONDS: ${{ vars.GEMINI_IR_TIMEOUT_SECONDS || '60' }}
-          OPENAI_IR_TIMEOUT_SECONDS: ${{ vars.OPENAI_IR_TIMEOUT_SECONDS || '60' }}
-          IR_DIRECT_TIMEOUT_SECONDS: ${{ vars.IR_DIRECT_TIMEOUT_SECONDS || '30' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
@@ -67,6 +98,7 @@ jobs:
           set -o pipefail
           python -m us_earnings_monitor \
             --watchlist /tmp/snow-watchlist.yaml \
+            --fixture /tmp/snow-fixture.json \
             --state /tmp/snow-v3-state.json \
             --at '2026-09-02T20:30:00-04:00' \
             --tickers SNOW 2>&1 | tee /tmp/snow-v3-live.log
