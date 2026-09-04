@@ -84,7 +84,7 @@ jobs:
             }
           ]
           EOF
-          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{},"provider_health":{}}\n' > /tmp/snow-v3-state.json
+          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{},"provider_health":{},"analysis_checkpoints":{}}\n' > /tmp/snow-v3-state.json
       - name: Seed collection-complete state from official evidence
         env:
           PYTHONPATH: src
@@ -110,7 +110,7 @@ jobs:
           store.save()
           print('SEEDED_EVENT', event.event_id, event.collection_status)
           PY
-      - name: Run SNOW FY2027 Q2 through production V3 and send Telegram
+      - name: Run SNOW FY2027 Q2 through production V3 with checkpoint resume and send Telegram
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
@@ -122,13 +122,26 @@ jobs:
           PYTHONPATH: src
         run: |
           set -o pipefail
-          python -m us_earnings_monitor \
-            --watchlist /tmp/snow-watchlist.yaml \
-            --fixture /tmp/snow-fixture.json \
-            --state /tmp/snow-v3-state.json \
-            --at '2026-09-02T20:30:00-04:00' \
-            --tickers SNOW 2>&1 | tee /tmp/snow-v3-live.log
-          grep -q 'Telegram delivery accepted' /tmp/snow-v3-live.log
+          : > /tmp/snow-v3-live.log
+          delivered=0
+          for attempt in 1 2 3; do
+            echo "LIVE_ATTEMPT=$attempt" | tee -a /tmp/snow-v3-live.log
+            python -m us_earnings_monitor \
+              --watchlist /tmp/snow-watchlist.yaml \
+              --fixture /tmp/snow-fixture.json \
+              --state /tmp/snow-v3-state.json \
+              --at '2026-09-02T20:30:00-04:00' \
+              --tickers SNOW 2>&1 | tee -a /tmp/snow-v3-live.log
+            if grep -q 'Telegram delivery accepted' /tmp/snow-v3-live.log; then
+              delivered=1
+              break
+            fi
+            if grep -q 'needs_human_review' /tmp/snow-v3-live.log; then
+              break
+            fi
+            sleep $((attempt * 15))
+          done
+          test "$delivered" -eq 1
           ! grep -q 'needs_human_review' /tmp/snow-v3-live.log
       - name: Upload live-test log
         if: always()
