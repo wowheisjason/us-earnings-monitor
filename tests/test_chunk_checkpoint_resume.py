@@ -37,14 +37,18 @@ class ChunkFailsOnceClient(ProductionInvestorV3Client):
         return {**EMPTY_PART, "event_id": event.event_id}
 
     def _consolidate_extractions(self, event, merged):
+        # Production must not call this legacy LLM consolidation stage anymore.
         self.consolidation_calls += 1
         return {**EMPTY_PART, "event_id": event.event_id}
+
+    def _extract_qa(self, event, evidence):
+        return []
 
     def _cross_context_clusters(self, facts):
         return []
 
 
-def test_second_chunk_failure_reuses_first_chunk_on_resume():
+def test_second_chunk_failure_reuses_first_chunk_on_resume_without_llm_consolidation():
     # Four ~7k paragraphs deterministically form two <=22k extraction groups.
     text = "\n\n".join([character * 7000 for character in ("A", "B", "C", "D")])
     evidence = [Evidence("doc:1", "Earnings Call Transcript", "https://example.com", text, [])]
@@ -55,7 +59,7 @@ def test_second_chunk_failure_reuses_first_chunk_on_resume():
         "Q2",
         "2026-09-02T16:00:00-04:00",
     )
-    checkpoint = {"pipeline_version": 1, "evidence_fingerprint": "test", "stages": {}}
+    checkpoint = {"pipeline_version": 2, "evidence_fingerprint": "test", "stages": {}}
     client = ChunkFailsOnceClient()
     client.configure_analysis_checkpoint(
         checkpoint,
@@ -73,8 +77,9 @@ def test_second_chunk_failure_reuses_first_chunk_on_resume():
 
     # Resume calls only the missing second chunk; chunk 1 is not regenerated.
     assert client.chunk_calls == 3
-    assert client.consolidation_calls == 1
+    # The high-token consolidation LLM is deliberately gone.
+    assert client.consolidation_calls == 0
     assert "facts_chunk_2" in checkpoint["stages"]
-    assert "facts_consolidation" in checkpoint["stages"]
+    assert "facts_deterministic_merge" in checkpoint["stages"]
     assert "cross_context_internal" in checkpoint["stages"]
     assert facts["extraction_group_count"] == 2
