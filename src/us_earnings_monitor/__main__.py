@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 
 from .analysis import AnalysisClient, build_analysis_client, build_ir_research_client
 from .calendar import is_likely_trading_day
+from .checkpointing import completed_stages, evidence_fingerprint, get_stage, prepare_checkpoint, put_stage
 from .config import load_watchlist
 from .extract import EvidenceExtractor
 from .grouping import align_companion_periods, attach, classify_document, ready_for_analysis, title_is_earnings
@@ -108,6 +109,22 @@ def _record_provider_health(store: StateStore, attempts: list[dict], now: dateti
             })
 
 
+def _save_analysis_stage(
+    store: StateStore,
+    event: EarningsEvent,
+    checkpoint: dict,
+    stage: str,
+    payload: dict,
+    *,
+    preview: bool,
+) -> None:
+    put_stage(checkpoint, stage, payload)
+    if not preview:
+        store.put_analysis_checkpoint(event.event_id, checkpoint)
+    LOG.info("%s checkpoint saved stage=%s completed=%s",
+             event.event_id, stage, completed_stages(checkpoint))
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Official-source US earnings monitor")
     parser.add_argument("--watchlist", default="watchlist.yaml")
@@ -185,7 +202,24 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
         return "collection_pending"
 
     evidence = [EvidenceExtractor().fetch(doc) for doc in docs]
-    facts = client.extract_facts(event, evidence)
+    fingerprint = evidence_fingerprint(evidence)
+    existing_checkpoint = {} if preview else store.get_analysis_checkpoint(event.event_id)
+    checkpoint, invalidated = prepare_checkpoint(existing_checkpoint, fingerprint)
+    if invalidated:
+        LOG.info("%s analysis checkpoint invalidated because evidence/pipeline changed", event.event_id)
+    elif existing_checkpoint:
+        LOG.info("%s resuming analysis checkpoint stages=%s",
+                 event.event_id, completed_stages(checkpoint))
+    if not preview:
+        store.put_analysis_checkpoint(event.event_id, checkpoint)
+
+    facts = get_stage(checkpoint, "facts")
+    if facts is None:
+        facts = client.extract_facts(event, evidence)
+        _save_analysis_stage(store, event, checkpoint, "facts", facts, preview=preview)
+    else:
+        LOG.info("%s checkpoint hit stage=facts", event.event_id)
+
     deterministic_issues = validate_extracted_facts(facts)
     facts["collection_status"] = event.collection_status
     facts["deterministic_validation_issues"] = deterministic_issues
@@ -198,20 +232,59 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
         event.last_analyzed_document_count = len(event.documents)
         event.updated_at = now_iso(now)
         store.put_event(event)
+        if not preview:
+            store.clear_analysis_checkpoint(event.event_id)
         return "no_material_update"
 
-    analysis = client.analyze(event, facts, evidence)
-    audit = client.audit(event, facts, analysis, evidence)
+    analysis = get_stage(checkpoint, "analysis")
+    if analysis is None:
+        analysis = client.analyze(event, facts, evidence)
+        _save_analysis_stage(store, event, checkpoint, "analysis", analysis, preview=preview)
+    else:
+        LOG.info("%s checkpoint hit stage=analysis", event.event_id)
+
+    audit = get_stage(checkpoint, "audit")
+    if audit is None:
+        audit = client.audit(event, facts, analysis, evidence)
+        _save_analysis_stage(store, event, checkpoint, "audit", audit, preview=preview)
+    else:
+        LOG.info("%s checkpoint hit stage=audit", event.event_id)
+
     draft = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
     report_issues = validate_report_text(draft)
     if report_issues:
         LOG.warning("%s deterministic report validation issues: %s", event.event_id, report_issues)
 
-    if (audit.get("overall_score", 0) < 90 or audit.get("unsupported_claims") or audit.get("numerical_errors")
-            or audit.get("critical_issues") or deterministic_issues or report_issues or len(draft) > REPORT_MAX_CHARS):
+    needs_revision = bool(
+        audit.get("overall_score", 0) < 90
+        or audit.get("unsupported_claims")
+        or audit.get("numerical_errors")
+        or audit.get("critical_issues")
+        or deterministic_issues
+        or report_issues
+        or len(draft) > REPORT_MAX_CHARS
+    )
+    if needs_revision:
         facts["deterministic_report_issues"] = report_issues
-        analysis = client.revise(facts, analysis, audit)
-        audit = client.audit(event, facts, analysis, evidence)
+        revised_analysis = get_stage(checkpoint, "revision_analysis")
+        if revised_analysis is None:
+            revised_analysis = client.revise(facts, analysis, audit)
+            _save_analysis_stage(
+                store, event, checkpoint, "revision_analysis", revised_analysis, preview=preview
+            )
+        else:
+            LOG.info("%s checkpoint hit stage=revision_analysis", event.event_id)
+        analysis = revised_analysis
+
+        revised_audit = get_stage(checkpoint, "revision_audit")
+        if revised_audit is None:
+            revised_audit = client.audit(event, facts, analysis, evidence)
+            _save_analysis_stage(
+                store, event, checkpoint, "revision_audit", revised_audit, preview=preview
+            )
+        else:
+            LOG.info("%s checkpoint hit stage=revision_audit", event.event_id)
+        audit = revised_audit
         draft = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
         report_issues = validate_report_text(draft)
 
@@ -235,6 +308,8 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
             event.last_analyzed_document_count = len(event.documents)
             event.updated_at = now_iso(now)
             store.put_event(event)
+            if not preview:
+                store.clear_analysis_checkpoint(event.event_id)
             return "preview_published" if preview else "published"
 
     event.status = "needs_human_review"
@@ -251,6 +326,7 @@ def mark_baseline(store: StateStore, now: datetime) -> int:
             event.last_analyzed_document_count = len(event.documents)
             event.updated_at = now_iso(now)
             store.put_event(event)
+            store.clear_analysis_checkpoint(event.event_id)
             count += 1
     return count
 
@@ -362,7 +438,8 @@ def main() -> int:
                     outcome = _run_analysis(event, store, analysis_client, args.preview, now)
                 except Exception as exc:  # noqa: BLE001
                     # Provider outages are operational failures, not evidence-quality failures.
-                    # Leave the event collectable/retriable rather than poisoning it as human review.
+                    # Checkpointed stages remain intact so the next run resumes instead of
+                    # re-spending tokens on already completed work.
                     LOG.warning("%s analysis provider unavailable: %s", event.event_id, exc)
                     outcome = "analysis_provider_unavailable"
             LOG.info("%s: %s", event.event_id, outcome)
