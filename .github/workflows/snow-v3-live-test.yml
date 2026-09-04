@@ -85,6 +85,31 @@ jobs:
           ]
           EOF
           printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{},"provider_health":{}}\n' > /tmp/snow-v3-state.json
+      - name: Seed collection-complete state from official evidence
+        env:
+          PYTHONPATH: src
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          from us_earnings_monitor.__main__ import ingest, load_fixture, _event_documents
+          from us_earnings_monitor.config import load_watchlist
+          from us_earnings_monitor.quality import update_collection_status
+          from us_earnings_monitor.state import StateStore
+
+          now = datetime.fromisoformat('2026-09-02T20:30:00-04:00').astimezone(ZoneInfo('America/New_York'))
+          _, patterns = load_watchlist('/tmp/snow-watchlist.yaml')
+          store = StateStore('/tmp/snow-v3-state.json')
+          events, ignored = ingest(load_fixture('/tmp/snow-fixture.json'), store, patterns, now)
+          assert ignored == 0 and len(events) == 1, (ignored, [e.event_id for e in events])
+          event = events[0]
+          docs = _event_documents(event, store)
+          update_collection_status(event, docs, now, official_ir_checked=True)
+          assert event.collection_status.get('transcript_status') == 'FOUND', event.collection_status
+          store.put_event(event)
+          store.save()
+          print('SEEDED_EVENT', event.event_id, event.collection_status)
+          PY
       - name: Run SNOW FY2027 Q2 through production V3 and send Telegram
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
