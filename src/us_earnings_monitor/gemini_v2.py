@@ -104,12 +104,22 @@ class GeminiV2Client(GeminiClient):
 
     def _stage_models(self, stage: str) -> list[str]:
         if stage == "ir_research":
-            primary = os.getenv("GEMINI_IR_MODEL", "gemini-3.6-flash")
-            fallback = os.getenv("GEMINI_IR_FALLBACK_MODEL", "gemini-3.5-flash")
+            configured = (
+                os.getenv("GEMINI_IR_MODEL", "gemini-3.6-flash"),
+                os.getenv("GEMINI_IR_FALLBACK_MODEL", "gemini-3.5-flash"),
+            )
         else:
-            primary = os.getenv("GEMINI_ANALYSIS_MODEL") or os.getenv("GEMINI_MODEL") or "gemini-3.5-flash-lite"
-            fallback = os.getenv("GEMINI_ANALYSIS_FALLBACK_MODEL", "gemini-flash-lite-latest")
-        return list(dict.fromkeys(model.removeprefix("models/") for model in (primary, fallback) if model))
+            # Keep low-cost Flash-Lite as the normal path. V3 can make several
+            # bounded map/reduce calls for long transcripts, which amplifies the
+            # chance that a temporary Lite-capacity spike aborts an otherwise
+            # healthy event. Only after both Lite endpoints are unavailable do
+            # we escalate to a full Flash model.
+            configured = (
+                os.getenv("GEMINI_ANALYSIS_MODEL") or os.getenv("GEMINI_MODEL") or "gemini-3.5-flash-lite",
+                os.getenv("GEMINI_ANALYSIS_FALLBACK_MODEL", "gemini-flash-lite-latest"),
+                os.getenv("GEMINI_ANALYSIS_TERTIARY_MODEL", "gemini-3.5-flash"),
+            )
+        return list(dict.fromkeys(model.removeprefix("models/") for model in configured if model))
 
     def _interaction_json(self, prompt: str, stage: str) -> dict[str, Any]:
         if self._search_circuit_reason:
