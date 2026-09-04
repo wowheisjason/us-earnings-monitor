@@ -9,16 +9,18 @@ from .models import Evidence
 
 TRANSCRIPT_MARKERS = (
     "transcript", "q&a", "question-and-answer", "question and answer",
-    "prepared remarks", "earnings call", "operator",
+    "prepared remarks", "earnings call", "conference call",
 )
-QA_MARKERS = (
-    "question-and-answer", "question and answer", "questions and answers", "q&a",
-    "operator", "analyst",
+QA_START_MARKERS = (
+    "question-and-answer session", "question and answer session", "questions and answers", "q&a session",
+    "we will now begin the question-and-answer", "we'll now begin the question-and-answer",
+    "we will now take questions", "we'll now take questions",
 )
 SECTION_CHARS = 7_500
 GROUP_CHARS = 22_000
 MAX_GROUPS = 6
-BALANCED_TOTAL_CHARS = 96_000
+BALANCED_TOTAL_CHARS = 72_000
+QA_TOTAL_CHARS = 30_000
 
 
 def _norm(value: str) -> str:
@@ -38,7 +40,6 @@ def _paragraph_chunks(text: str, max_chars: int = SECTION_CHARS) -> list[str]:
     current: list[str] = []
     size = 0
     for paragraph in paragraphs:
-        # Very long PDF-extracted paragraphs still need deterministic slicing.
         pieces = [paragraph[i:i + max_chars] for i in range(0, len(paragraph), max_chars)] or [paragraph]
         for piece in pieces:
             extra = len(piece) + (2 if current else 0)
@@ -54,22 +55,21 @@ def _paragraph_chunks(text: str, max_chars: int = SECTION_CHARS) -> list[str]:
 
 
 def sectionize(evidence: Iterable[Evidence]) -> list[dict]:
-    """Create position-aware evidence sections without discarding transcript middle/end."""
+    """Create position-aware sections and only mark Q&A after a real Q&A boundary."""
     sections: list[dict] = []
     for item in evidence:
         text = re.sub(r"\n{3,}", "\n\n", item.text or "").strip()
         if not text and not item.structured_facts:
             continue
         transcript = _is_transcript(item)
-        qa_started = False
+        title_is_qa = any(marker in item.title.casefold() for marker in ("q&a", "question-and-answer", "questions and answers"))
+        qa_started = title_is_qa
         chunks = _paragraph_chunks(text)
         for index, chunk in enumerate(chunks):
             lower = chunk.casefold()
-            if any(marker in lower for marker in ("question-and-answer session", "questions and answers", "question and answer", "q&a")):
+            if any(marker in lower for marker in QA_START_MARKERS):
                 qa_started = True
-            kind = "qa" if transcript and (qa_started or any(marker in lower for marker in QA_MARKERS)) else (
-                "transcript" if transcript else "document"
-            )
+            kind = "qa" if transcript and qa_started else ("transcript" if transcript else "document")
             sections.append({
                 "section_id": f"{item.document_key}#s{index + 1}",
                 "document_key": item.document_key,
@@ -94,13 +94,7 @@ def sectionize(evidence: Iterable[Evidence]) -> list[dict]:
     return sections
 
 
-def extraction_groups(evidence: list[Evidence]) -> list[list[dict]]:
-    """Map long corpora into bounded groups; short corpora stay one-call for efficiency."""
-    sections = sectionize(evidence)
-    total = sum(len(section["text"]) for section in sections)
-    if total <= GROUP_CHARS:
-        return [sections] if sections else [[]]
-
+def _pack(sections: list[dict]) -> list[list[dict]]:
     groups: list[list[dict]] = []
     current: list[dict] = []
     size = 0
@@ -114,30 +108,68 @@ def extraction_groups(evidence: list[Evidence]) -> list[list[dict]]:
         size += section_size
     if current:
         groups.append(current)
+    return groups
 
-    if len(groups) <= MAX_GROUPS:
+
+def _sample_groups(groups: list[list[dict]], slots: int) -> list[list[dict]]:
+    if slots <= 0 or not groups:
+        return []
+    if len(groups) <= slots:
         return groups
-
-    # Preserve coverage across the full document instead of silently taking only the beginning.
-    indexes = sorted({round(i * (len(groups) - 1) / (MAX_GROUPS - 1)) for i in range(MAX_GROUPS)})
+    if slots == 1:
+        return [groups[-1]]
+    indexes = sorted({round(i * (len(groups) - 1) / (slots - 1)) for i in range(slots)})
     return [groups[index] for index in indexes]
+
+
+def extraction_groups(evidence: list[Evidence]) -> list[list[dict]]:
+    """Bound map calls while guaranteeing that real Q&A is never sampled away."""
+    sections = sectionize(evidence)
+    total = sum(len(section["text"]) for section in sections)
+    if total <= GROUP_CHARS:
+        return [sections] if sections else [[]]
+
+    qa_sections = [section for section in sections if section["kind"] == "qa"]
+    other_sections = [section for section in sections if section["kind"] != "qa"]
+    qa_groups = _pack(qa_sections)
+    other_groups = _pack(other_sections)
+
+    if not qa_groups:
+        return _sample_groups(other_groups, MAX_GROUPS)
+
+    # Reserve up to half the map budget for Q&A, which is the least redundant
+    # and highest-alpha material. Remaining slots cover the rest of the corpus.
+    qa_slots = min(len(qa_groups), max(2, MAX_GROUPS // 2))
+    selected_qa = _sample_groups(qa_groups, qa_slots)
+    selected_other = _sample_groups(other_groups, MAX_GROUPS - len(selected_qa))
+    return selected_other + selected_qa
 
 
 def sections_json(sections: list[dict]) -> str:
     return json.dumps({"sections": sections}, ensure_ascii=False)
 
 
+def qa_evidence_payload(evidence: list[Evidence], total_chars: int = QA_TOTAL_CHARS) -> dict:
+    qa = [section for section in sectionize(evidence) if section["kind"] == "qa"]
+    output: list[dict] = []
+    used = 0
+    for section in qa:
+        remaining = total_chars - used
+        if remaining <= 0:
+            break
+        text = section["text"][:remaining]
+        output.append({**section, "text": text})
+        used += len(text)
+    return {"sections": output}
+
+
 def balanced_evidence_payload(evidence: list[Evidence], total_chars: int = BALANCED_TOTAL_CHARS) -> dict:
-    """Build audit evidence with Q&A priority and beginning/middle/end coverage."""
     sections = sectionize(evidence)
     if not sections:
         return {"documents": []}
-
     qa = [section for section in sections if section["kind"] == "qa"]
     other = [section for section in sections if section["kind"] != "qa"]
     ordered: list[dict] = []
-
-    # Q&A is usually the highest-alpha section; keep it first, then sample the rest across positions.
     ordered.extend(qa)
     if other:
         if len(other) <= 6:
@@ -145,7 +177,6 @@ def balanced_evidence_payload(evidence: list[Evidence], total_chars: int = BALAN
         else:
             indexes = sorted({0, 1, len(other) // 3, len(other) // 2, (2 * len(other)) // 3, len(other) - 2, len(other) - 1})
             ordered.extend(other[index] for index in indexes if 0 <= index < len(other))
-
     output: list[dict] = []
     used = 0
     seen: set[str] = set()
@@ -163,7 +194,6 @@ def balanced_evidence_payload(evidence: list[Evidence], total_chars: int = BALAN
 
 
 def merge_partial_extractions(parts: list[dict]) -> dict:
-    """Deterministically union list-like partial outputs before the consolidation LLM call."""
     merged: dict = {}
     list_values: dict[str, list] = defaultdict(list)
     for part in parts:
@@ -186,7 +216,6 @@ def merge_partial_extractions(parts: list[dict]) -> dict:
 
 
 def quote_validation_issues(facts: dict, evidence: list[Evidence]) -> list[str]:
-    """Reject extracted quotes that cannot be located in the claimed official document."""
     by_key = {item.document_key: _norm(item.text) for item in evidence}
     issues: list[str] = []
 
@@ -198,7 +227,6 @@ def quote_validation_issues(facts: dict, evidence: list[Evidence]) -> list[str]:
                 quote = str(evidence_node.get("quote") or "").strip()
                 if key and quote and key in by_key:
                     normalized_quote = _norm(quote)
-                    # Quotes are intentionally short; require a meaningful source-backed phrase.
                     if len(normalized_quote) >= 24 and normalized_quote not in by_key[key]:
                         issues.append(f"{path}:quote_not_found_in_{key}")
             for key, item in value.items():

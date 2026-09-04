@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+from pathlib import Path
 
 import requests
 
@@ -15,6 +16,8 @@ def send_report(
 
     Telegram returns HTTP 200 for some API-level failures, so checking only
     ``raise_for_status`` can falsely mark a notification as delivered.
+    ``TELEGRAM_CAPTURE_PATH`` is an opt-in diagnostics hook used by live
+    regressions to persist the exact user-facing payload before transmission.
     """
     token = token or os.getenv("TELEGRAM_BOT_TOKEN")
     chat_id = chat_id or os.getenv("TELEGRAM_CHAT_ID")
@@ -23,6 +26,11 @@ def send_report(
     payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True}
     if parse_mode:
         payload["parse_mode"] = parse_mode
+    capture_path = os.getenv("TELEGRAM_CAPTURE_PATH")
+    if capture_path:
+        path = Path(capture_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
     response = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json=payload, timeout=30)
     response.raise_for_status()
     try:

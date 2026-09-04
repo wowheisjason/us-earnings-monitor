@@ -6,7 +6,9 @@ from typing import Any
 
 from .models import Evidence
 
-CHECKPOINT_PIPELINE_VERSION = 1
+# V2 changes the evidence preprocessing and removes the LLM consolidation stage.
+# Old checkpoints must never be reused across that architecture boundary.
+CHECKPOINT_PIPELINE_VERSION = 2
 
 
 def _stable_json(value: Any) -> str:
