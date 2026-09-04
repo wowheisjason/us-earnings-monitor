@@ -114,6 +114,17 @@ def _browser_headers() -> dict[str, str]:
     }
 
 
+def _response_text(response: requests.Response) -> str:
+    """Decode response body even for simple/fake Response objects without `.text`."""
+    text = getattr(response, "text", None)
+    if isinstance(text, str):
+        return text
+    content = getattr(response, "content", b"")
+    if isinstance(content, bytes):
+        return content.decode("utf-8", errors="replace")
+    return str(content or "")
+
+
 class OfficialIrAdapter:
     """Event-triggered same-domain IR crawler with one-level and embedded-asset discovery."""
 
@@ -183,7 +194,7 @@ class OfficialIrAdapter:
 
     def _parse_page(self, company: Company, page_url: str, day: date, configured_urls: list[str], allow_event_links: bool) -> tuple[list[Disclosure], list[str]]:
         response = self._get(page_url)
-        raw = response.text.replace("\\/", "/")
+        raw = _response_text(response).replace("\\/", "/")
         soup = BeautifulSoup(response.content, "lxml")
         events = self.events_by_ticker.get(company.ticker, [])
         found: list[Disclosure] = []
