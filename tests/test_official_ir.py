@@ -62,10 +62,19 @@ def test_ir_accepts_extensionless_labelled_transcript():
     company = Company("SPCX", "SpaceX", "0001181412", "https://ir.example/")
     docs = OfficialIrAdapter([event()], session=FakeSession(page)).discover([company], date(2026, 8, 4))
     assert len(docs) == 1
-    assert docs[0].document_kind == "other"  # classification happens during ingest
+    # Early classification is required so retrieval can mark transcript_status=FOUND
+    # before the centralized ingest pass.
+    assert docs[0].document_kind == "transcript"
     assert docs[0].title == "Transcript"
     assert docs[0].document_url.endswith("a24f97e4-63b2-460d-a4be-44738826e8ce")
     assert docs[0].metadata["format"] == "unknown"
+
+
+def test_ir_recovers_same_domain_asset_serialized_in_script():
+    page = r'''<script>window.latest={"label":"Q2 2026 Earnings Presentation 2026-08-04","url":"\/ir\/q2-slides.pdf"};</script>'''
+    company = Company("SPCX", "SpaceX", "0001181412", "https://ir.example/ir/")
+    docs = OfficialIrAdapter([event()], session=FakeSession(page)).discover([company], date(2026, 8, 4))
+    assert any(doc.document_url == "https://ir.example/ir/q2-slides.pdf" for doc in docs)
 
 
 def test_ir_follows_one_same_host_event_page_for_assets():
