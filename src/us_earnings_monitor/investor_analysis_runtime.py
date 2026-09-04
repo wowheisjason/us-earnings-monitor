@@ -7,6 +7,7 @@ from typing import Any
 from .checkpointing import get_stage
 from .evidence_architecture import extraction_groups, merge_partial_extractions, quote_validation_issues, sections_json
 from .investor_analysis_v3 import InvestorFrameworkV3Client, _bounded_facts
+from .report_contract import harden_audit_with_report_quality, stage_contract
 from .report_output import chinese_language_error, clean_user_report
 
 _PENDING_TRANSCRIPT_STATES = {
@@ -27,13 +28,7 @@ def _normalize_report_header(value: str) -> str:
 
 
 def _remove_qa_section(value: str) -> str:
-    """Remove a Q&A section when no transcript evidence exists yet.
-
-    SEC-only V1 already carries an explicit collection-pending banner. A model-
-    generated placeholder Q&A section adds no information and previously caused
-    the auditor to reject the very publication mode that the deterministic gate
-    intentionally permits.
-    """
+    """Remove a legacy standalone Q&A section when no transcript evidence exists yet."""
     return re.sub(
         r"\n{2,}🎙️\s*法說\s*Q&A\s*[:：].*?(?=\n{2,}⚖️|\Z)",
         "",
@@ -87,7 +82,7 @@ def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> d
     present. When the deterministic collection state says the transcript is
     still pending and facts.qa is empty, absence-related Q&A complaints are not
     valid audit errors. All unrelated evidence, numerical, inference, language,
-    and materiality errors remain untouched.
+    materiality and V4 report-quality errors remain untouched.
     """
     status = str((facts.get("collection_status") or {}).get("transcript_status") or "UNKNOWN").upper()
     if facts.get("qa") or status == "FOUND":
@@ -112,7 +107,7 @@ def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> d
 
 
 class ProductionInvestorV3Client(InvestorFrameworkV3Client):
-    """V3 production wrapper with resumable extraction and user-output guards."""
+    """Production US client with resumable extraction, SEC-V1 semantics and V4 report guards."""
 
     _STAGE_ALIASES = {
         "analyst_v3": "analyst",
@@ -185,10 +180,14 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
 
     def audit(self, event, facts: dict, analysis: dict, evidence) -> dict:
         value = super().audit(event, facts, analysis, evidence)
-        return _normalize_pending_transcript_audit(value, facts)
+        value = _normalize_pending_transcript_audit(value, facts)
+        return harden_audit_with_report_quality(value)
 
     def _json(self, prompt: str, stage: str, tools: list[dict[str, Any]] | None = None) -> dict[str, Any]:
         original_stage = stage
+        contract = stage_contract(original_stage)
+        if contract:
+            prompt = prompt + "\n\n" + contract
         value = super()._json(prompt, self._STAGE_ALIASES.get(stage, stage), tools)
         if original_stage == "auditor_v3":
             value = _harden_audit_result(value)
