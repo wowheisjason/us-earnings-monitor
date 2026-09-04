@@ -1,0 +1,88 @@
+name: AVGO V3 production live regression
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/avgo-v3-live-regression.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  avgo-auto:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Run deterministic tests
+        env:
+          PYTHONPATH: src
+        run: pytest -q
+      - name: Build isolated AVGO watchlist and state
+        run: |
+          cat > /tmp/avgo-watchlist.yaml <<'EOF'
+          companies:
+            - ticker: AVGO
+              name: Broadcom Inc.
+              cik: '0001730168'
+              ir_index_url: 'https://investors.broadcom.com/'
+              official_domains: ['investors.broadcom.com', 'broadcom.com']
+          earnings_title_patterns:
+            - 'form 8-k'
+            - 'earnings'
+            - 'financial results'
+            - 'quarter results'
+            - 'transcript'
+            - 'presentation'
+          EOF
+          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{},"provider_health":{},"analysis_checkpoints":{}}\n' > /tmp/avgo-v3-state.json
+      - name: Run Broadcom Q3 FY2026 through automatic production pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_IR_MODEL: ${{ vars.GEMINI_IR_MODEL || 'gemini-3.6-flash' }}
+          GEMINI_IR_FALLBACK_MODEL: ${{ vars.GEMINI_IR_FALLBACK_MODEL || 'gemini-3.5-flash' }}
+          GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
+          GEMINI_ANALYSIS_FALLBACK_MODEL: ${{ vars.GEMINI_ANALYSIS_FALLBACK_MODEL || 'gemini-flash-lite-latest' }}
+          GEMINI_ANALYSIS_TERTIARY_MODEL: ${{ vars.GEMINI_ANALYSIS_TERTIARY_MODEL || 'gemini-3.5-flash' }}
+          GEMINI_ANALYSIS_QUATERNARY_MODEL: ${{ vars.GEMINI_ANALYSIS_QUATERNARY_MODEL || 'gemini-3.6-flash' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PYTHONPATH: src
+        run: |
+          set -o pipefail
+          : > /tmp/avgo-v3-live.log
+          delivered=0
+          for attempt in 1 2 3; do
+            echo "AVGO_LIVE_ATTEMPT=$attempt" | tee -a /tmp/avgo-v3-live.log
+            python -m us_earnings_monitor \
+              --watchlist /tmp/avgo-watchlist.yaml \
+              --state /tmp/avgo-v3-state.json \
+              --at '2026-09-02T20:30:00-04:00' \
+              --tickers AVGO 2>&1 | tee -a /tmp/avgo-v3-live.log
+            if grep -q 'Telegram delivery accepted' /tmp/avgo-v3-live.log; then
+              delivered=1
+              break
+            fi
+            if grep -q 'needs_human_review' /tmp/avgo-v3-live.log; then
+              break
+            fi
+            sleep $((attempt * 20))
+          done
+          test "$delivered" -eq 1
+          ! grep -q 'needs_human_review' /tmp/avgo-v3-live.log
+      - name: Upload AVGO regression diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: avgo-v3-live-regression
+          path: |
+            /tmp/avgo-v3-live.log
+            /tmp/avgo-v3-state.json
+          if-no-files-found: ignore
+          retention-days: 14
