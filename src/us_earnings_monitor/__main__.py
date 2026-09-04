@@ -82,12 +82,7 @@ def _provider_is_blocked(store: StateStore, provider: str, now: datetime) -> boo
 
 
 def _record_provider_health(store: StateStore, attempts: list[dict], now: datetime) -> None:
-    """Persist only provider-level health, never per-document content.
-
-    Search quota/billing failures are cooled down for six hours. Network/model
-    failures remain event-local and are retried by the normal event clock.
-    A successful provider attempt clears the circuit immediately.
-    """
+    """Persist only provider-level health, never per-document content."""
     for attempt in attempts:
         provider = attempt.get("provider")
         if not provider:
@@ -121,6 +116,10 @@ def _save_analysis_stage(
     put_stage(checkpoint, stage, payload)
     if not preview:
         store.put_analysis_checkpoint(event.event_id, checkpoint)
+        # Flush every successful stage to disk immediately. Provider failures are
+        # normally caught by the caller, but this also protects completed chunks
+        # against process/runner interruption before the normal end-of-run save.
+        store.save()
     LOG.info("%s checkpoint saved stage=%s completed=%s",
              event.event_id, stage, completed_stages(checkpoint))
 
@@ -212,6 +211,16 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
                  event.event_id, completed_stages(checkpoint))
     if not preview:
         store.put_analysis_checkpoint(event.event_id, checkpoint)
+        store.save()
+
+    configure_checkpoint = getattr(client, "configure_analysis_checkpoint", None)
+    if callable(configure_checkpoint):
+        configure_checkpoint(
+            checkpoint,
+            lambda stage, payload: _save_analysis_stage(
+                store, event, checkpoint, stage, payload, preview=preview
+            ),
+        )
 
     facts = get_stage(checkpoint, "facts")
     if facts is None:
@@ -234,6 +243,7 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
         store.put_event(event)
         if not preview:
             store.clear_analysis_checkpoint(event.event_id)
+            store.save()
         return "no_material_update"
 
     analysis = get_stage(checkpoint, "analysis")
@@ -310,11 +320,14 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
             store.put_event(event)
             if not preview:
                 store.clear_analysis_checkpoint(event.event_id)
+                store.save()
             return "preview_published" if preview else "published"
 
     event.status = "needs_human_review"
     event.updated_at = now_iso(now)
     store.put_event(event)
+    if not preview:
+        store.save()
     return "needs_human_review"
 
 
@@ -437,9 +450,6 @@ def main() -> int:
                 try:
                     outcome = _run_analysis(event, store, analysis_client, args.preview, now)
                 except Exception as exc:  # noqa: BLE001
-                    # Provider outages are operational failures, not evidence-quality failures.
-                    # Checkpointed stages remain intact so the next run resumes instead of
-                    # re-spending tokens on already completed work.
                     LOG.warning("%s analysis provider unavailable: %s", event.event_id, exc)
                     outcome = "analysis_provider_unavailable"
             LOG.info("%s: %s", event.event_id, outcome)
