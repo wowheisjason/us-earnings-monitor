@@ -1,0 +1,82 @@
+name: SNOW V3 live Telegram test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/snow-v3-live-test.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  snow-live:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Run deterministic tests
+        env:
+          PYTHONPATH: src
+        run: pytest -q
+      - name: Build one-off SNOW watchlist
+        run: |
+          cat > /tmp/snow-watchlist.yaml <<'EOF'
+          companies:
+            - ticker: SNOW
+              name: Snowflake
+              cik: '0001640147'
+              ir_index_url: 'https://investors.snowflake.com/'
+              ir_additional_urls:
+                - 'https://investors.snowflake.com/financials/quarterly-results/default.aspx'
+                - 'https://investors.snowflake.com/events-and-presentations/default.aspx'
+              official_domains: ['investors.snowflake.com', 'snowflake.com']
+          earnings_title_patterns:
+            - 'form 10-q'
+            - 'form 10-k'
+            - 'form 8-k'
+            - 'earnings'
+            - 'financial results'
+            - 'quarterly results'
+            - 'press release'
+            - 'investor presentation'
+            - 'q&a'
+            - 'transcript'
+          EOF
+          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{},"provider_health":{}}\n' > /tmp/snow-v3-state.json
+      - name: Run SNOW FY2027 Q2 through production V3 and send Telegram
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_IR_MODEL: ${{ vars.GEMINI_IR_MODEL || 'gemini-3.6-flash' }}
+          GEMINI_IR_FALLBACK_MODEL: ${{ vars.GEMINI_IR_FALLBACK_MODEL || 'gemini-3.5-flash' }}
+          GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
+          GEMINI_ANALYSIS_FALLBACK_MODEL: ${{ vars.GEMINI_ANALYSIS_FALLBACK_MODEL || 'gemini-flash-lite-latest' }}
+          OPENAI_IR_MODEL: ${{ vars.OPENAI_IR_MODEL || 'gpt-5.6-luna' }}
+          GEMINI_IR_TIMEOUT_SECONDS: ${{ vars.GEMINI_IR_TIMEOUT_SECONDS || '60' }}
+          OPENAI_IR_TIMEOUT_SECONDS: ${{ vars.OPENAI_IR_TIMEOUT_SECONDS || '60' }}
+          IR_DIRECT_TIMEOUT_SECONDS: ${{ vars.IR_DIRECT_TIMEOUT_SECONDS || '30' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PYTHONPATH: src
+        run: |
+          set -o pipefail
+          python -m us_earnings_monitor \
+            --watchlist /tmp/snow-watchlist.yaml \
+            --state /tmp/snow-v3-state.json \
+            --at '2026-09-02T20:30:00-04:00' \
+            --tickers SNOW 2>&1 | tee /tmp/snow-v3-live.log
+          grep -q 'Telegram delivery accepted' /tmp/snow-v3-live.log
+          ! grep -q 'needs_human_review' /tmp/snow-v3-live.log
+      - name: Upload live-test log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: snow-v3-live-test-log
+          path: /tmp/snow-v3-live.log
+          if-no-files-found: ignore
+          retention-days: 7
