@@ -61,14 +61,9 @@ def _inline_xbrl_facts(blob: bytes) -> list[dict]:
         value = tag.get_text("", strip=True)
         if not value:
             continue
-        facts.append({
-            "concept": concept,
-            "value": value,
-            "context": tag.get("contextref") or tag.get("contextRef"),
-            "unit": tag.get("unitref") or tag.get("unitRef"),
-            "scale": tag.get("scale"),
-            "source_file": "inline-xbrl",
-        })
+        facts.append({"concept": concept, "value": value, "context": tag.get("contextref") or tag.get("contextRef"),
+                      "unit": tag.get("unitref") or tag.get("unitRef"), "scale": tag.get("scale"),
+                      "source_file": "inline-xbrl"})
         if len(facts) >= 80:
             break
     return facts
@@ -99,49 +94,38 @@ class EvidenceExtractor:
 
     def fetch(self, disclosure: Disclosure) -> Evidence:
         if disclosure.source == "gemini_grounded_ir":
-            return Evidence(
-                disclosure.key,
-                disclosure.title,
-                disclosure.url,
-                str(disclosure.metadata.get("grounded_evidence", "")),
-                list(disclosure.metadata.get("structured_facts", []) or []),
-            )
+            return Evidence(disclosure.key, disclosure.title, disclosure.url,
+                            str(disclosure.metadata.get("grounded_evidence", "")),
+                            list(disclosure.metadata.get("structured_facts", []) or []))
+        if disclosure.source == "alpha_vantage_transcript":
+            raw = str(disclosure.metadata.get("transcript_text", ""))
+            return Evidence(disclosure.key, disclosure.title, disclosure.url,
+                            compress_text(raw, "transcript", disclosure.title), [])
         if not disclosure.document_url:
             return Evidence(disclosure.key, disclosure.title, disclosure.url, "")
-        user_agent = os.getenv(
-            "SEC_USER_AGENT",
-            "us-earnings-monitor/0.1 contact: research@example.com",
-        ) if disclosure.source == "sec_edgar" else os.getenv("USER_AGENT", "Mozilla/5.0 earnings-monitor/0.4")
+        user_agent = os.getenv("SEC_USER_AGENT", "us-earnings-monitor/0.1 contact: research@example.com") if disclosure.source == "sec_edgar" else os.getenv("USER_AGENT", "Mozilla/5.0 earnings-monitor/0.4")
         response = self.session.get(
             disclosure.document_url,
             timeout=45,
-            headers={
-                "User-Agent": user_agent,
-                "Accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8",
-                "Accept-Language": "en-US,en;q=0.9",
-            },
+            headers={"User-Agent": user_agent,
+                     "Accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8",
+                     "Accept-Language": "en-US,en;q=0.9"},
         )
         response.raise_for_status()
         content_type = response.headers.get("content-type", "").casefold()
         blob = response.content
         bare_url = disclosure.document_url.casefold().split("?", 1)[0]
-
         if "spreadsheet" in content_type or bare_url.endswith(".xlsx"):
             return Evidence(disclosure.key, disclosure.title, disclosure.url, _xlsx_relevant_text(blob))
         if "zip" in content_type or blob[:2] == b"PK":
-            facts = _xbrl_facts(blob)
-            return Evidence(disclosure.key, disclosure.title, disclosure.url, "", facts)
-
+            return Evidence(disclosure.key, disclosure.title, disclosure.url, "", _xbrl_facts(blob))
         facts: list[dict] = []
         if "pdf" in content_type or bare_url.endswith(".pdf") or blob[:5] == b"%PDF-":
             reader = PdfReader(io.BytesIO(blob))
-            # Parse pages locally, then select verbatim page evidence before any
-            # LLM call. This replaces the previous 100-160k transcript payload.
             pages = [(page.extract_text() or "") for page in reader.pages[:150]]
             selected_text = compress_pdf_pages(pages, disclosure.document_kind, disclosure.title)
         else:
             text = BeautifulSoup(blob, "html.parser").get_text("\n", strip=True)
             facts = _inline_xbrl_facts(blob) if "html" in content_type or bare_url.endswith((".htm", ".html")) else []
             selected_text = compress_text(text, disclosure.document_kind, disclosure.title)
-
         return Evidence(disclosure.key, disclosure.title, disclosure.url, selected_text, facts)
