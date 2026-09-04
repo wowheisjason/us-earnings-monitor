@@ -2,7 +2,7 @@ import inspect
 
 from us_earnings_monitor.analysis import build_analysis_client
 from us_earnings_monitor.evidence_architecture import extraction_groups, quote_validation_issues, sectionize
-from us_earnings_monitor.investor_analysis_runtime import ProductionInvestorV3Client
+from us_earnings_monitor.investor_analysis_runtime import ProductionInvestorV3Client, _harden_audit_result
 from us_earnings_monitor.investor_analysis_v3 import InvestorFrameworkV3Client
 from us_earnings_monitor.models import Evidence
 
@@ -40,3 +40,19 @@ def test_v3_prompt_has_two_axis_materiality_and_cross_context():
     assert "Cross-Context" in source
     assert "Headline De-prioritization" in source
     assert "Value-Chain Shift" in source
+
+
+def test_v3_semantic_errors_are_promoted_to_critical_gate():
+    audit = {
+        "overall_score": 96,
+        "pass": True,
+        "critical_issues": [],
+        "materiality_score_errors": ["boilerplate incorrectly scored M5"],
+        "cross_context_errors": [],
+        "value_chain_errors": [],
+        "causal_chain_errors": [],
+        "evidence_grade_errors": [],
+    }
+    hardened = _harden_audit_result(audit)
+    assert hardened["pass"] is False
+    assert "deterministic_v3_gate:materiality_score_errors" in hardened["critical_issues"]
