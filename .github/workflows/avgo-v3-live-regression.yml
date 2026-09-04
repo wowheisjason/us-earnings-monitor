@@ -56,6 +56,7 @@ jobs:
           GEMINI_ANALYSIS_QUATERNARY_MODEL: ${{ vars.GEMINI_ANALYSIS_QUATERNARY_MODEL || 'gemini-3.6-flash' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CAPTURE_PATH: /tmp/avgo-telegram.txt
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
           PYTHONPATH: src
         run: |
@@ -80,6 +81,7 @@ jobs:
             sleep 20
           done
           test "$delivered" -eq 1
+          test -s /tmp/avgo-telegram.txt
           ! grep -q 'needs_human_review' /tmp/avgo-v3-live.log
           python - <<'PY'
           import json
@@ -99,5 +101,6 @@ jobs:
           path: |
             /tmp/avgo-v3-live.log
             /tmp/avgo-v3-state.json
+            /tmp/avgo-telegram.txt
           if-no-files-found: ignore
           retention-days: 14
