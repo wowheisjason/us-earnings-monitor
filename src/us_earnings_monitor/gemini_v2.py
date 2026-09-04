@@ -95,6 +95,19 @@ def _interaction_grounding(payload: dict[str, Any]) -> dict[str, Any]:
     return {"search_queries": list(dict.fromkeys(queries)), "retrieved_urls": list(dict.fromkeys(urls))}
 
 
+def _generation_config(model: str) -> dict[str, Any]:
+    """Build a model-compatible structured-output configuration.
+
+    Gemini 3.6+ removed legacy sampling parameters such as temperature. Keep
+    temperature for the existing 3.5/Lite path, but omit it when the resilient
+    fallback escalates to a newer Flash generation.
+    """
+    config: dict[str, Any] = {"responseMimeType": "application/json"}
+    if not model.startswith(("gemini-3.6-", "gemini-3.7-", "gemini-3.8-")):
+        config["temperature"] = 0.1
+    return config
+
+
 class GeminiV2Client(GeminiClient):
     """Production Gemini client with explicit stage routing and modern IR search."""
 
@@ -109,15 +122,14 @@ class GeminiV2Client(GeminiClient):
                 os.getenv("GEMINI_IR_FALLBACK_MODEL", "gemini-3.5-flash"),
             )
         else:
-            # Keep low-cost Flash-Lite as the normal path. V3 can make several
-            # bounded map/reduce calls for long transcripts, which amplifies the
-            # chance that a temporary Lite-capacity spike aborts an otherwise
-            # healthy event. Only after both Lite endpoints are unavailable do
-            # we escalate to a full Flash model.
+            # Normal path stays cost-first. The final 3.6 Flash fallback is a
+            # different stable model generation/capacity pool and is reached
+            # only after both Lite endpoints and 3.5 Flash fail transiently.
             configured = (
                 os.getenv("GEMINI_ANALYSIS_MODEL") or os.getenv("GEMINI_MODEL") or "gemini-3.5-flash-lite",
                 os.getenv("GEMINI_ANALYSIS_FALLBACK_MODEL", "gemini-flash-lite-latest"),
                 os.getenv("GEMINI_ANALYSIS_TERTIARY_MODEL", "gemini-3.5-flash"),
+                os.getenv("GEMINI_ANALYSIS_QUATERNARY_MODEL", "gemini-3.6-flash"),
             )
         return list(dict.fromkeys(model.removeprefix("models/") for model in configured if model))
 
@@ -188,6 +200,7 @@ class GeminiV2Client(GeminiClient):
         tools = None
         timeout = int(os.getenv("GEMINI_ANALYSIS_TIMEOUT_SECONDS", "90"))
         attempts = int(os.getenv("GEMINI_ANALYSIS_ATTEMPTS", "2"))
+        backoff = float(os.getenv("GEMINI_ANALYSIS_BACKOFF_SECONDS", "2"))
         if stage in {"analyst", "auditor", "revision"}:
             prompt += _NO_UNIT_CONVERSION
 
@@ -197,7 +210,7 @@ class GeminiV2Client(GeminiClient):
             for attempt in range(max(1, attempts)):
                 body: dict[str, Any] = {
                     "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-                    "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1},
+                    "generationConfig": _generation_config(model),
                 }
                 try:
                     response = self.session.post(url, params={"key": self.api_key}, json=body, timeout=timeout)
@@ -213,13 +226,13 @@ class GeminiV2Client(GeminiClient):
                     LOG.warning("Gemini model=%s stage=%s transient HTTP=%s attempt=%d detail=%s",
                                 model, stage, status, attempt + 1, detail)
                     if attempt + 1 < attempts:
-                        time.sleep(1)
+                        time.sleep(backoff * (2 ** attempt))
                     continue
                 except requests.RequestException as exc:
                     last_error = exc
                     LOG.warning("Gemini model=%s stage=%s network failure attempt=%d: %s", model, stage, attempt + 1, exc)
                     if attempt + 1 < attempts:
-                        time.sleep(1)
+                        time.sleep(backoff * (2 ** attempt))
                     continue
 
                 payload = response.json()
