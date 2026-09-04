@@ -4,6 +4,7 @@ import hashlib
 import logging
 import os
 import re
+import time
 from datetime import date, datetime, timedelta
 from urllib.parse import urljoin, urlparse, urlunparse
 
@@ -34,16 +35,24 @@ _DATE_PATTERNS = (
     re.compile(r"(20\d{2})(\d{2})(\d{2})"),
     re.compile(r"(\d{1,2})/(\d{1,2})/(\d{2})"),
 )
+_EMBEDDED_ASSET_RE = re.compile(
+    r"(?P<url>(?:https?:)?(?:\\?/\\?/|/)[^\"'<>\s]{3,300}?\.(?:pdf|xlsx?|txt|html?)(?:\?[^\"'<>\s]*)?)",
+    re.IGNORECASE,
+)
 
 
 def _canonical_url(value: str) -> str:
+    value = value.replace("\\/", "/")
+    if value.startswith("//"):
+        value = "https:" + value
     parsed = urlparse(value)
     return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), parsed.path, "", parsed.query, ""))
 
 
-def _host_allowed(candidate: str, configured_urls: list[str]) -> bool:
+def _host_allowed(candidate: str, configured_urls: list[str], official_domains: list[str] | None = None) -> bool:
     host = (urlparse(candidate).hostname or "").lower()
     allowed = {(urlparse(item).hostname or "").lower() for item in configured_urls}
+    allowed.update(domain.lower().lstrip(".") for domain in (official_domains or []) if domain)
     return bool(host) and any(host == item or host.endswith("." + item) for item in allowed if item)
 
 
@@ -54,8 +63,6 @@ def _nearby_date(value: str) -> date | None:
             continue
         try:
             parts = tuple(int(part) for part in match.groups())
-            # IR index pages commonly render release dates as 09/02/26.
-            # Treat these as publication dates, never as a fiscal period.
             if index == 2:
                 month, day_value, short_year = parts
                 return date(2000 + short_year, month, day_value)
@@ -78,8 +85,6 @@ def _link_context(anchor) -> str:
 
 def _looks_like_document(target: str, context: str) -> bool:
     path = urlparse(target).path.casefold()
-    # Event detail pages are traversed for their assets, but are not themselves
-    # duplicate evidence unless they are an explicit HTML document.
     if "/events/" in path and not path.endswith((".htm", ".html")):
         return False
     if path.endswith(_DOCUMENT_SUFFIXES):
@@ -96,18 +101,31 @@ def _looks_like_event_page(target: str, context: str) -> bool:
     return any(term in lower for term in ("earnings", "financial results", "quarterly results", "results", "fiscal year", "quarter"))
 
 
+def _browser_headers() -> dict[str, str]:
+    return {
+        "User-Agent": os.getenv(
+            "USER_AGENT",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 us-earnings-monitor/0.5",
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Cache-Control": "no-cache",
+    }
+
+
 class OfficialIrAdapter:
-    """Event-triggered allowlisted IR crawler with one-level event-page discovery."""
+    """Event-triggered same-domain IR crawler with one-level and embedded-asset discovery."""
 
     source_name = "official_ir"
-    timeout = 20
+    timeout = 30
 
     def __init__(self, events: list[EarningsEvent], session: requests.Session | None = None):
         self.events_by_ticker: dict[str, list[EarningsEvent]] = {}
         for event in events:
             self.events_by_ticker.setdefault(event.ticker, []).append(event)
         self.session = session or requests.Session()
-        self.headers = {"User-Agent": os.getenv("USER_AGENT", "us-earnings-monitor/0.2")}
+        self.headers = _browser_headers()
         self.checked_tickers: set[str] = set()
         self.partial_failure_tickers: set[str] = set()
         self.failed_tickers: set[str] = set()
@@ -120,41 +138,57 @@ class OfficialIrAdapter:
             matches = [event for event in events if (event.fiscal_year, event.quarter) == (fiscal_year, quarter)]
             if len(matches) == 1:
                 return matches[0]
-
         kind = classify_document(context)
         linked_date = _nearby_date(context)
         if kind in _COMPANION_KINDS and len(events) == 1 and linked_date is not None:
             return events[0] if abs((day - linked_date).days) <= 14 else None
-
-        # Some SEC 8-K exhibits do not expose FY/Q in the filing title.  When
-        # there is exactly one fresh event for the issuer, a dated official IR
-        # release/event page is still safe to attach.  This deliberately does
-        # not inherit an undated link from a broad historical index.
         if len(events) == 1 and linked_date is not None:
-            fresh_terms = ("earnings", "financial results", "quarterly results", "conference call")
+            fresh_terms = ("earnings", "financial results", "quarterly results", "conference call", "webcast")
             if any(term in context.casefold() for term in fresh_terms) and abs((day - linked_date).days) <= 7:
                 return events[0]
         return None
 
-    def _parse_page(
-        self,
-        company: Company,
-        page_url: str,
-        day: date,
-        configured_urls: list[str],
-        allow_event_links: bool,
-    ) -> tuple[list[Disclosure], list[str]]:
-        response = self.session.get(page_url, headers=self.headers, timeout=self.timeout)
-        response.raise_for_status()
+    def _get(self, url: str) -> requests.Response:
+        last: Exception | None = None
+        for attempt in range(2):
+            try:
+                response = self.session.get(url, headers=self.headers, timeout=self.timeout)
+                response.raise_for_status()
+                return response
+            except requests.RequestException as exc:
+                last = exc
+                if attempt == 0:
+                    time.sleep(1)
+        assert last is not None
+        raise last
+
+    def _make_disclosure(self, company: Company, event: EarningsEvent, day: date, target: str, title: str, page_url: str) -> Disclosure:
+        source_id = hashlib.sha256(target.encode("utf-8")).hexdigest()[:24]
+        path = urlparse(target).path
+        suffix = path.rsplit(".", 1)[-1].lower() if "." in path.rsplit("/", 1)[-1] else "unknown"
+        return Disclosure(
+            source=self.source_name,
+            source_id=source_id,
+            ticker=company.ticker,
+            title=title[:220],
+            published_at=f"{day.isoformat()}T00:00:00-04:00",
+            url=target,
+            document_url=target,
+            fiscal_year=event.fiscal_year,
+            quarter=event.quarter,
+            period_end=event.period_end,
+            document_kind=classify_document(title),
+            metadata={"service": self.source_name, "format": suffix, "index_url": page_url},
+        )
+
+    def _parse_page(self, company: Company, page_url: str, day: date, configured_urls: list[str], allow_event_links: bool) -> tuple[list[Disclosure], list[str]]:
+        response = self._get(page_url)
+        raw = response.text.replace("\\/", "/")
         soup = BeautifulSoup(response.content, "lxml")
         events = self.events_by_ticker.get(company.ticker, [])
         found: list[Disclosure] = []
         event_pages: list[str] = []
         seen_urls: set[str] = set()
-
-        # Only an explicit H1 may define the whole page's fiscal event. Broad
-        # IR indexes often contain many H2 quarter headings and must not inherit
-        # the first quarter across unrelated historical assets.
         h1 = soup.find("h1")
         page_heading = h1.get_text(" ", strip=True) if h1 is not None else ""
         page_event = self._matching_event(page_heading, events, day) if page_heading else None
@@ -164,38 +198,35 @@ class OfficialIrAdapter:
             if not any(term in context.casefold() for term in _IR_TERMS):
                 continue
             target = _canonical_url(urljoin(page_url, anchor["href"]))
-            if target in seen_urls or not _host_allowed(target, configured_urls):
+            if target in seen_urls or not _host_allowed(target, configured_urls, company.official_domains):
                 continue
             seen_urls.add(target)
-
             event = self._matching_event(context, events, day) or page_event
             if event is None:
                 continue
-
-            # An HTML earnings page may itself be useful evidence AND contain
-            # additional assets. Follow it before classifying it as a document.
             if allow_event_links and _looks_like_event_page(target, context):
                 event_pages.append(target)
-
             if _looks_like_document(target, context):
                 anchor_text = anchor.get_text(" ", strip=True)
                 title = anchor_text if any(term in anchor_text.casefold() for term in _IR_TERMS) else context[:200]
-                source_id = hashlib.sha256(target.encode("utf-8")).hexdigest()[:24]
-                path = urlparse(target).path
-                suffix = path.rsplit(".", 1)[-1].lower() if "." in path.rsplit("/", 1)[-1] else "unknown"
-                found.append(Disclosure(
-                    source=self.source_name,
-                    source_id=source_id,
-                    ticker=company.ticker,
-                    title=title,
-                    published_at=f"{day.isoformat()}T00:00:00-04:00",
-                    url=target,
-                    document_url=target,
-                    fiscal_year=event.fiscal_year,
-                    quarter=event.quarter,
-                    period_end=event.period_end,
-                    metadata={"service": self.source_name, "format": suffix, "index_url": page_url},
-                ))
+                found.append(self._make_disclosure(company, event, day, target, title, page_url))
+
+        # Q4/S&P-style IR pages often serialize current PDF/assets in JSON rather
+        # than normal anchors. Recover those same official-domain URLs using only
+        # nearby event context; never sweep all historical PDFs into the event.
+        for match in _EMBEDDED_ASSET_RE.finditer(raw):
+            target = _canonical_url(urljoin(page_url, match.group("url")))
+            if target in seen_urls or not _host_allowed(target, configured_urls, company.official_domains):
+                continue
+            start, end = max(0, match.start() - 700), min(len(raw), match.end() + 700)
+            context = BeautifulSoup(raw[start:end], "lxml").get_text(" ", strip=True)
+            if not any(term in context.casefold() for term in _IR_TERMS):
+                continue
+            event = self._matching_event(context, events, day) or page_event
+            if event is None:
+                continue
+            seen_urls.add(target)
+            found.append(self._make_disclosure(company, event, day, target, context[:220] or target, page_url))
 
         return found, event_pages
 
@@ -203,7 +234,6 @@ class OfficialIrAdapter:
         configured_urls = [item for item in [company.ir_index_url, *company.ir_additional_urls] if item]
         found, event_pages = self._parse_page(company, index_url, day, configured_urls, allow_event_links=True)
         complete = True
-
         for event_page in list(dict.fromkeys(event_pages))[:8]:
             try:
                 child_docs, _ = self._parse_page(company, event_page, day, configured_urls, allow_event_links=False)
@@ -211,7 +241,6 @@ class OfficialIrAdapter:
             except Exception as exc:  # noqa: BLE001
                 complete = False
                 LOG.warning("IR event page unavailable for %s (%s): %s", company.ticker, event_page, exc)
-
         deduped: list[Disclosure] = []
         seen: set[str] = set()
         for item in found:
@@ -220,8 +249,7 @@ class OfficialIrAdapter:
             seen.add(item.document_url or "")
             deduped.append(item)
         if not deduped:
-            LOG.warning("No eligible static IR documents for %s at %s; the page may require JavaScript or a company adapter.",
-                        company.ticker, index_url)
+            LOG.warning("No eligible static/embedded IR documents for %s at %s; page may require a company API adapter.", company.ticker, index_url)
         return deduped, complete
 
     def discover(self, companies: list[Company], day: date) -> list[Disclosure]:
@@ -251,7 +279,6 @@ class OfficialIrAdapter:
 
 
 def active_events_for_ir(events: list[EarningsEvent], now: datetime, days: int = 14) -> list[EarningsEvent]:
-    """Return events within a bounded retry window measured from first detection."""
     cutoff = now - timedelta(days=days)
     selected: list[EarningsEvent] = []
     for event in events:
