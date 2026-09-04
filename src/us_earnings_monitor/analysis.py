@@ -4,7 +4,7 @@ import os
 import time
 from typing import Protocol
 
-from .investor_analysis import InvestorFrameworkGeminiClient
+from .investor_analysis_v3 import InvestorFrameworkV3Client
 from .openai_ir import OpenAIWebIrClient
 
 
@@ -62,17 +62,15 @@ def build_analysis_client(provider: str | None = None) -> AnalysisClient:
     """Build the LLM analysis adapter independently from retrieval."""
     selected = _provider(provider, "ANALYSIS_PROVIDER")
     if selected == "gemini":
-        return InvestorFrameworkGeminiClient()
+        return InvestorFrameworkV3Client()
     raise RuntimeError(f"Unsupported ANALYSIS_PROVIDER={selected!r}. Currently supported: 'gemini'.")
 
 
 def build_ir_research_client(provider: str | None = None, *, disabled_providers: set[str] | None = None) -> IrResearchClient:
     """Build a resilient IR discovery chain.
 
-    Gemini is primary when its Search capability is healthy. OpenAI Responses
-    Web Search is enabled only when an OPENAI_API_KEY exists, so redundancy
-    never creates hidden spend. Provider-health state can temporarily bypass a
-    known-broken provider without changing configuration or code.
+    Retrieval remains independent from the V3 analysis layer. Gemini Search is
+    primary when healthy; OpenAI web search stays an optional no-hidden-spend fallback.
     """
     selected = _provider(provider, "IR_RESEARCH_PROVIDER")
     if selected not in {"gemini", "auto"}:
@@ -80,7 +78,7 @@ def build_ir_research_client(provider: str | None = None, *, disabled_providers:
     disabled = disabled_providers or set()
     providers: list[tuple[str, IrResearchClient]] = []
     if "gemini_search" not in disabled:
-        providers.append(("gemini_search", InvestorFrameworkGeminiClient()))
+        providers.append(("gemini_search", InvestorFrameworkV3Client()))
     if "openai_web_search" not in disabled and os.getenv("OPENAI_API_KEY") and os.getenv("OPENAI_IR_ENABLED", "1") != "0":
         providers.append(("openai_web_search", OpenAIWebIrClient()))
     return FallbackIrResearchClient(providers)
