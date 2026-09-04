@@ -137,7 +137,7 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-04T06:27:00-04:00",
+      "updated_at": "2026-09-04T08:29:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -152,12 +152,12 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 90.33,
+            "seconds": 90.431,
             "documents": 0,
             "partial": false
           }
         ],
-        "ir_retrieval_last_at": "2026-09-04T06:27:00-04:00",
+        "ir_retrieval_last_at": "2026-09-04T08:29:35-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -176,10 +176,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-04T06:27:00-04:00",
+        "last_collection_check_at": "2026-09-04T08:29:35-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-04T06:27:00-04:00",
-        "next_ir_retry_at": "2026-09-04T08:27:00-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-04T08:29:35-04:00",
+        "next_ir_retry_at": "2026-09-04T10:29:35-04:00",
         "last_published_mode": "sec_only_v1_ir_pending"
       }
     },
@@ -196,7 +196,7 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-04T06:27:00-04:00",
+      "updated_at": "2026-09-04T08:29:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -211,12 +211,12 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.203,
+            "seconds": 0.172,
             "documents": 0,
             "partial": false
           }
         ],
-        "ir_retrieval_last_at": "2026-09-04T06:27:00-04:00",
+        "ir_retrieval_last_at": "2026-09-04T08:29:35-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -235,11 +235,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-04T06:27:00-04:00",
-        "official_ir_checked_at": "2026-09-04T06:27:00-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-09-04T08:29:35-04:00",
+        "official_ir_checked_at": "2026-09-04T08:29:35-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-09-04T08:27:00-04:00"
+        "next_ir_retry_at": "2026-09-04T10:29:35-04:00"
       }
     }
   },
@@ -253,7 +253,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-04T06:27:00-04:00",
+      "last_success_at": "2026-09-04T08:29:35-04:00",
       "blocked_until": null
     }
   }
