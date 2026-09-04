@@ -24,10 +24,10 @@ companies:
   - ticker: AVGO
     name: Broadcom
     cik: "0001730168"
-    ir_index_url: "https://investors.broadcom.com/"
+    ir_index_url: "https://investors.broadcom.com/financial-information/financial-news-releases"
     ir_additional_urls:
       - "https://investors.broadcom.com/financial-information/quarterly-results"
-      - "https://investors.broadcom.com/events-and-presentations"
+      - "https://investors.broadcom.com/company-information/past-events"
     official_domains: ["investors.broadcom.com", "broadcom.com"]
   - {ticker: MRVL, name: Marvell Technology, cik: "0001835632", ir_index_url: "https://investor.marvell.com/"}
   - {ticker: LITE, name: Lumentum, cik: "0001633978", ir_index_url: "https://investor.lumentum.com/"}
