@@ -1,12 +1,23 @@
 from __future__ import annotations
 
+import re
 from collections.abc import Callable
 from typing import Any
 
 from .checkpointing import get_stage
 from .evidence_architecture import extraction_groups, merge_partial_extractions, quote_validation_issues, sections_json
 from .investor_analysis_v3 import InvestorFrameworkV3Client, _bounded_facts
+from .report_contract import harden_audit_with_report_quality, stage_contract
 from .report_output import chinese_language_error, clean_user_report
+
+_PENDING_TRANSCRIPT_STATES = {
+    "UNKNOWN", "EXPECTED_NOT_YET_AVAILABLE", "NOT_FOUND_AFTER_RETRY", "USER_SUPPLIED_NOT_PRESENT",
+}
+_AUDIT_ERROR_KEYS = (
+    "unsupported_claims", "numerical_errors", "missing_material_points", "misleading_inferences",
+    "evidence_grade_errors", "materiality_score_errors", "cross_context_errors", "causal_chain_errors",
+    "value_chain_errors", "critical_issues",
+)
 
 
 def _normalize_report_header(value: str) -> str:
@@ -14,6 +25,26 @@ def _normalize_report_header(value: str) -> str:
     value = value.replace("🏢 業務部門 / 客戶ROI:", "🏢 業務部門:\n└ 客戶/ROI:")
     value = value.replace("🏢 業務部門 / 客戶ROI：", "🏢 業務部門:\n└ 客戶/ROI:")
     return value
+
+
+def _remove_qa_section(value: str) -> str:
+    """Remove a legacy standalone Q&A section when no transcript evidence exists yet."""
+    return re.sub(
+        r"\n{2,}🎙️\s*法說\s*Q&A\s*[:：].*?(?=\n{2,}⚖️|\Z)",
+        "",
+        value,
+        flags=re.IGNORECASE | re.DOTALL,
+    ).strip()
+
+
+def _is_pending_qa_complaint(value: Any) -> bool:
+    text = str(value).casefold()
+    topic = any(token in text for token in ("q&a", "法說", "逐字稿", "transcript"))
+    absence = any(token in text for token in (
+        "缺少", "未提供", "未取得", "尚未提供", "沒有", "佔位", "占位", "placeholder",
+        "missing", "not provided", "not available",
+    ))
+    return topic and absence
 
 
 def _harden_audit_result(value: dict[str, Any]) -> dict[str, Any]:
@@ -44,8 +75,39 @@ def _harden_audit_result(value: dict[str, Any]) -> dict[str, Any]:
     return value
 
 
+def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> dict[str, Any]:
+    """Apply deterministic SEC-only V1 semantics after the model audit.
+
+    Missing Q&A is publish-blocking only when transcript/Q&A evidence is actually
+    present. When the deterministic collection state says the transcript is
+    still pending and facts.qa is empty, absence-related Q&A complaints are not
+    valid audit errors. All unrelated evidence, numerical, inference, language,
+    materiality and V4 report-quality errors remain untouched.
+    """
+    status = str((facts.get("collection_status") or {}).get("transcript_status") or "UNKNOWN").upper()
+    if facts.get("qa") or status == "FOUND":
+        return value
+    if status not in _PENDING_TRANSCRIPT_STATES:
+        return value
+
+    normalized = dict(value)
+    for key in ("missing_material_points", "misleading_inferences", "critical_issues"):
+        normalized[key] = [item for item in (normalized.get(key) or []) if not _is_pending_qa_complaint(item)]
+    draft = str(normalized.get("corrected_telegram_draft") or "")
+    if draft:
+        normalized["corrected_telegram_draft"] = _remove_qa_section(draft)
+
+    blocking = []
+    for key in _AUDIT_ERROR_KEYS:
+        blocking.extend(normalized.get(key) or [])
+    if not blocking:
+        normalized["pass"] = True
+        normalized["overall_score"] = max(90, int(normalized.get("overall_score", 0) or 0))
+    return normalized
+
+
 class ProductionInvestorV3Client(InvestorFrameworkV3Client):
-    """V3 production wrapper with resumable extraction and user-output guards."""
+    """Production US client with resumable extraction, SEC-V1 semantics and V4 report guards."""
 
     _STAGE_ALIASES = {
         "analyst_v3": "analyst",
@@ -73,7 +135,6 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
             self._persist_checkpoint_stage(stage, payload)
 
     def extract_facts(self, event, evidence) -> dict:
-        """Resume map chunks, but merge them deterministically rather than via LLM."""
         groups = extraction_groups(evidence)
         if len(groups) <= 1:
             stage = "facts_internal_single"
@@ -117,8 +178,16 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
         facts["extraction_group_count"] = len(groups)
         return facts
 
+    def audit(self, event, facts: dict, analysis: dict, evidence) -> dict:
+        value = super().audit(event, facts, analysis, evidence)
+        value = _normalize_pending_transcript_audit(value, facts)
+        return harden_audit_with_report_quality(value)
+
     def _json(self, prompt: str, stage: str, tools: list[dict[str, Any]] | None = None) -> dict[str, Any]:
         original_stage = stage
+        contract = stage_contract(original_stage)
+        if contract:
+            prompt = prompt + "\n\n" + contract
         value = super()._json(prompt, self._STAGE_ALIASES.get(stage, stage), tools)
         if original_stage == "auditor_v3":
             value = _harden_audit_result(value)

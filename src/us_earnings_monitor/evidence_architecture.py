@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from collections import defaultdict
 from typing import Iterable
 
@@ -19,12 +20,14 @@ QA_START_MARKERS = (
 SECTION_CHARS = 7_500
 GROUP_CHARS = 22_000
 MAX_GROUPS = 6
-BALANCED_TOTAL_CHARS = 72_000
+BALANCED_TOTAL_CHARS = 48_000
 QA_TOTAL_CHARS = 30_000
 
 
 def _norm(value: str) -> str:
-    return re.sub(r"\s+", " ", value or "").strip().casefold()
+    """Strict layout-tolerant normalization for source quote verification."""
+    normalized = unicodedata.normalize("NFKC", value or "").casefold()
+    return re.sub(r"\s+", "", normalized)
 
 
 def _is_transcript(item: Evidence) -> bool:
@@ -55,7 +58,6 @@ def _paragraph_chunks(text: str, max_chars: int = SECTION_CHARS) -> list[str]:
 
 
 def sectionize(evidence: Iterable[Evidence]) -> list[dict]:
-    """Create position-aware sections and only mark Q&A after a real Q&A boundary."""
     sections: list[dict] = []
     for item in evidence:
         text = re.sub(r"\n{3,}", "\n\n", item.text or "").strip()
@@ -123,22 +125,16 @@ def _sample_groups(groups: list[list[dict]], slots: int) -> list[list[dict]]:
 
 
 def extraction_groups(evidence: list[Evidence]) -> list[list[dict]]:
-    """Bound map calls while guaranteeing that real Q&A is never sampled away."""
     sections = sectionize(evidence)
     total = sum(len(section["text"]) for section in sections)
     if total <= GROUP_CHARS:
         return [sections] if sections else [[]]
-
     qa_sections = [section for section in sections if section["kind"] == "qa"]
     other_sections = [section for section in sections if section["kind"] != "qa"]
     qa_groups = _pack(qa_sections)
     other_groups = _pack(other_sections)
-
     if not qa_groups:
         return _sample_groups(other_groups, MAX_GROUPS)
-
-    # Reserve up to half the map budget for Q&A, which is the least redundant
-    # and highest-alpha material. Remaining slots cover the rest of the corpus.
     qa_slots = min(len(qa_groups), max(2, MAX_GROUPS // 2))
     selected_qa = _sample_groups(qa_groups, qa_slots)
     selected_other = _sample_groups(other_groups, MAX_GROUPS - len(selected_qa))
@@ -169,8 +165,7 @@ def balanced_evidence_payload(evidence: list[Evidence], total_chars: int = BALAN
         return {"documents": []}
     qa = [section for section in sections if section["kind"] == "qa"]
     other = [section for section in sections if section["kind"] != "qa"]
-    ordered: list[dict] = []
-    ordered.extend(qa)
+    ordered: list[dict] = list(qa)
     if other:
         if len(other) <= 6:
             ordered.extend(other)
@@ -227,7 +222,7 @@ def quote_validation_issues(facts: dict, evidence: list[Evidence]) -> list[str]:
                 quote = str(evidence_node.get("quote") or "").strip()
                 if key and quote and key in by_key:
                     normalized_quote = _norm(quote)
-                    if len(normalized_quote) >= 24 and normalized_quote not in by_key[key]:
+                    if len(normalized_quote) >= 16 and normalized_quote not in by_key[key]:
                         issues.append(f"{path}:quote_not_found_in_{key}")
             for key, item in value.items():
                 walk(item, f"{path}.{key}")
