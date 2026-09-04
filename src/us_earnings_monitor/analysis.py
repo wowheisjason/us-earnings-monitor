@@ -4,7 +4,7 @@ import os
 import time
 from typing import Protocol
 
-from .investor_analysis_v3 import InvestorFrameworkV3Client
+from .investor_analysis_runtime import ProductionInvestorV3Client
 from .openai_ir import OpenAIWebIrClient
 
 
@@ -62,7 +62,7 @@ def build_analysis_client(provider: str | None = None) -> AnalysisClient:
     """Build the LLM analysis adapter independently from retrieval."""
     selected = _provider(provider, "ANALYSIS_PROVIDER")
     if selected == "gemini":
-        return InvestorFrameworkV3Client()
+        return ProductionInvestorV3Client()
     raise RuntimeError(f"Unsupported ANALYSIS_PROVIDER={selected!r}. Currently supported: 'gemini'.")
 
 
@@ -78,7 +78,7 @@ def build_ir_research_client(provider: str | None = None, *, disabled_providers:
     disabled = disabled_providers or set()
     providers: list[tuple[str, IrResearchClient]] = []
     if "gemini_search" not in disabled:
-        providers.append(("gemini_search", InvestorFrameworkV3Client()))
+        providers.append(("gemini_search", ProductionInvestorV3Client()))
     if "openai_web_search" not in disabled and os.getenv("OPENAI_API_KEY") and os.getenv("OPENAI_IR_ENABLED", "1") != "0":
         providers.append(("openai_web_search", OpenAIWebIrClient()))
     return FallbackIrResearchClient(providers)
