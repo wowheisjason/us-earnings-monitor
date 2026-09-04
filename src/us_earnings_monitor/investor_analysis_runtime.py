@@ -76,7 +76,7 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
         """Resume map chunks, but merge them deterministically rather than via LLM."""
         groups = extraction_groups(evidence)
         if len(groups) <= 1:
-            stage = "facts_internal_single_v2"
+            stage = "facts_internal_single"
             facts = self._checkpoint_payload(stage)
             if facts is None:
                 facts = self._extract_group(event, sections_json(groups[0] if groups else []), partial=False)
@@ -84,13 +84,13 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
         else:
             partials: list[dict] = []
             for index, group in enumerate(groups):
-                stage = f"facts_chunk_v2_{index + 1}"
+                stage = f"facts_chunk_{index + 1}"
                 partial = self._checkpoint_payload(stage)
                 if partial is None:
                     partial = self._extract_group(event, sections_json(group), partial=True)
                     self._persist_internal_stage(stage, partial)
                 partials.append(partial)
-            merge_stage = "facts_deterministic_merge_v2"
+            merge_stage = "facts_deterministic_merge"
             facts = self._checkpoint_payload(merge_stage)
             if facts is None:
                 facts = _bounded_facts(merge_partial_extractions(partials))
@@ -98,7 +98,7 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
 
         facts = _bounded_facts(dict(facts))
         if not facts.get("qa"):
-            qa_stage = "qa_focused_v2"
+            qa_stage = "qa_focused"
             qa_payload = self._checkpoint_payload(qa_stage)
             if qa_payload is None:
                 qa_payload = {"qa": self._extract_qa(event, evidence)}
@@ -107,7 +107,7 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
                 facts["qa"] = qa_payload["qa"]
 
         facts["quote_validation_issues"] = quote_validation_issues(facts, evidence)
-        cluster_stage = "cross_context_internal_v2"
+        cluster_stage = "cross_context_internal"
         cluster_payload = self._checkpoint_payload(cluster_stage)
         if cluster_payload is None:
             cluster_payload = {"clusters": self._cross_context_clusters(facts)}
