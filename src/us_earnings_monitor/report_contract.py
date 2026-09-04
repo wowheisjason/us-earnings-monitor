@@ -17,9 +17,10 @@ _METRIC_TERMS = (
     "product revenue", "產品營收", "revenue", "總營收", "營收", "sales", "売上",
     "operating margin", "營業利益率", "營業利潤率", "営業利益率", "gross margin", "毛利率",
     "rpo", "backlog", "受注残", "orders", "受注", "eps", "fcf", "free cash flow",
-    "capex", "設備投資", "guidance", "指引", "業績予想", "nrR", "net revenue retention",
+    "capex", "設備投資", "guidance", "指引", "業績予想", "nrr", "net revenue retention",
 )
 _NUMBER_RE = re.compile(r"(?<![A-Za-z])[-+]?\$?\d[\d,.]*(?:\s?(?:%|bps?|bp|million|billion|trillion|m|b|bn|億|兆|萬|万))?", re.I)
+_HEADING_EMOJI_RE = re.compile(r"^[💡🔄🧩📌📢📈🏢🔗🔮🎙️⚖️⚠️📊🧭\s]+")
 
 
 def _norm(value: str) -> str:
@@ -36,6 +37,10 @@ def _section_heading(line: str) -> str | None:
     return None
 
 
+def _legacy_heading_label(line: str) -> str:
+    return _HEADING_EMOJI_RE.sub("", _norm(line)).rstrip(":").strip()
+
+
 def structure_errors(report: str) -> list[str]:
     lines = [line.strip() for line in (report or "").splitlines() if line.strip()]
     found: list[tuple[int, str]] = []
@@ -44,9 +49,9 @@ def structure_errors(report: str) -> list[str]:
         heading = _section_heading(line)
         if heading:
             found.append((index, heading))
-        normalized = _norm(line).rstrip(":")
+        legacy_probe = _legacy_heading_label(line)
         for old in _LEGACY_HEADINGS:
-            if normalized == _norm(old):
+            if legacy_probe == _norm(old):
                 legacy.append(old)
     errors: list[str] = []
     found_names = [name for _, name in found]
