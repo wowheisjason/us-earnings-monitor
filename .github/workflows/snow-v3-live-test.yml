@@ -116,6 +116,7 @@ jobs:
           GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
           GEMINI_ANALYSIS_FALLBACK_MODEL: ${{ vars.GEMINI_ANALYSIS_FALLBACK_MODEL || 'gemini-flash-lite-latest' }}
           GEMINI_ANALYSIS_TERTIARY_MODEL: ${{ vars.GEMINI_ANALYSIS_TERTIARY_MODEL || 'gemini-3.5-flash' }}
+          GEMINI_ANALYSIS_QUATERNARY_MODEL: ${{ vars.GEMINI_ANALYSIS_QUATERNARY_MODEL || 'gemini-3.6-flash' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
