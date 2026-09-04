@@ -90,6 +90,7 @@ jobs:
           GEMINI_IR_FALLBACK_MODEL: ${{ vars.GEMINI_IR_FALLBACK_MODEL || 'gemini-3.5-flash' }}
           GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
           GEMINI_ANALYSIS_FALLBACK_MODEL: ${{ vars.GEMINI_ANALYSIS_FALLBACK_MODEL || 'gemini-flash-lite-latest' }}
+          GEMINI_ANALYSIS_TERTIARY_MODEL: ${{ vars.GEMINI_ANALYSIS_TERTIARY_MODEL || 'gemini-3.5-flash' }}
           OPENAI_IR_MODEL: ${{ vars.OPENAI_IR_MODEL || 'gpt-5.6-luna' }}
           GEMINI_IR_TIMEOUT_SECONDS: ${{ vars.GEMINI_IR_TIMEOUT_SECONDS || '60' }}
           OPENAI_IR_TIMEOUT_SECONDS: ${{ vars.OPENAI_IR_TIMEOUT_SECONDS || '60' }}
@@ -107,7 +108,24 @@ jobs:
           if [ "${{ inputs.initialize_baseline }}" = "true" ]; then args+=(--baseline); fi
           if [ -n "$TEST_AT" ]; then args+=(--at "$TEST_AT"); fi
           if [ -n "$TEST_TICKERS" ]; then args+=(--tickers "$TEST_TICKERS"); fi
-          python -m us_earnings_monitor "${args[@]}"
+
+          # Provider 429/503/timeout is intentionally non-fatal in the Python
+          # process so completed analysis checkpoints can be persisted. Retry
+          # once inside the same runner: the second invocation resumes only the
+          # missing stage instead of re-spending upstream Gemini calls.
+          max_attempts=2
+          for attempt in $(seq 1 "$max_attempts"); do
+            echo "MONITOR_ATTEMPT=$attempt/$max_attempts"
+            : > /tmp/us-monitor-attempt.log
+            python -m us_earnings_monitor "${args[@]}" 2>&1 | tee /tmp/us-monitor-attempt.log
+            if ! grep -q 'analysis_provider_unavailable' /tmp/us-monitor-attempt.log; then
+              break
+            fi
+            if [ "$attempt" -lt "$max_attempts" ]; then
+              echo "Provider unavailable; resuming from persisted checkpoint in the same job."
+              sleep 20
+            fi
+          done
       - name: Persist monitor state
         if: ${{ !inputs.dry_run && !inputs.preview }}
         run: |
