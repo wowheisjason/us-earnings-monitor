@@ -45,13 +45,7 @@ def _safe_error_detail(response: requests.Response | None) -> str:
 
 
 def _shared_search_quota_failure(status: int, detail: str) -> bool:
-    """Detect account/project-level Search Grounding quota blocks.
-
-    Interactions currently often omits quota IDs, so the stable signal is the
-    generic billing/quota 429 returned identically across Gemini 3.x models.
-    Treat it as shared Search capability failure instead of wasting fallback
-    model calls inside the same run.
-    """
+    """Detect account/project-level Search Grounding quota blocks."""
     value = detail.casefold()
     return status == 429 and (
         "check your plan and billing details" in value
@@ -96,16 +90,21 @@ def _interaction_grounding(payload: dict[str, Any]) -> dict[str, Any]:
 
 
 def _generation_config(model: str) -> dict[str, Any]:
-    """Build a model-compatible structured-output configuration.
-
-    Gemini 3.6+ removed legacy sampling parameters such as temperature. Keep
-    temperature for the existing 3.5/Lite path, but omit it when the resilient
-    fallback escalates to a newer Flash generation.
-    """
-    config: dict[str, Any] = {"responseMimeType": "application/json"}
+    """Build a model-compatible structured-output configuration."""
+    config: dict[str, Any] = {
+        "responseMimeType": "application/json",
+        "maxOutputTokens": int(os.getenv("GEMINI_ANALYSIS_MAX_OUTPUT_TOKENS", "8192")),
+    }
     if not model.startswith(("gemini-3.6-", "gemini-3.7-", "gemini-3.8-")):
         config["temperature"] = 0.1
     return config
+
+
+def _finish_reason(payload: dict[str, Any]) -> str:
+    candidates = payload.get("candidates") or []
+    if not candidates or not isinstance(candidates[0], dict):
+        return "unknown"
+    return str(candidates[0].get("finishReason") or candidates[0].get("finish_reason") or "unknown")
 
 
 class GeminiV2Client(GeminiClient):
@@ -122,9 +121,6 @@ class GeminiV2Client(GeminiClient):
                 os.getenv("GEMINI_IR_FALLBACK_MODEL", "gemini-3.5-flash"),
             )
         else:
-            # Normal path stays cost-first. The final 3.6 Flash fallback is a
-            # different stable model generation/capacity pool and is reached
-            # only after both Lite endpoints and 3.5 Flash fail transiently.
             configured = (
                 os.getenv("GEMINI_ANALYSIS_MODEL") or os.getenv("GEMINI_MODEL") or "gemini-3.5-flash-lite",
                 os.getenv("GEMINI_ANALYSIS_FALLBACK_MODEL", "gemini-flash-lite-latest"),
@@ -184,13 +180,21 @@ class GeminiV2Client(GeminiClient):
                     LOG.warning("Gemini Interactions model=%s stage=%s status=%s with no model text",
                                 model, stage, payload.get("status"))
                     continue
-                value = json.loads(text)
+                try:
+                    value = json.loads(text)
+                except json.JSONDecodeError as exc:
+                    last_error = exc
+                    LOG.warning("Gemini Interactions model=%s stage=%s returned malformed JSON attempt=%d: %s",
+                                model, stage, attempt + 1, exc)
+                    if attempt + 1 < attempts:
+                        time.sleep(1)
+                    continue
                 value["_grounding"] = _interaction_grounding(payload)
                 value["_interaction_id"] = payload.get("id")
                 return value
 
         if last_error:
-            raise last_error
+            raise RuntimeError(f"No valid Gemini Interactions JSON completed stage={stage}: {last_error}") from last_error
         raise RuntimeError(f"No configured Gemini Interactions model completed stage={stage}")
 
     def _json(self, prompt: str, stage: str, tools: list[dict[str, Any]] | None = None) -> dict[str, Any]:
@@ -241,11 +245,27 @@ class GeminiV2Client(GeminiClient):
                 text = self._candidate_text(payload)
                 if not text:
                     last_error = RuntimeError(f"Gemini returned empty JSON text for {stage}")
+                    LOG.warning("Gemini model=%s stage=%s empty JSON output attempt=%d finish_reason=%s",
+                                model, stage, attempt + 1, _finish_reason(payload))
+                    if attempt + 1 < attempts:
+                        time.sleep(backoff * (2 ** attempt))
                     continue
-                return json.loads(text)
+                try:
+                    return json.loads(text)
+                except json.JSONDecodeError as exc:
+                    # Never heuristically repair financial JSON: a textual repair can
+                    # mutate numbers/quotes. Re-run the exact source-backed prompt instead.
+                    last_error = exc
+                    LOG.warning(
+                        "Gemini model=%s stage=%s malformed JSON attempt=%d finish_reason=%s error=%s",
+                        model, stage, attempt + 1, _finish_reason(payload), exc,
+                    )
+                    if attempt + 1 < attempts:
+                        time.sleep(backoff * (2 ** attempt))
+                    continue
 
         if last_error:
-            raise last_error
+            raise RuntimeError(f"No valid Gemini JSON completed stage={stage}: {last_error}") from last_error
         raise RuntimeError(f"No configured Gemini model completed stage={stage}")
 
     def research_official_ir(self, company, event, now):
