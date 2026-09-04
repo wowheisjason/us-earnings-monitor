@@ -79,7 +79,7 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-03T09:26:57-04:00",
+      "updated_at": "2026-09-04T02:31:03-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 1,
@@ -96,32 +96,32 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-03T09:26:57-04:00",
+        "last_collection_check_at": "2026-09-04T02:31:03-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-03T09:26:57-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-04T02:31:03-04:00",
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null,
+            "seconds": 0.249,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 60.32,
+            "seconds": 60.502,
             "documents": 0,
             "partial": false
           }
         ],
-        "ir_retrieval_last_at": "2026-09-03T09:26:57-04:00",
+        "ir_retrieval_last_at": "2026-09-04T02:31:03-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
-        "next_ir_retry_at": "2026-09-03T21:26:57-04:00"
+        "next_ir_retry_at": "2026-09-04T14:31:03-04:00"
       }
     },
     "AVGO_2026-09-02": {
@@ -137,27 +137,27 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-03T20:42:41-04:00",
+      "updated_at": "2026-09-04T02:31:03-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 90.484,
+            "seconds": 90.296,
             "documents": 0,
             "partial": false
           }
         ],
-        "ir_retrieval_last_at": "2026-09-03T20:42:41-04:00",
+        "ir_retrieval_last_at": "2026-09-04T02:31:03-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -176,10 +176,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-03T20:42:41-04:00",
+        "last_collection_check_at": "2026-09-04T02:31:03-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-03T20:42:41-04:00",
-        "next_ir_retry_at": "2026-09-03T22:42:41-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-04T02:31:03-04:00",
+        "next_ir_retry_at": "2026-09-04T04:31:03-04:00",
         "last_published_mode": "sec_only_v1_ir_pending"
       }
     },
@@ -196,27 +196,27 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-03T20:42:41-04:00",
+      "updated_at": "2026-09-04T02:31:03-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.302,
+            "seconds": 0.146,
             "documents": 0,
             "partial": false
           }
         ],
-        "ir_retrieval_last_at": "2026-09-03T20:42:41-04:00",
+        "ir_retrieval_last_at": "2026-09-04T02:31:03-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -235,11 +235,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-03T20:42:41-04:00",
-        "official_ir_checked_at": "2026-09-03T20:42:41-04:00",
-        "official_ir_check_count": 6,
+        "last_collection_check_at": "2026-09-04T02:31:03-04:00",
+        "official_ir_checked_at": "2026-09-04T02:31:03-04:00",
+        "official_ir_check_count": 7,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-09-03T22:42:41-04:00"
+        "next_ir_retry_at": "2026-09-04T04:31:03-04:00"
       }
     }
   },
@@ -247,13 +247,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-09-03T18:22:27-04:00",
-      "blocked_until": "2026-09-04T00:22:27-04:00",
+      "last_failure_at": "2026-09-04T02:31:03-04:00",
+      "blocked_until": "2026-09-04T08:31:03-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-03T20:42:41-04:00",
+      "last_success_at": "2026-09-04T02:31:03-04:00",
       "blocked_until": null
     }
   }
