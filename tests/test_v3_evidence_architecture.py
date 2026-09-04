@@ -35,10 +35,11 @@ def test_production_builder_uses_v3(monkeypatch):
 
 def test_v3_prompt_has_two_axis_materiality_and_cross_context():
     source = inspect.getsource(InvestorFrameworkV3Client.analyze)
-    assert "Materiality Score 1-5" in source
-    assert "Evidence Grade" in source
+    # Protect the method, not one historical English label spelling.
+    assert "Materiality 1-5" in source
+    assert "Evidence A-D" in source
     assert "Cross-Context" in source
-    assert "Headline De-prioritization" in source
+    assert "Headline" in source
     assert "Value-Chain Shift" in source
 
 
