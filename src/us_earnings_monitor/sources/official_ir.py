@@ -125,6 +125,17 @@ def _response_text(response: requests.Response) -> str:
     return str(content or "")
 
 
+def _script_payloads(soup: BeautifulSoup) -> list[str]:
+    """Return serialized script bodies only, never ordinary anchor HTML."""
+    payloads: list[str] = []
+    for script in soup.find_all("script"):
+        raw = script.string if isinstance(script.string, str) else script.get_text("", strip=False)
+        raw = (raw or "").replace("\\/", "/")
+        if raw.strip():
+            payloads.append(raw)
+    return payloads
+
+
 class OfficialIrAdapter:
     """Event-triggered same-domain IR crawler with one-level and embedded-asset discovery."""
 
@@ -194,7 +205,7 @@ class OfficialIrAdapter:
 
     def _parse_page(self, company: Company, page_url: str, day: date, configured_urls: list[str], allow_event_links: bool) -> tuple[list[Disclosure], list[str]]:
         response = self._get(page_url)
-        raw = _response_text(response).replace("\\/", "/")
+        _response_text(response)
         soup = BeautifulSoup(response.content, "lxml")
         events = self.events_by_ticker.get(company.ticker, [])
         found: list[Disclosure] = []
@@ -222,22 +233,22 @@ class OfficialIrAdapter:
                 title = anchor_text if any(term in anchor_text.casefold() for term in _IR_TERMS) else context[:200]
                 found.append(self._make_disclosure(company, event, day, target, title, page_url))
 
-        # Q4/S&P-style IR pages often serialize current PDF/assets in JSON rather
-        # than normal anchors. Recover those same official-domain URLs using only
-        # nearby event context; never sweep all historical PDFs into the event.
-        for match in _EMBEDDED_ASSET_RE.finditer(raw):
-            target = _canonical_url(urljoin(page_url, match.group("url")))
-            if target in seen_urls or not _host_allowed(target, configured_urls, company.official_domains):
-                continue
-            start, end = max(0, match.start() - 700), min(len(raw), match.end() + 700)
-            context = BeautifulSoup(raw[start:end], "lxml").get_text(" ", strip=True)
-            if not any(term in context.casefold() for term in _IR_TERMS):
-                continue
-            event = self._matching_event(context, events, day) or page_event
-            if event is None:
-                continue
-            seen_urls.add(target)
-            found.append(self._make_disclosure(company, event, day, target, context[:220] or target, page_url))
+        # Recover only genuinely serialized current assets from script/JSON payloads.
+        for script_raw in _script_payloads(soup):
+            for match in _EMBEDDED_ASSET_RE.finditer(script_raw):
+                target = _canonical_url(urljoin(page_url, match.group("url")))
+                if target in seen_urls or not _host_allowed(target, configured_urls, company.official_domains):
+                    continue
+                start, end = max(0, match.start() - 700), min(len(script_raw), match.end() + 700)
+                context = script_raw[start:end]
+                if not any(term in context.casefold() for term in _IR_TERMS):
+                    continue
+                event = self._matching_event(context, events, day) or page_event
+                if event is None:
+                    continue
+                seen_urls.add(target)
+                title = re.sub(r"\s+", " ", context).strip()[:220] or target
+                found.append(self._make_disclosure(company, event, day, target, title, page_url))
 
         return found, event_pages
 
