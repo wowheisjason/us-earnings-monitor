@@ -14,21 +14,29 @@ from openpyxl import load_workbook
 
 from .models import Disclosure, Evidence
 
-_KEYWORDS = ("revenue", "net sales", "operating income", "net income", "eps", "guidance",
-             "outlook", "orders", "demand", "margin", "cash flow", "capital expenditure", "segment",
-             "backlog", "supply", "pricing", "price", "inventory", "customer", "capacity")
+_KEYWORDS = (
+    "revenue", "net sales", "operating income", "net income", "eps", "guidance",
+    "outlook", "orders", "demand", "margin", "cash flow", "capital expenditure", "segment",
+    "backlog", "supply", "pricing", "price", "inventory", "customer", "capacity",
+    "adoption", "usage", "consumption", "productivity", "migration", "cost savings", "roi",
+    "competition", "competitive", "model", "inference", "ai", "utilization", "shipment",
+)
 _TRANSCRIPT_KINDS = {"transcript", "qa", "prepared_remarks"}
 
 
-def _relevant_text(text: str, max_chars: int = 18000) -> str:
+def _relevant_text(text: str, max_chars: int = 24000) -> str:
     chunks = re.split(r"(?:\n\s*\n|(?<=[。.!?])\s+)", text)
     selected = [chunk.strip() for chunk in chunks if any(k in chunk.casefold() for k in _KEYWORDS)]
     value = "\n".join(selected) or text
     return value[:max_chars]
 
 
-def _transcript_text(text: str, max_chars: int = 42000) -> str:
-    """Preserve conversational context; keyword filtering destroys analyst Q&A continuity."""
+def _transcript_text(text: str, max_chars: int = 160000) -> str:
+    """Preserve the whole earnings-call arc for downstream section-aware extraction.
+
+    The analysis layer decides how to chunk/map long calls.  Truncating here used
+    to make middle/end Q&A permanently unavailable regardless of model context.
+    """
     cleaned = re.sub(r"\n{3,}", "\n\n", text).strip()
     return cleaned[:max_chars]
 
@@ -84,7 +92,7 @@ def _inline_xbrl_facts(blob: bytes) -> list[dict]:
     return facts
 
 
-def _xlsx_relevant_text(blob: bytes, max_chars: int = 18000) -> str:
+def _xlsx_relevant_text(blob: bytes, max_chars: int = 24000) -> str:
     workbook = load_workbook(io.BytesIO(blob), read_only=True, data_only=True)
     selected: list[str] = []
     for sheet in workbook.worksheets[:20]:
@@ -118,7 +126,7 @@ class EvidenceExtractor:
         user_agent = os.getenv(
             "SEC_USER_AGENT",
             "us-earnings-monitor/0.1 contact: research@example.com",
-        ) if disclosure.source == "sec_edgar" else "us-earnings-monitor/0.2"
+        ) if disclosure.source == "sec_edgar" else "us-earnings-monitor/0.3"
         response = self.session.get(disclosure.document_url, timeout=45, headers={"User-Agent": user_agent})
         response.raise_for_status()
         content_type = response.headers.get("content-type", "").casefold()
@@ -132,7 +140,7 @@ class EvidenceExtractor:
             return Evidence(disclosure.key, disclosure.title, disclosure.url, "", facts)
         if "pdf" in content_type or bare_url.endswith(".pdf") or blob[:5] == b"%PDF-":
             reader = PdfReader(io.BytesIO(blob))
-            page_limit = 80 if disclosure.document_kind in _TRANSCRIPT_KINDS else 40
+            page_limit = 120 if disclosure.document_kind in _TRANSCRIPT_KINDS else 50
             text = "\n".join((page.extract_text() or "") for page in reader.pages[:page_limit])
         else:
             text = BeautifulSoup(blob, "html.parser").get_text("\n", strip=True)
