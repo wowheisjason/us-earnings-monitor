@@ -19,10 +19,18 @@ class StateStore:
 
     def _read(self) -> dict:
         if not self.path.exists():
-            return {"schema_version": 1, "documents": {}, "events": {}, "source_checks": {}, "provider_health": {}}
+            return {
+                "schema_version": 1,
+                "documents": {},
+                "events": {},
+                "source_checks": {},
+                "provider_health": {},
+                "analysis_checkpoints": {},
+            }
         data = json.loads(self.path.read_text(encoding="utf-8"))
         data.setdefault("source_checks", {})
         data.setdefault("provider_health", {})
+        data.setdefault("analysis_checkpoints", {})
         return data
 
     def save(self) -> None:
@@ -77,3 +85,16 @@ class StateStore:
 
     def put_provider_health(self, provider: str, value: dict) -> None:
         self.data.setdefault("provider_health", {})[provider] = dict(value)
+
+    def get_analysis_checkpoint(self, event_id: str) -> dict:
+        """Return a copy of the resumable analysis checkpoint for one event."""
+        raw = self.data.get("analysis_checkpoints", {}).get(event_id, {})
+        return json.loads(json.dumps(raw, ensure_ascii=False)) if raw else {}
+
+    def put_analysis_checkpoint(self, event_id: str, checkpoint: dict) -> None:
+        self.data.setdefault("analysis_checkpoints", {})[event_id] = json.loads(
+            json.dumps(checkpoint, ensure_ascii=False)
+        )
+
+    def clear_analysis_checkpoint(self, event_id: str) -> None:
+        self.data.setdefault("analysis_checkpoints", {}).pop(event_id, None)
