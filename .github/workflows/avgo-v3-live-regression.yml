@@ -1,4 +1,5 @@
 name: AVGO V4 production live regression
+# V4.2 replay: KPI interpretation, provenance and transcript retrieval validation.
 
 on:
   push:
@@ -96,6 +97,8 @@ jobs:
           assert not any(old in report for old in ['🔄 本季變化','🧩 跨段資訊整合','📈 關鍵指標','🎙️ 法說 Q&A']), 'legacy fragmented section leaked'
           assert not re.search(r'\[(?:M[1-5].?[ABCD]|Driver|Lever|Catalyst|Risk|Missing|Alternative)\]',report,re.I), 'internal tag leaked'
           print('AVGO_DOCUMENT_KINDS=', kinds)
+          print('AVGO_HAS_TRANSCRIPT_OR_QA=', any(k in {'transcript','qa'} for k in kinds))
+          print('AVGO_TRANSCRIPT_STATUS=', events[0].get('collection_status',{}).get('transcript_status'))
           print('AVGO_DOCUMENT_COUNT=', len(kinds))
           print('AVGO_REPORT_CHARS=', len(report))
           PY
