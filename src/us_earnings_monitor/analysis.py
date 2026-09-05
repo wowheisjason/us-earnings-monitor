@@ -5,6 +5,7 @@ import time
 from typing import Protocol
 
 from .investor_analysis_runtime import ProductionInvestorV3Client
+from .investor_analysis_v5 import ProductionInvestorV5Client
 from .openai_ir import OpenAIWebIrClient
 
 
@@ -59,18 +60,18 @@ def _provider(value: str | None, env_name: str) -> str:
 
 
 def build_analysis_client(provider: str | None = None) -> AnalysisClient:
-    """Build the LLM analysis adapter independently from retrieval."""
+    """Build the investment-research engine independently from retrieval."""
     selected = _provider(provider, "ANALYSIS_PROVIDER")
     if selected == "gemini":
-        return ProductionInvestorV3Client()
+        return ProductionInvestorV5Client()
     raise RuntimeError(f"Unsupported ANALYSIS_PROVIDER={selected!r}. Currently supported: 'gemini'.")
 
 
 def build_ir_research_client(provider: str | None = None, *, disabled_providers: set[str] | None = None) -> IrResearchClient:
-    """Build a resilient IR discovery chain.
+    """Build the independent IR discovery chain.
 
-    Retrieval remains independent from the V3 analysis layer. Gemini Search is
-    primary when healthy; OpenAI web search stays an optional no-hidden-spend fallback.
+    Retrieval stays outside V5 investment reasoning. The existing grounded-IR
+    client is retained only as a discovery/read adapter, never as the final analyst.
     """
     selected = _provider(provider, "IR_RESEARCH_PROVIDER")
     if selected not in {"gemini", "auto"}:
