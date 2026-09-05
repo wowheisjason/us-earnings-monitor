@@ -89,10 +89,14 @@ def align_companion_periods(disclosures: list[Disclosure]) -> None:
             continue
         fiscal_year, quarter, period_end = next(iter(periods))
         for item in items:
-            if item not in anchors:
-                item.fiscal_year = fiscal_year
-                item.quarter = quarter
-                item.period_end = period_end
+            own_fy, own_quarter = infer_period(item)
+            # Preserve a document that already carries its own complete period;
+            # fill only companions whose title/metadata cannot identify one.
+            if own_fy and own_quarter and item.period_end:
+                continue
+            item.fiscal_year = fiscal_year
+            item.quarter = quarter
+            item.period_end = period_end
 
 
 def attach(event: EarningsEvent | None, disclosure: Disclosure, now: datetime) -> EarningsEvent | None:
