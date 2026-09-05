@@ -28,7 +28,6 @@ def _normalize_report_header(value: str) -> str:
 
 
 def _remove_qa_section(value: str) -> str:
-    """Remove a legacy standalone Q&A section when no transcript evidence exists yet."""
     return re.sub(
         r"\n{2,}🎙️\s*法說\s*Q&A\s*[:：].*?(?=\n{2,}⚖️|\Z)",
         "",
@@ -48,7 +47,6 @@ def _is_pending_qa_complaint(value: Any) -> bool:
 
 
 def _harden_audit_result(value: dict[str, Any]) -> dict[str, Any]:
-    """Promote semantic/language audit failures into the production critical gate."""
     guarded = (
         "evidence_grade_errors",
         "materiality_score_errors",
@@ -76,14 +74,6 @@ def _harden_audit_result(value: dict[str, Any]) -> dict[str, Any]:
 
 
 def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> dict[str, Any]:
-    """Apply deterministic SEC-only V1 semantics after the model audit.
-
-    Missing Q&A is publish-blocking only when transcript/Q&A evidence is actually
-    present. When the deterministic collection state says the transcript is
-    still pending and facts.qa is empty, absence-related Q&A complaints are not
-    valid audit errors. All unrelated evidence, numerical, inference, language,
-    materiality and V4 report-quality errors remain untouched.
-    """
     status = str((facts.get("collection_status") or {}).get("transcript_status") or "UNKNOWN").upper()
     if facts.get("qa") or status == "FOUND":
         return value
@@ -97,7 +87,7 @@ def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> d
     if draft:
         normalized["corrected_telegram_draft"] = _remove_qa_section(draft)
 
-    blocking = []
+    blocking: list[Any] = []
     for key in _AUDIT_ERROR_KEYS:
         blocking.extend(normalized.get(key) or [])
     if not blocking:
@@ -107,7 +97,7 @@ def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> d
 
 
 class ProductionInvestorV3Client(InvestorFrameworkV3Client):
-    """Production US client with resumable extraction, SEC-V1 semantics and V4 report guards."""
+    """Production US client with resumable extraction, SEC-V1 semantics and fact-aware V4.2 guards."""
 
     _STAGE_ALIASES = {
         "analyst_v3": "analyst",
@@ -181,7 +171,7 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
     def audit(self, event, facts: dict, analysis: dict, evidence) -> dict:
         value = super().audit(event, facts, analysis, evidence)
         value = _normalize_pending_transcript_audit(value, facts)
-        return harden_audit_with_report_quality(value)
+        return harden_audit_with_report_quality(value, facts, "US")
 
     def _json(self, prompt: str, stage: str, tools: list[dict[str, Any]] | None = None) -> dict[str, Any]:
         original_stage = stage
