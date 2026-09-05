@@ -10,6 +10,7 @@ from typing import Any, Protocol
 from .models import Company, Disclosure, EarningsEvent, now_iso
 from .sources import OfficialIrAdapter
 from .sources.alpha_vantage_transcript import AlphaVantageTranscriptAdapter
+from .sources.public_transcript import PublicTranscriptAdapter
 
 LOG = logging.getLogger("us_earnings_monitor")
 
@@ -69,39 +70,73 @@ def schedule_next_ir_retry(event: EarningsEvent, now: datetime) -> None:
 
 
 class IrRetrievalRouter:
-    """Official retrieval first; optional transcript enrichment only after it."""
+    """Official IR first, then progressively weaker transcript-only fallbacks.
+
+    Transcript fallbacks never replace SEC/issuer financial evidence. Alpha
+    Vantage is preferred when configured; a provenance-labeled public transcript
+    is the final option for management wording and Q&A only.
+    """
 
     def __init__(self, research_client: IrResearchClient | None = None):
         self.research_client = research_client
 
     @staticmethod
     def _has_transcript(documents: list[Disclosure]) -> bool:
-        return any(d.document_kind in {"transcript", "qa"} or d.source == "alpha_vantage_transcript" for d in documents)
+        return any(d.document_kind in {"transcript", "qa"} for d in documents)
 
-    def _transcript_enrichment(
-        self, company: Company, event: EarningsEvent, now: datetime, documents: list[Disclosure], attempts: list[dict[str, Any]]
+    def _try_transcript_provider(
+        self,
+        provider_name: str,
+        adapter,
+        company: Company,
+        event: EarningsEvent,
+        now: datetime,
+        documents: list[Disclosure],
+        attempts: list[dict[str, Any]],
     ) -> list[Disclosure]:
-        if self._has_transcript(documents) or not os.getenv("ALPHA_VANTAGE_API_KEY"):
-            return documents
         started = time.monotonic()
         try:
-            extra, status = AlphaVantageTranscriptAdapter().fetch(company, event, now)
+            extra, status = adapter.fetch(company, event, now)
             attempts.append({
-                "provider": "alpha_vantage_transcript",
+                "provider": provider_name,
                 "ok": bool(extra),
                 "seconds": round(time.monotonic() - started, 3),
                 "documents": len(extra),
                 "reason": status.get("reason"),
+                "provenance": status.get("provenance"),
             })
             if extra:
-                LOG.info("%s transcript enrichment added %d Alpha Vantage document(s)", event.event_id, len(extra))
+                LOG.info("%s transcript enrichment added %d %s document(s)", event.event_id, len(extra), provider_name)
                 return [*documents, *extra]
         except Exception as exc:  # noqa: BLE001
-            attempts.append({"provider": "alpha_vantage_transcript", "ok": False,
-                             "seconds": round(time.monotonic() - started, 3),
-                             "error": f"{type(exc).__name__}: {exc}"[:500]})
-            LOG.warning("%s Alpha Vantage transcript enrichment failed: %s", event.event_id, exc)
+            attempts.append({
+                "provider": provider_name,
+                "ok": False,
+                "seconds": round(time.monotonic() - started, 3),
+                "error": f"{type(exc).__name__}: {exc}"[:500],
+            })
+            LOG.warning("%s %s transcript enrichment failed: %s", event.event_id, provider_name, exc)
         return documents
+
+    def _transcript_enrichment(
+        self,
+        company: Company,
+        event: EarningsEvent,
+        now: datetime,
+        documents: list[Disclosure],
+        attempts: list[dict[str, Any]],
+    ) -> list[Disclosure]:
+        if self._has_transcript(documents):
+            return documents
+        if os.getenv("ALPHA_VANTAGE_API_KEY"):
+            documents = self._try_transcript_provider(
+                "alpha_vantage_transcript", AlphaVantageTranscriptAdapter(), company, event, now, documents, attempts
+            )
+        if self._has_transcript(documents):
+            return documents
+        return self._try_transcript_provider(
+            "public_transcript", PublicTranscriptAdapter(), company, event, now, documents, attempts
+        )
 
     def collect(self, company: Company, event: EarningsEvent, now: datetime, *, dry_run: bool = False) -> RetrievalResult:
         attempts: list[dict[str, Any]] = []
@@ -114,21 +149,30 @@ class IrRetrievalRouter:
                 if provider_attempts:
                     attempts.extend(provider_attempts)
                 else:
-                    attempts.append({"provider": status.get("provider", "research_provider"),
-                                     "ok": bool(documents and status.get("research_complete")),
-                                     "seconds": round(time.monotonic() - started, 3),
-                                     "documents": len(documents), "model": status.get("model")})
+                    attempts.append({
+                        "provider": status.get("provider", "research_provider"),
+                        "ok": bool(documents and status.get("research_complete")),
+                        "seconds": round(time.monotonic() - started, 3),
+                        "documents": len(documents),
+                        "model": status.get("model"),
+                    })
                 documents = self._transcript_enrichment(company, event, now, documents, attempts)
                 if documents and status.get("research_complete"):
-                    final_status = {**status, "attempts": attempts,
-                                    "transcript_status": "FOUND" if self._has_transcript(documents) else status.get("transcript_status", "UNKNOWN")}
+                    final_status = {
+                        **status,
+                        "attempts": attempts,
+                        "transcript_status": "FOUND" if self._has_transcript(documents) else status.get("transcript_status", "UNKNOWN"),
+                    }
                     return RetrievalResult(documents, True, final_status, attempts)
                 if attempts:
                     attempts[-1].setdefault("reason", "no_eligible_official_documents")
             except Exception as exc:  # noqa: BLE001
-                attempts.append({"provider": "research_chain", "ok": False,
-                                 "seconds": round(time.monotonic() - started, 3),
-                                 "error": f"{type(exc).__name__}: {exc}"[:500]})
+                attempts.append({
+                    "provider": "research_chain",
+                    "ok": False,
+                    "seconds": round(time.monotonic() - started, 3),
+                    "error": f"{type(exc).__name__}: {exc}"[:500],
+                })
                 LOG.warning("IR research chain failed for %s: %s", event.event_id, exc)
 
         started = time.monotonic()
@@ -137,8 +181,13 @@ class IrRetrievalRouter:
             documents = adapter.discover([company], now.date())
             complete = company.ticker in adapter.checked_tickers
             elapsed = round(time.monotonic() - started, 3)
-            attempts.append({"provider": "direct_ir", "ok": complete, "seconds": elapsed,
-                             "documents": len(documents), "partial": company.ticker in adapter.partial_failure_tickers})
+            attempts.append({
+                "provider": "direct_ir",
+                "ok": complete,
+                "seconds": elapsed,
+                "documents": len(documents),
+                "partial": company.ticker in adapter.partial_failure_tickers,
+            })
             documents = self._transcript_enrichment(company, event, now, documents, attempts)
             status = {
                 "research_complete": complete,
@@ -150,12 +199,16 @@ class IrRetrievalRouter:
             return RetrievalResult(documents, complete, status, attempts)
         except Exception as exc:  # noqa: BLE001
             elapsed = round(time.monotonic() - started, 3)
-            attempts.append({"provider": "direct_ir", "ok": False, "seconds": elapsed,
-                             "error": f"{type(exc).__name__}: {exc}"[:500]})
+            attempts.append({
+                "provider": "direct_ir",
+                "ok": False,
+                "seconds": elapsed,
+                "error": f"{type(exc).__name__}: {exc}"[:500],
+            })
             documents = self._transcript_enrichment(company, event, now, [], attempts)
             return RetrievalResult(documents, False, {
                 "research_complete": False,
-                "provider": "alpha_vantage_transcript" if documents else "none",
+                "provider": documents[-1].source if documents else "none",
                 "transcript_status": "FOUND" if documents else "UNKNOWN",
                 "attempts": attempts,
             }, attempts)

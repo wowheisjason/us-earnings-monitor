@@ -153,6 +153,8 @@ def _metadata(
         "truncated": truncated,
         "selection_mode": selection_mode,
         "retrieval_excerpt": retrieval_excerpt,
+        "provenance": disclosure.metadata.get("provenance"),
+        "qualitative_only": bool(disclosure.metadata.get("qualitative_only", False)),
     }
 
 
@@ -174,7 +176,7 @@ class EvidenceExtractor:
                 ),
             )
 
-        if disclosure.source == "alpha_vantage_transcript":
+        if disclosure.source in {"alpha_vantage_transcript", "third_party_transcript"}:
             raw = str(disclosure.metadata.get("transcript_text", ""))
             selected, truncated = _bounded_full_text(raw, _FULL_TEXT_CAPS["transcript"])
             return Evidence(

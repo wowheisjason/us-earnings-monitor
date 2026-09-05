@@ -22,6 +22,7 @@ _RELEVANT_TERMS = (
     "investor presentation", "earnings presentation", "results presentation", "press release",
 )
 _EXHIBIT_PERIOD = re.compile(r"(?:q([1-4])|([1-4])q)[^a-z0-9]*fy(20)?(\d{2})", re.IGNORECASE)
+_EXHIBIT_DATE = re.compile(r"(?<!\d)(20\d{6})(?!\d)")
 
 
 class SecEdgarAdapter(SourceAdapter):
@@ -54,7 +55,22 @@ class SecEdgarAdapter(SourceAdapter):
         return records
 
     @staticmethod
-    def _quarter(record: dict, records: list[dict]) -> str | None:
+    def _quarter_from_period_end(report_date: str | None, fiscal_year_end: str) -> str | None:
+        if not report_date or len(fiscal_year_end) != 4:
+            return None
+        try:
+            report_month = int(report_date[5:7])
+            end_month = int(fiscal_year_end[:2])
+        except (TypeError, ValueError):
+            return None
+        distance = (report_month - end_month) % 12
+        nearest = min((3, 6, 9, 0, 12), key=lambda value: abs(value - distance))
+        if nearest in {0, 12}:
+            return "Q4"
+        return {3: "Q1", 6: "Q2", 9: "Q3"}[nearest]
+
+    @classmethod
+    def _quarter(cls, record: dict, records: list[dict]) -> str | None:
         form = str(record.get("form", "")).upper()
         if form.startswith(("10-K", "20-F", "40-F")):
             return "Q4"
@@ -63,12 +79,9 @@ class SecEdgarAdapter(SourceAdapter):
             return infer_period(probe)[1]
         report_date = str(record.get("reportDate", ""))
         fiscal_year_end = str(record.get("_fiscalYearEnd", ""))
-        if report_date and len(fiscal_year_end) == 4:
-            report_month = int(report_date[5:7])
-            end_month = int(fiscal_year_end[:2])
-            distance = (report_month - end_month) % 12
-            nearest = min((3, 6, 9), key=lambda value: abs(value - distance))
-            return {3: "Q1", 6: "Q2", 9: "Q3"}[nearest]
+        inferred = cls._quarter_from_period_end(report_date, fiscal_year_end)
+        if inferred and inferred != "Q4":
+            return inferred
         annual_dates = sorted({str(item.get("reportDate", "")) for item in records
                                if str(item.get("form", "")).upper().startswith(("10-K", "20-F", "40-F"))
                                and str(item.get("reportDate", "")) < report_date})
@@ -95,6 +108,32 @@ class SecEdgarAdapter(SourceAdapter):
             items = str(record.get("items", ""))
             return "2.02" in items or "7.01" in items
         return form.startswith("6-K")
+
+    @staticmethod
+    def _date_from_exhibit_filename(filename: str, filing_date: str) -> str | None:
+        """Recover a quarter-end date embedded in an earnings exhibit filename.
+
+        Many issuers publish EX-99.1 with names such as avgo-20260802ex991.htm.
+        SEC reportDate on the 8-K may equal the filing/event date instead of the
+        fiscal quarter end. Accept only a plausible YYYYMMDD no more than 120
+        days before filing, so this remains generic and cannot grab arbitrary ids.
+        """
+        candidates = _EXHIBIT_DATE.findall(filename)
+        if not candidates or not filing_date:
+            return None
+        try:
+            filed = date.fromisoformat(filing_date)
+        except ValueError:
+            return None
+        for raw in candidates:
+            try:
+                candidate = date(int(raw[:4]), int(raw[4:6]), int(raw[6:8]))
+            except ValueError:
+                continue
+            age = (filed - candidate).days
+            if 0 <= age <= 120:
+                return candidate.isoformat()
+        return None
 
     def _attachment_rows(self, company: Company, record: dict) -> list[tuple[str, str, str]]:
         accession = str(record["accessionNumber"])
@@ -133,9 +172,6 @@ class SecEdgarAdapter(SourceAdapter):
         report_date = str(record.get("reportDate") or "") or None
         quarter = self._quarter(record, records)
         if form in _CURRENT_FORMS:
-            # An earnings 8-K is frequently filed before the corresponding 10-Q.
-            # Keep its reported event date when no periodic filing is available,
-            # so the release can still create an event and receive IR enrichment.
             related_report_date, related_quarter = self._period_for_current(record, records)
             report_date = related_report_date or report_date
             quarter = related_quarter or quarter
@@ -154,18 +190,25 @@ class SecEdgarAdapter(SourceAdapter):
             is_exhibit = document_type.startswith("EX-99")
             filename = document_url.rsplit("/", 1)[-1]
             relevant_text = f"{description} {record.get('primaryDocDescription', '')} {filename}".casefold()
-            # Item 2.02 earnings 8-K filings commonly label Exhibit 99.1 only
-            # by a vendor filename (for example avgo-20260802ex991.htm).  The
-            # filing item itself is the authoritative relevance signal.
             if form in _CURRENT_FORMS and not is_primary and not is_exhibit:
                 continue
             if form.startswith("6-K") and not (is_primary or any(term in relevant_text for term in _RELEVANT_TERMS)):
                 continue
+
+            row_period_end = report_date
+            row_quarter = quarter
+            row_fiscal_year = fiscal_year
+            dated_exhibit_period = self._date_from_exhibit_filename(filename, filing_date) if is_exhibit else None
+            if dated_exhibit_period:
+                row_period_end = dated_exhibit_period
+                row_quarter = self._quarter_from_period_end(dated_exhibit_period, str(record.get("_fiscalYearEnd", ""))) or row_quarter
+                row_fiscal_year = self._fiscal_year(record, dated_exhibit_period) or row_fiscal_year
+
             exhibit_period = _EXHIBIT_PERIOD.search(filename)
             filename_fy = (int(f"20{exhibit_period.group(4)}") if exhibit_period.group(3)
                            else 2000 + int(exhibit_period.group(4))) if exhibit_period else None
             filename_quarter = f"Q{exhibit_period.group(1) or exhibit_period.group(2)}" if exhibit_period else None
-            display_description = filename if is_exhibit and exhibit_period else description
+            display_description = filename if is_exhibit and (exhibit_period or dated_exhibit_period) else description
             if is_exhibit and form in _CURRENT_FORMS:
                 display_description = f"Earnings Release / Exhibit {document_type} — {display_description}"
             title = f"{company.name} Form {form} — {display_description}"
@@ -181,11 +224,14 @@ class SecEdgarAdapter(SourceAdapter):
                 published_at=published_at,
                 url=document_url,
                 document_url=document_url,
-                fiscal_year=filename_fy or fiscal_year or inferred_fy,
-                quarter=filename_quarter or quarter or inferred_quarter,
-                period_end=report_date,
-                metadata={"service": self.source_name, "cik": company.cik, "accession": accession,
-                          "form": form, "document_type": document_type, "filing_date": filing_date},
+                fiscal_year=filename_fy or row_fiscal_year or inferred_fy,
+                quarter=filename_quarter or row_quarter or inferred_quarter,
+                period_end=row_period_end,
+                metadata={
+                    "service": self.source_name, "cik": company.cik, "accession": accession,
+                    "form": form, "document_type": document_type, "filing_date": filing_date,
+                    "period_from_exhibit_filename": dated_exhibit_period,
+                },
             ))
         return found
 
@@ -211,4 +257,3 @@ class SecEdgarAdapter(SourceAdapter):
             except Exception as exc:  # noqa: BLE001 - one issuer cannot stop the watchlist
                 LOG.warning("SEC EDGAR unavailable for %s (CIK %s): %s", company.ticker, company.cik, exc)
         return found
-
