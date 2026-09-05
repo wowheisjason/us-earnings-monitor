@@ -10,7 +10,8 @@ from bs4 import BeautifulSoup
 from ..models import Company, Disclosure, EarningsEvent
 
 _MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December|Jan\.?|Feb\.?|Mar\.?|Apr\.?|Jun\.?|Jul\.?|Aug\.?|Sep\.?|Sept\.?|Oct\.?|Nov\.?|Dec\.?”
-_DATE_RE = re.compile(rf"\b({_MONTHS})\s+(\d{{1,2}}),\s+(20\d{{2}})\b", re.IGNORECASE)
+# Avoid locale-dependent date parsing and accept the date style exposed by the provider.
+_DATE_RE = re.compile(r"\b(January|February|March|April|May|June|July|August|September|October|November|December|Jan\.?|Feb\.?|Mar\.?|Apr\.?|Jun\.?|Jul\.?|Aug\.?|Sep\.?|Sept\.?|Oct\.?|Nov\.?|Dec\.?)\s+(\d{1,2}),\s+(20\d{2})\b", re.IGNORECASE)
 
 
 class EarningsCallAiTranscriptAdapter:
@@ -49,8 +50,7 @@ class EarningsCallAiTranscriptAdapter:
         if not match:
             return None
         month = match.group(1).rstrip(".")
-        aliases = {"Sept": "Sep"}
-        month = aliases.get(month.title(), month.title())
+        month = {"Sept": "Sep"}.get(month.title(), month.title())
         for fmt in ("%B %d %Y", "%b %d %Y"):
             try:
                 return datetime.strptime(f"{month} {match.group(2)} {match.group(3)}", fmt)
@@ -111,8 +111,8 @@ class EarningsCallAiTranscriptAdapter:
                 url=url,
                 document_url=url,
                 fiscal_year=event.fiscal_year,
-                # Preserve the parent event's grouping when its SEC 8-K did not
-                # yet resolve a fiscal quarter; provider_quarter remains metadata.
+                # Preserve the existing SEC event grouping if its 8-K did not
+                # resolve quarter; provider_quarter remains explicit metadata.
                 quarter=event.quarter,
                 period_end=event.period_end,
                 document_kind="transcript",
