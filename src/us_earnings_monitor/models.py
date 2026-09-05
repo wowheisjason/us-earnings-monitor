@@ -49,6 +49,7 @@ class Evidence:
     url: str
     text: str
     structured_facts: list[dict[str, Any]] = field(default_factory=list)
+    metadata: dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass

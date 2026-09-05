@@ -6,9 +6,9 @@ from typing import Any
 
 from .models import Evidence
 
-# V2 changes the evidence preprocessing and removes the LLM consolidation stage.
-# Old checkpoints must never be reused across that architecture boundary.
-CHECKPOINT_PIPELINE_VERSION = 2
+# V5 replaces lossy evidence sampling with full-coverage unit extraction and a
+# compact research packet. Pre-V5 checkpoints must never cross this boundary.
+CHECKPOINT_PIPELINE_VERSION = 5
 
 
 def _stable_json(value: Any) -> str:
@@ -16,12 +16,7 @@ def _stable_json(value: Any) -> str:
 
 
 def evidence_fingerprint(evidence: list[Evidence]) -> str:
-    """Hash the actual evidence corpus so stale model stages are never reused.
-
-    The fingerprint includes document identity, URL, extracted text, and structured
-    facts. A corrected transcript served at the same URL therefore invalidates
-    downstream checkpoints automatically.
-    """
+    """Hash source text, structured facts and extraction metadata."""
     items = []
     for item in evidence:
         items.append({
@@ -32,13 +27,13 @@ def evidence_fingerprint(evidence: list[Evidence]) -> str:
             "structured_facts_sha256": hashlib.sha256(
                 _stable_json(item.structured_facts).encode("utf-8")
             ).hexdigest(),
+            "metadata_sha256": hashlib.sha256(_stable_json(item.metadata).encode("utf-8")).hexdigest(),
         })
     payload = _stable_json(sorted(items, key=lambda value: value["document_key"]))
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 def prepare_checkpoint(existing: dict, fingerprint: str) -> tuple[dict, bool]:
-    """Return a compatible checkpoint and whether the old one was invalidated."""
     compatible = bool(
         existing
         and existing.get("pipeline_version") == CHECKPOINT_PIPELINE_VERSION
