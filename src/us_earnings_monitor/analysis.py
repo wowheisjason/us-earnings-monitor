@@ -5,7 +5,7 @@ import time
 from typing import Protocol
 
 from .investor_analysis_runtime import ProductionInvestorV3Client
-from .investor_analysis_v5 import ProductionInvestorV5Client
+from .investor_analysis_v5_sparse import ProductionInvestorV5Client
 from .openai_ir import OpenAIWebIrClient
 
 
