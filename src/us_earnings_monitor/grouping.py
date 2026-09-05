@@ -11,7 +11,9 @@ _FY = re.compile(r"(?:(?:FY\s*)|(?:Fiscal\s+Year\s+))?(20\d{2})(?:年?\d{1,2}月
 _Q = re.compile(r"(?:第?([1-4])四半期|Q([1-4])|([1-4])Q|([1-4])(?:st|nd|rd|th)\s+quarter)", re.IGNORECASE)
 _Q_WORD = re.compile(r"\b(first|second|third|fourth)\s+quarter\b", re.IGNORECASE)
 _Q_WORD_MAP = {"first": "1", "second": "2", "third": "3", "fourth": "4"}
-_RESULT_ANCHORS = ("form 10-q", "form 10-k", "form 20-f", "financial results", "earnings results", "quarter results")
+_RESULT_ANCHORS = (
+    "form 10-q", "form 10-k", "financial results", "earnings results", "earnings release", "quarterly results",
+)
 
 
 def classify_document(title: str) -> str:
@@ -115,8 +117,6 @@ def ready_for_analysis(event: EarningsEvent | None, now: datetime, fallback_wait
     transcript_status = status.get("transcript_status")
     if transcript_status == "FOUND":
         return True
-    # IR retrieval was attempted but could not complete. The publication gate
-    # will still require primary SEC results before allowing SEC-only v1.
     if status.get("official_ir_last_attempt_incomplete"):
         return True
     if not status.get("official_ir_checked_at"):
