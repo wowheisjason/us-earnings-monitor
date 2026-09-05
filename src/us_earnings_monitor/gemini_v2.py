@@ -45,7 +45,6 @@ def _safe_error_detail(response: requests.Response | None) -> str:
 
 
 def _shared_search_quota_failure(status: int, detail: str) -> bool:
-    """Detect account/project-level Search Grounding quota blocks."""
     value = detail.casefold()
     return status == 429 and (
         "check your plan and billing details" in value
@@ -89,11 +88,23 @@ def _interaction_grounding(payload: dict[str, Any]) -> dict[str, Any]:
     return {"search_queries": list(dict.fromkeys(queries)), "retrieved_urls": list(dict.fromkeys(urls))}
 
 
-def _generation_config(model: str) -> dict[str, Any]:
-    """Build a model-compatible structured-output configuration."""
+def _stage_output_tokens(stage: str) -> int:
+    if stage.startswith("v5_extract"):
+        return int(os.getenv("GEMINI_EXTRACT_MAX_OUTPUT_TOKENS", "3200"))
+    if stage == "v5_analyst":
+        return int(os.getenv("GEMINI_ANALYST_MAX_OUTPUT_TOKENS", "6000"))
+    if stage == "v5_auditor":
+        return int(os.getenv("GEMINI_AUDITOR_MAX_OUTPUT_TOKENS", "4500"))
+    if stage == "v5_repair":
+        return int(os.getenv("GEMINI_REPAIR_MAX_OUTPUT_TOKENS", "5000"))
+    return int(os.getenv("GEMINI_ANALYSIS_MAX_OUTPUT_TOKENS", "8192"))
+
+
+def _generation_config(model: str, stage: str = "") -> dict[str, Any]:
+    """Build a stage-specific structured-output configuration."""
     config: dict[str, Any] = {
         "responseMimeType": "application/json",
-        "maxOutputTokens": int(os.getenv("GEMINI_ANALYSIS_MAX_OUTPUT_TOKENS", "8192")),
+        "maxOutputTokens": _stage_output_tokens(stage),
     }
     if not model.startswith(("gemini-3.6-", "gemini-3.7-", "gemini-3.8-")):
         config["temperature"] = 0.1
@@ -108,7 +119,7 @@ def _finish_reason(payload: dict[str, Any]) -> str:
 
 
 class GeminiV2Client(GeminiClient):
-    """Production Gemini client with explicit stage routing and modern IR search."""
+    """Production Gemini client with stage routing, token budgets and modern IR search."""
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -120,6 +131,30 @@ class GeminiV2Client(GeminiClient):
                 os.getenv("GEMINI_IR_MODEL", "gemini-3.6-flash"),
                 os.getenv("GEMINI_IR_FALLBACK_MODEL", "gemini-3.5-flash"),
             )
+        elif stage.startswith("v5_extract"):
+            configured = (
+                os.getenv("GEMINI_EXTRACT_MODEL", "gemini-3.5-flash-lite"),
+                os.getenv("GEMINI_EXTRACT_FALLBACK_MODEL", "gemini-flash-lite-latest"),
+                os.getenv("GEMINI_EXTRACT_TERTIARY_MODEL", "gemini-3.5-flash"),
+            )
+        elif stage == "v5_analyst":
+            configured = (
+                os.getenv("GEMINI_ANALYST_MODEL", "gemini-3.6-flash"),
+                os.getenv("GEMINI_ANALYST_FALLBACK_MODEL", "gemini-3.5-flash"),
+                os.getenv("GEMINI_ANALYST_TERTIARY_MODEL", "gemini-3.5-flash-lite"),
+            )
+        elif stage == "v5_auditor":
+            configured = (
+                os.getenv("GEMINI_AUDITOR_MODEL", "gemini-3.5-flash"),
+                os.getenv("GEMINI_AUDITOR_FALLBACK_MODEL", "gemini-3.6-flash"),
+                os.getenv("GEMINI_AUDITOR_TERTIARY_MODEL", "gemini-3.5-flash-lite"),
+            )
+        elif stage == "v5_repair":
+            configured = (
+                os.getenv("GEMINI_REPAIR_MODEL", "gemini-3.5-flash"),
+                os.getenv("GEMINI_REPAIR_FALLBACK_MODEL", "gemini-3.6-flash"),
+                os.getenv("GEMINI_REPAIR_TERTIARY_MODEL", "gemini-3.5-flash-lite"),
+            )
         else:
             configured = (
                 os.getenv("GEMINI_ANALYSIS_MODEL") or os.getenv("GEMINI_MODEL") or "gemini-3.5-flash-lite",
@@ -128,6 +163,15 @@ class GeminiV2Client(GeminiClient):
                 os.getenv("GEMINI_ANALYSIS_QUATERNARY_MODEL", "gemini-3.6-flash"),
             )
         return list(dict.fromkeys(model.removeprefix("models/") for model in configured if model))
+
+    def _check_event_budget(self, stage: str) -> None:
+        soft = int(os.getenv("GEMINI_EVENT_SOFT_TOKEN_BUDGET", "100000"))
+        hard = int(os.getenv("GEMINI_EVENT_HARD_TOKEN_BUDGET", "160000"))
+        used = int(self.usage.get("total_tokens", 0) or 0)
+        if used >= soft:
+            LOG.warning("Gemini event token soft budget exceeded before stage=%s used=%d soft=%d", stage, used, soft)
+        if used >= hard:
+            raise RuntimeError(f"Gemini event hard token budget exceeded before stage={stage}: used={used} hard={hard}")
 
     def _interaction_json(self, prompt: str, stage: str) -> dict[str, Any]:
         if self._search_circuit_reason:
@@ -201,11 +245,12 @@ class GeminiV2Client(GeminiClient):
         if stage == "ir_research":
             return self._interaction_json(prompt, stage)
 
+        self._check_event_budget(stage)
         tools = None
         timeout = int(os.getenv("GEMINI_ANALYSIS_TIMEOUT_SECONDS", "90"))
         attempts = int(os.getenv("GEMINI_ANALYSIS_ATTEMPTS", "2"))
         backoff = float(os.getenv("GEMINI_ANALYSIS_BACKOFF_SECONDS", "2"))
-        if stage in {"analyst", "auditor", "revision"}:
+        if stage in {"analyst", "auditor", "revision", "v5_analyst", "v5_auditor", "v5_repair"}:
             prompt += _NO_UNIT_CONVERSION
 
         last_error: Exception | None = None
@@ -214,7 +259,7 @@ class GeminiV2Client(GeminiClient):
             for attempt in range(max(1, attempts)):
                 body: dict[str, Any] = {
                     "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-                    "generationConfig": _generation_config(model),
+                    "generationConfig": _generation_config(model, stage),
                 }
                 try:
                     response = self.session.post(url, params={"key": self.api_key}, json=body, timeout=timeout)
@@ -253,8 +298,6 @@ class GeminiV2Client(GeminiClient):
                 try:
                     return json.loads(text)
                 except json.JSONDecodeError as exc:
-                    # Never heuristically repair financial JSON: a textual repair can
-                    # mutate numbers/quotes. Re-run the exact source-backed prompt instead.
                     last_error = exc
                     LOG.warning(
                         "Gemini model=%s stage=%s malformed JSON attempt=%d finish_reason=%s error=%s",
