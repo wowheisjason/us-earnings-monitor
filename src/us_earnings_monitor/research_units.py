@@ -21,9 +21,13 @@ RELEVANT_FILING_TERMS = (
     "customer", "usage", "consumption", "adoption", "capacity", "utilization", "shipment", "inventory",
     "competition", "market share", "segment", "risk factor", "liquidity", "working capital",
 )
-DEFAULT_UNIT_CHARS = 5_500
-DEFAULT_BATCH_CHARS = 18_000
-DEFAULT_BATCH_UNITS = 4
+# Extraction units remain large enough to preserve local semantic context, while
+# batches are deliberately small so sparse evidence-card JSON cannot hit output
+# limits before acknowledging every unit. This preserves 100% coverage without
+# paying for retries on oversized mapper calls.
+DEFAULT_UNIT_CHARS = 4_000
+DEFAULT_BATCH_CHARS = 8_000
+DEFAULT_BATCH_UNITS = 2
 
 
 def _kind(item: Evidence) -> str:
