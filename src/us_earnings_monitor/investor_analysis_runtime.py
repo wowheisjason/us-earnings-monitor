@@ -18,10 +18,22 @@ _AUDIT_ERROR_KEYS = (
     "evidence_grade_errors", "materiality_score_errors", "cross_context_errors", "causal_chain_errors",
     "value_chain_errors", "critical_issues",
 )
+_SECTION_HEADINGS = (
+    ("💡", "投資結論與邏輯"),
+    ("📊", "關鍵數據與財測"),
+    ("🧭", "營運動能與法說攻防"),
+    ("⚠️", "風險、反證與待驗證"),
+)
 
 
 def _normalize_report_header(value: str) -> str:
     value = clean_user_report(value)
+    # LLMs often add harmless ordinal labels ("💡 1. ..."). Normalize them
+    # before deterministic V4 validation so formatting noise does not consume a
+    # full revision cycle or block an otherwise valid report.
+    for emoji, label in _SECTION_HEADINGS:
+        pattern = rf"(?m)^{re.escape(emoji)}\s*(?:[1-4]\s*[\.、\)]\s*)?{re.escape(label)}\s*[:：]"
+        value = re.sub(pattern, f"{emoji} {label}:", value)
     value = value.replace("🏢 業務部門 / 客戶ROI:", "🏢 業務部門:\n└ 客戶/ROI:")
     value = value.replace("🏢 業務部門 / 客戶ROI：", "🏢 業務部門:\n└ 客戶/ROI:")
     return value
@@ -96,6 +108,41 @@ def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> d
     return normalized
 
 
+def _facts_with_rate_provenance(facts: dict) -> dict:
+    """Expose source-backed numeric+unit rates to the deterministic text gate.
+
+    Structured extraction frequently stores `66` and `unit=percent of projected
+    revenue` rather than the literal string `66%`. The report gate must
+    recognize that as source-backed while still rejecting genuinely derived
+    ratios such as a model-computed 90% concentration figure.
+    """
+    tokens: set[str] = set()
+
+    def walk(value: Any) -> None:
+        if isinstance(value, dict):
+            unit = str(value.get("unit") or "").casefold()
+            rate_unit = "%" if ("percent" in unit or "%" in unit or "percentage" in unit) else (
+                "bps" if "basis point" in unit or "bps" in unit else ""
+            )
+            if rate_unit:
+                for key in ("value", "comparison_value", "low", "midpoint", "high", "previous_low", "previous_midpoint", "previous_high"):
+                    raw = value.get(key)
+                    if isinstance(raw, (int, float)) and not isinstance(raw, bool):
+                        number = int(raw) if float(raw).is_integer() else raw
+                        tokens.add(f"{number}{rate_unit}")
+            for item in value.values():
+                walk(item)
+        elif isinstance(value, list):
+            for item in value:
+                walk(item)
+
+    walk(facts)
+    augmented = dict(facts)
+    if tokens:
+        augmented["_deterministic_source_rate_tokens"] = sorted(tokens)
+    return augmented
+
+
 class ProductionInvestorV3Client(InvestorFrameworkV3Client):
     """Production US client with resumable extraction, SEC-V1 semantics and fact-aware V4.2 guards."""
 
@@ -158,6 +205,13 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
                 facts["qa"] = qa_payload["qa"]
 
         facts["quote_validation_issues"] = quote_validation_issues(facts, evidence)
+        third_party_transcripts = [item.title for item in evidence if "third-party transcription" in item.title.casefold()]
+        if third_party_transcripts:
+            facts["transcript_provenance"] = {
+                "type": "third_party_transcript",
+                "sources": third_party_transcripts,
+                "policy": "Use for qualitative management/Q&A evidence; cross-check financial numbers against SEC/official results.",
+            }
         cluster_stage = "cross_context_internal"
         cluster_payload = self._checkpoint_payload(cluster_stage)
         if cluster_payload is None:
@@ -171,7 +225,7 @@ class ProductionInvestorV3Client(InvestorFrameworkV3Client):
     def audit(self, event, facts: dict, analysis: dict, evidence) -> dict:
         value = super().audit(event, facts, analysis, evidence)
         value = _normalize_pending_transcript_audit(value, facts)
-        return harden_audit_with_report_quality(value, facts, "US")
+        return harden_audit_with_report_quality(value, _facts_with_rate_provenance(facts), "US")
 
     def _json(self, prompt: str, stage: str, tools: list[dict[str, Any]] | None = None) -> dict[str, Any]:
         original_stage = stage
