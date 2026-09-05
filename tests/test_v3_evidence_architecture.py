@@ -4,6 +4,7 @@ from us_earnings_monitor.analysis import build_analysis_client
 from us_earnings_monitor.evidence_architecture import extraction_groups, quote_validation_issues, sectionize
 from us_earnings_monitor.investor_analysis_runtime import ProductionInvestorV3Client, _harden_audit_result
 from us_earnings_monitor.investor_analysis_v3 import InvestorFrameworkV3Client
+from us_earnings_monitor.investor_analysis_v5 import ProductionInvestorV5Client
 from us_earnings_monitor.models import Evidence
 
 
@@ -27,15 +28,16 @@ def test_quote_validation_detects_unbacked_quote():
     assert quote_validation_issues(facts, evidence)
 
 
-def test_production_builder_uses_v3(monkeypatch):
+def test_production_builder_uses_v5_while_v3_remains_available_for_retrieval(monkeypatch):
     monkeypatch.setenv("GEMINI_API_KEY", "test-key")
     client = build_analysis_client("gemini")
-    assert isinstance(client, ProductionInvestorV3Client)
+    assert isinstance(client, ProductionInvestorV5Client)
+    assert ProductionInvestorV3Client is not ProductionInvestorV5Client
 
 
 def test_v3_prompt_has_two_axis_materiality_and_cross_context():
     source = inspect.getsource(InvestorFrameworkV3Client.analyze)
-    # Protect the method, not one historical English label spelling.
+    # V3 remains as a compatibility/retrieval component while V5 is production analysis.
     assert "Materiality 1-5" in source
     assert "Evidence A-D" in source
     assert "Cross-Context" in source
