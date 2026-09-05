@@ -1,0 +1,94 @@
+name: SNOW V5 round-2 backtest
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v5-snow-round2.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  snow-v5-round2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Build SNOW full-evidence fixture
+        run: |
+          cat > /tmp/snow-watchlist.yaml <<'EOF'
+          companies:
+            - ticker: SNOW
+              name: Snowflake
+              cik: '0001640147'
+              ir_index_url: 'https://investors.snowflake.com/'
+              official_domains: ['investors.snowflake.com','snowflake.com','s26.q4cdn.com']
+          earnings_title_patterns: ['form 8-k','earnings','financial results','investor presentation','transcript']
+          EOF
+          cat > /tmp/snow-fixture.json <<'EOF'
+          [
+            {"source":"sec_edgar","source_id":"snow-q2-release","ticker":"SNOW","title":"Snowflake Reports Financial Results for the Second Quarter of Fiscal 2027","published_at":"2026-09-02T16:08:29-04:00","url":"https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/0001640147-26-000033-index.html","document_url":"https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm","fiscal_year":2027,"quarter":"Q2","period_end":"2026-07-31","document_kind":"earnings_release","metadata":{"format":"html"}},
+            {"source":"official_ir","source_id":"snow-q2-presentation","ticker":"SNOW","title":"Q2 FY2027 Investor Presentation","published_at":"2026-09-02T17:00:00-04:00","url":"https://s26.q4cdn.com/463892824/files/content_files/Q2-FY2027-Investor-Presentation_vFF.pdf","document_url":"https://s26.q4cdn.com/463892824/files/content_files/Q2-FY2027-Investor-Presentation_vFF.pdf","fiscal_year":2027,"quarter":"Q2","period_end":"2026-07-31","document_kind":"presentation","metadata":{"format":"pdf"}},
+            {"source":"official_ir","source_id":"snow-q2-transcript","ticker":"SNOW","title":"Q2 FY2027 Earnings Call Corrected Transcript","published_at":"2026-09-02T19:30:00-04:00","url":"https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf","document_url":"https://s26.q4cdn.com/463892824/files/doc_financials/2027/q2/CORRECTED-TRANSCRIPT_-Snowflake-Inc-SNOW-US-Q2-2027-Earnings-Call-2-September-2026-5_00-PM-ET.pdf","fiscal_year":2027,"quarter":"Q2","period_end":"2026-07-31","document_kind":"transcript","metadata":{"format":"pdf"}}
+          ]
+          EOF
+          printf '{"schema_version":1,"documents":{},"events":{},"source_checks":{},"provider_health":{},"analysis_checkpoints":{}}\n' > /tmp/snow-state.json
+      - name: Seed collection state
+        env:
+          PYTHONPATH: src
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          from us_earnings_monitor.__main__ import ingest, load_fixture, _event_documents
+          from us_earnings_monitor.config import load_watchlist
+          from us_earnings_monitor.quality import update_collection_status
+          from us_earnings_monitor.state import StateStore
+          now=datetime.fromisoformat('2026-09-02T20:30:00-04:00').astimezone(ZoneInfo('America/New_York'))
+          _,patterns=load_watchlist('/tmp/snow-watchlist.yaml')
+          store=StateStore('/tmp/snow-state.json')
+          events,ignored=ingest(load_fixture('/tmp/snow-fixture.json'),store,patterns,now)
+          assert ignored==0 and len(events)==1
+          event=events[0]
+          docs=_event_documents(event,store)
+          update_collection_status(event,docs,now,official_ir_checked=True)
+          assert event.collection_status['transcript_status']=='FOUND'
+          store.put_event(event); store.save()
+          PY
+      - name: Run SNOW V5 round 2 preview
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_EXTRACT_MODEL: ${{ vars.GEMINI_EXTRACT_MODEL || 'gemini-3.5-flash-lite' }}
+          GEMINI_ANALYST_MODEL: ${{ vars.GEMINI_ANALYST_MODEL || 'gemini-3.6-flash' }}
+          GEMINI_AUDITOR_MODEL: ${{ vars.GEMINI_AUDITOR_MODEL || 'gemini-3.5-flash' }}
+          GEMINI_EVENT_SOFT_TOKEN_BUDGET: '100000'
+          GEMINI_EVENT_HARD_TOKEN_BUDGET: '160000'
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PYTHONPATH: src
+        run: |
+          set -o pipefail
+          python -m us_earnings_monitor --watchlist /tmp/snow-watchlist.yaml --fixture /tmp/snow-fixture.json --state /tmp/snow-state.json --preview --at '2026-09-02T20:30:00-04:00' --tickers SNOW 2>&1 | tee /tmp/snow-v5-round2.log
+          python - <<'PY'
+          from pathlib import Path
+          text=Path('/tmp/snow-v5-round2.log').read_text(encoding='utf-8')
+          assert 'PREVIEW_REPORT_BEGIN' in text and 'PREVIEW_REPORT_END' in text, 'no preview report'
+          report=text.split('PREVIEW_REPORT_BEGIN',1)[1].split('PREVIEW_REPORT_END',1)[0].strip()
+          Path('/tmp/snow-v5-round2-report.txt').write_text(report,encoding='utf-8')
+          assert 'needs_human_review' not in text
+          assert 'analysis_provider_unavailable' not in text
+          print('SNOW_V5_R2_REPORT_CHARS=',len(report))
+          print('SNOW_V5_R2_QA_MARKERS=',report.count('❓'))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: snow-v5-round2
+          path: |
+            /tmp/snow-v5-round2.log
+            /tmp/snow-v5-round2-report.txt
+            /tmp/snow-state.json
+          retention-days: 14
