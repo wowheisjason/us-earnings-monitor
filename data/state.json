@@ -102,7 +102,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-07T12:25:50-04:00",
+      "updated_at": "2026-09-07T16:21:04-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -122,22 +122,22 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-07T12:25:50-04:00",
+        "last_collection_check_at": "2026-09-07T16:21:04-04:00",
         "transcript_status": "FOUND",
-        "official_ir_last_attempt_incomplete": "2026-09-07T12:25:50-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-07T16:21:04-04:00",
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.218,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": true,
-            "seconds": 0.347,
+            "seconds": 0.268,
             "documents": 1,
             "reason": null,
             "provenance": "third_party_transcript"
@@ -145,20 +145,20 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 122.699,
+            "seconds": 122.677,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": true,
-            "seconds": 0.372,
+            "seconds": 0.377,
             "documents": 1,
             "reason": null,
             "provenance": "third_party_transcript"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-07T12:25:50-04:00",
+        "ir_retrieval_last_at": "2026-09-07T16:21:04-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": []
@@ -177,7 +177,7 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-07T02:34:29-04:00",
+      "updated_at": "2026-09-07T16:21:04-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -199,7 +199,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 185.67,
+            "seconds": 183.697,
             "documents": 0,
             "partial": false
           },
@@ -212,7 +212,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-07T02:34:29-04:00",
+        "ir_retrieval_last_at": "2026-09-07T16:21:04-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -232,10 +232,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-07T02:34:29-04:00",
+        "last_collection_check_at": "2026-09-07T16:21:04-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-07T02:34:29-04:00",
-        "next_ir_retry_at": "2026-09-07T14:34:29-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-07T16:21:04-04:00",
+        "next_ir_retry_at": "2026-09-08T04:21:04-04:00",
         "last_published_mode": "sec_only_v1_ir_pending"
       }
     },
@@ -252,7 +252,7 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-07T02:34:29-04:00",
+      "updated_at": "2026-09-07T16:21:04-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -274,7 +274,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.193,
+            "seconds": 0.432,
             "documents": 0,
             "partial": false
           },
@@ -287,7 +287,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-07T02:34:29-04:00",
+        "ir_retrieval_last_at": "2026-09-07T16:21:04-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -307,11 +307,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-07T02:34:29-04:00",
-        "official_ir_checked_at": "2026-09-07T02:34:29-04:00",
-        "official_ir_check_count": 11,
+        "last_collection_check_at": "2026-09-07T16:21:04-04:00",
+        "official_ir_checked_at": "2026-09-07T16:21:04-04:00",
+        "official_ir_check_count": 12,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-09-07T14:34:29-04:00"
+        "next_ir_retry_at": "2026-09-08T04:21:04-04:00"
       }
     }
   },
@@ -319,18 +319,18 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-09-07T09:28:17-04:00",
-      "blocked_until": "2026-09-07T15:28:17-04:00",
+      "last_failure_at": "2026-09-07T16:21:04-04:00",
+      "blocked_until": "2026-09-07T22:21:04-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-07T02:34:29-04:00",
+      "last_success_at": "2026-09-07T16:21:04-04:00",
       "blocked_until": null
     },
     "public_transcript": {
       "status": "healthy",
-      "last_success_at": "2026-09-07T12:25:50-04:00",
+      "last_success_at": "2026-09-07T16:21:04-04:00",
       "blocked_until": null
     }
   },
