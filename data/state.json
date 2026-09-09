@@ -124,7 +124,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-09T06:28:34-04:00",
+      "updated_at": "2026-09-09T08:30:48-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -144,9 +144,9 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-09T06:28:34-04:00",
+        "last_collection_check_at": "2026-09-09T08:30:48-04:00",
         "transcript_status": "FOUND",
-        "official_ir_last_attempt_incomplete": "2026-09-09T06:28:34-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-09T08:30:48-04:00",
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
@@ -159,7 +159,7 @@
           {
             "provider": "public_transcript",
             "ok": true,
-            "seconds": 0.48,
+            "seconds": 0.419,
             "documents": 1,
             "reason": null,
             "provenance": "third_party_transcript"
@@ -167,20 +167,20 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 122.624,
+            "seconds": 122.655,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": true,
-            "seconds": 0.367,
+            "seconds": 0.278,
             "documents": 1,
             "reason": null,
             "provenance": "third_party_transcript"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-09T06:28:34-04:00",
+        "ir_retrieval_last_at": "2026-09-09T08:30:48-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": []
@@ -349,7 +349,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-09T06:28:34-04:00",
+      "updated_at": "2026-09-09T08:30:48-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -363,7 +363,7 @@
           {
             "provider": "public_transcript",
             "ok": true,
-            "seconds": 0.44,
+            "seconds": 0.467,
             "documents": 1,
             "reason": null,
             "provenance": "third_party_transcript"
@@ -371,20 +371,20 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 122.749,
+            "seconds": 122.393,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": true,
-            "seconds": 0.339,
+            "seconds": 0.474,
             "documents": 1,
             "reason": null,
             "provenance": "third_party_transcript"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-09T06:28:34-04:00",
+        "ir_retrieval_last_at": "2026-09-09T08:30:48-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -404,10 +404,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-09T06:28:34-04:00",
+        "last_collection_check_at": "2026-09-09T08:30:48-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-09T06:28:34-04:00",
-        "next_ir_retry_at": "2026-09-09T08:28:34-04:00"
+        "official_ir_last_attempt_incomplete": "2026-09-09T08:30:48-04:00",
+        "next_ir_retry_at": "2026-09-09T10:30:48-04:00"
       }
     }
   },
@@ -426,7 +426,7 @@
     },
     "public_transcript": {
       "status": "healthy",
-      "last_success_at": "2026-09-09T06:28:34-04:00",
+      "last_success_at": "2026-09-09T08:30:48-04:00",
       "blocked_until": null
     }
   },
