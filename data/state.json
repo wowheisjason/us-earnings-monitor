@@ -129,6 +129,28 @@
         "filing_date": "2026-09-10",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001193125-26-387905:orcl-ex99_1.htm",
+      "ticker": "ORCL",
+      "title": "Oracle Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-09-10T16:16:50.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+      "fiscal_year": 2027,
+      "quarter": null,
+      "period_end": "2026-09-10",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001341439",
+        "accession": "0001193125-26-387905",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-09-10",
+        "period_from_exhibit_filename": null
+      }
     }
   },
   "events": {
@@ -146,7 +168,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-10T12:25:05-04:00",
+      "updated_at": "2026-09-10T16:19:38-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -166,40 +188,40 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-10T12:25:05-04:00",
+        "last_collection_check_at": "2026-09-10T16:19:38-04:00",
         "transcript_status": "FOUND",
-        "official_ir_last_attempt_incomplete": "2026-09-10T12:25:05-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-10T16:19:38-04:00",
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.291,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.125,
+            "seconds": 0.196,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q2",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 122.389,
+            "seconds": 122.801,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.05,
+            "seconds": 0.117,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q2"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-10T12:25:05-04:00",
+        "ir_retrieval_last_at": "2026-09-10T16:19:38-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": []
@@ -439,39 +461,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-10T12:25:05-04:00",
+      "updated_at": "2026-09-10T16:19:38-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.126,
+            "seconds": 0.112,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AVGO-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 183.439,
+            "seconds": 183.759,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.091,
+            "seconds": 0.168,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AVGO-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-10T12:25:05-04:00",
+        "ir_retrieval_last_at": "2026-09-10T16:19:38-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -491,10 +513,85 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-10T12:25:05-04:00",
+        "last_collection_check_at": "2026-09-10T16:19:38-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-10T12:25:05-04:00",
-        "next_ir_retry_at": "2026-09-10T14:25:05-04:00"
+        "official_ir_last_attempt_incomplete": "2026-09-10T16:19:38-04:00",
+        "next_ir_retry_at": "2026-09-10T18:19:38-04:00"
+      }
+    },
+    "ORCL_2026-09-10": {
+      "event_id": "ORCL_2026-09-10",
+      "ticker": "ORCL",
+      "fiscal_year": 2027,
+      "quarter": null,
+      "first_seen_at": "2026-09-10T16:19:38-04:00",
+      "period_end": "2026-09-10",
+      "documents": [
+        "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-09-10T16:19:38-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 0.369,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-09-10T16:19:38-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-09-10T16:19:38-04:00",
+        "official_ir_checked_at": "2026-09-10T16:19:38-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-09-10T16:34:38-04:00"
       }
     }
   },
@@ -502,13 +599,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-09-10T09:25:33-04:00",
-      "blocked_until": "2026-09-10T15:25:33-04:00",
+      "last_failure_at": "2026-09-10T16:19:38-04:00",
+      "blocked_until": "2026-09-10T22:19:38-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-10T08:30:49-04:00",
+      "last_success_at": "2026-09-10T16:19:38-04:00",
       "blocked_until": null
     },
     "public_transcript": {
