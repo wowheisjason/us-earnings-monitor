@@ -168,7 +168,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-10T19:25:15-04:00",
+      "updated_at": "2026-09-10T19:40:33-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -188,9 +188,9 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-10T19:25:15-04:00",
+        "last_collection_check_at": "2026-09-10T19:40:33-04:00",
         "transcript_status": "FOUND",
-        "official_ir_last_attempt_incomplete": "2026-09-10T19:25:15-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-10T19:40:33-04:00",
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
@@ -203,25 +203,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.244,
+            "seconds": 0.122,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q2",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 123.249,
+            "seconds": 122.986,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.088,
+            "seconds": 0.101,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q2"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-10T19:25:15-04:00",
+        "ir_retrieval_last_at": "2026-09-10T19:40:33-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": []
