@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import os
+import time
 from typing import Any
 
 from .investor_analysis_v5 import ProductionInvestorV5Client as _BaseV5Client
@@ -27,16 +29,34 @@ _SPARSE_CARD_SCHEMA = r"""
 
 
 class ProductionInvestorV5Client(_BaseV5Client):
-    """V5 mapper with sparse evidence-card serialization.
+    """V5 mapper with sparse evidence cards and quota-aware pacing.
 
-    The base V5 pipeline already guarantees full unit coverage. This override
-    changes only mapper output density: irrelevant/null keys are forbidden, so a
-    bounded evidence unit cannot exhaust the JSON output budget by repeating a
-    wide schema for every fact.
+    The base V5 pipeline guarantees full unit coverage. This override keeps each
+    mapper response sparse and spaces request starts so a long transcript can be
+    processed reliably on Gemini's low/free request-rate tiers instead of racing
+    into 429s after the first dozen successful batches.
     """
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._last_mapper_started_at = 0.0
+
+    def _pace_mapper(self) -> None:
+        # 4.2s => <15 request starts/minute for one production process. Paid
+        # projects can set GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS=0.
+        interval = max(0.0, float(os.getenv("GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS", "4.2")))
+        if not interval or not self._last_mapper_started_at:
+            self._last_mapper_started_at = time.monotonic()
+            return
+        elapsed = time.monotonic() - self._last_mapper_started_at
+        remaining = interval - elapsed
+        if remaining > 0:
+            time.sleep(remaining)
+        self._last_mapper_started_at = time.monotonic()
 
     def _extract_batch(self, event: EarningsEvent, units: list[dict[str, Any]], stage: str) -> dict:
         expected = [unit["unit_id"] for unit in units]
+        self._pace_mapper()
         return self._json(f"""You are a forensic earnings-evidence mapper for a professional US-equity investor. Return MINIMAL JSON only.
 
 Event: {event.event_id}
