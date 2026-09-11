@@ -168,7 +168,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-10T19:40:33-04:00",
+      "updated_at": "2026-09-10T20:56:09-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -188,9 +188,9 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-10T19:40:33-04:00",
+        "last_collection_check_at": "2026-09-10T20:56:09-04:00",
         "transcript_status": "FOUND",
-        "official_ir_last_attempt_incomplete": "2026-09-10T19:40:33-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-10T20:56:09-04:00",
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
@@ -203,25 +203,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.122,
+            "seconds": 0.147,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q2",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 122.986,
+            "seconds": 122.637,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.101,
+            "seconds": 0.104,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q2"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-10T19:40:33-04:00",
+        "ir_retrieval_last_at": "2026-09-10T20:56:09-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": []
@@ -240,7 +240,7 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-10T08:30:49-04:00",
+      "updated_at": "2026-09-10T20:42:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -262,7 +262,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 183.295,
+            "seconds": 183.674,
             "documents": 0,
             "partial": false
           },
@@ -275,7 +275,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-10T08:30:49-04:00",
+        "ir_retrieval_last_at": "2026-09-10T20:42:08-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -295,10 +295,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-10T08:30:49-04:00",
+        "last_collection_check_at": "2026-09-10T20:42:08-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-10T08:30:49-04:00",
-        "next_ir_retry_at": "2026-09-10T20:30:49-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-10T20:42:08-04:00",
+        "next_ir_retry_at": "2026-09-11T08:42:08-04:00",
         "last_published_mode": "sec_only_v1_ir_pending"
       }
     },
@@ -315,7 +315,7 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-10T08:30:49-04:00",
+      "updated_at": "2026-09-10T20:42:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -337,7 +337,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.33,
+            "seconds": 0.308,
             "documents": 0,
             "partial": false
           },
@@ -350,7 +350,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-10T08:30:49-04:00",
+        "ir_retrieval_last_at": "2026-09-10T20:42:08-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -370,11 +370,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-10T08:30:49-04:00",
-        "official_ir_checked_at": "2026-09-10T08:30:49-04:00",
-        "official_ir_check_count": 17,
+        "last_collection_check_at": "2026-09-10T20:42:08-04:00",
+        "official_ir_checked_at": "2026-09-10T20:42:08-04:00",
+        "official_ir_check_count": 18,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-09-10T20:30:49-04:00"
+        "next_ir_retry_at": "2026-09-11T08:42:08-04:00"
       }
     },
     "DELL_2026-07-31_Q2": {
@@ -461,7 +461,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-10T18:21:51-04:00",
+      "updated_at": "2026-09-10T20:42:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -475,25 +475,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.134,
+            "seconds": 0.088,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AVGO-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 183.788,
+            "seconds": 183.395,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.13,
+            "seconds": 0.093,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AVGO-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-10T18:21:51-04:00",
+        "ir_retrieval_last_at": "2026-09-10T20:42:08-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -513,10 +513,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-10T18:21:51-04:00",
+        "last_collection_check_at": "2026-09-10T20:42:08-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-10T18:21:51-04:00",
-        "next_ir_retry_at": "2026-09-10T20:21:51-04:00"
+        "official_ir_last_attempt_incomplete": "2026-09-10T20:42:08-04:00",
+        "next_ir_retry_at": "2026-09-10T22:42:08-04:00"
       }
     },
     "ORCL_2026-09-10": {
@@ -529,10 +529,10 @@
       "documents": [
         "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-10T19:25:15-04:00",
+      "updated_at": "2026-09-10T20:56:09-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -554,7 +554,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.33,
+            "seconds": 0.267,
             "documents": 0,
             "partial": false
           },
@@ -567,7 +567,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-10T19:25:15-04:00",
+        "ir_retrieval_last_at": "2026-09-10T20:42:08-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -587,11 +587,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-10T19:25:15-04:00",
-        "official_ir_checked_at": "2026-09-10T19:25:15-04:00",
-        "official_ir_check_count": 5,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-09-10T19:55:15-04:00"
+        "last_collection_check_at": "2026-09-10T20:42:08-04:00",
+        "official_ir_checked_at": "2026-09-10T20:42:08-04:00",
+        "official_ir_check_count": 6,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-09-10T22:42:08-04:00"
       }
     }
   },
@@ -605,7 +605,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-10T19:25:15-04:00",
+      "last_success_at": "2026-09-10T20:42:08-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -4673,6 +4673,2673 @@
             "critical_issues": [],
             "pass": true,
             "corrected_telegram_draft": "DELL FY2027 Q2\n\n💡 投資結論與邏輯:\nDell 在 Q2 繳出破紀錄的財務與營運表現，總營收達 $47.0B（年增 58%），Non-GAAP EPS 達 $7.04（年增 203%）。核心驅動力來自 AI 伺服器業務的爆發性成長：單季預訂訂單高達 $60.9B，認列營收 $16.4B（年增 100%），並使 AI 伺服器 Backlog 攀升至 $95B。強勁的接單動能促使管理階層大幅上修全年 FY27 財測，營收預期調高至 $192.0B（年增 69%），Non-GAAP EPS 調高至 $25.50（年增 148%）。這確立了公司在 AI 基礎設施供應鏈中的核心控制點地位，為未來 1–3 年的 earnings power 提供極高的能見度。\n\n📊 關鍵數據與財測:\n- Q2 總營收 $47.0B，年增 58%。\n- Infrastructure Solutions Group (ISG) 營收 $31.8B（$31,782M），年增 89%；其中 AI-Optimized Servers 貢獻 $16.4B（$16,401M），年增 100%。\n- 傳統伺服器與網路營收 $10.5B（$10,531M），年增 122%；儲存營收 $4.85B（$4,850M），年增 26%。\n- Client Solutions Group (CSG) 營收 $15.0B（$15,034M），年增 20%。\n- Q2 毛利率金額 $9.83B（$9,830M），年增 80%，毛利率比率 21.1%。營業利益 $5.39B（$5,385M），年增 204%。Non-GAAP 營業利益 $5.93B（$5,929M），年增 160%。\n- 現金及約當現金 $11.57B（$11,569M）；自由現金流 $986M，年減 47%（營運現金流 $2.2B）。\n- 財測：Q3 FY27 預估營收 $49.0B（年增約 80%），Non-GAAP EPS $6.50（年增 151%）。全年 FY27 營收預估調高至 $192.0B，Non-GAAP EPS 預估調高至 $25.50。\n- 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n- AI 需求廣度持續擴張：過去 12 個月累計 AI 伺服器訂單超過 $130B，Dell AI Factory 客戶數突破 6,500 家（過去 3 個季度新增 3,300 家）。\n- 市佔擴張：根據管理階層單方主張，過去兩季在傳統伺服器市佔率提升超過 10 個百分點，展現強大執行力。\n- Q&A 焦點集中於非 AI 業務（傳統伺服器年增 122%）的成長可持續性。管理回應此乃受惠於龐大老舊安裝基礎更新（如 120 萬個 14G 或更舊資產）、資料中心現代化與安全需求，而非單純短期預先搶購。\n\n⚠️ 風險、反證與待驗證:\n- 現金流背離：Q2 自由現金流降至 $986M（年減 47%），與獲利大幅成長出現背離，需關注營運資金變化對現金流動性的影響。\n- 產品組合稀釋：AI 伺服器規模放量可能對整體毛利率百分比形成結構性壓力。\n- 外部市場共識未納入，本報告不判定 Beat/Miss。"
+          }
+        }
+      }
+    },
+    "ORCL_2026-09-10": {
+      "pipeline_version": 5,
+      "evidence_fingerprint": "cfeb5598af949dcae181f9d19785d248b1dca59fe8a83cd5fca51aa3d7c36086",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+              "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q1 GAAP Earnings per Share up 55% in USD to $1.56, non-GAAP EPS up 30% to $1.92.",
+                "materiality_candidate": 5,
+                "quote": "Q1 GAAP Earnings per Share up 55% in USD and up 54% in constant currency to $1.56, non-GAAP Earnings per Share up 30% in USD and constant currency to $1.92.",
+                "metric": "Earnings per Share",
+                "value": "1.56",
+                "unit": "USD",
+                "period": "Q1",
+                "reported_change": "55%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record Q1 Total Revenues up 30% in USD and constant currency to $19.3 billion.",
+                "materiality_candidate": 5,
+                "quote": "Record Q1 Total Revenues up 30% in USD and constant currency to $19.3 billion.",
+                "metric": "Total Revenues",
+                "value": "19.3",
+                "unit": "billion USD",
+                "period": "Q1",
+                "reported_change": "30%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record Q1 Total Cloud Revenues up 62% in USD to $11.6 billion, driven by 121% growth in Cloud Infrastructure (IaaS) to $7.4 billion and 10% growth in Cloud Apps (SaaS) to $4.2 billion.",
+                "materiality_candidate": 5,
+                "quote": "Record Q1 Total Cloud Revenues up 62% in USD & up 61% in constant currency to $11.6 billion.",
+                "metric": "Total Cloud Revenues",
+                "value": "11.6",
+                "unit": "billion USD",
+                "period": "Q1",
+                "reported_change": "62%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Remaining Performance Obligations (RPO) up $209 billion year-over-year to $664 billion.",
+                "materiality_candidate": 5,
+                "quote": "Remaining Performance Obligations or RPO up $209 billion year-over-year to $664 billion",
+                "metric": "RPO",
+                "value": "664",
+                "unit": "billion USD",
+                "period": "Q1",
+                "reported_change": "209 billion"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Q1 operating cash flow was $23 billion, up 184%, and free cash flow was negative $5 billion.",
+                "materiality_candidate": 4,
+                "quote": "Oracle generated Q1 record operating cash flow of $23 billion, up 184%. Free cash flow was negative $5 billion for Q1",
+                "metric": "Operating Cash Flow",
+                "value": "23",
+                "unit": "billion USD",
+                "period": "Q1",
+                "reported_change": "184%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "supply_capacity",
+                "fact_class": "objective_fact",
+                "statement": "Oracle booked more than $30 billion of additional AI cloud contracts in Q1 and delivered more than 300,000 GPUs to AI Cloud customers.",
+                "materiality_candidate": 5,
+                "quote": "Oracle booked more than $30 billion of additional AI cloud contracts in Q1 increasing its RPO to $664 billion.",
+                "metric": "AI Cloud Bookings",
+                "value": "30",
+                "unit": "billion USD",
+                "period": "Q1"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY 2027 total revenues are expected to grow between 30% and 34% in constant currency and USD.",
+                "materiality_candidate": 5,
+                "quote": "Total revenues are expected to grow between 30% and 34% in constant currency and USD.",
+                "metric": "Total Revenues Growth",
+                "period": "Q2 FY 2027",
+                "low": "30",
+                "high": "34",
+                "unit": "%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY 2027 Total Cloud revenue expected to grow between 64% and 70% in constant currency and between 65% and 71% in USD.",
+                "materiality_candidate": 5,
+                "quote": "Total Cloud revenue is expected to grow between 64% and 70% in constant currency and between 65% and 71% in USD.",
+                "metric": "Total Cloud Revenue Growth",
+                "period": "Q2 FY 2027",
+                "low": "64",
+                "high": "70",
+                "unit": "%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY 2027 non-GAAP EPS expected to be between $1.85 and $1.93 in USD.",
+                "materiality_candidate": 5,
+                "quote": "non-GAAP earnings per share is expected to be between $1.83 and $1.91 in constant currency and between $1.85 and $1.93 in USD",
+                "metric": "Non-GAAP EPS",
+                "period": "Q2 FY 2027",
+                "low": "1.85",
+                "high": "1.93",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full FY 2027 total revenue expected to be at least $90 billion, and non-GAAP EPS at $8.10.",
+                "materiality_candidate": 5,
+                "quote": "For fiscal year 2027, we now expect total revenue to be at least $90 billion, and non-GAAP EPS to be at $8.10.",
+                "metric": "Total Revenue",
+                "period": "FY 2027",
+                "low": "90",
+                "unit": "billion USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u2",
+                "card_type": "fact",
+                "topic": "other",
+                "fact_class": "objective_fact",
+                "statement": "Board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock.",
+                "materiality_candidate": 3,
+                "quote": "The board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock.",
+                "metric": "Quarterly Cash Dividend",
+                "value": "0.50",
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+              "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues for Q1 FY27 were $19,345 million, up 30% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Total revenues 19,345 100% 14,926 100% 30%",
+                "metric": "Total revenues",
+                "value": "19345",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "14926",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "30%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Cloud revenues for Q1 FY27 were $11,607 million, up 62% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Cloud 11,607 60% 7,186 48% 62%",
+                "metric": "Cloud revenues",
+                "value": "11607",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "7186",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "62%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Software revenues for Q1 FY27 were $5,550 million, down 3% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Software 5,550 29% 5,721 38% (3%)",
+                "metric": "Software revenues",
+                "value": "5550",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "5721",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "(3%)"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Hardware revenues for Q1 FY27 were $774 million, up 15% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Hardware 774 4% 670 5% 15%",
+                "metric": "Hardware revenues",
+                "value": "774",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "670",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "15%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Services revenues for Q1 FY27 were $1,414 million, up 5% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Services 1,414 7% 1,349 9% 5%",
+                "metric": "Services revenues",
+                "value": "1414",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "1349",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "5%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for Q1 FY27 was $6,728 million (GAAP), up 57% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "OPERATING INCOME 6,728 35% 4,277 29% 57%",
+                "metric": "Operating income",
+                "value": "6728",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "4277",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "57%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income for Q1 FY27 was $4,760 million (GAAP), up 63% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "NET INCOME 4,760 25% 2,927 20% 63%",
+                "metric": "Net income",
+                "value": "4760",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "2927",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "63%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Diluted GAAP EPS for Q1 FY27 was $1.56, up 55% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Diluted 1.56 1.01",
+                "metric": "Diluted EPS",
+                "value": "1.56",
+                "unit": "$",
+                "period": "Q1 FY27",
+                "comparison_value": "1.01",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "55%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP operating income for Q1 FY27 was $8,151 million, up 31% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "8,151 4,277 1,959 6,236 57% 31%",
+                "metric": "Non-GAAP operating income",
+                "value": "8151",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "6236",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "31%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP diluted EPS for Q1 FY27 was $1.92, up 30% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "1.92 1.01 1.47 55% 30%",
+                "metric": "Non-GAAP diluted EPS",
+                "value": "1.92",
+                "unit": "$",
+                "period": "Q1 FY27",
+                "comparison_value": "1.47",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "30%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+              "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "GAAP Operating Cash Flow for Q1 Fiscal 2027 was $23,103 million, up 184% over prior year.",
+                "materiality_candidate": 4,
+                "quote": "23,103",
+                "metric": "GAAP Operating Cash Flow",
+                "value": "23,103",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "8,140",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "184%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Capital Expenditures for Q1 Fiscal 2027 were $28,499 million.",
+                "materiality_candidate": 4,
+                "quote": "(28,499\n)",
+                "metric": "Capital Expenditures",
+                "value": "-28,499",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "-8,502",
+                "comparison_period": "Q1 Fiscal 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free Cash Flow for Q1 Fiscal 2027 was $(5,396) million.",
+                "materiality_candidate": 4,
+                "quote": "(5,396\n)",
+                "metric": "Free Cash Flow",
+                "value": "-5,396",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "-362",
+                "comparison_period": "Q1 Fiscal 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net Cash Outlay for Capital Expenditures for Q1 Fiscal 2027 was $17,966 million.",
+                "materiality_candidate": 3,
+                "quote": "17,966",
+                "metric": "Net Cash Outlay for Capital Expenditures",
+                "value": "17,966",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "6,544",
+                "comparison_period": "Q1 Fiscal 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues for Q1 Fiscal 2027 were $19,345 million, representing 30% as-reported growth.",
+                "materiality_candidate": 5,
+                "quote": "19,345",
+                "metric": "Total revenues",
+                "value": "19,345",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "14,926",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "30%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total cloud revenues for Q1 Fiscal 2027 were $11,607 million, up 62% as-reported.",
+                "materiality_candidate": 5,
+                "quote": "11,607",
+                "metric": "Total cloud revenues",
+                "value": "11,607",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "7,186",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "62%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Cloud infrastructure revenues for Q1 Fiscal 2027 were $7,388 million, up 121% as-reported.",
+                "materiality_candidate": 5,
+                "quote": "7,388",
+                "metric": "Cloud infrastructure revenues",
+                "value": "7,388",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "3,347",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "121%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Cloud applications revenues for Q1 Fiscal 2027 were $4,219 million, up 10% as-reported.",
+                "materiality_candidate": 4,
+                "quote": "4,219",
+                "metric": "Cloud applications revenues",
+                "value": "4,219",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "3,839",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "10%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u7",
+              "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u8"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues were $19,345 million.",
+                "materiality_candidate": 3,
+                "quote": "Total revenues\n$\n19,345",
+                "metric": "Total revenues",
+                "value": "19345",
+                "unit": "$M"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u8",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Recorded a net tax expense of $958 million during the first quarter of fiscal 2026 related to the OBBBA remeasurement of a deferred tax liability.",
+                "materiality_candidate": 3,
+                "quote": "net tax expense of $958 million during the first quarter of fiscal 2026",
+                "metric": "net tax expense",
+                "value": "958",
+                "unit": "$M",
+                "period": "Q1 FY26"
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "title": "Oracle Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 29060,
+                  "extracted_chars": 29060,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 8,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u2",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u7",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u8"
+              ],
+              "expected_unit_count": 8,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u2",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u7",
+                "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u8"
+              ],
+              "processed_unit_count": 8,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 8,
+                "processed_unit_count": 8,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 5,
+                "demand_revenue": 14,
+                "guidance": 4,
+                "margin_unit_economics": 6,
+                "other": 1,
+                "supply_capacity": 1
+              },
+              "selection": {
+                "raw_card_count": 31,
+                "deduped_card_count": 31,
+                "selected_card_count": 31,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 4,
+                  "demand_revenue": 10,
+                  "guidance": 4,
+                  "margin_unit_economics": 5,
+                  "other": 1,
+                  "supply_capacity": 1
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Q1 GAAP Earnings per Share up 55% in USD to $1.56, non-GAAP EPS up 30% to $1.92.",
+                  "metric": "Earnings per Share",
+                  "value": "1.56",
+                  "unit": "USD",
+                  "period": "Q1",
+                  "reported_change": "55%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Q1 GAAP Earnings per Share up 55% in USD and up 54% in constant currency to $1.56, non-GAAP Earnings per Share up 30% in USD and constant currency to $1.92."
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Record Q1 Total Revenues up 30% in USD and constant currency to $19.3 billion.",
+                  "metric": "Total Revenues",
+                  "value": "19.3",
+                  "unit": "billion USD",
+                  "period": "Q1",
+                  "reported_change": "30%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Record Q1 Total Revenues up 30% in USD and constant currency to $19.3 billion."
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Record Q1 Total Cloud Revenues up 62% in USD to $11.6 billion, driven by 121% growth in Cloud Infrastructure (IaaS) to $7.4 billion and 10% growth in Cloud Apps (SaaS) to $4.2 billion.",
+                  "metric": "Total Cloud Revenues",
+                  "value": "11.6",
+                  "unit": "billion USD",
+                  "period": "Q1",
+                  "reported_change": "62%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Record Q1 Total Cloud Revenues up 62% in USD & up 61% in constant currency to $11.6 billion."
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Remaining Performance Obligations (RPO) up $209 billion year-over-year to $664 billion.",
+                  "metric": "RPO",
+                  "value": "664",
+                  "unit": "billion USD",
+                  "period": "Q1",
+                  "reported_change": "209 billion",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Remaining Performance Obligations or RPO up $209 billion year-over-year to $664 billion"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total revenues for Q1 FY27 were $19,345 million, up 30% year-over-year.",
+                  "metric": "Total revenues",
+                  "value": "19345",
+                  "unit": "$M",
+                  "period": "Q1 FY27",
+                  "comparison_value": "14926",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "30%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues 19,345 100% 14,926 100% 30%"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Cloud revenues for Q1 FY27 were $11,607 million, up 62% year-over-year.",
+                  "metric": "Cloud revenues",
+                  "value": "11607",
+                  "unit": "$M",
+                  "period": "Q1 FY27",
+                  "comparison_value": "7186",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "62%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Cloud 11,607 60% 7,186 48% 62%"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total revenues for Q1 Fiscal 2027 were $19,345 million, representing 30% as-reported growth.",
+                  "metric": "Total revenues",
+                  "value": "19,345",
+                  "unit": "USD Millions",
+                  "period": "Q1 Fiscal 2027",
+                  "comparison_value": "14,926",
+                  "comparison_period": "Q1 Fiscal 2026",
+                  "reported_change": "30%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "19,345"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total cloud revenues for Q1 Fiscal 2027 were $11,607 million, up 62% as-reported.",
+                  "metric": "Total cloud revenues",
+                  "value": "11,607",
+                  "unit": "USD Millions",
+                  "period": "Q1 Fiscal 2027",
+                  "comparison_value": "7,186",
+                  "comparison_period": "Q1 Fiscal 2026",
+                  "reported_change": "62%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "11,607"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Cloud infrastructure revenues for Q1 Fiscal 2027 were $7,388 million, up 121% as-reported.",
+                  "metric": "Cloud infrastructure revenues",
+                  "value": "7,388",
+                  "unit": "USD Millions",
+                  "period": "Q1 Fiscal 2027",
+                  "comparison_value": "3,347",
+                  "comparison_period": "Q1 Fiscal 2026",
+                  "reported_change": "121%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "7,388"
+                },
+                {
+                  "card_id": "c8:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Cloud applications revenues for Q1 Fiscal 2027 were $4,219 million, up 10% as-reported.",
+                  "metric": "Cloud applications revenues",
+                  "value": "4,219",
+                  "unit": "USD Millions",
+                  "period": "Q1 Fiscal 2027",
+                  "comparison_value": "3,839",
+                  "comparison_period": "Q1 Fiscal 2026",
+                  "reported_change": "10%",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "4,219"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Software revenues for Q1 FY27 were $5,550 million, down 3% year-over-year.",
+                  "metric": "Software revenues",
+                  "value": "5550",
+                  "unit": "$M",
+                  "period": "Q1 FY27",
+                  "comparison_value": "5721",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "(3%)",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Software 5,550 29% 5,721 38% (3%)"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Hardware revenues for Q1 FY27 were $774 million, up 15% year-over-year.",
+                  "metric": "Hardware revenues",
+                  "value": "774",
+                  "unit": "$M",
+                  "period": "Q1 FY27",
+                  "comparison_value": "670",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "15%",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Hardware 774 4% 670 5% 15%"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Services revenues for Q1 FY27 were $1,414 million, up 5% year-over-year.",
+                  "metric": "Services revenues",
+                  "value": "1414",
+                  "unit": "$M",
+                  "period": "Q1 FY27",
+                  "comparison_value": "1349",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "5%",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Services 1,414 7% 1,349 9% 5%"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u7",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total revenues were $19,345 million.",
+                  "metric": "Total revenues",
+                  "value": "19345",
+                  "unit": "$M",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u7",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues\n$\n19,345"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Q2 FY 2027 total revenues are expected to grow between 30% and 34% in constant currency and USD.",
+                  "metric": "Total Revenues Growth",
+                  "unit": "%",
+                  "period": "Q2 FY 2027",
+                  "low": "30",
+                  "high": "34",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues are expected to grow between 30% and 34% in constant currency and USD."
+                },
+                {
+                  "card_id": "c8:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Q2 FY 2027 Total Cloud revenue expected to grow between 64% and 70% in constant currency and between 65% and 71% in USD.",
+                  "metric": "Total Cloud Revenue Growth",
+                  "unit": "%",
+                  "period": "Q2 FY 2027",
+                  "low": "64",
+                  "high": "70",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total Cloud revenue is expected to grow between 64% and 70% in constant currency and between 65% and 71% in USD."
+                },
+                {
+                  "card_id": "c9:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Q2 FY 2027 non-GAAP EPS expected to be between $1.85 and $1.93 in USD.",
+                  "metric": "Non-GAAP EPS",
+                  "unit": "USD",
+                  "period": "Q2 FY 2027",
+                  "low": "1.85",
+                  "high": "1.93",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "non-GAAP earnings per share is expected to be between $1.83 and $1.91 in constant currency and between $1.85 and $1.93 in USD"
+                },
+                {
+                  "card_id": "c10:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Full FY 2027 total revenue expected to be at least $90 billion, and non-GAAP EPS at $8.10.",
+                  "metric": "Total Revenue",
+                  "unit": "billion USD",
+                  "period": "FY 2027",
+                  "low": "90",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "For fiscal year 2027, we now expect total revenue to be at least $90 billion, and non-GAAP EPS to be at $8.10."
+                },
+                {
+                  "card_id": "c6:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Operating income for Q1 FY27 was $6,728 million (GAAP), up 57% year-over-year.",
+                  "metric": "Operating income",
+                  "value": "6728",
+                  "unit": "$M",
+                  "period": "Q1 FY27",
+                  "comparison_value": "4277",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "57%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "OPERATING INCOME 6,728 35% 4,277 29% 57%"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Net income for Q1 FY27 was $4,760 million (GAAP), up 63% year-over-year.",
+                  "metric": "Net income",
+                  "value": "4760",
+                  "unit": "$M",
+                  "period": "Q1 FY27",
+                  "comparison_value": "2927",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "63%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "NET INCOME 4,760 25% 2,927 20% 63%"
+                },
+                {
+                  "card_id": "c8:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Diluted GAAP EPS for Q1 FY27 was $1.56, up 55% year-over-year.",
+                  "metric": "Diluted EPS",
+                  "value": "1.56",
+                  "unit": "$",
+                  "period": "Q1 FY27",
+                  "comparison_value": "1.01",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "55%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Diluted 1.56 1.01"
+                },
+                {
+                  "card_id": "c9:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Non-GAAP operating income for Q1 FY27 was $8,151 million, up 31% year-over-year.",
+                  "metric": "Non-GAAP operating income",
+                  "value": "8151",
+                  "unit": "$M",
+                  "period": "Q1 FY27",
+                  "comparison_value": "6236",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "31%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "8,151 4,277 1,959 6,236 57% 31%"
+                },
+                {
+                  "card_id": "c10:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Non-GAAP diluted EPS for Q1 FY27 was $1.92, up 30% year-over-year.",
+                  "metric": "Non-GAAP diluted EPS",
+                  "value": "1.92",
+                  "unit": "$",
+                  "period": "Q1 FY27",
+                  "comparison_value": "1.47",
+                  "comparison_period": "Q1 FY26",
+                  "reported_change": "30%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "1.92 1.01 1.47 55% 30%"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u8",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Recorded a net tax expense of $958 million during the first quarter of fiscal 2026 related to the OBBBA remeasurement of a deferred tax liability.",
+                  "metric": "net tax expense",
+                  "value": "958",
+                  "unit": "$M",
+                  "period": "Q1 FY26",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u8",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "net tax expense of $958 million during the first quarter of fiscal 2026"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Q1 operating cash flow was $23 billion, up 184%, and free cash flow was negative $5 billion.",
+                  "metric": "Operating Cash Flow",
+                  "value": "23",
+                  "unit": "billion USD",
+                  "period": "Q1",
+                  "reported_change": "184%",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Oracle generated Q1 record operating cash flow of $23 billion, up 184%. Free cash flow was negative $5 billion for Q1"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "GAAP Operating Cash Flow for Q1 Fiscal 2027 was $23,103 million, up 184% over prior year.",
+                  "metric": "GAAP Operating Cash Flow",
+                  "value": "23,103",
+                  "unit": "USD Millions",
+                  "period": "Q1 Fiscal 2027",
+                  "comparison_value": "8,140",
+                  "comparison_period": "Q1 Fiscal 2026",
+                  "reported_change": "184%",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "23,103"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Capital Expenditures for Q1 Fiscal 2027 were $28,499 million.",
+                  "metric": "Capital Expenditures",
+                  "value": "-28,499",
+                  "unit": "USD Millions",
+                  "period": "Q1 Fiscal 2027",
+                  "comparison_value": "-8,502",
+                  "comparison_period": "Q1 Fiscal 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "(28,499\n)"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Free Cash Flow for Q1 Fiscal 2027 was $(5,396) million.",
+                  "metric": "Free Cash Flow",
+                  "value": "-5,396",
+                  "unit": "USD Millions",
+                  "period": "Q1 Fiscal 2027",
+                  "comparison_value": "-362",
+                  "comparison_period": "Q1 Fiscal 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "(5,396\n)"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Net Cash Outlay for Capital Expenditures for Q1 Fiscal 2027 was $17,966 million.",
+                  "metric": "Net Cash Outlay for Capital Expenditures",
+                  "value": "17,966",
+                  "unit": "USD Millions",
+                  "period": "Q1 Fiscal 2027",
+                  "comparison_value": "6,544",
+                  "comparison_period": "Q1 Fiscal 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "17,966"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "supply_capacity",
+                  "statement": "Oracle booked more than $30 billion of additional AI cloud contracts in Q1 and delivered more than 300,000 GPUs to AI Cloud customers.",
+                  "metric": "AI Cloud Bookings",
+                  "value": "30",
+                  "unit": "billion USD",
+                  "period": "Q1",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Oracle booked more than $30 billion of additional AI cloud contracts in Q1 increasing its RPO to $664 billion."
+                },
+                {
+                  "card_id": "c11:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u2",
+                  "card_type": "fact",
+                  "topic": "other",
+                  "statement": "Board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock.",
+                  "metric": "Quarterly Cash Dividend",
+                  "value": "0.50",
+                  "unit": "USD",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u2",
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "The board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock."
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q1 GAAP Earnings per Share up 55% in USD to $1.56, non-GAAP EPS up 30% to $1.92.",
+                "materiality_candidate": 5,
+                "quote": "Q1 GAAP Earnings per Share up 55% in USD and up 54% in constant currency to $1.56, non-GAAP Earnings per Share up 30% in USD and constant currency to $1.92.",
+                "metric": "Earnings per Share",
+                "value": "1.56",
+                "unit": "USD",
+                "period": "Q1",
+                "reported_change": "55%",
+                "card_id": "c1:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Q1 GAAP Earnings per Share up 55% in USD and up 54% in constant currency to $1.56, non-GAAP Earnings per Share up 30% in USD and constant currency to $1.92."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record Q1 Total Revenues up 30% in USD and constant currency to $19.3 billion.",
+                "materiality_candidate": 5,
+                "quote": "Record Q1 Total Revenues up 30% in USD and constant currency to $19.3 billion.",
+                "metric": "Total Revenues",
+                "value": "19.3",
+                "unit": "billion USD",
+                "period": "Q1",
+                "reported_change": "30%",
+                "card_id": "c2:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Record Q1 Total Revenues up 30% in USD and constant currency to $19.3 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record Q1 Total Cloud Revenues up 62% in USD to $11.6 billion, driven by 121% growth in Cloud Infrastructure (IaaS) to $7.4 billion and 10% growth in Cloud Apps (SaaS) to $4.2 billion.",
+                "materiality_candidate": 5,
+                "quote": "Record Q1 Total Cloud Revenues up 62% in USD & up 61% in constant currency to $11.6 billion.",
+                "metric": "Total Cloud Revenues",
+                "value": "11.6",
+                "unit": "billion USD",
+                "period": "Q1",
+                "reported_change": "62%",
+                "card_id": "c3:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Record Q1 Total Cloud Revenues up 62% in USD & up 61% in constant currency to $11.6 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Remaining Performance Obligations (RPO) up $209 billion year-over-year to $664 billion.",
+                "materiality_candidate": 5,
+                "quote": "Remaining Performance Obligations or RPO up $209 billion year-over-year to $664 billion",
+                "metric": "RPO",
+                "value": "664",
+                "unit": "billion USD",
+                "period": "Q1",
+                "reported_change": "209 billion",
+                "card_id": "c4:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Remaining Performance Obligations or RPO up $209 billion year-over-year to $664 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Q1 operating cash flow was $23 billion, up 184%, and free cash flow was negative $5 billion.",
+                "materiality_candidate": 4,
+                "quote": "Oracle generated Q1 record operating cash flow of $23 billion, up 184%. Free cash flow was negative $5 billion for Q1",
+                "metric": "Operating Cash Flow",
+                "value": "23",
+                "unit": "billion USD",
+                "period": "Q1",
+                "reported_change": "184%",
+                "card_id": "c5:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Oracle generated Q1 record operating cash flow of $23 billion, up 184%. Free cash flow was negative $5 billion for Q1"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "fact",
+                "topic": "supply_capacity",
+                "fact_class": "objective_fact",
+                "statement": "Oracle booked more than $30 billion of additional AI cloud contracts in Q1 and delivered more than 300,000 GPUs to AI Cloud customers.",
+                "materiality_candidate": 5,
+                "quote": "Oracle booked more than $30 billion of additional AI cloud contracts in Q1 increasing its RPO to $664 billion.",
+                "metric": "AI Cloud Bookings",
+                "value": "30",
+                "unit": "billion USD",
+                "period": "Q1",
+                "card_id": "c6:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Oracle booked more than $30 billion of additional AI cloud contracts in Q1 increasing its RPO to $664 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY 2027 total revenues are expected to grow between 30% and 34% in constant currency and USD.",
+                "materiality_candidate": 5,
+                "quote": "Total revenues are expected to grow between 30% and 34% in constant currency and USD.",
+                "metric": "Total Revenues Growth",
+                "period": "Q2 FY 2027",
+                "low": "30",
+                "high": "34",
+                "unit": "%",
+                "card_id": "c7:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues are expected to grow between 30% and 34% in constant currency and USD."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY 2027 Total Cloud revenue expected to grow between 64% and 70% in constant currency and between 65% and 71% in USD.",
+                "materiality_candidate": 5,
+                "quote": "Total Cloud revenue is expected to grow between 64% and 70% in constant currency and between 65% and 71% in USD.",
+                "metric": "Total Cloud Revenue Growth",
+                "period": "Q2 FY 2027",
+                "low": "64",
+                "high": "70",
+                "unit": "%",
+                "card_id": "c8:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total Cloud revenue is expected to grow between 64% and 70% in constant currency and between 65% and 71% in USD."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY 2027 non-GAAP EPS expected to be between $1.85 and $1.93 in USD.",
+                "materiality_candidate": 5,
+                "quote": "non-GAAP earnings per share is expected to be between $1.83 and $1.91 in constant currency and between $1.85 and $1.93 in USD",
+                "metric": "Non-GAAP EPS",
+                "period": "Q2 FY 2027",
+                "low": "1.85",
+                "high": "1.93",
+                "unit": "USD",
+                "card_id": "c9:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "non-GAAP earnings per share is expected to be between $1.83 and $1.91 in constant currency and between $1.85 and $1.93 in USD"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full FY 2027 total revenue expected to be at least $90 billion, and non-GAAP EPS at $8.10.",
+                "materiality_candidate": 5,
+                "quote": "For fiscal year 2027, we now expect total revenue to be at least $90 billion, and non-GAAP EPS to be at $8.10.",
+                "metric": "Total Revenue",
+                "period": "FY 2027",
+                "low": "90",
+                "unit": "billion USD",
+                "card_id": "c10:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "For fiscal year 2027, we now expect total revenue to be at least $90 billion, and non-GAAP EPS to be at $8.10."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u2",
+                "card_type": "fact",
+                "topic": "other",
+                "fact_class": "objective_fact",
+                "statement": "Board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock.",
+                "materiality_candidate": 3,
+                "quote": "The board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock.",
+                "metric": "Quarterly Cash Dividend",
+                "value": "0.50",
+                "unit": "USD",
+                "card_id": "c11:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u2",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "The board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues for Q1 FY27 were $19,345 million, up 30% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Total revenues 19,345 100% 14,926 100% 30%",
+                "metric": "Total revenues",
+                "value": "19345",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "14926",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "30%",
+                "card_id": "c1:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues 19,345 100% 14,926 100% 30%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Cloud revenues for Q1 FY27 were $11,607 million, up 62% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Cloud 11,607 60% 7,186 48% 62%",
+                "metric": "Cloud revenues",
+                "value": "11607",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "7186",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "62%",
+                "card_id": "c2:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Cloud 11,607 60% 7,186 48% 62%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Software revenues for Q1 FY27 were $5,550 million, down 3% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Software 5,550 29% 5,721 38% (3%)",
+                "metric": "Software revenues",
+                "value": "5550",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "5721",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "(3%)",
+                "card_id": "c3:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Software 5,550 29% 5,721 38% (3%)"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Hardware revenues for Q1 FY27 were $774 million, up 15% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Hardware 774 4% 670 5% 15%",
+                "metric": "Hardware revenues",
+                "value": "774",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "670",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "15%",
+                "card_id": "c4:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Hardware 774 4% 670 5% 15%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Services revenues for Q1 FY27 were $1,414 million, up 5% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Services 1,414 7% 1,349 9% 5%",
+                "metric": "Services revenues",
+                "value": "1414",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "1349",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "5%",
+                "card_id": "c5:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Services 1,414 7% 1,349 9% 5%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for Q1 FY27 was $6,728 million (GAAP), up 57% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "OPERATING INCOME 6,728 35% 4,277 29% 57%",
+                "metric": "Operating income",
+                "value": "6728",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "4277",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "57%",
+                "card_id": "c6:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "OPERATING INCOME 6,728 35% 4,277 29% 57%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income for Q1 FY27 was $4,760 million (GAAP), up 63% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "NET INCOME 4,760 25% 2,927 20% 63%",
+                "metric": "Net income",
+                "value": "4760",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "2927",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "63%",
+                "card_id": "c7:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "NET INCOME 4,760 25% 2,927 20% 63%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Diluted GAAP EPS for Q1 FY27 was $1.56, up 55% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Diluted 1.56 1.01",
+                "metric": "Diluted EPS",
+                "value": "1.56",
+                "unit": "$",
+                "period": "Q1 FY27",
+                "comparison_value": "1.01",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "55%",
+                "card_id": "c8:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u3",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Diluted 1.56 1.01"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP operating income for Q1 FY27 was $8,151 million, up 31% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "8,151 4,277 1,959 6,236 57% 31%",
+                "metric": "Non-GAAP operating income",
+                "value": "8151",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "6236",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "31%",
+                "card_id": "c9:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "8,151 4,277 1,959 6,236 57% 31%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP diluted EPS for Q1 FY27 was $1.92, up 30% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "1.92 1.01 1.47 55% 30%",
+                "metric": "Non-GAAP diluted EPS",
+                "value": "1.92",
+                "unit": "$",
+                "period": "Q1 FY27",
+                "comparison_value": "1.47",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "30%",
+                "card_id": "c10:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u4",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "1.92 1.01 1.47 55% 30%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "GAAP Operating Cash Flow for Q1 Fiscal 2027 was $23,103 million, up 184% over prior year.",
+                "materiality_candidate": 4,
+                "quote": "23,103",
+                "metric": "GAAP Operating Cash Flow",
+                "value": "23,103",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "8,140",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "184%",
+                "card_id": "c1:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "23,103"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Capital Expenditures for Q1 Fiscal 2027 were $28,499 million.",
+                "materiality_candidate": 4,
+                "quote": "(28,499\n)",
+                "metric": "Capital Expenditures",
+                "value": "-28,499",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "-8,502",
+                "comparison_period": "Q1 Fiscal 2026",
+                "card_id": "c2:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "(28,499\n)"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free Cash Flow for Q1 Fiscal 2027 was $(5,396) million.",
+                "materiality_candidate": 4,
+                "quote": "(5,396\n)",
+                "metric": "Free Cash Flow",
+                "value": "-5,396",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "-362",
+                "comparison_period": "Q1 Fiscal 2026",
+                "card_id": "c3:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u5",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "(5,396\n)"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net Cash Outlay for Capital Expenditures for Q1 Fiscal 2027 was $17,966 million.",
+                "materiality_candidate": 3,
+                "quote": "17,966",
+                "metric": "Net Cash Outlay for Capital Expenditures",
+                "value": "17,966",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "6,544",
+                "comparison_period": "Q1 Fiscal 2026",
+                "card_id": "c4:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "17,966"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues for Q1 Fiscal 2027 were $19,345 million, representing 30% as-reported growth.",
+                "materiality_candidate": 5,
+                "quote": "19,345",
+                "metric": "Total revenues",
+                "value": "19,345",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "14,926",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "30%",
+                "card_id": "c5:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "19,345"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total cloud revenues for Q1 Fiscal 2027 were $11,607 million, up 62% as-reported.",
+                "materiality_candidate": 5,
+                "quote": "11,607",
+                "metric": "Total cloud revenues",
+                "value": "11,607",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "7,186",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "62%",
+                "card_id": "c6:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "11,607"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Cloud infrastructure revenues for Q1 Fiscal 2027 were $7,388 million, up 121% as-reported.",
+                "materiality_candidate": 5,
+                "quote": "7,388",
+                "metric": "Cloud infrastructure revenues",
+                "value": "7,388",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "3,347",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "121%",
+                "card_id": "c7:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "7,388"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Cloud applications revenues for Q1 Fiscal 2027 were $4,219 million, up 10% as-reported.",
+                "materiality_candidate": 4,
+                "quote": "4,219",
+                "metric": "Cloud applications revenues",
+                "value": "4,219",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "3,839",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "10%",
+                "card_id": "c8:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u6",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "4,219"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues were $19,345 million.",
+                "materiality_candidate": 3,
+                "quote": "Total revenues\n$\n19,345",
+                "metric": "Total revenues",
+                "value": "19345",
+                "unit": "$M",
+                "card_id": "c1:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u7",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues\n$\n19,345"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u8",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Recorded a net tax expense of $958 million during the first quarter of fiscal 2026 related to the OBBBA remeasurement of a deferred tax liability.",
+                "materiality_candidate": 3,
+                "quote": "net tax expense of $958 million during the first quarter of fiscal 2026",
+                "metric": "net tax expense",
+                "value": "958",
+                "unit": "$M",
+                "period": "Q1 FY26",
+                "card_id": "c2:sec_edgar:0001193125-26-387905:orcl-ex99_1.htm#u8",
+                "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 8,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "net tax expense of $958 million during the first quarter of fiscal 2026"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "Earnings per Share",
+                "value": "1.56",
+                "unit": "USD",
+                "period": "Q1",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "55%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Q1 GAAP Earnings per Share up 55% in USD and up 54% in constant currency to $1.56, non-GAAP Earnings per Share up 30% in USD and constant currency to $1.92."
+                }
+              },
+              {
+                "metric": "Total Revenues",
+                "value": "19.3",
+                "unit": "billion USD",
+                "period": "Q1",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "30%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Record Q1 Total Revenues up 30% in USD and constant currency to $19.3 billion."
+                }
+              },
+              {
+                "metric": "Total Cloud Revenues",
+                "value": "11.6",
+                "unit": "billion USD",
+                "period": "Q1",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "62%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Record Q1 Total Cloud Revenues up 62% in USD & up 61% in constant currency to $11.6 billion."
+                }
+              },
+              {
+                "metric": "RPO",
+                "value": "664",
+                "unit": "billion USD",
+                "period": "Q1",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "209 billion",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Remaining Performance Obligations or RPO up $209 billion year-over-year to $664 billion"
+                }
+              },
+              {
+                "metric": "Operating Cash Flow",
+                "value": "23",
+                "unit": "billion USD",
+                "period": "Q1",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "184%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Oracle generated Q1 record operating cash flow of $23 billion, up 184%. Free cash flow was negative $5 billion for Q1"
+                }
+              },
+              {
+                "metric": "AI Cloud Bookings",
+                "value": "30",
+                "unit": "billion USD",
+                "period": "Q1",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Oracle booked more than $30 billion of additional AI cloud contracts in Q1 increasing its RPO to $664 billion."
+                }
+              },
+              {
+                "metric": "Quarterly Cash Dividend",
+                "value": "0.50",
+                "unit": "USD",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "The board of directors declared a quarterly cash dividend of $0.50 per share of outstanding common stock."
+                }
+              },
+              {
+                "metric": "Total revenues",
+                "value": "19345",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "14926",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "30%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues 19,345 100% 14,926 100% 30%"
+                }
+              },
+              {
+                "metric": "Cloud revenues",
+                "value": "11607",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "7186",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "62%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Cloud 11,607 60% 7,186 48% 62%"
+                }
+              },
+              {
+                "metric": "Software revenues",
+                "value": "5550",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "5721",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "(3%)",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Software 5,550 29% 5,721 38% (3%)"
+                }
+              },
+              {
+                "metric": "Hardware revenues",
+                "value": "774",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "670",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "15%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Hardware 774 4% 670 5% 15%"
+                }
+              },
+              {
+                "metric": "Services revenues",
+                "value": "1414",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "1349",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "5%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Services 1,414 7% 1,349 9% 5%"
+                }
+              },
+              {
+                "metric": "Operating income",
+                "value": "6728",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "4277",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "57%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "OPERATING INCOME 6,728 35% 4,277 29% 57%"
+                }
+              },
+              {
+                "metric": "Net income",
+                "value": "4760",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "2927",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "63%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "NET INCOME 4,760 25% 2,927 20% 63%"
+                }
+              },
+              {
+                "metric": "Diluted EPS",
+                "value": "1.56",
+                "unit": "$",
+                "period": "Q1 FY27",
+                "comparison_value": "1.01",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "55%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Diluted 1.56 1.01"
+                }
+              },
+              {
+                "metric": "Non-GAAP operating income",
+                "value": "8151",
+                "unit": "$M",
+                "period": "Q1 FY27",
+                "comparison_value": "6236",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "31%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "8,151 4,277 1,959 6,236 57% 31%"
+                }
+              },
+              {
+                "metric": "Non-GAAP diluted EPS",
+                "value": "1.92",
+                "unit": "$",
+                "period": "Q1 FY27",
+                "comparison_value": "1.47",
+                "comparison_period": "Q1 FY26",
+                "reported_change": "30%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "1.92 1.01 1.47 55% 30%"
+                }
+              },
+              {
+                "metric": "GAAP Operating Cash Flow",
+                "value": "23,103",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "8,140",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "184%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "23,103"
+                }
+              },
+              {
+                "metric": "Capital Expenditures",
+                "value": "-28,499",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "-8,502",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "(28,499\n)"
+                }
+              },
+              {
+                "metric": "Free Cash Flow",
+                "value": "-5,396",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "-362",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "(5,396\n)"
+                }
+              },
+              {
+                "metric": "Net Cash Outlay for Capital Expenditures",
+                "value": "17,966",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "6,544",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "17,966"
+                }
+              },
+              {
+                "metric": "Total revenues",
+                "value": "19,345",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "14,926",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "30%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "19,345"
+                }
+              },
+              {
+                "metric": "Total cloud revenues",
+                "value": "11,607",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "7,186",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "62%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "11,607"
+                }
+              },
+              {
+                "metric": "Cloud infrastructure revenues",
+                "value": "7,388",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "3,347",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "121%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "7,388"
+                }
+              },
+              {
+                "metric": "Cloud applications revenues",
+                "value": "4,219",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "3,839",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "10%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "4,219"
+                }
+              },
+              {
+                "metric": "Total revenues",
+                "value": "19345",
+                "unit": "$M",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues\n$\n19,345"
+                }
+              },
+              {
+                "metric": "net tax expense",
+                "value": "958",
+                "unit": "$M",
+                "period": "Q1 FY26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "net tax expense of $958 million during the first quarter of fiscal 2026"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "Total Revenues Growth",
+                "period": "Q2 FY 2027",
+                "low": "30",
+                "midpoint": null,
+                "high": "34",
+                "unit": "%",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total revenues are expected to grow between 30% and 34% in constant currency and USD."
+                }
+              },
+              {
+                "metric": "Total Cloud Revenue Growth",
+                "period": "Q2 FY 2027",
+                "low": "64",
+                "midpoint": null,
+                "high": "70",
+                "unit": "%",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Total Cloud revenue is expected to grow between 64% and 70% in constant currency and between 65% and 71% in USD."
+                }
+              },
+              {
+                "metric": "Non-GAAP EPS",
+                "period": "Q2 FY 2027",
+                "low": "1.85",
+                "midpoint": null,
+                "high": "1.93",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "non-GAAP earnings per share is expected to be between $1.83 and $1.91 in constant currency and between $1.85 and $1.93 in USD"
+                }
+              },
+              {
+                "metric": "Total Revenue",
+                "period": "FY 2027",
+                "low": "90",
+                "midpoint": null,
+                "high": null,
+                "unit": "billion USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "For fiscal year 2027, we now expect total revenue to be at least $90 billion, and non-GAAP EPS to be at $8.10."
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Operating Cash Flow",
+                "value": "23",
+                "unit": "billion USD",
+                "period": "Q1",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "184%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "Oracle generated Q1 record operating cash flow of $23 billion, up 184%. Free cash flow was negative $5 billion for Q1"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "GAAP Operating Cash Flow",
+                "value": "23,103",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "8,140",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": "184%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "23,103"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Capital Expenditures",
+                "value": "-28,499",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "-8,502",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "(28,499\n)"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Free Cash Flow",
+                "value": "-5,396",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "-362",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "(5,396\n)"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Net Cash Outlay for Capital Expenditures",
+                "value": "17,966",
+                "unit": "USD Millions",
+                "period": "Q1 Fiscal 2027",
+                "comparison_value": "6,544",
+                "comparison_period": "Q1 Fiscal 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+                  "quote": "17,966"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [
+              "facts.cards[4]:quote_not_found_in_sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+              "facts.cards[12]:quote_not_found_in_sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+              "facts.cards[17]:quote_not_found_in_sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+              "facts.cards[19]:quote_not_found_in_sec_edgar:0001193125-26-387905:orcl-ex99_1.htm",
+              "facts.cards[20]:quote_not_found_in_sec_edgar:0001193125-26-387905:orcl-ex99_1.htm"
+            ],
+            "extraction_batch_count": 4,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.267,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-09-10T20:42:08-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-09-10T20:42:08-04:00",
+              "official_ir_checked_at": "2026-09-10T20:42:08-04:00",
+              "official_ir_check_count": 6,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-09-10T22:42:08-04:00"
+            },
+            "deterministic_validation_issues": [
+              "guidance[3]_incomplete_range"
+            ],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Cloud Infrastructure (IaaS) 動能強勁，推動 Total Cloud Revenues 大幅成長",
+                "why_it_matters": "IaaS 營收年增 121% 達到 $7.4B，顯示 Oracle 在 AI 基礎設施與雲端服務的佈局正加速獲取市場份額，直接帶動公司整體營收結構轉型。",
+                "fact_basis": [
+                  "Q1 Cloud Infrastructure (IaaS) 成長 121% 至 $7.4B (實際為 $7,388M)",
+                  "Total Cloud Revenues 成長 62% 至 $11.6B (實際為 $11,607M)"
+                ],
+                "inference": "企業對 Oracle Cloud Infrastructure (OCI) 的需求高度集中於 AI 相關負載，這確立了 Oracle 作為主要雲端運算提供商的地位。",
+                "confidence": "high"
+              },
+              {
+                "signal": "RPO 暴增與龐大 AI 訂單確認了中長期 Earnings Power 的擴張",
+                "why_it_matters": "Remaining Performance Obligations (RPO) 年增 $209B 達到 $664B，加上 Q1 新增超過 $30B 的 AI cloud contracts，為未來數年的營收能見度提供堅實基礎。",
+                "fact_basis": [
+                  "RPO 達到 $664B，年增 $209B",
+                  "Q1 額外預訂超過 $30B 的 AI cloud contracts"
+                ],
+                "inference": "龐大的訂單儲備顯示客戶需求具備高度可見性，將轉化為未來 1–3 年穩健的 topline 成長。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Total Revenues 達到 $19.345B，年增 30%",
+                "Total Cloud Revenues 達到 $11.607B，年增 62%，由 Cloud Infrastructure (IaaS) 成長 121% 至 $7.388B 驅動",
+                "Cloud Apps (SaaS) 成長 10% 至 $4.219B",
+                "Software revenues 下滑 3% 至 $5.550B，Hardware 成長 15% 至 $0.774B，Services 成長 5% 至 $1.414B"
+              ],
+              "margin_unit_economics": [
+                "GAAP Operating Income 達到 $6.728B，年增 57%，GAAP 營業利益率顯著擴張",
+                "Non-GAAP Operating Income 達到 $8.151B，年增 31%",
+                "GAAP 稀釋每股盈餘 (EPS) 達 $1.56，年增 55%；Non-GAAP 稀釋每股盈餘達 $1.92，年增 30%"
+              ],
+              "cash_capital_intensity": [
+                "Q1 GAAP Operating Cash Flow 創紀錄達 $23.103B，年增 184%",
+                "Capital Expenditures 達到 $28.499B，導致 Q1 Free Cash Flow 為負 $5.396B ($(5,396)M)",
+                "資本支出的大幅增加反映出公司正加速擴充 AI 雲端資料中心與交付超過 300,000 GPUs 的產能投資"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 FY27 Total Revenues 預期年增 30% 至 34% (constant currency 與 USD)",
+              "Q2 FY27 Total Cloud Revenue 預期年增 64% 至 70% (constant currency) 或 65% 至 71% (USD)",
+              "Q2 FY27 Non-GAAP EPS 預期介於 $1.85 至 $1.93",
+              "全年 FY 2027 Total Revenue 預期至少達到 $90B，Non-GAAP EPS 預期為 $8.10"
+            ],
+            "demand_quality": [
+              "AI cloud contracts 單季新增超過 $30B，帶動 RPO 攀升至 $664B",
+              "已交付超過 300,000 GPUs 給 AI Cloud 客戶，顯示大客戶在基礎設施層面的擴張深度與使用規模極高"
+            ],
+            "qa_readthrough": [
+              {
+                "debate": "由於本季未提供逐字稿與 Q&A 內容，無法直接分析分析師追問與管理層回答。",
+                "management_answer": "不適用",
+                "answer_quality": "unknown",
+                "investment_readthrough": "本報告基於官方正式財報與新聞稿數據進行分析，未包含 Q&A 逐字稿細節。"
+              }
+            ],
+            "competitive_value_chain": [
+              "IaaS 業務實現 121% 的高速成長，並單季交付超過 300,000 GPUs，顯示 Oracle 在高效能運算與 AI 基礎設施領域成功建立顯著的規模與市占擴張動能。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "Capex 高達 $28.499B 導致 FCF 轉為負 $5.396B，若未來 AI 需求成長放緩或資本回報期拉長，將對現金流與資本結構造成持續壓力。"
+            ],
+            "watch_items": [
+              "未來季度 Capex 規模與 FCF 轉正時點",
+              "IaaS 121% 成長率的可持續性及 GPU 部署進度",
+              "FY 2027 全年 $90B 營收目標的達成情況"
+            ],
+            "confidence": 90,
+            "telegram_draft": "ORCL ORCL_2026-09-10\n\n💡 投資結論與邏輯:\nOracle 在 Q1 繳出強勁的財務與營運成績單，Total Revenues 達 $19.345B，年增 30%。核心成長引擎 Cloud Infrastructure (IaaS) 營收年增達 121% 至 $7.388B，帶動 Total Cloud Revenues 攀升至 $11.607B（年增 62%）。單季新增超過 $30B 的 AI cloud contracts，推動 RPO 大幅成長至 $664B，顯示企業對 OCI 的 AI 運算需求極為強勁，中長期 earnings power 能見度極高。\n\n📊 關鍵數據與財測:\n- Q1 總營收達 $19.345B（年增 30%），Total Cloud Revenues 達 $11.607B（年增 62%）。\n- 獲利能力方面：GAAP Operating Income 達 $6.728B（年增 57%），Non-GAAP Operating Income 達 $8.151B（年增 31%）。GAAP EPS 達 $1.56（年增 55%），Non-GAAP EPS 達 $1.92（年增 30%）。\n- 現金流與資本支出：Q1 Operating Cash Flow 創紀錄達 $23.103B（年增 184%），但因 Capital Expenditures 高達 $28.499B，導致 Free Cash Flow 為負 $5.396B，反映出大規模擴充 AI 基礎設施的資本密集度。\n- 財測 (Guidance)：預期 Q2 FY27 Total Revenues 年增 30% 至 34%，Total Cloud Revenue 年增 65% 至 71%，Non-GAAP EPS 預期介於 $1.85 至 $1.93。全年 FY 2027 總營收預期至少達到 $90B，Non-GAAP EPS 預期為 $8.10。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n- IaaS 高速擴張：單季交付超過 300,000 GPUs 給 AI Cloud 客戶，突顯 Oracle 在高效能 AI 雲端市占率的快速斬獲。\n- 訂單動能：RPO 累計達 $664B，年增 $209B，顯示大型客戶深度綁定 OCI 平台，驅動營收結構持續向高毛利的雲端業務傾斜。\n\n⚠️ 風險、反證與待驗證:\n- 資本支出壓力：Q1 Capex 高達 $28.499B 造成 FCF 陷入負 $5.396B。若未來 AI 終端需求成長不如預期，高額資本投資恐對現金流構成顯著壓力。\n- 外部市場共識未納入，本報告不判定 Beat/Miss。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 100,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [],
+            "pass": true,
+            "corrected_telegram_draft": "ORCL ORCL_2026-09-10\n\n💡 投資結論與邏輯:\nOracle 在 Q1 繳出強勁的財務與營運成績單，Total Revenues 達 $19.345B，年增 30%。核心成長引擎 Cloud Infrastructure (IaaS) 營收年增達 121% 至 $7.388B，帶動 Total Cloud Revenues 攀升至 $11.607B（年增 62%）。單季新增超過 $30B 的 AI cloud contracts，推動 RPO 大幅成長至 $664B，顯示企業對 OCI 的 AI 運算需求極為強勁，中長期 earnings power 能見度極高。\n\n📊 關鍵數據與財測:\n- Q1 總營收達 $19.345B（年增 30%），Total Cloud Revenues 達 $11.607B（年增 62%）。\n- 獲利能力方面：GAAP Operating Income 達 $6.728B（年增 57%），Non-GAAP Operating Income 達 $8.151B（年增 31%）。GAAP EPS 達 $1.56（年增 55%），Non-GAAP EPS 達 $1.92（年增 30%）。\n- 現金流與資本支出：Q1 Operating Cash Flow 創紀錄達 $23.103B（年增 184%），但因 Capital Expenditures 高達 $28.499B，導致 Free Cash Flow 為負 $5.396B，反映出大規模擴充 AI 基礎設施的資本密集度。\n- 財測 (Guidance)：預期 Q2 FY27 Total Revenues 年增 30% 至 34%，Total Cloud Revenue 年增 65% 至 71%，Non-GAAP EPS 預期介於 $1.85 至 $1.93。全年 FY 2027 總營收預期至少達到 $90B，Non-GAAP EPS 預期為 $8.10。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n- IaaS 高速擴張：單季交付超過 300,000 GPUs 給 AI Cloud 客戶，突顯 Oracle 在高效能 AI 雲端市占率的快速斬獲。\n- 訂單動能：RPO 累計達 $664B，年增 $209B，顯示大型客戶深度綁定 OCI 平台，驅動營收結構持續向高毛利的雲端業務傾斜。\n\n⚠️ 風險、反證與待驗證:\n- 資本支出壓力：Q1 Capex 高達 $28.499B 造成 FCF 陷入負 $5.396B。若未來 AI 終端需求成長不如預期，高額資本投資恐對現金流構成顯著壓力。\n- 外部市場共識未納入，本報告不判定 Beat/Miss。"
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Cloud Infrastructure (IaaS) 動能強勁，推動 Total Cloud Revenues 大幅成長",
+                "why_it_matters": "IaaS 營收年增 121% 達到 $7.388B，顯示 Oracle 在 AI 基礎設施與雲端服務的佈局正加速獲取市場份額，直接帶動公司整體營收結構轉型。",
+                "fact_basis": [
+                  "Q1 Cloud Infrastructure (IaaS) 成長 121% 至 $7.388B",
+                  "Total Cloud Revenues 成長 62% 至 $11.607B"
+                ],
+                "inference": "企業對 Oracle Cloud Infrastructure (OCI) 的需求高度集中於 AI 相關負載，這確立了 Oracle 作為主要雲端運算提供商的地位。",
+                "confidence": "high"
+              },
+              {
+                "signal": "RPO 暴增與龐大 AI 訂單確認了中長期 Earnings Power 的擴張",
+                "why_it_matters": "Remaining Performance Obligations (RPO) 達到 $664B（年增 $209B），加上 Q1 新增超過 $30B 的 AI cloud contracts，為未來數年的營收能見度提供堅實基礎。",
+                "fact_basis": [
+                  "RPO 達到 $664B，年增 $209B",
+                  "Q1 額外預訂超過 $30B 的 AI cloud contracts"
+                ],
+                "inference": "龐大的訂單儲備顯示客戶需求具備高度可見性，將轉化為未來 1–3 年穩健的 topline 成長。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Total Revenues 達到 $19.345B，年增 30%",
+                "Total Cloud Revenues 達到 $11.607B，年增 62%，由 Cloud Infrastructure (IaaS) 成長 121% 至 $7.388B 驅動",
+                "Cloud Apps (SaaS) 成長 10% 至 $4.219B",
+                "Software revenues 下滑 3% 至 $5.550B，Hardware 成長 15% 至 $0.774B，Services 成長 5% 至 $1.414B"
+              ],
+              "margin_unit_economics": [
+                "GAAP Operating Income 達到 $6.728B，年增 57%，GAAP 營業利益率顯著擴張",
+                "Non-GAAP Operating Income 達到 $8.151B，年增 31%",
+                "GAAP 稀釋每股盈餘 (EPS) 達 $1.56，年增 55%；Non-GAAP 稀釋每股盈餘達 $1.92，年增 30%"
+              ],
+              "cash_capital_intensity": [
+                "Q1 GAAP Operating Cash Flow 創紀錄達 $23.103B，年增 184%",
+                "Capital Expenditures 達到 $28.499B，導致 Q1 Free Cash Flow 為負 $5.396B ($(5,396)M)",
+                "資本支出的大幅增加反映出公司正加速擴充 AI 雲端資料中心與交付超過 300,000 GPUs 的產能投資"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 FY27 Total Revenues 預期年增 30% 至 34% (constant currency 與 USD)",
+              "Q2 FY27 Total Cloud Revenue 預期年增 64% 至 70% (constant currency) 或 65% 至 71% (USD)",
+              "Q2 FY27 Non-GAAP EPS 預期介於 $1.85 至 $1.93",
+              "全年 FY 2027 Total Revenue 預期至少達到 $90B，Non-GAAP EPS 預期為 $8.10"
+            ],
+            "demand_quality": [
+              "AI cloud contracts 單季新增超過 $30B，帶動 RPO 攀升至 $664B",
+              "已交付超過 300,000 GPUs 給 AI Cloud 客戶，顯示大客戶在基礎設施層面的擴張深度與使用規模極高"
+            ],
+            "qa_readthrough": [
+              {
+                "debate": "由於本季未提供逐字稿與 Q&A 內容，無法直接分析分析師追問與管理層回答。",
+                "management_answer": "不適用",
+                "answer_quality": "unknown",
+                "investment_readthrough": "本報告基於官方正式財報與新聞稿數據進行分析，未包含 Q&A 逐字稿細節。"
+              }
+            ],
+            "competitive_value_chain": [
+              "IaaS 業務實現 121% 的高速成長，並單季交付超過 300,000 GPUs，顯示 Oracle 在高效能運算與 AI 基礎設施領域成功建立顯著的規模與市占擴張動能。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "Capex 高達 $28.499B 導致 FCF 轉為負 $5.396B，若未來 AI 需求成長放緩或資本回報期拉長，將對現金流與資本結構造成持續壓力。"
+            ],
+            "watch_items": [
+              "未來季度 Capex 規模與 FCF 轉正時點",
+              "IaaS 121% 成長率的可持續性及 GPU 部署進度",
+              "FY 2027 全年 $90B 營收目標的達成情況"
+            ],
+            "confidence": 90,
+            "telegram_draft": "ORCL ORCL_2026-09-10\n\n💡 投資結論與邏輯:\nOracle 在 Q1 繳出強勁的財務與營運成績單，Total Revenues 達 $19.345B，年增 30%。核心成長引擎 Cloud Infrastructure (IaaS) 營收年增達 121% 至 $7.388B，帶動 Total Cloud Revenues 攀升至 $11.607B（年增 62%）。單季新增超過 $30B 的 AI cloud contracts，推動 RPO 大幅成長至 $664B，顯示企業對 OCI 的 AI 運算需求極為強勁，中長期 earnings power 能見度極高。\n\n📊 關鍵數據與財測:\n- Q1 總營收達 $19.345B（年增 30%），Total Cloud Revenues 達 $11.607B（年增 62%）。\n- 獲利能力方面：GAAP Operating Income 達 $6.728B（年增 57%），Non-GAAP Operating Income 達 $8.151B（年增 31%）。GAAP EPS 達 $1.56（年增 55%），Non-GAAP EPS 達 $1.92（年增 30%）。\n- 現金流與資本支出：Q1 Operating Cash Flow 創紀錄達 $23.103B（年增 184%），但因 Capital Expenditures 高達 $28.499B，導致 Free Cash Flow 為負 $5.396B，反映出大規模擴充 AI 基礎設施的資本密集度。\n- 財測 (Guidance)：預期 Q2 FY27 Total Revenues 年增 30% 至 34%，Total Cloud Revenue 年增 65% 至 71%，Non-GAAP EPS 預期介於 $1.85 至 $1.93。全年 FY 2027 總營收預期至少達到 $90B，Non-GAAP EPS 預期為 $8.10。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n- IaaS 高速擴張：單季交付超過 300,000 GPUs 給 AI Cloud 客戶，突顯 Oracle 在高效能 AI 雲端市占率的快速斬獲。\n- 訂單動能：RPO 累計達 $664B，年增 $209B，顯示大型客戶深度綁定 OCI 平台，驅動營收結構持續向高毛利的雲端業務傾斜。\n\n⚠️ 風險、反證與待驗證:\n- 資本支出壓力：Q1 Capex 高達 $28.499B 造成 FCF 陷入負 $5.396B。若未來 AI 終端需求成長不如預期，高額資本投資恐對現金流構成顯著壓力。\n- 外部市場共識未納入，本報告不判定 Beat/Miss。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 100,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [],
+            "pass": true,
+            "corrected_telegram_draft": "ORCL ORCL_2026-09-10\n\n💡 投資結論與邏輯:\nOracle 在 Q1 繳出強勁的財務與營運成績單，Total Revenues 達 $19.345B，年增 30%。核心成長引擎 Cloud Infrastructure (IaaS) 營收年增達 121% 至 $7.388B，帶動 Total Cloud Revenues 攀升至 $11.607B（年增 62%）。單季新增超過 $30B 的 AI cloud contracts，推動 RPO 大幅成長至 $664B，顯示企業對 OCI 的 AI 運算需求極為強勁，中長期 earnings power 能見度極高。\n\n📊 關鍵數據與財測:\n- Q1 總營收達 $19.345B（年增 30%），Total Cloud Revenues 達 $11.607B（年增 62%）。\n- 獲利能力方面：GAAP Operating Income 達 $6.728B（年增 57%），Non-GAAP Operating Income 達 $8.151B（年增 31%）。GAAP EPS 達 $1.56（年增 55%），Non-GAAP EPS 達 $1.92（年增 30%）。\n- 現金流與資本支出：Q1 Operating Cash Flow 創紀錄達 $23.103B（年增 184%），但因 Capital Expenditures 高達 $28.499B，導致 Free Cash Flow 為負 $5.396B，反映出大規模擴充 AI 基礎設施的資本密集度。\n- 財測 (Guidance)：預期 Q2 FY27 Total Revenues 年增 30% 至 34%，Total Cloud Revenue 年增 65% 至 71%，Non-GAAP EPS 預期介於 $1.85 至 $1.93。全年 FY 2027 總營收預期至少達到 $90B，Non-GAAP EPS 預期為 $8.10。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n- IaaS 高速擴張：單季交付超過 300,000 GPUs 給 AI Cloud 客戶，突顯 Oracle 在高效能 AI 雲端市占率的快速斬獲。\n- 訂單動能：RPO 累計達 $664B，年增 $209B，顯示大型客戶深度綁定 OCI 平台，驅動營收結構持續向高毛利的雲端業務傾斜。\n\n⚠️ 風險、反證與待驗證:\n- 資本支出壓力：Q1 Capex 高達 $28.499B 造成 FCF 陷入負 $5.396B。若未來 AI 終端需求成長不如預期，高額資本投資恐對現金流構成顯著壓力。\n- 外部市場共識未納入，本報告不判定 Beat/Miss。"
           }
         }
       }
