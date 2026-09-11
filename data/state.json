@@ -168,7 +168,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-11T09:26:50-04:00",
+      "updated_at": "2026-09-11T12:26:42-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -188,40 +188,40 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-11T09:26:50-04:00",
+        "last_collection_check_at": "2026-09-11T12:26:42-04:00",
         "transcript_status": "FOUND",
-        "official_ir_last_attempt_incomplete": "2026-09-11T09:26:50-04:00",
+        "official_ir_last_attempt_incomplete": "2026-09-11T12:26:42-04:00",
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
-            "seconds": 0.253,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "seconds": 0.0,
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.148,
+            "seconds": 0.192,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q2",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 122.613,
+            "seconds": 122.865,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.059,
+            "seconds": 0.114,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q2"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-11T09:26:50-04:00",
+        "ir_retrieval_last_at": "2026-09-11T12:26:42-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": []
@@ -532,7 +532,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-11T09:26:50-04:00",
+      "updated_at": "2026-09-11T12:26:42-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -554,7 +554,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.417,
+            "seconds": 0.346,
             "documents": 0,
             "partial": false
           },
@@ -567,7 +567,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-11T08:30:01-04:00",
+        "ir_retrieval_last_at": "2026-09-11T12:26:42-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -587,11 +587,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-11T08:30:01-04:00",
-        "official_ir_checked_at": "2026-09-11T08:30:01-04:00",
-        "official_ir_check_count": 9,
+        "last_collection_check_at": "2026-09-11T12:26:42-04:00",
+        "official_ir_checked_at": "2026-09-11T12:26:42-04:00",
+        "official_ir_check_count": 10,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-09-11T10:30:01-04:00"
+        "next_ir_retry_at": "2026-09-11T14:26:42-04:00"
       }
     }
   },
@@ -605,7 +605,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-11T09:26:50-04:00",
+      "last_success_at": "2026-09-11T12:26:42-04:00",
       "blocked_until": null
     },
     "public_transcript": {
