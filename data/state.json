@@ -217,6 +217,28 @@
         "filing_date": "2026-09-17",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0000950103-26-014118:dp253473_ex99.htm": {
+      "source": "sec_edgar",
+      "source_id": "0000950103-26-014118:dp253473_ex99.htm",
+      "ticker": "TXN",
+      "title": "Texas Instruments Form 8-K — Earnings Release / Exhibit EX-99 — EXHIBIT 99",
+      "published_at": "2026-09-17T16:11:46.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/97476/000095010326014118/dp253473_ex99.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/97476/000095010326014118/dp253473_ex99.htm",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "period_end": "2026-09-17",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000097476",
+        "accession": "0000950103-26-014118",
+        "form": "8-K",
+        "document_type": "EX-99",
+        "filing_date": "2026-09-17",
+        "period_from_exhibit_filename": null
+      }
     }
   },
   "events": {
@@ -234,7 +256,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-17T12:26:07-04:00",
+      "updated_at": "2026-09-17T16:28:01-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -598,7 +620,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-17T12:26:07-04:00",
+      "updated_at": "2026-09-17T16:28:01-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -743,19 +765,19 @@
         "sec_edgar:0001769628-26-000429:ex9911.htm",
         "sec_edgar:0001769628-26-000429:crwv2026convertpresentat.htm"
       ],
-      "status": "collecting",
-      "report_version": 0,
-      "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-17T12:26:07-04:00",
+      "status": "published",
+      "report_version": 1,
+      "last_analyzed_document_count": 2,
+      "updated_at": "2026-09-17T16:23:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.368,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -768,7 +790,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.275,
+            "seconds": 0.232,
             "documents": 0,
             "partial": false
           },
@@ -781,7 +803,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-17T12:26:07-04:00",
+        "ir_retrieval_last_at": "2026-09-17T16:23:34-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -801,11 +823,85 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-17T12:26:07-04:00",
-        "official_ir_checked_at": "2026-09-17T12:26:07-04:00",
-        "official_ir_check_count": 3,
+        "last_collection_check_at": "2026-09-17T16:23:34-04:00",
+        "official_ir_checked_at": "2026-09-17T16:23:34-04:00",
+        "official_ir_check_count": 4,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-09-17T18:23:34-04:00"
+      }
+    },
+    "TXN_2026-09-17": {
+      "event_id": "TXN_2026-09-17",
+      "ticker": "TXN",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "first_seen_at": "2026-09-17T16:23:34-04:00",
+      "period_end": "2026-09-17",
+      "documents": [
+        "sec_edgar:0000950103-26-014118:dp253473_ex99.htm"
+      ],
+      "status": "published_sec_pending",
+      "report_version": 1,
+      "last_analyzed_document_count": 1,
+      "updated_at": "2026-09-17T16:28:01-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": false,
+            "seconds": 61.187,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-09-17T16:23:34-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-09-17T16:23:34-04:00",
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-09-17T12:56:07-04:00"
+        "official_ir_last_attempt_incomplete": "2026-09-17T16:23:34-04:00",
+        "next_ir_retry_at": "2026-09-17T16:38:34-04:00"
       }
     }
   },
@@ -813,13 +909,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-09-17T08:29:47-04:00",
-      "blocked_until": "2026-09-17T14:29:47-04:00",
+      "last_failure_at": "2026-09-17T16:23:34-04:00",
+      "blocked_until": "2026-09-17T22:23:34-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-17T12:26:07-04:00",
+      "last_success_at": "2026-09-17T16:23:34-04:00",
       "blocked_until": null
     },
     "public_transcript": {
