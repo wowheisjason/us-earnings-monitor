@@ -256,7 +256,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-18T18:22:14-04:00",
+      "updated_at": "2026-09-18T18:49:57-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -620,7 +620,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-18T18:22:14-04:00",
+      "updated_at": "2026-09-18T18:49:57-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
