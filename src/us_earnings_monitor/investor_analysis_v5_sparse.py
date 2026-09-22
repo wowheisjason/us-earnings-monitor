@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import math
 import os
 import time
 from typing import Any
@@ -39,24 +40,23 @@ class ProductionInvestorV5Client(_BaseV5Client):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._last_mapper_started_at = 0.0
+        self._last_mapper_started_at: float | None = None
 
-    def _pace_mapper(self) -> None:
-        # 4.2s => <15 request starts/minute for one production process. Paid
-        # projects can set GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS=0.
-        interval = max(0.0, float(os.getenv("GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS", "4.2")))
-        if not interval or not self._last_mapper_started_at:
-            self._last_mapper_started_at = time.monotonic()
+    def _before_gemini_request(self, stage: str) -> None:
+        if not stage.startswith("v5_extract"):
             return
-        elapsed = time.monotonic() - self._last_mapper_started_at
-        remaining = interval - elapsed
-        if remaining > 0:
-            time.sleep(remaining)
+        # Count retries and fallback models as requests, not just extraction batches.
+        interval = float(os.getenv("GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS", "4.2"))
+        if not math.isfinite(interval) or interval < 0:
+            raise ValueError("GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS must be finite and nonnegative")
+        if interval and self._last_mapper_started_at is not None:
+            remaining = interval - (time.monotonic() - self._last_mapper_started_at)
+            if remaining > 0:
+                time.sleep(remaining)
         self._last_mapper_started_at = time.monotonic()
 
     def _extract_batch(self, event: EarningsEvent, units: list[dict[str, Any]], stage: str) -> dict:
         expected = [unit["unit_id"] for unit in units]
-        self._pace_mapper()
         return self._json(f"""You are a forensic earnings-evidence mapper for a professional US-equity investor. Return MINIMAL JSON only.
 
 Event: {event.event_id}
