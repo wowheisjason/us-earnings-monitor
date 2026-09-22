@@ -6,7 +6,7 @@ class CaptureClient(ProductionInvestorV5Client):
     def __init__(self):
         self.prompt = ""
         self.stage = ""
-        self._last_mapper_started_at = 0.0
+        self._last_mapper_started_at = None
 
     def _json(self, prompt, stage, tools=None):
         self.prompt = prompt
@@ -48,7 +48,51 @@ def test_mapper_pacing_waits_before_next_request(monkeypatch):
         clock["now"] += seconds
     monkeypatch.setattr("us_earnings_monitor.investor_analysis_v5_sparse.time.sleep", fake_sleep)
 
-    client._pace_mapper()
+    client._before_gemini_request("v5_extract")
     clock["now"] += 1.0
-    client._pace_mapper()
+    client._before_gemini_request("v5_extract_repair")
     assert sleeps and round(sleeps[0], 1) == 3.2
+
+
+def test_mapper_retry_is_paced_before_each_http_request(monkeypatch):
+    import requests
+
+    clock = {"now": 100.0}
+    starts = []
+
+    def fake_sleep(seconds):
+        clock["now"] += seconds
+
+    class FakeSession:
+        def post(self, *args, **kwargs):
+            starts.append(clock["now"])
+            response = requests.Response()
+            if len(starts) == 1:
+                response.status_code = 429
+                response._content = b'{"error": {"message": "rate limited"}}'
+            else:
+                response.status_code = 200
+                response._content = b'{"candidates": [{"content": {"parts": [{"text": "{\\"processed_unit_ids\\": [], \\"cards\\": []}"}]}}]}'
+            return response
+
+    monkeypatch.setenv("GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS", "4.2")
+    monkeypatch.setenv("GEMINI_ANALYSIS_BACKOFF_SECONDS", "0")
+    monkeypatch.setenv("GEMINI_ANALYSIS_ATTEMPTS", "2")
+    monkeypatch.setattr("us_earnings_monitor.investor_analysis_v5_sparse.time.monotonic", lambda: clock["now"])
+    monkeypatch.setattr("us_earnings_monitor.investor_analysis_v5_sparse.time.sleep", fake_sleep)
+
+    client = ProductionInvestorV5Client(api_key="test", session=FakeSession())
+    monkeypatch.setattr(client, "_stage_models", lambda stage: ["test-model"])
+    assert client._json("test", "v5_extract") == {"processed_unit_ids": [], "cards": []}
+    assert len(starts) == 2
+    assert round(starts[1] - starts[0], 1) == 4.2
+
+
+def test_mapper_interval_configuration_rejects_invalid_values(monkeypatch):
+    import pytest
+
+    client = CaptureClient()
+    for value in ("invalid", "-1", "nan", "inf"):
+        monkeypatch.setenv("GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS", value)
+        with pytest.raises(ValueError):
+            client._before_gemini_request("v5_extract")
