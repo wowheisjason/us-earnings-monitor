@@ -241,6 +241,9 @@ class GeminiV2Client(GeminiClient):
             raise RuntimeError(f"No valid Gemini Interactions JSON completed stage={stage}: {last_error}") from last_error
         raise RuntimeError(f"No configured Gemini Interactions model completed stage={stage}")
 
+    def _before_gemini_request(self, stage: str) -> None:
+        """Allow specialized clients to pace every outbound generation attempt."""
+
     def _json(self, prompt: str, stage: str, tools: list[dict[str, Any]] | None = None) -> dict[str, Any]:
         if stage == "ir_research":
             return self._interaction_json(prompt, stage)
@@ -261,6 +264,7 @@ class GeminiV2Client(GeminiClient):
                     "contents": [{"role": "user", "parts": [{"text": prompt}]}],
                     "generationConfig": _generation_config(model, stage),
                 }
+                self._before_gemini_request(stage)
                 try:
                     response = self.session.post(url, params={"key": self.api_key}, json=body, timeout=timeout)
                     response.raise_for_status()
