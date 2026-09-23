@@ -256,7 +256,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-23T18:22:22-04:00",
+      "updated_at": "2026-09-23T18:50:21-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -549,39 +549,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-23T06:27:18-04:00",
+      "updated_at": "2026-09-23T18:50:21-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
             "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.303,
+            "seconds": 0.242,
             "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
             "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.274,
+            "seconds": 0.149,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AVGO-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 183.294,
+            "seconds": 184.111,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.027,
+            "seconds": 0.029,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AVGO-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-23T06:27:18-04:00",
+        "ir_retrieval_last_at": "2026-09-23T18:50:21-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -601,10 +601,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-23T06:27:18-04:00",
+        "last_collection_check_at": "2026-09-23T18:50:21-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-23T06:27:18-04:00",
-        "next_ir_retry_at": "2026-09-23T18:27:18-04:00"
+        "official_ir_last_attempt_incomplete": "2026-09-23T18:50:21-04:00",
+        "next_ir_retry_at": "2026-09-24T06:50:21-04:00"
       }
     },
     "ORCL_2026-09-10": {
@@ -620,7 +620,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-23T18:22:22-04:00",
+      "updated_at": "2026-09-23T18:50:21-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -642,7 +642,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.338,
+            "seconds": 0.601,
             "documents": 0,
             "partial": false
           },
@@ -655,7 +655,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-23T06:27:18-04:00",
+        "ir_retrieval_last_at": "2026-09-23T18:50:21-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -675,11 +675,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-23T06:27:18-04:00",
-        "official_ir_checked_at": "2026-09-23T06:27:18-04:00",
-        "official_ir_check_count": 25,
+        "last_collection_check_at": "2026-09-23T18:50:21-04:00",
+        "official_ir_checked_at": "2026-09-23T18:50:21-04:00",
+        "official_ir_check_count": 26,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-09-23T18:27:18-04:00"
+        "next_ir_retry_at": "2026-09-24T06:50:21-04:00"
       }
     },
     "ORCL_2026-08-31_Q1": {
@@ -695,7 +695,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-23T06:27:18-04:00",
+      "updated_at": "2026-09-23T18:50:21-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -709,25 +709,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.071,
+            "seconds": 0.03,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/ORCL-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.106,
+            "seconds": 0.132,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.025,
+            "seconds": 0.03,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/ORCL-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-09-23T06:27:18-04:00",
+        "ir_retrieval_last_at": "2026-09-23T18:50:21-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -747,11 +747,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-23T06:27:18-04:00",
-        "official_ir_checked_at": "2026-09-23T06:27:18-04:00",
-        "official_ir_check_count": 20,
+        "last_collection_check_at": "2026-09-23T18:50:21-04:00",
+        "official_ir_checked_at": "2026-09-23T18:50:21-04:00",
+        "official_ir_check_count": 21,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-09-23T18:27:18-04:00"
+        "next_ir_retry_at": "2026-09-24T06:50:21-04:00"
       }
     },
     "CRWV_2026-09-17": {
@@ -768,7 +768,7 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 2,
-      "updated_at": "2026-09-23T06:27:18-04:00",
+      "updated_at": "2026-09-23T18:50:21-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -790,7 +790,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.449,
+            "seconds": 0.386,
             "documents": 0,
             "partial": false
           },
@@ -803,7 +803,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-23T06:27:18-04:00",
+        "ir_retrieval_last_at": "2026-09-23T18:50:21-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -823,11 +823,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-23T06:27:18-04:00",
-        "official_ir_checked_at": "2026-09-23T06:27:18-04:00",
-        "official_ir_check_count": 14,
+        "last_collection_check_at": "2026-09-23T18:50:21-04:00",
+        "official_ir_checked_at": "2026-09-23T18:50:21-04:00",
+        "official_ir_check_count": 15,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-09-23T18:27:18-04:00"
+        "next_ir_retry_at": "2026-09-24T06:50:21-04:00"
       }
     },
     "TXN_2026-09-17": {
@@ -843,7 +843,7 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-23T06:27:18-04:00",
+      "updated_at": "2026-09-23T18:50:21-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -865,7 +865,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 61.19,
+            "seconds": 61.337,
             "documents": 0,
             "partial": false
           },
@@ -878,7 +878,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-23T06:27:18-04:00",
+        "ir_retrieval_last_at": "2026-09-23T18:50:21-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -898,10 +898,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-23T06:27:18-04:00",
+        "last_collection_check_at": "2026-09-23T18:50:21-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-09-23T06:27:18-04:00",
-        "next_ir_retry_at": "2026-09-23T18:27:18-04:00"
+        "official_ir_last_attempt_incomplete": "2026-09-23T18:50:21-04:00",
+        "next_ir_retry_at": "2026-09-24T06:50:21-04:00"
       }
     }
   },
@@ -909,13 +909,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-09-23T06:27:18-04:00",
-      "blocked_until": "2026-09-23T12:27:18-04:00",
+      "last_failure_at": "2026-09-23T18:50:21-04:00",
+      "blocked_until": "2026-09-24T00:50:21-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-23T06:27:18-04:00",
+      "last_success_at": "2026-09-23T18:50:21-04:00",
       "blocked_until": null
     },
     "public_transcript": {
