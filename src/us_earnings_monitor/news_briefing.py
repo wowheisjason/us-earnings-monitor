@@ -192,7 +192,7 @@ def _gdelt_search(session: requests.Session, query: str) -> requests.Response | 
         "query": query,
         "mode": "artlist",
         "format": "json",
-        "maxrecords": 75,
+        "maxrecords": 20,
         "sort": "HybridRel",
         "timespan": "24h",
     }
