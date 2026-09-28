@@ -1,0 +1,51 @@
+name: Daily investment news briefing
+
+on:
+  # Japan Standard Time is fixed at UTC+9: 23:00 UTC is 08:00 Asia/Tokyo.
+  schedule:
+    - cron: >-
+        0 23 * * *
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Discover and format only; do not send Telegram"
+        required: false
+        default: false
+        type: boolean
+      test_at:
+        description: "Optional UTC ISO timestamp for a deterministic test window"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-investment-news-briefing
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Discover, verify, summarize, and send briefing
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_NEWS_MODEL: ${{ vars.GEMINI_NEWS_MODEL || 'gemini-2.5-flash' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TEST_AT: ${{ inputs.test_at }}
+          PYTHONPATH: src
+        run: |
+          args=()
+          if [ "${{ inputs.dry_run }}" = "true" ]; then args+=(--dry-run); fi
+          if [ -n "$TEST_AT" ]; then args+=(--at "$TEST_AT"); fi
+          python -m us_earnings_monitor.news_briefing "${args[@]}"
