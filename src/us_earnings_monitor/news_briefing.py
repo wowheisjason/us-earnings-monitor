@@ -5,6 +5,7 @@ import html
 import json
 import os
 import re
+import time
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -18,6 +19,7 @@ UTC = timezone.utc
 MAX_ITEMS = 10
 MAX_SUMMARY_CHARS = 300
 REQUEST_TIMEOUT = 25
+GDELT_RETRIES = 3
 GDELT_ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
 SEARCHES = (
     "(inflation OR CPI OR GDP OR PMI OR central bank OR interest rate OR tariff OR export control OR oil OR energy)",
@@ -184,19 +186,54 @@ def _page_metadata(session: requests.Session, article: Article) -> Article:
     )
 
 
+def _gdelt_search(session: requests.Session, query: str) -> requests.Response | None:
+    """Fetch one GDELT search, tolerating transient public-API throttling."""
+    params = {
+        "query": query,
+        "mode": "artlist",
+        "format": "json",
+        "maxrecords": 75,
+        "sort": "HybridRel",
+        "timespan": "24h",
+    }
+    headers = {"User-Agent": "us-earnings-monitor-news/1.0"}
+    for attempt in range(GDELT_RETRIES + 1):
+        try:
+            response = session.get(GDELT_ENDPOINT, params=params, timeout=REQUEST_TIMEOUT, headers=headers)
+        except requests.RequestException as exc:
+            if attempt >= GDELT_RETRIES:
+                print(f"GDELT request skipped after retries: {exc}")
+                return None
+            time.sleep(2 ** attempt)
+            continue
+        if response.status_code != 429:
+            try:
+                response.raise_for_status()
+            except requests.RequestException as exc:
+                print(f"GDELT query skipped: {exc}")
+                return None
+            return response
+        if attempt >= GDELT_RETRIES:
+            print("GDELT query skipped after repeated HTTP 429 throttling")
+            return None
+        retry_after = response.headers.get("Retry-After", "")
+        try:
+            delay = max(2, min(int(retry_after), 20))
+        except ValueError:
+            delay = 2 ** (attempt + 1)
+        time.sleep(delay)
+    return None
+
+
 def discover_articles(now: datetime | None = None, session: requests.Session | None = None) -> list[Article]:
     now = (now or datetime.now(UTC)).astimezone(UTC)
     start = now - timedelta(hours=24)
     session = session or requests.Session()
     found: dict[str, Article] = {}
     for query in SEARCHES:
-        response = session.get(
-            GDELT_ENDPOINT,
-            params={"query": query, "mode": "artlist", "format": "json", "maxrecords": 75, "sort": "HybridRel", "timespan": "24h"},
-            timeout=REQUEST_TIMEOUT,
-            headers={"User-Agent": "us-earnings-monitor-news/1.0"},
-        )
-        response.raise_for_status()
+        response = _gdelt_search(session, query)
+        if response is None:
+            continue
         for raw in response.json().get("articles", []):
             url = canonicalize_url(str(raw.get("url", "")))
             seen_at = _parse_gdelt_date(str(raw.get("seendate", "")))
