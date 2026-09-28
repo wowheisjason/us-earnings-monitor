@@ -296,18 +296,42 @@ def _resolve_gemini_model(api_key: str, requested: str) -> str:
 def _gemini_json(api_key: str, evidence: list[Article], model: str) -> list[dict[str, Any]]:
     prompt = """你是台灣投資人新聞編輯。只可根據提供的文章標題、摘要、來源、日期與網址寫作，不得補充未提供的事實、預測或投資建議。輸出 JSON array，不要 Markdown。每個物件欄位：emoji、headline、fact、summary、source、article_date、url。headline 簡潔；fact 只寫一句新事實；summary 使用繁體中文台灣用語且最多300中文字；url 必須原樣保留。若證據不足，省略該篇。"""
     payload = [{"title": a.title, "description": a.description, "source": a.source_name, "article_date": a.effective_date.strftime("%Y-%m-%d"), "url": a.url} for a in evidence]
-    model = _resolve_gemini_model(api_key, model)
-    response = requests.post(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-        params={"key": api_key},
-        json={"contents": [{"parts": [{"text": prompt + "\n證據：\n" + json.dumps(payload, ensure_ascii=False)}]}], "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json"}},
+    model_response = requests.get(
+        "https://generativelanguage.googleapis.com/v1beta/models",
+        params={"key": api_key, "pageSize": 1000},
         timeout=REQUEST_TIMEOUT,
     )
-    response.raise_for_status()
-    body = response.json()
-    text = body["candidates"][0]["content"]["parts"][0]["text"]
-    return json.loads(text)
-
+    model_response.raise_for_status()
+    available = sorted(
+        {
+            str(item.get("name", "")).removeprefix("models/")
+            for item in model_response.json().get("models", [])
+            if str(item.get("name", "")).removeprefix("models/").startswith("gemini-")
+            and "generateContent" in item.get("supportedGenerationMethods", [])
+        },
+        reverse=True,
+    )
+    candidates = list(dict.fromkeys([model, *available]))[:8]
+    last_response = None
+    for candidate in candidates:
+        response = requests.post(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{candidate}:generateContent",
+            params={"key": api_key},
+            json={"contents": [{"parts": [{"text": prompt + "\n證據：\n" + json.dumps(payload, ensure_ascii=False)}]}], "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json"}},
+            timeout=REQUEST_TIMEOUT,
+        )
+        if response.ok:
+            body = response.json()
+            text = body["candidates"][0]["content"]["parts"][0]["text"]
+            return json.loads(text)
+        if response.status_code in {404, 429, 500, 502, 503, 504}:
+            last_response = response
+            print(f"Gemini model {candidate} unavailable ({response.status_code}); trying next available model")
+            continue
+        response.raise_for_status()
+    if last_response is not None:
+        last_response.raise_for_status()
+    raise RuntimeError("No Gemini model supporting generateContent could produce the briefing")
 
 def validate_items(raw_items: Iterable[dict[str, Any]], evidence: Iterable[Article], now: datetime, limit: int = MAX_ITEMS) -> list[BriefingItem]:
     by_url = {a.url: a for a in evidence}
