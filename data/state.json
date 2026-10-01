@@ -278,7 +278,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-09-30T19:44:02-04:00",
+      "updated_at": "2026-09-30T20:48:42-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -642,7 +642,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-30T19:44:02-04:00",
+      "updated_at": "2026-09-30T20:48:42-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -936,10 +936,10 @@
       "documents": [
         "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-09-30T19:28:08-04:00",
+      "updated_at": "2026-09-30T20:48:42-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -961,7 +961,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.76,
+            "seconds": 0.791,
             "documents": 0,
             "partial": false
           },
@@ -974,7 +974,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-09-30T19:28:08-04:00",
+        "ir_retrieval_last_at": "2026-09-30T20:48:42-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -994,11 +994,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-09-30T19:28:08-04:00",
-        "official_ir_checked_at": "2026-09-30T19:28:08-04:00",
-        "official_ir_check_count": 5,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-09-30T19:58:08-04:00"
+        "last_collection_check_at": "2026-09-30T20:48:42-04:00",
+        "official_ir_checked_at": "2026-09-30T20:48:42-04:00",
+        "official_ir_check_count": 6,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-09-30T22:48:42-04:00"
       }
     }
   },
@@ -1012,7 +1012,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-09-30T19:28:08-04:00",
+      "last_success_at": "2026-09-30T20:48:42-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -7747,6 +7747,1787 @@
             "critical_issues": [],
             "pass": true,
             "corrected_telegram_draft": "ORCL ORCL_2026-09-10\n\n💡 投資結論與邏輯:\nOracle 在 Q1 繳出強勁的財務與營運成績單，Total Revenues 達 $19.345B，年增 30%。核心成長引擎 Cloud Infrastructure (IaaS) 營收年增達 121% 至 $7.388B，帶動 Total Cloud Revenues 攀升至 $11.607B（年增 62%）。單季新增超過 $30B 的 AI cloud contracts，推動 RPO 大幅成長至 $664B，顯示企業對 OCI 的 AI 運算需求極為強勁，中長期 earnings power 能見度極高。\n\n📊 關鍵數據與財測:\n- Q1 總營收達 $19.345B（年增 30%），Total Cloud Revenues 達 $11.607B（年增 62%）。\n- 獲利能力方面：GAAP Operating Income 達 $6.728B（年增 57%），Non-GAAP Operating Income 達 $8.151B（年增 31%）。GAAP EPS 達 $1.56（年增 55%），Non-GAAP EPS 達 $1.92（年增 30%）。\n- 現金流與資本支出：Q1 Operating Cash Flow 創紀錄達 $23.103B（年增 184%），但因 Capital Expenditures 高達 $28.499B，導致 Free Cash Flow 為負 $5.396B，反映出大規模擴充 AI 基礎設施的資本密集度。\n- 財測 (Guidance)：預期 Q2 FY27 Total Revenues 年增 30% 至 34%，Total Cloud Revenue 年增 65% 至 71%，Non-GAAP EPS 預期介於 $1.85 至 $1.93。全年 FY 2027 總營收預期至少達到 $90B，Non-GAAP EPS 預期為 $8.10。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n- IaaS 高速擴張：單季交付超過 300,000 GPUs 給 AI Cloud 客戶，突顯 Oracle 在高效能 AI 雲端市占率的快速斬獲。\n- 訂單動能：RPO 累計達 $664B，年增 $209B，顯示大型客戶深度綁定 OCI 平台，驅動營收結構持續向高毛利的雲端業務傾斜。\n\n⚠️ 風險、反證與待驗證:\n- 資本支出壓力：Q1 Capex 高達 $28.499B 造成 FCF 陷入負 $5.396B。若未來 AI 終端需求成長不如預期，高額資本投資恐對現金流構成顯著壓力。\n- 外部市場共識未納入，本報告不判定 Beat/Miss。"
+          }
+        }
+      }
+    },
+    "MU_2026-09-30": {
+      "pipeline_version": 5,
+      "evidence_fingerprint": "be08a390e41394aa57d7359d0a8e67d08fbfd2296b94aad9105a9c6af22d3f6d",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+              "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported FQ4 2026 revenue of $54.23 billion compared to $41.46 billion for the prior quarter and $11.32 billion for the same period last year.",
+                "materiality_candidate": 5,
+                "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year",
+                "metric": "Revenue",
+                "value": "54,229",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": "41,456",
+                "comparison_period": "FQ3-26"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 GAAP net income was $37.70 billion, or $32.87 per diluted share, while non-GAAP net income was $38.40 billion, or $33.42 per diluted share.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income of $37.70 billion, or $32.87 per diluted share\n•\nNon-GAAP net income of $38.40 billion, or $33.42 per diluted share",
+                "metric": "Diluted earnings per share",
+                "value": "33.42",
+                "unit": "USD",
+                "period": "FQ4-26"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Operating cash flow for FQ4 2026 was $43.97 billion versus $25.39 billion in the prior quarter and $5.73 billion for the same period last year.",
+                "materiality_candidate": 4,
+                "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year",
+                "metric": "Operating cash flow",
+                "value": "43,970",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": "25,390",
+                "comparison_period": "FQ3-26"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Investments in capital expenditures, net, were $10.77 billion for FQ4 2026 and $27.37 billion for full year 2026.",
+                "materiality_candidate": 3,
+                "quote": "Investments in capital expenditures, net, were $10.77 billion for the fourth quarter of 2026 and $27.37 billion for the full year of 2026.",
+                "metric": "Capital expenditures, net",
+                "value": "10,770",
+                "unit": "USD $M",
+                "period": "FQ4-26"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "management_claim",
+                "topic": "demand_revenue",
+                "fact_class": "management_claim",
+                "statement": "CEO Sanjay Mehrotra stated that AI is becoming Super Intelligence (SI), memory enhances this intelligence, and Strategic Customer Agreements provide added confidence in financial performance durability.",
+                "materiality_candidate": 5,
+                "quote": "AI is becoming Super Intelligence (SI), and memory enhances this intelligence and the competitiveness of our customers’ platforms.",
+                "speaker": "Sanjay Mehrotra"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1 2027 revenue to be $61.5 billion plus or minus $1.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$61.5 billion ± $1.5 billion",
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "low": "60.0",
+                "midpoint": "61.5",
+                "high": "63.0",
+                "unit": "USD $B"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1 2027 non-GAAP diluted earnings per share to be $38.15 plus or minus $1.00.",
+                "materiality_candidate": 5,
+                "quote": "Diluted earnings per share\n$37.84 ± $1.00\n$38.15 ± $1.00",
+                "metric": "Diluted earnings per share",
+                "period": "FQ1-27",
+                "low": "37.15",
+                "midpoint": "38.15",
+                "high": "39.15",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "card_type": "fact",
+                "topic": "product_competition",
+                "fact_class": "objective_fact",
+                "statement": "Micron began sampling industry first 512GB ultra dense high-capacity DDR5 RDIMM modules capable of speeds up to 9,200 MT/s.",
+                "materiality_candidate": 3,
+                "quote": "We began sampling the industry's first 512GB ultra dense high-capacity DDR5 RDIMM modules capable of speeds up to 9,200 MT/s."
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+              "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 revenue of $54,229 million, up from $11,315 million in the fourth quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "54,229",
+                "metric": "Revenue",
+                "value": "54229",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "11315",
+                "comparison_period": "Q4 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 GAAP gross margin of $47,047 million compared to $5,054 million in the fourth quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "47,047",
+                "metric": "GAAP gross margin",
+                "value": "47047",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5054",
+                "comparison_period": "Q4 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 net income of $37,701 million, or $32.87 per diluted share.",
+                "materiality_candidate": 5,
+                "quote": "37,701",
+                "metric": "Net income",
+                "value": "37701",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "3201",
+                "comparison_period": "Q4 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 Non-GAAP gross margin of $47,204 million compared to $5,169 million in the fourth quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "47,204",
+                "metric": "Non-GAAP gross margin",
+                "value": "47204",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5169",
+                "comparison_period": "Q4 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 adjusted free cash flow of $33,199 million compared to $803 million in the fourth quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "33,199",
+                "metric": "Adjusted free cash flow",
+                "value": "33199",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "803",
+                "comparison_period": "Q4 2025"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP and Non-GAAP revenue outlook for FQ1-27 is $61.5 billion plus or minus $1.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "$61.5 billion ± $1.5 billion",
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "low": 60000,
+                "midpoint": 61500,
+                "high": 63000,
+                "unit": "$M"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP gross margin outlook for FQ1-27 is approximately 85.95%.",
+                "materiality_candidate": 4,
+                "quote": "Approximately 85.95%",
+                "metric": "GAAP gross margin",
+                "period": "FQ1-27",
+                "midpoint": 85.95,
+                "unit": "%"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP gross margin outlook for FQ1-27 is approximately 86.25%.",
+                "materiality_candidate": 4,
+                "quote": "Approximately 86.25%",
+                "metric": "Non-GAAP gross margin",
+                "period": "FQ1-27",
+                "midpoint": 86.25,
+                "unit": "%"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP operating expenses outlook for FQ1-27 is approximately $2.31 billion.",
+                "materiality_candidate": 4,
+                "quote": "Approximately $2.31 billion",
+                "metric": "GAAP operating expenses",
+                "period": "FQ1-27",
+                "midpoint": 2310,
+                "unit": "$M"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP operating expenses outlook for FQ1-27 is approximately $2.06 billion.",
+                "materiality_candidate": 4,
+                "quote": "Approximately $2.06 billion",
+                "metric": "Non-GAAP operating expenses",
+                "period": "FQ1-27",
+                "midpoint": 2060,
+                "unit": "$M"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP diluted EPS outlook for FQ1-27 is $37.84 plus or minus $1.00.",
+                "materiality_candidate": 5,
+                "quote": "$37.84 ± $1.00",
+                "metric": "GAAP diluted EPS",
+                "period": "FQ1-27",
+                "low": 36.84,
+                "midpoint": 37.84,
+                "high": 38.84,
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP diluted EPS outlook for FQ1-27 is $38.15 plus or minus $1.00.",
+                "materiality_candidate": 5,
+                "quote": "$38.15 ± $1.00",
+                "metric": "Non-GAAP diluted EPS",
+                "period": "FQ1-27",
+                "low": 37.15,
+                "midpoint": 38.15,
+                "high": 39.15,
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "title": "Micron Technology Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1 EARNINGS RELEASE",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 18826,
+                  "extracted_chars": 18826,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 5,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5"
+              ],
+              "expected_unit_count": 5,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5"
+              ],
+              "processed_unit_count": 5,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 5,
+                "processed_unit_count": 5,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 3,
+                "demand_revenue": 4,
+                "guidance": 9,
+                "margin_unit_economics": 3,
+                "product_competition": 1
+              },
+              "selection": {
+                "raw_card_count": 20,
+                "deduped_card_count": 20,
+                "selected_card_count": 20,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 2,
+                  "demand_revenue": 4,
+                  "guidance": 9,
+                  "margin_unit_economics": 3,
+                  "product_competition": 1
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Micron reported FQ4 2026 revenue of $54.23 billion compared to $41.46 billion for the prior quarter and $11.32 billion for the same period last year.",
+                  "metric": "Revenue",
+                  "value": "54,229",
+                  "unit": "USD $M",
+                  "period": "FQ4-26",
+                  "comparison_value": "41,456",
+                  "comparison_period": "FQ3-26",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "card_type": "management_claim",
+                  "topic": "demand_revenue",
+                  "statement": "CEO Sanjay Mehrotra stated that AI is becoming Super Intelligence (SI), memory enhances this intelligence, and Strategic Customer Agreements provide added confidence in financial performance durability.",
+                  "materiality_candidate": 5,
+                  "fact_class": "management_claim",
+                  "speaker": "Sanjay Mehrotra",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "AI is becoming Super Intelligence (SI), and memory enhances this intelligence and the competitiveness of our customers’ platforms."
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Micron reported fourth quarter 2026 revenue of $54,229 million, up from $11,315 million in the fourth quarter of 2025.",
+                  "metric": "Revenue",
+                  "value": "54229",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "comparison_value": "11315",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "54,229"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Micron reported fourth quarter 2026 net income of $37,701 million, or $32.87 per diluted share.",
+                  "metric": "Net income",
+                  "value": "37701",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "comparison_value": "3201",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "37,701"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Micron guides FQ1 2027 revenue to be $61.5 billion plus or minus $1.5 billion.",
+                  "metric": "Revenue",
+                  "unit": "USD $B",
+                  "period": "FQ1-27",
+                  "low": "60.0",
+                  "midpoint": "61.5",
+                  "high": "63.0",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Revenue\n$61.5 billion ± $1.5 billion"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Micron guides FQ1 2027 non-GAAP diluted earnings per share to be $38.15 plus or minus $1.00.",
+                  "metric": "Diluted earnings per share",
+                  "unit": "USD",
+                  "period": "FQ1-27",
+                  "low": "37.15",
+                  "midpoint": "38.15",
+                  "high": "39.15",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Diluted earnings per share\n$37.84 ± $1.00\n$38.15 ± $1.00"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "GAAP and Non-GAAP revenue outlook for FQ1-27 is $61.5 billion plus or minus $1.5 billion.",
+                  "metric": "Revenue",
+                  "unit": "$M",
+                  "period": "FQ1-27",
+                  "low": 60000,
+                  "midpoint": 61500,
+                  "high": 63000,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$61.5 billion ± $1.5 billion"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "GAAP diluted EPS outlook for FQ1-27 is $37.84 plus or minus $1.00.",
+                  "metric": "GAAP diluted EPS",
+                  "unit": "USD",
+                  "period": "FQ1-27",
+                  "low": 36.84,
+                  "midpoint": 37.84,
+                  "high": 38.84,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$37.84 ± $1.00"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Non-GAAP diluted EPS outlook for FQ1-27 is $38.15 plus or minus $1.00.",
+                  "metric": "Non-GAAP diluted EPS",
+                  "unit": "USD",
+                  "period": "FQ1-27",
+                  "low": 37.15,
+                  "midpoint": 38.15,
+                  "high": 39.15,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$38.15 ± $1.00"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "GAAP gross margin outlook for FQ1-27 is approximately 85.95%.",
+                  "metric": "GAAP gross margin",
+                  "unit": "%",
+                  "period": "FQ1-27",
+                  "midpoint": 85.95,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately 85.95%"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Non-GAAP gross margin outlook for FQ1-27 is approximately 86.25%.",
+                  "metric": "Non-GAAP gross margin",
+                  "unit": "%",
+                  "period": "FQ1-27",
+                  "midpoint": 86.25,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately 86.25%"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "GAAP operating expenses outlook for FQ1-27 is approximately $2.31 billion.",
+                  "metric": "GAAP operating expenses",
+                  "unit": "$M",
+                  "period": "FQ1-27",
+                  "midpoint": 2310,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately $2.31 billion"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Non-GAAP operating expenses outlook for FQ1-27 is approximately $2.06 billion.",
+                  "metric": "Non-GAAP operating expenses",
+                  "unit": "$M",
+                  "period": "FQ1-27",
+                  "midpoint": 2060,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately $2.06 billion"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Micron reported fourth quarter 2026 GAAP gross margin of $47,047 million compared to $5,054 million in the fourth quarter of 2025.",
+                  "metric": "GAAP gross margin",
+                  "value": "47047",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "comparison_value": "5054",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "47,047"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Micron reported fourth quarter 2026 Non-GAAP gross margin of $47,204 million compared to $5,169 million in the fourth quarter of 2025.",
+                  "metric": "Non-GAAP gross margin",
+                  "value": "47204",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "comparison_value": "5169",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "47,204"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "FQ4 2026 GAAP net income was $37.70 billion, or $32.87 per diluted share, while non-GAAP net income was $38.40 billion, or $33.42 per diluted share.",
+                  "metric": "Diluted earnings per share",
+                  "value": "33.42",
+                  "unit": "USD",
+                  "period": "FQ4-26",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "GAAP net income of $37.70 billion, or $32.87 per diluted share\n•\nNon-GAAP net income of $38.40 billion, or $33.42 per diluted share"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Micron reported fourth quarter 2026 adjusted free cash flow of $33,199 million compared to $803 million in the fourth quarter of 2025.",
+                  "metric": "Adjusted free cash flow",
+                  "value": "33199",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "comparison_value": "803",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "33,199"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Operating cash flow for FQ4 2026 was $43.97 billion versus $25.39 billion in the prior quarter and $5.73 billion for the same period last year.",
+                  "metric": "Operating cash flow",
+                  "value": "43,970",
+                  "unit": "USD $M",
+                  "period": "FQ4-26",
+                  "comparison_value": "25,390",
+                  "comparison_period": "FQ3-26",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Investments in capital expenditures, net, were $10.77 billion for FQ4 2026 and $27.37 billion for full year 2026.",
+                  "metric": "Capital expenditures, net",
+                  "value": "10,770",
+                  "unit": "USD $M",
+                  "period": "FQ4-26",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Investments in capital expenditures, net, were $10.77 billion for the fourth quarter of 2026 and $27.37 billion for the full year of 2026."
+                },
+                {
+                  "card_id": "c8:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                  "card_type": "fact",
+                  "topic": "product_competition",
+                  "statement": "Micron began sampling industry first 512GB ultra dense high-capacity DDR5 RDIMM modules capable of speeds up to 9,200 MT/s.",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "We began sampling the industry's first 512GB ultra dense high-capacity DDR5 RDIMM modules capable of speeds up to 9,200 MT/s."
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported FQ4 2026 revenue of $54.23 billion compared to $41.46 billion for the prior quarter and $11.32 billion for the same period last year.",
+                "materiality_candidate": 5,
+                "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year",
+                "metric": "Revenue",
+                "value": "54,229",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": "41,456",
+                "comparison_period": "FQ3-26",
+                "card_id": "c1:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 GAAP net income was $37.70 billion, or $32.87 per diluted share, while non-GAAP net income was $38.40 billion, or $33.42 per diluted share.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income of $37.70 billion, or $32.87 per diluted share\n•\nNon-GAAP net income of $38.40 billion, or $33.42 per diluted share",
+                "metric": "Diluted earnings per share",
+                "value": "33.42",
+                "unit": "USD",
+                "period": "FQ4-26",
+                "card_id": "c2:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "GAAP net income of $37.70 billion, or $32.87 per diluted share\n•\nNon-GAAP net income of $38.40 billion, or $33.42 per diluted share"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Operating cash flow for FQ4 2026 was $43.97 billion versus $25.39 billion in the prior quarter and $5.73 billion for the same period last year.",
+                "materiality_candidate": 4,
+                "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year",
+                "metric": "Operating cash flow",
+                "value": "43,970",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": "25,390",
+                "comparison_period": "FQ3-26",
+                "card_id": "c3:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Investments in capital expenditures, net, were $10.77 billion for FQ4 2026 and $27.37 billion for full year 2026.",
+                "materiality_candidate": 3,
+                "quote": "Investments in capital expenditures, net, were $10.77 billion for the fourth quarter of 2026 and $27.37 billion for the full year of 2026.",
+                "metric": "Capital expenditures, net",
+                "value": "10,770",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "card_id": "c4:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Investments in capital expenditures, net, were $10.77 billion for the fourth quarter of 2026 and $27.37 billion for the full year of 2026."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "card_type": "management_claim",
+                "topic": "demand_revenue",
+                "fact_class": "management_claim",
+                "statement": "CEO Sanjay Mehrotra stated that AI is becoming Super Intelligence (SI), memory enhances this intelligence, and Strategic Customer Agreements provide added confidence in financial performance durability.",
+                "materiality_candidate": 5,
+                "quote": "AI is becoming Super Intelligence (SI), and memory enhances this intelligence and the competitiveness of our customers’ platforms.",
+                "speaker": "Sanjay Mehrotra",
+                "card_id": "c5:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u1",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "AI is becoming Super Intelligence (SI), and memory enhances this intelligence and the competitiveness of our customers’ platforms."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1 2027 revenue to be $61.5 billion plus or minus $1.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$61.5 billion ± $1.5 billion",
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "low": "60.0",
+                "midpoint": "61.5",
+                "high": "63.0",
+                "unit": "USD $B",
+                "card_id": "c6:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Revenue\n$61.5 billion ± $1.5 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1 2027 non-GAAP diluted earnings per share to be $38.15 plus or minus $1.00.",
+                "materiality_candidate": 5,
+                "quote": "Diluted earnings per share\n$37.84 ± $1.00\n$38.15 ± $1.00",
+                "metric": "Diluted earnings per share",
+                "period": "FQ1-27",
+                "low": "37.15",
+                "midpoint": "38.15",
+                "high": "39.15",
+                "unit": "USD",
+                "card_id": "c7:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Diluted earnings per share\n$37.84 ± $1.00\n$38.15 ± $1.00"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "card_type": "fact",
+                "topic": "product_competition",
+                "fact_class": "objective_fact",
+                "statement": "Micron began sampling industry first 512GB ultra dense high-capacity DDR5 RDIMM modules capable of speeds up to 9,200 MT/s.",
+                "materiality_candidate": 3,
+                "quote": "We began sampling the industry's first 512GB ultra dense high-capacity DDR5 RDIMM modules capable of speeds up to 9,200 MT/s.",
+                "card_id": "c8:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u2",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "We began sampling the industry's first 512GB ultra dense high-capacity DDR5 RDIMM modules capable of speeds up to 9,200 MT/s."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 revenue of $54,229 million, up from $11,315 million in the fourth quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "54,229",
+                "metric": "Revenue",
+                "value": "54229",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "11315",
+                "comparison_period": "Q4 2025",
+                "card_id": "c1:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "54,229"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 GAAP gross margin of $47,047 million compared to $5,054 million in the fourth quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "47,047",
+                "metric": "GAAP gross margin",
+                "value": "47047",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5054",
+                "comparison_period": "Q4 2025",
+                "card_id": "c2:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "47,047"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 net income of $37,701 million, or $32.87 per diluted share.",
+                "materiality_candidate": 5,
+                "quote": "37,701",
+                "metric": "Net income",
+                "value": "37701",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "3201",
+                "comparison_period": "Q4 2025",
+                "card_id": "c3:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u3",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "37,701"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 Non-GAAP gross margin of $47,204 million compared to $5,169 million in the fourth quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "47,204",
+                "metric": "Non-GAAP gross margin",
+                "value": "47204",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5169",
+                "comparison_period": "Q4 2025",
+                "card_id": "c4:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "47,204"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Micron reported fourth quarter 2026 adjusted free cash flow of $33,199 million compared to $803 million in the fourth quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "33,199",
+                "metric": "Adjusted free cash flow",
+                "value": "33199",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "803",
+                "comparison_period": "Q4 2025",
+                "card_id": "c5:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u4",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "33,199"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP and Non-GAAP revenue outlook for FQ1-27 is $61.5 billion plus or minus $1.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "$61.5 billion ± $1.5 billion",
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "low": 60000,
+                "midpoint": 61500,
+                "high": 63000,
+                "unit": "$M",
+                "card_id": "c1:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$61.5 billion ± $1.5 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP gross margin outlook for FQ1-27 is approximately 85.95%.",
+                "materiality_candidate": 4,
+                "quote": "Approximately 85.95%",
+                "metric": "GAAP gross margin",
+                "period": "FQ1-27",
+                "midpoint": 85.95,
+                "unit": "%",
+                "card_id": "c2:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately 85.95%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP gross margin outlook for FQ1-27 is approximately 86.25%.",
+                "materiality_candidate": 4,
+                "quote": "Approximately 86.25%",
+                "metric": "Non-GAAP gross margin",
+                "period": "FQ1-27",
+                "midpoint": 86.25,
+                "unit": "%",
+                "card_id": "c3:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately 86.25%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP operating expenses outlook for FQ1-27 is approximately $2.31 billion.",
+                "materiality_candidate": 4,
+                "quote": "Approximately $2.31 billion",
+                "metric": "GAAP operating expenses",
+                "period": "FQ1-27",
+                "midpoint": 2310,
+                "unit": "$M",
+                "card_id": "c4:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately $2.31 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP operating expenses outlook for FQ1-27 is approximately $2.06 billion.",
+                "materiality_candidate": 4,
+                "quote": "Approximately $2.06 billion",
+                "metric": "Non-GAAP operating expenses",
+                "period": "FQ1-27",
+                "midpoint": 2060,
+                "unit": "$M",
+                "card_id": "c5:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately $2.06 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP diluted EPS outlook for FQ1-27 is $37.84 plus or minus $1.00.",
+                "materiality_candidate": 5,
+                "quote": "$37.84 ± $1.00",
+                "metric": "GAAP diluted EPS",
+                "period": "FQ1-27",
+                "low": 36.84,
+                "midpoint": 37.84,
+                "high": 38.84,
+                "unit": "USD",
+                "card_id": "c6:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$37.84 ± $1.00"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP diluted EPS outlook for FQ1-27 is $38.15 plus or minus $1.00.",
+                "materiality_candidate": 5,
+                "quote": "$38.15 ± $1.00",
+                "metric": "Non-GAAP diluted EPS",
+                "period": "FQ1-27",
+                "low": 37.15,
+                "midpoint": 38.15,
+                "high": 39.15,
+                "unit": "USD",
+                "card_id": "c7:sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm#u5",
+                "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$38.15 ± $1.00"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "Revenue",
+                "value": "54,229",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": "41,456",
+                "comparison_period": "FQ3-26",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year"
+                }
+              },
+              {
+                "metric": "Diluted earnings per share",
+                "value": "33.42",
+                "unit": "USD",
+                "period": "FQ4-26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "GAAP net income of $37.70 billion, or $32.87 per diluted share\n•\nNon-GAAP net income of $38.40 billion, or $33.42 per diluted share"
+                }
+              },
+              {
+                "metric": "Operating cash flow",
+                "value": "43,970",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": "25,390",
+                "comparison_period": "FQ3-26",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year"
+                }
+              },
+              {
+                "metric": "Capital expenditures, net",
+                "value": "10,770",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Investments in capital expenditures, net, were $10.77 billion for the fourth quarter of 2026 and $27.37 billion for the full year of 2026."
+                }
+              },
+              {
+                "metric": "Revenue",
+                "value": "54229",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "11315",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "54,229"
+                }
+              },
+              {
+                "metric": "GAAP gross margin",
+                "value": "47047",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5054",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "47,047"
+                }
+              },
+              {
+                "metric": "Net income",
+                "value": "37701",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "3201",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "37,701"
+                }
+              },
+              {
+                "metric": "Non-GAAP gross margin",
+                "value": "47204",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5169",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "47,204"
+                }
+              },
+              {
+                "metric": "Adjusted free cash flow",
+                "value": "33199",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "803",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "33,199"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "low": "60.0",
+                "midpoint": "61.5",
+                "high": "63.0",
+                "unit": "USD $B",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Revenue\n$61.5 billion ± $1.5 billion"
+                }
+              },
+              {
+                "metric": "Diluted earnings per share",
+                "period": "FQ1-27",
+                "low": "37.15",
+                "midpoint": "38.15",
+                "high": "39.15",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Diluted earnings per share\n$37.84 ± $1.00\n$38.15 ± $1.00"
+                }
+              },
+              {
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "low": 60000,
+                "midpoint": 61500,
+                "high": 63000,
+                "unit": "$M",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$61.5 billion ± $1.5 billion"
+                }
+              },
+              {
+                "metric": "GAAP gross margin",
+                "period": "FQ1-27",
+                "low": null,
+                "midpoint": 85.95,
+                "high": null,
+                "unit": "%",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately 85.95%"
+                }
+              },
+              {
+                "metric": "Non-GAAP gross margin",
+                "period": "FQ1-27",
+                "low": null,
+                "midpoint": 86.25,
+                "high": null,
+                "unit": "%",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately 86.25%"
+                }
+              },
+              {
+                "metric": "GAAP operating expenses",
+                "period": "FQ1-27",
+                "low": null,
+                "midpoint": 2310,
+                "high": null,
+                "unit": "$M",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately $2.31 billion"
+                }
+              },
+              {
+                "metric": "Non-GAAP operating expenses",
+                "period": "FQ1-27",
+                "low": null,
+                "midpoint": 2060,
+                "high": null,
+                "unit": "$M",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Approximately $2.06 billion"
+                }
+              },
+              {
+                "metric": "GAAP diluted EPS",
+                "period": "FQ1-27",
+                "low": 36.84,
+                "midpoint": 37.84,
+                "high": 38.84,
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$37.84 ± $1.00"
+                }
+              },
+              {
+                "metric": "Non-GAAP diluted EPS",
+                "period": "FQ1-27",
+                "low": 37.15,
+                "midpoint": 38.15,
+                "high": 39.15,
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "$38.15 ± $1.00"
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Operating cash flow",
+                "value": "43,970",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": "25,390",
+                "comparison_period": "FQ3-26",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Capital expenditures, net",
+                "value": "10,770",
+                "unit": "USD $M",
+                "period": "FQ4-26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "Investments in capital expenditures, net, were $10.77 billion for the fourth quarter of 2026 and $27.37 billion for the full year of 2026."
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Adjusted free cash flow",
+                "value": "33199",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "803",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm",
+                  "quote": "33,199"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [
+              "facts.cards[3]:quote_not_found_in_sec_edgar:0000723125-26-000018:a2026q4ex991-pressrelease.htm"
+            ],
+            "extraction_batch_count": 3,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.791,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-09-30T20:48:42-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-09-30T20:48:42-04:00",
+              "official_ir_checked_at": "2026-09-30T20:48:42-04:00",
+              "official_ir_check_count": 6,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-09-30T22:48:42-04:00"
+            },
+            "deterministic_validation_issues": [
+              "cash_flow_and_capex[2]_adjusted_metric_taxonomy_mismatch",
+              "cash_flow_and_capex[2]_adjusted_metric_missing_reconciliation"
+            ],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "FQ4 2026 營收與獲利爆發性增長，且 FQ1 2027 財測持續擴張",
+                "why_it_matters": "顯示 AI Super Intelligence (SI) 驅動之 High-Performance Memory 超級循環仍在加速，公司具備強大的產品定價權與結構性獲利能力提升。",
+                "fact_basis": [
+                  "FQ4 2026 營收達 $54.23B（$54,229M），對比前一季 $41.46B 與去年同期 $11.32B",
+                  "FQ4 2026 Non-GAAP 淨利達 $38.40B，Non-GAAP 稀釋 EPS 達 $33.42",
+                  "FQ1 2027 營收 Guidance 中位數達 $61.5B（±$1.5B），Non-GAAP 稀釋 EPS Guidance 中位數達 $38.15（±$1.00）"
+                ],
+                "inference": "記憶體產業供需極度緊繃，高附加價值 AI 記憶體產品比重提高，極大地拉升了單位獲利能力（Earnings Power）。",
+                "confidence": "high"
+              },
+              {
+                "signal": "極高毛利率（>85%）與強勁之自由現金流生成能力",
+                "why_it_matters": "高毛利代表極佳的 pricing power 與成本規模效益，能提供極充裕的現金流支撐高額 Capex 擴充，維持競爭壁壘。",
+                "fact_basis": [
+                  "FQ4 2026 Non-GAAP 毛利額達 $47,204M（佔營收約 87.0%）",
+                  "FQ4 2026 營運現金流達 $43.97B，調整後自由現金流 (Adjusted Free Cash Flow) 達 $33.20B（$33,199M）",
+                  "FQ1 2027 Non-GAAP Gross Margin Guidance 達約 86.25%"
+                ],
+                "inference": "資本支出 ($10.77B FQ4) 已完全可由內部強勁的 Operating Cash Flow ($43.97B) 自給自足，財務結構處於歷史最強狀態。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "FQ4 2026 營收 $54.23B，季增 30.8%（前季 $41.46B），年增 379.3%（去年同期 $11.32B），反映 AI 算力需求帶動的高容量記憶體強勁拉貨。",
+                "FQ1 2027 營收 Guidance 中位數 $61.5B，環比續增 13.4%，顯示客戶需求與 Strategic Customer Agreements 的長約支撐力強。",
+                "開始送樣業界首款 512GB 超高密度 DDR5 RDIMM 模組（速度高達 9,200 MT/s），持續拓展高端伺服器記憶體產品線。"
+              ],
+              "margin_unit_economics": [
+                "FQ4 2026 Non-GAAP Gross Margin 達 $47,204M，反映高毛利 AI 記憶體產品組合佔比顯著提升及強勁的定價權。",
+                "FQ1 2027 Non-GAAP Gross Margin 預計約 86.25%，顯示成本下降與產品組合改善抵銷了潛在的研發與營運成本上升。",
+                "FQ1 2027 Non-GAAP 營運費用（OpEx）控管在約 $2.06B（GAAP 約 $2.31B），營運槓桿效益顯著放大。"
+              ],
+              "cash_capital_intensity": [
+                "FQ4 2026 營運現金流 (CFO) 達 $43.97B，顯著高於前一季的 $25.39B 與去年同期的 $5.73B。",
+                "FQ4 2026 淨資本支出 (Capex, net) 為 $10.77B，全年度 FY26 Capex 達 $27.37B。",
+                "FQ4 2026 調整後自由現金流 (Adjusted FCF) 達到 $33.20B（$33,199M），遠高於去年同期的 $803M，展現極高之現金轉化效率與可持續性。"
+              ]
+            },
+            "guidance_assessment": [
+              "FQ1 2027 營收 Guidance：$61.5B ± $1.5B（範圍 $60.0B - $63.0B），中位數隱含季增約 13.4%。",
+              "FQ1 2027 Non-GAAP 毛利率 Guidance：約 86.25%（GAAP 約 85.95%）。",
+              "FQ1 2027 Non-GAAP 營運費用 Guidance：約 $2.06B（GAAP 約 $2.31B）。",
+              "FQ1 2027 Non-GAAP 稀釋 EPS Guidance：$38.15 ± $1.00（範圍 $37.15 - $39.15）；GAAP 稀釋 EPS 為 $37.84 ± $1.00。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "客戶合約品質：管理層提及 Strategic Customer Agreements 提供了財務績效耐久性的額外信心，顯示客戶願意簽署長約鎖定產能。",
+              "產品擴充深度：512GB DDR5 RDIMM 樣品已送樣至業界，鎖定高階 Data Center 與 AI 運算需求，技術領先維持客戶黏著度。",
+              "需求廣度與集中度：資料集未包含具體客戶集中度與 NRR 數字，無法單憑此資料庫完全判定客戶集中風險。"
+            ],
+            "qa_readthrough": [
+              {
+                "debate": "法說會問答與分析師攻防內容",
+                "management_answer": "本次提供之 Research Packet 未包含 Q&A 逐字稿資料（qa_unit_count: 0）。",
+                "answer_quality": "unknown",
+                "investment_readthrough": "無法從 Q&A 分析管理階層對細節問題之迴避或直答程度，主要分析依據為官方新聞稿及財報數據。"
+              }
+            ],
+            "competitive_value_chain": [
+              "512GB DDR5 RDIMM 率先送樣（9,200 MT/s），展現 High-Density 記憶體技術領先地位。",
+              "毛利率預期維持在 86% 以上的高位，證明公司在當前 AI 記憶體供應鏈中具備極強的定價權與 Control Point 能力。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "反證指標 1：若未來的 FQ1 2027 實際毛利率低於預期的 86.25%，可能代表記憶體價格上漲動能放緩或產品良率遭遇瓶頸。",
+              "反證指標 2：高額 Capex 投入（FQ4 達 $10.77B）若遇 AI 需求突然減速，可能導致未來產能過剩風險。",
+              "替代解釋：當前營收與毛利率爆發可能部分源自客戶因擔心未來缺貨而進行的超前囤貨（Double Booking），而非完全為終端消耗。"
+            ],
+            "watch_items": [
+              "512GB DDR5 RDIMM 模組客戶驗證進度與量產時間表。",
+              "FQ1 2027 實際 Capex 支出與自由現金流轉化率。",
+              "Strategic Customer Agreements 的履約狀況與長約定價機制。"
+            ],
+            "confidence": 90,
+            "telegram_draft": "MU MU_2026-09-30\n\n💡 投資結論與邏輯:\nMicron (MU) 展現了記憶體超級循環下的驚人獲利爆發力。FQ4 2026 單季營收衝上 $54.23B（季增 30.8%、年增 379.3%），Non-GAAP 稀釋 EPS 達到 $33.42，帶動單季調整後自由現金流 (Adjusted FCF) 達到飆升至 $33.20B（$33,199M）。執行長 Sanjay Mehrotra 強調 AI 正演化為超智慧 (Super Intelligence, SI)，記憶體為提升客戶平台競爭力的核心。公司藉由 Strategic Customer Agreements（戰略客戶協議）鎖定長約，並給予 FQ1 2027 極其強勁的財測：營收中位數 $61.5B、Non-GAAP 毛利率約 86.25%、Non-GAAP EPS 中位數達 $38.15。整體 Earnings Power 已進入全新階梯。\n\n📊 關鍵數據與財測:\n- 外部市場共識未納入，本報告不判定 Beat/Miss。\n- FQ4 2026 營收：$54.23B ($54,229M)，相較前一季 $41.46B 與去年同期 $11.32B，展現極強動能。\n- FQ4 2026 獲利：GAAP 淨利 $37.70B（EPS $32.87）；Non-GAAP 淨利 $38.40B（EPS $33.42）。\n- FQ4 2026 毛利：GAAP 毛利 $47,047M，Non-GAAP 毛利 $47,204M（毛利率高達約 87.0%）。\n- FQ4 2026 現金流與 Capex：營運現金流 $43.97B（前季 $25.39B），單季資本支出 Capex (net) 為 $10.77B（全年度 FY26 Capex 為 $27.37B），調整後自由現金流達 $33.20B ($33,199M)。\n- FQ1 2027 財測 (Guidance)：\n  • 營收：$61.5B ± $1.5B（$60.0B - $63.0B），隱含季增 13.4%。\n  • 毛利率：Non-GAAP 約 86.25%（GAAP 約 85.95%）。\n  • 營運費用：Non-GAAP 約 $2.06B（GAAP 約 $2.31B）。\n  • 稀釋 EPS：Non-GAAP $38.15 ± $1.00（$37.15 - $39.15）；GAAP $37.84 ± $1.00。\n\n🧭 營運動能與法說攻防:\n- 產品與技術進展：Micron 已開始送樣業界首款 512GB 超高密度 DDR5 RDIMM 模組，傳輸速度高達 9,200 MT/s，專為極端 AI 算力與資料中心需求設計，確立其在 High-Capacity DDR5 的技術領先地位。\n- 現金流與資本強度：單季營運現金流 $43.97B 完全涵蓋了 $10.77B 的高額 Capex，單季創造出 $33.20B 的自由現金流，展現資產負債表極度健康，有能力無負擔地持續投資下一代先進製程與封裝。\n- 法說攻防：本次數據套件未包含 Q&A 逐字稿，無法評估具體問答細節，但從官方揭露之 Strategic Customer Agreements 可推論客戶正積極透過長約鎖定產能。\n\n⚠️ 風險、反證與待驗證:\n- 超前囤貨風險 (Double Booking)：需觀察終端 AI 伺服器實際消耗速度，若客戶因缺貨心理而過度下單，後續可能面臨庫存調整。\n- 高 Capex 的雙面刃：FY26 總 Capex 已達 $27.37B，若 AI 需求成長斜率放緩，未來可能對產能利用率與固定成本攤提造成壓力。\n- 待驗證項目：FQ1 2027 能否順利達成約 86.25% 的高毛利率目標，以及 512GB DDR5 RDIMM 模組在客戶端的認證與量產時程。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 95,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [],
+            "pass": true,
+            "corrected_telegram_draft": "MU MU_2026-09-30\n\n💡 投資結論與邏輯:\nMicron (MU) 展現了記憶體超級循環下的驚人獲利爆發力。FQ4 2026 單季營收衝上 $54.23B（季增 30.8%、年增 379.3%），Non-GAAP 稀釋 EPS 達到 $33.42，帶動單季調整後自由現金流 (Adjusted FCF) 達到飆升至 $33.20B（$33,199M）。執行長 Sanjay Mehrotra 強調 AI 正演化為超智慧 (Super Intelligence, SI)，記憶體為提升客戶平台競爭力的核心。公司藉由 Strategic Customer Agreements（戰略客戶協議）鎖定長約，並給予 FQ1 2027 極其強勁的財測：營收中位數 $61.5B、Non-GAAP 毛利率約 86.25%、Non-GAAP EPS 中位數達 $38.15。整體 Earnings Power 已進入全新階梯。\n\n📊 關鍵數據與財測:\n- 外部市場共識未納入，本報告不判定 Beat/Miss。\n- FQ4 2026 營收：$54.23B ($54,229M)，相較前一季 $41.46B 與去年同期 $11.32B，展現極強動能。\n- FQ4 2026 獲利：GAAP 淨利 $37.70B（EPS $32.87）；Non-GAAP 淨利 $38.40B（EPS $33.42）。\n- FQ4 2026 毛利：GAAP 毛利 $47,047M，Non-GAAP 毛利 $47,204M（毛利率高達約 87.0%）。\n- FQ4 2026 現金流與 Capex：營運現金流 $43.97B（前季 $25.39B），單季資本支出 Capex (net) 為 $10.77B（全年度 FY26 Capex 為 $27.37B），調整後自由現金流達 $33.20B ($33,199M)。\n- FQ1 2027 財測 (Guidance)：\n  • 營收：$61.5B ± $1.5B（$60.0B - $63.0B），隱含季增 13.4%。\n  • 毛利率：Non-GAAP 約 86.25%（GAAP 約 85.95%）。\n  • 營運費用：Non-GAAP 約 $2.06B（GAAP 約 $2.31B）。\n  • 稀釋 EPS：Non-GAAP $38.15 ± $1.00（$37.15 - $39.15）；GAAP $37.84 ± $1.00。\n\n🧭 營運動能與法說攻防:\n- 產品與技術進展：Micron 已開始送樣業界首款 512GB 超高密度 DDR5 RDIMM 模組，傳輸速度高達 9,200 MT/s，專為極端 AI 算力與資料中心需求設計，確立其在 High-Capacity DDR5 的技術領先地位。\n- 現金流與資本強度：單季營運現金流 $43.97B 完全涵蓋了 $10.77B 的高額 Capex，單季創造出 $33.20B 的自由現金流，展現資產負債表極度健康，有能力無負擔地持續投資下一代先進製程與封裝。\n- 法說攻防：本次數據套件未包含 Q&A 逐字稿，無法評估具體問答細節，但從官方揭露之 Strategic Customer Agreements 可推論客戶正積極透過長約鎖定產能。\n\n⚠️ 風險、反證與待驗證:\n- 超前囤貨風險 (Double Booking)：需觀察終端 AI 伺服器實際消耗速度，若客戶因缺貨心理而過度下單，後續可能面臨庫存調整。\n- 高 Capex 的雙面刃：FY26 總 Capex 已達 $27.37B，若 AI 需求成長斜率放緩，未來可能對產能利用率與固定成本攤提造成壓力。\n- 待驗證項目：FQ1 2027 能否順利達成約 86.25% 的高毛利率目標，以及 512GB DDR5 RDIMM 模組在客戶端的認證與量產時程。"
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "FQ4 2026 營收與獲利爆發性增長，且 FQ1 2027 財測持續擴張",
+                "why_it_matters": "顯示 AI Super Intelligence (SI) 驅動之 High-Performance Memory 超級循環仍在加速，公司具備強大的產品定價權與結構性獲利能力提升。",
+                "fact_basis": [
+                  "FQ4 2026 營收達 $54.23B（$54,229M），對比前一季 $41.46B 與去年同期 $11.32B",
+                  "FQ4 2026 Non-GAAP 淨利達 $38.40B，Non-GAAP 稀釋 EPS 達 $33.42",
+                  "FQ1 2027 營收 Guidance 中位數達 $61.5B（±$1.5B），Non-GAAP 稀釋 EPS Guidance 中位數達 $38.15（±$1.00）"
+                ],
+                "inference": "記憶體產業供需極度緊繃，高附加價值 AI 記憶體產品比重提高，極大地拉升了單位獲利能力（Earnings Power）。",
+                "confidence": "high"
+              },
+              {
+                "signal": "極高毛利率（>85%）與強勁之自由現金流生成能力",
+                "why_it_matters": "高毛利代表極佳的 pricing power 與成本規模效益，能提供極充裕的現金流支撐高額 Capex 擴充，維持競爭壁壘。",
+                "fact_basis": [
+                  "FQ4 2026 Non-GAAP 毛利額達 $47,204M（佔營收約 87.0%）",
+                  "FQ4 2026 營運現金流達 $43.97B，調整後自由現金流 (Adjusted Free Cash Flow) 達 $33.20B（$33,199M）",
+                  "FQ1 2027 Non-GAAP Gross Margin Guidance 達約 86.25%"
+                ],
+                "inference": "資本支出 ($10.77B FQ4) 已完全可由內部強勁的 Operating Cash Flow ($43.97B) 自給自足，財務結構處於歷史最強狀態。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "FQ4 2026 營收 $54.23B，季增 30.8%（前季 $41.46B），年增 379.3%（去年同期 $11.32B），反映 AI 算力需求帶動的高容量記憶體強勁拉貨。",
+                "FQ1 2027 營收 Guidance 中位數 $61.5B，環比續增 13.4%，顯示客戶需求與 Strategic Customer Agreements 的長約支撐力強。",
+                "開始送樣業界首款 512GB 超高密度 DDR5 RDIMM 模組（速度高達 9,200 MT/s），持續拓展高端伺服器記憶體產品線。"
+              ],
+              "margin_unit_economics": [
+                "FQ4 2026 Non-GAAP Gross Margin 達 $47,204M，反映高毛利 AI 記憶體產品組合佔比顯著提升及強勁的定價權。",
+                "FQ1 2027 Non-GAAP Gross Margin 預計約 86.25%，顯示成本下降與產品組合改善抵銷了潛在的研發與營運成本上升。",
+                "FQ1 2027 Non-GAAP 營運費用（OpEx）控管在約 $2.06B（GAAP 約 $2.31B），營運槓桿效益顯著放大。"
+              ],
+              "cash_capital_intensity": [
+                "FQ4 2026 營運現金流 (CFO) 達 $43.97B，顯著高於前一季的 $25.39B 與去年同期的 $5.73B。",
+                "FQ4 2026 淨資本支出 (Capex, net) 為 $10.77B，全年度 FY26 Capex 達 $27.37B。",
+                "FQ4 2026 調整後自由現金流 (Adjusted FCF) 達到 $33.20B（$33,199M），遠高於去年同期的 $803M，展現極高之現金轉化效率與可持續性。"
+              ]
+            },
+            "guidance_assessment": [
+              "FQ1 2027 營收 Guidance：$61.5B ± $1.5B（範圍 $60.0B - $63.0B），中位數隱含季增約 13.4%。",
+              "FQ1 2027 Non-GAAP 毛利率 Guidance：約 86.25%（GAAP 約 85.95%）。",
+              "FQ1 2027 Non-GAAP 營運費用 Guidance：約 $2.06B（GAAP 約 $2.31B）。",
+              "FQ1 2027 Non-GAAP 稀釋 EPS Guidance：$38.15 ± $1.00（範圍 $37.15 - $39.15）；GAAP 稀釋 EPS 為 $37.84 ± $1.00。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "客戶合約品質：管理層提及 Strategic Customer Agreements 提供了財務績效耐久性的額外信心，顯示客戶願意簽署長約鎖定產能。",
+              "產品擴充深度：512GB DDR5 RDIMM 樣品已送樣至業界，鎖定高階 Data Center 與 AI 運算需求，技術領先維持客戶黏著度。",
+              "需求廣度與集中度：資料集未包含具體客戶集中度與 NRR 數字，無法單憑此資料庫完全判定客戶集中風險。"
+            ],
+            "qa_readthrough": [
+              {
+                "debate": "法說會問答與分析師攻防內容",
+                "management_answer": "本次提供之 Research Packet 未包含 Q&A 逐字稿資料（qa_unit_count: 0）。",
+                "answer_quality": "unknown",
+                "investment_readthrough": "無法從 Q&A 分析管理階層對細節問題之迴避或直答程度，主要分析依據為官方新聞稿及財報數據。"
+              }
+            ],
+            "competitive_value_chain": [
+              "512GB DDR5 RDIMM 率先送樣（9,200 MT/s），展現 High-Density 記憶體技術領先地位。",
+              "毛利率預期維持在 86% 以上的高位，證明公司在當前 AI 記憶體供應鏈中具備極強的定價權與 Control Point 能力。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "反證指標 1：若未來的 FQ1 2027 實際毛利率低於預期的 86.25%，可能代表記憶體價格上漲動能放緩或產品良率遭遇瓶頸。",
+              "反證指標 2：高額 Capex 投入（FQ4 達 $10.77B）若遇 AI 需求突然減速，可能導致未來產能過剩風險。",
+              "替代解釋：當前營收與毛利率爆發可能部分源自客戶因擔心未來缺貨而進行的超前囤貨（Double Booking），而非完全為終端消耗。"
+            ],
+            "watch_items": [
+              "512GB DDR5 RDIMM 模組客戶驗證進度與量產時間表。",
+              "FQ1 2027 實際 Capex 支出與自由現金流轉化率。",
+              "Strategic Customer Agreements 的履約狀況與長約定價機制。"
+            ],
+            "confidence": 90,
+            "telegram_draft": "MU MU_2026-09-30\n\n💡 投資結論與邏輯:\nMicron (MU) 展現了記憶體超級循環下的驚人獲利爆發力。FQ4 2026 單季營收衝上 $54.23B（季增 30.8%、年增 379.3%），Non-GAAP 稀釋 EPS 達到 $33.42，帶動單季調整後自由現金流 (Adjusted FCF) 達到飆升至 $33.20B（$33,199M）。執行長 Sanjay Mehrotra 強調 AI 正演化為超智慧 (Super Intelligence, SI)，記憶體為提升客戶平台競爭力的核心。公司藉由 Strategic Customer Agreements（戰略客戶協議）鎖定長約，並給予 FQ1 2027 極其強勁的財測：營收中位數 $61.5B、Non-GAAP 毛利率約 86.25%、Non-GAAP EPS 中位數達 $38.15。整體 Earnings Power 已進入全新階梯。\n\n📊 關鍵數據與財測:\n- 外部市場共識未納入，本報告不判定 Beat/Miss。\n- FQ4 2026 營收：$54.23B ($54,229M)，相較前一季 $41.46B 與去年同期 $11.32B，展現極強動能。\n- FQ4 2026 獲利：GAAP 淨利 $37.70B（EPS $32.87）；Non-GAAP 淨利 $38.40B（EPS $33.42）。\n- FQ4 2026 毛利：GAAP 毛利 $47,047M，Non-GAAP 毛利 $47,204M（毛利率高達約 87.0%）。\n- FQ4 2026 現金流與 Capex：營運現金流 $43.97B（前季 $25.39B），單季資本支出 Capex (net) 為 $10.77B（全年度 FY26 Capex 為 $27.37B），調整後自由現金流達 $33.20B ($33,199M)。\n- FQ1 2027 財測 (Guidance)：\n  • 營收：$61.5B ± $1.5B（$60.0B - $63.0B），隱含季增 13.4%。\n  • 毛利率：Non-GAAP 約 86.25%（GAAP 約 85.95%）。\n  • 營運費用：Non-GAAP 約 $2.06B（GAAP 約 $2.31B）。\n  • 稀釋 EPS：Non-GAAP $38.15 ± $1.00（$37.15 - $39.15）；GAAP $37.84 ± $1.00。\n\n🧭 營運動能與法說攻防:\n- 產品與技術進展：Micron 已開始送樣業界首款 512GB 超高密度 DDR5 RDIMM 模組，傳輸速度高達 9,200 MT/s，專為極端 AI 算力與資料中心需求設計，確立其在 High-Capacity DDR5 的技術領先地位。\n- 現金流與資本強度：單季營運現金流 $43.97B 完全涵蓋了 $10.77B 的高額 Capex，單季創造出 $33.20B 的自由現金流，展現資產負債表極度健康，有能力無負擔地持續投資下一代先進製程與封裝。\n- 法說攻防：本次數據套件未包含 Q&A 逐字稿，無法評估具體問答細節，但從官方揭露之 Strategic Customer Agreements 可推論客戶正積極透過長約鎖定產能。\n\n⚠️ 風險、反證與待驗證:\n- 超前囤貨風險 (Double Booking)：需觀察終端 AI 伺服器實際消耗速度，若客戶因缺貨心理而過度下單，後續可能面臨庫存調整。\n- 高 Capex 的雙面刃：FY26 總 Capex 已達 $27.37B，若 AI 需求成長斜率放緩，未來可能對產能利用率與固定成本攤提造成壓力。\n- 待驗證項目：FQ1 2027 能否順利達成約 86.25% 的高毛利率目標，以及 512GB DDR5 RDIMM 模組在客戶端的認證與量產時程。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 95,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [],
+            "pass": true,
+            "corrected_telegram_draft": "MU MU_2026-09-30\n\n💡 投資結論與邏輯:\nMicron (MU) 展現了記憶體超級循環下的驚人獲利爆發力。FQ4 2026 單季營收衝上 $54.23B（季增 30.8%、年增 379.3%），Non-GAAP 稀釋 EPS 達到 $33.42，帶動單季調整後自由現金流 (Adjusted FCF) 飆升至 $33.20B（$33,199M）。執行長 Sanjay Mehrotra 強調 AI 正演化為超智慧 (Super Intelligence, SI)，記憶體為提升客戶平台競爭力的核心。公司藉由 Strategic Customer Agreements（戰略客戶協議）鎖定長約，並給予 FQ1 2027 極其強勁的財測：營收中位數 $61.5B、Non-GAAP 毛利率約 86.25%、Non-GAAP EPS 中位數達 $38.15。整體 Earnings Power 已進入全新階梯。\n\n📊 關鍵數據與財測:\n- 外部市場共識未納入，本報告不判定 Beat/Miss。\n- FQ4 2026 營收：$54.23B ($54,229M)，相較前一季 $41.46B 與去年同期 $11.32B，展現極強動能。\n- FQ4 2026 獲利：GAAP 淨利 $37.70B（EPS $32.87）；Non-GAAP 淨利 $38.40B（EPS $33.42）。\n- FQ4 2026 毛利：GAAP 毛利 $47,047M，Non-GAAP 毛利 $47,204M（毛利率高達約 87.0%）。\n- FQ4 2026 現金流與 Capex：營運現金流 $43.97B（前季 $25.39B），單季資本支出 Capex (net) 為 $10.77B（全年度 FY26 Capex 為 $27.37B），調整後自由現金流達 $33.20B ($33,199M)。\n- FQ1 2027 財測 (Guidance)：\n  • 營收：$61.5B ± $1.5B（$60.0B - $63.0B），隱含季增 13.4%。\n  • 毛利率：Non-GAAP 約 86.25%（GAAP 約 85.95%）。\n  • 營運費用：Non-GAAP 約 $2.06B（GAAP 約 $2.31B）。\n  • 稀釋 EPS：Non-GAAP $38.15 ± $1.00（$37.15 - $39.15）；GAAP $37.84 ± $1.00。\n\n🧭 營運動能與法說攻防:\n- 產品與技術進展：Micron 已開始送樣業界首款 512GB 超高密度 DDR5 RDIMM 模組，傳輸速度高達 9,200 MT/s，專為極端 AI 算力與資料中心需求設計，確立其在 High-Capacity DDR5 的技術領先地位。\n- 現金流與資本強度：單季營運現金流 $43.97B 完全涵蓋了 $10.77B 的高額 Capex，單季創造出 $33.20B 的自由現金流，展現資產負債表極度健康，有能力無負擔地持續投資下一代先進製程與封裝。\n- 法說攻防：本次數據套件未包含 Q&A 逐字稿，無法評估具體問答細節，但從官方揭露之 Strategic Customer Agreements 可推論客戶正積極透過長約鎖定產能。\n\n⚠️ 風險、反證與待驗證:\n- 超前囤貨風險 (Double Booking)：需觀察終端 AI 伺服器實際消耗速度，若客戶因缺貨心理而過度下單，後續可能面臨庫存調整。\n- 高 Capex 的雙面刃：FY26 總 Capex 已達 $27.37B，若 AI 需求成長斜率放緩，未來可能對產能利用率與固定成本攤提造成壓力。\n- 待驗證項目：FQ1 2027 能否順利達成約 86.25% 的高毛利率目標，以及 512GB DDR5 RDIMM 模組在客戶端的認證與量產時程。"
           }
         }
       }
