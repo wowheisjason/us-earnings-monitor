@@ -261,6 +261,28 @@
         "filing_date": "2026-09-30",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0001628280-26-064366:exhibit991111111.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001628280-26-064366:exhibit991111111.htm",
+      "ticker": "TSLA",
+      "title": "Tesla Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-10-02T13:04:26.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/exhibit991111111.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/exhibit991111111.htm",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "period_end": "2026-10-02",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001318605",
+        "accession": "0001628280-26-064366",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-02",
+        "period_from_exhibit_filename": null
+      }
     }
   },
   "events": {
@@ -278,7 +300,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-02T08:33:16-04:00",
+      "updated_at": "2026-10-02T10:44:52-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -642,7 +664,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-02T08:33:16-04:00",
+      "updated_at": "2026-10-02T10:44:52-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -939,7 +961,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-02T08:33:16-04:00",
+      "updated_at": "2026-10-02T10:44:52-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -999,6 +1021,80 @@
         "official_ir_check_count": 12,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
         "next_ir_retry_at": "2026-10-02T20:33:16-04:00"
+      }
+    },
+    "TSLA_2026-10-02": {
+      "event_id": "TSLA_2026-10-02",
+      "ticker": "TSLA",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "first_seen_at": "2026-10-02T10:44:52-04:00",
+      "period_end": "2026-10-02",
+      "documents": [
+        "sec_edgar:0001628280-26-064366:exhibit991111111.htm"
+      ],
+      "status": "published_sec_pending",
+      "report_version": 1,
+      "last_analyzed_document_count": 1,
+      "updated_at": "2026-10-02T10:44:52-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "none",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "model": null
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": false,
+            "seconds": 1.201,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-02T10:44:52-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-02T10:44:52-04:00",
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "official_ir_last_attempt_incomplete": "2026-10-02T10:44:52-04:00",
+        "next_ir_retry_at": "2026-10-02T10:59:52-04:00"
       }
     }
   },
