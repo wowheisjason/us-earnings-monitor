@@ -343,6 +343,7 @@ Evidence / efficiency rules:
 - All content under section headings MUST use flat • bullet points. No paragraphs, tables, nested bullets, greetings, filler or repeated conclusions. Each bullet: concrete evidence/change → why an ordinary investor should care → uncertainty only where material.
 - Prioritize revenue/profit quality, full guidance range and changes, cash flow/capex, demand/management Q&A, material downside and next observable checkpoint. Do not force unavailable metrics into the report.
 - Attribution is mandatory: 管理層表示 for management claims; 判讀 for an inference. No trade instructions or unsupported price predictions.
+- Do not expose internal pipeline terminology such as Research Packet, checkpoints, model scores or audit stages in the investor report; describe source availability in ordinary language.
 - Use neutral language. Do not call growth 爆發, 歷史級 or 最優化. Revenue, margins and guidance alone do not prove structural demand, AI causality, pricing, product mix or utilization; name those drivers only when directly disclosed and otherwise state the uncertainty. Summary bullets should contain NO numbers; keep necessary values in Section 2. Each data bullet should use 顯示/反映/但/仍不能 to connect verified evidence to its limited interpretation.
 - Never calculate or invent a percentage/bps figure absent from structured facts. No mental arithmetic in the report.
 - For US-market reports keep USD monetary units in source-backed $M/$B style; never convert them into 中文 億/兆/萬美元.
