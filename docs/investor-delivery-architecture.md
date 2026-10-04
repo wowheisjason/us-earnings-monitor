@@ -68,4 +68,4 @@ SEC EDGAR優先，官方IR及逐字稿補充；生產V5使用來源單元覆蓋�
 - [成功實測與完整payload/收據產物](https://github.com/wowheisjason/us-earnings-monitor/actions/runs/37213598499)
 - 核心部署提交：28c288a9bca5d2c8dcd53ad69dc036bc39bddab7。
 
-下一輪維護另應改善獨立daily news的段落式摘要，改為新事實與重點摘要兩個條列，保留來源日期；財報推播避免Research Packet等內部術語。這兩項後續小修改尚未部署，不應誤稱已完成。它們不影響本次財報真實推播驗收。
+後續文字改善：獨立daily news改為新事實與重點摘要兩個條列，保留來源日期及既有字數上限；財報契約禁止在投資人輸出提及Research Packet等內部術語。此文字修改不重送上述已成功歷史回放。

@@ -294,7 +294,7 @@ def _resolve_gemini_model(api_key: str, requested: str) -> str:
 
 
 def _gemini_json(api_key: str, evidence: list[Article], model: str) -> list[dict[str, Any]]:
-    prompt = """你是台灣投資人新聞編輯。只可根據提供的文章標題、摘要、來源、日期與網址寫作，不得補充未提供的事實、預測或投資建議。輸出 JSON array，不要 Markdown。每個物件欄位：emoji、headline、fact、summary、source、article_date、url。headline 簡潔；fact 只寫一句新事實；summary 使用繁體中文台灣用語且最多300中文字；url 必須原樣保留。若證據不足，省略該篇。"""
+    prompt = """你是台灣投資人新聞編輯。只可根據提供的文章標題、摘要、來源、日期與網址寫作，不得補充未提供的事實、預測或投資建議。輸出 JSON array，不要 Markdown。每個物件欄位：emoji、headline、fact、summary、source、article_date、url。headline 簡潔；fact 只寫一句新事實；summary 使用繁體中文台灣用語，以一般投資人必須留意的已知變化與證據缺口為重點，目標60–150中文字、最多300中文字，不用誇張形容詞、不重複fact、不使用段落或內嵌條列；url 必須原樣保留。若證據不足，省略該篇。"""
     payload = [{"title": a.title, "description": a.description, "source": a.source_name, "article_date": a.effective_date.strftime("%Y-%m-%d"), "url": a.url} for a in evidence]
     model_response = requests.get(
         "https://generativelanguage.googleapis.com/v1beta/models",
@@ -370,8 +370,8 @@ def format_briefing(items: list[BriefingItem]) -> str:
         blocks.append(
             "\n".join((
                 f"<b>{index}. {html.escape(item.emoji)} {html.escape(item.headline)}</b>",
-                html.escape(item.fact),
-                f"<b>重點摘要</b>\n{html.escape(item.summary)}",
+                f"• 新事實：{html.escape(' '.join(item.fact.split()))}",
+                f"• 重點摘要：{html.escape(' '.join(item.summary.split()))}",
                 f"<b>來源：{html.escape(item.source)}</b>",
                 f"<b>[{item.article_date}] — <a href=\"{html.escape(item.url, quote=True)}\">連結</a></b>",
             ))
