@@ -60,3 +60,12 @@ def test_scoped_run_ignores_other_persisted_events_and_surfaces_failure(tmp_path
     monkeypatch.setattr(runner, "build_analysis_client", lambda: object())
     assert runner.main() == 1
     assert seen == ["TARGET"]
+
+
+def test_disclosed_numeric_change_has_provenance_but_computed_rate_does_not():
+    from us_earnings_monitor.report_contract import numeric_provenance_errors
+    facts = {"facts": [{"reported_change": 155.1, "evidence": {"quote": "104,828 155.1 111,456 166.8"}}]}
+    assert numeric_provenance_errors("年增 155.1%", facts) == []
+    assert numeric_provenance_errors("貢獻 93.4%", facts) == ["unbacked_derived_rate:93.4%"]
+    assert numeric_provenance_errors("年增 155.1%", {"facts": [{"reported_change": 155.1}]}) == ["unbacked_derived_rate:155.1%"]
+    assert numeric_provenance_errors("年減 73.5%", {"quote": "73.5％減"}) == []

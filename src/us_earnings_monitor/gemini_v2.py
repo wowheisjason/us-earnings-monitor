@@ -106,7 +106,12 @@ def _generation_config(model: str, stage: str = "") -> dict[str, Any]:
         "responseMimeType": "application/json",
         "maxOutputTokens": _stage_output_tokens(stage),
     }
-    if not model.startswith(("gemini-3.6-", "gemini-3.7-", "gemini-3.8-")):
+    if model.startswith("gemini-3"):
+        # Gemini 3 defaults plus explicit effort avoid spending the bounded JSON
+        # output allowance on unrestricted reasoning. Keep financial audits low
+        # rather than disabling reasoning, with deterministic gates afterward.
+        config["thinkingConfig"] = {"thinkingLevel": "low"}
+    else:
         config["temperature"] = 0.1
     return config
 
@@ -279,7 +284,7 @@ class GeminiV2Client(GeminiClient):
                     continue
                 except requests.RequestException as exc:
                     last_error = exc
-                    LOG.warning("Gemini model=%s stage=%s network failure attempt=%d: %s", model, stage, attempt + 1, exc)
+                    LOG.warning("Gemini model=%s stage=%s network failure attempt=%d: %s", model, stage, attempt + 1, type(exc).__name__)
                     if attempt + 1 < attempts:
                         time.sleep(backoff * (2 ** attempt))
                     continue

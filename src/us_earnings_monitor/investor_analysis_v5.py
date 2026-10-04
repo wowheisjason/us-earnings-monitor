@@ -11,6 +11,7 @@ from .report_contract import stage_contract, harden_audit_with_report_quality
 from .models import EarningsEvent, Evidence
 from .research_packet import build_research_packet
 from .research_units import batch_units, coverage_result, unitize_evidence
+from .validation import validate_extracted_facts
 
 _CARD_SCHEMA = r"""
 {
@@ -99,6 +100,7 @@ class ProductionInvestorV5Client(InvestorFrameworkGeminiClient):
                 "phase": unit.get("phase", ""),
                 "position": unit.get("position", 0),
                 "text": unit.get("text", ""),
+                "related_official_context": unit.get("related_official_context", ""),
             }
             for unit in units
         ]
@@ -224,10 +226,21 @@ Units:
                 cards.extend(self._decorate_cards(repair.get("cards") or [], missing))
 
             invalid_units = {card["unit_id"] for card in cards
-                             if quote_validation_issues({"cards": [card]}, evidence)}
+                             if quote_validation_issues({"cards": [card]}, evidence)
+                             or validate_extracted_facts(self._compatibility_views([card]))}
             if invalid_units:
-                targeted = [unit for unit in batch if unit["unit_id"] in invalid_units]
-                repair_stage = f"v5_quote_repair_{index}"
+                targeted = [dict(unit) for unit in batch if unit["unit_id"] in invalid_units]
+                for unit in targeted:
+                    # Reconciliation tables may reside in another source unit.
+                    # Context stays tied to the same official document and is
+                    # verified against the original complete source afterward.
+                    unit["related_official_context"] = "\n\n".join(
+                        other["text"] for other in units
+                        if other["document_key"] == unit["document_key"]
+                        and other["unit_id"] != unit["unit_id"]
+                        and "adjusted free cash flow" in other["text"].casefold()
+                    )
+                repair_stage = f"v5_evidence_repair_v2_{index}"
                 repaired = self._checkpoint_payload(repair_stage)
                 if repaired is None:
                     repaired = self._extract_batch(event, targeted, "v5_extract_repair")
@@ -362,6 +375,9 @@ Analyst output:
         critical = list(result.get("critical_issues") or [])
         if coverage.get("complete") is not True or float(coverage.get("coverage_ratio", 0) or 0) < 1.0:
             critical.append("deterministic_v5_gate:incomplete_research_coverage")
+        for key in ("unsupported_claims", "numerical_errors", "missing_material_points", "causal_reasoning_errors", "qa_interpretation_errors", "accounting_guidance_errors"):
+            if result.get(key):
+                critical.append("deterministic_v5_gate:" + key)
         if quote_issues:
             critical.append("deterministic_v5_gate:unverified_source_quotes")
         if critical:

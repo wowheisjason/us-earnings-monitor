@@ -239,7 +239,7 @@ def _decimal_key(value: str) -> str:
 
 
 def _rate_tokens(value: object) -> set[tuple[str, str]]:
-    text = json.dumps(value, ensure_ascii=False, default=str) if not isinstance(value, str) else value
+    text = unicodedata.normalize("NFKC", json.dumps(value, ensure_ascii=False, default=str) if not isinstance(value, str) else value)
     tokens: set[tuple[str, str]] = set()
     for number, unit in _QUANT_RATE_RE.findall(text):
         tokens.add((_decimal_key(number), "%" if unit == "%" else "bps"))
@@ -250,6 +250,25 @@ def numeric_provenance_errors(report: str, facts: dict | None, market: str | Non
     if not facts:
         return []
     source_rates = _rate_tokens(facts)
+    # Legacy extractors encode disclosed percentage changes as numeric values,
+    # without a percent suffix. Accept only this semantic field, and only when
+    # the supporting source quote contains that exact number. Never infer rates
+    # from current/prior values or from an unrelated numeric field.
+    def walk(value):
+        if isinstance(value, dict):
+            rate = value.get("reported_change")
+            quote = unicodedata.normalize("NFKC", str((value.get("evidence") or {}).get("quote") or ""))
+            if type(rate) in (int, float) and quote:
+                token = _decimal_key(str(abs(rate)))
+                if re.search(r"(?<![\d.])" + re.escape(token) + r"(?![\d.])", quote):
+                    source_rates.add((_decimal_key(str(rate)), "%"))
+                    source_rates.add((token, "%"))
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+    walk(facts)
     errors = [f"unbacked_derived_rate:{token[0]}{token[1]}" for token in sorted(_rate_tokens(report)) if token not in source_rates]
     if (market or "").strip().upper() in {"US", "USA", "美股"} and re.search(r"(?:億|兆|萬|万)美元", report):
         errors.append("us_monetary_unit_conversion_forbidden")

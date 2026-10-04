@@ -47,12 +47,14 @@ CRITICAL OUTPUT COMPRESSION RULES:
 - Maximum 8 cards per unit. Within a unit prioritize: explicit guidance/change > forward demand/pricing/margin/supply evidence > material Q&A > customer/usage/ROI evidence > other financial facts. Do not emit low-value boilerplate.
 - One card should represent one economic point. Combine tightly related values into statement when separating them would create duplicate cards, while keeping individual numeric fields only where needed downstream.
 - Keep statement, question_summary, answer_summary and quote concise. quote must be a SHORT exact substring.
+- Exact quotes MUST retain intervening footnote markers, currency signs and ALL intervening table columns. Never concatenate column headers with distant rows or remove the middle column. A longer exact row is better than a fabricated short quote. Related official context is from the SAME document and may support reconciliation.
 
 Evidence rules:
 1. Use ONLY supplied text/structured facts. Never calculate a missing percentage, growth rate, margin, midpoint or comparison.
 2. Preserve GAAP/non-GAAP/adjusted/company-defined labels and source USD $M/$B units exactly.
 3. Guidance: preserve explicit low/high and prior range when present. Do not manufacture missing endpoints. guidance_type must distinguish range, point, lower_bound and upper_bound. For a point use value only; one endpoint is allowed only if quote explicitly says at least/over/less than/up to.
 3a. Cash/capex: preserve metric_type (operating_cash_flow, standard_fcf, adjusted_fcf, capex, other_adjusted, other) and source-backed reconciliation components for adjusted metrics. Do not invent reconciliation. A missing reconciliation must remain missing and block publication until repaired from official evidence.
+3b. reconciliation is an array of {{item,value,unit,evidence:{{quote}}}}. Capture the disclosed operating cash flow, gross PP&E expenditure, sale proceeds, incentive proceeds and net investment rows with their exact signed values and periods. Preserve the displayed source units; do not rescale billion into million. Consolidate duplicate rounded narrative and precise table measures, preferring the precise official table with reconciliation.
 4. Distinguish objective_fact, company_guidance, management_claim and analyst_question. Prepared remarks are not Q&A.
 5. Capture explicit forward drivers: demand/volume/price/mix, usage/adoption, orders/backlog/RPO, customer breadth/depth, margin/unit economics, cash/capex, capacity/supply, product/competition and risk.
 6. Q&A: retain each material debate visible in the unit; answer_quality is direct/partial/evasive/unknown. Do not output procedural operator chatter.

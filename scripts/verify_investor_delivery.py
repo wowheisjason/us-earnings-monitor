@@ -2,6 +2,7 @@
 No production state is modified. Only an auditor-approved report may be sent.
 """
 import json
+import logging
 import os
 from datetime import datetime
 from pathlib import Path
@@ -10,6 +11,7 @@ from us_earnings_monitor.models import EarningsEvent
 from us_earnings_monitor.state import StateStore
 from us_earnings_monitor.analysis import build_analysis_client
 
+logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 out = Path(".verification")
 out.mkdir(exist_ok=True)
 store = StateStore(out / "state.json")

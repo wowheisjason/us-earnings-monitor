@@ -31,15 +31,17 @@ def test_generation_config_omits_removed_sampling_parameter_for_36_plus(monkeypa
     assert _generation_config("gemini-3.5-flash") == {
         "responseMimeType": "application/json",
         "maxOutputTokens": 8192,
-        "temperature": 0.1,
+        "thinkingConfig": {"thinkingLevel": "low"},
     }
     assert _generation_config("gemini-3.6-flash") == {
         "responseMimeType": "application/json",
         "maxOutputTokens": 8192,
+        "thinkingConfig": {"thinkingLevel": "low"},
     }
     assert _generation_config("gemini-3.7-flash") == {
         "responseMimeType": "application/json",
         "maxOutputTokens": 8192,
+        "thinkingConfig": {"thinkingLevel": "low"},
     }
 
 
