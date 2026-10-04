@@ -422,14 +422,16 @@ Analyst output:
         packet = facts.get("research_packet") or {}
         errors = {
             key: audit.get(key) or []
-            for key in (
+            for key in set(k for k in audit if k.endswith("_errors")) | set((
                 "unsupported_claims", "numerical_errors", "missing_material_points", "causal_reasoning_errors",
                 "qa_interpretation_errors", "accounting_guidance_errors", "critical_issues",
-            )
+            ))
         }
         return self._json(f"""你是 buy-side senior analyst，現在只做 TARGETED semantic repair。不要重新摘要全部文件，也不要新增 Research Packet 以外的事實。
 
 依 auditor errors 修正目前 analysis。保留已正確的 thesis，只修改被點名的 unsupported/missing/causal/Q&A/accounting 問題。若錯誤只是格式或冗詞，直接修 Telegram，不要重建經濟論述。
+必須逐一修正下面具體的 *_errors，而非只注意 critical_issues 的分類標籤。第一區完全不用數字，數字只放第二區；第四區使用可觀察指標，避免重複第二區金額。每個數據條列用「顯示／反映／但／仍不能」連接有證據的含義與限制，不能以「健康／優異」空泛讚美代替判讀。
+客觀用語：刪除「爆發力、歷史級、最優化、根本性改變、獲利未見頂、鞏固供應鏈地位」等缺直接證據的結論。只有收入與毛利數字時不能證實 AI 拉貨、產品組合、稼動率、單價或長週期改變。指引是管理層預期；不要把較高指引當作已實現。沒有前期費用率就不能宣稱費用率下降。Adjusted FCF 已扣淨資本支出，不得再次扣除；gross PP&E 支出與扣除出售／政府補助後 net capex 必須分開。
 
 回傳與原 analyst 完全相同 JSON schema。Telegram 維持四區、900–1500 字、最多1800字、平面條列、台灣繁體中文、美元來源單位、不判定無來源 consensus 的 Beat/Miss。
 
@@ -437,6 +439,8 @@ Auditor errors:
 {json.dumps(errors, ensure_ascii=False)}
 Current analysis:
 {json.dumps(analysis, ensure_ascii=False)}
+Auditor current draft (repair this text rather than reverting to an older draft):
+{json.dumps(audit.get('corrected_telegram_draft') or '', ensure_ascii=False)}
 Research Packet:
 {json.dumps(packet, ensure_ascii=False)}
 """, "v5_repair")

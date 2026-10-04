@@ -28,3 +28,17 @@ def test_model_cannot_overrule_unverified_quotes():
     audit = client.audit(event, facts, {}, [])
     assert audit["pass"] is False
     assert "deterministic_v5_gate:unverified_source_quotes" in audit["critical_issues"]
+
+
+def test_revision_receives_specific_diagnostics_and_current_audited_text(monkeypatch):
+    from us_earnings_monitor.investor_analysis_v5 import ProductionInvestorV5Client
+    client = ProductionInvestorV5Client(api_key='test')
+    prompts = []
+    monkeypatch.setattr(client, '_json', lambda prompt, stage: prompts.append(prompt) or {'telegram_draft': 'fixed'})
+    client.revise({'research_packet': {}}, {'telegram_draft': 'older draft'}, {
+        'critical_issues': ['deterministic_v4_gate:redundancy'],
+        'redundancy_errors': ['summary_repeats_hard_data:eps=$33.42'],
+        'corrected_telegram_draft': 'current audited draft',
+    })
+    assert 'summary_repeats_hard_data:eps=$33.42' in prompts[0]
+    assert 'current audited draft' in prompts[0]

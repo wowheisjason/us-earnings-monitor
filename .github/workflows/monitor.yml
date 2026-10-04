@@ -111,8 +111,8 @@ jobs:
           if [ -n "$TEST_AT" ]; then args+=(--at "$TEST_AT"); fi
           if [ -n "$TEST_TICKERS" ]; then args+=(--tickers "$TEST_TICKERS"); fi
 
-          # Provider 429/503/timeout is intentionally non-fatal in the Python
-          # process so completed analysis checkpoints can be persisted. Retry
+          # Provider failures return nonzero; the final persistence step runs
+          # even after failure. Retry
           # once inside the same runner: the second invocation resumes only the
           # missing stage/chunk instead of re-spending upstream Gemini calls.
           set -o pipefail

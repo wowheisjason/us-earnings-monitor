@@ -330,6 +330,7 @@ Evidence / efficiency rules:
 - All content under section headings MUST use flat • bullet points. No paragraphs, tables, nested bullets, greetings, filler or repeated conclusions. Each bullet: concrete evidence/change → why an ordinary investor should care → uncertainty only where material.
 - Prioritize revenue/profit quality, full guidance range and changes, cash flow/capex, demand/management Q&A, material downside and next observable checkpoint. Do not force unavailable metrics into the report.
 - Attribution is mandatory: 管理層表示 for management claims; 判讀 for an inference. No trade instructions or unsupported price predictions.
+- Use neutral language. Do not call growth 爆發, 歷史級 or 最優化. Revenue, margins and guidance alone do not prove structural demand, AI causality, pricing, product mix or utilization; name those drivers only when directly disclosed and otherwise state the uncertainty. Summary bullets should contain NO numbers; keep necessary values in Section 2. Each data bullet should use 顯示/反映/但/仍不能 to connect verified evidence to its limited interpretation.
 - Never calculate or invent a percentage/bps figure absent from structured facts. No mental arithmetic in the report.
 - For US-market reports keep USD monetary units in source-backed $M/$B style; never convert them into 中文 億/兆/萬美元.
 - Claims of pricing power, bottleneck/control-point status, monopoly/dominant share require DIRECT structured evidence. Large orders, high margins, growth or cash flow alone are insufficient.
@@ -339,12 +340,14 @@ Evidence / efficiency rules:
 
 V4_AUDITOR_CONTRACT = r"""
 BUY-SIDE V4.2 AUDITOR ADDENDUM:
-Treat architecture, evidence provenance, KPI interpretation and reading density as publication requirements. Reject: fragmented legacy output; repeated fiscal-year labels; raw KPI tables; a material KPI listed without an investment read-through; multiple customer metrics dumped separately without triangulation; hard-data section >12 content lines or >7 clusters; repeated metric/value pairs; any percentage/bps absent from structured facts; unsupported pricing-power/bottleneck/control-point/dominant-share claims; US USD values converted into 中文億/兆/萬. Absence of external consensus or valuation is NOT an error when no verified source is supplied; inventing either is critical. Prefer deleting low-value metrics and prose over adding more content.
+Treat architecture, evidence provenance, KPI interpretation and reading density as publication requirements. Reject: fragmented legacy output; repeated fiscal-year labels; raw KPI tables; a material KPI listed without an investment read-through; multiple customer metrics dumped separately without triangulation; hard-data section >7 content lines or >5 clusters; repeated metric/value pairs; any percentage/bps absent from structured facts; unsupported pricing-power/bottleneck/control-point/dominant-share claims; US USD values converted into 中文億/兆/萬. Absence of external consensus or valuation is NOT an error when no verified source is supplied; inventing either is critical. Prefer deleting low-value metrics and prose over adding more content.
 """
 
 
 def stage_contract(stage: str) -> str:
     lower = (stage or "").casefold()
+    if lower.startswith("v5_extract"):
+        return ""
     if "auditor" in lower:
         return V4_OUTPUT_CONTRACT + "\n" + V4_AUDITOR_CONTRACT
     if "analyst" in lower or "revision" in lower or "repair" in lower:
