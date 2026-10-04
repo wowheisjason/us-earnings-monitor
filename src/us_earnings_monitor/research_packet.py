@@ -90,7 +90,7 @@ def _compact_card(card: dict[str, Any]) -> dict[str, Any]:
         "previous_low", "previous_midpoint", "previous_high", "materiality_candidate", "fact_class",
         "speaker", "analyst", "management_speaker", "question_summary", "answer_summary", "answer_quality",
         "customer", "product", "use_case", "outcome", "quantified_result", "source", "provenance",
-        "unit_id", "document_key", "quote",
+        "unit_id", "document_key", "quote", "guidance_type", "metric_type", "reconciliation",
     )
     output = {key: card.get(key) for key in keep if card.get(key) not in (None, "", [], {})}
     if isinstance(output.get("statement"), str):

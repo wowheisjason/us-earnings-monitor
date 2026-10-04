@@ -67,6 +67,8 @@ class EarningsEvent:
     updated_at: str | None = None
     collection_status: dict[str, Any] = field(default_factory=dict)
 
+    delivery: dict[str, Any] = field(default_factory=dict)
+
     def as_dict(self) -> dict[str, Any]:
         return asdict(self)
 

@@ -1,0 +1,54 @@
+name: Investor brief live verification
+on:
+  push:
+    branches: [codex/investor-brief-20261004]
+    paths:
+      - '.github/workflows/investor-live-verification.yml'
+      - 'scripts/verify_investor_delivery.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: investor-live-verification
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Deterministic regression tests
+        env:
+          PYTHONPATH: src
+        run: pytest -q
+      - name: Resume rejected replay evidence
+        uses: actions/download-artifact@v4
+        with:
+          name: investor-brief-live-verification
+          run-id: 37213448672
+          github-token: ${{ github.token }}
+          path: .verification/
+      - name: Real source analysis and Telegram acceptance
+        env:
+          PYTHONPATH: src
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if python scripts/verify_investor_delivery.py; then exit 0; fi
+          # Same isolated state resumes completed stages. Ambiguous sends never repeat.
+          sleep 20
+          python scripts/verify_investor_delivery.py
+      - name: Save replay evidence and receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: investor-brief-live-verification
+          path: .verification/
+          include-hidden-files: true
+          retention-days: 7

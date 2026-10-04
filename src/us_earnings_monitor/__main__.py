@@ -60,11 +60,12 @@ def _compose_report(text: str, documents: list[Disclosure], publication_mode: st
     body = text.strip()
     if publication_mode == "sec_only_v1_ir_pending":
         body = "⚠️ SEC 快報｜官方 IR／逐字稿仍在蒐集中，收到後將補發完整 v2。\n\n" + body
-    while body and len(_format_report_html(body)) + len(sources) > REPORT_MAX_CHARS:
-        body = body[:-100].rstrip()
-    if body != text.strip():
-        body = body.rstrip("…") + "…"
-    return _format_report_html(body) + sources
+    rendered = _format_report_html(body) + sources
+    # Never silently delete the audited risk section or break an HTML entity.
+    # Conservative UTF-16 bound also accounts for emoji occupying two units.
+    if len(rendered.encode("utf-16-le")) // 2 > REPORT_MAX_CHARS:
+        raise ValueError("Audited report plus sources exceeds Telegram budget; revise before publishing")
+    return rendered
 
 
 def _provider_is_blocked(store: StateStore, provider: str, now: datetime) -> bool:
@@ -193,6 +194,9 @@ def _event_documents(event: EarningsEvent, store: StateStore) -> list[Disclosure
 
 
 def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClient, preview: bool, now: datetime) -> str:
+    if event.delivery.get("status") == "sending":
+        LOG.error("%s delivery_unknown: reconcile receipt before sending again", event.event_id)
+        return "delivery_unknown"
     docs = _event_documents(event, store)
     allowed, reasons, manifest = publication_gate(event, docs, now)
     LOG.info("%s source manifest: %s", event.event_id, manifest)
@@ -204,6 +208,18 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
     fingerprint = evidence_fingerprint(evidence)
     existing_checkpoint = {} if preview else store.get_analysis_checkpoint(event.event_id)
     checkpoint, invalidated = prepare_checkpoint(existing_checkpoint, fingerprint)
+    if checkpoint.get("evidence_repair_policy") != 3:
+        for stage in ("facts", "analysis", "audit", "revision_analysis", "revision_audit"):
+            checkpoint.get("stages", {}).pop(stage, None)
+        checkpoint["evidence_repair_policy"] = 3
+    if checkpoint.get("revision_contract_version") != 2:
+        for stage in ("revision_analysis", "revision_audit"):
+            checkpoint.get("stages", {}).pop(stage, None)
+        checkpoint["revision_contract_version"] = 2
+    if checkpoint.get("audit_gate_version") != 3:
+        for stage in ("audit", "revision_audit"):
+            checkpoint.get("stages", {}).pop(stage, None)
+        checkpoint["audit_gate_version"] = 3
     if invalidated:
         LOG.info("%s analysis checkpoint invalidated because evidence/pipeline changed", event.event_id)
     elif existing_checkpoint:
@@ -266,7 +282,8 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
         LOG.warning("%s deterministic report validation issues: %s", event.event_id, report_issues)
 
     needs_revision = bool(
-        audit.get("overall_score", 0) < 90
+        audit.get("pass") is not True
+        or audit.get("overall_score", 0) < 90
         or audit.get("unsupported_claims")
         or audit.get("numerical_errors")
         or audit.get("critical_issues")
@@ -309,7 +326,11 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
                 print(rendered)
                 print("PREVIEW_REPORT_END")
             else:
+                event.delivery = {"status": "sending", "report_version": event.report_version + 1}
+                store.put_event(event)
+                store.save()
                 message_id = send_report(rendered, parse_mode="HTML")
+                event.delivery = {"status": "accepted", "message_id": message_id, "report_version": event.report_version + 1}
                 LOG.info("%s Telegram delivery accepted (message_id=%s)", event.event_id, message_id)
             event.status = ("published_sec_pending"
                             if manifest["publication_mode"] == "sec_only_v1_ir_pending"
@@ -364,8 +385,10 @@ def main() -> int:
     company_by_ticker = {company.ticker: company for company in companies}
 
     store = StateStore(args.state)
-    disclosures, _ = discover(args, companies, now)
+    disclosures, succeeded = discover(args, companies, now)
     changed, ignored = ingest(disclosures, store, patterns, now)
+    if not args.dry_run and not args.preview:
+        store.save()
 
     analysis_client: AnalysisClient | None = None
     active_ir_events = active_events_for_ir(store.all_events(), now)
@@ -439,7 +462,10 @@ def main() -> int:
         return 0
 
     pending = False
+    failed = not succeeded
     for event in store.all_events():
+        if event.ticker not in {company.ticker for company in companies}:
+            continue
         if event.status not in {"collecting", "published", "published_sec_pending", "needs_human_review"} or len(event.documents) <= event.last_analyzed_document_count:
             continue
         if ready_for_analysis(event, now):
@@ -454,6 +480,7 @@ def main() -> int:
                     outcome = "analysis_provider_unavailable"
             LOG.info("%s: %s", event.event_id, outcome)
             pending = pending or outcome in {"collection_pending", "analysis_provider_unavailable"}
+            failed = failed or outcome in {"analysis_provider_unavailable", "needs_human_review", "delivery_unknown"}
         else:
             pending = True
 
@@ -461,7 +488,8 @@ def main() -> int:
         LOG.info("Documents collected; analysis is waiting for event completeness or provider recovery.")
     if not args.dry_run and not args.preview:
         store.save()
-    return 0
+    LOG.info("RUN_RESULT failed=%s collection_pending=%s", failed, pending)
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

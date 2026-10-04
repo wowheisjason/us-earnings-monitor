@@ -77,7 +77,7 @@ def canonicalize_url(url: str) -> str:
     query = [(k, v) for k, v in parse_qsl(parsed.query, keep_blank_values=True)
              if not (k.lower().startswith("utm_") or k.lower() in {"ref", "source", "ocid", "output"})]
     path = parsed.path.rstrip("/") or "/"
-    return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), path, "", urlencode(query), ""))
+    return urlunparse((parsed.scheme.lower(), parsed.netloc.lower().removeprefix("www."), path, "", urlencode(query), ""))
 
 
 def _parse_gdelt_date(value: str) -> datetime | None:

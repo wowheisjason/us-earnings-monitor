@@ -7,9 +7,11 @@ from typing import Any
 from .checkpointing import get_stage
 from .evidence_architecture import quote_validation_issues
 from .investor_analysis import InvestorFrameworkGeminiClient
+from .report_contract import stage_contract, harden_audit_with_report_quality
 from .models import EarningsEvent, Evidence
 from .research_packet import build_research_packet
 from .research_units import batch_units, coverage_result, unitize_evidence
+from .validation import validate_extracted_facts
 
 _CARD_SCHEMA = r"""
 {
@@ -64,6 +66,14 @@ class ProductionInvestorV5Client(InvestorFrameworkGeminiClient):
         self._checkpoint: dict | None = None
         self._persist_checkpoint_stage: Callable[[str, dict], None] | None = None
 
+    def _json(self, prompt, stage, tools=None):
+        # V5 inherits the provider directly; it must apply the same user contract
+        # as V3 instead of silently bypassing production formatting gates.
+        contract = stage_contract(stage)
+        if contract:
+            prompt += "\n\n" + contract
+        return super()._json(prompt, stage, tools)
+
     def configure_analysis_checkpoint(self, checkpoint: dict, persist_stage: Callable[[str, dict], None]) -> None:
         self._checkpoint = checkpoint
         self._persist_checkpoint_stage = persist_stage
@@ -90,6 +100,7 @@ class ProductionInvestorV5Client(InvestorFrameworkGeminiClient):
                 "phase": unit.get("phase", ""),
                 "position": unit.get("position", 0),
                 "text": unit.get("text", ""),
+                "related_official_context": unit.get("related_official_context", ""),
             }
             for unit in units
         ]
@@ -161,6 +172,7 @@ Units:
             if card_type == "guidance":
                 guidance.append({
                     "metric": card.get("metric"), "period": card.get("period"),
+                    "guidance_type": card.get("guidance_type"), "value": card.get("value"),
                     "low": card.get("low"), "midpoint": card.get("midpoint"), "high": card.get("high"),
                     "unit": card.get("unit"), "previous_low": card.get("previous_low"),
                     "previous_midpoint": card.get("previous_midpoint"), "previous_high": card.get("previous_high"),
@@ -182,7 +194,7 @@ Units:
                 }
                 facts.append(row)
                 if str(card.get("topic") or "") == "cash_capex":
-                    cash.append({**row, "metric_type": "other", "reconciliation": []})
+                    cash.append({**row, "metric_type": card.get("metric_type") or "other", "reconciliation": card.get("reconciliation") or []})
         return {"facts": facts[:120], "guidance": guidance[:30], "cash_flow_and_capex": cash[:30], "qa": qa[:40]}
 
     def extract_facts(self, event: EarningsEvent, evidence: list[Evidence]) -> dict:
@@ -212,6 +224,63 @@ Units:
                 repaired_ack = [str(value) for value in (repair.get("processed_unit_ids") or []) if str(value) in missing_ids]
                 acknowledged.extend(repaired_ack)
                 cards.extend(self._decorate_cards(repair.get("cards") or [], missing))
+
+            invalid_units = {card["unit_id"] for card in cards
+                             if quote_validation_issues({"cards": [card]}, evidence)
+                             or validate_extracted_facts(self._compatibility_views([card]))}
+            if invalid_units:
+                targeted = [dict(unit) for unit in batch if unit["unit_id"] in invalid_units]
+                for unit in targeted:
+                    # Reconciliation tables may reside in another source unit.
+                    # Context stays tied to the same official document and is
+                    # verified against the original complete source afterward.
+                    unit["related_official_context"] = "\n\n".join(
+                        other["text"] for other in units
+                        if other["document_key"] == unit["document_key"]
+                        and other["unit_id"] != unit["unit_id"]
+                        and "adjusted free cash flow" in other["text"].casefold()
+                    )
+                repair_stage = f"v5_evidence_repair_v3_{index}"
+                repaired = self._checkpoint_payload(repair_stage)
+                if repaired is None:
+                    bad_cards = [card for card in cards if
+                                 quote_validation_issues({"cards": [card]}, evidence)
+                                 or validate_extracted_facts(self._compatibility_views([card]))]
+                    source_keys = {card["document_key"] for card in bad_cards}
+                    repaired = self._json(
+                        "Repair ONLY these invalid financial evidence cards. Return JSON "
+                        "{cards:[...]}, one replacement for EACH supplied card in the SAME order. "
+                        "Preserve unit_id, card_type, topic, fact_class and economic meaning. "
+                        "Use the ORIGINAL official documents below; quote must be a continuous exact substring "
+                        "including footnotes and intervening table columns. Do not concatenate remote rows. "
+                        "Never rescale USD billion/million. Prefer exact table numbers and units, with the "
+                        "correct column period. For adjusted_fcf/other_adjusted populate reconciliation as "
+                        "[{item,value,unit,period,evidence:{document_key,quote}}] using the disclosed "
+                        "operating cash flow, gross PP&E spending, sale proceeds and government incentive "
+                        "rows, including signed values. Net capex is not gross capex. Do not calculate "
+                        "missing percentages. Do not omit any requested card or manufacture missing support. "
+                        "A repaired card's numeric value and reconciliation must be supported by its exact "
+                        "quote(s), never by an unrelated paragraph. No investment analysis or Telegram draft.\n"
+                        + json.dumps({"invalid_cards": bad_cards, "official_documents": [
+                            {"document_key": item.document_key, "text": item.text}
+                            for item in evidence if item.document_key in source_keys
+                        ]}, ensure_ascii=False),
+                        "v5_extract_evidence_repair",
+                    )
+                    if len(repaired.get("cards") or []) != len(bad_cards):
+                        raise RuntimeError("Evidence repair omitted requested cards")
+                    repaired["processed_unit_ids"] = sorted(invalid_units)
+                    repaired["replace_only_invalid_cards"] = True
+                    self._persist(repair_stage, repaired)
+                if repaired.get("replace_only_invalid_cards"):
+                    cards = [card for card in cards if not (
+                        quote_validation_issues({"cards": [card]}, evidence)
+                        or validate_extracted_facts(self._compatibility_views([card]))) ]
+                else:
+                    cards = [card for card in cards if card["unit_id"] not in invalid_units]
+                cards.extend(self._decorate_cards(repaired.get("cards") or [], targeted))
+                acknowledged = [uid for uid in acknowledged if uid not in invalid_units]
+                acknowledged.extend(str(uid) for uid in repaired.get("processed_unit_ids", []) if str(uid) in invalid_units)
 
             processed.extend(acknowledged)
             all_cards.extend(cards)
@@ -275,7 +344,7 @@ Units:
   "telegram_draft":string
 }}
 
-Telegram draft 目標 1900–2600 字，禁止為了塞數字而寫 KPI inventory；只保留能改變投資判斷的內容。固定四區：
+Telegram draft 目標 900–1500 字，最多 1800 字，全為平面條列，禁止為了塞數字而寫 KPI inventory；只保留能改變投資判斷的內容。固定四區：
 {event.ticker} {('FY'+str(event.fiscal_year)+' '+str(event.quarter)) if event.fiscal_year and event.quarter else event.event_id}
 
 💡 投資結論與邏輯:
@@ -338,31 +407,40 @@ Analyst output:
         critical = list(result.get("critical_issues") or [])
         if coverage.get("complete") is not True or float(coverage.get("coverage_ratio", 0) or 0) < 1.0:
             critical.append("deterministic_v5_gate:incomplete_research_coverage")
+        for key in ("unsupported_claims", "numerical_errors", "missing_material_points", "causal_reasoning_errors", "qa_interpretation_errors", "accounting_guidance_errors"):
+            if result.get(key):
+                critical.append("deterministic_v5_gate:" + key)
+        if quote_issues:
+            critical.append("deterministic_v5_gate:unverified_source_quotes")
         if critical:
             result["critical_issues"] = list(dict.fromkeys(critical))
             result["pass"] = False
             result["overall_score"] = min(int(result.get("overall_score", 0) or 0), 80)
-        return result
+        return harden_audit_with_report_quality(result, facts, "US")
 
     def revise(self, facts: dict, analysis: dict, audit: dict) -> dict:
         packet = facts.get("research_packet") or {}
         errors = {
             key: audit.get(key) or []
-            for key in (
+            for key in set(k for k in audit if k.endswith("_errors")) | set((
                 "unsupported_claims", "numerical_errors", "missing_material_points", "causal_reasoning_errors",
                 "qa_interpretation_errors", "accounting_guidance_errors", "critical_issues",
-            )
+            ))
         }
         return self._json(f"""你是 buy-side senior analyst，現在只做 TARGETED semantic repair。不要重新摘要全部文件，也不要新增 Research Packet 以外的事實。
 
 依 auditor errors 修正目前 analysis。保留已正確的 thesis，只修改被點名的 unsupported/missing/causal/Q&A/accounting 問題。若錯誤只是格式或冗詞，直接修 Telegram，不要重建經濟論述。
+必須逐一修正下面具體的 *_errors，而非只注意 critical_issues 的分類標籤。第一區完全不用數字，數字只放第二區；第四區使用可觀察指標，避免重複第二區金額。每個數據條列用「顯示／反映／但／仍不能」連接有證據的含義與限制，不能以「健康／優異」空泛讚美代替判讀。
+客觀用語：刪除「爆發力、歷史級、最優化、根本性改變、獲利未見頂、鞏固供應鏈地位」等缺直接證據的結論。只有收入與毛利數字時不能證實 AI 拉貨、產品組合、稼動率、單價或長週期改變。指引是管理層預期；不要把較高指引當作已實現。沒有前期費用率就不能宣稱費用率下降。Adjusted FCF 已扣淨資本支出，不得再次扣除；gross PP&E 支出與扣除出售／政府補助後 net capex 必須分開。
 
-回傳與原 analyst 完全相同 JSON schema。Telegram 維持四區、1900–2600 字、台灣繁體中文、美元來源單位、不判定無來源 consensus 的 Beat/Miss。
+回傳與原 analyst 完全相同 JSON schema。Telegram 維持四區、900–1500 字、最多1800字、平面條列、台灣繁體中文、美元來源單位、不判定無來源 consensus 的 Beat/Miss。
 
 Auditor errors:
 {json.dumps(errors, ensure_ascii=False)}
 Current analysis:
 {json.dumps(analysis, ensure_ascii=False)}
+Auditor current draft (repair this text rather than reverting to an older draft):
+{json.dumps(audit.get('corrected_telegram_draft') or '', ensure_ascii=False)}
 Research Packet:
 {json.dumps(packet, ensure_ascii=False)}
 """, "v5_repair")

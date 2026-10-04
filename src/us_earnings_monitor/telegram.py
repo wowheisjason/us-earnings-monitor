@@ -31,8 +31,12 @@ def send_report(
         path = Path(capture_path)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(text, encoding="utf-8")
-    response = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json=payload, timeout=30)
-    response.raise_for_status()
+    try:
+        response = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json=payload, timeout=30)
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        # Request exception text can contain the bot token in its URL.
+        raise RuntimeError(f"Telegram transport failure ({type(exc).__name__}); delivery unconfirmed") from None
     try:
         result = response.json()
     except ValueError as exc:
@@ -40,6 +44,6 @@ def send_report(
     if result.get("ok") is not True:
         raise RuntimeError(f"Telegram rejected sendMessage: {result.get('description', 'unknown error')}")
     message_id = result.get("result", {}).get("message_id")
-    if not isinstance(message_id, int):
+    if type(message_id) is not int or message_id <= 0:
         raise RuntimeError("Telegram accepted sendMessage without a message_id")
     return message_id

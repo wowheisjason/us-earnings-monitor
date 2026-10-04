@@ -89,6 +89,8 @@ def _interaction_grounding(payload: dict[str, Any]) -> dict[str, Any]:
 
 
 def _stage_output_tokens(stage: str) -> int:
+    if stage == "v5_extract_evidence_repair":
+        return int(os.getenv("GEMINI_EVIDENCE_REPAIR_MAX_OUTPUT_TOKENS", "6000"))
     if stage.startswith("v5_extract"):
         return int(os.getenv("GEMINI_EXTRACT_MAX_OUTPUT_TOKENS", "3200"))
     if stage == "v5_analyst":
@@ -106,7 +108,12 @@ def _generation_config(model: str, stage: str = "") -> dict[str, Any]:
         "responseMimeType": "application/json",
         "maxOutputTokens": _stage_output_tokens(stage),
     }
-    if not model.startswith(("gemini-3.6-", "gemini-3.7-", "gemini-3.8-")):
+    if model.startswith("gemini-3"):
+        # Gemini 3 defaults plus explicit effort avoid spending the bounded JSON
+        # output allowance on unrestricted reasoning. Keep financial audits low
+        # rather than disabling reasoning, with deterministic gates afterward.
+        config["thinkingConfig"] = {"thinkingLevel": "low"}
+    else:
         config["temperature"] = 0.1
     return config
 
@@ -126,7 +133,9 @@ class GeminiV2Client(GeminiClient):
         self._search_circuit_reason: str | None = None
 
     def _stage_models(self, stage: str) -> list[str]:
-        if stage == "ir_research":
+        if stage == "v5_extract_evidence_repair":
+            configured = ("gemini-3.5-flash", "gemini-3.5-flash-lite")
+        elif stage == "ir_research":
             configured = (
                 os.getenv("GEMINI_IR_MODEL", "gemini-3.6-flash"),
                 os.getenv("GEMINI_IR_FALLBACK_MODEL", "gemini-3.5-flash"),
@@ -279,7 +288,7 @@ class GeminiV2Client(GeminiClient):
                     continue
                 except requests.RequestException as exc:
                     last_error = exc
-                    LOG.warning("Gemini model=%s stage=%s network failure attempt=%d: %s", model, stage, attempt + 1, exc)
+                    LOG.warning("Gemini model=%s stage=%s network failure attempt=%d: %s", model, stage, attempt + 1, type(exc).__name__)
                     if attempt + 1 < attempts:
                         time.sleep(backoff * (2 ** attempt))
                     continue

@@ -8,7 +8,7 @@ from .models import Evidence
 
 # V5 replaces lossy evidence sampling with full-coverage unit extraction and a
 # compact research packet. Pre-V5 checkpoints must never cross this boundary.
-CHECKPOINT_PIPELINE_VERSION = 5
+CHECKPOINT_PIPELINE_VERSION = 6
 
 
 def _stable_json(value: Any) -> str:

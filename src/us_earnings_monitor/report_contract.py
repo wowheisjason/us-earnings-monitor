@@ -212,19 +212,19 @@ def customer_readthrough_errors(report: str, facts: dict | None) -> list[str]:
 def density_errors(report: str) -> list[str]:
     sections = _section_lines(report)
     errors: list[str] = []
-    if len(report or "") > 2600:
+    if len(report or "") > 1800:
         errors.append(f"report_too_long:{len(report)}")
     summary_bullets = sum(1 for line in sections[_REQUIRED_HEADINGS[0]] if line.startswith("•"))
-    if summary_bullets > 3:
+    if summary_bullets > 2:
         errors.append(f"summary_too_many_bullets:{summary_bullets}")
     data_lines = len(sections[_REQUIRED_HEADINGS[1]])
-    if data_lines > 12:
+    if data_lines > 7:
         errors.append(f"hard_data_section_too_dense:{data_lines}")
     data_bullets = sum(1 for line in sections[_REQUIRED_HEADINGS[1]] if line.startswith("•"))
-    if data_bullets > 7:
+    if data_bullets > 5:
         errors.append(f"hard_data_too_many_clusters:{data_bullets}")
     risk_bullets = sum(1 for line in sections[_REQUIRED_HEADINGS[3]] if line.startswith("•"))
-    if risk_bullets > 4:
+    if risk_bullets > 3:
         errors.append(f"risk_too_many_bullets:{risk_bullets}")
     return errors
 
@@ -239,7 +239,7 @@ def _decimal_key(value: str) -> str:
 
 
 def _rate_tokens(value: object) -> set[tuple[str, str]]:
-    text = json.dumps(value, ensure_ascii=False, default=str) if not isinstance(value, str) else value
+    text = unicodedata.normalize("NFKC", json.dumps(value, ensure_ascii=False, default=str) if not isinstance(value, str) else value)
     tokens: set[tuple[str, str]] = set()
     for number, unit in _QUANT_RATE_RE.findall(text):
         tokens.add((_decimal_key(number), "%" if unit == "%" else "bps"))
@@ -250,6 +250,25 @@ def numeric_provenance_errors(report: str, facts: dict | None, market: str | Non
     if not facts:
         return []
     source_rates = _rate_tokens(facts)
+    # Legacy extractors encode disclosed percentage changes as numeric values,
+    # without a percent suffix. Accept only this semantic field, and only when
+    # the supporting source quote contains that exact number. Never infer rates
+    # from current/prior values or from an unrelated numeric field.
+    def walk(value):
+        if isinstance(value, dict):
+            rate = value.get("reported_change")
+            quote = unicodedata.normalize("NFKC", str((value.get("evidence") or {}).get("quote") or ""))
+            if type(rate) in (int, float) and quote:
+                token = _decimal_key(str(abs(rate)))
+                if re.search(r"(?<![\d.])" + re.escape(token) + r"(?![\d.])", quote):
+                    source_rates.add((_decimal_key(str(rate)), "%"))
+                    source_rates.add((token, "%"))
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+    walk(facts)
     errors = [f"unbacked_derived_rate:{token[0]}{token[1]}" for token in sorted(_rate_tokens(report)) if token not in source_rates]
     if (market or "").strip().upper() in {"US", "USA", "美股"} and re.search(r"(?:億|兆|萬|万)美元", report):
         errors.append("us_monetary_unit_conversion_forbidden")
@@ -263,7 +282,20 @@ def strong_claim_errors(report: str, facts: dict | None) -> list[str]:
     facts_norm = _norm(json.dumps(facts, ensure_ascii=False, default=str))
     errors: list[str] = []
     for category, claims in _STRONG_CLAIMS.items():
-        if any(_norm(term) in report_norm for term in claims) and not any(_norm(term) in facts_norm for term in _DIRECT_EVIDENCE[category]):
+        asserted = False
+        for clause in re.split(r"[。；;，,\n]", report_norm):
+            for term in claims:
+                for match in re.finditer(re.escape(_norm(term)), clause):
+                    before = clause[max(0, match.start() - 32):match.start()]
+                    after = clause[match.end():match.end() + 18]
+                    # Naming an unproven hypothesis is not asserting it. Keep
+                    # scope local so a later caveat cannot erase a positive
+                    # claim elsewhere in the same report.
+                    denied = re.search(r"(?:不能|無法|未能|尚未)[^。；，,]{0,12}(?:判定|確認|證實)|沒有證據(?:證實|支持)|缺乏.*證據|是否(?:存在|具備|具有)|not (?:established|proven|confirmed)|cannot (?:establish|confirm)", before)
+                    pending = re.search(r"^(?:仍|尚)?(?:有待|待)驗證|^(?:尚|仍)未(?:證實|確認)", after)
+                    if not denied and not pending:
+                        asserted = True
+        if asserted and not any(_norm(term) in facts_norm for term in _DIRECT_EVIDENCE[category]):
             errors.append(f"strong_claim_without_direct_evidence:{category}")
     return errors
 
@@ -271,6 +303,7 @@ def strong_claim_errors(report: str, facts: dict | None) -> list[str]:
 def report_quality_errors(report: str, facts: dict | None = None, market: str | None = None) -> dict[str, list[str]]:
     return {
         "structure_errors": structure_errors(report),
+        "bullet_format_errors": ["non_bullet_content:" + line[:80] for lines in _section_lines(report).values() for line in lines if not line.startswith("• ")],
         "redundancy_errors": redundancy_errors(report),
         "period_label_errors": period_label_errors(report),
         "interpretation_errors": interpretation_errors(report),
@@ -282,7 +315,7 @@ def report_quality_errors(report: str, facts: dict | None = None, market: str | 
 
 
 V4_OUTPUT_CONTRACT = r"""
-BUY-SIDE TELEGRAM V4.2 OUTPUT CONTRACT — this overrides every older Telegram template above.
+INVESTOR TELEGRAM V4.3 OUTPUT CONTRACT — this overrides every older Telegram template above.
 After the company/period header, output EXACTLY these four top-level sections, in this order:
 1. 💡 投資結論與邏輯:
 2. 📊 關鍵數據與財測:
@@ -297,16 +330,20 @@ Period-label discipline:
 - Repeat the full FY label only when genuinely needed to disambiguate a different fiscal year.
 
 Section rules:
-- Section 1: maximum 3 bullets. State thesis-changing signals and causal mechanisms. Use at most ONE metric/value pair repeated in Section 2.
-- Section 2: 4–7 COMPACT METRIC CLUSTERS, maximum 12 non-empty lines. NO spreadsheet-style `metric | value | comparison` table. Each numeric cluster must follow: evidence/change → investment read-through → limitation/alternative where material. Prioritize: (a) growth/demand, (b) customer/usage quality, (c) margin/unit economics, (d) cash/capex, (e) guidance change. Omit low-value figures such as share count or cash balance unless they materially change the thesis.
+- Section 1: maximum 2 bullets. State thesis-changing signals and causal mechanisms. Use at most ONE metric/value pair repeated in Section 2.
+- Section 2: 3–5 COMPACT METRIC CLUSTERS, maximum 7 non-empty lines. NO spreadsheet-style `metric | value | comparison` table. Each numeric cluster must follow: evidence/change → investment read-through → limitation/alternative where material. Prioritize: (a) growth/demand, (b) customer/usage quality, (c) margin/unit economics, (d) cash/capex, (e) guidance change. Omit low-value figures such as share count or cash balance unless they materially change the thesis.
 - Customer/usage metrics must be triangulated when multiple metrics exist. Combine total customer/base growth with large-customer cohorts and NRR/RPO/usage where available. Explain breadth vs depth, expansion quality and concentration ONLY when supported. If evidence cannot separate new-logo growth from expansion or cannot establish concentration, explicitly say it cannot be determined.
 - Guidance should be compressed into 下季 and 全年 clusters, not one bullet per metric/period.
 - If verified external consensus is absent, include exactly one concise line: 「外部市場共識未納入，本報告不判定 Beat/Miss。」 Never invent consensus, valuation, price targets or multiples.
-- Section 3: combine operating drivers, customer proof and management Q&A. If facts.qa has 2+ material exchanges, select 2–3 DIFFERENT debate topics and show question → management response → investment read-through. If no verified Q&A exists, state that once and do not fabricate it.
-- Section 4: maximum 4 bullets. Preserve contradictions, weak links, downside mechanisms and the evidence that would confirm/falsify the thesis.
+- Section 3: combine operating drivers, customer proof and management Q&A. If facts.qa has 2+ material exchanges, select 1–2 DIFFERENT debate topics and show question → management response → investment read-through. If no verified Q&A exists, state that once and do not fabricate it.
+- Section 4: maximum 3 bullets. Preserve contradictions, weak links, downside mechanisms and the evidence that would confirm/falsify the thesis.
 
 Evidence / efficiency rules:
-- Target 1900–2300 Traditional-Chinese characters; hard ceiling 2600 before sources.
+- Target 900–1500 Traditional-Chinese characters; hard ceiling 1800 before sources. No minimum length: never pad sparse evidence.
+- All content under section headings MUST use flat • bullet points. No paragraphs, tables, nested bullets, greetings, filler or repeated conclusions. Each bullet: concrete evidence/change → why an ordinary investor should care → uncertainty only where material.
+- Prioritize revenue/profit quality, full guidance range and changes, cash flow/capex, demand/management Q&A, material downside and next observable checkpoint. Do not force unavailable metrics into the report.
+- Attribution is mandatory: 管理層表示 for management claims; 判讀 for an inference. No trade instructions or unsupported price predictions.
+- Use neutral language. Do not call growth 爆發, 歷史級 or 最優化. Revenue, margins and guidance alone do not prove structural demand, AI causality, pricing, product mix or utilization; name those drivers only when directly disclosed and otherwise state the uncertainty. Summary bullets should contain NO numbers; keep necessary values in Section 2. Each data bullet should use 顯示/反映/但/仍不能 to connect verified evidence to its limited interpretation.
 - Never calculate or invent a percentage/bps figure absent from structured facts. No mental arithmetic in the report.
 - For US-market reports keep USD monetary units in source-backed $M/$B style; never convert them into 中文 億/兆/萬美元.
 - Claims of pricing power, bottleneck/control-point status, monopoly/dominant share require DIRECT structured evidence. Large orders, high margins, growth or cash flow alone are insufficient.
@@ -316,15 +353,17 @@ Evidence / efficiency rules:
 
 V4_AUDITOR_CONTRACT = r"""
 BUY-SIDE V4.2 AUDITOR ADDENDUM:
-Treat architecture, evidence provenance, KPI interpretation and reading density as publication requirements. Reject: fragmented legacy output; repeated fiscal-year labels; raw KPI tables; a material KPI listed without an investment read-through; multiple customer metrics dumped separately without triangulation; hard-data section >12 content lines or >7 clusters; repeated metric/value pairs; any percentage/bps absent from structured facts; unsupported pricing-power/bottleneck/control-point/dominant-share claims; US USD values converted into 中文億/兆/萬. Absence of external consensus or valuation is NOT an error when no verified source is supplied; inventing either is critical. Prefer deleting low-value metrics and prose over adding more content.
+Treat architecture, evidence provenance, KPI interpretation and reading density as publication requirements. Reject: fragmented legacy output; repeated fiscal-year labels; raw KPI tables; a material KPI listed without an investment read-through; multiple customer metrics dumped separately without triangulation; hard-data section >7 content lines or >5 clusters; repeated metric/value pairs; any percentage/bps absent from structured facts; unsupported pricing-power/bottleneck/control-point/dominant-share claims; US USD values converted into 中文億/兆/萬. Absence of external consensus or valuation is NOT an error when no verified source is supplied; inventing either is critical. Prefer deleting low-value metrics and prose over adding more content.
 """
 
 
 def stage_contract(stage: str) -> str:
     lower = (stage or "").casefold()
+    if lower.startswith("v5_extract"):
+        return ""
     if "auditor" in lower:
         return V4_OUTPUT_CONTRACT + "\n" + V4_AUDITOR_CONTRACT
-    if "analyst" in lower or "revision" in lower:
+    if "analyst" in lower or "revision" in lower or "repair" in lower:
         return V4_OUTPUT_CONTRACT
     return ""
 
