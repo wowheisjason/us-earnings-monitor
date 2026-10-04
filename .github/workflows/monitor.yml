@@ -82,6 +82,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - name: Run monitor
+        id: monitor
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           # Optional. If absent, no OpenAI request is made and no OpenAI cost is incurred.
@@ -114,11 +115,17 @@ jobs:
           # process so completed analysis checkpoints can be persisted. Retry
           # once inside the same runner: the second invocation resumes only the
           # missing stage/chunk instead of re-spending upstream Gemini calls.
+          set -o pipefail
+          exit_code=0
           max_attempts=2
           for attempt in $(seq 1 "$max_attempts"); do
             echo "MONITOR_ATTEMPT=$attempt/$max_attempts"
             : > /tmp/us-monitor-attempt.log
-            python -m us_earnings_monitor "${args[@]}" 2>&1 | tee /tmp/us-monitor-attempt.log
+            if python -m us_earnings_monitor "${args[@]}" 2>&1 | tee /tmp/us-monitor-attempt.log; then
+              exit_code=0
+            else
+              exit_code=$?
+            fi
             if ! grep -q 'analysis_provider_unavailable' /tmp/us-monitor-attempt.log; then
               break
             fi
@@ -127,8 +134,9 @@ jobs:
               sleep 20
             fi
           done
+          exit "$exit_code"
       - name: Persist monitor state
-        if: ${{ !inputs.dry_run && !inputs.preview }}
+        if: ${{ always() && steps.monitor.outcome != 'skipped' && !inputs.dry_run && !inputs.preview }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

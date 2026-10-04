@@ -19,7 +19,7 @@ _SPARSE_CARD_SCHEMA = r"""
       "statement":string,
       "materiality_candidate":1|2|3|4|5,
       "quote":string,
-      "...ONLY_APPLICABLE_FIELDS...":"metric/value/unit/period/comparison_value/comparison_period/reported_change OR guidance low/midpoint/high/previous_* OR Q&A analyst/management_speaker/question_summary/answer_summary/answer_quality OR customer/product/use_case/outcome/quantified_result"
+      "...ONLY_APPLICABLE_FIELDS...":"metric/value/unit/period/comparison_value/comparison_period/reported_change OR guidance guidance_type/value/low/midpoint/high/previous_* OR Q&A analyst/management_speaker/question_summary/answer_summary/answer_quality OR customer/product/use_case/outcome/quantified_result"
     }
   ]
 }
@@ -51,7 +51,8 @@ CRITICAL OUTPUT COMPRESSION RULES:
 Evidence rules:
 1. Use ONLY supplied text/structured facts. Never calculate a missing percentage, growth rate, margin, midpoint or comparison.
 2. Preserve GAAP/non-GAAP/adjusted/company-defined labels and source USD $M/$B units exactly.
-3. Guidance: preserve explicit low/high and prior range when present. Do not manufacture missing endpoints.
+3. Guidance: preserve explicit low/high and prior range when present. Do not manufacture missing endpoints. guidance_type must distinguish range, point, lower_bound and upper_bound. For a point use value only; one endpoint is allowed only if quote explicitly says at least/over/less than/up to.
+3a. Cash/capex: preserve metric_type (operating_cash_flow, standard_fcf, adjusted_fcf, capex, other_adjusted, other) and source-backed reconciliation components for adjusted metrics. Do not invent reconciliation. A missing reconciliation must remain missing and block publication until repaired from official evidence.
 4. Distinguish objective_fact, company_guidance, management_claim and analyst_question. Prepared remarks are not Q&A.
 5. Capture explicit forward drivers: demand/volume/price/mix, usage/adoption, orders/backlog/RPO, customer breadth/depth, margin/unit economics, cash/capex, capacity/supply, product/competition and risk.
 6. Q&A: retain each material debate visible in the unit; answer_quality is direct/partial/evasive/unknown. Do not output procedural operator chatter.
@@ -60,8 +61,8 @@ Evidence rules:
 9. Third-party transcript is qualitative management/Q&A evidence only; do not create primary financial fact cards from it.
 
 Applicable optional fields by card type (OMIT all others):
-- fact/capital/competitive/risk: metric,value,unit,period,comparison_value,comparison_period,reported_change
-- guidance: metric,period,low,midpoint,high,unit,previous_low,previous_midpoint,previous_high,reported_change
+- fact/capital/competitive/risk: metric,value,unit,period,comparison_value,comparison_period,reported_change,metric_type,reconciliation
+- guidance: metric,period,guidance_type,value,low,midpoint,high,unit,previous_low,previous_midpoint,previous_high,reported_change
 - qa: analyst,management_speaker,question_summary,answer_summary,answer_quality
 - customer: customer,product,use_case,outcome,quantified_result
 - management_claim: speaker

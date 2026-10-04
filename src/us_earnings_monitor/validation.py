@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from numbers import Real
+import re
 
 
 def _number(value):
@@ -24,7 +25,12 @@ def validate_extracted_facts(facts: dict) -> list[str]:
         midpoint = item.get("midpoint")
         high = item.get("high")
         if (low is None) != (high is None):
-            issues.append(f"guidance[{index}]_incomplete_range")
+            quote = str((item.get("evidence") or {}).get("quote") or "").casefold()
+            kind = item.get("guidance_type")
+            explicit_lower = kind == "lower_bound" and high is None and re.search(r"\b(?:at least|more than|over|minimum)\b|至少|以上|超過", quote)
+            explicit_upper = kind == "upper_bound" and low is None and re.search(r"\b(?:at most|less than|up to|maximum)\b|至多|以下|低於", quote)
+            if not (explicit_lower or explicit_upper):
+                issues.append(f"guidance[{index}]_incomplete_range")
         low_n, mid_n, high_n = _number(low), _number(midpoint), _number(high)
         if low_n is not None and mid_n is not None and high_n is not None:
             expected = (low_n + high_n) / 2

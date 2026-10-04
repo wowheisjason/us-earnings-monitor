@@ -35,7 +35,9 @@ class StateStore:
 
     def save(self) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
-        self.path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temporary = self.path.with_suffix(self.path.suffix + ".tmp")
+        temporary.write_text(json.dumps(self.data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temporary.replace(self.path)
 
     def seen_document(self, disclosure: Disclosure) -> bool:
         return disclosure.key in self.data["documents"]
