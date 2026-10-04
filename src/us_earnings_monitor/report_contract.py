@@ -282,7 +282,20 @@ def strong_claim_errors(report: str, facts: dict | None) -> list[str]:
     facts_norm = _norm(json.dumps(facts, ensure_ascii=False, default=str))
     errors: list[str] = []
     for category, claims in _STRONG_CLAIMS.items():
-        if any(_norm(term) in report_norm for term in claims) and not any(_norm(term) in facts_norm for term in _DIRECT_EVIDENCE[category]):
+        asserted = False
+        for clause in re.split(r"[。；;，,\n]", report_norm):
+            for term in claims:
+                for match in re.finditer(re.escape(_norm(term)), clause):
+                    before = clause[max(0, match.start() - 32):match.start()]
+                    after = clause[match.end():match.end() + 18]
+                    # Naming an unproven hypothesis is not asserting it. Keep
+                    # scope local so a later caveat cannot erase a positive
+                    # claim elsewhere in the same report.
+                    denied = re.search(r"不能判定|無法(?:判定|確認|證實)|未能證實|尚未證實|沒有證據(?:證實|支持)|缺乏.*證據|是否(?:存在|具備|具有)|not (?:established|proven|confirmed)|cannot (?:establish|confirm)", before)
+                    pending = re.search(r"^(?:仍|尚)?(?:有待|待)驗證|^(?:尚|仍)未(?:證實|確認)", after)
+                    if not denied and not pending:
+                        asserted = True
+        if asserted and not any(_norm(term) in facts_norm for term in _DIRECT_EVIDENCE[category]):
             errors.append(f"strong_claim_without_direct_evidence:{category}")
     return errors
 

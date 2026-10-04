@@ -69,3 +69,12 @@ def test_disclosed_numeric_change_has_provenance_but_computed_rate_does_not():
     assert numeric_provenance_errors("貢獻 93.4%", facts) == ["unbacked_derived_rate:93.4%"]
     assert numeric_provenance_errors("年增 155.1%", {"facts": [{"reported_change": 155.1}]}) == ["unbacked_derived_rate:155.1%"]
     assert numeric_provenance_errors("年減 73.5%", {"quote": "73.5％減"}) == []
+
+
+def test_unproven_hypothesis_is_not_a_positive_strong_claim():
+    from us_earnings_monitor.report_contract import strong_claim_errors
+    facts = {'facts': [{'metric': 'Revenue', 'value': 100}]}
+    assert strong_claim_errors('仍不能判定市場是否存在長期定價權。', facts) == []
+    assert strong_claim_errors('其長期定價權仍有待驗證。', facts) == []
+    assert strong_claim_errors('公司已建立定價權，但長期需求仍待驗證。', facts)
+    assert strong_claim_errors('不能判定是否具有定價權。公司已形成瓶頸供應商地位。', facts)

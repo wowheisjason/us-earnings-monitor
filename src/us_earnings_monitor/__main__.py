@@ -216,6 +216,10 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
         for stage in ("revision_analysis", "revision_audit"):
             checkpoint.get("stages", {}).pop(stage, None)
         checkpoint["revision_contract_version"] = 2
+    if checkpoint.get("audit_gate_version") != 2:
+        for stage in ("audit", "revision_audit"):
+            checkpoint.get("stages", {}).pop(stage, None)
+        checkpoint["audit_gate_version"] = 2
     if invalidated:
         LOG.info("%s analysis checkpoint invalidated because evidence/pipeline changed", event.event_id)
     elif existing_checkpoint:
