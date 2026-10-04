@@ -291,7 +291,7 @@ def strong_claim_errors(report: str, facts: dict | None) -> list[str]:
                     # Naming an unproven hypothesis is not asserting it. Keep
                     # scope local so a later caveat cannot erase a positive
                     # claim elsewhere in the same report.
-                    denied = re.search(r"不能判定|無法(?:判定|確認|證實)|未能證實|尚未證實|沒有證據(?:證實|支持)|缺乏.*證據|是否(?:存在|具備|具有)|not (?:established|proven|confirmed)|cannot (?:establish|confirm)", before)
+                    denied = re.search(r"(?:不能|無法|未能|尚未)[^。；，,]{0,12}(?:判定|確認|證實)|沒有證據(?:證實|支持)|缺乏.*證據|是否(?:存在|具備|具有)|not (?:established|proven|confirmed)|cannot (?:establish|confirm)", before)
                     pending = re.search(r"^(?:仍|尚)?(?:有待|待)驗證|^(?:尚|仍)未(?:證實|確認)", after)
                     if not denied and not pending:
                         asserted = True
