@@ -240,12 +240,44 @@ Units:
                         and other["unit_id"] != unit["unit_id"]
                         and "adjusted free cash flow" in other["text"].casefold()
                     )
-                repair_stage = f"v5_evidence_repair_v2_{index}"
+                repair_stage = f"v5_evidence_repair_v3_{index}"
                 repaired = self._checkpoint_payload(repair_stage)
                 if repaired is None:
-                    repaired = self._extract_batch(event, targeted, "v5_extract_repair")
+                    bad_cards = [card for card in cards if
+                                 quote_validation_issues({"cards": [card]}, evidence)
+                                 or validate_extracted_facts(self._compatibility_views([card]))]
+                    source_keys = {card["document_key"] for card in bad_cards}
+                    repaired = self._json(
+                        "Repair ONLY these invalid financial evidence cards. Return JSON "
+                        "{cards:[...]}, one replacement for EACH supplied card in the SAME order. "
+                        "Preserve unit_id, card_type, topic, fact_class and economic meaning. "
+                        "Use the ORIGINAL official documents below; quote must be a continuous exact substring "
+                        "including footnotes and intervening table columns. Do not concatenate remote rows. "
+                        "Never rescale USD billion/million. Prefer exact table numbers and units, with the "
+                        "correct column period. For adjusted_fcf/other_adjusted populate reconciliation as "
+                        "[{item,value,unit,period,evidence:{document_key,quote}}] using the disclosed "
+                        "operating cash flow, gross PP&E spending, sale proceeds and government incentive "
+                        "rows, including signed values. Net capex is not gross capex. Do not calculate "
+                        "missing percentages. Do not omit any requested card or manufacture missing support. "
+                        "A repaired card's numeric value and reconciliation must be supported by its exact "
+                        "quote(s), never by an unrelated paragraph. No investment analysis or Telegram draft.\n"
+                        + json.dumps({"invalid_cards": bad_cards, "official_documents": [
+                            {"document_key": item.document_key, "text": item.text}
+                            for item in evidence if item.document_key in source_keys
+                        ]}, ensure_ascii=False),
+                        "v5_extract_evidence_repair",
+                    )
+                    if len(repaired.get("cards") or []) != len(bad_cards):
+                        raise RuntimeError("Evidence repair omitted requested cards")
+                    repaired["processed_unit_ids"] = sorted(invalid_units)
+                    repaired["replace_only_invalid_cards"] = True
                     self._persist(repair_stage, repaired)
-                cards = [card for card in cards if card["unit_id"] not in invalid_units]
+                if repaired.get("replace_only_invalid_cards"):
+                    cards = [card for card in cards if not (
+                        quote_validation_issues({"cards": [card]}, evidence)
+                        or validate_extracted_facts(self._compatibility_views([card]))) ]
+                else:
+                    cards = [card for card in cards if card["unit_id"] not in invalid_units]
                 cards.extend(self._decorate_cards(repaired.get("cards") or [], targeted))
                 acknowledged = [uid for uid in acknowledged if uid not in invalid_units]
                 acknowledged.extend(str(uid) for uid in repaired.get("processed_unit_ids", []) if str(uid) in invalid_units)

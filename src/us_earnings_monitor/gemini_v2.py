@@ -89,6 +89,8 @@ def _interaction_grounding(payload: dict[str, Any]) -> dict[str, Any]:
 
 
 def _stage_output_tokens(stage: str) -> int:
+    if stage == "v5_extract_evidence_repair":
+        return int(os.getenv("GEMINI_EVIDENCE_REPAIR_MAX_OUTPUT_TOKENS", "6000"))
     if stage.startswith("v5_extract"):
         return int(os.getenv("GEMINI_EXTRACT_MAX_OUTPUT_TOKENS", "3200"))
     if stage == "v5_analyst":
@@ -131,7 +133,9 @@ class GeminiV2Client(GeminiClient):
         self._search_circuit_reason: str | None = None
 
     def _stage_models(self, stage: str) -> list[str]:
-        if stage == "ir_research":
+        if stage == "v5_extract_evidence_repair":
+            configured = ("gemini-3.5-flash", "gemini-3.5-flash-lite")
+        elif stage == "ir_research":
             configured = (
                 os.getenv("GEMINI_IR_MODEL", "gemini-3.6-flash"),
                 os.getenv("GEMINI_IR_FALLBACK_MODEL", "gemini-3.5-flash"),

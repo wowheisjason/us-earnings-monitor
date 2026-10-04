@@ -208,10 +208,10 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
     fingerprint = evidence_fingerprint(evidence)
     existing_checkpoint = {} if preview else store.get_analysis_checkpoint(event.event_id)
     checkpoint, invalidated = prepare_checkpoint(existing_checkpoint, fingerprint)
-    if checkpoint.get("evidence_repair_policy") != 2:
+    if checkpoint.get("evidence_repair_policy") != 3:
         for stage in ("facts", "analysis", "audit", "revision_analysis", "revision_audit"):
             checkpoint.get("stages", {}).pop(stage, None)
-        checkpoint["evidence_repair_policy"] = 2
+        checkpoint["evidence_repair_policy"] = 3
     if invalidated:
         LOG.info("%s analysis checkpoint invalidated because evidence/pipeline changed", event.event_id)
     elif existing_checkpoint:
