@@ -283,6 +283,46 @@
         "filing_date": "2026-10-02",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0000723125-26-000023:mu-20260903.htm": {
+      "source": "sec_edgar",
+      "source_id": "0000723125-26-000023:mu-20260903.htm",
+      "ticker": "MU",
+      "title": "Micron Technology Form 10-K — 10-K",
+      "published_at": "2026-10-09T12:21:00.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q4",
+      "period_end": "2026-09-03",
+      "document_kind": "other",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000723125",
+        "accession": "0000723125-26-000023",
+        "form": "10-K",
+        "document_type": "10-K",
+        "filing_date": "2026-10-09",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "official_ir:5f02a94bd23974b37dd57341": {
+      "source": "official_ir",
+      "source_id": "5f02a94bd23974b37dd57341",
+      "ticker": "MU",
+      "title": "Press release of Q4 2026, Online link, (opens in new window) Latest quarterly report",
+      "published_at": "2026-10-09T00:00:00-04:00",
+      "url": "http://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results",
+      "document_url": "http://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results",
+      "fiscal_year": 2026,
+      "quarter": "Q4",
+      "period_end": "2026-09-03",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.micron.com/"
+      }
     }
   },
   "events": {
@@ -300,7 +340,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-09T02:28:34-04:00",
+      "updated_at": "2026-10-09T09:15:31-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -665,7 +705,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-09T02:28:34-04:00",
+      "updated_at": "2026-10-09T09:15:31-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -963,7 +1003,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-09T02:28:34-04:00",
+      "updated_at": "2026-10-09T09:15:31-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1100,19 +1140,95 @@
         "next_ir_retry_at": "2026-10-09T10:06:31-04:00"
       },
       "delivery": {}
+    },
+    "MU_2026-09-03_Q4": {
+      "event_id": "MU_2026-09-03_Q4",
+      "ticker": "MU",
+      "fiscal_year": 2026,
+      "quarter": "Q4",
+      "first_seen_at": "2026-10-09T09:15:31-04:00",
+      "period_end": "2026-09-03",
+      "documents": [
+        "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+        "official_ir:5f02a94bd23974b37dd57341"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-09T09:15:31-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.186,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.124,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MU-2026-Q4",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 1.409,
+            "documents": 1,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.089,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MU-2026-Q4"
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-09T09:15:31-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 2,
+          "kinds": {
+            "other": 1,
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1,
+            "official_ir": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": true,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-09T09:15:31-04:00",
+        "official_ir_checked_at": "2026-10-09T09:15:31-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-09T09:30:31-04:00"
+      },
+      "delivery": {}
     }
   },
   "source_checks": {},
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-10-08T22:06:31-04:00",
-      "blocked_until": "2026-10-09T04:06:31-04:00",
+      "last_failure_at": "2026-10-09T09:15:31-04:00",
+      "blocked_until": "2026-10-09T15:15:31-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-08T22:06:31-04:00",
+      "last_success_at": "2026-10-09T09:15:31-04:00",
       "blocked_until": null
     },
     "public_transcript": {
