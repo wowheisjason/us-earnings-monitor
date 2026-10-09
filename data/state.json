@@ -340,7 +340,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-09T12:59:33-04:00",
+      "updated_at": "2026-10-09T14:19:56-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -705,7 +705,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-09T12:59:33-04:00",
+      "updated_at": "2026-10-09T14:19:56-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1003,7 +1003,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-09T12:59:33-04:00",
+      "updated_at": "2026-10-09T14:19:56-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1152,10 +1152,10 @@
         "sec_edgar:0000723125-26-000023:mu-20260903.htm",
         "official_ir:5f02a94bd23974b37dd57341"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-09T12:59:33-04:00",
+      "updated_at": "2026-10-09T14:19:56-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1169,25 +1169,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.175,
+            "seconds": 0.282,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MU-2026-Q4",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.852,
+            "seconds": 1.374,
             "documents": 1,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.03,
+            "seconds": 0.097,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MU-2026-Q4"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-09T12:59:33-04:00",
+        "ir_retrieval_last_at": "2026-10-09T14:19:56-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1209,11 +1209,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-09T12:59:33-04:00",
-        "official_ir_checked_at": "2026-10-09T12:59:33-04:00",
-        "official_ir_check_count": 3,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-09T13:29:33-04:00"
+        "last_collection_check_at": "2026-10-09T14:19:56-04:00",
+        "official_ir_checked_at": "2026-10-09T14:19:56-04:00",
+        "official_ir_check_count": 4,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-10-09T16:19:56-04:00"
       },
       "delivery": {}
     }
@@ -1228,7 +1228,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-09T12:59:33-04:00",
+      "last_success_at": "2026-10-09T14:19:56-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -6697,6 +6697,1700 @@
             "density_errors": [],
             "numeric_provenance_errors": [],
             "strong_claim_errors": []
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "MU_2026-09-03_Q4": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "b9ac99d7868b0ec893f04b44dfadd5617fd0fb19bdd93d17c3349f07f1fe6930",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000723125-26-000023:mu-20260903.htm#u1",
+              "sec_edgar:0000723125-26-000023:mu-20260903.htm#u2"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000723125-26-000023:mu-20260903.htm#u3",
+              "sec_edgar:0000723125-26-000023:mu-20260903.htm#u4"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000723125-26-000023:mu-20260903.htm#u5",
+              "sec_edgar:0000723125-26-000023:mu-20260903.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Aggregate market value of voting and non-voting common equity held by non-affiliates was $368.1 billion as of February 26, 2026.",
+                "materiality_candidate": 3,
+                "quote": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $\n368.1\nbillion based on the closing price reported on the Nasdaq Global Select Market on February 26, 2026.",
+                "metric": "market_value_non_affiliates",
+                "value": 368.1,
+                "unit": "$B",
+                "period": "2026-02-26"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax is 133,188 million USD.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 133,188",
+                "metric": "revenue",
+                "value": "133188",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit is 107,504 million USD.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:GrossProfit, value: 107,504",
+                "metric": "gross_profit",
+                "value": "107504",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income loss is 84,969 million USD.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:NetIncomeLoss, value: 84,969",
+                "metric": "net_income",
+                "value": "84969",
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_4": {
+          "payload": {
+            "cards": [
+              {
+                "card_id": "c1:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                "fact_class": "objective_fact",
+                "materiality_candidate": 5,
+                "metric": "revenue",
+                "position": 0,
+                "provenance": "primary_or_official",
+                "quote": "368.1",
+                "source": "sec_edgar",
+                "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                "topic": "demand_revenue",
+                "unit": "USD",
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "value": "368100000000"
+              },
+              {
+                "card_id": "c2:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                "fact_class": "objective_fact",
+                "materiality_candidate": 5,
+                "metric": "gross_profit",
+                "position": 0,
+                "provenance": "primary_or_official",
+                "quote": "368.1",
+                "source": "sec_edgar",
+                "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                "topic": "margin_unit_economics",
+                "unit": "USD",
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "value": "368100000000"
+              },
+              {
+                "card_id": "c3:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                "fact_class": "objective_fact",
+                "materiality_candidate": 5,
+                "metric": "net_income",
+                "position": 0,
+                "provenance": "primary_or_official",
+                "quote": "368.1",
+                "source": "sec_edgar",
+                "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                "topic": "margin_unit_economics",
+                "unit": "USD",
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "value": "368100000000"
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:5f02a94bd23974b37dd57341#u1",
+              "official_ir:5f02a94bd23974b37dd57341#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 revenue was $54.23 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year",
+                "metric": "Revenue",
+                "value": "54.23",
+                "unit": "billion",
+                "period": "FQ4-26",
+                "comparison_value": "41.46",
+                "comparison_period": "FQ3-26"
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 GAAP gross margin was $47.05 billion, or 86.8% of revenue.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin 47,047 ... Percent of revenue 86.8 %",
+                "metric": "Gross margin",
+                "value": "47047",
+                "unit": "million",
+                "period": "FQ4-26"
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 operating cash flow was $43.97 billion.",
+                "materiality_candidate": 4,
+                "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year",
+                "metric": "Operating cash flow",
+                "value": "43.97",
+                "unit": "billion",
+                "period": "FQ4-26",
+                "comparison_value": "25.39",
+                "comparison_period": "FQ3-26"
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1 2027 revenue to $61.5 billion plus or minus $1.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue $61.5 billion ± $1.5 billion",
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "low": "60.0",
+                "midpoint": "61.5",
+                "high": "63.0",
+                "unit": "billion"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_5": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 GAAP gross margin was $47.05 billion, or 86.8% of revenue.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin\n47,047\n35,056\n5,054\n107,504\n14,873\nPercent of revenue\n86.8\n%",
+                "metric": "Gross margin",
+                "value": "47047",
+                "unit": "million",
+                "period": "FQ4-26",
+                "card_id": "c2:official_ir:5f02a94bd23974b37dd57341#u1",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Gross margin\n47,047\n35,056\n5,054\n107,504\n14,873\nPercent of revenue\n86.8\n%"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:5f02a94bd23974b37dd57341#u1"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:5f02a94bd23974b37dd57341#u3",
+              "official_ir:5f02a94bd23974b37dd57341#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue for the fourth quarter ended September 3, 2026 was $54,229 million.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n54,229",
+                "metric": "Revenue",
+                "value": "54229",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "11315",
+                "comparison_period": "Q4 2025"
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP gross margin for Q4 2026 was $47,047 million.",
+                "materiality_candidate": 4,
+                "quote": "GAAP gross margin\n$\n47,047",
+                "metric": "GAAP gross margin",
+                "value": "47047",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5054",
+                "comparison_period": "Q4 2025"
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted free cash flow for Q4 2026 was $33,199 million, with GAAP operating cash flow of $43,973 million and capital expenditures of $11,110 million.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted free cash flow\n$\n33,199",
+                "metric": "Adjusted free cash flow",
+                "value": "33199",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "803",
+                "comparison_period": "Q4 2025",
+                "metric_type": "adjusted_fcf",
+                "reconciliation": [
+                  {
+                    "item": "GAAP net cash provided by operating activities",
+                    "value": "43973",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "GAAP net cash provided by operating activities\n$\n43,973"
+                    }
+                  },
+                  {
+                    "item": "Expenditures for property, plant, and equipment",
+                    "value": "-11110",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Expenditures for property, plant, and equipment\n(11,110\n)"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from sales of property, plant, and equipment",
+                    "value": "9",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Proceeds from sales of property, plant, and equipment\n9"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from government incentives",
+                    "value": "327",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Proceeds from government incentives\n327"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:5f02a94bd23974b37dd57341#u5",
+              "official_ir:5f02a94bd23974b37dd57341#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1-27 revenue to $61.5 billion plus or minus $1.5 billion.",
+                "materiality_candidate": 4,
+                "quote": "Revenue\n$61.5 billion ± $1.5 billion",
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "low": 60.0,
+                "midpoint": 61.5,
+                "high": 63.0,
+                "unit": "billion"
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1-27 gross margin to approximately 85.95% GAAP and approximately 86.25% non-GAAP.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin\nApproximately 85.95%\n0.30\n%\nA\nApproximately 86.25%",
+                "metric": "Gross margin",
+                "period": "FQ1-27",
+                "guidance_type": "point",
+                "value": 86.25,
+                "unit": "%"
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1-27 diluted earnings per share to $37.84 plus or minus $1.00 GAAP and $38.15 plus or minus $1.00 non-GAAP.",
+                "materiality_candidate": 4,
+                "quote": "Diluted earnings per share\n(1)\n$37.84 ± $1.00\n$0.31\nA, B, C\n$38.15 ± $1.00",
+                "metric": "Diluted earnings per share",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "low": 37.15,
+                "midpoint": 38.15,
+                "high": 39.15,
+                "unit": "$"
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "title": "Micron Technology Form 10-K — 10-K",
+                  "document_kind": "other",
+                  "selection_mode": "full",
+                  "raw_chars": 389182,
+                  "extracted_chars": 24000,
+                  "source_truncated": false,
+                  "raw_paragraphs": 4,
+                  "relevant_paragraphs": 4,
+                  "unit_count": 7,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "title": "Press release of Q4 2026, Online link, (opens in new window) Latest quarterly report",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 20474,
+                  "extracted_chars": 20474,
+                  "source_truncated": false,
+                  "raw_paragraphs": 3,
+                  "relevant_paragraphs": 3,
+                  "unit_count": 6,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u1",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u2",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u3",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u4",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u5",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u6",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "official_ir:5f02a94bd23974b37dd57341#u1",
+                "official_ir:5f02a94bd23974b37dd57341#u2",
+                "official_ir:5f02a94bd23974b37dd57341#u3",
+                "official_ir:5f02a94bd23974b37dd57341#u4",
+                "official_ir:5f02a94bd23974b37dd57341#u5",
+                "official_ir:5f02a94bd23974b37dd57341#u6"
+              ],
+              "expected_unit_count": 13,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u1",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u2",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u3",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u4",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u5",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#u6",
+                "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "official_ir:5f02a94bd23974b37dd57341#u2",
+                "official_ir:5f02a94bd23974b37dd57341#u1",
+                "official_ir:5f02a94bd23974b37dd57341#u3",
+                "official_ir:5f02a94bd23974b37dd57341#u4",
+                "official_ir:5f02a94bd23974b37dd57341#u5",
+                "official_ir:5f02a94bd23974b37dd57341#u6"
+              ],
+              "processed_unit_count": 13,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 13,
+                "processed_unit_count": 13,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 2,
+                "demand_revenue": 4,
+                "guidance": 4,
+                "margin_unit_economics": 4
+              },
+              "selection": {
+                "raw_card_count": 14,
+                "deduped_card_count": 14,
+                "selected_card_count": 14,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 2,
+                  "demand_revenue": 4,
+                  "guidance": 4,
+                  "margin_unit_economics": 4
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:official_ir:5f02a94bd23974b37dd57341#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "FQ4 2026 revenue was $54.23 billion.",
+                  "metric": "Revenue",
+                  "value": "54.23",
+                  "unit": "billion",
+                  "period": "FQ4-26",
+                  "comparison_value": "41.46",
+                  "comparison_period": "FQ3-26",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year"
+                },
+                {
+                  "card_id": "c1:official_ir:5f02a94bd23974b37dd57341#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Revenue for the fourth quarter ended September 3, 2026 was $54,229 million.",
+                  "metric": "Revenue",
+                  "value": "54229",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "comparison_value": "11315",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u3",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue\n$\n54,229"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                  "metric": "revenue",
+                  "value": "368100000000",
+                  "unit": "USD",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000723125-26-000023:mu-20260903.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Aggregate market value of voting and non-voting common equity held by non-affiliates was $368.1 billion as of February 26, 2026.",
+                  "metric": "market_value_non_affiliates",
+                  "value": 368.1,
+                  "unit": "$B",
+                  "period": "2026-02-26",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#u6",
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $\n368.1\nbillion based on the closing price reported on the Nasdaq Global Select Market on February 26, 2026."
+                },
+                {
+                  "card_id": "c4:official_ir:5f02a94bd23974b37dd57341#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Micron guides FQ1 2027 revenue to $61.5 billion plus or minus $1.5 billion.",
+                  "metric": "Revenue",
+                  "unit": "billion",
+                  "period": "FQ1-27",
+                  "low": "60.0",
+                  "midpoint": "61.5",
+                  "high": "63.0",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u2",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue $61.5 billion ± $1.5 billion",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c1:official_ir:5f02a94bd23974b37dd57341#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Micron guides FQ1-27 revenue to $61.5 billion plus or minus $1.5 billion.",
+                  "metric": "Revenue",
+                  "unit": "billion",
+                  "period": "FQ1-27",
+                  "low": 60.0,
+                  "midpoint": 61.5,
+                  "high": 63.0,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue\n$61.5 billion ± $1.5 billion",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:official_ir:5f02a94bd23974b37dd57341#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Micron guides FQ1-27 gross margin to approximately 85.95% GAAP and approximately 86.25% non-GAAP.",
+                  "metric": "Gross margin",
+                  "value": 86.25,
+                  "unit": "%",
+                  "period": "FQ1-27",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Gross margin\nApproximately 85.95%\n0.30\n%\nA\nApproximately 86.25%",
+                  "guidance_type": "point"
+                },
+                {
+                  "card_id": "c3:official_ir:5f02a94bd23974b37dd57341#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Micron guides FQ1-27 diluted earnings per share to $37.84 plus or minus $1.00 GAAP and $38.15 plus or minus $1.00 non-GAAP.",
+                  "metric": "Diluted earnings per share",
+                  "unit": "$",
+                  "period": "FQ1-27",
+                  "low": 37.15,
+                  "midpoint": 38.15,
+                  "high": 39.15,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Diluted earnings per share\n(1)\n$37.84 ± $1.00\n$0.31\nA, B, C\n$38.15 ± $1.00",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                  "metric": "gross_profit",
+                  "value": "368100000000",
+                  "unit": "USD",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                  "metric": "net_income",
+                  "value": "368100000000",
+                  "unit": "USD",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                {
+                  "card_id": "c1:official_ir:5f02a94bd23974b37dd57341#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "FQ4 2026 GAAP gross margin was $47.05 billion, or 86.8% of revenue.",
+                  "metric": "Gross margin",
+                  "value": "47047",
+                  "unit": "million",
+                  "period": "FQ4-26",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Gross margin\n47,047\n35,056\n5,054\n107,504\n14,873\nPercent of revenue\n86.8\n%"
+                },
+                {
+                  "card_id": "c2:official_ir:5f02a94bd23974b37dd57341#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "GAAP gross margin for Q4 2026 was $47,047 million.",
+                  "metric": "GAAP gross margin",
+                  "value": "47047",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "comparison_value": "5054",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u3",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "GAAP gross margin\n$\n47,047"
+                },
+                {
+                  "card_id": "c3:official_ir:5f02a94bd23974b37dd57341#u4",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Adjusted free cash flow for Q4 2026 was $33,199 million, with GAAP operating cash flow of $43,973 million and capital expenditures of $11,110 million.",
+                  "metric": "Adjusted free cash flow",
+                  "value": "33199",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "comparison_value": "803",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u4",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Adjusted free cash flow\n$\n33,199",
+                  "metric_type": "adjusted_fcf",
+                  "reconciliation": [
+                    {
+                      "item": "GAAP net cash provided by operating activities",
+                      "value": "43973",
+                      "unit": "USD_M",
+                      "evidence": {
+                        "quote": "GAAP net cash provided by operating activities\n$\n43,973"
+                      }
+                    },
+                    {
+                      "item": "Expenditures for property, plant, and equipment",
+                      "value": "-11110",
+                      "unit": "USD_M",
+                      "evidence": {
+                        "quote": "Expenditures for property, plant, and equipment\n(11,110\n)"
+                      }
+                    },
+                    {
+                      "item": "Proceeds from sales of property, plant, and equipment",
+                      "value": "9",
+                      "unit": "USD_M",
+                      "evidence": {
+                        "quote": "Proceeds from sales of property, plant, and equipment\n9"
+                      }
+                    },
+                    {
+                      "item": "Proceeds from government incentives",
+                      "value": "327",
+                      "unit": "USD_M",
+                      "evidence": {
+                        "quote": "Proceeds from government incentives\n327"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "card_id": "c3:official_ir:5f02a94bd23974b37dd57341#u1",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "FQ4 2026 operating cash flow was $43.97 billion.",
+                  "metric": "Operating cash flow",
+                  "value": "43.97",
+                  "unit": "billion",
+                  "period": "FQ4-26",
+                  "comparison_value": "25.39",
+                  "comparison_period": "FQ3-26",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year"
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Aggregate market value of voting and non-voting common equity held by non-affiliates was $368.1 billion as of February 26, 2026.",
+                "materiality_candidate": 3,
+                "quote": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $\n368.1\nbillion based on the closing price reported on the Nasdaq Global Select Market on February 26, 2026.",
+                "metric": "market_value_non_affiliates",
+                "value": 368.1,
+                "unit": "$B",
+                "period": "2026-02-26",
+                "card_id": "c1:sec_edgar:0000723125-26-000023:mu-20260903.htm#u6",
+                "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $\n368.1\nbillion based on the closing price reported on the Nasdaq Global Select Market on February 26, 2026."
+                }
+              },
+              {
+                "card_id": "c1:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                "fact_class": "objective_fact",
+                "materiality_candidate": 5,
+                "metric": "revenue",
+                "position": 0,
+                "provenance": "primary_or_official",
+                "quote": "368.1",
+                "source": "sec_edgar",
+                "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                "topic": "demand_revenue",
+                "unit": "USD",
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "value": "368100000000"
+              },
+              {
+                "card_id": "c2:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                "fact_class": "objective_fact",
+                "materiality_candidate": 5,
+                "metric": "gross_profit",
+                "position": 0,
+                "provenance": "primary_or_official",
+                "quote": "368.1",
+                "source": "sec_edgar",
+                "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                "topic": "margin_unit_economics",
+                "unit": "USD",
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "value": "368100000000"
+              },
+              {
+                "card_id": "c3:sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "card_type": "fact",
+                "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                },
+                "fact_class": "objective_fact",
+                "materiality_candidate": 5,
+                "metric": "net_income",
+                "position": 0,
+                "provenance": "primary_or_official",
+                "quote": "368.1",
+                "source": "sec_edgar",
+                "statement": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $ 368.1 billion",
+                "topic": "margin_unit_economics",
+                "unit": "USD",
+                "unit_id": "sec_edgar:0000723125-26-000023:mu-20260903.htm#structured",
+                "value": "368100000000"
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 revenue was $54.23 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year",
+                "metric": "Revenue",
+                "value": "54.23",
+                "unit": "billion",
+                "period": "FQ4-26",
+                "comparison_value": "41.46",
+                "comparison_period": "FQ3-26",
+                "card_id": "c1:official_ir:5f02a94bd23974b37dd57341#u1",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 operating cash flow was $43.97 billion.",
+                "materiality_candidate": 4,
+                "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year",
+                "metric": "Operating cash flow",
+                "value": "43.97",
+                "unit": "billion",
+                "period": "FQ4-26",
+                "comparison_value": "25.39",
+                "comparison_period": "FQ3-26",
+                "card_id": "c3:official_ir:5f02a94bd23974b37dd57341#u1",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1 2027 revenue to $61.5 billion plus or minus $1.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue $61.5 billion ± $1.5 billion",
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "low": "60.0",
+                "midpoint": "61.5",
+                "high": "63.0",
+                "unit": "billion",
+                "card_id": "c4:official_ir:5f02a94bd23974b37dd57341#u2",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue $61.5 billion ± $1.5 billion"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "FQ4 2026 GAAP gross margin was $47.05 billion, or 86.8% of revenue.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin\n47,047\n35,056\n5,054\n107,504\n14,873\nPercent of revenue\n86.8\n%",
+                "metric": "Gross margin",
+                "value": "47047",
+                "unit": "million",
+                "period": "FQ4-26",
+                "card_id": "c1:official_ir:5f02a94bd23974b37dd57341#u1",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Gross margin\n47,047\n35,056\n5,054\n107,504\n14,873\nPercent of revenue\n86.8\n%"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue for the fourth quarter ended September 3, 2026 was $54,229 million.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n54,229",
+                "metric": "Revenue",
+                "value": "54229",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "11315",
+                "comparison_period": "Q4 2025",
+                "card_id": "c1:official_ir:5f02a94bd23974b37dd57341#u3",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue\n$\n54,229"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP gross margin for Q4 2026 was $47,047 million.",
+                "materiality_candidate": 4,
+                "quote": "GAAP gross margin\n$\n47,047",
+                "metric": "GAAP gross margin",
+                "value": "47047",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5054",
+                "comparison_period": "Q4 2025",
+                "card_id": "c2:official_ir:5f02a94bd23974b37dd57341#u3",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "GAAP gross margin\n$\n47,047"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted free cash flow for Q4 2026 was $33,199 million, with GAAP operating cash flow of $43,973 million and capital expenditures of $11,110 million.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted free cash flow\n$\n33,199",
+                "metric": "Adjusted free cash flow",
+                "value": "33199",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "803",
+                "comparison_period": "Q4 2025",
+                "metric_type": "adjusted_fcf",
+                "reconciliation": [
+                  {
+                    "item": "GAAP net cash provided by operating activities",
+                    "value": "43973",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "GAAP net cash provided by operating activities\n$\n43,973"
+                    }
+                  },
+                  {
+                    "item": "Expenditures for property, plant, and equipment",
+                    "value": "-11110",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Expenditures for property, plant, and equipment\n(11,110\n)"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from sales of property, plant, and equipment",
+                    "value": "9",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Proceeds from sales of property, plant, and equipment\n9"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from government incentives",
+                    "value": "327",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Proceeds from government incentives\n327"
+                    }
+                  }
+                ],
+                "card_id": "c3:official_ir:5f02a94bd23974b37dd57341#u4",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Adjusted free cash flow\n$\n33,199"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1-27 revenue to $61.5 billion plus or minus $1.5 billion.",
+                "materiality_candidate": 4,
+                "quote": "Revenue\n$61.5 billion ± $1.5 billion",
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "low": 60.0,
+                "midpoint": 61.5,
+                "high": 63.0,
+                "unit": "billion",
+                "card_id": "c1:official_ir:5f02a94bd23974b37dd57341#u5",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue\n$61.5 billion ± $1.5 billion"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1-27 gross margin to approximately 85.95% GAAP and approximately 86.25% non-GAAP.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin\nApproximately 85.95%\n0.30\n%\nA\nApproximately 86.25%",
+                "metric": "Gross margin",
+                "period": "FQ1-27",
+                "guidance_type": "point",
+                "value": 86.25,
+                "unit": "%",
+                "card_id": "c2:official_ir:5f02a94bd23974b37dd57341#u5",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Gross margin\nApproximately 85.95%\n0.30\n%\nA\nApproximately 86.25%"
+                }
+              },
+              {
+                "unit_id": "official_ir:5f02a94bd23974b37dd57341#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Micron guides FQ1-27 diluted earnings per share to $37.84 plus or minus $1.00 GAAP and $38.15 plus or minus $1.00 non-GAAP.",
+                "materiality_candidate": 4,
+                "quote": "Diluted earnings per share\n(1)\n$37.84 ± $1.00\n$0.31\nA, B, C\n$38.15 ± $1.00",
+                "metric": "Diluted earnings per share",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "low": 37.15,
+                "midpoint": 38.15,
+                "high": 39.15,
+                "unit": "$",
+                "card_id": "c3:official_ir:5f02a94bd23974b37dd57341#u5",
+                "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Diluted earnings per share\n(1)\n$37.84 ± $1.00\n$0.31\nA, B, C\n$38.15 ± $1.00"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "market_value_non_affiliates",
+                "value": 368.1,
+                "unit": "$B",
+                "period": "2026-02-26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "The aggregate market value of the voting and non-voting common equity held by non-affiliates was $\n368.1\nbillion based on the closing price reported on the Nasdaq Global Select Market on February 26, 2026."
+                }
+              },
+              {
+                "metric": "revenue",
+                "value": "368100000000",
+                "unit": "USD",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                }
+              },
+              {
+                "metric": "gross_profit",
+                "value": "368100000000",
+                "unit": "USD",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                }
+              },
+              {
+                "metric": "net_income",
+                "value": "368100000000",
+                "unit": "USD",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000723125-26-000023:mu-20260903.htm",
+                  "quote": "368.1"
+                }
+              },
+              {
+                "metric": "Revenue",
+                "value": "54.23",
+                "unit": "billion",
+                "period": "FQ4-26",
+                "comparison_value": "41.46",
+                "comparison_period": "FQ3-26",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year"
+                }
+              },
+              {
+                "metric": "Operating cash flow",
+                "value": "43.97",
+                "unit": "billion",
+                "period": "FQ4-26",
+                "comparison_value": "25.39",
+                "comparison_period": "FQ3-26",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year"
+                }
+              },
+              {
+                "metric": "Gross margin",
+                "value": "47047",
+                "unit": "million",
+                "period": "FQ4-26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Gross margin\n47,047\n35,056\n5,054\n107,504\n14,873\nPercent of revenue\n86.8\n%"
+                }
+              },
+              {
+                "metric": "Revenue",
+                "value": "54229",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "11315",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue\n$\n54,229"
+                }
+              },
+              {
+                "metric": "GAAP gross margin",
+                "value": "47047",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "5054",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "GAAP gross margin\n$\n47,047"
+                }
+              },
+              {
+                "metric": "Adjusted free cash flow",
+                "value": "33199",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "803",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Adjusted free cash flow\n$\n33,199"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "value": null,
+                "low": "60.0",
+                "midpoint": "61.5",
+                "high": "63.0",
+                "unit": "billion",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue $61.5 billion ± $1.5 billion"
+                }
+              },
+              {
+                "metric": "Revenue",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "value": null,
+                "low": 60.0,
+                "midpoint": 61.5,
+                "high": 63.0,
+                "unit": "billion",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Revenue\n$61.5 billion ± $1.5 billion"
+                }
+              },
+              {
+                "metric": "Gross margin",
+                "period": "FQ1-27",
+                "guidance_type": "point",
+                "value": 86.25,
+                "low": null,
+                "midpoint": null,
+                "high": null,
+                "unit": "%",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Gross margin\nApproximately 85.95%\n0.30\n%\nA\nApproximately 86.25%"
+                }
+              },
+              {
+                "metric": "Diluted earnings per share",
+                "period": "FQ1-27",
+                "guidance_type": "range",
+                "value": null,
+                "low": 37.15,
+                "midpoint": 38.15,
+                "high": 39.15,
+                "unit": "$",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Diluted earnings per share\n(1)\n$37.84 ± $1.00\n$0.31\nA, B, C\n$38.15 ± $1.00"
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Operating cash flow",
+                "value": "43.97",
+                "unit": "billion",
+                "period": "FQ4-26",
+                "comparison_value": "25.39",
+                "comparison_period": "FQ3-26",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Operating cash flow of $43.97 billion versus $25.39 billion for the prior quarter and $5.73 billion for the same period last year"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Adjusted free cash flow",
+                "value": "33199",
+                "unit": "USD_M",
+                "period": "Q4 2026",
+                "comparison_value": "803",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:5f02a94bd23974b37dd57341",
+                  "quote": "Adjusted free cash flow\n$\n33,199"
+                },
+                "metric_type": "adjusted_fcf",
+                "reconciliation": [
+                  {
+                    "item": "GAAP net cash provided by operating activities",
+                    "value": "43973",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "GAAP net cash provided by operating activities\n$\n43,973"
+                    }
+                  },
+                  {
+                    "item": "Expenditures for property, plant, and equipment",
+                    "value": "-11110",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Expenditures for property, plant, and equipment\n(11,110\n)"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from sales of property, plant, and equipment",
+                    "value": "9",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Proceeds from sales of property, plant, and equipment\n9"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from government incentives",
+                    "value": "327",
+                    "unit": "USD_M",
+                    "evidence": {
+                      "quote": "Proceeds from government incentives\n327"
+                    }
+                  }
+                ]
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [
+              "facts.cards[7]:quote_not_found_in_official_ir:5f02a94bd23974b37dd57341"
+            ],
+            "extraction_batch_count": 7,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.282,
+                  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MU-2026-Q4",
+                  "reason": "no_eligible_official_documents"
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 1.374,
+                  "documents": 1,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.097,
+                  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MU-2026-Q4"
+                }
+              ],
+              "ir_retrieval_last_at": "2026-10-09T14:19:56-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 2,
+                "kinds": {
+                  "other": 1,
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1,
+                  "official_ir": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": true,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-10-09T14:19:56-04:00",
+              "official_ir_checked_at": "2026-10-09T14:19:56-04:00",
+              "official_ir_check_count": 4,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-10-09T16:19:56-04:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "FQ4 2026 營收與毛利率顯著擴張，帶動自由現金流暴增",
+                "why_it_matters": "反映本季基本面強勁成長，營運規模與獲利能力同步提升。",
+                "fact_basis": [
+                  "FQ4 2026 revenue of $54.23 billion versus $41.46 billion for the prior quarter and $11.32 billion for the same period last year",
+                  "FQ4 2026 GAAP gross margin was $47.05 billion, or 86.8% of revenue",
+                  "Adjusted free cash flow for Q4 2026 was $33,199 million"
+                ],
+                "inference": "營收與毛利率的大幅增長直接推升自由現金流至 $33,199 million，顯示短期獲利能力極佳。",
+                "confidence": "high"
+              },
+              {
+                "signal": "FQ1 2027 財測延續成長動能",
+                "why_it_matters": "預期下一季營收與每股盈餘將持續擴張，支撐短期盈餘能力。",
+                "fact_basis": [
+                  "Micron guides FQ1 2027 revenue to $61.5 billion plus or minus $1.5 billion",
+                  "Micron guides FQ1-27 diluted earnings per share to $38.15 plus or minus $1.00 non-GAAP"
+                ],
+                "inference": "管理層給出的 FQ1-27 財測顯示動能延續，但仍需觀察後續實際出貨與價格走勢是否能完全兌現。",
+                "confidence": "medium"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "FQ4 2026 營收達到 $54.23 billion，較前一季的 $41.46 billion 明顯成長。"
+              ],
+              "margin_unit_economics": [
+                "FQ4 2026 GAAP 毛利率為 86.8%，金額達 $47,047 million，顯示單位獲利結構維持在高檔。"
+              ],
+              "cash_capital_intensity": [
+                "FQ4 2026 營運現金流為 $43.97 billion，資本支出為 $11,110 million，調整後自由現金流達 $33,199 million。"
+              ]
+            },
+            "guidance_assessment": [
+              "Micron 預估 FQ1 2027 營收為 $61.5 billion ± $1.5 billion（介於 $60.0 billion 至 $63.0 billion 之間）。",
+              "Micron 預估 FQ1-27 GAAP 毛利率約 85.95%，non-GAAP 毛利率約 86.25%。",
+              "Micron 預估 FQ1-27 稀釋每股盈餘為 GAAP $37.84 ± $1.00，non-GAAP $38.15 ± $1.00。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "現有證據僅包含整體營收與財務數據，缺乏細部的客戶數量、大型客戶組合或 NRR/RPO 數據，因此無法判定客戶廣度、深度與集中度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據僅支持營收與毛利率數字，尚無直接結構性證據佐證定價權、控制點或轉換成本的改變。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "高毛利率與現金流能否持續仍取決於未來終端需求與產業供需變化，單季表現無法直接推論為長期結構性優勢。"
+            ],
+            "watch_items": [
+              "追蹤 FQ1 2027 實際營收與毛利率是否落於財測區間內。",
+              "觀察資本支出與現金流的後續變化趨勢。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "MU FY2026 Q4\n\n💡 投資結論與邏輯:\n• FQ4 2026 營收與毛利率顯著擴張，帶動自由現金流暴增，顯示短期基本面維持強勁。\n• 管理層給出之 FQ1 2027 財測延續成長動能，惟結構性需求與定價能力仍待後續數據驗證。\n\n📊 關鍵數據與財測:\n• 營收與獲利: FQ4 2026 營收達 $54.23B (對比前季 $41.46B)，GAAP 毛利率達 86.8% ($47,047M)。\n• 現金流: FQ4 2026 營運現金流為 $43.97B，資本支出 $11,110M，調整後自由現金流達 $33,199M。\n• 下季財測 (FQ1 2027): 預估營收 $61.5B ± $1.5B，non-GAAP 毛利率約 86.25%，non-GAAP 每股盈餘 $38.15 ± $1.00。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能: 本季營收與獲利大幅成長反映當期出貨規模擴大，但缺乏詳細的客戶集中度與訂單細節。\n• 法說 Q&A: 研究包未提供逐字稿 Q&A 紀錄，故無法評估管理層對細部質疑之回應品質。\n\n⚠️ 風險、反證與待驗證:\n• 單季高毛利率與強勁現金流無法直接證實長期定價權或護城河，須防範產業週期波動風險。\n• 待驗證指標包含 FQ1 2027 財測達成率及後續資本配置與產能投資效益。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Quote validation issue: facts.cards[7]:quote_not_found_in_official_ir:5f02a94bd23974b37dd57341",
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "MU FY2026 Q4\n\n💡 投資結論與邏輯:\n• 當季營收與毛利率顯著擴張，帶動自由現金流大幅增長，反映短期基本面強勁。\n• 下季財測延續成長動能，惟結構性需求與定價能力仍待後續數據驗證。\n\n📊 關鍵數據與財測:\n• 營收與獲利: FQ4 2026 營收達 $54.23B (對比前季 $41.46B)，GAAP 毛利率達 86.8% ($47,047M)。\n• 現金流: FQ4 2026 營運現金流為 $43.97B，資本支出 $11,110M，調整後自由現金流達 $33,199M。\n• 下季財測 (FQ1 2027): 預估營收 $61.5B ± $1.5B，non-GAAP 毛利率約 86.25%，non-GAAP 每股盈餘 $38.15 ± $1.00。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能: 本季營收與獲利大幅成長反映當期出貨規模擴大，但缺乏詳細的客戶集中度與訂單細節。\n• 法說 Q&A: 研究包未提供逐字稿 Q&A 紀錄，故無法評估管理層對細部質疑之回應品質。\n\n⚠️ 風險、反證與待驗證:\n• 單季高毛利率與強勁現金流無法直接證實長期定價權或護城河，須防範產業週期波動風險。\n• 待驗證指標包含 FQ1 2027 財測達成率及後續資本配置與產能投資效益。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:營收與獲利: FQ4 2026 營收達 $54.23B (對比前季 $41.46B)，GAAP 毛利率達 86.8% ($47,047M)。",
+              "kpi_without_readthrough:現金流: FQ4 2026 營運現金流為 $43.97B，資本支出 $11,110M，調整後自由現金流達 $33,199M。",
+              "kpi_without_readthrough:下季財測 (FQ1 2027): 預估營收 $61.5B ± $1.5B，non-GAAP 毛利率約 86.25%，non-GAAP 每股盈餘 $38.15 ± $1.00。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "當季營收與毛利率顯著擴張，帶動自由現金流大幅增長",
+                "why_it_matters": "反映本季營運規模放大，短期現金產生能力顯著提升。",
+                "fact_basis": [
+                  "FQ4 2026 revenue was $54.23 billion",
+                  "FQ4 2026 GAAP gross margin was $47.05 billion, or 86.8% of revenue",
+                  "Adjusted free cash flow for Q4 2026 was $33,199 million"
+                ],
+                "inference": "營收與毛利率的大幅成長直接推升自由現金流至 $33,199M，顯示短期獲利能力極佳。",
+                "confidence": "high"
+              },
+              {
+                "signal": "下季財測延續成長動能",
+                "why_it_matters": "預期下一季營收與每股盈餘將持續擴張，支撐短期盈餘能力。",
+                "fact_basis": [
+                  "Micron guides FQ1 2027 revenue to $61.5 billion plus or minus $1.5 billion",
+                  "Micron guides FQ1-27 diluted earnings per share to $37.84 plus or minus $1.00 GAAP and $38.15 plus or minus $1.00 non-GAAP"
+                ],
+                "inference": "管理層給出的財測顯示動能延續，但仍需觀察後續實際出貨與價格走勢是否能完全兌現。",
+                "confidence": "medium"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "FQ4 2026 營收達到 $54.23B，較前一季的 $41.46B 明顯成長。"
+              ],
+              "margin_unit_economics": [
+                "FQ4 2026 GAAP 毛利率為 86.8%，金額達 $47,047M，顯示單位獲利結構維持在高檔。"
+              ],
+              "cash_capital_intensity": [
+                "FQ4 2026 營運現金流為 $43.97B，資本支出 $11,110M，調整後自由現金流達 $33,199M。"
+              ]
+            },
+            "guidance_assessment": [
+              "Micron 預估 FQ1 2027 營收為 $61.5B ± $1.5B（介於 $60.0B 至 $63.0B 之間）。",
+              "Micron 預估 FQ1-27 GAAP 毛利率約 85.95%，non-GAAP 毛利率約 86.25%。",
+              "Micron 預估 FQ1-27 稀釋每股盈餘為 GAAP $37.84 ± $1.00，non-GAAP $38.15 ± $1.00。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "現有證據僅包含整體營收與財務數據，缺乏細部的客戶數量、大型客戶組合或 NRR/RPO 數據，因此無法判定客戶廣度、深度與集中度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據僅支持營收與毛利率數字，尚無直接結構性證據佐證定價權、控制點或轉換成本的改變。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "高毛利率與現金流能否持續仍取決於未來終端需求與產業供需變化，單季表現無法直接推論為長期結構性優勢。"
+            ],
+            "watch_items": [
+              "追蹤 FQ1 2027 實際營收與毛利率是否落於財測區間內。",
+              "觀察資本支出與現金流的後續變化趨勢。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "MU FY2026 Q4\n\n💡 投資結論與邏輯:\n• 當季營收與毛利率顯著擴張，帶動自由現金流大幅增長，反映短期基本面強勁。\n• 下季財測延續成長動能，惟結構性需求與定價能力仍待後續數據驗證。\n\n📊 關鍵數據與財測:\n• 營收與獲利: FQ4 2026 營收達 $54.23B (對比前季 $41.46B)，GAAP 毛利率達 86.8% ($47,047M)。\n• 現金流: FQ4 2026 營運現金流為 $43.97B，資本支出 $11,110M，調整後自由現金流達 $33,199M。\n• 下季財測 (FQ1 2027): 預估營收 $61.5B ± $1.5B，non-GAAP 毛利率約 86.25%，non-GAAP 每股盈餘 $38.15 ± $1.00。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能: 本季營收與獲利大幅成長反映當期出貨規模擴大，但缺乏詳細的客戶集中度與訂單細節。\n• 法說 Q&A: 研究包未提供逐字稿 Q&A 紀錄，故無法評估管理層對細部質疑之回應品質。\n\n⚠️ 風險、反證與待驗證:\n• 單季高毛利率與強勁現金流無法直接證實長期定價權或護城河，須防範產業週期波動風險。\n• 待驗證指標包含 FQ1 2027 財測達成率及後續資本配置與產能投資效益。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "MU FY2026 Q4\n\n💡 投資結論與邏輯:\n• 當季營收與毛利率顯著擴張，帶動自由現金流大幅增長，反映短期基本面強勁。\n• 下季財測延續成長動能，惟結構性需求與定價能力仍待後續數據驗證。\n\n📊 關鍵數據與財測:\n• 營收與獲利: 本季營收達 $54.23B (較前季 $41.46B 增長) → 顯示短期獲利規模放大，但客戶集中度與訂單結構仍不明確。\n• 毛利表現: GAAP 毛利率達 86.8% (金額為 $47,047M) → 顯示單位獲利結構維持在高檔，但仍受制於未來供需波動。\n• 現金流量: 營運現金流達 $43.97B，資本支出為 $11,110M，調整後自由現金流達 $33,199M → 反映短期強勁的現金產生能力。\n• 下季指引: 預估營收為 $61.5B ± $1.5B，GAAP 毛利率約 85.95%，non-GAAP 毛利率約 86.25%，non-GAAP 稀釋每股盈餘為 $38.15 ± $1.00 → 預期動能延續，但面臨高基期考驗。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能: 本季營收與獲利成長反映當期出貨規模擴大，然而因缺乏細部的客戶數量、大型客戶組合或 NRR/RPO 數據，判讀上仍無法判定客戶廣度、深度與集中度。\n• 法說 Q&A: 官方文件未提供逐字稿 Q&A 紀錄，故無法評估管理層對細部質疑之回應品質。\n\n⚠️ 風險、反證與待驗證:\n• 單季高毛利率與強勁現金流無法直接證實長期定價權或護城河，須防範產業週期波動風險。\n• 待驗證指標包含下季財測達成率及後續資本配置與產能投資效益。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
           }
         }
       },
