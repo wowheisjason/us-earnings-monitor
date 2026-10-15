@@ -373,8 +373,7 @@ def main() -> int:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     now = datetime.fromisoformat(args.at).astimezone(ET) if args.at else datetime.now(ET)
     if not is_likely_trading_day(now):
-        LOG.info("Not a weekday in America/New_York; no discovery run.")
-        return 0
+        LOG.info("Weekend heartbeat: checking for late filings and IR/transcript enrichment.")
 
     companies, patterns = load_watchlist(args.watchlist)
     if args.tickers:
