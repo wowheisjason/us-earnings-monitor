@@ -9,6 +9,7 @@ from .evidence_architecture import quote_validation_issues
 from .investor_analysis import InvestorFrameworkGeminiClient
 from .report_contract import stage_contract, harden_audit_with_report_quality
 from .models import EarningsEvent, Evidence
+from .research_intelligence import RESEARCH_EXTRACTION, RESEARCH_PLAYBOOK, RESEARCH_AUDIT_CHECKLIST
 from .research_packet import build_research_packet
 from .research_units import batch_units, coverage_result, unitize_evidence
 from .validation import validate_extracted_facts
@@ -126,6 +127,7 @@ Evidence rules:
 9. quote must be a SHORT exact source substring, not a paraphrase. The program validates it deterministically.
 10. Third-party transcript evidence, if source metadata says so, is qualitative management/Q&A evidence only; do not treat its financial numbers as primary facts.
 
+{RESEARCH_EXTRACTION}
 Expected unit ids: {json.dumps(expected, ensure_ascii=False)}
 Schema:
 {_CARD_SCHEMA}
@@ -315,6 +317,8 @@ Units:
 
 核心目標：找出本季資訊如何改變未來 1–3 年 earnings power，以及哪些部分仍未被證明。
 
+{RESEARCH_PLAYBOOK}
+
 分析順序：
 1. WHAT CHANGED：只使用 explicit current vs prior period / prior guidance。沒有 prior evidence 就不要自行宣稱加速、惡化或 management tone 改變。
 2. EARNINGS POWER BRIDGE：
@@ -366,6 +370,7 @@ Research Packet:
 你只需審核 Research Packet 與 analyst output；不要重新閱讀長篇原始 transcript。原始 corpus 已由 deterministic coverage manifest 保證逐 unit 處理，quote validation 由程式完成。
 
 Publication blockers：
+{RESEARCH_AUDIT_CHECKLIST}
 - Research Packet coverage.complete 不是 true 或 coverage_ratio < 1.0。
 - unsupported number / unsupported causal claim / management claim 被寫成 objective fact。
 - 遺漏 packet 中 materiality 4–5 的 thesis-changing evidence，導致投資結論方向失真。
