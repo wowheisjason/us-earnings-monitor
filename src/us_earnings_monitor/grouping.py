@@ -180,6 +180,9 @@ def repair_incomplete_event_period(event: EarningsEvent, documents: list[Disclos
             # Only the reported-results heading in the matching primary document,
             # not an arbitrary period mentioned later in outlook or comparison.
             header = re.sub(r"\s+", " ", unicodedata.normalize("NFKC", item.text[:2500])).strip()
+            # Issuers use FOURTH-QUARTER / FULL-YEAR headings. Normalize
+            # intra-word dashes only; keep reported-vs-outlook checks intact.
+            header = re.sub(r"(?<=[A-Za-z])[-\u2011\u2013](?=[A-Za-z])", " ", header)
             for pattern in patterns:
                 for match in re.finditer(pattern, header, re.I):
                     context = header[max(0, match.start() - 100):match.end()]

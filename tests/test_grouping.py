@@ -139,3 +139,13 @@ def test_corroborated_header_cannot_change_published_receipt():
     event.delivery = {"status": "accepted", "message_id": 123}
     assert not repair_incomplete_event_period(event, [doc], [_reported_mu(doc)])
     assert event.fiscal_year == 2027 and event.delivery["message_id"] == 123
+
+
+def test_actual_sec_hyphenated_results_heading_beats_forward_year_subtitle():
+    from us_earnings_monitor.grouping import repair_incomplete_event_period
+    event, doc = _legacy_mu()
+    text = ('MICRON TECHNOLOGY, INC. REPORTS RECORD FISCAL\n'
+            'FOURTH-QUARTER AND FULL-YEAR 2026 RESULTS\n'
+            'AI-driven demand and strong operational execution position Micron for a record fiscal 2027')
+    assert repair_incomplete_event_period(event, [doc], [_reported_mu(doc, text)])
+    assert (event.fiscal_year, event.quarter) == (2026, 'Q4')

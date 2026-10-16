@@ -426,6 +426,8 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
                 {key: len(value) for key, value in rejection["audit_issues"].items() if value})
     failures = (int(recovery.get("failures", 0)) if recovery.get("key") == recovery_key else 0) + 1
     event.collection_status["analysis_recovery"] = {"key": recovery_key, "failures": failures}
+    event.collection_status["last_rejected_analysis"]["corrected_draft"] = draft[:REPORT_MAX_CHARS]
+    event.collection_status["last_rejected_analysis"]["quality_issues"] = {key: value for key, value in audit.items() if key.endswith("_errors") and value}
     if not preview and failures == 1:
         # One fresh extraction is allowed after substantive repair fails. Never
         # replay a rejected checkpoint indefinitely or relax numeric safeguards.
