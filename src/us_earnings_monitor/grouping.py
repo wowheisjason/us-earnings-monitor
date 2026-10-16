@@ -18,12 +18,12 @@ _RESULT_ANCHORS = (
 
 def classify_document(title: str) -> str:
     lower = title.casefold()
+    if "prepared remarks" in lower:
+        return "prepared_remarks"
     if "q&a" in lower or "質疑" in title:
         return "qa"
     if "transcript" in lower or "逐語" in title:
         return "transcript"
-    if "prepared remarks" in lower:
-        return "prepared_remarks"
     if "financial tables" in lower:
         return "financial_tables"
     if "performance review" in lower:

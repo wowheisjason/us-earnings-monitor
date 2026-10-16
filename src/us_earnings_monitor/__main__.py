@@ -45,7 +45,7 @@ def _format_report_html(text: str) -> str:
             + "</pre>\n\n🏢 業務部門:" + html.escape(after))
 
 
-def _compose_report(text: str, documents: list[Disclosure], publication_mode: str = "integrated_ir") -> str:
+def _compose_report(text: str, documents: list[Disclosure], publication_mode: str = "integrated_ir", *, transcript_pending: bool = False) -> str:
     source_lines: list[str] = []
     seen: set[tuple[str, str]] = set()
     for item in documents:
@@ -59,7 +59,9 @@ def _compose_report(text: str, documents: list[Disclosure], publication_mode: st
     sources = "\n\n資料來源:\n" + "\n".join(source_lines)
     body = text.strip()
     if publication_mode == "sec_only_v1_ir_pending":
-        body = "⚠️ SEC 快報｜官方 IR／逐字稿仍在蒐集中，收到後將補發完整 v2。\n\n" + body
+        body = "⚠️ SEC 快報｜官方 IR／逐字稿仍在蒐集中，僅在新增重大證據時更新。\n\n" + body
+    if transcript_pending and publication_mode != "sec_only_v1_ir_pending":
+        body = "⚠️ 本版依已驗證資料發布；完整逐字稿／Q&A 尚未取得，僅在新增重大證據時更新。\n\n" + body
     rendered = _format_report_html(body) + sources
     # Never silently delete the audited risk section or break an HTML entity.
     # Conservative UTF-16 bound also accounts for emoji occupying two units.
@@ -165,8 +167,9 @@ def ingest(disclosures: list[Disclosure], store: StateStore, patterns: list[str]
     changed: dict[str, EarningsEvent] = {}
     ignored = 0
     for disclosure in disclosures:
-        disclosure.document_kind = classify_document(disclosure.title)
-        if not disclosure.ticker or not title_is_earnings(disclosure.title, patterns):
+        if disclosure.document_kind != "media_qa_report":
+            disclosure.document_kind = classify_document(disclosure.title)
+        if not disclosure.ticker or (disclosure.document_kind != "media_qa_report" and not title_is_earnings(disclosure.title, patterns)):
             ignored += 1
             continue
         if store.seen_document(disclosure):
@@ -204,7 +207,30 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
         LOG.info("%s publication gate pending: %s", event.event_id, reasons)
         return "collection_pending"
 
-    evidence = [EvidenceExtractor().fetch(doc) for doc in docs]
+    evidence = []
+    usable_docs = []
+    unavailable = []
+    for doc in docs:
+        try:
+            item = EvidenceExtractor().fetch(doc)
+            if not item.text.strip() and not item.structured_facts:
+                raise ValueError("empty evidence")
+            evidence.append(item)
+            usable_docs.append(doc)
+        except Exception as exc:  # Optional source outage must not block verified primary results.
+            unavailable.append({"document_key": doc.key, "reason": type(exc).__name__})
+            LOG.warning("%s unavailable evidence %s: %s", event.event_id, doc.key, type(exc).__name__)
+    if not any(doc.document_kind in {"financial_results", "financial_tables", "performance_review"}
+               and doc.source in {"sec_edgar", "official_ir", "gemini_grounded_ir", "openai_web_ir"}
+               for doc in usable_docs):
+        return "collection_pending"
+    if unavailable:
+        event.collection_status["unavailable_evidence"] = unavailable
+        update_collection_status(event, usable_docs, now, official_ir_checked=False)
+        _, _, manifest = publication_gate(event, usable_docs, now)
+    else:
+        event.collection_status.pop("unavailable_evidence", None)
+
     fingerprint = evidence_fingerprint(evidence)
     existing_checkpoint = {} if preview else store.get_analysis_checkpoint(event.event_id)
     checkpoint, invalidated = prepare_checkpoint(existing_checkpoint, fingerprint)
@@ -220,6 +246,11 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
         for stage in ("audit", "revision_audit"):
             checkpoint.get("stages", {}).pop(stage, None)
         checkpoint["audit_gate_version"] = 3
+    recovery = event.collection_status.get("analysis_recovery", {})
+    recovery_key = f"{checkpoint.get('pipeline_version')}:{fingerprint}"
+    if recovery.get("key") == recovery_key and recovery.get("failures", 0) >= 2:
+        LOG.warning("%s bounded analysis recovery exhausted; new evidence or operator review required", event.event_id)
+        return "needs_human_review"
     if invalidated:
         LOG.info("%s analysis checkpoint invalidated because evidence/pipeline changed", event.event_id)
     elif existing_checkpoint:
@@ -251,10 +282,20 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
     if deterministic_issues:
         LOG.warning("%s deterministic fact validation issues: %s", event.event_id, deterministic_issues)
 
+    # StateStore appends document keys; distinguish new evidence from the already
+    # assessed corpus so a duplicate artifact cannot borrow old material facts.
+    previous_keys = event.collection_status.get("analyzed_document_keys", event.documents[:event.last_analyzed_document_count])
+    new_keys = [doc.key for doc in usable_docs if doc.key not in previous_keys]
+    assessed_keys = list(dict.fromkeys([*previous_keys, *(doc.key for doc in usable_docs)]))
+    facts["material_update_context"] = {
+        "previous_document_keys": previous_keys,
+        "new_document_keys": new_keys,
+    }
     if (event.status in {"published", "published_sec_pending"}
             and not requires_deterministic_enrichment_followup(event, docs)
-            and not client.material_update(facts, event.last_analyzed_document_count, len(event.documents))):
-        event.last_analyzed_document_count = len(event.documents)
+            and not client.material_update(facts, len(previous_keys), len(previous_keys) + len(new_keys))):
+        event.collection_status["analyzed_document_keys"] = assessed_keys
+        event.last_analyzed_document_count = len(assessed_keys)
         event.updated_at = now_iso(now)
         store.put_event(event)
         if not preview:
@@ -320,7 +361,8 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
             and not deterministic_issues and not report_issues and audit.get("pass") is True):
         text = audit.get("corrected_telegram_draft") or analysis.get("telegram_draft") or ""
         if text:
-            rendered = _compose_report(text, docs, manifest["publication_mode"])
+            rendered = _compose_report(text, usable_docs, manifest["publication_mode"],
+                                       transcript_pending=not manifest["has_transcript_or_qa"])
             if preview:
                 print("PREVIEW_REPORT_BEGIN")
                 print(rendered)
@@ -335,8 +377,10 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
             event.status = ("published_sec_pending"
                             if manifest["publication_mode"] == "sec_only_v1_ir_pending"
                             else "published")
+            event.collection_status.pop("analysis_recovery", None)
             event.report_version += 1
-            event.last_analyzed_document_count = len(event.documents)
+            event.collection_status["analyzed_document_keys"] = assessed_keys
+            event.last_analyzed_document_count = len(assessed_keys)
             event.updated_at = now_iso(now)
             store.put_event(event)
             if not preview:
@@ -344,6 +388,12 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
                 store.save()
             return "preview_published" if preview else "published"
 
+    failures = (int(recovery.get("failures", 0)) if recovery.get("key") == recovery_key else 0) + 1
+    event.collection_status["analysis_recovery"] = {"key": recovery_key, "failures": failures}
+    if not preview and failures == 1:
+        # One fresh extraction is allowed after substantive repair fails. Never
+        # replay a rejected checkpoint indefinitely or relax numeric safeguards.
+        store.clear_analysis_checkpoint(event.event_id)
     event.status = "needs_human_review"
     event.updated_at = now_iso(now)
     store.put_event(event)
@@ -402,6 +452,7 @@ def main() -> int:
         ir_documents: list[Disclosure] = []
 
         for active in active_ir_events:
+            update_collection_status(active, _event_documents(active, store), now, official_ir_checked=False)
             if not should_attempt_ir(active, now):
                 continue
             company = company_by_ticker.get(active.ticker)

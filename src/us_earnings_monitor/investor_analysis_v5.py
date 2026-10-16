@@ -13,6 +13,7 @@ from .research_intelligence import RESEARCH_EXTRACTION, RESEARCH_PLAYBOOK, RESEA
 from .research_packet import build_research_packet
 from .research_units import batch_units, coverage_result, unitize_evidence
 from .validation import validate_extracted_facts
+from .sources.credible_media import POLICY as MEDIA_POLICY
 
 _CARD_SCHEMA = r"""
 {
@@ -70,6 +71,7 @@ class ProductionInvestorV5Client(InvestorFrameworkGeminiClient):
     def _json(self, prompt, stage, tools=None):
         # V5 inherits the provider directly; it must apply the same user contract
         # as V3 instead of silently bypassing production formatting gates.
+        prompt += "\n\n" + MEDIA_POLICY
         contract = stage_contract(stage)
         if contract:
             prompt += "\n\n" + contract
@@ -98,6 +100,12 @@ class ProductionInvestorV5Client(InvestorFrameworkGeminiClient):
                 "title": unit["title"],
                 "source": unit.get("source", ""),
                 "document_kind": unit.get("document_kind", ""),
+                "provenance": unit.get("provenance"),
+                "url": unit.get("url"),
+                "published_at": unit.get("published_at"),
+                "retrieved_at": unit.get("retrieved_at"),
+                "outlet": unit.get("outlet"),
+                "qualitative_only": bool(unit.get("qualitative_only")),
                 "phase": unit.get("phase", ""),
                 "position": unit.get("position", 0),
                 "text": unit.get("text", ""),
@@ -125,7 +133,8 @@ Evidence rules:
 7. Customer proof must separate customer/use case/product/outcome/quantified result; never infer ROI.
 8. materiality_candidate is only a triage hint: 5=could change forward earnings power or thesis; 4=material driver/guidance/Q&A; 3=useful corroboration; 1-2=low-value detail.
 9. quote must be a SHORT exact source substring, not a paraphrase. The program validates it deterministically.
-10. Third-party transcript evidence, if source metadata says so, is qualitative management/Q&A evidence only; do not treat its financial numbers as primary facts.
+10. Credible media reports are secondary qualitative evidence, never complete transcripts. Preserve attribution and label media commentary, analyst questions and model inference separately. Only explicitly attributed verbatim management quotations can support management wording; never invent quotation text or turn commentary/questions into a management answer. No primary financial cards from media.
+11. Third-party transcript evidence, if source metadata says so, is qualitative management/Q&A evidence only; do not treat its financial numbers as primary facts.
 
 {RESEARCH_EXTRACTION}
 Expected unit ids: {json.dumps(expected, ensure_ascii=False)}
@@ -150,9 +159,12 @@ Units:
             card["card_id"] = f"c{index + 1}:{unit_id}"
             card["document_key"] = unit["document_key"]
             card["source"] = unit.get("source", "")
-            card["provenance"] = (
+            for field in ("url", "published_at", "retrieved_at", "outlet"):
+                card[field] = unit.get(field)
+            card["qualitative_only"] = bool(unit.get("qualitative_only"))
+            card["provenance"] = unit.get("provenance") or (
                 "third_party_transcript"
-                if "third_party" in str(unit.get("source", "")).casefold()
+                if unit.get("source") in {"third_party_transcript", "alpha_vantage_transcript"}
                 else "primary_or_official"
             )
             card["position"] = unit.get("position", 0)
@@ -169,9 +181,11 @@ Units:
         cash: list[dict[str, Any]] = []
         qa: list[dict[str, Any]] = []
         for card in cards:
+            if card.get("provenance") == "credible_media_qa":
+                continue  # Secondary numbers/quotes cannot become primary fact or Q&A views.
             evidence = card.get("evidence") or {}
             card_type = str(card.get("card_type") or "")
-            if card_type == "guidance":
+            if card_type == "guidance" and not card.get("qualitative_only"):
                 guidance.append({
                     "metric": card.get("metric"), "period": card.get("period"),
                     "guidance_type": card.get("guidance_type"), "value": card.get("value"),
@@ -187,7 +201,7 @@ Units:
                     "management_speaker": card.get("management_speaker"), "answer_quality": card.get("answer_quality"),
                     "evidence": evidence,
                 })
-            if card.get("metric") not in (None, "") and card_type != "guidance":
+            if card.get("metric") not in (None, "") and card_type != "guidance" and not card.get("qualitative_only"):
                 row = {
                     "metric": card.get("metric"), "value": card.get("value"), "unit": card.get("unit"),
                     "period": card.get("period"), "comparison_value": card.get("comparison_value"),
@@ -332,6 +346,7 @@ Units:
 7. COMPETITIVE / VALUE CHAIN：只有直接 evidence 足以支持 pricing power、control point、share gain/loss、switching cost 或 value capture 時才下結論；高成長本身不是 moat。
 8. SKEPTICAL CHECK：每個重大 thesis 都列 alternative explanation 與可驗證的 disconfirming indicator。
 
+媒體補充必須明示為二手報導；僅具明確發言人且逐字可核對的引言可稱管理層原話，媒體評論、分析師提問與模型推論不得改寫為管理層回答。
 證據層級必須分開：objective fact ≠ management claim ≠ analyst inference。第三方 transcript 如有，只能支撐 qualitative Q&A/management wording；數字需由 primary/official cards 支持。
 
 請輸出：
@@ -372,6 +387,7 @@ Research Packet:
 Publication blockers：
 {RESEARCH_AUDIT_CHECKLIST}
 - Research Packet coverage.complete 不是 true 或 coverage_ratio < 1.0。
+- Media commentary or analyst questions presented as management answers, invented quotations, or secondary media presented as an official/full transcript must fail audit.
 - unsupported number / unsupported causal claim / management claim 被寫成 objective fact。
 - 遺漏 packet 中 materiality 4–5 的 thesis-changing evidence，導致投資結論方向失真。
 - guidance range、GAAP/non-GAAP、FCF/capex taxonomy 錯誤。

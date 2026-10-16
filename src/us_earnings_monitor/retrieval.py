@@ -11,6 +11,7 @@ from .models import Company, Disclosure, EarningsEvent, now_iso
 from .sources import OfficialIrAdapter
 from .sources.alpha_vantage_transcript import AlphaVantageTranscriptAdapter
 from .sources.public_transcript import PublicTranscriptAdapter
+from .sources.credible_media import CredibleMediaAdapter
 
 LOG = logging.getLogger("us_earnings_monitor")
 
@@ -134,8 +135,13 @@ class IrRetrievalRouter:
             )
         if self._has_transcript(documents):
             return documents
-        return self._try_transcript_provider(
+        documents = self._try_transcript_provider(
             "public_transcript", PublicTranscriptAdapter(), company, event, now, documents, attempts
+        )
+        if self._has_transcript(documents):
+            return documents
+        return self._try_transcript_provider(
+            "credible_media", CredibleMediaAdapter(), company, event, now, documents, attempts
         )
 
     def collect(self, company: Company, event: EarningsEvent, now: datetime, *, dry_run: bool = False) -> RetrievalResult:
@@ -209,6 +215,6 @@ class IrRetrievalRouter:
             return RetrievalResult(documents, False, {
                 "research_complete": False,
                 "provider": documents[-1].source if documents else "none",
-                "transcript_status": "FOUND" if documents else "UNKNOWN",
+                "transcript_status": "FOUND" if self._has_transcript(documents) else "UNKNOWN",
                 "attempts": attempts,
             }, attempts)

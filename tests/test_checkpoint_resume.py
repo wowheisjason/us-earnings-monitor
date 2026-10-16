@@ -208,3 +208,65 @@ def test_revision_auditor_failure_resumes_from_revision_only(tmp_path, monkeypat
     assert client.analyze_calls == 1
     assert client.revise_calls == 1
     assert client.audit_calls == 3
+
+
+def test_optional_transcript_outage_publishes_primary_then_retries_recovered_source(tmp_path, monkeypatch):
+    store, event = build_store(tmp_path)
+    transcript = Disclosure("official_ir", "call", "SNOW", "Transcript", event.first_seen_at,
+                            "https://issuer.example/call", document_kind="transcript")
+    store.add_document(transcript)
+    event.documents.append(transcript.key)
+    event.collection_status["transcript_status"] = "FOUND"
+    class Extractor(FakeExtractor):
+        fail = True
+        def fetch(self, document):
+            if document.key == transcript.key and self.fail:
+                raise RuntimeError("source unavailable")
+            return super().fetch(document)
+    class Client(AuditFailsOnceClient):
+        def audit(self, *args):
+            return dict(PASS_AUDIT)
+        def material_update(self, facts, previous_count, current_count):
+            self.context = facts["material_update_context"]
+            return False
+    client = Client()
+    sent = []
+    monkeypatch.setattr(runner, "EvidenceExtractor", Extractor)
+    monkeypatch.setattr(runner, "send_report", lambda text, **kwargs: sent.append(text) or 42)
+    now = datetime(2026, 9, 2, 20, 30, tzinfo=ZoneInfo("America/New_York"))
+    assert runner._run_analysis(event, store, client, False, now) == "published"
+    assert len(sent) == 1 and "Q&amp;A 尚未取得" in sent[0]
+    assert event.last_analyzed_document_count == 1
+    Extractor.fail = False
+    assert runner._run_analysis(event, store, client, False, now) == "no_material_update"
+    assert client.context["new_document_keys"] == [transcript.key]
+    assert len(sent) == 1
+    assert event.last_analyzed_document_count == 2
+
+
+def test_unusable_primary_evidence_cannot_reach_analysis(tmp_path, monkeypatch):
+    store, event = build_store(tmp_path)
+    class EmptyExtractor:
+        def fetch(self, doc):
+            return Evidence(doc.key, doc.title, doc.url, "", [])
+    monkeypatch.setattr(runner, "EvidenceExtractor", EmptyExtractor)
+    client = AuditFailsOnceClient()
+    now = datetime(2026, 9, 2, 20, 30, tzinfo=ZoneInfo("America/New_York"))
+    assert runner._run_analysis(event, store, client, True, now) == "collection_pending"
+    assert client.extract_calls == 0
+
+
+def test_rejected_checkpoint_gets_one_fresh_attempt_then_stops(tmp_path, monkeypatch):
+    store, event = build_store(tmp_path)
+    class Rejected(AuditFailsOnceClient):
+        def audit(self, *args):
+            return {**PASS_AUDIT, "pass": False, "overall_score": 50,
+                    "critical_issues": ["adjusted_metric_missing_reconciliation"]}
+    client = Rejected()
+    monkeypatch.setattr(runner, "EvidenceExtractor", FakeExtractor)
+    monkeypatch.setattr(runner, "send_report", lambda *a, **k: pytest.fail("must not publish"))
+    now = datetime(2026, 9, 2, 20, 30, tzinfo=ZoneInfo("America/New_York"))
+    for _ in range(3):
+        assert runner._run_analysis(event, store, client, False, now) == "needs_human_review"
+    assert client.extract_calls == 2
+    assert event.collection_status["analysis_recovery"]["failures"] == 2

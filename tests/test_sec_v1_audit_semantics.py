@@ -45,3 +45,20 @@ def test_remove_qa_section_preserves_following_risk_section():
     cleaned = _remove_qa_section(text)
     assert "法說 Q&A" not in cleaned
     assert "⚖️ 反證與未知" in cleaned
+
+
+def test_pending_transcript_does_not_erase_unsupported_qa_or_misleading_claims():
+    for key in ("critical_issues", "misleading_inferences", "missing_material_points"):
+        audit = {"pass": False, "overall_score": 60,
+                 key: ["Q&A quote is unsupported: transcript not available"]}
+        result = _normalize_pending_transcript_audit(audit, {"qa": [], "collection_status": {}})
+        assert result[key] == audit[key]
+        assert result["pass"] is False
+        assert result["overall_score"] == 60
+
+
+def test_pending_transcript_does_not_upgrade_unexplained_failed_audit():
+    audit = {"pass": False, "overall_score": 60}
+    result = _normalize_pending_transcript_audit(audit, {"qa": []})
+    assert result["pass"] is False
+    assert result["overall_score"] == 60

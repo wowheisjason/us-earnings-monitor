@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from .models import Disclosure, EarningsEvent, now_iso
 
 PRIMARY_KINDS = {"financial_results", "financial_tables", "performance_review"}
-TRANSCRIPT_KINDS = {"transcript", "qa", "prepared_remarks"}
+TRANSCRIPT_KINDS = {"transcript", "qa"}
 OFFICIAL_IR_SOURCES = {"official_ir", "gemini_grounded_ir", "openai_web_ir"}
 TRANSCRIPT_ENRICHMENT_SOURCES = {"alpha_vantage_transcript", "third_party_transcript"}
 
@@ -119,9 +119,8 @@ def publication_gate(
     if transcript_status == TRANSCRIPT_UNKNOWN and age < timedelta(hours=transcript_wait_hours):
         transcript_status = TRANSCRIPT_EXPECTED
     if transcript_status == TRANSCRIPT_EXPECTED:
-        if age < timedelta(hours=transcript_wait_hours) and not manifest["has_transcript_or_qa"]:
-            reasons.append("transcript_collection_window_open")
-        elif event.collection_status.get("official_ir_checked_at"):
+        # Missing Q&A affects completeness and retries, never delays a supported v1.
+        if age >= timedelta(hours=transcript_wait_hours) and event.collection_status.get("official_ir_checked_at"):
             transcript_status = TRANSCRIPT_NOT_FOUND
 
     # If a verified transcript fallback exists, the research report can proceed
@@ -147,10 +146,5 @@ def publication_gate(
 
 
 def requires_deterministic_enrichment_followup(event: EarningsEvent, documents: list[Disclosure]) -> bool:
-    """Any newly collected official IR or transcript source must trigger V2."""
-    enrichment_sources = OFFICIAL_IR_SOURCES | TRANSCRIPT_ENRICHMENT_SOURCES
-    return bool(
-        event.status in {"published", "published_sec_pending"}
-        and len(documents) > event.last_analyzed_document_count
-        and any(document.source in enrichment_sources for document in documents)
-    )
+    """Document arrival alone cannot establish materiality; use the evidence gate."""
+    return False
