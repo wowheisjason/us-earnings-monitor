@@ -8,6 +8,7 @@ from datetime import datetime, timedelta
 from typing import Any, Protocol
 
 from .models import Company, Disclosure, EarningsEvent, now_iso
+from .quality import available_documents
 from .sources import OfficialIrAdapter
 from .sources.alpha_vantage_transcript import AlphaVantageTranscriptAdapter
 from .sources.public_transcript import PublicTranscriptAdapter
@@ -82,8 +83,9 @@ class IrRetrievalRouter:
         self.research_client = research_client
 
     @staticmethod
-    def _has_transcript(documents: list[Disclosure]) -> bool:
-        return any(d.document_kind in {"transcript", "qa"} for d in documents)
+    def _has_transcript(documents: list[Disclosure], event: EarningsEvent | None = None) -> bool:
+        eligible = available_documents(event, documents) if event is not None else documents
+        return any(d.document_kind in {"transcript", "qa"} for d in eligible)
 
     def _try_transcript_provider(
         self,
@@ -127,18 +129,18 @@ class IrRetrievalRouter:
         documents: list[Disclosure],
         attempts: list[dict[str, Any]],
     ) -> list[Disclosure]:
-        if self._has_transcript(documents):
+        if self._has_transcript(documents, event):
             return documents
         if os.getenv("ALPHA_VANTAGE_API_KEY"):
             documents = self._try_transcript_provider(
                 "alpha_vantage_transcript", AlphaVantageTranscriptAdapter(), company, event, now, documents, attempts
             )
-        if self._has_transcript(documents):
+        if self._has_transcript(documents, event):
             return documents
         documents = self._try_transcript_provider(
             "public_transcript", PublicTranscriptAdapter(), company, event, now, documents, attempts
         )
-        if self._has_transcript(documents):
+        if self._has_transcript(documents, event):
             return documents
         return self._try_transcript_provider(
             "credible_media", CredibleMediaAdapter(), company, event, now, documents, attempts
@@ -167,7 +169,7 @@ class IrRetrievalRouter:
                     final_status = {
                         **status,
                         "attempts": attempts,
-                        "transcript_status": "FOUND" if self._has_transcript(documents) else status.get("transcript_status", "UNKNOWN"),
+                        "transcript_status": "FOUND" if self._has_transcript(documents, event) else ("CONFIRMED_NOT_PUBLISHED" if status.get("transcript_status") == "CONFIRMED_NOT_PUBLISHED" else "UNKNOWN"),
                     }
                     return RetrievalResult(documents, True, final_status, attempts)
                 if attempts:
@@ -198,7 +200,7 @@ class IrRetrievalRouter:
             status = {
                 "research_complete": complete,
                 "document_count": len(documents),
-                "transcript_status": "FOUND" if self._has_transcript(documents) else "UNKNOWN",
+                "transcript_status": "FOUND" if self._has_transcript(documents, event) else "UNKNOWN",
                 "provider": "direct_ir",
                 "attempts": attempts,
             }
@@ -215,6 +217,6 @@ class IrRetrievalRouter:
             return RetrievalResult(documents, False, {
                 "research_complete": False,
                 "provider": documents[-1].source if documents else "none",
-                "transcript_status": "FOUND" if self._has_transcript(documents) else "UNKNOWN",
+                "transcript_status": "FOUND" if self._has_transcript(documents, event) else "UNKNOWN",
                 "attempts": attempts,
             }, attempts)

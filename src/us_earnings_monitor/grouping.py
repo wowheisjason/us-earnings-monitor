@@ -5,7 +5,7 @@ import unicodedata
 from collections import defaultdict
 from datetime import datetime, timedelta
 
-from .models import Disclosure, EarningsEvent, now_iso
+from .models import Disclosure, EarningsEvent, Evidence, now_iso
 
 _FY = re.compile(r"(?:(?:FY\s*)|(?:Fiscal\s+Year\s+))?(20\d{2})(?:年?\d{1,2}月期)?", re.IGNORECASE)
 _Q = re.compile(r"(?:第?([1-4])四半期|Q([1-4])|([1-4])Q|([1-4])(?:st|nd|rd|th)\s+quarter)", re.IGNORECASE)
@@ -127,12 +127,75 @@ def ready_for_analysis(event: EarningsEvent | None, now: datetime, fallback_wait
         return False
     if transcript_status in {"NOT_FOUND_AFTER_RETRY", "CONFIRMED_NOT_PUBLISHED"}:
         return True
-    try:
-        first_seen = datetime.fromisoformat(event.first_seen_at)
-        if first_seen.tzinfo is None and now.tzinfo is not None:
-            first_seen = first_seen.replace(tzinfo=now.tzinfo)
-        if now.tzinfo is not None:
-            first_seen = first_seen.astimezone(now.tzinfo)
-        return now - first_seen >= timedelta(hours=fallback_wait_hours)
-    except (TypeError, ValueError):
+    # Source and audit gates run in _run_analysis; Q&A absence adds no clock delay.
+    return True
+
+
+def repair_incomplete_event_period(event: EarningsEvent, documents: list[Disclosure],
+                                   official_evidence: list[Evidence] | None = None) -> bool:
+    """Repair only unpublished, incomplete periods from explicit SEC exhibit names.
+
+    A filing/report date is not a fiscal period. Never infer from forward guidance,
+    rename event IDs, modify receipts, or overwrite a complete published period.
+    """
+    from urllib.parse import urlparse
+    if (event.status not in {"collecting", "needs_human_review"} or event.report_version
+            or event.delivery or (event.fiscal_year and event.quarter)):
         return False
+    candidates = []
+    for doc in documents:
+        if (doc.source != "sec_edgar" or doc.ticker != event.ticker
+                or doc.document_kind != "financial_results"
+                or str(doc.metadata.get("document_type", "")).upper() != "EX-99.1"):
+            continue
+        parsed = urlparse(doc.document_url or doc.url)
+        if parsed.hostname not in {"www.sec.gov", "sec.gov"}:
+            continue
+        filename = parsed.path.rsplit("/", 1)[-1]
+        # Explicit reported-quarter exhibit, e.g. a2026q4ex991-pressrelease.htm.
+        match = re.fullmatch(r"a?(20\d{2})q([1-4])ex99[-_]?1[-_](?:pressrelease|earningsrelease)\.html?", filename, re.I)
+        if match:
+            candidates.append((int(match[1]), "Q" + match[2], doc.key, filename))
+    periods = {(fy, quarter) for fy, quarter, _, _ in candidates}
+    if len(periods) != 1:
+        return False
+    fy, quarter = next(iter(periods))
+    if event.quarter and event.quarter != quarter:
+        return False
+    corroboration = []
+    if event.fiscal_year and event.fiscal_year != fy:
+        by_key = {item.document_key: item for item in (official_evidence or [])}
+        ordinal = {"Q1": "first", "Q2": "second", "Q3": "third", "Q4": "fourth"}[quarter]
+        qnum = quarter[-1]
+        period = rf"(?:fiscal\s+)?{ordinal}\s+quarter(?:\s+and\s+(?:the\s+)?full\s+(?:fiscal\s+)?year)?\s+(?:of\s+)?(?:fiscal(?:\s+year)?\s+|fy\s*)?{fy}"
+        patterns = (
+            rf"\b(?:reports|reported|announces|announced)\s+(?:financial\s+)?results\s+for\s+(?:the\s+)?{period}\b",
+            rf"\b(?:fq{qnum}|q{qnum})\s+(?:fiscal\s+|fy\s*)?{fy}\s+(?:financial\s+|earnings\s+)?results\b",
+            rf"\b{period}\s+(?:financial\s+|earnings\s+)?results\b",
+        )
+        for _, _, key, _ in candidates:
+            item = by_key.get(key)
+            if item is None:
+                continue
+            # Only the reported-results heading in the matching primary document,
+            # not an arbitrary period mentioned later in outlook or comparison.
+            header = re.sub(r"\s+", " ", unicodedata.normalize("NFKC", item.text[:2500])).strip()
+            for pattern in patterns:
+                for match in re.finditer(pattern, header, re.I):
+                    context = header[max(0, match.start() - 100):match.end()]
+                    if re.search(r"\b(?:guidance|outlook|expects?|expected|forecast|will|anticipates?|projects?)\b", context, re.I):
+                        continue
+                    corroboration.append({"document_key": key, "reported_period_anchor": match.group(0)})
+        if not corroboration:
+            # Filename is insufficient to override existing fiscal metadata.
+            return False
+    previous = {"fiscal_year": event.fiscal_year, "quarter": event.quarter, "period_end": event.period_end}
+    event.fiscal_year, event.quarter = fy, quarter
+    event.collection_status["period_repair"] = {
+        "method": "sec_exhibit_and_reported_header" if corroboration else "explicit_sec_earnings_exhibit_filename", "previous": previous,
+        "official_header_corroboration": corroboration,
+        "fiscal_year": fy, "quarter": quarter,
+        "evidence": [{"document_key": key, "filename": filename} for _, _, key, filename in candidates],
+        "period_end_verified": False,
+    }
+    return True

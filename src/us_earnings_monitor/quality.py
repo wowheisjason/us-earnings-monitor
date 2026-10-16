@@ -48,9 +48,18 @@ def source_manifest(documents: list[Disclosure]) -> dict:
     }
 
 
+def available_documents(event: EarningsEvent, documents: list[Disclosure]) -> list[Disclosure]:
+    """Exclude known failed extractions until the analysis path verifies recovery."""
+    unavailable = {
+        item.get("document_key") for item in event.collection_status.get("unavailable_evidence", [])
+        if isinstance(item, dict)
+    }
+    return [doc for doc in documents if doc.key not in unavailable]
+
+
 def sec_first_fallback_active(event: EarningsEvent, documents: list[Disclosure]) -> bool:
     """Allow a prompt SEC-only v1 only when no transcript evidence exists."""
-    manifest = source_manifest(documents)
+    manifest = source_manifest(available_documents(event, documents))
     return bool(
         manifest["has_primary_results"]
         and not manifest["has_official_ir"]
@@ -67,7 +76,7 @@ def update_collection_status(
     official_ir_checked: bool,
     transcript_wait_hours: int = 4,
 ) -> dict:
-    manifest = source_manifest(documents)
+    manifest = source_manifest(available_documents(event, documents))
     status = event.collection_status
     status["source_manifest"] = manifest
     status["last_collection_check_at"] = now_iso(now)
@@ -98,6 +107,9 @@ def publication_gate(
     transcript_wait_hours: int = 4,
 ) -> tuple[bool, list[str], dict]:
     manifest = source_manifest(documents)
+    available = source_manifest(available_documents(event, documents))
+    manifest["has_transcript_or_qa"] = available["has_transcript_or_qa"]
+    manifest["has_transcript_enrichment"] = available["has_transcript_enrichment"]
     reasons: list[str] = []
     if not manifest["has_primary_results"]:
         reasons.append("missing_primary_results")

@@ -6,7 +6,7 @@ import json
 import re
 import time
 from datetime import datetime, timedelta, timezone
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 from xml.etree import ElementTree as ET
 
 import requests
@@ -29,9 +29,23 @@ an otherwise verified report. Later updates require substantive new evidence.
 
 
 def allowed_url(url: str) -> bool:
-    p = urlparse(url)
-    host = (p.hostname or "").lower()
-    return p.scheme == "https" and not p.username and not p.password and p.port in (None, 443) and any(host == d or host.endswith("." + d) for d in DOMAINS)
+    try:
+        p = urlparse(url)
+        host = (p.hostname or "").lower()
+        return p.scheme == "https" and not p.username and not p.password and p.port in (None, 443) and any(host == d or host.endswith("." + d) for d in DOMAINS)
+    except ValueError:
+        return False
+
+
+def article_url(value: str) -> str | None:
+    if allowed_url(value):
+        return value
+    p = urlparse(value)
+    if p.hostname in {"www.bing.com", "bing.com"} and p.path == "/news/apiclick.aspx":
+        targets = parse_qs(p.query).get("url", [])
+        if len(targets) == 1 and allowed_url(targets[0]):
+            return targets[0]
+    return None
 
 
 def _published(soup):
@@ -101,7 +115,7 @@ class CredibleMediaAdapter:
         try:
             response = self.session.get("https://www.bing.com/news/search", params={"q": query, "format": "rss"}, timeout=8)
             response.raise_for_status()
-            urls = [node.text for node in ET.fromstring(response.content).findall(".//item/link") if node.text and allowed_url(node.text)]
+            urls = [target for node in ET.fromstring(response.content).findall(".//item/link") if node.text and (target := article_url(node.text))]
         except (requests.RequestException, ET.ParseError):
             return [], {"reason": "media_search_unavailable", "attempts": attempts}
         for url in list(dict.fromkeys(urls))[:3]:

@@ -58,6 +58,16 @@ def main():
         # Exercise the actual discovery/fallback route in isolated state, not
         # only previously known financial URLs. Failure is recorded, not hidden.
         if args.market == "us":
+            period_documents = [store.get_document(key) for key in event.documents]
+            period_evidence = []
+            for doc in period_documents:
+                if doc.source == "sec_edgar" and doc.document_kind == "financial_results":
+                    try:
+                        period_evidence.append(runner.EvidenceExtractor().fetch(doc))
+                    except Exception:
+                        pass  # Incomplete is safer than a guessed fiscal period.
+            importlib.import_module(package + ".grouping").repair_incomplete_event_period(event, period_documents, official_evidence=period_evidence)
+            store.put_event(event)
             router_module = importlib.import_module(package + ".retrieval")
             client = None if args.sources_only else importlib.import_module(package + ".analysis").build_ir_research_client()
             collected = router_module.IrRetrievalRouter(client).collect(company, event, replay_now, dry_run=args.sources_only)

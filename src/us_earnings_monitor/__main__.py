@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import logging
@@ -15,7 +16,7 @@ from .calendar import is_likely_trading_day
 from .checkpointing import completed_stages, evidence_fingerprint, get_stage, prepare_checkpoint, put_stage
 from .config import load_watchlist
 from .extract import EvidenceExtractor
-from .grouping import align_companion_periods, attach, classify_document, ready_for_analysis, title_is_earnings
+from .grouping import align_companion_periods, attach, classify_document, ready_for_analysis, title_is_earnings, repair_incomplete_event_period
 from .models import Disclosure, EarningsEvent, now_iso
 from .quality import (
     TRANSCRIPT_CONFIRMED_NONE,
@@ -181,6 +182,18 @@ def ingest(disclosures: list[Disclosure], store: StateStore, patterns: list[str]
             ignored += 1
             continue
         existing_event = store.get_event(eid)
+        if existing_event is None:
+            # Period repair deliberately retains the legacy event ID. Attach
+            # corrected-period companions to that unique unpublished event.
+            repaired = [candidate for candidate in store.all_events()
+                        if candidate.ticker == disclosure.ticker
+                        and candidate.fiscal_year == disclosure.fiscal_year
+                        and candidate.quarter == disclosure.quarter
+                        and candidate.status in {"collecting", "needs_human_review"}
+                        and not candidate.report_version and not candidate.delivery
+                        and candidate.collection_status.get("period_repair")]
+            if len(repaired) == 1:
+                existing_event = repaired[0]
         if store.equivalent_primary_document(disclosure, existing_event):
             LOG.info("Skipped official-IR mirror already collected from a primary source: %s", disclosure.title)
             continue
@@ -224,15 +237,21 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
                and doc.source in {"sec_edgar", "official_ir", "gemini_grounded_ir", "openai_web_ir"}
                for doc in usable_docs):
         return "collection_pending"
+    period_repaired = repair_incomplete_event_period(event, usable_docs, evidence)
     if unavailable:
         event.collection_status["unavailable_evidence"] = unavailable
-        update_collection_status(event, usable_docs, now, official_ir_checked=False)
-        _, _, manifest = publication_gate(event, usable_docs, now)
     else:
         event.collection_status.pop("unavailable_evidence", None)
+    update_collection_status(event, usable_docs, now, official_ir_checked=False)
+    _, _, manifest = publication_gate(event, usable_docs, now)
 
-    fingerprint = evidence_fingerprint(evidence)
-    existing_checkpoint = {} if preview else store.get_analysis_checkpoint(event.event_id)
+    # Fiscal context is part of the extraction contract even if source bytes are
+    # unchanged; correcting a period must invalidate facts and rejected recovery.
+    fingerprint = hashlib.sha256(json.dumps({
+        "evidence": evidence_fingerprint(evidence), "fiscal_year": event.fiscal_year,
+        "quarter": event.quarter, "period_end": event.period_end,
+    }, sort_keys=True).encode("utf-8")).hexdigest()
+    existing_checkpoint = {} if preview or period_repaired else store.get_analysis_checkpoint(event.event_id)
     checkpoint, invalidated = prepare_checkpoint(existing_checkpoint, fingerprint)
     if checkpoint.get("evidence_repair_policy") != 3:
         for stage in ("facts", "analysis", "audit", "revision_analysis", "revision_audit"):
@@ -388,6 +407,23 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
                 store.save()
             return "preview_published" if preview else "published"
 
+    # Keep a bounded diagnostic record before clearing the rejected checkpoint.
+    # The evidence corpus and credentials are deliberately excluded.
+    rejection_keys = ("unsupported_claims", "numerical_errors", "critical_issues", "missing_material_points",
+                      "misleading_inferences", "evidence_grade_errors", "cross_context_errors",
+                      "causal_chain_errors", "value_chain_errors", "materiality_score_errors")
+    rejection = {
+        "at": now_iso(now), "fingerprint": fingerprint,
+        "audit_pass": audit.get("pass"), "overall_score": audit.get("overall_score"),
+        "audit_issues": {key: [str(item)[:500] for item in (audit.get(key) or [])[:8]] for key in rejection_keys},
+        "fact_validation_issues": [str(item)[:500] for item in deterministic_issues[:12]],
+        "report_issues": [str(item)[:500] for item in report_issues[:12]],
+        "draft_sha256": hashlib.sha256(str(draft).encode("utf-8")).hexdigest(),
+    }
+    event.collection_status["last_rejected_analysis"] = rejection
+    LOG.warning("%s audit rejected score=%s fact_issues=%d report_issues=%d audit_issue_counts=%s", event.event_id,
+                rejection["overall_score"], len(deterministic_issues), len(report_issues),
+                {key: len(value) for key, value in rejection["audit_issues"].items() if value})
     failures = (int(recovery.get("failures", 0)) if recovery.get("key") == recovery_key else 0) + 1
     event.collection_status["analysis_recovery"] = {"key": recovery_key, "failures": failures}
     if not preview and failures == 1:
@@ -440,6 +476,11 @@ def main() -> int:
         store.save()
 
     analysis_client: AnalysisClient | None = None
+    for existing in store.all_events():
+        if (existing.ticker in company_by_ticker and (not existing.fiscal_year or not existing.quarter)
+                and repair_incomplete_event_period(existing, _event_documents(existing, store))):
+            store.put_event(existing)
+            LOG.info("%s repaired incomplete fiscal period from SEC exhibit filename", existing.event_id)
     active_ir_events = active_events_for_ir(store.all_events(), now)
     if active_ir_events and not args.fixture:
         disabled_providers: set[str] = set()

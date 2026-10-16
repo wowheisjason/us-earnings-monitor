@@ -242,6 +242,8 @@ def test_optional_transcript_outage_publishes_primary_then_retries_recovered_sou
     assert client.context["new_document_keys"] == [transcript.key]
     assert len(sent) == 1
     assert event.last_analyzed_document_count == 2
+    assert "unavailable_evidence" not in event.collection_status
+    assert event.collection_status["transcript_status"] == "FOUND"
 
 
 def test_unusable_primary_evidence_cannot_reach_analysis(tmp_path, monkeypatch):
@@ -270,3 +272,22 @@ def test_rejected_checkpoint_gets_one_fresh_attempt_then_stops(tmp_path, monkeyp
         assert runner._run_analysis(event, store, client, False, now) == "needs_human_review"
     assert client.extract_calls == 2
     assert event.collection_status["analysis_recovery"]["failures"] == 2
+    rejected = store.get_event(event.event_id).collection_status["last_rejected_analysis"]
+    assert "adjusted_metric_missing_reconciliation" in rejected["audit_issues"]["critical_issues"]
+    assert rejected["audit_pass"] is False
+    assert len(rejected["draft_sha256"]) == 64
+    assert "cards" not in rejected
+
+
+def test_period_context_change_invalidates_cached_extraction_even_with_identical_source(tmp_path, monkeypatch):
+    store, event = build_store(tmp_path)
+    client = AuditFailsOnceClient()
+    monkeypatch.setattr(runner, "EvidenceExtractor", FakeExtractor)
+    monkeypatch.setattr(runner, "send_report", lambda *args, **kwargs: 42)
+    now = datetime(2026, 9, 2, 20, 30, tzinfo=ZoneInfo("America/New_York"))
+    with pytest.raises(RuntimeError):
+        runner._run_analysis(event, store, client, False, now)
+    old_fingerprint = store.get_analysis_checkpoint(event.event_id)["evidence_fingerprint"]
+    event.fiscal_year = 2026
+    assert runner._run_analysis(event, store, client, False, now) == "published"
+    assert client.extract_calls == 2 and client.analyze_calls == 2
