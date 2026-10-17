@@ -1,0 +1,58 @@
+name: Optics Telegram delivery verification
+on:
+  push:
+    branches: [codex/optics-telegram-verification-20261017]
+    paths: [.github/workflows/optics-telegram-verification.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-telegram-verification-20261017
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜2026/10/13公告
+          Semtech（SMTC）與Tower（TSEM）擴大多年SiGe產能合作。
+
+          【已確認事實】
+          Semtech將投資鎖定Tower美國、以色列與日本的專用SiGe產能。產品包含TIA、調變器／雷射驅動器及線性等化器，支援800G／1.6T及後續高速光學與銅互連。投資金額、新增產能、具名終端客戶及營收時程未公開。設計導入與需求強勁屬公司說法，未經獨立需求驗證。
+
+          【合理推論／投資影響】
+          SMTC若能把設計導入轉為量產訂單，預留產能有助降低供應限制；TSEM有望提高高速類比代工業務可見度。不能由此推論InP、EML或整條CPO鏈都缺貨。
+
+          【風險與待驗證】
+          關注設備投產時間、產能利用率、客戶量產訂單及資料中心業務成長。主要風險為擴產延誤、預留產能未用滿、價格競爭及部署放緩。目前無法量化新增獲利或判斷股票低估。
+
+          官方：https://towersemi.com/2026/10/13/10132026-2/
+          SEC：https://www.sec.gov/Archives/edgar/data/928876/000117891326004752/zk2636221.htm"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"semtech-tower-sige-20261013","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
