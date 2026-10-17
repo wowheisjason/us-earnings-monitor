@@ -396,6 +396,6 @@ Input:\n""" + json.dumps({"facts": facts, "analysis": analysis, "audit": audit},
     def material_update(self, facts: dict, previous_count: int, current_count: int) -> bool:
         if current_count <= previous_count:
             return False
-        decision = self._json("""Determine whether newly supplied official facts add material information that would change an existing earnings summary. Return JSON only: {material:boolean, reason:string}. A newly available official transcript/Q&A, changed guidance, key financial number, demand/order signal, supply/pricing detail, or management explanation is material. A duplicate or formatting-only document is not material.
+        decision = self._json("""Determine whether newly supplied official facts add material information that would change an existing earnings summary. Return JSON only: {material:boolean, reason:string}. Use material_update_context to compare facts supported by new_document_keys against previous_document_keys. Only a NEW supported change to guidance, a key financial number, demand/order signal, supply/pricing detail, or management explanation that changes the investment assessment is material. A transcript/Q&A arriving, extra detail, a duplicate, or formatting-only document is not inherently material. If the new evidence cannot be distinguished from prior evidence, return material=false. Return material=true only with a reason identifying the changed fact and its new source key.
 Facts:\n""" + json.dumps(facts, ensure_ascii=False), "material_update")
-        return bool(decision.get("material"))
+        return decision.get("material") is True and bool(str(decision.get("reason") or "").strip())

@@ -1,0 +1,40 @@
+name: Q&A fallback isolated service verification
+on:
+  push:
+    branches: [feat/research-intelligence-12h-v1]
+    paths: ['.github/workflows/qa-fallback-verification.yml', 'scripts/verify_qa_fallback.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: qa-fallback-isolated-verification
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Counterexample and historical state tests
+        env:
+          PYTHONPATH: src
+        run: pytest -q
+      - name: Real sources and model audit; separate labeled Telegram service test
+        env:
+          PYTHONPATH: src
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/verify_qa_fallback.py us
+      - name: Preserve source evidence, isolated state, audit and actual test receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-fallback-isolated-verification
+          path: .verification/qa-fallback/
+          include-hidden-files: true
+          retention-days: 14
