@@ -1,0 +1,45 @@
+name: Optics delivery gf-chips-photonics-20261014 v1
+on:
+  push:
+    branches: [codex/optics-delivery-gf-chips-photonics-20261014-v1]
+    paths: [.github/workflows/optics-delivery-gf-chips-photonics-20261014-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-gf-chips-photonics-20261014-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜GlobalFoundries補助改配與投資承諾（補漏新事件 v1）\n\n1）重大變化\n10/14美國商務部公告，GF既有CHIPS補助最多9.55億美元改配，支援矽光子、SiGe與先進封裝。這是資金用途與投資承諾的實質變動，並非展示；也不是新增9.55億美元補助。相較既有Semtech／Tower通知，本事件是GF的製造投資，並非同一產能合約。\n\n2）已確認事實\n公告日2026/10/14；協議實際簽署日未另揭露。商務部稱GF同意把紐約Malta及佛蒙特Burlington既有廠區資本投資擴至50億美元；補助總額不增加。支援範圍包括矽光子、SiGe及美國本土矽中介層來源。這些為投資計畫／承諾，不是已完成支出、已投產產能或營收實績。\n官方未拆分各技術金額、晶圓增量、良率、投產日期或光通訊客戶訂單。不能把另案新建廠的900,000片／年套成矽光子產能。\n官方原文（10/14）：\nhttps://www.nist.gov/news-events/news/2026/10/department-commerce-announces-agreement-globalfoundries-amend-its-existing\nReuters同日獨立採訪亦報導此改配；但不是對產能／良率的獨立驗證。\n\n3）受影響供應商與關係\n• GF（NASDAQ:GFS）：矽光子與SiGe晶圓代工、封裝平台，直接投資主體。\n• Tower（NASDAQ:TSEM）：相關矽光子／SiGe代工競爭者；製程、認證及客戶不同，不代表訂單立即轉移。\n• Sivers（STO:SIVE）：雷射陣列，與GF屬互補。6/2雙方已公告參考設計與SCALE光引擎合作；不是本次新增訂單，也不能直接推估營收。\n• TSMC（NYSE:TSM／台股2330）：矽光子／先進封裝的架構競爭曝險；本公告未證明其客戶流失。\nSivers官方合作公告（6/2；僅作角色背景）：\nhttps://www.sivers-semiconductors.com/press/sivers-globalfoundries-advance-ai-data-center-optical-solutions/\n\n4）合理推論\n若補助按里程碑到位、設備安裝及客戶認證完成，GF可提升擴產資金可見度，增加美國本土光學平台選擇。但從資本支出到晶圓／光引擎營收仍需製程及終端部署落實；官方未給光學量產時程，不能假設2027年即全面貢獻。SiGe與矽中介層不是InP／EML；本案不證明雷射瓶頸已解除。\n\n5）機會與風險\n可追蹤GF代工平台、合作光源及封裝設備需求；催化劑是具體設備訂單、合格產能與客戶量產。風險包括補助條件、執行延誤、利用率不足、平台競爭及CPO／NPO／可插拔架構分流。未公開採購名單，不能指定日本／台灣設備商必然受益。未查即時估值，不判斷低估或已反映，不下買賣指令。\n\n6）待驗證與追蹤\n追蹤50億美元相對舊計畫的增量、矽光子／SiGe分項投資、補助實際撥付、晶圓月產能及投產日期、具名客戶認證／量產訂單。此次確認的是資金改配，不是800G／1.6T出貨里程碑。\n歷史去重：已核對可見通知及事件鍵分支；完整跨系統通知歷史未全數取得，不宣稱全面去重。\n補充交叉來源（10/14）：\nhttps://www.reuters.com/business/retail-consumer/japan-invest-up-21-billion-two-us-chip-factories-be-run-by-globalfoundries-2026-10-14/"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"gf-chips-photonics-20261014","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-gf-chips-photonics-20261014-v1
+          path: telegram-receipt.json
