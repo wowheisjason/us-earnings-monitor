@@ -1,0 +1,45 @@
+name: Optics Telegram delivery verification
+on:
+  push:
+    branches: [codex/optics-delivery-3m-amazon-optical-20261019-v1]
+    paths: [.github/workflows/optics-delivery-3m-amazon-optical-20261019-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-3m-amazon-optical-20261019-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜3M／Amazon商業合作升級（事件及公告：2026/10/19）\n事件：3m-amazon-optical-20261019｜版本1\n\n1）重大變化／通知理由\n3M以SEC文件確認擴大與Amazon全資子公司的商業關係，涉及光互連及其他資料中心產品，並設計與採購付款掛鉤的認股權。這是具名客戶與可核實商業機制，超越展示。相較既有Semtech／Tower及GF通知，這是新事件，非續報。\n\n2）已確認事實\n3M（NYSE：MMM）10/19發行認股權予另一Amazon全資子公司：七年內可按每股164.89美元購買最多3,162,015股。85%股份的歸屬取決於Amazon對光互連及其他資料中心產品的付款；累計付款達60億美元時該付款條件全數達成；其餘15%取決於事件里程碑。\n重要：60億美元不是已下單、最低採購承諾、已認列營收或全屬光學的金額；未披露年度採購、產品分項、單價與出貨數量。此為公司監管披露，非獨立驗證出貨。\n\n另：3M於10/19官方公告選定玉晶光（台股3406）為EBO製造合作夥伴，預計透過私募取得約4.7%股權，目標2026年第4季交割，仍有通常交割條件。合作支援EBO套管、CPO相關光互連的製造準備及長期擴產；不是已完成量產或訂單公告。這是補充供應鏈脈絡，不能據此認定玉晶光獲Amazon訂單。\n\n3）供應鏈角色\nMMM：光互連技術、材料與製造，直接商業曝險。\nAmazon（NASDAQ：AMZN）：資料中心買方及認股權持有人，直接客戶端曝險。\n玉晶光3406：精密光學製造夥伴，對EBO擴產直接、對Amazon需求僅條件式間接曝險。與3M互補；未證實排他或Amazon指定供應。\n未證實因此新增InP／EML供應商訂單；EBO連接介面不是EML、CW雷射或光模組本身。\n\n4）合理推論\n若Amazon實際付款成長，MMM資料中心業務可見度可能提升；歸屬機制也讓客戶分享供應商成長。若EBO認證、良率與產線落實，玉晶光可能獲製造收入，惟起量時間未公開。不能把七年門檻平均攤為年度營收，也不能由兩項公告推論同一終端產品已部署。\n\n5）機會與風險\n可追蹤MMM光互連商業化、玉晶光由消費光學延伸資料中心的機會。催化劑為交割、資格認證與實際出貨。\n風險：付款未達門檻、認股權稀釋／商業激勵成本、客戶集中、量產良率與認證延誤、擴產閒置，以及其他連接架構替代。毛利、產品組合與投資回收未披露；未查即時股價，不判斷低估或已反映，不提供買賣指令。\n\n6）待驗證／下一步\n追蹤認股權已歸屬數、Amazon實際付款、光學產品占比、MMM資料中心營收與毛利披露、玉晶光交割及新產線／客戶認證／出貨證據。未具名事件里程碑不得猜測；Amazon未見獨立公告確認具體產品。兩家供應端官方文件證實各自關係，不構成兩份獨立出貨驗證。\n\n原始官方來源：\nSEC 8-K（2026/10/19）：\nhttps://www.sec.gov/Archives/edgar/data/66740/000006674026000303/mmm-20261019.htm\n3M IR（2026/10/19）：\nhttps://investors.3m.com/news-events/press-releases/detail/1945/3m-announces-collaboration-with-gseo-to-advance-expanded"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"3m-amazon-optical-20261019","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
