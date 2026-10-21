@@ -1,0 +1,42 @@
+name: SpaceX Q3 one-time verified Telegram delivery
+on:
+  push:
+    branches: [spcx-2026q3-results-v1]
+    paths: [.github/workflows/spcx-q3-delivery.yml]
+permissions:
+  contents: read
+concurrency:
+  group: spcx-2026q3-telegram-consolidated-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deliver once and validate receipt
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request
+          token = os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat = os.environ.get('TELEGRAM_CHAT_ID')
+          if not token or not chat: raise SystemExit('Telegram credentials unavailable')
+          message = "SPCX｜SpaceX 2026 Q3｜財報＋法說 Q&A（2026/10/20）\n【SEC 實績】\n• 營收 US$14.575bn，YoY +161.4%、QoQ +86.5%；GAAP 淨利 US$4.404bn；EPS US$0.35。\n• SI 營收 US$7.560bn（YoY +830%、QoQ +195%），占總營收 51.9%；SI 營業利益 US$431mn。\n• Starlink/Connectivity 營收 US$5.248bn；消費訂戶 13.6mn，ARPU US$69/月。\n• Space 營收 US$1.767bn；Starship Flight 14 首次收入性任務，部署26顆 V3 衛星，約為 Falcon 9 Starlink 單次發射下行容量增量的10倍。\n• Q3 CapEx US$19.593bn（SI US$16.444bn）。\n\n【指引變化｜第三方逐字稿，待官方核對】\n• Q4 CapEx US$35–40bn：相對 Q2 法說預估 Q3/Q4「接近 Q2 的 US$18.4bn」，屬明顯上修；較 Q3 實績 +79–104%。\n• 2026年底算力目標2.5–3GW：Q2 原稱「超過2GW」，目標明確提高；9月底已達1.7GW。\n• 2027年底算力至少約13GW（管理層預期），相對 Q2「更接近10GW而非5GW」提高；20GW 是低機率情境，非承諾。\n• 2027 Q1 營收 US$33–37bn：首次新增量化指引，不能算上修。\n• Q4 毛利率預計回到較接近 Q2 水準：相對 Q3 偏下降，受 Q3 一次性利益影響；未給量化幅度。\n• 2026/12月化 ARR US$100bn：Q2 已提出，這次不是上修。\n\n【技術／營運 Q&A｜第三方轉錄】\n• Terafab/EUV｜Morgan Stanley：問 EUV 是否下訂。未正面確認；Austin 研究廠目標 2027/5–6 SRAM 測試晶片、Gibbons Creek Terafab 2028 Q3–Q4 量產。涵義：ASML等設備交付可能提前；實際 EUV 訂單與量產良率未證實。\n• AI 電力｜JPMorgan：每月部署約220,000顆 GB300；渦輪葉片與導葉較其他設備慢12–18個月，計畫轉用火箭引擎鑄造能力自製。涵義：電力／冷卻與零件交期是算力部署瓶頸，20GW未獲保證。\n• Starlink Mobile｜Evercore：S-band 預期承擔主要流量，800MHz 低頻補室內穿透，考慮利用既有 Starlink 站點及地面網路；9月底 Mobile 每月使用者22mn（QoQ +37%），2027年部署V2、2028年初服務擴張目標。涵義：混合衛星/地面網路，不等於已達電信商覆蓋或容量。\n• Starship｜Flight 15 目標2026/11嘗試同時回收助推器與上級；2027年初軌道加油試驗；仍具失敗風險。\n• V3 衛星｜用戶速度與延遲明顯改善需數百顆衛星，目標2027年中達到；不是單次發射即全網升級。\n• Tesla｜獨立董事特別委員會已討論，尚無交易條件共識，不能視為確定合併。\n\n【風險／追蹤】\n算力設備利用率、電力實際通電、短約租金；Terafab EUV 確定訂單與量產驗證；Starship 雙級回收/軌道加油；Starlink V3 部署規模。\n\nSEC：https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm\nIR：https://ir.spacex.com/events/event-details/2026/Q3-2026-Earnings/default.aspx\nQ&A轉錄（非官方）：https://stockanalysis.com/stocks/spcx/transcripts/723936-q3-2026/"
+          if len(message.encode('utf-16-le'))//2 > 4096: raise SystemExit('Telegram message too long; not sent')
+          payload = json.dumps({'chat_id': chat, 'text': message, 'link_preview_options': {'is_disabled': True}}).encode('utf-8')
+          request = urllib.request.Request('https://api.telegram.org/bot'+token+'/sendMessage', data=payload, headers={'Content-Type': 'application/json'})
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response: result = json.load(response)
+          except Exception: raise SystemExit('Delivery failed or uncertain; do not retry automatically')
+          mid = result.get('result', {}).get('message_id')
+          if result.get('ok') is not True or type(mid) is not int or mid <= 0: raise SystemExit('Invalid Telegram receipt')
+          receipt = {'accepted': True, 'message_id': mid, 'event_keys': ['SPCX-2026Q3-results-v1', 'SPCX-2026Q3-QA-v1']}
+          with open('spcx-telegram-receipt.json', 'w', encoding='utf-8') as f: json.dump(receipt, f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: spcx-q3-telegram-receipt
+          path: spcx-telegram-receipt.json
