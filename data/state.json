@@ -345,6 +345,50 @@
         "filing_date": "2026-10-20",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001628280-26-066700:meta-09302026xexhibit991.htm",
+      "ticker": "META",
+      "title": "Meta Platforms Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-10-21T20:03:35.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "period_end": "2026-10-19",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001326801",
+        "accession": "0001628280-26-066700",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-21",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0000097476-26-000165:q32026txnex99-eredgar.htm": {
+      "source": "sec_edgar",
+      "source_id": "0000097476-26-000165:q32026txnex99-eredgar.htm",
+      "ticker": "TXN",
+      "title": "Texas Instruments Form 8-K — Earnings Release / Exhibit EX-99 — EX-99",
+      "published_at": "2026-10-21T20:04:14.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000165/q32026txnex99-eredgar.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000165/q32026txnex99-eredgar.htm",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "period_end": "2026-10-21",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000097476",
+        "accession": "0000097476-26-000165",
+        "form": "8-K",
+        "document_type": "EX-99",
+        "filing_date": "2026-10-21",
+        "period_from_exhibit_filename": null
+      }
     }
   },
   "events": {
@@ -362,7 +406,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-21T14:01:22-04:00",
+      "updated_at": "2026-10-21T16:08:19-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -727,7 +771,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T14:01:22-04:00",
+      "updated_at": "2026-10-21T16:08:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1025,7 +1069,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T14:01:22-04:00",
+      "updated_at": "2026-10-21T16:08:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1256,16 +1300,16 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-21T13:07:42-04:00",
+      "updated_at": "2026-10-21T16:08:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.201,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1278,7 +1322,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.256,
+            "seconds": 0.449,
             "documents": 0,
             "partial": false
           },
@@ -1291,7 +1335,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-21T13:07:42-04:00",
+        "ir_retrieval_last_at": "2026-10-21T16:08:19-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1311,15 +1355,170 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-21T13:07:42-04:00",
-        "official_ir_checked_at": "2026-10-21T13:07:42-04:00",
-        "official_ir_check_count": 10,
+        "last_collection_check_at": "2026-10-21T16:08:19-04:00",
+        "official_ir_checked_at": "2026-10-21T16:08:19-04:00",
+        "official_ir_check_count": 11,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-21T15:07:42-04:00"
+        "next_ir_retry_at": "2026-10-21T18:08:19-04:00"
       },
       "delivery": {
         "status": "accepted",
         "message_id": 555,
+        "report_version": 1
+      }
+    },
+    "META_2026-10-19": {
+      "event_id": "META_2026-10-19",
+      "ticker": "META",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "first_seen_at": "2026-10-21T16:08:19-04:00",
+      "period_end": "2026-10-19",
+      "documents": [
+        "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-21T16:08:19-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 0.303,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-21T16:08:19-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-21T16:08:19-04:00",
+        "official_ir_checked_at": "2026-10-21T16:08:19-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-21T16:23:19-04:00"
+      },
+      "delivery": {}
+    },
+    "TXN_2026-10-21": {
+      "event_id": "TXN_2026-10-21",
+      "ticker": "TXN",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "first_seen_at": "2026-10-21T16:08:19-04:00",
+      "period_end": "2026-10-21",
+      "documents": [
+        "sec_edgar:0000097476-26-000165:q32026txnex99-eredgar.htm"
+      ],
+      "status": "published_sec_pending",
+      "report_version": 1,
+      "last_analyzed_document_count": 1,
+      "updated_at": "2026-10-21T16:08:19-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": false,
+            "seconds": 1.222,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-21T16:08:19-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-21T16:08:19-04:00",
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "official_ir_last_attempt_incomplete": "2026-10-21T16:08:19-04:00",
+        "next_ir_retry_at": "2026-10-21T16:23:19-04:00"
+      },
+      "delivery": {
+        "status": "accepted",
+        "message_id": 556,
         "report_version": 1
       }
     }
@@ -1328,13 +1527,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-10-21T07:47:17-04:00",
-      "blocked_until": "2026-10-21T13:47:17-04:00",
+      "last_failure_at": "2026-10-21T16:08:19-04:00",
+      "blocked_until": "2026-10-21T22:08:19-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-21T13:07:42-04:00",
+      "last_success_at": "2026-10-21T16:08:19-04:00",
       "blocked_until": null
     },
     "public_transcript": {
