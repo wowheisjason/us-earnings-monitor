@@ -1,0 +1,71 @@
+name: Optics delivery NVIDIA SPIL CPO 20261021 v1
+on:
+  push:
+    branches: [codex/optics-delivery-nvidia-spil-cpo-optical-engine-capacity-20261021-v1]
+    paths: [.github/workflows/optics-delivery-nvidia-spil-cpo-optical-engine-capacity-20261021-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-nvidia-spil-cpo-optical-engine-capacity-20261021-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜NVIDIA／SPIL CPO光引擎產能
+
+1) 重大變化與門檻
+NVIDIA於2026/10/21正式宣布，與SPIL（矽品，ASE Technology Holding旗下）擴充台灣CPO光引擎製造；目標在2027年中前把產能提高15倍，並於2028年底前再翻倍。這是具名AI客戶、具體倍數與時程的量產供應鏈承諾，足以改變先進封裝／光引擎產能與競爭判斷，因此達通知門檻。
+
+2) 已確認事實
+• 公告日／事件日：2026/10/21。
+• NVIDIA官方稱SPIL目標於2027年中前將光引擎產能提高15倍，並以2028年底前再翻倍為目標。這些是未來產能目標，不是已實現產出、出貨或營收。
+• 同一公告顯示NVIDIA亦在擴大整體AI供應鏈：IBIDEN、Samsung Electro-Mechanics、Unimicron合計基板產能未來3年增至2.5倍；Amkor先進封裝中介層晶圓產能至2028年底增逾300%；KYEC獲NVIDIA 11億美元產能預留款，目標2027/4於美國進入量產。這些環節與CPO製造互補，但不能等同於光引擎產能。
+• SDxCentral同日獨立報導再次確認SPIL的15倍與其後翻倍目標，並把擴產連結至NVIDIA Spectrum-6 CPO交換器；這是媒體交叉驗證，不代表實際出貨已發生。
+官方：https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/
+交叉驗證：https://www.sdxcentral.com/news/nvidia-targets-15x-optics-capacity-expansion-by-2027/
+
+3) 受影響供應商與角色
+• NVIDIA（NASDAQ: NVDA）：CPO交換器／AI基礎設施需求方與產能協調者，直接曝險。
+• SPIL：CPO光引擎製造／封裝，ASE Technology Holding旗下；母公司（TWSE: 3711；NYSE: ASX）為直接曝險。
+• IBIDEN（TSE: 4062）、Samsung Electro-Mechanics（KRX: 009150）、Unimicron（TWSE: 3037）：封裝基板；Amkor（NASDAQ: AMKR）：先進封裝；KYEC（TWSE: 2449）：測試。它們屬互補環節，官方未把各自全部新增產能指定為CPO。
+• InP CW雷射、矽光子PIC、光纖陣列與測試供應商可能間接受益，但公告未具名，不能據此推定客戶或訂單；EML可插拔架構亦不能與CPO外置／共封裝雷射混為一談。
+
+4) 合理推論
+若「再翻倍」以2027年中擴產後基準計算，2028年底目標約為現有產能30倍；這是算術推論，基準單位未公開。若產品認證、良率與AI資料中心部署同步落地，SPIL／ASE可獲更高光引擎產能利用率與收入可見度，NVIDIA則可降低CPO量產瓶頸。影響應在2027年起逐步顯現，而非立即認列。成立條件包括Spectrum-6及後續CPO平台按期量產、客戶採用、良率達標及雷射／PIC／連接等上游供應同步。
+
+5) 投資機會與風險
+潛在受益：ASE／SPIL先進光封裝，以及具備已驗證CPO零組件能力的上游廠；催化劑是產線認證、首次量產出貨與實際營收揭露。主要風險：15倍起點未披露、無採購金額或保量承諾、良率與折舊壓力、單一客戶集中、CPO導入延後、可插拔／NPO替代、需求不及擴產造成閒置。未檢查即時估值，不判斷是否已反映或低估。
+
+6) 待驗證與追蹤
+追蹤SPIL新增線體所在地與月產能、資本支出、認證完成日、良率／利用率、首批量產出貨、光引擎ASP及ASE營收貢獻；亦需確認NVIDIA CPO交換器的具名雲端客戶部署。公告沒有InP／CW雷射供應商、EML訂單、SPIL現有產能基數或營收金額，均不得外推。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"nvidia-spil-cpo-optical-engine-capacity-20261021","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
