@@ -362,7 +362,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-20T19:52:26-04:00",
+      "updated_at": "2026-10-20T20:07:51-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -727,7 +727,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-20T19:52:26-04:00",
+      "updated_at": "2026-10-20T20:07:51-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1025,7 +1025,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-20T19:52:26-04:00",
+      "updated_at": "2026-10-20T20:07:51-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1256,7 +1256,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-20T19:52:26-04:00",
+      "updated_at": "2026-10-20T20:07:51-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1278,7 +1278,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.383,
+            "seconds": 0.475,
             "documents": 0,
             "partial": false
           },
@@ -1291,7 +1291,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-20T19:52:26-04:00",
+        "ir_retrieval_last_at": "2026-10-20T20:07:51-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1311,11 +1311,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-20T19:52:26-04:00",
-        "official_ir_checked_at": "2026-10-20T19:52:26-04:00",
-        "official_ir_check_count": 3,
+        "last_collection_check_at": "2026-10-20T20:07:51-04:00",
+        "official_ir_checked_at": "2026-10-20T20:07:51-04:00",
+        "official_ir_check_count": 4,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-20T20:07:26-04:00"
+        "next_ir_retry_at": "2026-10-20T20:22:51-04:00"
       },
       "delivery": {}
     }
@@ -1330,7 +1330,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-20T19:52:26-04:00",
+      "last_success_at": "2026-10-20T20:07:51-04:00",
       "blocked_until": null
     },
     "public_transcript": {
