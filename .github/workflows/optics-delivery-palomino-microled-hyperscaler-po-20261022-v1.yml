@@ -1,0 +1,71 @@
+name: Optics delivery Palomino MicroLED hyperscaler PO v1
+on:
+  push:
+    branches: [codex/optics-delivery-palomino-microled-hyperscaler-po-20261022-v1]
+    paths: [.github/workflows/optics-delivery-palomino-microled-hyperscaler-po-20261022-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-palomino-microled-hyperscaler-po-20261022-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光互連重大進展｜Palomino首張超大規模客戶MicroLED商業訂單
+
+【1｜重大變化】
+Palomino Laboratories（OTCQB：PALX）於2026/10/22宣布，取得某策略性hyperscaler的首張商業採購單，內容為交付用於AI基礎設施光互連的高效能GaN MicroLED晶片及相關SOW。公司截至2026年上半年仍無營收，因此由原型驗證進入付費商業專案，足以改變其早期商業化與競爭地位；但訂單金額、數量與客戶名稱均未公開。
+
+【2｜已確認事實】
+• 公告日：2026/10/22。
+• 公司稱PO包含GaN MicroLED晶片交付SOW，將改善奈米材料與MicroLED設計，以提高輸出功率及光纖耦合效率。
+• 公司表示其餘技術參數已符合客戶目標；這是公司說法，未有客戶獨立公告。
+• 2026/7公司已向首家hyperscaler交付第一代原型，客戶測試顯示頻寬超過初始設計目標；本次PO是後續商業里程碑。
+• SEC 10-Q顯示截至2026/6/30仍無營收；上半年淨損約260.8萬美元。此次PO尚不等於已出貨、驗收或營收認列。
+
+【3｜供應鏈與競爭】
+PALX為無晶圓廠AI互連開發商，直接曝險；其技術源自UCSB授權並布局GaN MicroLED。MicroLED瞄準約0–50公尺AI互連，與銅連接、MicroVCSEL、矽光子及傳統可插拔光模組存在替代或互補關係。此事件不是CPO、InP EML或CW雷射訂單，不能外推相關供應鏈全面缺貨或受惠。
+
+【4｜合理推論】
+若客戶完成設計導入、量產認證及後續放量，PALX可由零營收研發公司轉向商業供應商，並提高GaN MicroLED作為AI短距離互連替代路徑的可信度。營收影響取決於PO金額、驗收條件、良率、封裝與光纖耦合效率；目前無法量化。
+
+【5｜機會與風險】
+催化劑：客戶驗收、第二代晶片送樣、量產PO、訂單金額與首次營收披露。
+風險：客戶未具名；PO規模不明；SOW仍含性能改善，代表尚有工程風險；MicroLED量產良率、可靠性、耦光與成本需驗證；PALX為OTCQB小型早期公司，融資、稀釋與單一客戶集中風險高。未據此判斷估值或提出買賣建議。
+
+【6｜待追蹤】
+追蹤交付／驗收日期、PO金額與數量、首次營收、量產良率、每bit功耗、距離與BER、後續具名客戶或重複訂單。
+
+官方公告：https://www.otcmarkets.com/stock/PALX/news/Palomino-Laboratories-Inc-Receives-Its-First-Commercial-Purchase-Order-from-a-Hyperscaler-Customer-For-GaN-MicroLED-Comm?id=539273
+SEC 10-Q：https://www.sec.gov/Archives/edgar/data/1938569/000149315226036061/form10-q.htm"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"palomino-microled-hyperscaler-po-20261022","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
