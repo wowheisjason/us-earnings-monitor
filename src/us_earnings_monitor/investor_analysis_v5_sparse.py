@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import json
+import math
+import os
+import time
 from typing import Any
 
 from .investor_analysis_v5 import ProductionInvestorV5Client as _BaseV5Client
@@ -27,13 +30,30 @@ _SPARSE_CARD_SCHEMA = r"""
 
 
 class ProductionInvestorV5Client(_BaseV5Client):
-    """V5 mapper with sparse evidence-card serialization.
+    """V5 mapper with sparse evidence cards and quota-aware pacing.
 
-    The base V5 pipeline already guarantees full unit coverage. This override
-    changes only mapper output density: irrelevant/null keys are forbidden, so a
-    bounded evidence unit cannot exhaust the JSON output budget by repeating a
-    wide schema for every fact.
+    The base V5 pipeline guarantees full unit coverage. This override keeps each
+    mapper response sparse and spaces request starts so a long transcript can be
+    processed reliably on Gemini's low/free request-rate tiers instead of racing
+    into 429s after the first dozen successful batches.
     """
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._last_mapper_started_at: float | None = None
+
+    def _before_gemini_request(self, stage: str) -> None:
+        if not stage.startswith("v5_extract"):
+            return
+        # Count retries and fallback models as requests, not just extraction batches.
+        interval = float(os.getenv("GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS", "4.2"))
+        if not math.isfinite(interval) or interval < 0:
+            raise ValueError("GEMINI_V5_MAPPER_MIN_INTERVAL_SECONDS must be finite and nonnegative")
+        if interval and self._last_mapper_started_at is not None:
+            remaining = interval - (time.monotonic() - self._last_mapper_started_at)
+            if remaining > 0:
+                time.sleep(remaining)
+        self._last_mapper_started_at = time.monotonic()
 
     def _extract_batch(self, event: EarningsEvent, units: list[dict[str, Any]], stage: str) -> dict:
         expected = [unit["unit_id"] for unit in units]
