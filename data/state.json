@@ -450,7 +450,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-21T21:44:09-04:00",
+      "updated_at": "2026-10-22T01:10:35-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -815,7 +815,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T21:44:09-04:00",
+      "updated_at": "2026-10-22T01:10:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1113,7 +1113,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T21:44:09-04:00",
+      "updated_at": "2026-10-22T01:10:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1265,39 +1265,39 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 2,
-      "updated_at": "2026-10-21T09:49:13-04:00",
+      "updated_at": "2026-10-22T01:10:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.193,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.136,
+            "seconds": 0.252,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MU-2026-Q4",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 1.176,
+            "seconds": 1.185,
             "documents": 1,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.098,
+            "seconds": 0.076,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MU-2026-Q4"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-21T09:49:13-04:00",
+        "ir_retrieval_last_at": "2026-10-22T01:10:35-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1319,11 +1319,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-21T09:49:13-04:00",
-        "official_ir_checked_at": "2026-10-21T09:49:13-04:00",
-        "official_ir_check_count": 21,
+        "last_collection_check_at": "2026-10-22T01:10:35-04:00",
+        "official_ir_checked_at": "2026-10-22T01:10:35-04:00",
+        "official_ir_check_count": 22,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-21T21:49:13-04:00"
+        "next_ir_retry_at": "2026-10-22T13:10:35-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -1424,16 +1424,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T21:44:09-04:00",
+      "updated_at": "2026-10-22T01:10:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1446,7 +1446,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.327,
+            "seconds": 0.421,
             "documents": 0,
             "partial": false
           },
@@ -1459,7 +1459,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-21T20:40:02-04:00",
+        "ir_retrieval_last_at": "2026-10-22T01:10:35-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1479,11 +1479,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-21T20:40:02-04:00",
-        "official_ir_checked_at": "2026-10-21T20:40:02-04:00",
-        "official_ir_check_count": 4,
+        "last_collection_check_at": "2026-10-22T01:10:35-04:00",
+        "official_ir_checked_at": "2026-10-22T01:10:35-04:00",
+        "official_ir_check_count": 5,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-21T22:40:02-04:00"
+        "next_ir_retry_at": "2026-10-22T03:10:35-04:00"
       },
       "delivery": {}
     },
@@ -1500,16 +1500,16 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-21T20:40:02-04:00",
+      "updated_at": "2026-10-22T01:10:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1522,7 +1522,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.409,
+            "seconds": 1.338,
             "documents": 0,
             "partial": false
           },
@@ -1535,7 +1535,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-21T20:40:02-04:00",
+        "ir_retrieval_last_at": "2026-10-22T01:10:35-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1555,10 +1555,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-21T20:40:02-04:00",
+        "last_collection_check_at": "2026-10-22T01:10:35-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-10-21T20:40:02-04:00",
-        "next_ir_retry_at": "2026-10-21T22:40:02-04:00"
+        "official_ir_last_attempt_incomplete": "2026-10-22T01:10:35-04:00",
+        "next_ir_retry_at": "2026-10-22T03:10:35-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -1579,16 +1579,16 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-21T21:32:48-04:00",
+      "updated_at": "2026-10-22T01:10:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1601,7 +1601,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.098,
+            "seconds": 1.176,
             "documents": 0,
             "partial": false
           },
@@ -1614,7 +1614,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-21T21:32:48-04:00",
+        "ir_retrieval_last_at": "2026-10-22T01:10:35-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1634,10 +1634,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-21T21:32:48-04:00",
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "official_ir_last_attempt_incomplete": "2026-10-21T21:32:48-04:00",
-        "next_ir_retry_at": "2026-10-21T22:02:48-04:00"
+        "last_collection_check_at": "2026-10-22T01:10:35-04:00",
+        "transcript_status": "UNKNOWN",
+        "official_ir_last_attempt_incomplete": "2026-10-22T01:10:35-04:00",
+        "next_ir_retry_at": "2026-10-22T03:10:35-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -1655,19 +1655,19 @@
       "documents": [
         "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T21:32:48-04:00",
+      "updated_at": "2026-10-22T01:10:35-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1680,7 +1680,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.423,
+            "seconds": 0.227,
             "documents": 0,
             "partial": false
           },
@@ -1693,7 +1693,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-21T21:32:48-04:00",
+        "ir_retrieval_last_at": "2026-10-22T01:10:35-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1713,11 +1713,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-21T21:32:48-04:00",
-        "official_ir_checked_at": "2026-10-21T21:32:48-04:00",
-        "official_ir_check_count": 5,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-21T22:02:48-04:00"
+        "last_collection_check_at": "2026-10-22T01:10:35-04:00",
+        "official_ir_checked_at": "2026-10-22T01:10:35-04:00",
+        "official_ir_check_count": 6,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-10-22T03:10:35-04:00"
       },
       "delivery": {}
     }
@@ -1726,13 +1726,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-10-21T16:08:19-04:00",
-      "blocked_until": "2026-10-21T22:08:19-04:00",
+      "last_failure_at": "2026-10-22T01:10:35-04:00",
+      "blocked_until": "2026-10-22T07:10:35-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-21T21:32:48-04:00",
+      "last_success_at": "2026-10-22T01:10:35-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -8531,6 +8531,1066 @@
             "customer_readthrough_errors": [],
             "density_errors": [],
             "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "LRCX_2026-10-21": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "7bfc4bd08e01cc64bc76ee595adc1e6b7b8ac7f54841e33d360dcfb457ad75be",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+              "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "September 2026 quarter revenue was $8.22 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue of $8.22 billion.",
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "$",
+                "period": "September 2026",
+                "comparison_value": "6722238",
+                "comparison_period": "June 2026",
+                "reported_change": "+22%"
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "U.S. GAAP gross margin for the September 2026 quarter was 52.3%.",
+                "materiality_candidate": 4,
+                "quote": "U.S. GAAP gross margin as a percent of revenue of 52.3%, U.S. GAAP operating margin as a percent of revenue of 40.0%, and U.S. GAAP diluted EPS of $2.19.",
+                "metric": "Gross margin",
+                "value": "52.3",
+                "unit": "%",
+                "period": "September 2026",
+                "comparison_value": "51.7",
+                "comparison_period": "June 2026",
+                "reported_change": "+ 60 bps"
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "December 2027 quarter revenue guidance is $8.60 billion plus or minus $400 million.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$8.60 Billion\n+/-\n$400 Million",
+                "metric": "Revenue",
+                "period": "December 27, 2026",
+                "guidance_type": "range",
+                "midpoint": "8.60 Billion",
+                "low": "8.20 Billion",
+                "high": "9.00 Billion",
+                "unit": "$"
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "December 2027 quarter net income per diluted share guidance is $2.33 plus or minus $0.15.",
+                "materiality_candidate": 5,
+                "quote": "Net income per diluted share\n$2.33\n+/-\n$0.15",
+                "metric": "Net income per diluted share",
+                "period": "December 27, 2026",
+                "guidance_type": "range",
+                "midpoint": "2.33",
+                "low": "2.18",
+                "high": "2.48",
+                "unit": "$"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u3",
+              "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue for the three months ended September 27, 2026 was $8,219,418 thousand.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n8,219,418",
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "USD_thousands",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "5324173",
+                "comparison_period": "Three Months Ended September 28, 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross margin as a percent of revenue was 52.3% for the three months ended September 27, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin as a percent of revenue\n52.3\n%\n51.7\n%\n50.4\n%",
+                "metric": "Gross margin as a percent of revenue",
+                "value": "52.3",
+                "unit": "percent",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "50.4",
+                "comparison_period": "Three Months Ended September 28, 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $3,497,652 thousand for the three months ended September 27, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Net cash provided by operating activities\n3,497,652\n1,457,228\n1,778,964",
+                "metric_type": "operating_cash_flow",
+                "metric": "Net cash provided by operating activities",
+                "value": "3497652",
+                "unit": "USD_thousands",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "1778964",
+                "comparison_period": "Three Months Ended September 28, 2025"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+              "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP Revenue for the three months ended September 27, 2026 was $8,219,418 thousand.",
+                "materiality_candidate": 4,
+                "quote": "Revenue\n$\n8,219,418\n$\n6,722,238",
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "USD_$THOUSAND",
+                "period": "Q1 2027",
+                "comparison_value": "6722238",
+                "comparison_period": "Q4 2026",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP gross margin for the three months ended September 27, 2026 was $4,305,019 thousand or 52.4% of revenue.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin\n$\n4,305,019\n$\n3,497,336\nGross margin as a percent of revenue\n52.4\n%\n52.0\n%",
+                "metric": "Gross margin",
+                "value": "4305019",
+                "unit": "USD_$THOUSAND",
+                "period": "Q1 2027",
+                "comparison_value": "3497336",
+                "comparison_period": "Q4 2026",
+                "metric_type": "other"
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "title": "Lam Research Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 20026,
+                  "extracted_chars": 20026,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 6,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u3",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u6"
+              ],
+              "expected_unit_count": 6,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u3",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u6"
+              ],
+              "processed_unit_count": 6,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 6,
+                "processed_unit_count": 6,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 1,
+                "demand_revenue": 3,
+                "guidance": 2,
+                "margin_unit_economics": 3
+              },
+              "selection": {
+                "raw_card_count": 9,
+                "deduped_card_count": 9,
+                "selected_card_count": 9,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 1,
+                  "demand_revenue": 3,
+                  "guidance": 2,
+                  "margin_unit_economics": 3
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "September 2026 quarter revenue was $8.22 billion.",
+                  "metric": "Revenue",
+                  "value": "8219418",
+                  "unit": "$",
+                  "period": "September 2026",
+                  "comparison_value": "6722238",
+                  "comparison_period": "June 2026",
+                  "reported_change": "+22%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue of $8.22 billion."
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Revenue for the three months ended September 27, 2026 was $8,219,418 thousand.",
+                  "metric": "Revenue",
+                  "value": "8219418",
+                  "unit": "USD_thousands",
+                  "period": "Three Months Ended September 27, 2026",
+                  "comparison_value": "5324173",
+                  "comparison_period": "Three Months Ended September 28, 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$\n8,219,418"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Non-GAAP Revenue for the three months ended September 27, 2026 was $8,219,418 thousand.",
+                  "metric": "Revenue",
+                  "value": "8219418",
+                  "unit": "USD_$THOUSAND",
+                  "period": "Q1 2027",
+                  "comparison_value": "6722238",
+                  "comparison_period": "Q4 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$\n8,219,418\n$\n6,722,238",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "December 2027 quarter revenue guidance is $8.60 billion plus or minus $400 million.",
+                  "metric": "Revenue",
+                  "unit": "$",
+                  "period": "December 27, 2026",
+                  "low": "8.20 Billion",
+                  "midpoint": "8.60 Billion",
+                  "high": "9.00 Billion",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$8.60 Billion\n+/-\n$400 Million",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "December 2027 quarter net income per diluted share guidance is $2.33 plus or minus $0.15.",
+                  "metric": "Net income per diluted share",
+                  "unit": "$",
+                  "period": "December 27, 2026",
+                  "low": "2.18",
+                  "midpoint": "2.33",
+                  "high": "2.48",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Net income per diluted share\n$2.33\n+/-\n$0.15",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "U.S. GAAP gross margin for the September 2026 quarter was 52.3%.",
+                  "metric": "Gross margin",
+                  "value": "52.3",
+                  "unit": "%",
+                  "period": "September 2026",
+                  "comparison_value": "51.7",
+                  "comparison_period": "June 2026",
+                  "reported_change": "+ 60 bps",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "U.S. GAAP gross margin as a percent of revenue of 52.3%, U.S. GAAP operating margin as a percent of revenue of 40.0%, and U.S. GAAP diluted EPS of $2.19."
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross margin as a percent of revenue was 52.3% for the three months ended September 27, 2026.",
+                  "metric": "Gross margin as a percent of revenue",
+                  "value": "52.3",
+                  "unit": "percent",
+                  "period": "Three Months Ended September 27, 2026",
+                  "comparison_value": "50.4",
+                  "comparison_period": "Three Months Ended September 28, 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Gross margin as a percent of revenue\n52.3\n%\n51.7\n%\n50.4\n%"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Non-GAAP gross margin for the three months ended September 27, 2026 was $4,305,019 thousand or 52.4% of revenue.",
+                  "metric": "Gross margin",
+                  "value": "4305019",
+                  "unit": "USD_$THOUSAND",
+                  "period": "Q1 2027",
+                  "comparison_value": "3497336",
+                  "comparison_period": "Q4 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Gross margin\n$\n4,305,019\n$\n3,497,336\nGross margin as a percent of revenue\n52.4\n%\n52.0\n%",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Net cash provided by operating activities was $3,497,652 thousand for the three months ended September 27, 2026.",
+                  "metric": "Net cash provided by operating activities",
+                  "value": "3497652",
+                  "unit": "USD_thousands",
+                  "period": "Three Months Ended September 27, 2026",
+                  "comparison_value": "1778964",
+                  "comparison_period": "Three Months Ended September 28, 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Net cash provided by operating activities\n3,497,652\n1,457,228\n1,778,964",
+                  "metric_type": "operating_cash_flow"
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "September 2026 quarter revenue was $8.22 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue of $8.22 billion.",
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "$",
+                "period": "September 2026",
+                "comparison_value": "6722238",
+                "comparison_period": "June 2026",
+                "reported_change": "+22%",
+                "card_id": "c1:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue of $8.22 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "U.S. GAAP gross margin for the September 2026 quarter was 52.3%.",
+                "materiality_candidate": 4,
+                "quote": "U.S. GAAP gross margin as a percent of revenue of 52.3%, U.S. GAAP operating margin as a percent of revenue of 40.0%, and U.S. GAAP diluted EPS of $2.19.",
+                "metric": "Gross margin",
+                "value": "52.3",
+                "unit": "%",
+                "period": "September 2026",
+                "comparison_value": "51.7",
+                "comparison_period": "June 2026",
+                "reported_change": "+ 60 bps",
+                "card_id": "c2:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u1",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "U.S. GAAP gross margin as a percent of revenue of 52.3%, U.S. GAAP operating margin as a percent of revenue of 40.0%, and U.S. GAAP diluted EPS of $2.19."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "December 2027 quarter revenue guidance is $8.60 billion plus or minus $400 million.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$8.60 Billion\n+/-\n$400 Million",
+                "metric": "Revenue",
+                "period": "December 27, 2026",
+                "guidance_type": "range",
+                "midpoint": "8.60 Billion",
+                "low": "8.20 Billion",
+                "high": "9.00 Billion",
+                "unit": "$",
+                "card_id": "c3:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$8.60 Billion\n+/-\n$400 Million"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "December 2027 quarter net income per diluted share guidance is $2.33 plus or minus $0.15.",
+                "materiality_candidate": 5,
+                "quote": "Net income per diluted share\n$2.33\n+/-\n$0.15",
+                "metric": "Net income per diluted share",
+                "period": "December 27, 2026",
+                "guidance_type": "range",
+                "midpoint": "2.33",
+                "low": "2.18",
+                "high": "2.48",
+                "unit": "$",
+                "card_id": "c4:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u2",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Net income per diluted share\n$2.33\n+/-\n$0.15"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue for the three months ended September 27, 2026 was $8,219,418 thousand.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n8,219,418",
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "USD_thousands",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "5324173",
+                "comparison_period": "Three Months Ended September 28, 2025",
+                "card_id": "c1:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$\n8,219,418"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross margin as a percent of revenue was 52.3% for the three months ended September 27, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin as a percent of revenue\n52.3\n%\n51.7\n%\n50.4\n%",
+                "metric": "Gross margin as a percent of revenue",
+                "value": "52.3",
+                "unit": "percent",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "50.4",
+                "comparison_period": "Three Months Ended September 28, 2025",
+                "card_id": "c2:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Gross margin as a percent of revenue\n52.3\n%\n51.7\n%\n50.4\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $3,497,652 thousand for the three months ended September 27, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Net cash provided by operating activities\n3,497,652\n1,457,228\n1,778,964",
+                "metric_type": "operating_cash_flow",
+                "metric": "Net cash provided by operating activities",
+                "value": "3497652",
+                "unit": "USD_thousands",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "1778964",
+                "comparison_period": "Three Months Ended September 28, 2025",
+                "card_id": "c3:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u4",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Net cash provided by operating activities\n3,497,652\n1,457,228\n1,778,964"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP Revenue for the three months ended September 27, 2026 was $8,219,418 thousand.",
+                "materiality_candidate": 4,
+                "quote": "Revenue\n$\n8,219,418\n$\n6,722,238",
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "USD_$THOUSAND",
+                "period": "Q1 2027",
+                "comparison_value": "6722238",
+                "comparison_period": "Q4 2026",
+                "metric_type": "other",
+                "card_id": "c1:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$\n8,219,418\n$\n6,722,238"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP gross margin for the three months ended September 27, 2026 was $4,305,019 thousand or 52.4% of revenue.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin\n$\n4,305,019\n$\n3,497,336\nGross margin as a percent of revenue\n52.4\n%\n52.0\n%",
+                "metric": "Gross margin",
+                "value": "4305019",
+                "unit": "USD_$THOUSAND",
+                "period": "Q1 2027",
+                "comparison_value": "3497336",
+                "comparison_period": "Q4 2026",
+                "metric_type": "other",
+                "card_id": "c2:sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm#u5",
+                "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Gross margin\n$\n4,305,019\n$\n3,497,336\nGross margin as a percent of revenue\n52.4\n%\n52.0\n%"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "$",
+                "period": "September 2026",
+                "comparison_value": "6722238",
+                "comparison_period": "June 2026",
+                "reported_change": "+22%",
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue of $8.22 billion."
+                }
+              },
+              {
+                "metric": "Gross margin",
+                "value": "52.3",
+                "unit": "%",
+                "period": "September 2026",
+                "comparison_value": "51.7",
+                "comparison_period": "June 2026",
+                "reported_change": "+ 60 bps",
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "U.S. GAAP gross margin as a percent of revenue of 52.3%, U.S. GAAP operating margin as a percent of revenue of 40.0%, and U.S. GAAP diluted EPS of $2.19."
+                }
+              },
+              {
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "USD_thousands",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "5324173",
+                "comparison_period": "Three Months Ended September 28, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$\n8,219,418"
+                }
+              },
+              {
+                "metric": "Gross margin as a percent of revenue",
+                "value": "52.3",
+                "unit": "percent",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "50.4",
+                "comparison_period": "Three Months Ended September 28, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Gross margin as a percent of revenue\n52.3\n%\n51.7\n%\n50.4\n%"
+                }
+              },
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "3497652",
+                "unit": "USD_thousands",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "1778964",
+                "comparison_period": "Three Months Ended September 28, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Net cash provided by operating activities\n3,497,652\n1,457,228\n1,778,964"
+                }
+              },
+              {
+                "metric": "Revenue",
+                "value": "8219418",
+                "unit": "USD_$THOUSAND",
+                "period": "Q1 2027",
+                "comparison_value": "6722238",
+                "comparison_period": "Q4 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$\n8,219,418\n$\n6,722,238"
+                }
+              },
+              {
+                "metric": "Gross margin",
+                "value": "4305019",
+                "unit": "USD_$THOUSAND",
+                "period": "Q1 2027",
+                "comparison_value": "3497336",
+                "comparison_period": "Q4 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Gross margin\n$\n4,305,019\n$\n3,497,336\nGross margin as a percent of revenue\n52.4\n%\n52.0\n%"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "Revenue",
+                "period": "December 27, 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "8.20 Billion",
+                "midpoint": "8.60 Billion",
+                "high": "9.00 Billion",
+                "unit": "$",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Revenue\n$8.60 Billion\n+/-\n$400 Million"
+                }
+              },
+              {
+                "metric": "Net income per diluted share",
+                "period": "December 27, 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "2.18",
+                "midpoint": "2.33",
+                "high": "2.48",
+                "unit": "$",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Net income per diluted share\n$2.33\n+/-\n$0.15"
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "3497652",
+                "unit": "USD_thousands",
+                "period": "Three Months Ended September 27, 2026",
+                "comparison_value": "1778964",
+                "comparison_period": "Three Months Ended September 28, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000707549-26-000052:lrcx_exhibitx991xq1x2027.htm",
+                  "quote": "Net cash provided by operating activities\n3,497,652\n1,457,228\n1,778,964"
+                },
+                "metric_type": "operating_cash_flow",
+                "reconciliation": []
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [],
+            "extraction_batch_count": 3,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "gemini_search",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+                  "category": "search_quota_blocked"
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.227,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-10-22T01:10:35-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-10-22T01:10:35-04:00",
+              "official_ir_checked_at": "2026-10-22T01:10:35-04:00",
+              "official_ir_check_count": 6,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-10-22T03:10:35-04:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "營收與毛利率持續環比擴張，推動獲利動能上升",
+                "why_it_matters": "單季營收突破 $8.22B（季增 22%），搭配 Non-GAAP 毛利率提升至 52.4%，顯示設備出貨規模放大同時具備良好獲利能力。",
+                "fact_basis": [
+                  "September 2026 季度營收達 $8.22B（$8,219,418 千美元），較 June 2026 季度的 $6.72B 成長 22%。",
+                  "GAAP 毛利率達 52.3%（季增 60 bps），Non-GAAP 毛利率達 52.4%。"
+                ],
+                "inference": "規模經濟效益發揮且高毛利產品組合比重持穩，有助於支撐未來 1–3 年的潛在獲利中樞升級。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "September 2026 季度營收 $8,219,418 千美元（$8.22B），較 June 2026 季度的 $6,722,238 千美元成長 22%，反映強勁的設備交付動能。",
+                "年對年比較方面，營收自三個月前同期的 $5,324,173 千美元顯著成長。"
+              ],
+              "margin_unit_economics": [
+                "GAAP 毛利率自前一季度的 51.7% 提升 60 bps 至 52.3%，年對年亦優於同期的 50.4%。",
+                "Non-GAAP 毛利率為 52.4%（金額為 $4,305,019 千美元），前一季度為 52.0%（$3,497,336 千美元），顯示本季獲利品質健康。"
+              ],
+              "cash_capital_intensity": [
+                "營業活動現金流量（CFO）達 $3,497,652 千美元，相較去年同期的 $1,778,964 千美元顯著增加，顯示強勁的盈餘轉現金能力。"
+              ]
+            },
+            "guidance_assessment": [
+              "December 2026 季度（下季）營收指引區間為 $8.60B ± $400M（$8.20B 至 $9.00B），中樞延續環比成長態勢。",
+              "December 2026 季度稀釋每股盈餘（EPS）指引區間為 $2.33 ± $0.15（$2.18 至 $2.48）。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "數據顯示營收與營業現金流同步大幅增長，但數據包中未提供客戶集中度、大型客戶分組（cohorts）、RPO 或合約負債細節，故無法逕行判定客戶廣度與擴展品質。"
+            ],
+            "qa_readthrough": [
+              {
+                "debate": "法說會問答細節",
+                "management_answer": "本資料包未包含逐字稿或 Q&A 數據卡片，故無法呈現分析師追問與管理層答覆。",
+                "answer_quality": "unknown",
+                "investment_readthrough": "無法對管理層回答態度或未公開之營運細節進行對抗性解讀。"
+              }
+            ],
+            "competitive_value_chain": [
+              "單季營收 $8.22B 與毛利率 52.3% 展現公司在先進刻蝕與沉積設備領域的市場地位，但缺少競爭對手份額數據，無法判定是否發生結構性市占率消長。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "下季營收指引低端為 $8.20B，若最終落於低端，可能隱含設備拉貨動能趨緩或交付延遲風險。",
+              "缺乏客戶訂單與結構細節，若晶圓代工或記憶體客戶資本支出縮減，將直接衝擊後續季度獲利中樞。"
+            ],
+            "watch_items": [
+              "December 2026 季度實際營收是否達指引中樞 $8.60B 以上。",
+              "未來季度毛利率能否持續維持在 52% 之上的高位水平。",
+              "營運現金流在下一季度是否維持高換現率。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "LRCX LRCX_2026-10-21\n\n💡 投資結論與邏輯:\n• 營收與毛利率雙雙上升，規模效益與高獲利能力支撐盈餘成長動能。\n• 強勁的營運現金流強化了獲利品質，下季財測中樞持續呈現季增趨勢。\n\n📊 關鍵數據與財測:\n• 需求與營收：September 2026 季度營收達 $8.22B（$8,219,418 千美元），較 June 2026 季度成長 22%，反映設備出貨動能強勁。\n• 毛利率與成本結構：GAAP 毛利率為 52.3%，較前一季度的 51.7% 提升 60 bps；Non-GAAP 毛利率提升至 52.4%，顯示產品組合與營運規模維持良好獲利品質。\n• 現金流與資本強度：本季營業活動現金流量（CFO）達 $3,497,652 千美元，相較去年同期的 $1,778,964 千美元大幅成長，顯示獲利轉化為現金的能力極佳。\n• 下季指引：December 2026 季度營收指引為 $8.60B ± $400M（區間 $8.20B 至 $9.00B），稀釋每股盈餘（EPS）指引為 $2.33 ± $0.15（區間 $2.18 至 $2.48）。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動因素：營收環比成長 22% 帶動毛利率上升至 52.3%，顯示設備產能利用率與交付規模擴大對整體營利能力具正向貢獻。\n• 法說會與管理層互動：本期資料包未包含法說會逐字稿或 Q&A 卡片，無法確認管理層對於具體終端應用（如記憶體與先進邏輯）需求比例的口頭說明。\n\n⚠️ 風險、反證與待驗證:\n• 指引波動風險：下季營收指引區間下限為 $8.20B，若半導體客戶建廠進度放緩，可能導致實際營收落於指引低端。\n• 客戶集中度未明：公開數據缺乏 RPO 與大型客戶下單細節，尚無法驗證單一客戶資本支出變動對後續營收的衝擊幅度。\n• 待驗證事項：追蹤 December 2026 季度營收能否達到 $8.60B 指引中樞，以及毛利率是否穩固在 52% 以上。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 85,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:numeric_provenance"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "LRCX Q1 FY2027\n\n💡 投資結論與邏輯:\n• 營收與毛利率雙雙上升，規模效益與高獲利能力支撐盈餘成長動能。\n• 強勁的營運現金流強化獲利品質，下季財測中樞持續呈現季增趨勢。\n\n📊 關鍵數據與財測:\n• 需求與營收：September 2026 季度營收達 $8.22B（$8,219,418 千美元），較 June 2026 季度成長 22%，反映設備出貨動能強勁；年對年亦高於去年同期的 $5,324,173 千美元。\n• 毛利率與成本結構：GAAP 毛利率為 52.3%（季增 60 bps，年增 190 bps）；Non-GAAP 毛利率升至 52.4%（前一季為 52.0%），顯示產品組合與營運規模維持良好獲利品質。\n• 現金流與資本強度：本季營業活動現金流量（CFO）達 $3,497,652 千美元，相較去年同期的 $1,778,964 千美元大幅成長，顯示獲利轉化為現金的能力極佳。\n• 下季指引：December 2026 季度營收指引為 $8.60B ± $400M（區間 $8.20B 至 $9.00B），稀釋 EPS 指引為 $2.33 ± $0.15（區間 $2.18 至 $2.48）。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動因素：營收環比成長 22% 帶動毛利率上升至 52.3%，判讀為設備交付規模擴大對整體營利能力具正向貢獻。\n• 法說會與管理層互動：本期資料包未包含法說會逐字稿或 Q&A 卡片，無法確認管理層對於具體終端應用需求比例的口頭說明。\n\n⚠️ 風險、反證與待驗證:\n• 指引波動風險：下季營收指引區間下限為 $8.20B，若客戶建廠進度放緩，可能導致實際營收落於指引低端。\n• 客戶集中度未明：公開數據缺乏 RPO 與大型客戶下單細節，尚無法驗證單一客戶資本支出變動對後續營收的衝擊幅度。\n• 待驗證事項：追蹤 December 2026 季度實際營收能否達到 $8.60B 指引中樞，以及毛利率是否穩固在 52% 以上。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:下季指引：December 2026 季度營收指引為 $8.60B ± $400M（區間 $8.20B 至 $9.00B），稀釋 EPS 指引為 $2.33 ± $0.15（區間 "
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:190bps",
+              "unbacked_derived_rate:52%"
+            ],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "營收與毛利率持續環比擴張，推動獲利動能上升",
+                "why_it_matters": "單季營收突破 $8.22B，搭配 Non-GAAP 毛利率提升，顯示設備出貨規模放大同時具備良好獲利能力。",
+                "fact_basis": [
+                  "September 2026 季度營收達 $8.22B（$8,219,418 千美元），較 June 2026 季度的 $6.72B 成長 22%。",
+                  "GAAP 毛利率達 52.3%，Non-GAAP 毛利率達 52.4%。"
+                ],
+                "inference": "規模經濟效益發揮有助於支撐潛在獲利表現。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "September 2026 季度營收 $8,219,418 千美元（$8.22B），較 June 2026 季度的 $6,722,238 千美元成長 22%，反映強勁的設備交付動能。",
+                "年對年比較方面，營收自三個月前同期的 $5,324,173 千美元成長。"
+              ],
+              "margin_unit_economics": [
+                "GAAP 毛利率自前一季度的 51.7% 提升至 52.3%，年對年亦優於同期的 50.4%。",
+                "Non-GAAP 毛利率為 52.4%（金額為 $4,305,019 千美元），前一季度為 52.0%（$3,497,336 千美元）。"
+              ],
+              "cash_capital_intensity": [
+                "營業活動現金流量（CFO）達 $3,497,652 千美元，相較去年同期的 $1,778,964 千美元增加，顯示盈餘轉現金能力。"
+              ]
+            },
+            "guidance_assessment": [
+              "December 2026 季度營收指引區間為 $8.60B ± $400M（$8.20B 至 $9.00B），中樞延續環比成長態勢。",
+              "December 2026 季度稀釋每股盈餘（EPS）指引區間為 $2.33 ± $0.15（$2.18 至 $2.48）。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "數據顯示營收與營業現金流同步增長，但數據包中未提供客戶集中度、大型客戶分組、RPO 或合約負債細節，故無法逕行判定客戶廣度與擴展品質。"
+            ],
+            "qa_readthrough": [
+              {
+                "debate": "法說會問答細節",
+                "management_answer": "本資料包未包含逐字稿或 Q&A 數據卡片，故無法呈現分析師追問與管理層答覆。",
+                "answer_quality": "unknown",
+                "investment_readthrough": "無法對管理層回答態度或未公開之營運細節進行對抗性解讀。"
+              }
+            ],
+            "competitive_value_chain": [
+              "單季營收 $8.22B 與毛利率 52.3% 展現公司在先進設備領域的規模，但缺少競爭對手份額數據，無法判定是否發生結構性市占率消長。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "下季營收指引低端為 $8.20B，若最終落於低端，可能隱含設備拉貨動能趨緩或交付延遲風險。",
+              "缺乏客戶訂單與結構細節，若客戶資本支出縮減，將直接衝擊後續季度獲利中樞。"
+            ],
+            "watch_items": [
+              "December 2026 季度實際營收是否達指引中樞 $8.60B 以上。",
+              "未來季度毛利率能否持續維持在高位水平。",
+              "營運現金流在下一季度是否維持高換現率。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "LRCX Q1 FY2027\n\n💡 投資結論與邏輯:\n• 營收與毛利率雙雙上升，規模效益與獲利能力支撐盈餘成長動能。\n• 強勁的營運現金流顯示獲利品質，下季財測中樞持續呈現季增趨勢。\n\n📊 關鍵數據與財測:\n• 營收表現：September 2026 季度營收達 $8.22B（$8,219,418 千美元），較 June 2026 季度成長 22%，反映設備出貨動能增加；但資料包未提供客戶集中度細節，仍不能確認終端市占擴張廣度。\n• 毛利率變化：GAAP 毛利率為 52.3%，較前一季度的 51.7% 提升 60 bps；Non-GAAP 毛利率升至 52.4%，反映規模效益，但缺乏完整成本細項，仍不能直接歸因於單一產品組合優化。\n• 現金流量：本季營業活動現金流量（CFO）達 $3,497,652 千美元，相較去年同期的 $1,778,964 千美元顯著增加，顯示盈餘轉現金能力提升。\n• 營運指引：December 2026 季度營收指引為 $8.60B ± $400M（區間 $8.20B 至 $9.00B），稀釋 EPS 指引為 $2.33 ± $0.15（區間 $2.18 至 $2.48）。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動因素：營收環比成長 22% 帶動毛利率上升至 52.3%，判讀為設備交付規模擴大對整體營利能力具正向貢獻。\n• 管理層互動：本期資料包未包含法說會逐字稿或 Q&A 卡片，無法確認管理層對於具體終端應用需求比例的口頭說明。\n\n⚠️ 風險、反證與待驗證:\n• 指引波動風險：下季營收指引區間下限為 $8.20B，若客戶建廠進度放緩，可能導致實際營收落於指引低端。\n• 客戶集中度未明：公開數據缺乏 RPO 與大型客戶下單細節，尚無法驗證單一客戶資本支出變動對後續營收的衝擊幅度。\n• 待驗證事項：追蹤 December 2026 季度實際營收能否達到 $8.60B 指引中樞，以及毛利率是否穩固在 52% 以上。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Analyst output telegram_draft violates the required INVESTOR TELEGRAM V4.3 structure and section formatting rules (such as bullet count, metric placement, and strict USD formatting like $8.22B instead of converting to Chinese units/excessive text).",
+              "Section 1 contains numbers/metrics that should be restricted or strictly managed per V4.3 rules.",
+              "Section 2 has too many separate lines/clusters exceeding the concise KPI limits.",
+              "deterministic_v4_gate:structure",
+              "deterministic_v4_gate:numeric_provenance"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "LRCX Q1 FY2027\n\n1. 💡 投資結論與邏輯:\n• 單季營收與毛利率環比雙雙擴張，反映設備交付規模放大帶動獲利能力提升。\n• 營運現金流顯著增長，支撐盈餘轉現金之品質。\n\n2. 📊 關鍵數據與財測:\n• 營收表現：September 2026 季度營收達 $8.22B（$8,219,418 千美元），較前一季成長 22%，反映出貨動能增加；但缺乏客戶集中度細節，仍無法確認終端市占廣度。\n• 毛利率變化：GAAP 毛利率為 52.3%，較前一季提升 60 bps；Non-GAAP 毛利率為 52.4%，反映規模效益，但缺乏成本細項，尚不能歸因於單一產品組合優化。\n• 現金流量：本季營業活動現金流量達 $3.498B（$3,497,652 千美元），較去年同期顯著增加，顯示盈餘轉現金能力提升。\n• 營運指引：December 2026 季度營收指引為 $8.60B ± $400M（區間 $8.20B 至 $9.00B），稀釋 EPS 指引為 $2.33 ± $0.15（區間 $2.18 至 $2.48）。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 營運驅動因素：營收環比成長帶動毛利率上升，判讀為設備交付規模擴大對整體營利能力具正向貢獻。\n• 管理層互動：本期資料包未包含法說會逐字稿或 Q&A 卡片，無法確認管理層對於具體終端應用需求比例的說明。\n\n4. ⚠️ 風險、反證與待驗證:\n• 指引波動風險：下季營收指引區間下限為 $8.20B，若客戶建廠進度放緩，可能導致實際營收落於指引低端。\n• 客戶細節未明：公開數據缺乏 RPO 與大型客戶下單細節，尚無法驗證單一客戶資本支出變動對後續營收的衝擊幅度。\n• 待驗證事項：追蹤下季實際營收能否達到 $8.60B 指引中樞，以及毛利率是否穩固在 52% 以上。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:52%"
+            ],
             "strong_claim_errors": []
           }
         }
