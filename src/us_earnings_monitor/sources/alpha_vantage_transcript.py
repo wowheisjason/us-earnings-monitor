@@ -82,7 +82,7 @@ class AlphaVantageTranscriptAdapter:
             source_id=source_id,
             ticker=company.ticker,
             title=f"{company.name} {quarter} Earnings Call Transcript (third-party transcript via Alpha Vantage)",
-            published_at=now.isoformat(),
+            published_at="",  # API does not supply a verified publication timestamp.
             url="https://www.alphavantage.co/",
             document_url=None,
             fiscal_year=event.fiscal_year,
@@ -95,6 +95,8 @@ class AlphaVantageTranscriptAdapter:
                 "transcript_text": text,
                 "provenance": "third_party_transcript",
                 "quarter": quarter,
+                "retrieved_at": now.isoformat(),
+                "publication_time_status": "unknown",
             },
         )
         return [disclosure], {"configured": True, "provider": self.source_name, "document_count": 1, "quarter": quarter}
