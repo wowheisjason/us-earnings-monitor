@@ -548,7 +548,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-22T13:14:21-04:00",
+      "updated_at": "2026-10-22T13:58:16-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -913,7 +913,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T13:14:21-04:00",
+      "updated_at": "2026-10-22T13:58:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1211,7 +1211,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T13:14:21-04:00",
+      "updated_at": "2026-10-22T13:58:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1522,16 +1522,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T13:14:21-04:00",
+      "updated_at": "2026-10-22T13:58:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.191,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1544,7 +1544,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.486,
+            "seconds": 0.35,
             "documents": 0,
             "partial": false
           },
@@ -1557,7 +1557,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-22T11:16:45-04:00",
+        "ir_retrieval_last_at": "2026-10-22T13:58:16-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1577,11 +1577,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-22T11:16:45-04:00",
-        "official_ir_checked_at": "2026-10-22T11:16:45-04:00",
-        "official_ir_check_count": 7,
+        "last_collection_check_at": "2026-10-22T13:58:16-04:00",
+        "official_ir_checked_at": "2026-10-22T13:58:16-04:00",
+        "official_ir_check_count": 8,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-22T13:16:45-04:00"
+        "next_ir_retry_at": "2026-10-22T15:58:16-04:00"
       },
       "delivery": {}
     },
@@ -1598,16 +1598,16 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-22T11:16:45-04:00",
+      "updated_at": "2026-10-22T13:58:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1620,7 +1620,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.354,
+            "seconds": 1.112,
             "documents": 0,
             "partial": false
           },
@@ -1633,7 +1633,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-22T11:16:45-04:00",
+        "ir_retrieval_last_at": "2026-10-22T13:58:16-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1653,10 +1653,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-22T11:16:45-04:00",
+        "last_collection_check_at": "2026-10-22T13:58:16-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-10-22T11:16:45-04:00",
-        "next_ir_retry_at": "2026-10-22T13:16:45-04:00"
+        "official_ir_last_attempt_incomplete": "2026-10-22T13:58:16-04:00",
+        "next_ir_retry_at": "2026-10-22T15:58:16-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -1677,16 +1677,16 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-22T11:16:45-04:00",
+      "updated_at": "2026-10-22T13:58:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1699,7 +1699,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.134,
+            "seconds": 1.093,
             "documents": 0,
             "partial": false
           },
@@ -1712,7 +1712,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-22T11:16:45-04:00",
+        "ir_retrieval_last_at": "2026-10-22T13:58:16-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1732,10 +1732,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-22T11:16:45-04:00",
+        "last_collection_check_at": "2026-10-22T13:58:16-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-10-22T11:16:45-04:00",
-        "next_ir_retry_at": "2026-10-22T13:16:45-04:00"
+        "official_ir_last_attempt_incomplete": "2026-10-22T13:58:16-04:00",
+        "next_ir_retry_at": "2026-10-22T15:58:16-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -1756,16 +1756,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T13:14:21-04:00",
+      "updated_at": "2026-10-22T13:58:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -1778,7 +1778,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.258,
+            "seconds": 0.188,
             "documents": 0,
             "partial": false
           },
@@ -1791,7 +1791,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-22T11:16:45-04:00",
+        "ir_retrieval_last_at": "2026-10-22T13:58:16-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1811,11 +1811,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-22T11:16:45-04:00",
-        "official_ir_checked_at": "2026-10-22T11:16:45-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-10-22T13:58:16-04:00",
+        "official_ir_checked_at": "2026-10-22T13:58:16-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-22T13:16:45-04:00"
+        "next_ir_retry_at": "2026-10-22T15:58:16-04:00"
       },
       "delivery": {}
     },
@@ -1904,10 +1904,10 @@
         "official_ir:a1628cfd234245b7c1a3d710",
         "official_ir:f5f30e3408c085be73542587"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T13:06:38-04:00",
+      "updated_at": "2026-10-22T13:58:16-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1974,13 +1974,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-10-22T07:50:39-04:00",
-      "blocked_until": "2026-10-22T13:50:39-04:00",
+      "last_failure_at": "2026-10-22T13:58:16-04:00",
+      "blocked_until": "2026-10-22T19:58:16-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-22T13:14:21-04:00",
+      "last_success_at": "2026-10-22T13:58:16-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -9884,6 +9884,654 @@
               "sec_edgar:0001628280-26-066773:meta-20260930.htm#u7"
             ],
             "cards": []
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $64,601 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 64,601",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "64,601",
+                "unit": "usd",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income loss was $12,988 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:OperatingIncomeLoss, value: 12,988",
+                "metric": "OperatingIncomeLoss",
+                "value": "12,988",
+                "unit": "usd",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income loss was $9,860 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:NetIncomeLoss, value: 9,860",
+                "metric": "NetIncomeLoss",
+                "value": "9,860",
+                "unit": "usd",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_5": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $64,601 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 64,601",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "64,601",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 64,601"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income loss was $12,988 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:OperatingIncomeLoss, value: 12,988",
+                "metric": "OperatingIncomeLoss",
+                "value": "12,988",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "card_id": "c2:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:OperatingIncomeLoss, value: 12,988"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income loss was $9,860 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:NetIncomeLoss, value: 9,860",
+                "metric": "NetIncomeLoss",
+                "value": "9,860",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "card_id": "c3:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:NetIncomeLoss, value: 9,860"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:5be0abfd8fb6350b2234e1b6#u1",
+              "official_ir:a1628cfd234245b7c1a3d710#u1"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:f5f30e3408c085be73542587#u1"
+            ],
+            "cards": []
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "title": "Meta Platforms Form 10-Q — 10-Q",
+                  "document_kind": "other",
+                  "selection_mode": "full",
+                  "raw_chars": 437057,
+                  "extracted_chars": 24000,
+                  "source_truncated": false,
+                  "raw_paragraphs": 19,
+                  "relevant_paragraphs": 19,
+                  "unit_count": 8,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:5be0abfd8fb6350b2234e1b6",
+                  "title": "Financials Financials Quarterly Earnings Annual Reports SEC Filings",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 2908,
+                  "extracted_chars": 2908,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:a1628cfd234245b7c1a3d710",
+                  "title": "Quarterly Earnings",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 2908,
+                  "extracted_chars": 2908,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:f5f30e3408c085be73542587",
+                  "title": "Q3 2026 Earnings Latest SEC Filings All files",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 2908,
+                  "extracted_chars": 2908,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u1",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u2",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u3",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u4",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u5",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u6",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u7",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "official_ir:5be0abfd8fb6350b2234e1b6#u1",
+                "official_ir:a1628cfd234245b7c1a3d710#u1",
+                "official_ir:f5f30e3408c085be73542587#u1"
+              ],
+              "expected_unit_count": 11,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u1",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u2",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u3",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u4",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u5",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u6",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#u7",
+                "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "official_ir:5be0abfd8fb6350b2234e1b6#u1",
+                "official_ir:a1628cfd234245b7c1a3d710#u1",
+                "official_ir:f5f30e3408c085be73542587#u1"
+              ],
+              "processed_unit_count": 11,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 11,
+                "processed_unit_count": 11,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "demand_revenue": 2,
+                "margin_unit_economics": 1
+              },
+              "selection": {
+                "raw_card_count": 3,
+                "deduped_card_count": 3,
+                "selected_card_count": 3,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "demand_revenue": 2,
+                  "margin_unit_economics": 1
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Revenue from contract with customer excluding assessed tax was $64,601 million for the three months ended September 30, 2026.",
+                  "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "value": "64,601",
+                  "unit": "usd",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 64,601"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net income loss was $9,860 million for the three months ended September 30, 2026.",
+                  "metric": "NetIncomeLoss",
+                  "value": "9,860",
+                  "unit": "usd",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:NetIncomeLoss, value: 9,860"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Operating income loss was $12,988 million for the three months ended September 30, 2026.",
+                  "metric": "OperatingIncomeLoss",
+                  "value": "12,988",
+                  "unit": "usd",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:OperatingIncomeLoss, value: 12,988"
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $64,601 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 64,601",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "64,601",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 64,601"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income loss was $12,988 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:OperatingIncomeLoss, value: 12,988",
+                "metric": "OperatingIncomeLoss",
+                "value": "12,988",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "card_id": "c2:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:OperatingIncomeLoss, value: 12,988"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income loss was $9,860 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:NetIncomeLoss, value: 9,860",
+                "metric": "NetIncomeLoss",
+                "value": "9,860",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "card_id": "c3:sec_edgar:0001628280-26-066773:meta-20260930.htm#structured",
+                "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:NetIncomeLoss, value: 9,860"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "64,601",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 64,601"
+                }
+              },
+              {
+                "metric": "OperatingIncomeLoss",
+                "value": "12,988",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:OperatingIncomeLoss, value: 12,988"
+                }
+              },
+              {
+                "metric": "NetIncomeLoss",
+                "value": "9,860",
+                "unit": "usd",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066773:meta-20260930.htm",
+                  "quote": "us-gaap:NetIncomeLoss, value: 9,860"
+                }
+              }
+            ],
+            "guidance": [],
+            "cash_flow_and_capex": [],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [
+              "facts.cards[0]:quote_not_found_in_sec_edgar:0001628280-26-066773:meta-20260930.htm",
+              "facts.cards[1]:quote_not_found_in_sec_edgar:0001628280-26-066773:meta-20260930.htm",
+              "facts.cards[2]:quote_not_found_in_sec_edgar:0001628280-26-066773:meta-20260930.htm"
+            ],
+            "extraction_batch_count": 7,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.047,
+                  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/META-2026-Q3",
+                  "reason": "no_eligible_official_documents"
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.724,
+                  "documents": 3,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.115,
+                  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/META-2026-Q3"
+                }
+              ],
+              "ir_retrieval_last_at": "2026-10-22T13:06:38-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 4,
+                "kinds": {
+                  "other": 1,
+                  "financial_results": 3
+                },
+                "sources": {
+                  "sec_edgar": 1,
+                  "official_ir": 3
+                },
+                "has_primary_results": true,
+                "has_official_ir": true,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-10-22T13:06:38-04:00",
+              "official_ir_checked_at": "2026-10-22T13:06:38-04:00",
+              "official_ir_check_count": 4,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-10-22T15:06:38-04:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q3 2026營收達 $64,601M，但出現營業虧損與淨虧損",
+                "why_it_matters": "反映本季成本或費用結構出現重大變動，直接衝擊短期獲利能力與 earnings power。",
+                "fact_basis": [
+                  "Revenue from contract with customer excluding assessed tax was $64,601 million for Q3 2026",
+                  "Operating income loss was $12,988 million for Q3 2026",
+                  "Net income loss was $9,860 million for Q3 2026"
+                ],
+                "inference": "單季出現巨額營業與淨虧損，顯示獲利能力在當期面臨嚴峻壓抑，需持續觀察此為一次性費用或結構性成本上升。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 來自客戶合約之排除評定稅收後營收為 $64,601M。"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 營業虧損達 $12,988M，反映單位經濟效益或費用支出在本季呈現顯著負值。"
+              ],
+              "cash_capital_intensity": [
+                "未有直接的現金流或資本支出細節佐證，暫無法建立完整的現金流量與資本密集度橋接。"
+              ]
+            },
+            "guidance_assessment": [
+              "本 Research Packet 未提供明確的未來財測 (guidance) 數據。"
+            ],
+            "demand_quality": [
+              "缺乏客戶數量、大客戶 cohorts、NRR 或 RPO 等細節，無法判定需求廣度、深度與集中度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據僅包含財務報表之營收與損益數據，尚不足以支持 pricing power、control point 或 share gain/loss 等競爭優勢結論。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "營業虧損與淨虧損擴大若非短期一次性因素，將對未來數季的 earnings power 構成持續性威脅。"
+            ],
+            "watch_items": [
+              "後續財報中營業虧損的收斂情況與成本費用結構變化",
+              "管理層對於虧損原因的具體說明與資本配置計畫"
+            ],
+            "confidence": 85,
+            "telegram_draft": "META FY2026 Q3\n\n💡 投資結論與邏輯:\n• 本季營收達 $64,601M，但伴隨 $12,988M 的營業虧損與 $9,860M 的淨虧損，顯示短期獲利能力面臨沉重壓力。\n• 財務表現反映成本與費用結構在本季出現劇烈變化，需釐清其具體驅動因素以評估對未來 earnings power 的影響。\n\n📊 關鍵數據與財測:\n• 營收表現：Q3 2026 營收為 $64,601M，顯示核心業務具備規模營收產出能力，但尚未轉化為營業利益。\n• 獲利表現：Q3 2026 營業虧損為 $12,988M，淨虧損為 $9,860M，反映當期單位經濟效益或費用負擔偏高。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 本次 Research Packet 未包含管理層 Q&A 逐字稿與營運細節，暫無直接的法說攻防與細部動能證據。\n\n⚠️ 風險、反證與待驗證:\n• 營業與淨虧損若延續將侵蝕現金水位與長期資本回報，須持續追蹤後續費用的可持續性與收斂時點。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:structure"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "META FY2026 Q3\n\n1. 💡 投資結論與邏輯:\n• 本季營收達 $64,601M，但伴隨 $12,988M 的營業虧損與 $9,860M 的淨虧損，顯示短線獲利能力面臨沉重壓力，成本或費用結構出現顯著變化。\n• 財務表現反映規模營收尚未轉化為營業利益，需持續追蹤虧損驅動因素以評估其對長期 earnings power 的實質影響。\n\n2. 📊 關鍵數據與財測:\n• 營收表現：Q3 2026 營收達 $64,601M，顯示核心業務具備基礎規模，但當期費用壓抑整體獲利。\n• 獲利表現：Q3 2026 營業虧損達 $12,988M，淨虧損達 $9,860M，反映當期單位經濟效益或費用負擔偏高。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 本次 Research Packet 未包含管理層 Q&A 逐字稿與營運細節，暫無直接的法說攻防與細部動能證據。\n\n4. ⚠️ 風險、反證與待驗證:\n• 營業與淨虧損若延續將侵蝕現金水位與長期資本回報，須持續追蹤後續費用的可持續性與收斂時點。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q3 2026營收達 $64,601M，但出現營業虧損與淨虧損",
+                "why_it_matters": "反映本季成本或費用結構出現重大變動，直接衝擊短期獲利能力與 earnings power。",
+                "fact_basis": [
+                  "Revenue from contract with customer excluding assessed tax was $64,601 million for Q3 2026",
+                  "Operating income loss was $12,988 million for Q3 2026",
+                  "Net income loss was $9,860 million for Q3 2026"
+                ],
+                "inference": "單季出現巨額營業與淨虧損，顯示獲利能力在當期面臨嚴峻壓抑，需持續觀察此為一次性費用或結構性成本上升。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 來自客戶合約之排除評定稅收後營收為 $64,601M。"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 營業虧損達 $12,988M，反映單位經濟效益或費用支出在本季呈現顯著負值。"
+              ],
+              "cash_capital_intensity": [
+                "未有直接的現金流或資本支出細節佐證，暫無法建立完整的現金流量與資本密集度橋接。"
+              ]
+            },
+            "guidance_assessment": [
+              "本 Research Packet 未提供明確的未來財測 (guidance) 數據。"
+            ],
+            "demand_quality": [
+              "缺乏客戶數量、大客戶 cohorts、NRR 或 RPO 等細節，無法判定需求廣度、深度與集中度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據僅包含財務報表之營收與損益數據，尚不足以支持 pricing power、control point 或 share gain/loss 等競爭優勢結論。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "營業虧損與淨虧損擴大若非短期一次性因素，將對未來數季的 earnings power 構成持續性威脅。"
+            ],
+            "watch_items": [
+              "後續財報中營業虧損的收斂情況與成本費用結構變化",
+              "管理層對於虧損原因的具體說明與資本配置計畫"
+            ],
+            "confidence": 85,
+            "telegram_draft": "META FY2026 Q3\n\n1. 💡 投資結論與邏輯:\n• 本季伴隨營業虧損與淨虧損，顯示短線獲利能力面臨沉重壓力，成本或費用結構出現顯著變化。\n• 財務表現反映規模營收尚未轉化為營業利益，需持續追蹤虧損驅動因素以評估其對長期 earnings power 的實質影響。\n\n2. 📊 關鍵數據與財測:\n• 營收表現：Q3 2026 營收達 $64,601M，顯示核心業務具備基礎規模，但當期費用壓抑整體獲利。\n• 獲利表現：Q3 2026 營業虧損達 $12,988M，淨虧損達 $9,860M，反映當期單位經濟效益或費用負擔偏高。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 本次 Research Packet 未包含管理層 Q&A 逐字稿與營運細節，暫無直接的法說攻防與細部動能證據。\n\n4. ⚠️ 風險、反證與待驗證:\n• 營業與淨虧損若延續將侵蝕現金水位與長期資本回報，須持續追蹤後續費用的可持續性與收斂時點。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Telegram 報告草稿中洩漏內部系統術語（Research Packet）",
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:structure"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "META FY2026 Q3\n\n1. 💡 投資結論與邏輯:\n• 本季伴隨營業虧損與淨虧損，顯示短線獲利能力面臨沉重壓力，成本或費用結構出現顯著變化。\n• 財務表現反映規模營收尚未轉化為營業利益，需持續追蹤虧損驅動因素以評估其對長期獲利能力的實質影響。\n\n2. 📊 關鍵數據與財測:\n• 營收與獲利表現：Q3 營收達 $64,601M，營業虧損為 $12,988M，淨虧損為 $9,860M，顯示當期費用負擔偏高，壓抑整體獲利表現。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 目前公開揭露未包含管理層 Q&A 逐字稿與營運細節，暫無直接的法說攻防與細部動能證據。\n\n4. ⚠️ 風險、反證與待驗證:\n• 營業與淨虧損若延續將侵蝕現金水位與長期資本回報，須持續追蹤後續費用的可持續性與收斂時點。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
           }
         }
       },
