@@ -450,7 +450,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-21T20:00:09-04:00",
+      "updated_at": "2026-10-21T20:12:48-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -815,7 +815,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T20:00:09-04:00",
+      "updated_at": "2026-10-21T20:12:48-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1113,7 +1113,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T20:00:09-04:00",
+      "updated_at": "2026-10-21T20:12:48-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1421,10 +1421,10 @@
       "documents": [
         "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-21T19:44:09-04:00",
+      "updated_at": "2026-10-21T20:12:48-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7197,6 +7197,1337 @@
             "redundancy_errors": [],
             "period_label_errors": [],
             "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "META_2026-10-19": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "b273972865bb53711e6cb7575c2c8d21fde634318970d9259f8c95549572e396",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+              "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 2026 revenue was $64,601 million, an increase of 26% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n64,601\n$\n51,242\n26\n%",
+                "metric": "Revenue",
+                "value": 64601,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 51242,
+                "comparison_period": "Q3 2025",
+                "reported_change": "26%"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expected fourth quarter 2026 total revenue to be in the range of $73-76 billion.",
+                "materiality_candidate": 5,
+                "quote": "We expect fourth quarter 2026 total revenue to be in the range of $73-76 billion.",
+                "metric": "total revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 73,
+                "high": 76,
+                "unit": "$B"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expected full year 2026 total expenses to be in the range of $175-179 billion.",
+                "materiality_candidate": 5,
+                "quote": "We now expect full year 2026 total expenses to be in the range of $175-179 billion.",
+                "metric": "total expenses",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 175,
+                "high": 179,
+                "unit": "$B"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Anticipated 2026 capital expenditures to be in the range of $135-145 billion.",
+                "materiality_candidate": 5,
+                "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion,",
+                "metric": "capital expenditures",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 135,
+                "high": 145,
+                "unit": "$B"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expected fourth quarter 2026 tax rate to be between 15-17%.",
+                "materiality_candidate": 4,
+                "quote": "we expect our fourth quarter 2026 tax rate to be between 15-17%.",
+                "metric": "tax rate",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 15,
+                "high": 17,
+                "unit": "%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u3",
+              "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u3",
+                "card_type": "management_claim",
+                "topic": "product_competition",
+                "fact_class": "management_claim",
+                "statement": "Meta intends to establish Class C common stock with an effective date of January 19, 2027, accompanied by a one-for-one stock dividend resulting in a two-for-one stock split effect.",
+                "materiality_candidate": 3,
+                "quote": "Meta intends to file an amended and restated certificate of incorporation in Delaware to establish the Class C common stock, with an effective date of January 19, 2027."
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+              "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Three Months Ended September 30, 2026 revenue was $64,601 million compared to $51,242 million for the same period in 2025.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n64,601\n$\n51,242",
+                "metric": "Revenue",
+                "value": "64601",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "51242",
+                "comparison_period": "Q3 2025",
+                "reported_change": "26%"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Three Months Ended September 30, 2026 net income was $9,860 million compared to $2,709 million for the same period in 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$\n9,860\n$\n2,709",
+                "metric": "Net income",
+                "value": "9860",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "2709",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 2026 Family of Apps revenue was $64,158 million and Reality Labs revenue was $443 million.",
+                "materiality_candidate": 4,
+                "quote": "Family of Apps\n64,158\n50,772\nReality Labs\n443\n470\nTotal revenue\n$\n64,601\n$\n51,242",
+                "metric": "Segment revenue",
+                "value": "64158",
+                "unit": "USD_M",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_3": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 2026 Family of Apps revenue was $64,158 million and Reality Labs revenue was $443 million.",
+                "materiality_candidate": 4,
+                "quote": "Family of Apps\n64,158\n50,772\n180,436\n139,821\nReality Labs\n443\n470\n1,276\n1,252\nTotal revenue\n$\n64,601\n$\n51,242\n$\n181,712\n$\n141,073",
+                "metric": "Segment revenue",
+                "value": "64158",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "card_id": "c3:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Family of Apps\n64,158\n50,772\n180,436\n139,821\nReality Labs\n443\n470\n1,276\n1,252\nTotal revenue\n$\n64,601\n$\n51,242\n$\n181,712\n$\n141,073"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "GAAP advertising revenue year-over-year change is 26% and 29%.",
+                "materiality_candidate": 3,
+                "quote": "GAAP advertising revenue year-over-year change %\n26\n%\n29\n%",
+                "metric": "GAAP advertising revenue year-over-year change",
+                "value": "26",
+                "unit": "%"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities is $32,786 million.",
+                "materiality_candidate": 4,
+                "quote": "Net cash provided by operating activities\n$\n32,786",
+                "metric": "Net cash provided by operating activities",
+                "metric_type": "operating_cash_flow",
+                "value": "32,786",
+                "unit": "$M"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Purchases of property and equipment is $(33,942) million.",
+                "materiality_candidate": 4,
+                "quote": "Purchases of property and equipment\n(33,942)",
+                "metric": "Purchases of property and equipment",
+                "metric_type": "capex",
+                "value": "-33942",
+                "unit": "$M"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow is $(2,120) million.",
+                "materiality_candidate": 4,
+                "quote": "Free cash flow\n$\n(2,120)",
+                "metric": "Free cash flow",
+                "metric_type": "standard_fcf",
+                "value": "-2120",
+                "unit": "$M"
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "title": "Meta Platforms Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 24468,
+                  "extracted_chars": 24468,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 7,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u2",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u3",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u4",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7"
+              ],
+              "expected_unit_count": 7,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u2",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u3",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u4",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7"
+              ],
+              "processed_unit_count": 7,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 7,
+                "processed_unit_count": 7,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 3,
+                "demand_revenue": 4,
+                "guidance": 4,
+                "margin_unit_economics": 1,
+                "product_competition": 1
+              },
+              "selection": {
+                "raw_card_count": 13,
+                "deduped_card_count": 13,
+                "selected_card_count": 13,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 3,
+                  "demand_revenue": 4,
+                  "guidance": 4,
+                  "margin_unit_economics": 1,
+                  "product_competition": 1
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Q3 2026 revenue was $64,601 million, an increase of 26% year-over-year.",
+                  "metric": "Revenue",
+                  "value": 64601,
+                  "unit": "$M",
+                  "period": "Q3 2026",
+                  "comparison_value": 51242,
+                  "comparison_period": "Q3 2025",
+                  "reported_change": "26%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Revenue\n$\n64,601\n$\n51,242\n26\n%"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Three Months Ended September 30, 2026 revenue was $64,601 million compared to $51,242 million for the same period in 2025.",
+                  "metric": "Revenue",
+                  "value": "64601",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "comparison_value": "51242",
+                  "comparison_period": "Q3 2025",
+                  "reported_change": "26%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Revenue\n$\n64,601\n$\n51,242"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Q3 2026 Family of Apps revenue was $64,158 million and Reality Labs revenue was $443 million.",
+                  "metric": "Segment revenue",
+                  "value": "64158",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Family of Apps\n64,158\n50,772\n180,436\n139,821\nReality Labs\n443\n470\n1,276\n1,252\nTotal revenue\n$\n64,601\n$\n51,242\n$\n181,712\n$\n141,073"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "GAAP advertising revenue year-over-year change is 26% and 29%.",
+                  "metric": "GAAP advertising revenue year-over-year change",
+                  "value": "26",
+                  "unit": "%",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "GAAP advertising revenue year-over-year change %\n26\n%\n29\n%"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Expected fourth quarter 2026 total revenue to be in the range of $73-76 billion.",
+                  "metric": "total revenue",
+                  "unit": "$B",
+                  "period": "Q4 2026",
+                  "low": 73,
+                  "high": 76,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We expect fourth quarter 2026 total revenue to be in the range of $73-76 billion.",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Expected full year 2026 total expenses to be in the range of $175-179 billion.",
+                  "metric": "total expenses",
+                  "unit": "$B",
+                  "period": "FY 2026",
+                  "low": 175,
+                  "high": 179,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We now expect full year 2026 total expenses to be in the range of $175-179 billion.",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Anticipated 2026 capital expenditures to be in the range of $135-145 billion.",
+                  "metric": "capital expenditures",
+                  "unit": "$B",
+                  "period": "FY 2026",
+                  "low": 135,
+                  "high": 145,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion,",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Expected fourth quarter 2026 tax rate to be between 15-17%.",
+                  "metric": "tax rate",
+                  "unit": "%",
+                  "period": "Q4 2026",
+                  "low": 15,
+                  "high": 17,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u2",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "we expect our fourth quarter 2026 tax rate to be between 15-17%.",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Three Months Ended September 30, 2026 net income was $9,860 million compared to $2,709 million for the same period in 2025.",
+                  "metric": "Net income",
+                  "value": "9860",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "comparison_value": "2709",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Net income\n$\n9,860\n$\n2,709"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Net cash provided by operating activities is $32,786 million.",
+                  "metric": "Net cash provided by operating activities",
+                  "value": "32,786",
+                  "unit": "$M",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Net cash provided by operating activities\n$\n32,786",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Purchases of property and equipment is $(33,942) million.",
+                  "metric": "Purchases of property and equipment",
+                  "value": "-33942",
+                  "unit": "$M",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Purchases of property and equipment\n(33,942)",
+                  "metric_type": "capex"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Free cash flow is $(2,120) million.",
+                  "metric": "Free cash flow",
+                  "value": "-2120",
+                  "unit": "$M",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Free cash flow\n$\n(2,120)",
+                  "metric_type": "standard_fcf"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u3",
+                  "card_type": "management_claim",
+                  "topic": "product_competition",
+                  "statement": "Meta intends to establish Class C common stock with an effective date of January 19, 2027, accompanied by a one-for-one stock dividend resulting in a two-for-one stock split effect.",
+                  "materiality_candidate": 3,
+                  "fact_class": "management_claim",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u3",
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Meta intends to file an amended and restated certificate of incorporation in Delaware to establish the Class C common stock, with an effective date of January 19, 2027."
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 2026 revenue was $64,601 million, an increase of 26% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n64,601\n$\n51,242\n26\n%",
+                "metric": "Revenue",
+                "value": 64601,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 51242,
+                "comparison_period": "Q3 2025",
+                "reported_change": "26%",
+                "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Revenue\n$\n64,601\n$\n51,242\n26\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expected fourth quarter 2026 total revenue to be in the range of $73-76 billion.",
+                "materiality_candidate": 5,
+                "quote": "We expect fourth quarter 2026 total revenue to be in the range of $73-76 billion.",
+                "metric": "total revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 73,
+                "high": 76,
+                "unit": "$B",
+                "card_id": "c2:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We expect fourth quarter 2026 total revenue to be in the range of $73-76 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expected full year 2026 total expenses to be in the range of $175-179 billion.",
+                "materiality_candidate": 5,
+                "quote": "We now expect full year 2026 total expenses to be in the range of $175-179 billion.",
+                "metric": "total expenses",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 175,
+                "high": 179,
+                "unit": "$B",
+                "card_id": "c3:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We now expect full year 2026 total expenses to be in the range of $175-179 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Anticipated 2026 capital expenditures to be in the range of $135-145 billion.",
+                "materiality_candidate": 5,
+                "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion,",
+                "metric": "capital expenditures",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 135,
+                "high": 145,
+                "unit": "$B",
+                "card_id": "c4:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion,"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expected fourth quarter 2026 tax rate to be between 15-17%.",
+                "materiality_candidate": 4,
+                "quote": "we expect our fourth quarter 2026 tax rate to be between 15-17%.",
+                "metric": "tax rate",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 15,
+                "high": 17,
+                "unit": "%",
+                "card_id": "c5:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u2",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "we expect our fourth quarter 2026 tax rate to be between 15-17%."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u3",
+                "card_type": "management_claim",
+                "topic": "product_competition",
+                "fact_class": "management_claim",
+                "statement": "Meta intends to establish Class C common stock with an effective date of January 19, 2027, accompanied by a one-for-one stock dividend resulting in a two-for-one stock split effect.",
+                "materiality_candidate": 3,
+                "quote": "Meta intends to file an amended and restated certificate of incorporation in Delaware to establish the Class C common stock, with an effective date of January 19, 2027.",
+                "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u3",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Meta intends to file an amended and restated certificate of incorporation in Delaware to establish the Class C common stock, with an effective date of January 19, 2027."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Three Months Ended September 30, 2026 revenue was $64,601 million compared to $51,242 million for the same period in 2025.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n64,601\n$\n51,242",
+                "metric": "Revenue",
+                "value": "64601",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "51242",
+                "comparison_period": "Q3 2025",
+                "reported_change": "26%",
+                "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Revenue\n$\n64,601\n$\n51,242"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Three Months Ended September 30, 2026 net income was $9,860 million compared to $2,709 million for the same period in 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$\n9,860\n$\n2,709",
+                "metric": "Net income",
+                "value": "9860",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "2709",
+                "comparison_period": "Q3 2025",
+                "card_id": "c2:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u5",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Net income\n$\n9,860\n$\n2,709"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 2026 Family of Apps revenue was $64,158 million and Reality Labs revenue was $443 million.",
+                "materiality_candidate": 4,
+                "quote": "Family of Apps\n64,158\n50,772\n180,436\n139,821\nReality Labs\n443\n470\n1,276\n1,252\nTotal revenue\n$\n64,601\n$\n51,242\n$\n181,712\n$\n141,073",
+                "metric": "Segment revenue",
+                "value": "64158",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u6",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Family of Apps\n64,158\n50,772\n180,436\n139,821\nReality Labs\n443\n470\n1,276\n1,252\nTotal revenue\n$\n64,601\n$\n51,242\n$\n181,712\n$\n141,073"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "GAAP advertising revenue year-over-year change is 26% and 29%.",
+                "materiality_candidate": 3,
+                "quote": "GAAP advertising revenue year-over-year change %\n26\n%\n29\n%",
+                "metric": "GAAP advertising revenue year-over-year change",
+                "value": "26",
+                "unit": "%",
+                "card_id": "c1:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "GAAP advertising revenue year-over-year change %\n26\n%\n29\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities is $32,786 million.",
+                "materiality_candidate": 4,
+                "quote": "Net cash provided by operating activities\n$\n32,786",
+                "metric": "Net cash provided by operating activities",
+                "metric_type": "operating_cash_flow",
+                "value": "32,786",
+                "unit": "$M",
+                "card_id": "c2:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Net cash provided by operating activities\n$\n32,786"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Purchases of property and equipment is $(33,942) million.",
+                "materiality_candidate": 4,
+                "quote": "Purchases of property and equipment\n(33,942)",
+                "metric": "Purchases of property and equipment",
+                "metric_type": "capex",
+                "value": "-33942",
+                "unit": "$M",
+                "card_id": "c3:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Purchases of property and equipment\n(33,942)"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow is $(2,120) million.",
+                "materiality_candidate": 4,
+                "quote": "Free cash flow\n$\n(2,120)",
+                "metric": "Free cash flow",
+                "metric_type": "standard_fcf",
+                "value": "-2120",
+                "unit": "$M",
+                "card_id": "c4:sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm#u7",
+                "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Free cash flow\n$\n(2,120)"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "Revenue",
+                "value": 64601,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 51242,
+                "comparison_period": "Q3 2025",
+                "reported_change": "26%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Revenue\n$\n64,601\n$\n51,242\n26\n%"
+                }
+              },
+              {
+                "metric": "Revenue",
+                "value": "64601",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "51242",
+                "comparison_period": "Q3 2025",
+                "reported_change": "26%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Revenue\n$\n64,601\n$\n51,242"
+                }
+              },
+              {
+                "metric": "Net income",
+                "value": "9860",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "2709",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Net income\n$\n9,860\n$\n2,709"
+                }
+              },
+              {
+                "metric": "Segment revenue",
+                "value": "64158",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Family of Apps\n64,158\n50,772\n180,436\n139,821\nReality Labs\n443\n470\n1,276\n1,252\nTotal revenue\n$\n64,601\n$\n51,242\n$\n181,712\n$\n141,073"
+                }
+              },
+              {
+                "metric": "GAAP advertising revenue year-over-year change",
+                "value": "26",
+                "unit": "%",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "GAAP advertising revenue year-over-year change %\n26\n%\n29\n%"
+                }
+              },
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "32,786",
+                "unit": "$M",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Net cash provided by operating activities\n$\n32,786"
+                }
+              },
+              {
+                "metric": "Purchases of property and equipment",
+                "value": "-33942",
+                "unit": "$M",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Purchases of property and equipment\n(33,942)"
+                }
+              },
+              {
+                "metric": "Free cash flow",
+                "value": "-2120",
+                "unit": "$M",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Free cash flow\n$\n(2,120)"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "total revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 73,
+                "midpoint": null,
+                "high": 76,
+                "unit": "$B",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We expect fourth quarter 2026 total revenue to be in the range of $73-76 billion."
+                }
+              },
+              {
+                "metric": "total expenses",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 175,
+                "midpoint": null,
+                "high": 179,
+                "unit": "$B",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We now expect full year 2026 total expenses to be in the range of $175-179 billion."
+                }
+              },
+              {
+                "metric": "capital expenditures",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 135,
+                "midpoint": null,
+                "high": 145,
+                "unit": "$B",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion,"
+                }
+              },
+              {
+                "metric": "tax rate",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 15,
+                "midpoint": null,
+                "high": 17,
+                "unit": "%",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "we expect our fourth quarter 2026 tax rate to be between 15-17%."
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "32,786",
+                "unit": "$M",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Net cash provided by operating activities\n$\n32,786"
+                },
+                "metric_type": "operating_cash_flow",
+                "reconciliation": []
+              },
+              {
+                "metric": "Purchases of property and equipment",
+                "value": "-33942",
+                "unit": "$M",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Purchases of property and equipment\n(33,942)"
+                },
+                "metric_type": "capex",
+                "reconciliation": []
+              },
+              {
+                "metric": "Free cash flow",
+                "value": "-2120",
+                "unit": "$M",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-066700:meta-09302026xexhibit991.htm",
+                  "quote": "Free cash flow\n$\n(2,120)"
+                },
+                "metric_type": "standard_fcf",
+                "reconciliation": []
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [],
+            "extraction_batch_count": 4,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.445,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-10-21T19:44:09-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-10-21T19:44:09-04:00",
+              "official_ir_checked_at": "2026-10-21T19:44:09-04:00",
+              "official_ir_check_count": 3,
+              "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+              "next_ir_retry_at": "2026-10-21T20:14:09-04:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q3 2026 revenue reached $64,601 million, up 26% year-over-year, while aggressive capital allocation continues with Q3 capital expenditures at $(33,942) million, leading to a negative free cash flow of $(2,120) million.",
+                "why_it_matters": "Demonstrates robust top-line momentum driven by core operations, but highlights significant near-term cash burn as infrastructure investments scale up.",
+                "fact_basis": [
+                  "Q3 2026 revenue was $64,601 million, a 26% increase year-over-year (sec_edgar: meta-09302026xexhibit991.htm#u1).",
+                  "Free cash flow for Q3 2026 was $(2,120) million due to purchases of property and equipment of $(33,942) million (sec_edgar: meta-09302026xexhibit991.htm#u7)."
+                ],
+                "inference": "The widening gap between operating cash flow and high capex intensity reflects heavy upfront commitments that pressure near-term cash generation.",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 total revenue grew 26% year-over-year to $64,601 million.",
+                "Family of Apps revenue reached $64,158 million, while Reality Labs contributed $443 million.",
+                "GAAP advertising revenue year-over-year change registered at 26% and 29% across reported segments."
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 net income increased to $9,860 million compared to $2,709 million in the prior year period."
+              ],
+              "cash_capital_intensity": [
+                "Net cash provided by operating activities was $32,786 million in Q3 2026.",
+                "Purchases of property and equipment totaled $(33,942) million, resulting in negative free cash flow of $(2,120) million.",
+                "Full year 2026 capital expenditures are anticipated to be in the range of $135-145 billion."
+              ]
+            },
+            "guidance_assessment": [
+              "Expected fourth quarter 2026 total revenue to be in the range of $73-76 billion.",
+              "Expected full year 2026 total expenses to be in the range of $175-179 billion.",
+              "Anticipated full year 2026 capital expenditures to be in the range of $135-145 billion.",
+              "Expected fourth quarter 2026 tax rate to be between 15-17%."
+            ],
+            "demand_quality": [
+              "證據不足，本報告無法判定細部的客戶廣度、大客戶群體結構、NRR 或 RPO。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "證據不足，無法直接判定定價能力、控制點或市佔率變動。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "持續擴大的資本支出與負自由現金流可能對未來財務彈性構成壓力。",
+              "全年總支出指引範圍 $175-179 billion 反映營運成本持續上升。"
+            ],
+            "watch_items": [
+              "Q4 2026 營收是否能達到 $73-76 billion 的指引區間。",
+              "全年資本支出是否落於 $135-145 billion 的預期範圍內。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "META META_2026-10-19\n\n💡 投資結論與邏輯:\n• 本季營收表現穩健，年增率達 26%，反映核心業務動能持續。\n• 資本支出大幅增加導致自由現金流轉為負值，凸顯基礎設施投入對現金流的短期壓抑。\n\n📊 關鍵數據與財測:\n• Q3 2026 營收 $64,601M (年增 26%) 顯示核心需求成長，但採購不動產與設備達 $(33,942)M 使自由現金流降至 $(2,120)M。\n• Q3 2026 淨收入為 $9,860M，高於去年同期的 $2,709M，反映獲利能力的顯著改善。\n• 預期 Q4 2026 總營收介於 $73-76B 之間，全年總費用預期介於 $175-179B。\n• 預期全年資本支出將介於 $135-145B，Q4 稅率預期介於 15-17%。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運數據顯示 Family of Apps 貢獻 $64,158M，Reality Labs 貢獻 $443M，廣告營收年增率維持在 26% 至 29% 的區間。\n• 管理層宣布擬於 2027 年 1 月 19 日建立 Class C 普通股並進行股票分割效果之相關規劃。\n• Packet 未包含逐字稿與 Q&A 紀錄，無法進行法說攻防與逐題解讀。\n\n⚠️ 風險、反證與待驗證:\n• 全年資本支出預期高達 $135-145B，須持續驗證巨額投資的長期資本回報率。\n• 營業費用指引範圍擴大至 $175-179B，若費用增幅超越營收成長將對利潤率構成潛在風險。\n• 現階段缺乏詳細的客戶集中度與 NRR 證據，需觀察後續數據以驗證需求品質。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 85,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v4_gate:interpretation"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "META META_2026-10-19\n\n💡 投資結論與邏輯:\n• 本季營收年增率維持穩健，但基礎設施相關資本支出持續擴大，導致自由現金流轉為負值，反映短期現金壓抑與長期投入的權衡。\n\n📊 關鍵數據與財測:\n• Q3 2026 營收達 $64,601M (年增 26%)，其中不動產與設備採購支出達 $(33,942)M，致使自由現金流為 $(2,120)M。\n• Q3 2026 淨收入為 $9,860M，高於去年同期的 $2,709M，獲利表現受成本與營收結構影響而有所變動。\n• 預期 Q4 2026 總營收介於 $73-76B 之間，全年總費用預期介於 $175-179B。\n• 預期全年資本支出將介於 $135-145B，Q4 稅率預期介於 15-17%。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運數據顯示 Family of Apps 貢獻 $64,158M，Reality Labs 貢獻 $443M，廣告營收年增率維持在 26% 至 29% 的區間。\n• 管理層表示擬於 2027 年 1 月 19 日建立 Class C 普通股並進行股票分割效果之相關規劃。\n• 報導來源未包含逐字稿與 Q&A 紀錄，無法進行法說攻防與逐題解讀。\n\n⚠️ 風險、反證與待驗證:\n• 全年資本支出預期高達 $135-145B，須持續驗證巨額投資的長期資本回報率。\n• 營業費用指引範圍擴大至 $175-179B，若費用增幅超越營收成長將對利潤率構成潛在風險。\n• 現階段缺乏詳細的客戶集中度與 NRR 證據，需觀察後續數據以驗證需求品質。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:Q3 2026 營收達 $64,601M (年增 26%)，其中不動產與設備採購支出達 $(33,942)M，致使自由現金流為 $(2,120)M。",
+              "kpi_without_readthrough:預期 Q4 2026 總營收介於 $73-76B 之間，全年總費用預期介於 $175-179B。",
+              "kpi_without_readthrough:預期全年資本支出將介於 $135-145B，Q4 稅率預期介於 15-17%。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "本季營收年增率維持穩健，但基礎設施相關資本支出持續擴大，導致自由現金流轉為負值，反映短期現金壓抑與長期投入的權衡。",
+                "why_it_matters": "突顯資本投入規模對短期現金流量的實質壓抑，並需檢視長期資本回報率。",
+                "fact_basis": [
+                  "Q3 2026 revenue was $64,601 million, a 26% increase year-over-year (sec_edgar: meta-09302026xexhibit991.htm#u1).",
+                  "Free cash flow for Q3 2026 was $(2,120) million due to purchases of property and equipment of $(33,942) million (sec_edgar: meta-09302026xexhibit991.htm#u7)."
+                ],
+                "inference": "資本支出規模放大短期內壓抑自由現金流，但其長期轉化效益仍待後續追蹤。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 營收達 $64,601M，年增 26%。",
+                "Family of Apps 營收 $64,158M，Reality Labs 營收 $443M。"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 淨收入為 $9,860M，高於去年同期的 $2,709M。"
+              ],
+              "cash_capital_intensity": [
+                "營業現金流為 $32,786M，不動產與設備採購為 $(33,942)M，自由現金流為 $(2,120)M。"
+              ]
+            },
+            "guidance_assessment": [
+              "預期 Q4 2026 總營收介於 $73-76B 之間。",
+              "預期全年總費用介於 $175-179B。",
+              "預期全年資本支出介於 $135-145B。",
+              "預期 Q4 稅率介於 15-17%。"
+            ],
+            "demand_quality": [
+              "證據不足，本報告無法判定細部的客戶廣度、大客戶群體結構、NRR 或 RPO。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "證據不足，無法直接判定定價能力、控制點或市佔率變動。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "全年資本支出預期高達 $135-145B，須持續驗證巨額投資的長期資本回報率。",
+              "營業費用指引範圍擴大至 $175-179B，若費用增幅超越營收成長將對利潤率構成潛在風險。",
+              "現階段缺乏詳細的客戶集中度與 NRR 證據，需觀察後續數據以驗證需求品質。"
+            ],
+            "watch_items": [
+              "Q4 2026 營收是否能達到 $73-76B 的指引區間。",
+              "全年資本支出是否落於 $135-145B 的預期範圍內。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "META META_2026-10-19\n\n💡 投資結論與邏輯:\n• 本季營收年增率維持穩健，但基礎設施相關資本支出持續擴大，導致自由現金流轉為負值，反映短期現金壓抑與長期投入的權衡。\n• 營收成長顯示核心業務需求持續，但巨額資本配置對現金流造成的短期負面影響需要持續追蹤。\n\n📊 關鍵數據與財測:\n• Q3 2026 營收達 $64,601M (年增 26%) 顯示核心營收規模擴張，但不動產與設備採購支出達 $(33,942)M，致使自由現金流為 $(2,120)M。\n• Q3 2026 淨收入為 $9,860M，高於去年同期的 $2,709M，反映獲利金額變動但仍不能直接推論為利潤率結構的根本改善。\n• 預期 Q4 2026 總營收介於 $73-76B 之間，全年總費用預期介於 $175-179B。\n• 預期全年資本支出將介於 $135-145B，Q4 稅率預期介於 15-17%。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運數據顯示 Family of Apps 貢獻 $64,158M，Reality Labs 貢獻 $443M，廣告營收年增率維持在 26% 至 29% 的區間。\n• 管理層表示擬於 2027 年 1 月 19 日建立 Class C 普通股並進行股票分割效果之相關規劃。\n• 報導來源未包含逐字稿與 Q&A 紀錄，無法進行法說攻防與逐題解讀。\n\n⚠️ 風險、反證與待驗證:\n• 全年資本支出預期高達 $135-145B，須持續驗證巨額投資的長期資本回報率。\n• 營業費用指引範圍擴大至 $175-179B，若費用增幅超越營收成長將對利潤率構成潛在風險。\n• 現階段缺乏詳細的客戶集中度與 NRR 證據，需觀察後續數據以驗證需求品質。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 85,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v4_gate:interpretation"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "META META_2026-10-19\n\n💡 投資結論與邏輯:\n• 本季營收年增率維持穩健，但基礎設施相關資本支出持續擴大，導致自由現金流轉為負值，反映短期現金壓抑與長期投入的權衡。\n• 營收成長顯示核心業務需求持續，但巨額資本配置對現金流造成的短期負面影響需要持續追蹤。\n\n📊 關鍵數據與財測:\n• Q3 2026 營收達 $64,601M (年增 26%) 顯示核心營收規模擴張，但不動產與設備採購支出達 $(33,942)M，致使自由現金流為 $(2,120)M。\n• Q3 2026 淨收入為 $9,860M，高於去年同期的 $2,709M，反映獲利金額變動但仍不能直接推論為利潤率結構的根本改善。\n• 預期 Q4 2026 總營收介於 $73-76B 之間，全年總費用預期介於 $175-179B。\n• 預期全年資本支出將介於 $135-145B，Q4 稅率預期介於 15-17%。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運數據顯示 Family of Apps 貢獻 $64,158M，Reality Labs 貢獻 $443M，廣告營收年增率維持在 26% 至 29% 的區間。\n• 管理層表示擬於 2027 年 1 月 19 日建立 Class C 普通股並進行股票分割效果之相關規劃。\n• 報導來源未包含逐字稿與 Q&A 紀錄，無法進行法說攻防與逐題解讀。\n\n⚠️ 風險、反證與待驗證:\n• 全年資本支出預期高達 $135-145B，須持續驗證巨額投資的長期資本回報率。\n• 營業費用指引範圍擴大至 $175-179B，若費用增幅超越營收成長將對利潤率構成潛在風險。\n• 現階段缺乏詳細的客戶集中度與 NRR 證據，需觀察後續數據以驗證需求品質。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:預期 Q4 2026 總營收介於 $73-76B 之間，全年總費用預期介於 $175-179B。",
+              "kpi_without_readthrough:預期全年資本支出將介於 $135-145B，Q4 稅率預期介於 15-17%。"
+            ],
             "customer_readthrough_errors": [],
             "density_errors": [],
             "numeric_provenance_errors": [],
