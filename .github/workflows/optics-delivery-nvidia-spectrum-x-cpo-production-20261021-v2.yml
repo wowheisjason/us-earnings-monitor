@@ -1,0 +1,76 @@
+name: Optics delivery NVIDIA Spectrum-X CPO production v2
+on:
+  push:
+    branches: [codex/optics-delivery-nvidia-spectrum-x-cpo-production-20261021-v2]
+    paths: [.github/workflows/optics-delivery-nvidia-spectrum-x-cpo-production-20261021-v2.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-nvidia-spectrum-x-cpo-production-20261021-v2
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜NVIDIA Spectrum-X CPO進入完整量產（v2增量）
+
+【重大變化】
+相較10/21已通知的SPIL未來擴產目標，NVIDIA官方GTC Berlin主題演講新增確認：Spectrum-X共同封裝光學交換器已進入「complete volume production」。這把里程碑由產能規畫推進至量產階段，足以提高NVIDIA CPO供應鏈的近期營收與採用可信度；但不等於已揭露出貨量或客戶部署規模。
+
+【已確認事實】
+公告／發言日：2026/10/21；官方錄影現可查。
+NVIDIA表示Spectrum-X CPO為512埠、每埠200Gb/s架構，矽光子透過與TSMC共同開發的COUPE製程直接整合至交換器晶片，並已完整量產。
+官方產品頁另列CoreWeave、Lambda、Meta、Microsoft與Oracle Cloud Infrastructure為首批採用者；這證明具名採用關係，但頁面未披露各客戶訂單、部署數或驗收進度。
+SPIL目標仍是2027年中把CPO光引擎產能擴至目前15倍，2028年底再翻倍；屬未來目標，不是已完成產能。
+
+【供應鏈影響】
+NVIDIA（NVDA）：CPO平台與需求方，直接受益。
+SPIL／日月光投控（3711／ASX）：光引擎製造與封裝，直接曝險。
+TSMC（TSM／2330）：COUPE整合製程。
+官方列出的Coherent、Lumentum、Sumitomo Electric、Corning、Fabrinet、Foxconn、Senko、Browave為技術夥伴；不能由此推定每家已取得本批量產訂單或內容占比。
+本事件是CPO矽光子＋光源架構，不能等同EML可插拔光模組量產。
+
+【合理推論】
+若具名雲端客戶按期部署且良率、可靠性達標，SPIL、TSMC及已驗證的光學零組件夥伴可能從2026下半年起逐步承接量產需求。相較單純展示或擴產規畫，量產確認降低商業化時程風險；但沒有ASP、月產能與出貨量，無法估算營收。
+
+【機會與風險】
+催化劑：首批客戶實際上線、出貨量／營收揭露、SPIL新增產能達標。
+風險：完整量產的產量基數不明、客戶部署延誤、光引擎良率與外置雷射可靠性、單一平台集中、可插拔／NPO替代，以及擴產快於需求。
+未查即時價格，不判斷是否已反映或低估。
+
+【待追蹤】
+Spectrum-X CPO季度出貨、具名客戶部署規模、SPIL月產能與利用率、COUPE良率、CW雷射／PIC／光纖陣列供應商實際份額及首次營收認列。
+
+官方GTC錄影：https://www.nvidia.com/en-us/on-demand/session/gtc26-s81595/
+官方產品頁：https://www.nvidia.com/en-us/networking/products/silicon-photonics/
+官方擴產公告：https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Supply-Chain-Partners-Expand-Capacity-to-Accelerate-AI-Infrastructure-Buildout/default.aspx"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"nvidia-spectrum-x-cpo-production-20261021","version":2}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
