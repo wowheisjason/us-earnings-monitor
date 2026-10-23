@@ -592,7 +592,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-22T20:57:12-04:00",
+      "updated_at": "2026-10-22T21:32:55-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -957,7 +957,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T20:57:12-04:00",
+      "updated_at": "2026-10-22T21:32:55-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1255,7 +1255,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T20:57:12-04:00",
+      "updated_at": "2026-10-22T21:32:55-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1566,7 +1566,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T20:57:12-04:00",
+      "updated_at": "2026-10-22T21:32:55-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1800,7 +1800,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T20:57:12-04:00",
+      "updated_at": "2026-10-22T21:32:55-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1876,7 +1876,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T19:16:32-04:00",
+      "updated_at": "2026-10-22T21:32:55-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1890,25 +1890,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.298,
+            "seconds": 0.099,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/TSLA-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.19,
+            "seconds": 1.099,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.11,
+            "seconds": 0.034,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/TSLA-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-22T19:16:32-04:00",
+        "ir_retrieval_last_at": "2026-10-22T21:32:55-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -1928,10 +1928,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-22T19:16:32-04:00",
+        "last_collection_check_at": "2026-10-22T21:32:55-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-10-22T19:16:32-04:00",
-        "next_ir_retry_at": "2026-10-22T21:16:32-04:00"
+        "official_ir_last_attempt_incomplete": "2026-10-22T21:32:55-04:00",
+        "next_ir_retry_at": "2026-10-22T23:32:55-04:00"
       },
       "delivery": {}
     },
@@ -1951,7 +1951,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T20:57:12-04:00",
+      "updated_at": "2026-10-22T21:32:55-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1965,25 +1965,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.131,
+            "seconds": 0.024,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/META-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.528,
+            "seconds": 0.495,
             "documents": 3,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.087,
+            "seconds": 0.144,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/META-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-22T19:16:32-04:00",
+        "ir_retrieval_last_at": "2026-10-22T21:32:55-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -2005,11 +2005,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-22T19:16:32-04:00",
-        "official_ir_checked_at": "2026-10-22T19:16:32-04:00",
-        "official_ir_check_count": 6,
+        "last_collection_check_at": "2026-10-22T21:32:55-04:00",
+        "official_ir_checked_at": "2026-10-22T21:32:55-04:00",
+        "official_ir_check_count": 7,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-22T21:16:32-04:00"
+        "next_ir_retry_at": "2026-10-22T23:32:55-04:00"
       },
       "delivery": {}
     },
@@ -2099,7 +2099,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-22T20:37:55-04:00",
+      "updated_at": "2026-10-22T21:32:55-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2113,25 +2113,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.033,
+            "seconds": 0.028,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/LRCX-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.2,
+            "seconds": 0.256,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.03,
+            "seconds": 0.087,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/LRCX-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-22T20:37:55-04:00",
+        "ir_retrieval_last_at": "2026-10-22T21:32:55-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -2151,11 +2151,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-22T20:37:55-04:00",
-        "official_ir_checked_at": "2026-10-22T20:37:55-04:00",
-        "official_ir_check_count": 4,
+        "last_collection_check_at": "2026-10-22T21:32:55-04:00",
+        "official_ir_checked_at": "2026-10-22T21:32:55-04:00",
+        "official_ir_check_count": 5,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-22T21:07:55-04:00"
+        "next_ir_retry_at": "2026-10-22T22:02:55-04:00"
       },
       "delivery": {}
     }
@@ -2170,7 +2170,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-22T20:37:55-04:00",
+      "last_success_at": "2026-10-22T21:32:55-04:00",
       "blocked_until": null
     },
     "public_transcript": {
