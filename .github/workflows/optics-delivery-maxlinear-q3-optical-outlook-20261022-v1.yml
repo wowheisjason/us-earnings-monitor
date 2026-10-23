@@ -1,0 +1,73 @@
+name: Optics delivery MaxLinear Q3 optical outlook v1
+on:
+  push:
+    branches: [codex/optics-delivery-maxlinear-q3-optical-outlook-20261022-v1]
+    paths: [.github/workflows/optics-delivery-maxlinear-q3-optical-outlook-20261022-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-maxlinear-q3-optical-outlook-20261022-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified MaxLinear optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜MaxLinear Q3 2026（公告日2026/10/22；季度截至2026/9/30）
+
+1）重大變化與門檻
+MaxLinear（Nasdaq: MXL）把2026年光資料中心營收展望由2Q法說的2.10億–2.30億美元上修至2.50億–2.70億美元，區間兩端各提高4,000萬美元；新中位數較舊中位數高18.2%。同時公司確認Keystone 800G PAM4 DSP正處於量產爬坡，Q3基礎設施業務年增210%。這是已實現營收成長、量產與正式指引上修的組合，足以改變近期營收判斷，非展示或送樣。
+
+2）已確認事實
+• Q3總營收2.18057億美元，季增29%、年增72%；GAAP毛利率58.7%，較去年同期增180個基點。
+• 公司稱AI資料中心導向的基礎設施營收年增210%，主要反映光AI資料中心產品採用加速。
+• Keystone為5nm CMOS、每通道100Gb/s PAM4 DSP；管理層稱其在多家超大規模客戶進入高量產。客戶名稱、出貨顆數與個別訂單未公開。
+• 2026光資料中心營收2.50億–2.70億美元是管理層展望，不是已認列實績；公司稱訂單能見度延伸至2027年以後。
+• Q4總營收指引2.40億–2.60億美元；亦屬指引。
+• Rushmore／Annapurna屬1.6T-capable光／電產品；管理層預期1.6T於2027年爬坡，不能視為目前量產實績。
+
+官方財報：https://investors.maxlinear.com/press-releases/detail/629/maxlinear-inc-announces-third-quarter-2026-financial
+SEC 10-Q：https://www.sec.gov/Archives/edgar/data/1288469/000128846926000061/mxl-20260930.htm
+Q3法說逐字稿（非官方轉錄，供核對展望）：https://www.gurufocus.com/stock/MXL/transcripts/9138515
+Q2法說逐字稿（非官方轉錄，供核對舊指引）：https://finance.yahoo.com/quote/MXL/earnings/MXL-Q2-2026-earnings_call-653925.html
+
+3）供應鏈角色與曝險
+MXL是直接受益者，供應光模組內的PAM4 DSP／SerDes及電互連晶片，並非InP／EML雷射或CPO光引擎供應商。對光模組廠與超大規模客戶屬互補上游矽晶片；主要競爭壓力來自Broadcom、Marvell等DSP／SerDes方案。未公開客戶不得據此猜測。
+
+4）合理推論
+若2.50億–2.70億美元展望兌現，2026光資料中心業務的增量與組合改善可提高公司營收及毛利支撐；800G已是當期驅動，1.6T影響較可能自2027年開始。成立條件是超大規模客戶按期拉貨、模組認證與量產良率穩定，且訂單能見度轉成不可取消或實際出貨。
+
+5）機會與風險
+催化劑：季度光資料中心營收持續高增、1.6T量產時間確認、更多平台／客戶導入。風險：少數超大規模客戶與AI平台集中、資格驗證延後、客戶取消、平均售價下滑、競爭者替代、晶圓代工與封測依賴，以及AI資本支出放緩。未核對即時估值，不判斷是否已反映或低估。
+
+6）待驗證／追蹤
+追蹤每季光資料中心實際營收、2027指引、Keystone出貨量與客戶集中度、Rushmore／Annapurna由送樣到量產的日期、毛利率、訂單取消條款與book-to-bill。公司未提供模組品牌、具名雲端客戶、InP／EML供應商或CPO採用證據。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"maxlinear-q3-optical-outlook-20261022","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-maxlinear-q3-optical-outlook-20261022-v1
+          path: telegram-receipt.json
