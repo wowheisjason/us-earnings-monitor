@@ -1,0 +1,75 @@
+name: Optics delivery Nokia Q3 2026 optical AI v1
+on:
+  push:
+    branches: [codex/optics-delivery-nokia-q3-2026-optical-ai-v1]
+    paths: [.github/workflows/optics-delivery-nokia-q3-2026-optical-ai-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-nokia-q3-2026-optical-ai-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜Nokia Q3 2026：800G出貨與AI訂單同步加速
+
+1）重大變化
+Nokia於2026/10/22公布Q3財報：800G coherent pluggable出貨量季增2.4倍；AI與Cloud客戶淨銷售年增123%，單季新訂單15億歐元；並預期2027年Optical＋IP Networks合計成長25%–30%。這是實際出貨、訂單與正式管理層展望的組合，足以改變Nokia光網路營收與競爭判斷。
+
+2）已確認事實
+• Q3集團營收51.5億歐元，固定匯率年增9%；可比營業利益6.05億歐元。
+• AI與Cloud淨銷售6.31億歐元，固定匯率年增123%；新訂單15億歐元，較去年同期增118%。此數字涵蓋AI／Cloud整體，不等於全是光模組訂單。
+• Optical Networks淨銷售9.33億歐元，固定匯率年增18%；800G coherent pluggable出貨季增2.4倍。
+• 2027年Optical＋IP Networks成長25%–30%是管理層指引，不是已實現營收。
+• Nokia表示San Jose Fab 2預計2026年10月底轉為24/7運作；這是產能爬坡里程碑，但未披露晶圓月產能、良率或各產品占比。
+• Infinera整合預計2026年底完成，較原計畫提前一年，淨協同效益目標2億歐元。
+官方財報：https://www.nokia.com/newsroom/nokia-corporation-interim-report-for-q3-2026/
+官方簡報：https://www.nokia.com/system/files/2026-10/nokia_slides_2026_q3.pdf
+
+3）供應鏈角色
+• Nokia（NYSE:NOK；HEL:NOKIA）：光傳輸、coherent pluggable與IP網路系統，直接曝險。
+• Infinera：已併入Nokia，提供光網路技術與San Jose半導體製造能力。
+• Hyperscaler／AI Cloud客戶：需求端；本次未具名，不猜測客戶。
+• Coherent、Ciena、Cisco、Marvell等為不同層級的競爭或互補者，但本次公告未揭露其訂單。
+此事件屬coherent pluggable與光／IP網路需求，不是CPO、InP EML或1.6T量產公告，不能混為一談。
+
+4）合理推論
+若15億歐元訂單按期轉成出貨，且800G量產與Fab 2爬坡順利，Nokia在2027年的光網路收入可見度與規模經濟將改善；Infinera整合提前可能加快成本協同。成立條件是供應約束、產品良率、客戶驗收及價格維持。AI／Cloud訂單跨越IP與Optical，不能把全部金額直接歸入光學營收。
+
+5）機會與風險
+受益方向：Nokia光網路與內部半導體製造利用率；催化劑包括800G季度出貨續增、具名hyperscaler設計導入、Fab 2實際產量與2027指引兌現。
+風險：Network Infrastructure毛利率41.2%，年減150基點；供應限制與零件漲價可能壓抑毛利；訂單轉營收時程、客戶集中、coherent DSP／光元件供應、800G價格競爭，以及1.6T替代升級皆可能影響結果。未查即時估值，不判斷股價是否已反映。
+
+6）待驗證
+追蹤800G實際單位數與ASP、AI／Cloud訂單中Optical占比、Fab 2月產能／良率、供應瓶頸延續時間、具名客戶採用、2027 Optical與IP分項成長及毛利率。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"nokia-q3-2026-optical-ai","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
