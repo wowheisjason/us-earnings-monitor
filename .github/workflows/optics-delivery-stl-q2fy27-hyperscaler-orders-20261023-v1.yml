@@ -1,0 +1,69 @@
+name: Optics delivery STL Q2FY27 hyperscaler orders v1
+on:
+  push:
+    branches: [codex/optics-delivery-stl-q2fy27-hyperscaler-orders-20261023-v1]
+    paths: [.github/workflows/optics-delivery-stl-q2fy27-hyperscaler-orders-20261023-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-stl-q2fy27-hyperscaler-orders-20261023-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜STL Q2 FY27 hyperscaler光連接訂單放量
+
+1）重大變化
+Sterlite Technologies（NSE：STLTECH）於2026/10/23披露：Q2 FY27開放訂單簿達INR 35,274 crore，較Q1的INR 18,618 crore近乎倍增；同時列出多筆hyperscaler長約。這是可核實的訂單、營收與產品組合變化，足以提高未來營收能見度，符合通知門檻。
+
+2）已確認事實
+• 截至2026/9/30季度營收INR 2,529 crore，年增約145%；EBITDA INR 846 crore，年增約500%；PAT INR 517 crore。EBITDA含一次性美國關稅退款淨利INR 161 crore，不能全視為經常性獲利。
+• 訂單簿INR 35,274 crore。
+• H1訂單包括：US$1.2bn（約INR 11,500 crore）hyperscaler光連接產品長約，期間CY2026–2030；US$1.11bn（約INR 10,500 crore）另一hyperscaler Product Award Letter，期間FY27–FY29；US$288m（約INR 2,700 crore）hyperscaler高密度光纖纜線案，期間CY2027–2029。
+• 光連接attach rate於H1 FY27達24%歷史新高。
+• 客戶均未具名；公司未披露逐筆採購量、毛利率、取消條款或已出貨比例。
+官方：https://nsearchives.nseindia.com/corporate/STLTECH_23102026125243_SEintimation23Ocotber2026NSE_signed.pdf
+
+3）供應鏈角色
+STL是AI資料中心高密度光纖纜線、預端接組件與連接方案供應商，屬被動光連接／佈線環節。它不是InP、EML、CW雷射、矽光子PIC或CPO光引擎供應商；此事件不能證明上述環節缺貨。Corning、Prysmian、CommScope等在光纖／連接領域形成競爭或互補，但本公告未揭露供應關係。
+
+4）合理推論
+若框架合約按期轉成採購單並完成交付，STL的AI資料中心收入、產能利用率與高附加價值連接產品占比可持續上升；24% attach rate有利產品組合。但訂單簿不等於已認列營收，且長約跨至2030年，影響將分多年反映。
+
+5）機會與風險
+催化劑：季度訂單轉收入、attach rate續升、產能擴張及具名客戶確認。
+風險：客戶集中、需求或採購延後、長約價格重訂、原料與關稅波動、擴產過快、一次性收益掩蓋核心獲利。未查即時估值，不判斷股價是否已反映。
+
+6）待驗證
+追蹤三筆hyperscaler協議是否重疊、確定採購承諾與取消條款、季度出貨／收入拆分、產能與良率、光纖預製棒供應與毛利率、客戶名稱及第二來源確認。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"stl-q2fy27-hyperscaler-orders-20261023","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
