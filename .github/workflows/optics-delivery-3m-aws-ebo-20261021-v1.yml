@@ -1,0 +1,73 @@
+name: Optics delivery 3M AWS EBO 20261021 v1
+on:
+  push:
+    branches: [codex/optics-delivery-3m-aws-ebo-20261021-v1]
+    paths: [.github/workflows/optics-delivery-3m-aws-ebo-20261021-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-3m-aws-ebo-20261021-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜3M×AWS EBO具名採用與GSEO量產供應鏈
+
+1）重大變化
+3M於2026/10/19–21接連確認：AWS將部署並擴大採用3M Expanded Beam Optical（EBO）平台；3M並選定台灣大立光電相關精密光學廠GSEO（玉晶光，TWSE 3406）為製造夥伴。這是具名hyperscaler採用、具條件銷售門檻、產能倍增及台灣量產夥伴的組合，足以改變3M光連接業務及GSEO資料中心曝險判斷。
+
+2）已確認事實
+・事件日：3M與Amazon子公司於10/19簽訂擴大商業關係；官方採用公告日10/21。
+・AWS計畫在資料中心部署並擴大3M EBO；這是採用／擴大部署承諾，尚未公布實際部署埠數或已認列營收。
+・3M向Amazon子公司發出最多3,162,015股認股權證，期限7年、行使價164.89美元；85%股份依Amazon對3M光連接及其他資料中心產品的付款歸屬，累計付款達60億美元時全數歸屬，其餘依事件里程碑歸屬。60億美元是歸屬門檻，不是保證訂單。
+・3M表示將透過光連接事業對美國經濟投入近5億美元，並延續Menomonie廠EBO產能倍增計畫；另預計至2027年新增逾100個職位、直接或間接支持逾500個工作。
+・10/19，3M宣布擬參與GSEO私募取得約4.7%股權，預計2026Q4完成；GSEO將支援EBO ferrule、CPO及相關互連的製造準備與長期擴產。
+以上投入、交割及新增職位含前瞻性目標，非已完成實績。
+
+3）供應鏈角色
+3M（NYSE: MMM）：EBO材料、連接器及平台；Amazon/AWS（NASDAQ: AMZN）：具名需求方；GSEO玉晶光（TWSE: 3406）：精密光學與EBO ferrule製造夥伴。EBO屬被動光連接／光纖終端，不等同InP/EML雷射、矽光子PIC或CPO光引擎；但可與CPO系統互補。
+
+4）合理推論
+若AWS付款與部署達里程碑，3M可獲得長期資料中心營收可見度，Menomonie倍增產能與GSEO第二供應基地可降低放量瓶頸；GSEO則可能由消費光學延伸至AI資料中心精密光學。時間軸較可能跨2026–2033年逐步反映，不能把60億美元一次計入訂單或近期營收。
+
+5）機會與風險
+催化劑：AWS實際部署數、EBO營收、GSEO私募交割、Menomonie擴產完成及第二家客戶。
+風險：付款門檻未達、採用進度延後、EBO成本／可靠性／互通性、客戶集中、GSEO量產良率、擴產利用率不足，以及MPO等既有方案競爭。未核對即時估值，不判斷已反映或低估。
+
+6）待驗證
+追蹤逐年Amazon付款、EBO出貨埠數與ASP、3M光連接營收、GSEO資本支出／良率／量產時點，以及AWS是否正式確認上線規模。
+
+官方3M：https://news.3m.com/2026-10-21-3M-and-AWS-collaborate-to-advance-optical-connectivity-innovation
+3M 8-K：https://investors.3m.com/financials/sec-filings/content/0000066740-26-000303/0000066740-26-000303.pdf
+GSEO合作：https://investors.3m.com/news-events/press-releases/detail/1945/3m-announces-collaboration-with-gseo-to-advance-expanded"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"3m-aws-ebo-20261021","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
