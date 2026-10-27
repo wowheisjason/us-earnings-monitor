@@ -1,0 +1,74 @@
+name: Optics delivery corning genai optical growth 20261027 v1
+on:
+  push:
+    branches: [codex/optics-delivery-corning-genai-optical-growth-20261027-v1]
+    paths: [.github/workflows/optics-delivery-corning-genai-optical-growth-20261027-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-corning-genai-optical-growth-20261027-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜Corning Gen AI光連接營收加速
+
+1）重大變化及通知理由
+Corning（NYSE：GLW）2026/10/27公布Q3正式業績：Optical Communications營收23.79億美元，年增44%、季增15%；部門淨利5.32億美元，年增80%。Enterprise Networks營收年增84%，其中Gen AI產品銷售逾倍增。這是已實現營收與獲利放量，不是展示或未落實訂單，足以改變其AI光連接收入與產能判斷。
+
+2）已確認事實
+• Q3 Optical Communications營收23.79億美元，去年同期16.52億美元；淨利5.32億美元，去年同期2.95億美元。
+• Enterprise Networks銷售年增84%；管理層稱Gen AI產品銷售年增超過100%，且增速高於GPU單位成長。
+• 公司Q3取得四項長期、數十億美元級客戶協議，包括Verizon與AT&T；但未披露各約定金額、最低採購量，且電信協議不能全部計入AI資料中心。
+• Q3公司資本支出超過5億美元，用於因應產品需求；管理層表示新增產能由長約共同分攤擴產成本與風險，但未披露光通訊專屬產能或利用率。
+• Q4公司整體core sales指引52–53億美元、core EPS 0.96–1.00美元，屬前瞻指引，不是光通訊分部指引。
+• Amazon、NVIDIA、Meta等既有長約及擴產安排先前已公告；本次真正新增證據是Q3營收、淨利與Gen AI銷售實際加速，不重複把舊協議當新訂單。
+
+官方：https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Delivers-Outstanding-Third-Quarter-Results1/default.aspx
+
+3）供應鏈角色
+• Corning（GLW）：光纖、光纜、高密度連接與資料中心被動光連接，直接受益。
+• Hyperscaler、GPU／系統平台與電信商：需求端；除已具名長約外，不推測未公開客戶。
+• 光纖連接器、纜線及組裝供應商可能受惠於資料中心埠數增加，但本公告未披露BOM或份額。
+本事件不是InP、EML、DSP或CPO光引擎量產公告，不能用來證明主動光元件同步短缺。
+
+4）合理推論
+若長約拉貨與AI資料中心建置按期進行，Corning的高密度光纖、纜線及連接內容量可繼續快於GPU單位數成長，帶動營收、產能利用率與規模利潤。成立條件是客戶部署、擴產投產、產品良率、價格及供應鏈按計畫執行；44%分部成長亦包含電信與其他光通訊需求，不能全歸因Gen AI。
+
+5）機會與風險
+催化劑：Gen AI銷售持續倍增、長約轉為實際出貨、光通訊產能披露、第二階段AI互連產品量產。
+風險：客戶延後部署、長約拉貨彈性、擴產過快、利用率不足、價格競爭、電信與AI需求混合造成高估，以及可插拔／CPO架構改變產品內容量。未核對即時估值，不判斷低估。
+
+6）待驗證
+追蹤Gen AI產品絕對營收、AI與電信分項、四項長約最低承諾及交貨期、光通訊專屬資本支出／新增產能、利用率、ASP與自由現金流。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"corning-genai-optical-growth-20261027","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
