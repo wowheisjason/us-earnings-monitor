@@ -1,0 +1,45 @@
+name: Optics delivery celestica networking capex 20261026 v1
+on:
+  push:
+    branches: [codex/optics-delivery-celestica-networking-capex-20261026-v1]
+    paths: [.github/workflows/optics-delivery-celestica-networking-capex-20261026-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-celestica-networking-capex-20261026-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat=os.environ.get('TELEGRAM_CHAT_ID')
+          if not token or not chat:
+              raise SystemExit('Telegram credentials unavailable')
+          message="AI光通訊重大進展｜Celestica交換器營收與擴產明顯加速\n\n1）重大變化與通知理由\nCelestica（NYSE/TSX：CLS）2026/10/26公布Q3正式數字：Networking單季營收32.632億美元，年增68%、季增23%；HPS營收約23億美元，年增70%。公司並給出2027年總營收400億美元、年增90%，資本支出15–20億美元。這是已實現的交換器業務放量，加上大額擴產與正式指引，足以改變其收入與AI網路供應鏈判斷。\n\n2）已確認事實\n• Q3總營收58.297億美元，年增83%；CCS營收48.723億美元、年增102%，占總營收84%，CCS毛利指標segment margin由8.3%升至8.9%。\n• Networking營收32.632億美元，占總營收56%；年增13.203億美元（68%），季增6.10億美元（23%），公司歸因於資料中心網路需求及交換器專案成長。\n• HPS營收約23億美元、年增70%，由多家hyperscaler專案爬坡推動。\n• 2026營收展望由205億美元上修至210億美元；2027指引為營收400億美元、調整後營業利益率9.0%、調整後EPS 21.50美元、資本支出15–20億美元。均屬管理層前瞻指引。\n• 2026年前九月實際資本支出7.674億美元，去年同期1.065億美元；2027資本支出預估高於2026約10億美元。\n• 公司明列2027展望依賴800G／1.6T networking與AI compute專案按期爬坡，但沒有拆出光模組、光引擎或CPO營收。\n• 先前已取得未具名hyperscaler的1.6T CPO交換器專案，原定2027開始爬坡；本次並未宣布CPO已量產或新增具名客戶。\n\n官方10-Q：https://corporate.celestica.com/static-files/68dc6142-ee60-427d-97b8-05715241a269\n官方財報：https://www.sec.gov/Archives/edgar/data/1030894/000103089426000049/cls-20260930prcondensedfs.htm\n\n3）供應鏈角色\n• Celestica：AI交換器設計、JDM與量產整合，直接受益。\n• Hyperscaler／frontier AI labs：需求端，未具名。\n• Broadcom、NVIDIA、AMD等交換器ASIC/平台商，以及光模組、DSP、EML/CW雷射、連接器供應商，可能間接受益；但本次未揭露採購份額，不宜指定受益公司。\n• 事件涵蓋800G／1.6T交換器，不等同於InP、EML或CPO光引擎已同步取得量產訂單。\n\n4）合理推論\n若客戶預測轉為實際拉貨，15–20億美元資本支出可支撐2027多個交換器與AI compute專案，Celestica的規模、議價力與營收可見度可能提升；對高速光模組及光連接需求形成上游拉動。成立條件是交換器專案認證、ASIC與光元件供應、良率及資料中心電力/部署按期完成。\n\n5）機會與風險\n催化劑：1.6T量產占比、CPO樣品/量產落地、具名客戶、Networking季營收續增。\n風險：2027指引包含大量AI compute而非純光通訊；前三大客戶占總營收35%、17%、14%；存貨由2025年底21.88億美元升至2026/9月底45.097億美元；2026自由現金流展望由6億降至4.6億美元；擴產過快、專案延遲、價格競爭與客戶集中可能壓縮回報。未核對即時估值，不判斷是否低估。\n\n6）待驗證\n追蹤Networking中800G/1.6T占比、CPO量產日期與良率、光學BOM/供應商、2027資本支出投產節點、訂單取消條款、存貨周轉及自由現金流。"
+          payload=json.dumps({'chat_id':chat,'text':message,'link_preview_options':{'is_disabled':True}}).encode()
+          req=urllib.request.Request('https://api.telegram.org/bot'+token+'/sendMessage',data=payload,headers={'Content-Type':'application/json'})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit('Telegram delivery failed or unknown; do not retry blindly')
+          mid=result.get('result',{}).get('message_id')
+          if result.get('ok') is not True or type(mid) is not int or mid<=0:
+              raise SystemExit('Telegram receipt invalid')
+          receipt={'accepted':True,'message_id':mid,'event':'celestica-networking-capex-20261026','version':1}
+          with open('telegram-receipt.json','w') as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
