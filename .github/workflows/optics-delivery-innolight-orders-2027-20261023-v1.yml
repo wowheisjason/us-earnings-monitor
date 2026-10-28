@@ -1,0 +1,46 @@
+name: Optics Telegram delivery innolight orders 2027 v1
+on:
+  push:
+    branches: [codex/optics-delivery-innolight-orders-2027-20261023-v1]
+    paths: [.github/workflows/optics-delivery-innolight-orders-2027-20261023-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-innolight-orders-2027-20261023-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT_TEXT: "AI光通訊重大進展｜中際旭創800G／1.6T訂單能見度延伸至2027年\n\n1）重大變化與通知理由\n中際旭創（深交所300308）於2026/10/23正式公告：主要海外客戶訂單已下至2027年，部分重點客戶已提供2028年明確需求指引；公司並稱目前在手訂單飽滿、供應鏈穩定、產能利用率充足，800G／1.6T高階光模組需求預計持續快速增長，市場價格體系健康。這是訂單能見度與供需／價格判斷的正式更新，較單純展示或送樣更具商業意義，足以提高2027年營收可見度，達通知門檻。\n\n2）已確認事實\n• 公告日2026/10/23；公告係因公司及產業股價波動而自願披露。\n• 2026年上半年營收417.78億元人民幣、年增182.49%；歸母淨利136.51億元、年增241.70%。這是已實現業績。\n• 管理層表示主要海外客戶訂單已下至2027年；部分重點客戶的2028年資訊是「需求指引」，不是已簽訂單。\n• 公司稱具備大規模交付能力的廠商有限、報價相對理性，並將與核心供應商戰略綁定及簽長期供應協議。\n• NPO／XPO等下一代產品目前僅在部分產品與重點客戶合作研發、送樣，不能視為認證、量產或營收。\n• 未披露訂單金額、數量、交付季度、客戶名稱、取消條款、800G／1.6T組合、ASP、毛利率、良率或產能數字；上述前瞻判斷屬公司管理層說法。\n\n官方原文：https://static.cninfo.com.cn/finalpage/2026-10-23/1225617691.pdf\n\n3）受影響供應商與角色\n• 中際旭創（300308.SZ）：800G／1.6T光模組與矽光等方案供應商，直接受益。\n• 未具名海外主要客戶：需求端；不得猜測為特定hyperscaler。\n• InP／EML、CW雷射、DSP、矽光PIC、FAU及封裝測試供應商：可能隨模組出貨間接受益，但公告未揭露BOM、供應商或採購份額，不能指定受益公司。\n• 新易盛（300502.SZ）、Coherent（COHR）、Applied Optoelectronics（AAOI）等：在高速光模組／光元件環節競爭；本公告不能證明其同步取得訂單。\n\n4）合理推論\n若2027年客戶訂單具實質採購承諾並按期拉貨，中際旭創的800G／1.6T營收與產能利用率可見度將提高；報價理性且供應商長約有效時，價格下滑與缺料對毛利的壓力可能較可控。影響較可能自2026下半年延續至2027年，2028年目前只能列為需求預測。成立條件包括訂單未被調整／取消、認證與良率穩定、關鍵元件供應充足、AI資料中心部署及電力進度不延後。\n\n5）投資機會與風險\n催化劑：量化2027訂單或產能、1.6T出貨占比上升、NPO／XPO從送樣進入認證與量產、毛利率及現金流跟上營收。\n風險：公告在股價波動背景下發布且多為定性陳述；客戶集中、需求重複下單或延後、ASP下降、關鍵雷射／DSP短缺、擴產過快、技術由可插拔轉向NPO／CPO造成產品組合變化。不能由本公告推論整條InP／EML鏈全面短缺，也不能把NPO／XPO送樣當作CPO量產。未核對即時估值，不判斷股價是否已反映或低估。\n\n6）待驗證與追蹤指標\n• 2027訂單金額、單位數、不可取消比例及交付排程；\n• 800G／1.6T營收、出貨、ASP、毛利與良率；\n• 2028需求指引轉為正式訂單的時間；\n• 關鍵元件長約、供應瓶頸與價格；\n• NPO／XPO認證、量產及具名客戶；\n• 存貨、應收帳款、營運現金流能否與收入同步。"
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat=os.environ.get('TELEGRAM_CHAT_ID')
+          message=os.environ.get('REPORT_TEXT')
+          if not token or not chat or not message:
+              raise SystemExit('Telegram credentials unavailable')
+          payload=json.dumps({'chat_id':chat,'text':message,'link_preview_options':{'is_disabled':True}}).encode()
+          req=urllib.request.Request('https://api.telegram.org/bot'+token+'/sendMessage',data=payload,headers={'Content-Type':'application/json'})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit('Telegram delivery failed or unknown; do not retry blindly')
+          mid=result.get('result',{}).get('message_id')
+          if result.get('ok') is not True or type(mid) is not int or mid<=0:
+              raise SystemExit('Telegram receipt invalid')
+          receipt={'accepted':True,'message_id':mid,'event':'innolight-orders-2027-20261023','version':1}
+          with open('telegram-receipt.json','w') as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
