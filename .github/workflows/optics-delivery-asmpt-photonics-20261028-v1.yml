@@ -1,0 +1,78 @@
+name: Optics delivery asmpt-photonics-20261028-v1
+on:
+  push:
+    branches: [codex/optics-delivery-asmpt-photonics-20261028-v1]
+    paths: [.github/workflows/optics-delivery-asmpt-photonics-20261028-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-asmpt-photonics-20261028-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified ASMPT optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜ASMPT 1.6T量產帶動光子設備訂單與營收創高
+
+【重大變化】
+ASMPT（港交所：0522）於2026/10/28公布Q3業績：Photonics訂單與營收均創歷史新高，來源包括800G、1.6T及次世代光模組量產爬坡；AMICRA並取得突破性NPO大宗訂單。這是已實現營收、正式訂單與量產擴張，不是展示或送樣，達通知門檻。
+
+【已確認事實】
+• 集團Q3訂單HK$88.451億（US$11.28億），季增24.7%、年增137.9%，book-to-bill 1.69；營收HK$52.47億（US$6.692億），季增6.3%、年增48.7%。
+• SEMI營收US$3.742億，季增1.5%、年增68.0%；公司稱年增主要由AI相關Photonics，加上線焊／固晶設備推動。SEMI訂單US$5.633億，季增31.3%、年增156.3%。
+• Photonics訂單與營收創高，由800G、1.6T及次世代光模組量產爬坡推動；可插拔光收發器設備取得重大訂單。
+• AMICRA取得NPO大宗訂單，另獲一家未具名大型通信服務商首次光收發器超高精度固晶設備訂單。管理層預期該客戶機會並非一次性，合作可延續整個2027年。
+• 公司未量化Photonics營收、訂單金額、設備台數、ASP或客戶名稱。
+• 管理層預期NPO早於CPO放量；CPO量產較可能在本十年末。現階段僅稱與多家全球CPO業者深化合作，不能視為CPO量產或收入。
+• 先進封裝設備交期維持6–9個月，公司稱現有產能足夠，但會以安全庫存及風險採購處理可能的零件瓶頸。
+• Q4集團營收指引US$6.70–7.30億；SEMI因較長交期預計季持平。這是管理層指引，不是Photonics分項指引。
+
+【供應鏈角色】
+ASMPT／AMICRA：光模組、NPO與未來CPO所需超高精度固晶、EIC-to-PIC接合及量產設備，屬直接受益。
+光模組廠、OSAT、IDM及通信服務商：需求端或設備客戶；未具名，不推測身分。
+Besi、Kulicke & Soffa及其他精密接合設備商：競爭者；本公告未提供市占變化。
+InP、EML、CW雷射與矽光PIC供應商：僅間接受量產設備需求支持，本事件不能證明其個別訂單或全面短缺。
+
+【合理推論】
+若1.6T量產與NPO客戶在2027年持續拉貨，ASMPT Photonics有望由可插拔設備延伸至NPO，提升SEMI營收可見度與產品組合。EIC-to-PIC接合需要更高精度設備，可能提高單機價值量。
+成立條件：客戶模組量產、良率與資本支出按計畫推進，設備零件供應正常。CPO收入仍偏後期，不能把本季NPO訂單外推為CPO已商用。
+
+【投資機會與風險】
+催化劑：Photonics分項營收／訂單首次量化、NPO重複訂單、具名客戶、1.6T設備台數，以及2027年收入持續增長。
+風險：Q3集團訂單含SMT一次性大宗單與提前拉貨；Photonics未量化，難估獲利貢獻；NPO認證／量產延遲、CPO時程後移、零件交期、客戶集中、設備競爭與擴產過度均可能削弱回報。未核對即時估值，不判斷低估或提出買賣建議。
+
+【待驗證】
+追蹤Photonics季度營收、訂單與毛利率；NPO設備台數、客戶認證及2027年重複拉貨；800G／1.6T各自占比；CPO由合作轉為正式訂單與量產的時間；以及6–9個月交期是否延長。
+
+官方：https://www.asmpt.com/en/investor-relations/news-events/asmpt-announces-2026-third-quarter-results-record-group-bookings-and-strong-earnings-across-semi-smt/
+財務資料：https://www.asmpt.com/en/investor-relations/financial-information/"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"asmpt-photonics-20261028","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
