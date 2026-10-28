@@ -729,6 +729,94 @@
         "filing_date": "2026-10-28",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0001193125-26-436133:msft-20260930.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001193125-26-436133:msft-20260930.htm",
+      "ticker": "MSFT",
+      "title": "Microsoft Form 10-Q — 10-Q",
+      "published_at": "2026-10-28T20:07:39.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "other",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000789019",
+        "accession": "0001193125-26-436133",
+        "form": "10-Q",
+        "document_type": "10-Q",
+        "filing_date": "2026-10-28",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0001193125-26-436122:msft-ex99_1.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001193125-26-436122:msft-ex99_1.htm",
+      "ticker": "MSFT",
+      "title": "Microsoft Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-10-28T20:04:44.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000789019",
+        "accession": "0001193125-26-436122",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-28",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0001652044-26-000080:googexhibit991q32026.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001652044-26-000080:googexhibit991q32026.htm",
+      "ticker": "GOOGL",
+      "title": "Alphabet Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-10-28T20:01:33.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "period_end": "2026-10-28",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001652044",
+        "accession": "0001652044-26-000080",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-28",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0000319201-26-000032:exhibit991earningsrelease0.htm": {
+      "source": "sec_edgar",
+      "source_id": "0000319201-26-000032:exhibit991earningsrelease0.htm",
+      "ticker": "KLAC",
+      "title": "KLA Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-10-28T20:07:50.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000032/exhibit991earningsrelease0.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000032/exhibit991earningsrelease0.htm",
+      "fiscal_year": 2027,
+      "quarter": null,
+      "period_end": "2026-10-28",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000319201",
+        "accession": "0000319201-26-000032",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-28",
+        "period_from_exhibit_filename": null
+      }
     }
   },
   "events": {
@@ -746,7 +834,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-28T14:51:15-04:00",
+      "updated_at": "2026-10-28T17:03:19-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -1111,7 +1199,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-28T14:51:15-04:00",
+      "updated_at": "2026-10-28T17:03:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1409,7 +1497,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-28T14:51:15-04:00",
+      "updated_at": "2026-10-28T17:03:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1720,7 +1808,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-28T14:51:15-04:00",
+      "updated_at": "2026-10-28T17:03:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1954,7 +2042,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-28T14:51:15-04:00",
+      "updated_at": "2026-10-28T17:03:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2105,7 +2193,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-28T14:51:15-04:00",
+      "updated_at": "2026-10-28T17:03:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2551,19 +2639,19 @@
       "documents": [
         "sec_edgar:0001104659-26-119421:aph-ex99d1.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-28T14:51:15-04:00",
+      "updated_at": "2026-10-28T17:03:19-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.192,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -2576,7 +2664,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.493,
+            "seconds": 0.33,
             "documents": 0,
             "partial": false
           },
@@ -2589,7 +2677,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-28T14:51:15-04:00",
+        "ir_retrieval_last_at": "2026-10-28T17:01:21-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -2609,11 +2697,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-28T14:51:15-04:00",
-        "official_ir_checked_at": "2026-10-28T14:51:15-04:00",
-        "official_ir_check_count": 4,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-28T15:21:15-04:00"
+        "last_collection_check_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_checked_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_check_count": 5,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-10-28T19:01:21-04:00"
       },
       "delivery": {}
     },
@@ -2630,16 +2718,16 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-28T14:51:15-04:00",
+      "updated_at": "2026-10-28T17:01:21-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -2652,7 +2740,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.347,
+            "seconds": 0.556,
             "documents": 0,
             "partial": false
           },
@@ -2665,7 +2753,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-28T14:51:15-04:00",
+        "ir_retrieval_last_at": "2026-10-28T17:01:21-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -2685,11 +2773,238 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-28T14:51:15-04:00",
-        "official_ir_checked_at": "2026-10-28T14:51:15-04:00",
+        "last_collection_check_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_checked_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_check_count": 2,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-28T17:31:21-04:00"
+      },
+      "delivery": {}
+    },
+    "MSFT_2026-09-30_Q1": {
+      "event_id": "MSFT_2026-09-30_Q1",
+      "ticker": "MSFT",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "first_seen_at": "2026-10-28T17:01:21-04:00",
+      "period_end": "2026-09-30",
+      "documents": [
+        "sec_edgar:0001193125-26-436133:msft-20260930.htm",
+        "sec_edgar:0001193125-26-436122:msft-ex99_1.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-28T17:01:21-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.124,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MSFT-2027-Q1",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 0.278,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.049,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MSFT-2027-Q1"
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-28T17:01:21-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 2,
+          "kinds": {
+            "other": 1,
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 2
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_checked_at": "2026-10-28T17:01:21-04:00",
         "official_ir_check_count": 1,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-28T15:06:15-04:00"
+        "next_ir_retry_at": "2026-10-28T17:16:21-04:00"
+      },
+      "delivery": {}
+    },
+    "GOOGL_2026-10-28": {
+      "event_id": "GOOGL_2026-10-28",
+      "ticker": "GOOGL",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "first_seen_at": "2026-10-28T17:01:21-04:00",
+      "period_end": "2026-10-28",
+      "documents": [
+        "sec_edgar:0001652044-26-000080:googexhibit991q32026.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-28T17:01:21-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 0.132,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-28T17:01:21-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_checked_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-28T17:16:21-04:00"
+      },
+      "delivery": {}
+    },
+    "KLAC_2026-10-28": {
+      "event_id": "KLAC_2026-10-28",
+      "ticker": "KLAC",
+      "fiscal_year": 2027,
+      "quarter": null,
+      "first_seen_at": "2026-10-28T17:01:21-04:00",
+      "period_end": "2026-10-28",
+      "documents": [
+        "sec_edgar:0000319201-26-000032:exhibit991earningsrelease0.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-28T17:01:21-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 0.176,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-28T17:01:21-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_checked_at": "2026-10-28T17:01:21-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-28T17:16:21-04:00"
       },
       "delivery": {}
     }
@@ -2698,13 +3013,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-10-28T08:52:42-04:00",
-      "blocked_until": "2026-10-28T14:52:42-04:00",
+      "last_failure_at": "2026-10-28T17:01:21-04:00",
+      "blocked_until": "2026-10-28T23:01:21-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-28T14:51:15-04:00",
+      "last_success_at": "2026-10-28T17:01:21-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -11256,6 +11571,2965 @@
             "density_errors": [],
             "numeric_provenance_errors": [],
             "strong_claim_errors": []
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "APH_2026-10-28": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "84570a9a9c5a7662ea04899c62a6cbd9b74d2e6dff1d2068d5a6bfcbf7083d54",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter 2026 sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "Sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025",
+                "metric": "sales",
+                "value": "10.2",
+                "unit": "billion",
+                "period": "Q3 2026",
+                "reported_change": "65%"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter 2026 orders of $12.2 billion, resulting in a book-to-bill of 1.19:1.",
+                "materiality_candidate": 4,
+                "quote": "Orders of $12.2 billion, resulting in a book-to-bill of 1.19:1",
+                "metric": "orders",
+                "value": "12.2",
+                "unit": "billion",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP Diluted EPS of $0.79, up 61% compared to prior year, and Adjusted Diluted EPS of $0.80, up 74% compared to prior year.",
+                "materiality_candidate": 5,
+                "quote": "GAAP Diluted EPS\nof $0.79, up 61% compared to prior year\n●\nAdjusted Diluted EPS\nof $0.80, up 74% compared to prior year",
+                "metric": "adjusted_diluted_eps",
+                "value": "0.80",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "reported_change": "74%"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP and Adjusted Operating Margin of 29.5% and 29.7%, respectively.",
+                "materiality_candidate": 4,
+                "quote": "GAAP and Adjusted Operating Margin\nof 29.5% and\n29.7%\n, respectively",
+                "metric": "adjusted_operating_margin",
+                "value": "29.7",
+                "unit": "percent",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion, respectively.",
+                "materiality_candidate": 4,
+                "quote": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion\n, respectively",
+                "metric": "operating_cash_flow",
+                "value": "2.1",
+                "unit": "billion",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Fourth quarter 2026 sales expected to be in the range of $10.3 to $10.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "for the fourth quarter of 2026, Amphenol expects sales to be in the range of $10.3 to $10.5 billion",
+                "metric": "sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "10.3",
+                "high": "10.5",
+                "unit": "billion"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Fourth quarter 2026 Adjusted Diluted EPS expected to be in the range of $0.81 to $0.83.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS is expected to be in the range of $0.81 to $0.83",
+                "metric": "adjusted_diluted_eps",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "0.81",
+                "high": "0.83",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full year 2026 sales expected to be in the range of $36.9 billion to $37.1 billion.",
+                "materiality_candidate": 5,
+                "quote": "For the full year 2026, Amphenol expects sales to be in the range of $36.9 billion to $37.1 billion",
+                "metric": "sales",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": "36.9",
+                "high": "37.1",
+                "unit": "billion"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full year 2026 Adjusted Diluted EPS expected to be in the range of $2.82 to $2.84.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS is expected to be in the range of $2.82 to $2.84",
+                "metric": "adjusted_diluted_eps",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": "2.82",
+                "high": "2.84",
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u3",
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u3",
+                "card_type": "fact",
+                "topic": "other",
+                "fact_class": "objective_fact",
+                "statement": "Stock split took effect on a split-adjusted basis on September 3, 2026.",
+                "materiality_candidate": 3,
+                "quote": "trading on a split-adjusted basis on September 3, 2026.",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u5",
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales for the three months ended September 30, 2026 were $10,229.7 million compared to $6,194.4 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4",
+                "metric": "Net sales",
+                "value": 10229.7,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 6194.4,
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales for the nine months ended September 30, 2026 were $26,607.9 million compared to $16,655.7 million for the nine months ended September 30, 2025.",
+                "materiality_candidate": 4,
+                "quote": "26,607.9\n\n$\n16,655.7",
+                "metric": "Net sales",
+                "value": 26607.9,
+                "unit": "$M",
+                "period": "9M 2026",
+                "comparison_value": 16655.7,
+                "comparison_period": "9M 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for the three months ended September 30, 2026 was $3,020.8 million compared to $1,702.3 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Operating income\n\n\n3,020.8\n\n\n1,702.3",
+                "metric": "Operating income",
+                "value": 3020.8,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 1702.3,
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income attributable to Amphenol Corporation for the three months ended September 30, 2026 was $2,034.3 million compared to $1,245.7 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income attributable to Amphenol Corporation\n\n$\n2,034.3\n\n$\n1,245.7",
+                "metric": "Net income attributable to Amphenol Corporation",
+                "value": 2034.3,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 1245.7,
+                "comparison_period": "Q3 2025"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_3": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales for the three months ended September 30, 2026 were $10,229.7 million compared to $6,194.4 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4",
+                "metric": "Net sales",
+                "value": 10229.7,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 6194.4,
+                "comparison_period": "Q3 2025",
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales for the nine months ended September 30, 2026 were $26,607.9 million compared to $16,655.7 million for the nine months ended September 30, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4\n\n$\n26,607.9\n\n$\n16,655.7",
+                "metric": "Net sales",
+                "value": 26607.9,
+                "unit": "$M",
+                "period": "9M 2026",
+                "comparison_value": 16655.7,
+                "comparison_period": "9M 2025",
+                "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4\n\n$\n26,607.9\n\n$\n16,655.7"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for the three months ended September 30, 2026 was $3,020.8 million compared to $1,702.3 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Operating income\n\n\n3,020.8\n\n\n1,702.3",
+                "metric": "Operating income",
+                "value": 3020.8,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 1702.3,
+                "comparison_period": "Q3 2025",
+                "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Operating income\n\n\n3,020.8\n\n\n1,702.3"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income attributable to Amphenol Corporation for the three months ended September 30, 2026 was $2,034.3 million compared to $1,245.7 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income attributable to Amphenol Corporation\n\n$\n2,034.3\n\n$\n1,245.7",
+                "metric": "Net income attributable to Amphenol Corporation",
+                "value": 2034.3,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 1245.7,
+                "comparison_period": "Q3 2025",
+                "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net income attributable to Amphenol Corporation\n\n$\n2,034.3\n\n$\n1,245.7"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u7",
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u7",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted Diluted EPS was $0.80 for the three months ended September 30, 2026 compared to $0.46 for the three months ended September 30, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted Diluted EPS, a non-GAAP financial measure which is defined and reconciled to its most comparable GAAP financial measure in this press release, was $0.80 and $0.46 for the three months ended September 30, 2026 and 2025, respectively",
+                "metric": "Adjusted Diluted EPS",
+                "value": "0.80",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": "0.46",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash and cash equivalents and short-term investments totaled $5,301.4 million as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Total cash, cash equivalents and short-term investments 5,301.4",
+                "metric": "Total cash, cash equivalents and short-term investments",
+                "value": "5301.4",
+                "unit": "USD_M",
+                "period": "September 30, 2026"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_4": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash and cash equivalents and short-term investments totaled $5,301.4 million as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Total cash, cash equivalents and short-term investments\n​\n​\n5,301.4",
+                "metric": "Total cash, cash equivalents and short-term investments",
+                "value": "5301.4",
+                "unit": "USD_M",
+                "period": "September 30, 2026",
+                "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 8,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Total cash, cash equivalents and short-term investments\n​\n​\n5,301.4"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u10"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $2,078.5 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Net cash provided by operating activities\n​\n​\n2,078.5",
+                "metric": "Net cash provided by operating activities",
+                "value": "2078.5",
+                "unit": "USD_M",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Capital expenditures were $457.2 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Capital expenditures\n​\n​\n(457.2)",
+                "metric": "Capital expenditures",
+                "value": "-457.2",
+                "unit": "USD_M",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Consolidated net sales were $10,229.7 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Consolidated Net sales\n​\n$\n10,229.7",
+                "metric": "Consolidated Net sales",
+                "value": "10229.7",
+                "unit": "USD_M",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u10",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Consolidated operating margin was 29.5% for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Consolidated Operating margin (%)\n​\n​\n29.5%",
+                "metric": "Consolidated Operating margin",
+                "value": "29.5",
+                "unit": "percent",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended September 30, 2026 Communications Solutions net sales were $16,501.3 million compared to $8,633.0 million in the prior year period, up 91%.",
+                "materiality_candidate": 4,
+                "quote": "Communications Solutions\n​\n$\n16,501.3\n​\n$\n8,633.0\n​\n91\n%",
+                "metric": "Communications Solutions Net Sales",
+                "value": "16501.3",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "8633.0",
+                "comparison_period": "9M 2025",
+                "reported_change": "91%"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended September 30, 2026 Harsh Environment Solutions net sales were $5,592.0 million compared to $4,229.3 million in the prior year period, up 32%.",
+                "materiality_candidate": 3,
+                "quote": "Harsh Environment Solutions\n​\n​\n5,592.0\n​\n4,229.3\n​\n32\n%",
+                "metric": "Harsh Environment Solutions Net Sales",
+                "value": "5592.0",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "4229.3",
+                "comparison_period": "9M 2025",
+                "reported_change": "32%"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended September 30, 2026 Interconnect and Sensor Systems net sales were $4,514.6 million compared to $3,793.4 million in the prior year period, up 19%.",
+                "materiality_candidate": 3,
+                "quote": "Interconnect and Sensor Systems\n​\n4,514.6\n​\n3,793.4\n​\n19\n%",
+                "metric": "Interconnect and Sensor Systems Net Sales",
+                "value": "4514.6",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "3793.4",
+                "comparison_period": "9M 2025",
+                "reported_change": "19%"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended September 30, 2026 Consolidated net sales were $26,607.9 million compared to $16,655.7 million in the prior year period, up 60%.",
+                "materiality_candidate": 5,
+                "quote": "Consolidated\n​\n$\n26,607.9\n​\n$\n16,655.7\n​\n60\n%",
+                "metric": "Consolidated Net Sales",
+                "value": "26607.9",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "16655.7",
+                "comparison_period": "9M 2025",
+                "reported_change": "60%"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Three months ended September 30, 2026 Adjusted Operating Income was $3,036.3 million with an operating margin of 29.7% compared to $1,702.3 million and 27.5% in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted (non-GAAP) (v) (vi)\n​\n$\n3,036.3\n​\n29.7\n%",
+                "metric": "Adjusted Operating Income",
+                "value": "3036.3",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1702.3",
+                "comparison_period": "Q3 2025",
+                "metric_type": "other_adjusted"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free Cash Flow for the three months ended September 30, 2026 was $1,622.7 million compared to $1,215.5 million in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Free Cash Flow (non-GAAP) (v)\n​\n$\n1,622.7\n​\n$\n1,215.5",
+                "metric": "Free Cash Flow",
+                "value": "1622.7",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1215.5",
+                "comparison_period": "Q3 2025",
+                "metric_type": "standard_fcf",
+                "reconciliation": [
+                  {
+                    "item": "Operating Cash Flow (GAAP)",
+                    "value": "2078.5",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Operating Cash Flow (GAAP)\n$\n2,078.5"
+                    }
+                  },
+                  {
+                    "item": "Capital expenditures (GAAP)",
+                    "value": "-457.2",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Capital expenditures (GAAP)\n​\n(457.2)"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from disposals of property, plant and equipment (GAAP)",
+                    "value": "1.4",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Proceeds from disposals of property, plant and equipment (GAAP)\n​\n1.4"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u13",
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides fourth quarter 2026 GAAP diluted EPS guidance of $0.80 to $0.82.",
+                "materiality_candidate": 5,
+                "quote": "Diluted EPS (GAAP) \n $0.80 - $0.82",
+                "metric": "Diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 0.8,
+                "high": 0.82,
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides full year 2026 GAAP diluted EPS guidance of $2.64 to $2.66.",
+                "materiality_candidate": 5,
+                "quote": "Diluted EPS (GAAP) \n $2.64 - $2.66",
+                "metric": "Diluted EPS",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 2.64,
+                "high": 2.66,
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides fourth quarter 2026 adjusted diluted EPS guidance of $0.81 to $0.83.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS (non-GAAP) (2) \n $0.81 - $0.83",
+                "metric": "Adjusted Diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 0.81,
+                "high": 0.83,
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides full year 2026 adjusted diluted EPS guidance of $2.82 to $2.84.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS (non-GAAP) (2) \n $2.82 - $2.84",
+                "metric": "Adjusted Diluted EPS",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 2.82,
+                "high": 2.84,
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_7": {
+          "payload": {
+            "cards": [
+              {
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides fourth quarter 2026 GAAP diluted EPS guidance of $0.80 to $0.82.",
+                "materiality_candidate": 5,
+                "quote": "Diluted EPS (GAAP)\n$0.80 - $0.82",
+                "metric": "Diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 0.8,
+                "high": 0.82,
+                "unit": "USD",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Diluted EPS (GAAP)\n$0.80 - $0.82"
+                }
+              },
+              {
+                "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides full year 2026 GAAP diluted EPS guidance of $2.64 to $2.66.",
+                "materiality_candidate": 5,
+                "quote": "Diluted EPS (GAAP)\n$2.64 - $2.66",
+                "metric": "Diluted EPS",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 2.64,
+                "high": 2.66,
+                "unit": "USD",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Diluted EPS (GAAP)\n$2.64 - $2.66"
+                }
+              },
+              {
+                "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides fourth quarter 2026 adjusted diluted EPS guidance of $0.81 to $0.83.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$0.81 - $0.83",
+                "metric": "Adjusted Diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 0.81,
+                "high": 0.83,
+                "unit": "USD",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$0.81 - $0.83"
+                }
+              },
+              {
+                "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides full year 2026 adjusted diluted EPS guidance of $2.82 to $2.84.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$2.82 - $2.84",
+                "metric": "Adjusted Diluted EPS",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 2.82,
+                "high": 2.84,
+                "unit": "USD",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$2.82 - $2.84"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "title": "Amphenol Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 54934,
+                  "extracted_chars": 54934,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 14,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u3",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u4",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u5",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u7",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u10",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u13",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14"
+              ],
+              "expected_unit_count": 14,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u3",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u4",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u5",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u7",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u10",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u13",
+                "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14"
+              ],
+              "processed_unit_count": 14,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 14,
+                "processed_unit_count": 14,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 5,
+                "demand_revenue": 9,
+                "guidance": 8,
+                "margin_unit_economics": 7,
+                "other": 1
+              },
+              "selection": {
+                "raw_card_count": 30,
+                "deduped_card_count": 30,
+                "selected_card_count": 30,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 3,
+                  "demand_revenue": 7,
+                  "guidance": 8,
+                  "margin_unit_economics": 7,
+                  "other": 1
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Third quarter 2026 sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025.",
+                  "metric": "sales",
+                  "value": "10.2",
+                  "unit": "billion",
+                  "period": "Q3 2026",
+                  "reported_change": "65%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Nine months ended September 30, 2026 Consolidated net sales were $26,607.9 million compared to $16,655.7 million in the prior year period, up 60%.",
+                  "metric": "Consolidated Net Sales",
+                  "value": "26607.9",
+                  "unit": "USD $M",
+                  "period": "9M 2026",
+                  "comparison_value": "16655.7",
+                  "comparison_period": "9M 2025",
+                  "reported_change": "60%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated\n​\n$\n26,607.9\n​\n$\n16,655.7\n​\n60\n%"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net sales for the three months ended September 30, 2026 were $10,229.7 million compared to $6,194.4 million for the three months ended September 30, 2025.",
+                  "metric": "Net sales",
+                  "value": 10229.7,
+                  "unit": "$M",
+                  "period": "Q3 2026",
+                  "comparison_value": 6194.4,
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Consolidated net sales were $10,229.7 million for the three months ended September 30, 2026.",
+                  "metric": "Consolidated Net sales",
+                  "value": "10229.7",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated Net sales\n​\n$\n10,229.7"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Third quarter 2026 orders of $12.2 billion, resulting in a book-to-bill of 1.19:1.",
+                  "metric": "orders",
+                  "value": "12.2",
+                  "unit": "billion",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Orders of $12.2 billion, resulting in a book-to-bill of 1.19:1"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Nine months ended September 30, 2026 Communications Solutions net sales were $16,501.3 million compared to $8,633.0 million in the prior year period, up 91%.",
+                  "metric": "Communications Solutions Net Sales",
+                  "value": "16501.3",
+                  "unit": "USD $M",
+                  "period": "9M 2026",
+                  "comparison_value": "8633.0",
+                  "comparison_period": "9M 2025",
+                  "reported_change": "91%",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Communications Solutions\n​\n$\n16,501.3\n​\n$\n8,633.0\n​\n91\n%"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net sales for the nine months ended September 30, 2026 were $26,607.9 million compared to $16,655.7 million for the nine months ended September 30, 2025.",
+                  "metric": "Net sales",
+                  "value": 26607.9,
+                  "unit": "$M",
+                  "period": "9M 2026",
+                  "comparison_value": 16655.7,
+                  "comparison_period": "9M 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4\n\n$\n26,607.9\n\n$\n16,655.7"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Nine months ended September 30, 2026 Harsh Environment Solutions net sales were $5,592.0 million compared to $4,229.3 million in the prior year period, up 32%.",
+                  "metric": "Harsh Environment Solutions Net Sales",
+                  "value": "5592.0",
+                  "unit": "USD $M",
+                  "period": "9M 2026",
+                  "comparison_value": "4229.3",
+                  "comparison_period": "9M 2025",
+                  "reported_change": "32%",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Harsh Environment Solutions\n​\n​\n5,592.0\n​\n4,229.3\n​\n32\n%"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Nine months ended September 30, 2026 Interconnect and Sensor Systems net sales were $4,514.6 million compared to $3,793.4 million in the prior year period, up 19%.",
+                  "metric": "Interconnect and Sensor Systems Net Sales",
+                  "value": "4514.6",
+                  "unit": "USD $M",
+                  "period": "9M 2026",
+                  "comparison_value": "3793.4",
+                  "comparison_period": "9M 2025",
+                  "reported_change": "19%",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Interconnect and Sensor Systems\n​\n4,514.6\n​\n3,793.4\n​\n19\n%"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Amphenol provides fourth quarter 2026 GAAP diluted EPS guidance of $0.80 to $0.82.",
+                  "metric": "Diluted EPS",
+                  "unit": "USD",
+                  "period": "Q4 2026",
+                  "low": 0.8,
+                  "high": 0.82,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Diluted EPS (GAAP)\n$0.80 - $0.82",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Amphenol provides full year 2026 GAAP diluted EPS guidance of $2.64 to $2.66.",
+                  "metric": "Diluted EPS",
+                  "unit": "USD",
+                  "period": "FY 2026",
+                  "low": 2.64,
+                  "high": 2.66,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Diluted EPS (GAAP)\n$2.64 - $2.66",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Amphenol provides fourth quarter 2026 adjusted diluted EPS guidance of $0.81 to $0.83.",
+                  "metric": "Adjusted Diluted EPS",
+                  "unit": "USD",
+                  "period": "Q4 2026",
+                  "low": 0.81,
+                  "high": 0.83,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$0.81 - $0.83",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Amphenol provides full year 2026 adjusted diluted EPS guidance of $2.82 to $2.84.",
+                  "metric": "Adjusted Diluted EPS",
+                  "unit": "USD",
+                  "period": "FY 2026",
+                  "low": 2.82,
+                  "high": 2.84,
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$2.82 - $2.84",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Fourth quarter 2026 sales expected to be in the range of $10.3 to $10.5 billion.",
+                  "metric": "sales",
+                  "unit": "billion",
+                  "period": "Q4 2026",
+                  "low": "10.3",
+                  "high": "10.5",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "for the fourth quarter of 2026, Amphenol expects sales to be in the range of $10.3 to $10.5 billion",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Fourth quarter 2026 Adjusted Diluted EPS expected to be in the range of $0.81 to $0.83.",
+                  "metric": "adjusted_diluted_eps",
+                  "unit": "USD",
+                  "period": "Q4 2026",
+                  "low": "0.81",
+                  "high": "0.83",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS is expected to be in the range of $0.81 to $0.83",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c8:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Full year 2026 sales expected to be in the range of $36.9 billion to $37.1 billion.",
+                  "metric": "sales",
+                  "unit": "billion",
+                  "period": "FY 2026",
+                  "low": "36.9",
+                  "high": "37.1",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "For the full year 2026, Amphenol expects sales to be in the range of $36.9 billion to $37.1 billion",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c9:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Full year 2026 Adjusted Diluted EPS expected to be in the range of $2.82 to $2.84.",
+                  "metric": "adjusted_diluted_eps",
+                  "unit": "USD",
+                  "period": "FY 2026",
+                  "low": "2.82",
+                  "high": "2.84",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS is expected to be in the range of $2.82 to $2.84",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "GAAP Diluted EPS of $0.79, up 61% compared to prior year, and Adjusted Diluted EPS of $0.80, up 74% compared to prior year.",
+                  "metric": "adjusted_diluted_eps",
+                  "value": "0.80",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "reported_change": "74%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "GAAP Diluted EPS\nof $0.79, up 61% compared to prior year\n●\nAdjusted Diluted EPS\nof $0.80, up 74% compared to prior year"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Three months ended September 30, 2026 Adjusted Operating Income was $3,036.3 million with an operating margin of 29.7% compared to $1,702.3 million and 27.5% in the prior year period.",
+                  "metric": "Adjusted Operating Income",
+                  "value": "3036.3",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "1702.3",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted (non-GAAP) (v) (vi)\n​\n$\n3,036.3\n​\n29.7\n%",
+                  "metric_type": "other_adjusted"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Operating income for the three months ended September 30, 2026 was $3,020.8 million compared to $1,702.3 million for the three months ended September 30, 2025.",
+                  "metric": "Operating income",
+                  "value": 3020.8,
+                  "unit": "$M",
+                  "period": "Q3 2026",
+                  "comparison_value": 1702.3,
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Operating income\n\n\n3,020.8\n\n\n1,702.3"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Net income attributable to Amphenol Corporation for the three months ended September 30, 2026 was $2,034.3 million compared to $1,245.7 million for the three months ended September 30, 2025.",
+                  "metric": "Net income attributable to Amphenol Corporation",
+                  "value": 2034.3,
+                  "unit": "$M",
+                  "period": "Q3 2026",
+                  "comparison_value": 1245.7,
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net income attributable to Amphenol Corporation\n\n$\n2,034.3\n\n$\n1,245.7"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "GAAP and Adjusted Operating Margin of 29.5% and 29.7%, respectively.",
+                  "metric": "adjusted_operating_margin",
+                  "value": "29.7",
+                  "unit": "percent",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "GAAP and Adjusted Operating Margin\nof 29.5% and\n29.7%\n, respectively"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u10",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Consolidated operating margin was 29.5% for the three months ended September 30, 2026.",
+                  "metric": "Consolidated Operating margin",
+                  "value": "29.5",
+                  "unit": "percent",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u10",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated Operating margin (%)\n​\n​\n29.5%"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u7",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Adjusted Diluted EPS was $0.80 for the three months ended September 30, 2026 compared to $0.46 for the three months ended September 30, 2025.",
+                  "metric": "Adjusted Diluted EPS",
+                  "value": "0.80",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "comparison_value": "0.46",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u7",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS, a non-GAAP financial measure which is defined and reconciled to its most comparable GAAP financial measure in this press release, was $0.80 and $0.46 for the three months ended September 30, 2026 and 2025, respectively"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Free Cash Flow for the three months ended September 30, 2026 was $1,622.7 million compared to $1,215.5 million in the prior year period.",
+                  "metric": "Free Cash Flow",
+                  "value": "1622.7",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "1215.5",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Free Cash Flow (non-GAAP) (v)\n​\n$\n1,622.7\n​\n$\n1,215.5",
+                  "metric_type": "standard_fcf",
+                  "reconciliation": [
+                    {
+                      "item": "Operating Cash Flow (GAAP)",
+                      "value": "2078.5",
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "Operating Cash Flow (GAAP)\n$\n2,078.5"
+                      }
+                    },
+                    {
+                      "item": "Capital expenditures (GAAP)",
+                      "value": "-457.2",
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "Capital expenditures (GAAP)\n​\n(457.2)"
+                      }
+                    },
+                    {
+                      "item": "Proceeds from disposals of property, plant and equipment (GAAP)",
+                      "value": "1.4",
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "Proceeds from disposals of property, plant and equipment (GAAP)\n​\n1.4"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion, respectively.",
+                  "metric": "operating_cash_flow",
+                  "value": "2.1",
+                  "unit": "billion",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion\n, respectively"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Net cash provided by operating activities was $2,078.5 million for the three months ended September 30, 2026.",
+                  "metric": "Net cash provided by operating activities",
+                  "value": "2078.5",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net cash provided by operating activities\n​\n​\n2,078.5"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Cash and cash equivalents and short-term investments totaled $5,301.4 million as of September 30, 2026.",
+                  "metric": "Total cash, cash equivalents and short-term investments",
+                  "value": "5301.4",
+                  "unit": "USD_M",
+                  "period": "September 30, 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Total cash, cash equivalents and short-term investments\n​\n​\n5,301.4"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Capital expenditures were $457.2 million for the three months ended September 30, 2026.",
+                  "metric": "Capital expenditures",
+                  "value": "-457.2",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Capital expenditures\n​\n​\n(457.2)"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u3",
+                  "card_type": "fact",
+                  "topic": "other",
+                  "statement": "Stock split took effect on a split-adjusted basis on September 3, 2026.",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u3",
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "trading on a split-adjusted basis on September 3, 2026."
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter 2026 sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025.",
+                "materiality_candidate": 5,
+                "quote": "Sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025",
+                "metric": "sales",
+                "value": "10.2",
+                "unit": "billion",
+                "period": "Q3 2026",
+                "reported_change": "65%",
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter 2026 orders of $12.2 billion, resulting in a book-to-bill of 1.19:1.",
+                "materiality_candidate": 4,
+                "quote": "Orders of $12.2 billion, resulting in a book-to-bill of 1.19:1",
+                "metric": "orders",
+                "value": "12.2",
+                "unit": "billion",
+                "period": "Q3 2026",
+                "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Orders of $12.2 billion, resulting in a book-to-bill of 1.19:1"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP Diluted EPS of $0.79, up 61% compared to prior year, and Adjusted Diluted EPS of $0.80, up 74% compared to prior year.",
+                "materiality_candidate": 5,
+                "quote": "GAAP Diluted EPS\nof $0.79, up 61% compared to prior year\n●\nAdjusted Diluted EPS\nof $0.80, up 74% compared to prior year",
+                "metric": "adjusted_diluted_eps",
+                "value": "0.80",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "reported_change": "74%",
+                "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "GAAP Diluted EPS\nof $0.79, up 61% compared to prior year\n●\nAdjusted Diluted EPS\nof $0.80, up 74% compared to prior year"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP and Adjusted Operating Margin of 29.5% and 29.7%, respectively.",
+                "materiality_candidate": 4,
+                "quote": "GAAP and Adjusted Operating Margin\nof 29.5% and\n29.7%\n, respectively",
+                "metric": "adjusted_operating_margin",
+                "value": "29.7",
+                "unit": "percent",
+                "period": "Q3 2026",
+                "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "GAAP and Adjusted Operating Margin\nof 29.5% and\n29.7%\n, respectively"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion, respectively.",
+                "materiality_candidate": 4,
+                "quote": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion\n, respectively",
+                "metric": "operating_cash_flow",
+                "value": "2.1",
+                "unit": "billion",
+                "period": "Q3 2026",
+                "card_id": "c5:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u1",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion\n, respectively"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Fourth quarter 2026 sales expected to be in the range of $10.3 to $10.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "for the fourth quarter of 2026, Amphenol expects sales to be in the range of $10.3 to $10.5 billion",
+                "metric": "sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "10.3",
+                "high": "10.5",
+                "unit": "billion",
+                "card_id": "c6:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "for the fourth quarter of 2026, Amphenol expects sales to be in the range of $10.3 to $10.5 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Fourth quarter 2026 Adjusted Diluted EPS expected to be in the range of $0.81 to $0.83.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS is expected to be in the range of $0.81 to $0.83",
+                "metric": "adjusted_diluted_eps",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "0.81",
+                "high": "0.83",
+                "unit": "USD",
+                "card_id": "c7:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS is expected to be in the range of $0.81 to $0.83"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full year 2026 sales expected to be in the range of $36.9 billion to $37.1 billion.",
+                "materiality_candidate": 5,
+                "quote": "For the full year 2026, Amphenol expects sales to be in the range of $36.9 billion to $37.1 billion",
+                "metric": "sales",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": "36.9",
+                "high": "37.1",
+                "unit": "billion",
+                "card_id": "c8:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "For the full year 2026, Amphenol expects sales to be in the range of $36.9 billion to $37.1 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full year 2026 Adjusted Diluted EPS expected to be in the range of $2.82 to $2.84.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS is expected to be in the range of $2.82 to $2.84",
+                "metric": "adjusted_diluted_eps",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": "2.82",
+                "high": "2.84",
+                "unit": "USD",
+                "card_id": "c9:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u2",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS is expected to be in the range of $2.82 to $2.84"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u3",
+                "card_type": "fact",
+                "topic": "other",
+                "fact_class": "objective_fact",
+                "statement": "Stock split took effect on a split-adjusted basis on September 3, 2026.",
+                "materiality_candidate": 3,
+                "quote": "trading on a split-adjusted basis on September 3, 2026.",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u3",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "trading on a split-adjusted basis on September 3, 2026."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales for the three months ended September 30, 2026 were $10,229.7 million compared to $6,194.4 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4",
+                "metric": "Net sales",
+                "value": 10229.7,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 6194.4,
+                "comparison_period": "Q3 2025",
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales for the nine months ended September 30, 2026 were $26,607.9 million compared to $16,655.7 million for the nine months ended September 30, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4\n\n$\n26,607.9\n\n$\n16,655.7",
+                "metric": "Net sales",
+                "value": 26607.9,
+                "unit": "$M",
+                "period": "9M 2026",
+                "comparison_value": 16655.7,
+                "comparison_period": "9M 2025",
+                "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4\n\n$\n26,607.9\n\n$\n16,655.7"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for the three months ended September 30, 2026 was $3,020.8 million compared to $1,702.3 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Operating income\n\n\n3,020.8\n\n\n1,702.3",
+                "metric": "Operating income",
+                "value": 3020.8,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 1702.3,
+                "comparison_period": "Q3 2025",
+                "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Operating income\n\n\n3,020.8\n\n\n1,702.3"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income attributable to Amphenol Corporation for the three months ended September 30, 2026 was $2,034.3 million compared to $1,245.7 million for the three months ended September 30, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income attributable to Amphenol Corporation\n\n$\n2,034.3\n\n$\n1,245.7",
+                "metric": "Net income attributable to Amphenol Corporation",
+                "value": 2034.3,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 1245.7,
+                "comparison_period": "Q3 2025",
+                "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u6",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net income attributable to Amphenol Corporation\n\n$\n2,034.3\n\n$\n1,245.7"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u7",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted Diluted EPS was $0.80 for the three months ended September 30, 2026 compared to $0.46 for the three months ended September 30, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted Diluted EPS, a non-GAAP financial measure which is defined and reconciled to its most comparable GAAP financial measure in this press release, was $0.80 and $0.46 for the three months ended September 30, 2026 and 2025, respectively",
+                "metric": "Adjusted Diluted EPS",
+                "value": "0.80",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": "0.46",
+                "comparison_period": "Q3 2025",
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u7",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS, a non-GAAP financial measure which is defined and reconciled to its most comparable GAAP financial measure in this press release, was $0.80 and $0.46 for the three months ended September 30, 2026 and 2025, respectively"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash and cash equivalents and short-term investments totaled $5,301.4 million as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Total cash, cash equivalents and short-term investments\n​\n​\n5,301.4",
+                "metric": "Total cash, cash equivalents and short-term investments",
+                "value": "5301.4",
+                "unit": "USD_M",
+                "period": "September 30, 2026",
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u8",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 8,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Total cash, cash equivalents and short-term investments\n​\n​\n5,301.4"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $2,078.5 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Net cash provided by operating activities\n​\n​\n2,078.5",
+                "metric": "Net cash provided by operating activities",
+                "value": "2078.5",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 9,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net cash provided by operating activities\n​\n​\n2,078.5"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Capital expenditures were $457.2 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Capital expenditures\n​\n​\n(457.2)",
+                "metric": "Capital expenditures",
+                "value": "-457.2",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 9,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Capital expenditures\n​\n​\n(457.2)"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Consolidated net sales were $10,229.7 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Consolidated Net sales\n​\n$\n10,229.7",
+                "metric": "Consolidated Net sales",
+                "value": "10229.7",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u9",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 9,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated Net sales\n​\n$\n10,229.7"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u10",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Consolidated operating margin was 29.5% for the three months ended September 30, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Consolidated Operating margin (%)\n​\n​\n29.5%",
+                "metric": "Consolidated Operating margin",
+                "value": "29.5",
+                "unit": "percent",
+                "period": "Q3 2026",
+                "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u10",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 10,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated Operating margin (%)\n​\n​\n29.5%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended September 30, 2026 Communications Solutions net sales were $16,501.3 million compared to $8,633.0 million in the prior year period, up 91%.",
+                "materiality_candidate": 4,
+                "quote": "Communications Solutions\n​\n$\n16,501.3\n​\n$\n8,633.0\n​\n91\n%",
+                "metric": "Communications Solutions Net Sales",
+                "value": "16501.3",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "8633.0",
+                "comparison_period": "9M 2025",
+                "reported_change": "91%",
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 11,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Communications Solutions\n​\n$\n16,501.3\n​\n$\n8,633.0\n​\n91\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended September 30, 2026 Harsh Environment Solutions net sales were $5,592.0 million compared to $4,229.3 million in the prior year period, up 32%.",
+                "materiality_candidate": 3,
+                "quote": "Harsh Environment Solutions\n​\n​\n5,592.0\n​\n4,229.3\n​\n32\n%",
+                "metric": "Harsh Environment Solutions Net Sales",
+                "value": "5592.0",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "4229.3",
+                "comparison_period": "9M 2025",
+                "reported_change": "32%",
+                "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 11,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Harsh Environment Solutions\n​\n​\n5,592.0\n​\n4,229.3\n​\n32\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended September 30, 2026 Interconnect and Sensor Systems net sales were $4,514.6 million compared to $3,793.4 million in the prior year period, up 19%.",
+                "materiality_candidate": 3,
+                "quote": "Interconnect and Sensor Systems\n​\n4,514.6\n​\n3,793.4\n​\n19\n%",
+                "metric": "Interconnect and Sensor Systems Net Sales",
+                "value": "4514.6",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "3793.4",
+                "comparison_period": "9M 2025",
+                "reported_change": "19%",
+                "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 11,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Interconnect and Sensor Systems\n​\n4,514.6\n​\n3,793.4\n​\n19\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended September 30, 2026 Consolidated net sales were $26,607.9 million compared to $16,655.7 million in the prior year period, up 60%.",
+                "materiality_candidate": 5,
+                "quote": "Consolidated\n​\n$\n26,607.9\n​\n$\n16,655.7\n​\n60\n%",
+                "metric": "Consolidated Net Sales",
+                "value": "26607.9",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "16655.7",
+                "comparison_period": "9M 2025",
+                "reported_change": "60%",
+                "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u11",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 11,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated\n​\n$\n26,607.9\n​\n$\n16,655.7\n​\n60\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Three months ended September 30, 2026 Adjusted Operating Income was $3,036.3 million with an operating margin of 29.7% compared to $1,702.3 million and 27.5% in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted (non-GAAP) (v) (vi)\n​\n$\n3,036.3\n​\n29.7\n%",
+                "metric": "Adjusted Operating Income",
+                "value": "3036.3",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1702.3",
+                "comparison_period": "Q3 2025",
+                "metric_type": "other_adjusted",
+                "card_id": "c5:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 12,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted (non-GAAP) (v) (vi)\n​\n$\n3,036.3\n​\n29.7\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free Cash Flow for the three months ended September 30, 2026 was $1,622.7 million compared to $1,215.5 million in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Free Cash Flow (non-GAAP) (v)\n​\n$\n1,622.7\n​\n$\n1,215.5",
+                "metric": "Free Cash Flow",
+                "value": "1622.7",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1215.5",
+                "comparison_period": "Q3 2025",
+                "metric_type": "standard_fcf",
+                "reconciliation": [
+                  {
+                    "item": "Operating Cash Flow (GAAP)",
+                    "value": "2078.5",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Operating Cash Flow (GAAP)\n$\n2,078.5"
+                    }
+                  },
+                  {
+                    "item": "Capital expenditures (GAAP)",
+                    "value": "-457.2",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Capital expenditures (GAAP)\n​\n(457.2)"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from disposals of property, plant and equipment (GAAP)",
+                    "value": "1.4",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Proceeds from disposals of property, plant and equipment (GAAP)\n​\n1.4"
+                    }
+                  }
+                ],
+                "card_id": "c6:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u12",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 12,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Free Cash Flow (non-GAAP) (v)\n​\n$\n1,622.7\n​\n$\n1,215.5"
+                }
+              },
+              {
+                "card_id": "c1:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides fourth quarter 2026 GAAP diluted EPS guidance of $0.80 to $0.82.",
+                "materiality_candidate": 5,
+                "quote": "Diluted EPS (GAAP)\n$0.80 - $0.82",
+                "metric": "Diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 0.8,
+                "high": 0.82,
+                "unit": "USD",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Diluted EPS (GAAP)\n$0.80 - $0.82"
+                }
+              },
+              {
+                "card_id": "c2:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides full year 2026 GAAP diluted EPS guidance of $2.64 to $2.66.",
+                "materiality_candidate": 5,
+                "quote": "Diluted EPS (GAAP)\n$2.64 - $2.66",
+                "metric": "Diluted EPS",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 2.64,
+                "high": 2.66,
+                "unit": "USD",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Diluted EPS (GAAP)\n$2.64 - $2.66"
+                }
+              },
+              {
+                "card_id": "c3:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides fourth quarter 2026 adjusted diluted EPS guidance of $0.81 to $0.83.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$0.81 - $0.83",
+                "metric": "Adjusted Diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 0.81,
+                "high": 0.83,
+                "unit": "USD",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$0.81 - $0.83"
+                }
+              },
+              {
+                "card_id": "c4:sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Amphenol provides full year 2026 adjusted diluted EPS guidance of $2.82 to $2.84.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$2.82 - $2.84",
+                "metric": "Adjusted Diluted EPS",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": 2.82,
+                "high": 2.84,
+                "unit": "USD",
+                "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "unit_id": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm#u14",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$2.82 - $2.84"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "sales",
+                "value": "10.2",
+                "unit": "billion",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "65%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025"
+                }
+              },
+              {
+                "metric": "orders",
+                "value": "12.2",
+                "unit": "billion",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Orders of $12.2 billion, resulting in a book-to-bill of 1.19:1"
+                }
+              },
+              {
+                "metric": "adjusted_diluted_eps",
+                "value": "0.80",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "74%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "GAAP Diluted EPS\nof $0.79, up 61% compared to prior year\n●\nAdjusted Diluted EPS\nof $0.80, up 74% compared to prior year"
+                }
+              },
+              {
+                "metric": "adjusted_operating_margin",
+                "value": "29.7",
+                "unit": "percent",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "GAAP and Adjusted Operating Margin\nof 29.5% and\n29.7%\n, respectively"
+                }
+              },
+              {
+                "metric": "operating_cash_flow",
+                "value": "2.1",
+                "unit": "billion",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion\n, respectively"
+                }
+              },
+              {
+                "metric": "Net sales",
+                "value": 10229.7,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 6194.4,
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4"
+                }
+              },
+              {
+                "metric": "Net sales",
+                "value": 26607.9,
+                "unit": "$M",
+                "period": "9M 2026",
+                "comparison_value": 16655.7,
+                "comparison_period": "9M 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net sales\n\n$\n10,229.7\n\n$\n6,194.4\n\n$\n26,607.9\n\n$\n16,655.7"
+                }
+              },
+              {
+                "metric": "Operating income",
+                "value": 3020.8,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 1702.3,
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Operating income\n\n\n3,020.8\n\n\n1,702.3"
+                }
+              },
+              {
+                "metric": "Net income attributable to Amphenol Corporation",
+                "value": 2034.3,
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": 1245.7,
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net income attributable to Amphenol Corporation\n\n$\n2,034.3\n\n$\n1,245.7"
+                }
+              },
+              {
+                "metric": "Adjusted Diluted EPS",
+                "value": "0.80",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": "0.46",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS, a non-GAAP financial measure which is defined and reconciled to its most comparable GAAP financial measure in this press release, was $0.80 and $0.46 for the three months ended September 30, 2026 and 2025, respectively"
+                }
+              },
+              {
+                "metric": "Total cash, cash equivalents and short-term investments",
+                "value": "5301.4",
+                "unit": "USD_M",
+                "period": "September 30, 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Total cash, cash equivalents and short-term investments\n​\n​\n5,301.4"
+                }
+              },
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "2078.5",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net cash provided by operating activities\n​\n​\n2,078.5"
+                }
+              },
+              {
+                "metric": "Capital expenditures",
+                "value": "-457.2",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Capital expenditures\n​\n​\n(457.2)"
+                }
+              },
+              {
+                "metric": "Consolidated Net sales",
+                "value": "10229.7",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated Net sales\n​\n$\n10,229.7"
+                }
+              },
+              {
+                "metric": "Consolidated Operating margin",
+                "value": "29.5",
+                "unit": "percent",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated Operating margin (%)\n​\n​\n29.5%"
+                }
+              },
+              {
+                "metric": "Communications Solutions Net Sales",
+                "value": "16501.3",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "8633.0",
+                "comparison_period": "9M 2025",
+                "reported_change": "91%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Communications Solutions\n​\n$\n16,501.3\n​\n$\n8,633.0\n​\n91\n%"
+                }
+              },
+              {
+                "metric": "Harsh Environment Solutions Net Sales",
+                "value": "5592.0",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "4229.3",
+                "comparison_period": "9M 2025",
+                "reported_change": "32%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Harsh Environment Solutions\n​\n​\n5,592.0\n​\n4,229.3\n​\n32\n%"
+                }
+              },
+              {
+                "metric": "Interconnect and Sensor Systems Net Sales",
+                "value": "4514.6",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "3793.4",
+                "comparison_period": "9M 2025",
+                "reported_change": "19%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Interconnect and Sensor Systems\n​\n4,514.6\n​\n3,793.4\n​\n19\n%"
+                }
+              },
+              {
+                "metric": "Consolidated Net Sales",
+                "value": "26607.9",
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": "16655.7",
+                "comparison_period": "9M 2025",
+                "reported_change": "60%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Consolidated\n​\n$\n26,607.9\n​\n$\n16,655.7\n​\n60\n%"
+                }
+              },
+              {
+                "metric": "Adjusted Operating Income",
+                "value": "3036.3",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1702.3",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted (non-GAAP) (v) (vi)\n​\n$\n3,036.3\n​\n29.7\n%"
+                }
+              },
+              {
+                "metric": "Free Cash Flow",
+                "value": "1622.7",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1215.5",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Free Cash Flow (non-GAAP) (v)\n​\n$\n1,622.7\n​\n$\n1,215.5"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "10.3",
+                "midpoint": null,
+                "high": "10.5",
+                "unit": "billion",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "for the fourth quarter of 2026, Amphenol expects sales to be in the range of $10.3 to $10.5 billion"
+                }
+              },
+              {
+                "metric": "adjusted_diluted_eps",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "0.81",
+                "midpoint": null,
+                "high": "0.83",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS is expected to be in the range of $0.81 to $0.83"
+                }
+              },
+              {
+                "metric": "sales",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "36.9",
+                "midpoint": null,
+                "high": "37.1",
+                "unit": "billion",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "For the full year 2026, Amphenol expects sales to be in the range of $36.9 billion to $37.1 billion"
+                }
+              },
+              {
+                "metric": "adjusted_diluted_eps",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "2.82",
+                "midpoint": null,
+                "high": "2.84",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS is expected to be in the range of $2.82 to $2.84"
+                }
+              },
+              {
+                "metric": "Diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 0.8,
+                "midpoint": null,
+                "high": 0.82,
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Diluted EPS (GAAP)\n$0.80 - $0.82"
+                }
+              },
+              {
+                "metric": "Diluted EPS",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 2.64,
+                "midpoint": null,
+                "high": 2.66,
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Diluted EPS (GAAP)\n$2.64 - $2.66"
+                }
+              },
+              {
+                "metric": "Adjusted Diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 0.81,
+                "midpoint": null,
+                "high": 0.83,
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$0.81 - $0.83"
+                }
+              },
+              {
+                "metric": "Adjusted Diluted EPS",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 2.82,
+                "midpoint": null,
+                "high": 2.84,
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Adjusted Diluted EPS (non-GAAP) (2)\n$2.82 - $2.84"
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "operating_cash_flow",
+                "value": "2.1",
+                "unit": "billion",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Operating and Free Cash Flow of $2.1 billion and $1.6 billion\n, respectively"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Total cash, cash equivalents and short-term investments",
+                "value": "5301.4",
+                "unit": "USD_M",
+                "period": "September 30, 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Total cash, cash equivalents and short-term investments\n​\n​\n5,301.4"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "2078.5",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Net cash provided by operating activities\n​\n​\n2,078.5"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Capital expenditures",
+                "value": "-457.2",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Capital expenditures\n​\n​\n(457.2)"
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Free Cash Flow",
+                "value": "1622.7",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1215.5",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+                  "quote": "Free Cash Flow (non-GAAP) (v)\n​\n$\n1,622.7\n​\n$\n1,215.5"
+                },
+                "metric_type": "standard_fcf",
+                "reconciliation": [
+                  {
+                    "item": "Operating Cash Flow (GAAP)",
+                    "value": "2078.5",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Operating Cash Flow (GAAP)\n$\n2,078.5"
+                    }
+                  },
+                  {
+                    "item": "Capital expenditures (GAAP)",
+                    "value": "-457.2",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Capital expenditures (GAAP)\n​\n(457.2)"
+                    }
+                  },
+                  {
+                    "item": "Proceeds from disposals of property, plant and equipment (GAAP)",
+                    "value": "1.4",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Proceeds from disposals of property, plant and equipment (GAAP)\n​\n1.4"
+                    }
+                  }
+                ]
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [
+              "facts.cards[10]:quote_not_found_in_sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+              "facts.cards[11]:quote_not_found_in_sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+              "facts.cards[12]:quote_not_found_in_sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+              "facts.cards[13]:quote_not_found_in_sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+              "facts.cards[26]:quote_not_found_in_sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+              "facts.cards[27]:quote_not_found_in_sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+              "facts.cards[28]:quote_not_found_in_sec_edgar:0001104659-26-119421:aph-ex99d1.htm",
+              "facts.cards[29]:quote_not_found_in_sec_edgar:0001104659-26-119421:aph-ex99d1.htm"
+            ],
+            "extraction_batch_count": 7,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "gemini_search",
+                  "ok": false,
+                  "seconds": 0.192,
+                  "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+                  "category": "search_quota_blocked"
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.33,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-10-28T17:01:21-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-10-28T17:01:21-04:00",
+              "official_ir_checked_at": "2026-10-28T17:01:21-04:00",
+              "official_ir_check_count": 5,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-10-28T19:01:21-04:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q3 營收達 $10.2B（年增 65%、有機成長 37%），調整後營業利益率達 29.7%",
+                "why_it_matters": "顯示公司在強勁需求下維持了極高的營運規模與獲利能力，EPS 顯著增長。",
+                "fact_basis": [
+                  "Third quarter 2026 sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025.",
+                  "Adjusted Operating Income was $3,036.3 million with an operating margin of 29.7% compared to $1,702.3 million and 27.5% in the prior year period."
+                ],
+                "inference": "強勁的有機成長與利潤率擴張反映出通訊解決方案等核心業務的強大需求，推動了短期盈餘能力的實質提升。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 營收 $10,229.7M，年增 65%（有機成長 37%）；9M 2026 營收 $26,607.9M，年增 60%。",
+                "Q3 訂單達 $12.2B，book-to-bill 為 1.19:1，顯示需求動能持續。",
+                "Communications Solutions 在 9M 2026 達到 $16,501.3M，年增 91%，為主要成長驅動力。"
+              ],
+              "margin_unit_economics": [
+                "Q3 調整後營業利益率達 29.7%，優於去年同期的 27.5%。",
+                "調整後稀釋每股盈餘 (Adjusted Diluted EPS) 達 $0.80，較去年同期的 $0.46 成長 74%。"
+              ],
+              "cash_capital_intensity": [
+                "Q3 營運現金流達 $2,078.5M，資本支出為 $457.2M，自由現金流 (FCF) 達 $1,622.7M（去年同期為 $1,215.5M）。",
+                "截至 2026 年 9 月 30 日，現金、約當現金及短期投資總計 $5,301.4M。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q4 2026 預期營收介於 $10.3B 至 $10.5B 之間。",
+              "Q4 2026 GAAP 稀釋 EPS 預期為 $0.80 至 $0.82，調整後稀釋 EPS 預期為 $0.81 至 $0.83。",
+              "全年 FY 2026 預期營收介於 $36.9B 至 $37.1B 之間。",
+              "全年 FY 2026 GAAP 稀釋 EPS 預期為 $2.64 至 $2.66，調整後稀釋 EPS 預期為 $2.82 至 $2.84。"
+            ],
+            "demand_quality": [
+              "Q3 訂單金額達 $12.2B，換算 book-to-bill 為 1.19:1，顯示短期終端需求保持擴張態勢。",
+              "通訊解決方案 (Communications Solutions) 9M 2026 營收年增 91% 至 $16,501.3M， Harsh Environment Solutions 與 Interconnect and Sensor Systems 分別成長 32% 與 19%，顯示成長主要集中於通訊領域。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據顯示營收與訂單顯著成長，但缺乏直接結構性證據支持定價能力或控制點的絕對宣稱。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "高成長高度集中於通訊解決方案領域，若該產業需求反轉，可能對整體營收造成顯著波動。",
+              "訂單 book-to-bill 為 1.19:1 雖顯示擴張，但需持續追蹤後續季度訂單續航力是否維持。"
+            ],
+            "watch_items": [
+              "Q4 2026 財測目標（營收 $10.3B-$10.5B、調整後 EPS $0.81-$0.83）之達成情況。",
+              "通訊解決方案部門的成長動能與毛利率變化。",
+              "自由現金流與資本支出的持續性。"
+            ],
+            "confidence": 90,
+            "telegram_draft": "APH APH_2026-10-28\n\n💡 投資結論與邏輯:\n• 本季營收達 $10.2B，年增 65% 且有機成長 37%，調整後營業利益率擴張至 29.7%，反映核心通訊需求強勁推動盈餘能力提升。\n• 訂單金額達 $12.2B，book-to-bill 達 1.19:1，顯示短期業務擴張動能延續。\n\n📊 關鍵數據與財測:\n• Q3 營收 $10,229.7M，年增 65%；調整後稀釋 EPS 為 $0.80，年增 74%。\n• Q3 營運現金流 $2,078.5M、資本支出 $457.2M，自由現金流達 $1,622.7M。\n• 下季（Q4 2026）預期營收介於 $10.3B 至 $10.5B，調整後稀釋 EPS 預期介於 $0.81 至 $0.83。\n• 全年（FY 2026）預期營收介於 $36.9B 至 $37.1B，調整後稀釋 EPS 預期介於 $2.82 至 $2.84。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營收強勁主要由 Communications Solutions 驅動，9M 2026 該部門營收年增 91% 至 $16,501.3M。\n• 現有 Research Packet 未提供逐字稿與 Q&A 紀錄，故無法評估管理層答問細節。\n\n⚠️ 風險、反證與待驗證:\n• 成長高度集中於通訊解決方案，須防範單一產業波動風險。\n• 現有證據顯示營收與現金流增長，但尚不足以直接推論定價權或長期護城河結構。\n• 須持續觀察 Q4 財測目標能否如期達成以驗證成長持續性。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:structure",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "APH_2026-Q3\n\n1. 💡 投資結論與邏輯:\n• 本季營收與調整後營業利益顯著增長，主要受惠於核心通訊業務之強勁需求，推動盈餘能力提升。\n• 訂單動能維持擴張態勢，但結構性定價權與長期護城河仍需更多直接證據支持。\n\n2. 📊 關鍵數據與財測:\n• Q3 營收 $10.2B，年增 65%（有機成長 37%），顯示業務規模擴張；但成長高度集中於通訊領域，單一產業反轉風險需持續追蹤。\n• Q3 調整後營業利益率達 29.7%，較去年同期 27.5% 擴張；調整後稀釋 EPS 達 $0.80，反映短期獲利能力提升。\n• Q3 營運現金流 $2.0785B、資本支出 $457.2M，自由現金流達 $1.6227B；現金及短期投資總計 $5.3014B。\n• Q4 2026 預期營收介於 $10.3B 至 $10.5B，調整後稀釋 EPS 預期介於 $0.81 至 $0.83。\n• 全年 FY 2026 預期營收介於 $36.9B 至 $37.1B，調整後稀釋 EPS 預期介於 $2.82 至 $2.84。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 營運成長主要由 Communications Solutions 部門驅動，9M 2026 該部門營收年增 91% 至 $16,501.3M。\n• 現有 Research Packet 未提供逐字稿與 Q&A 紀錄，故無法評估管理層答問細節。\n\n4. ⚠️ 風險、反證與待驗證:\n• 業務高度集中於通訊解決方案，若該終端市場需求反轉，將對整體營收造成顯著波動。\n• 現有證據顯示營收與現金流增長，但尚不足以直接推論公司具備絕對定價權或長期護城河。\n• 須持續觀察 Q4 財測目標能否如期達成，以驗證成長動能之持續性。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q3 營收達 $10.2B（年增 65%、有機成長 37%），調整後營業利益率達 29.7%",
+                "why_it_matters": "顯示公司在需求增加下擴大營運規模與營業利益表現，盈餘能力提升。",
+                "fact_basis": [
+                  "Third quarter 2026 sales of $10.2 billion, up 65% in U.S. dollars and 37% organically compared to the third quarter of 2025.",
+                  "Adjusted Operating Income was $3,036.3 million with an operating margin of 29.7% compared to $1,702.3 million and 27.5% in the prior year period."
+                ],
+                "inference": "有機成長與營業利益率擴張反映通訊解決方案等核心業務需求增加，推動短期盈餘提升，但尚不能證實定價權或結構性護城河改變。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 營收 $10,229.7M，年增 65%（有機成長 37%）；9M 2026 營收 $26,607.9M，年增 60%。",
+                "Q3 訂單達 $12.2B，book-to-bill 為 1.19:1，顯示需求維持擴張。",
+                "Communications Solutions 在 9M 2026 營收達 $16,501.3M，年增 91%，為主要成長來源。"
+              ],
+              "margin_unit_economics": [
+                "Q3 調整後營業利益率達 29.7%，高於去年同期的 27.5%。",
+                "調整後稀釋每股盈餘 (Adjusted Diluted EPS) 達 $0.80，較去年同期的 $0.46 成長 74%。"
+              ],
+              "cash_capital_intensity": [
+                "Q3 營運現金流達 $2,078.5M，資本支出為 $457.2M，自由現金流 (FCF) 達 $1,622.7M（去年同期為 $1,215.5M）。",
+                "截至 2026 年 9 月 30 日，現金、約當現金及短期投資總計 $5,301.4M。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q4 2026 預期營收介於 $10.3B 至 $10.5B 之間。",
+              "Q4 2026 GAAP 稀釋 EPS 預期為 $0.80 至 $0.82，調整後稀釋 EPS 預期為 $0.81 至 $0.83。",
+              "全年 FY 2026 預期營收介於 $36.9B 至 $37.1B 之間。",
+              "全年 FY 2026 GAAP 稀釋 EPS 預期為 $2.64 至 $2.66，調整後稀釋 EPS 預期為 $2.82 至 $2.84。"
+            ],
+            "demand_quality": [
+              "Q3 訂單金額達 $12.2B，book-to-bill 為 1.19:1，顯示短期終端需求保持擴張。",
+              "通訊解決方案 (Communications Solutions) 9M 2026 營收年增 91% 至 $16,501.3M， Harsh Environment Solutions 與 Interconnect and Sensor Systems 分別成長 32% 與 19%，顯示成長主要集中於通訊領域。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有數據顯示營收與訂單成長，但缺乏直接結構性證據支持定價能力或控制點宣稱。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "成長高度集中於通訊解決方案領域，若該產業需求放緩，可能對整體營收造成波動。",
+              "訂單 book-to-bill 為 1.19:1 雖顯示擴張，但需追蹤後續季度訂單續航力。"
+            ],
+            "watch_items": [
+              "Q4 2026 財測目標之達成情況。",
+              "通訊解決方案部門的成長動能與利潤率變化。",
+              "自由現金流與資本支出的持續性。"
+            ],
+            "confidence": 90,
+            "telegram_draft": "APH 2026-Q3\n\n💡 投資結論與邏輯:\n• 營收與調整後營業利益表現強勁，主因核心通訊業務擴張帶動盈餘能力提升。\n• 訂單動能保持擴張，顯示終端需求延續，但目前數據仍不能證實長期結構性定價權或護城河。\n\n📊 關鍵數據與財測:\n• Q3 營收 $10.2B，年增 65%（有機成長 37%），顯示業務規模顯著擴大，反映通訊領域需求帶動，但營收成長仍不能證實產品單價或稼動率提升。\n• Q3 調整後營業利益率 29.7%（去年同期 27.5%），調整後稀釋 EPS $0.80（年增 74%），顯示營運規模增加改善獲利，但仍不能推論長期利潤率結構性改變。\n• Q3 營運現金流 $2,078.5M，資本支出 $457.2M，自由現金流 $1,622.7M，顯示現金產生能力穩健，但仍不能直接等同於資本配置最優化。\n• 下季（Q4 2026）預期營收 $10.3B 至 $10.5B，調整後稀釋 EPS $0.81 至 $0.83；全年（FY 2026）預期營收 $36.9B 至 $37.1B，調整後稀釋 EPS $2.82 至 $2.84，反映管理層對近期營運之預期，但指引仍不能視為已實現業績。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 9M 2026 通訊解決方案營收年增 91% 至 $16,501.3M， Harsh Environment Solutions 與 Interconnect and Sensor Systems 分別年增 32% 與 19%，顯示成長動能主要由通訊部門拉動。\n• 現有資料未提供法說會逐字稿與 Q&A 紀錄，故無法評估管理層答問細節與法說攻防。\n\n⚠️ 風險、反證與待驗證:\n• 營收與訂單高度集中於通訊解決方案領域，若該單一市場需求放緩，將對整體營運造成波動。\n• 訂單出貨比（book-to-bill）能否維持在擴張區間，為觀察終端需求續航力之關鍵指標。\n• 下季營收與調整後 EPS 財測目標之實際達成率，將作為驗證獲利動能是否持續之實質依據。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "APH 2026-Q3\n\n💡 投資結論與邏輯:\n• 營收與調整後營業利益表現強勁，主因通訊業務需求帶動規模擴張，提升短期盈餘能力。\n• 訂單動能維持成長，惟數據尚不足以證實結構性定價權或護城河變化。\n\n📊 關鍵數據與財測:\n• Q3 營收 $10.2B，年增 65%（有機成長 37%）；9M 2026 通訊解決方案營收 $16,501.3M（年增 91%），反映通訊終端需求顯著增加，但營收成長仍不能證實產品單價或稼動率提升。\n• Q3 調整後營業利益率 29.7%（去年同期 27.5%），調整後稀釋 EPS $0.80（年增 74%），顯示營運規模擴大改善獲利，但仍不能推論長期利潤率結構性改變。\n• Q3 營運現金流 $2,078.5M，資本支出 $457.2M，自由現金流 $1,622.7M，顯示現金產生能力穩健，但仍不能直接等同於資本配置最優化。\n• 指引：下季（Q4 2026）預期營收 $10.3B 至 $10.5B，GAAP EPS $0.80 至 $0.82，調整後稀釋 EPS $0.81 至 $0.83；全年（FY 2026）預期營收 $36.9B 至 $37.1B，GAAP EPS $2.64 至 $2.66，調整後稀釋 EPS $2.82 至 $2.84，反映管理層對近期營運之預期，但指引仍不能視為已實現業績。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 9M 2026 Harsh Environment Solutions 與 Interconnect and Sensor Systems 營收分別年增 32% 與 19%，顯示主要成長動能仍高度集中於通訊部門。\n• 現有資料未提供法說會逐字稿與 Q&A 紀錄，故無法評估管理層答問細節與法說攻防。\n\n⚠️ 風險、反證與待驗證:\n• 營收高度集中於通訊解決方案，若該單一市場需求放緩，將對整體營運造成波動。\n• Q3 訂單出貨比（book-to-bill）為 1.19:1，能否維持在擴張區間為觀察需求續航力之關鍵。\n• 下季營收與調整後 EPS 財測目標之實際達成率，將作為驗證獲利動能是否持續之實質依據。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
           }
         }
       },
