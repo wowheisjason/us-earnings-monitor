@@ -1,0 +1,79 @@
+name: Optics delivery UMC silicon photonics ramp 20261028 v1
+on:
+  push:
+    branches: [codex/optics-delivery-umc-silicon-photonics-ramp-20261028-v1]
+    paths: [.github/workflows/optics-delivery-umc-silicon-photonics-ramp-20261028-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-umc-silicon-photonics-ramp-20261028-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜聯電矽光子由量產里程碑進入營收放量與短期產能吃緊
+公告／事件日：2026/10/28
+
+1）重大變化與通知理由
+聯電（TWSE 2303／NYSE UMC）第三季財報首次明確表示：既有矽光子與先進封裝專案正在放量，預期未來數季帶來增量成長；第四季特殊製程營收將受兩項業務爬坡帶動；需求「顯著增加」，公司正把部分既有產能改作相關用途，以處理近期未滿足需求。這比7月「首批1.6T矽光子量產晶圓交付」多出實際爬坡、營收時程與產能調整證據，達通知門檻。
+
+2）已確認事實
+• 3Q26營收742.39億元、季增8.0%、年增25.6%；晶圓出貨121.2萬片12吋約當、產能利用率92%，數座12吋廠滿載。這是公司整體數字，不能直接當作矽光子營收或利用率。
+• 管理層指引：矽光子／先進封裝的既有專案將在未來數季放量，新產品持續tape-out；4Q特殊製程營收預期季增。未揭露矽光子營收、片數、價格、客戶數或訂單額。
+• 公司稱需求顯著增加，正轉換部分既有產能因應近期未滿足需求。這是管理層陳述，尚無獨立供需驗證，且同時涵蓋先進封裝，不能把全部缺口歸因矽光子。
+• 董事會同日核准約32億美元「additional capital expenditure budget」以加速新加坡與台南擴產；但3Q簡報仍列2026年資本支出20億美元。故32億美元應視為新增／多期資本預算授權，不能當作2026年現金支出，也不能全數歸因矽光子。
+• 既有基準：7/14聯電與SILITH宣布新加坡12吋廠完成首批1.6T矽光子量產晶圓，200G/lane平台已獲一家未具名雲端基礎設施客戶量產部署認證；7/29公布新加坡P4無塵室與設備擴充用於增加矽光子產能。
+
+官方來源：
+3Q26報告：https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q3_2026/UMC26Q3_report.pdf
+3Q26簡報：https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q3_2026/UMC26Q3_financial_presentation-E.pdf
+7/14量產：https://www.umc.com/en/News/press_release/Content/technology_related/20260714
+7/29擴產：https://www.umc.com/en/News/press_release/Content/corporate/20260729-1
+
+3）供應鏈與競爭關係
+• 聯電（2303／UMC）：12吋SOI矽光子代工、TFLN與先進封裝；直接受益，但矽光子占比未揭露。
+• SILITH（未上市）：1.6T、200G/lane矽光子平台與聯電直接合作；具名雲端終端客戶未公開。
+• Tower（TSEM）、GlobalFoundries（GFS）、台積電（2330）：矽光子代工／整合競爭者；聯電12吋量產、既有晶圓廠轉產與P4擴充若落實，可縮短交期並提升規模競爭力。
+• 光模組、光引擎與AI資料中心客戶屬下游間接曝險；官方未具名，不推測中際旭創、Coherent、Lumentum或特定雲端商是本次訂單方。此事件是矽光子PIC供應，不代表InP、EML或整條光通訊鏈同步缺貨。
+
+4）合理推論
+若既有專案按管理層時程爬坡，聯電矽光子相關營收可在4Q26至2027年逐步增加；先轉換既有產能可早於P4新產能貢獻。更長期的競爭優勢取決於12吋良率、成本、客戶產品放量與P4開出時程。特殊製程組合改善可能有利毛利，但轉產成本與後續折舊可能抵銷，現有資料無法量化。
+
+5）投資機會與風險
+潛在受益：聯電的特殊製程組合、SILITH的1.6T平台及合格的下游光引擎／模組供應鏈。
+催化劑：揭露矽光子營收、第二家量產客戶、P4設備進場、2027平台PDK／量產、400G/lane驗證。
+風險：需求集中單一客戶、認證轉單慢、P4延誤、良率／封裝瓶頸、折舊先於收入、競爭者擴產、TFLN／InP或EML等替代架構，以及AI資本支出放緩。未查即時估值，不判斷股價是否已反映。
+
+6）待驗證指標
+矽光子季度營收與晶圓片數、P4新增月產能與量產日、產能轉換規模、良率／ASP、具名客戶及實際訂單、32億美元預算的年度與技術分配、4Q特殊製程增量中矽光子占比。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}},ensure_ascii=False).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"umc-silicon-photonics-ramp-20261028","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
