@@ -1,0 +1,74 @@
+name: Optics delivery UMC 1.6T qualification v2
+on:
+  push:
+    branches: [codex/optics-delivery-umc-1p6t-hyperscaler-qualification-20261028-v2]
+    paths: [.github/workflows/optics-delivery-umc-1p6t-hyperscaler-qualification-20261028-v2.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-umc-1p6t-hyperscaler-qualification-20261028-v2
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜聯電1.6T矽光平台獲多家Hyperscaler認證（v2）
+
+1）重大變化及門檻
+聯電（2303／UMC）在2026/10/28官方Q3法說問答新增揭露：多家hyperscaler已完成其1.6T光收發器平台認證；12吋PIC量產良率已達製造水準，8吋薄膜鈮酸鋰（TFLN）亦完成1.6T系統驗證並展現量產良率。公司同時首次量化長期月產能：矽光子1.8萬片、TFLN調變器2萬片，設備預計2028年底開始安裝、2030年達規模。相較上一版僅確認既有專案放量、短期轉產及一家合作方的量產里程碑，本次新增「多家終端雲端客戶認證＋量產良率＋分項產能與時程」，足以提高收入與競爭地位判斷，故續報v2。
+
+2）已確認事實
+• 公告／法說日：2026/10/28。管理層稱12吋PIC已支援1.6T應用；8吋TFLN完成1.6T系統驗證，路線圖延伸至300G/lane及400G/lane、對應3.2T。
+• 「多家hyperscaler已認證1.6T平台」是管理層在官方法說的說法；未披露客戶名稱、認證數量、模組出貨量、訂單金額或不可取消承諾。認證不等於終端部署或營收認列。
+• 新增規劃月產能：矽光子1.8萬片、TFLN 2萬片；另有矽電容／DTC 2.2萬片。這是規劃產能，不是目前產能或已出貨量。初始設備安裝預計2028年底至2029年，2030年達規模；公司正與供應商協調提前。
+• 公司表示擴產與客戶承諾連結，現階段需求即使對照規劃產能仍偏強；但未提供合約、預付款或take-or-pay條款。
+• Q3整體營收742.4億元新台幣、利用率92%是公司整體數字，不能當作矽光子營收或利用率。
+官方法說與重播：https://www.umc.com/en/Download/quarterly_results/QuarterlyResultsDetail/2026/2026Q3
+官方財報：https://www.umc.com/zh-TW/News/press_release/Content/investor/20261028
+逐字稿交叉核對：https://www.fool.com/earnings/call-transcripts/2026/10/28/umc-umc-q3-2026-earnings-call-transcript/
+
+3）供應鏈角色
+• 聯電：12吋SOI PIC、8吋TFLN及先進封裝，直接受益。
+• SILITH／HyperLight／聯穎光電：既有平台或製造合作方；本次未證實其各自取得上述hyperscaler訂單。
+• Tower、GlobalFoundries、台積電：矽光子代工／整合競爭者。
+• 模組、雷射、DSP與封裝供應商僅屬間接曝險；官方未披露BOM，不能指定中際旭創、Coherent、Lumentum等為客戶或供應商，也不能把PIC/TFLN認證外推為InP／EML全面缺貨。
+
+4）合理推論
+若認證轉為量產拉貨，聯電2027年的既有產能可先貢獻矽光子收入，2028年底後的新加坡PIC與8吋TFLN擴產則支撐更大規模；量產良率與多家終端認證有助縮短客戶導入週期，提升相對競爭力。成立條件是模組端良率、封裝、雷射及客戶部署均按期，且設備安裝未延誤。2030產能不能提前計入近期營收。
+
+5）機會與風險
+催化劑：具名客戶、認證轉正式訂單、2027矽光收入／晶圓片數、第二量產平台、設備提前進場、400G/lane驗證。
+風險：認證不轉量產、需求集中、設備交期與良率、折舊先於收入、同業擴產、TFLN與傳統矽光／InP-EML架構替代、2030產能過剩。未核對即時估值，不判斷低估或已反映。
+
+6）待驗證
+追蹤hyperscaler數量與部署、每季PIC/TFLN晶圓與ASP、1.8萬／2萬片產能的口徑與利用率、32億美元資本預算分期、客戶承諾條款、矽光子與先進封裝各自營收及毛利。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"umc-1p6t-hyperscaler-qualification-20261028","version":2}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
