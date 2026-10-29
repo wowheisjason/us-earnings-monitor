@@ -1,0 +1,46 @@
+name: Optics delivery TFC CPO FAU ELS Q3 20261023 v1
+on:
+  push:
+    branches: [codex/optics-delivery-tfc-cpo-fau-els-q3-20261023-v1]
+    paths: [.github/workflows/optics-delivery-tfc-cpo-fau-els-q3-20261023-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-tfc-cpo-fau-els-q3-20261023-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT_TEXT: "AI光通訊重大進展｜天孚通信CPO配套器件穩定量產交付（v1）\n\n【1｜重大變化及通知理由】\n天孚通信（300394.SZ）於2026/10/23正式公告：CPO配套FAU、ELS等產品已實現「穩定量產交付」。這是由研發／樣品跨入持續商業交付的里程碑；10/29公布的Q3實績、客戶預付款與擴產相關投入，進一步支持需求與交付正在轉化為財務結果，足以影響對公司2027年營收與CPO器件競爭地位的判斷。\n\n【2｜已確認事實】\n• 事件／公告日：2026/10/23；Q3報告公告日：10/29；法說日：10/28。\n• 公司稱FAU、ELS等CPO配套產品已穩定量產交付，在手訂單充足；但未披露CPO分項收入、出貨量、ASP、客戶或訂單金額。這是公司正式陳述，尚無獨立終端部署數據。\n• 10/22法說稱NPO配套產品仍處樣品階段；因此不能把CPO器件量產外推為NPO量產。\n• Q3營收19.2316億元人民幣、年增31.50%；歸母淨利8.7917億元、年增55.30%；扣非淨利8.7857億元、年增55.78%。前三季營收47.5110億元、年增21.25%；歸母淨利20.8346億元、年增42.18%；經營現金流14.6185億元、年增8.75%。上述為公司整體實績，不是CPO分項。\n• 期末存貨12.7397億元，較年初增178.65%，公司解釋為策略性原材料備貨；預付款增343.75%、其他非流動資產增446.60%，後者主要為預付設備款；合同負債3.6631億元、較年初增128.14%，主要為客戶預付款。這些數字支持備料、擴產及客戶資金流入，但不能全歸因於CPO。\n• 10/28管理層稱蘇州、江西、泰國三地擴產按計畫推進。未披露新增月產能、資本支出、良率或投產日期。\n• 1.6T光引擎早在4月已稱處於量產但受個別物料限制；本次新增重點是CPO配套器件的穩定量產交付與Q3財務／資產負債表旁證。\n\n官方：\n10/23公告 https://static.cninfo.com.cn/finalpage/2026-10-23/1225617692.pdf\nQ3報告 https://static.cninfo.com.cn/finalpage/2026-10-29/1225634414.PDF\n10/28法說 https://static.cninfo.com.cn/finalpage/2026-10-28/1225638543.PDF\n10/22法說 https://static.cninfo.com.cn/finalpage/2026-10-22/1225617545.PDF\n\n【3｜供應鏈角色】\n• 天孚通信：FAU、ELS、光引擎與精密光學封裝，直接曝險。\n• 未具名全球光模組／AI基礎設施客戶：需求端；官方未公開名稱，不推測Hyperscaler。\n• 光模組／交換器與CPO系統商：下游互補，但本公告沒有BOM或具名採購關係。\n• Coherent等外部雷射源、FAU及光學組件業者：可能競爭或互補；本事件不證明其訂單同步變化。\n• InP、EML、CW雷射、PIC及DSP供應商僅屬間接曝險，不能由天孚量產推論整條鏈缺貨。\n\n【4｜合理推論】\n若FAU／ELS出貨持續、客戶CPO平台如期部署，天孚可由可插拔光模組器件供應商擴大至CPO高密度光耦合環節；客戶預付款、備料與設備投入可提升交付可見度。成立條件是終端CPO系統完成認證、外部雷射與封裝良率達標、擴產按期且客戶拉貨持續。現有證據只證實配套器件量產，不等於CPO交換器已大規模部署或CPO收入已可量化。\n\n【5｜投資機會與風險】\n催化劑：CPO分項收入／出貨量、具名客戶、FAU／ELS產能與良率、泰國產能放量、1.6T瓶頸物料改善。\n風險：客戶集中、量產交付未轉成大規模系統部署、存貨與設備投入先於收入、價格／良率壓力、NPO仍停留樣品、不同CPO架構改變器件價值量。未核對即時估值，不判斷股價已反映或低估。\n\n【6｜待驗證與去重】\n追蹤CPO收入占比、季度出貨／ASP、不可取消訂單、客戶預付款條款、三地月產能／良率、存貨週轉及NPO由樣品轉量產日期。已比對本任務已知Telegram收據、交付分支及事件；未發現相同「天孚CPO FAU/ELS穩定量產交付＋Q3旁證」通知。本次事件鍵tfc-cpo-fau-els-q3-20261023，版本1。"
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          message=os.environ.get("REPORT_TEXT")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}},ensure_ascii=False).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"ok":True,"message_id":mid,"event":"tfc-cpo-fau-els-q3-20261023","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-tfc-cpo-fau-els-q3-20261023-v1
+          path: telegram-receipt.json
