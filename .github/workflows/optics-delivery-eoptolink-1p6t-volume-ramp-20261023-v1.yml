@@ -1,0 +1,45 @@
+name: Optics delivery Eoptolink 1.6T ramp v1
+on:
+  push:
+    branches: [codex/optics-delivery-eoptolink-1p6t-volume-ramp-20261023-v1]
+    paths: [.github/workflows/optics-delivery-eoptolink-1p6t-volume-ramp-20261023-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-eoptolink-1p6t-volume-ramp-20261023-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜新易盛1.6T進入持續放量（v1）\n\n1）重大變化與通知理由\n新易盛（深交所：300502）於2026/10/23以自願性監管公告確認：800G與1.6T已是2026年交付主力，1.6T光模組進入「持續放量」，在手訂單充足，交付與擴產依需求推進。相較8/25半年報僅列示已推出1.6T全系列產品，本次新增量產／交付階段落實，達到可核實商業里程碑門檻。這是公司正式公告，但未披露出貨量、ASP、客戶或訂單金額，不能當作獨立需求驗證。\n\n2）已確認事實\n• 公告日／事件狀態：2026/10/23；公司稱截至公告日1.6T已持續放量，預期出貨節奏加快。這屬管理層陳述，不是審計後分產品出貨實績。\n• 800G、1.6T為今年交付主力；在手訂單「充足」，但無數量、金額、不可取消比例或涵蓋季度。\n• 半年報基準（截至2026/6/30）：營收人民幣209.10億元、年增100.34%；光互聯產品收入208.83億元、毛利率48.46%；銷量1,119萬只。公司沒有拆分800G／1.6T收入、銷量與毛利率。\n• 半年報披露已推出矽光、TFLN的400G／800G／1.6T系列；CPO仍是技術儲備，不能把本次1.6T可插拔模組放量寫成CPO量產。\n• 2026/10/30預計公布Q3報告；目前不能把尚未公布的Q3數字當作實績。\n\n官方來源：\n10/23公告：https://static.cninfo.com.cn/finalpage/2026-10-23/1225617676.pdf\n半年報：https://static.cninfo.com.cn/finalpage/2026-08-25/1225499406.PDF\n\n3）供應鏈角色\n• 新易盛（300502.SZ）：800G／1.6T光模組及矽光方案，直接受益。\n• Hyperscaler／AI資料中心客戶：需求端，但官方未具名，不推測NVIDIA、Meta、Google、Amazon或Microsoft。\n• 中際旭創、光迅科技、Coherent、Fabrinet等：光模組或製造競爭／比較對象；本公告沒有市占或轉單證據。\n• DSP、矽光PIC、CW雷射／EML、FAU及封裝供應商：僅間接曝險；無BOM或採購名單，不能指定受益者，也不能由新易盛訂單推論整條InP／EML鏈全面缺貨。\n\n4）合理推論\n若1.6T出貨加速、良率與ASP維持，產品組合升級可推動Q4至2027收入並支撐毛利；持續放量也代表1.6T已跨過單純送樣／小批階段。成立條件是終端客戶拉貨、DSP與光源供應、海外產能及良率同步到位。因缺乏分產品數字，尚不能量化新增營收，也不能判斷1.6T是否已超過800G。\n\n5）機會與風險\n催化劑：Q3／Q4分產品出貨、1.6T收入占比、海外產能、具名客戶與2027需求指引。\n風險：公告可能具有回應市場波動性質；「訂單充足」未量化且可能遞延；客戶集中、價格下滑、DSP／光源瓶頸、良率與擴產折舊、同業擴產，以及LPO／NPO／CPO替代節奏。未核對即時估值，不判斷已反映或低估。\n\n6）待驗證\n追蹤1.6T季度出貨量、ASP／毛利率、在手訂單與不可取消比例、客戶數與集中度、海外產能利用率、關鍵料件交期；並核對10/30 Q3報告是否用已實現收入與現金流支持本次放量說法。\n\n去重：已比對已知Telegram收據及GitHub分支，未發現同一「新易盛1.6T持續放量」事件版本。本次事件鍵eoptolink-1p6t-volume-ramp-20261023 v1。"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"eoptolink-1p6t-volume-ramp-20261023","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-eoptolink-1p6t-volume-ramp-20261023-v1
+          path: telegram-receipt.json
