@@ -922,7 +922,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -1287,7 +1287,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1585,7 +1585,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1896,7 +1896,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2130,7 +2130,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2281,7 +2281,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2730,7 +2730,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2806,7 +2806,7 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-29T11:14:27-04:00",
+      "updated_at": "2026-10-29T14:26:17-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2828,7 +2828,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.25,
+            "seconds": 0.248,
             "documents": 0,
             "partial": false
           },
@@ -2841,7 +2841,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T11:14:27-04:00",
+        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -2861,11 +2861,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T11:14:27-04:00",
-        "official_ir_checked_at": "2026-10-29T11:14:27-04:00",
-        "official_ir_check_count": 7,
+        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_check_count": 8,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T13:14:27-04:00"
+        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -2887,7 +2887,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2901,25 +2901,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.166,
+            "seconds": 0.125,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MSFT-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.203,
+            "seconds": 0.711,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.055,
+            "seconds": 0.075,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MSFT-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T11:14:27-04:00",
+        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -2940,11 +2940,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T11:14:27-04:00",
-        "official_ir_checked_at": "2026-10-29T11:14:27-04:00",
-        "official_ir_check_count": 7,
+        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_check_count": 8,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T13:14:27-04:00"
+        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
       },
       "delivery": {}
     },
@@ -2961,7 +2961,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2983,7 +2983,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.086,
+            "seconds": 0.137,
             "documents": 0,
             "partial": false
           },
@@ -2996,7 +2996,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T11:14:27-04:00",
+        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3016,11 +3016,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T11:14:27-04:00",
-        "official_ir_checked_at": "2026-10-29T11:14:27-04:00",
-        "official_ir_check_count": 7,
+        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_check_count": 8,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T13:14:27-04:00"
+        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
       },
       "delivery": {}
     },
@@ -3037,7 +3037,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3059,7 +3059,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.277,
+            "seconds": 0.341,
             "documents": 0,
             "partial": false
           },
@@ -3072,7 +3072,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T11:14:27-04:00",
+        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3092,11 +3092,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T11:14:27-04:00",
-        "official_ir_checked_at": "2026-10-29T11:14:27-04:00",
-        "official_ir_check_count": 7,
+        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_check_count": 8,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T13:14:27-04:00"
+        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
       },
       "delivery": {}
     },
@@ -3113,7 +3113,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:26:17-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3127,25 +3127,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.167,
+            "seconds": 0.073,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GOOGL-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.111,
+            "seconds": 0.087,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.097,
+            "seconds": 0.129,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GOOGL-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T12:55:43-04:00",
+        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3165,11 +3165,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T12:55:43-04:00",
-        "official_ir_checked_at": "2026-10-29T12:55:43-04:00",
-        "official_ir_check_count": 3,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-29T13:25:43-04:00"
+        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_check_count": 4,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
       },
       "delivery": {}
     },
@@ -3184,10 +3184,10 @@
         "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
         "sec_edgar:0001101302-26-000159:entgq32026ex992.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:28:54-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3209,7 +3209,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.482,
+            "seconds": 0.54,
             "documents": 0,
             "partial": false
           },
@@ -3222,7 +3222,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T12:55:43-04:00",
+        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3242,11 +3242,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T12:55:43-04:00",
-        "official_ir_checked_at": "2026-10-29T12:55:43-04:00",
-        "official_ir_check_count": 3,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-29T13:25:43-04:00"
+        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_check_count": 4,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
       },
       "delivery": {}
     },
@@ -3263,7 +3263,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T12:55:43-04:00",
+      "updated_at": "2026-10-29T14:26:17-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3277,25 +3277,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.109,
+            "seconds": 0.074,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GLW-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.355,
+            "seconds": 0.293,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.149,
+            "seconds": 0.117,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GLW-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T12:55:43-04:00",
+        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3315,11 +3315,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T12:55:43-04:00",
-        "official_ir_checked_at": "2026-10-29T12:55:43-04:00",
-        "official_ir_check_count": 2,
+        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
+        "official_ir_check_count": 3,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-29T13:25:43-04:00"
+        "next_ir_retry_at": "2026-10-29T14:56:17-04:00"
       },
       "delivery": {}
     }
@@ -3334,7 +3334,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-29T12:55:43-04:00",
+      "last_success_at": "2026-10-29T14:26:17-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -20037,6 +20037,2751 @@
               "kpi_without_readthrough:下季營收與獲利財測：預期 Q2 總營收為 $4.7B +/- $200M（區間 $4.5B 至 $4.9B）；GAAP 稀釋每股盈餘 $1.41 +/- $0.11（區間 $1.3",
               "kpi_without_readthrough:下季毛利率財測：預期 Q2 GAAP 毛利率為 61.8% +/- 1.0%（區間 60.8% 至 62.8%）；Non-GAAP 毛利率為 62.5% +/- 1.0%（區間 6"
             ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "ENTG_2026-10-29": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "b5786b59833b5be499f59d0735ebbb3f77f2757b9547f4fdb8f0d2411a5775d5",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales for the third quarter of 2026 were $1,005.7 million.",
+                "materiality_candidate": 5,
+                "quote": "Net sales\n$1,005.7",
+                "metric": "Net sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "807.1",
+                "comparison_period": "Q3 2025",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP gross margin for the third quarter of 2026 was 49.7%.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin - as a % of net sales\n49.7\n%",
+                "metric": "Gross margin",
+                "value": "49.7",
+                "unit": "percent",
+                "period": "Q3 2026",
+                "comparison_value": "43.5",
+                "comparison_period": "Q3 2025",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "For the fourth quarter of 2026, the company expects sales of $1,025 million to $1,055 million.",
+                "materiality_candidate": 5,
+                "quote": "For the Company’s guidance for the fourth quarter ending December 31, 2026, the Company expects sales of $1,025 million to $1,055 million.",
+                "metric": "sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "1025",
+                "high": "1055",
+                "unit": "USD_millions"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "For the fourth quarter of 2026, GAAP diluted earnings per common share is expected to be between $1.09 and $1.17.",
+                "materiality_candidate": 4,
+                "quote": "diluted earnings per common share is expected to be between $1.09 and $1.17.",
+                "metric": "diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "1.09",
+                "high": "1.17",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "For the fourth quarter of 2026, non-GAAP diluted earnings per common share is expected to range from $1.32 to $1.40.",
+                "materiality_candidate": 4,
+                "quote": "On a non-GAAP basis, the Company expects diluted earnings per common share to range from $1.32 to $1.40",
+                "metric": "non-GAAP diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "1.32",
+                "high": "1.40",
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales were $1,005.7 million for the three months ended Sep 26, 2026, compared to $807.1 million for the three months ended Sep 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net sales\n$1,005.7\n$807.1\n$883.2",
+                "metric": "Net sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "807.1",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit was $500.2 million for the three months ended Sep 26, 2026, compared to $351.3 million for the three months ended Sep 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Gross profit\n500.2\n351.3\n420.0",
+                "metric": "Gross profit",
+                "value": "500.2",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "351.3",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income was $230.6 million for the three months ended Sep 26, 2026, compared to $122.6 million for the three months ended Sep 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Operating income\n230.6\n122.6\n164.6",
+                "metric": "Operating income",
+                "value": "230.6",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "122.6",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $157.8 million for the three months ended Sep 26, 2026, compared to $70.5 million for the three months ended Sep 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$157.8\n$70.5\n$93.6",
+                "metric": "Net income",
+                "value": "157.8",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "70.5",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended Sep 26, 2026 net sales were $2,700.8 million compared to $2,372.7 million for the nine months ended Sep 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Net sales\n$2,700.8\n$2,372.7",
+                "metric": "Net sales",
+                "value": "2700.8",
+                "unit": "USD_millions",
+                "period": "9M 2026",
+                "comparison_value": "2372.7",
+                "comparison_period": "9M 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $266.8 million for the three months ended Sep 26, 2026, and $606.0 million for the nine months ended Sep 26, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Net cash provided by operating activities\n266.8\n249.5\n606.0\n503.4",
+                "metric_type": "operating_cash_flow",
+                "metric": "Net cash provided by operating activities",
+                "value": "266.8",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "249.5",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Acquisition of property, plant and equipment was $43.2 million for the three months ended Sep 26, 2026, and $124.0 million for the nine months ended Sep 26, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Acquisition of property, plant and equipment\n(43.2)\n(66.7)\n(124.0)\n(241.2)",
+                "metric_type": "capex",
+                "metric": "Acquisition of property, plant and equipment",
+                "value": "-43.2",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "-66.7",
+                "comparison_period": "Q3 2025"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u5",
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net sales were $1,005.7 million for the three months ended September 26, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Total net sales\n$1,005.7\n$807.1\n$883.2",
+                "metric": "Net sales",
+                "value": 1005.7,
+                "unit": "USD_millions",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $157.8 million and diluted earnings per common share was $1.03 for the three months ended September 26, 2026.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income\n$157.8\n$70.5\n$93.6\n$343.4\n$186.2\nAdjustments to net income:\n...\nDiluted earnings per common share\n$1.03\n$0.46\n$0.61\n$2.24\n$1.22",
+                "metric": "Net income",
+                "value": 157.8,
+                "unit": "USD_millions",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_3": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $157.8 million and diluted earnings per common share was $1.03 for the three months ended September 26, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Net income\n$157.8\n$70.5\n$93.6\nDiluted earnings per common share\n$1.03\n$0.46\n$0.61",
+                "metric": "Net income",
+                "value": 157.8,
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net income\n$157.8\n$70.5\n$93.6\nDiluted earnings per common share\n$1.03\n$0.46\n$0.61"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+              "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u1"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris provides Q4 2026 net sales outlook of $1,025 million to $1,055 million.",
+                "materiality_candidate": 4,
+                "quote": "Net sales\n$1,025 - $1,055",
+                "metric": "net_sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 1025.0,
+                "high": 1055.0,
+                "unit": "$M"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris provides Q4 2026 GAAP operating income outlook of $235 million to $250 million.",
+                "materiality_candidate": 4,
+                "quote": "GAAP - Operating income\n$235 - $250",
+                "metric": "operating_income",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 235.0,
+                "high": 250.0,
+                "unit": "$M"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris provides Q4 2026 GAAP diluted EPS outlook of $1.09 to $1.17 and non-GAAP diluted EPS of $1.32 to $1.40.",
+                "materiality_candidate": 4,
+                "quote": "Diluted earnings per common share\n$1.09 - $1.17\nDiluted non-GAAP earnings per common share\n$1.32 - $1.40",
+                "metric": "diluted_eps",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 1.09,
+                "high": 1.17,
+                "unit": "$"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_4": {
+          "payload": {
+            "cards": [
+              {
+                "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris provides Q4 2026 GAAP diluted EPS outlook of $1.09 to $1.17 and non-GAAP diluted EPS of $1.32 to $1.40.",
+                "materiality_candidate": 4,
+                "quote": "Diluted earnings per common share\n$1.09 - $1.17\nAdjustments to earnings per share:\nAmortization of intangible assets\n0.29\nIncome tax effect\n(0.06)\nDiluted non-GAAP earnings per common share\n$1.32 - $1.40",
+                "metric": "diluted_eps",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 1.09,
+                "high": 1.17,
+                "unit": "$",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Diluted earnings per common share\n$1.09 - $1.17\nAdjustments to earnings per share:\nAmortization of intangible assets\n0.29\nIncome tax effect\n(0.06)\nDiluted non-GAAP earnings per common share\n$1.32 - $1.40"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+              "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net Sales for 3Q26 were $1,005.7 million, up 24.6% year-over-year from $807.1 million and up 13.9% sequentially from $883.2 million.",
+                "materiality_candidate": 5,
+                "quote": "Net Sales $1,005.7 $807.1 $883.2 24.6% 13.9%",
+                "metric": "Net Sales",
+                "value": "1005.7",
+                "unit": "USD_MILLIONS",
+                "period": "3Q26",
+                "comparison_value": "807.1",
+                "comparison_period": "3Q25",
+                "reported_change": "24.6%",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross Margin for 3Q26 was 49.7%, compared to 43.5% in 3Q25 and 47.6% in 2Q26.",
+                "materiality_candidate": 4,
+                "quote": "Gross Margin 49.7% 43.5% 47.6%",
+                "metric": "Gross Margin",
+                "value": "49.7",
+                "unit": "PERCENT",
+                "period": "3Q26",
+                "comparison_value": "43.5",
+                "comparison_period": "3Q25",
+                "reported_change": "6.2%",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted Gross Margin as a % of Net Sales for 3Q26 was 48.9%, compared to 43.6% in 3Q25.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted Gross Margin – as a % of Net Sales1 48.9% 43.6% 47.6%",
+                "metric": "Adjusted Gross Margin",
+                "value": "48.9",
+                "unit": "PERCENT",
+                "period": "3Q26",
+                "comparison_value": "43.6",
+                "comparison_period": "3Q25",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides 4Q26 GAAP Net Sales to a range of $1,025 million to $1,055 million.",
+                "materiality_candidate": 5,
+                "quote": "Net Sales $1,025 - $1,055 $1,005.7 $883.2",
+                "metric": "Net Sales",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "1025",
+                "high": "1055",
+                "unit": "USD_MILLIONS"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides 4Q26 Diluted non-GAAP Earnings per Common Share to a range of $1.32 to $1.40.",
+                "materiality_candidate": 5,
+                "quote": "Diluted non-GAAP Earnings per Common Share1 $1.32 - $1.40 $1.23 $0.93",
+                "metric": "Diluted non-GAAP Earnings per Common Share",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "1.32",
+                "high": "1.40",
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+              "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u5"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net Sales for 3Q26 were $1,005.7 million.",
+                "materiality_candidate": 4,
+                "quote": "Net Sales $773.2 $792.4 $807.1 $823.9 $3,196.6 $811.9 $883.2 $1,005.7",
+                "metric": "Net Sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "3Q26"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit - GAAP for 3Q26 was $500.2 million.",
+                "materiality_candidate": 3,
+                "quote": "Gross profit - GAAP $356.5 $351.5 $351.3 $360.6 $1,419.9 $380.8 $420.0 $500.2",
+                "metric": "Gross profit - GAAP",
+                "value": "500.2",
+                "unit": "USD_millions",
+                "period": "3Q26"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted EBITDA for 3Q26 was $303.3 million.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted EBITDA $220.7 $216.7 $220.7 $228.1 $886.2 $226.1 $250.7 $303.3",
+                "metric": "Adjusted EBITDA",
+                "value": "303.3",
+                "unit": "USD_millions",
+                "period": "3Q26"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $157.8 million and Non-GAAP net income was $189.7 million for 3Q26.",
+                "materiality_candidate": 4,
+                "quote": "3Q26 GAAP net income $157.8 ... Non-GAAP net income ... $189.7",
+                "metric": "Non-GAAP net income",
+                "value": "189.7",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "comparison_value": "109.9",
+                "comparison_period": "3Q25",
+                "metric_type": "other_adjusted"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides Q4 2026 net sales to be between $1,025 million and $1,055 million.",
+                "materiality_candidate": 5,
+                "quote": "Net sales $1,025 - $1,055",
+                "metric": "net_sales",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "1025",
+                "high": "1055",
+                "unit": "USD_millions"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides Q4 2026 GAAP net income to be between $168 million and $181 million.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income $168 - $181",
+                "metric": "GAAP net income",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "168",
+                "high": "181",
+                "unit": "USD_millions"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides Q4 2026 Diluted non-GAAP earnings per common share to be between $1.32 and $1.40.",
+                "materiality_candidate": 5,
+                "quote": "Diluted non-GAAP earnings per common share $1.32 - $1.40",
+                "metric": "diluted_non_gaap_eps",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "1.32",
+                "high": "1.40",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides Q4 2026 Adjusted EBITDA to be between $315 million and $329 million, representing 30.7% to 31.2% of net sales.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted EBITDA $315- $329 Adjusted EBITDA - as a % of net sales 30.7% - 31.2%",
+                "metric": "adjusted_ebitda",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "315",
+                "high": "329",
+                "unit": "USD_millions"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_7": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $157.8 million and Non-GAAP net income was $189.7 million for 3Q26.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP net income $189.7 $109.9 $142.7",
+                "metric": "Non-GAAP net income",
+                "value": "189.7",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "comparison_value": "109.9",
+                "comparison_period": "3Q25",
+                "metric_type": "other_adjusted",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Non-GAAP net income $189.7 $109.9 $142.7"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "title": "Entegris Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 26813,
+                  "extracted_chars": 26813,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 7,
+                  "transcript": false
+                },
+                {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "title": "Entegris Form 8-K — Earnings Release / Exhibit EX-99.2 — EX-99.2",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 23012,
+                  "extracted_chars": 23012,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 6,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u2",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u5",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u1",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u5",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6"
+              ],
+              "expected_unit_count": 13,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u2",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u5",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u1",
+                "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u5",
+                "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6"
+              ],
+              "processed_unit_count": 13,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 13,
+                "processed_unit_count": 13,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 2,
+                "demand_revenue": 7,
+                "guidance": 12,
+                "margin_unit_economics": 9
+              },
+              "selection": {
+                "raw_card_count": 30,
+                "deduped_card_count": 30,
+                "selected_card_count": 30,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 2,
+                  "demand_revenue": 7,
+                  "guidance": 12,
+                  "margin_unit_economics": 8
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net sales for the third quarter of 2026 were $1,005.7 million.",
+                  "metric": "Net sales",
+                  "value": "1005.7",
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "comparison_value": "807.1",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,005.7",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net sales were $1,005.7 million for the three months ended Sep 26, 2026, compared to $807.1 million for the three months ended Sep 27, 2025.",
+                  "metric": "Net sales",
+                  "value": "1005.7",
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "comparison_value": "807.1",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,005.7\n$807.1\n$883.2"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net income was $157.8 million for the three months ended Sep 26, 2026, compared to $70.5 million for the three months ended Sep 27, 2025.",
+                  "metric": "Net income",
+                  "value": "157.8",
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "comparison_value": "70.5",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net income\n$157.8\n$70.5\n$93.6"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net Sales for 3Q26 were $1,005.7 million, up 24.6% year-over-year from $807.1 million and up 13.9% sequentially from $883.2 million.",
+                  "metric": "Net Sales",
+                  "value": "1005.7",
+                  "unit": "USD_MILLIONS",
+                  "period": "3Q26",
+                  "comparison_value": "807.1",
+                  "comparison_period": "3Q25",
+                  "reported_change": "24.6%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $1,005.7 $807.1 $883.2 24.6% 13.9%",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Nine months ended Sep 26, 2026 net sales were $2,700.8 million compared to $2,372.7 million for the nine months ended Sep 27, 2025.",
+                  "metric": "Net sales",
+                  "value": "2700.8",
+                  "unit": "USD_millions",
+                  "period": "9M 2026",
+                  "comparison_value": "2372.7",
+                  "comparison_period": "9M 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$2,700.8\n$2,372.7"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total net sales were $1,005.7 million for the three months ended September 26, 2026.",
+                  "metric": "Net sales",
+                  "value": 1005.7,
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u5",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Total net sales\n$1,005.7\n$807.1\n$883.2"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net Sales for 3Q26 were $1,005.7 million.",
+                  "metric": "Net Sales",
+                  "value": "1005.7",
+                  "unit": "USD_millions",
+                  "period": "3Q26",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $773.2 $792.4 $807.1 $823.9 $3,196.6 $811.9 $883.2 $1,005.7"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "For the fourth quarter of 2026, the company expects sales of $1,025 million to $1,055 million.",
+                  "metric": "sales",
+                  "unit": "USD_millions",
+                  "period": "Q4 2026",
+                  "low": "1025",
+                  "high": "1055",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "For the Company’s guidance for the fourth quarter ending December 31, 2026, the Company expects sales of $1,025 million to $1,055 million.",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris guides 4Q26 GAAP Net Sales to a range of $1,025 million to $1,055 million.",
+                  "metric": "Net Sales",
+                  "unit": "USD_MILLIONS",
+                  "period": "4Q26",
+                  "low": "1025",
+                  "high": "1055",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $1,025 - $1,055 $1,005.7 $883.2",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris guides 4Q26 Diluted non-GAAP Earnings per Common Share to a range of $1.32 to $1.40.",
+                  "metric": "Diluted non-GAAP Earnings per Common Share",
+                  "unit": "USD",
+                  "period": "4Q26",
+                  "low": "1.32",
+                  "high": "1.40",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Diluted non-GAAP Earnings per Common Share1 $1.32 - $1.40 $1.23 $0.93",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris guides Q4 2026 net sales to be between $1,025 million and $1,055 million.",
+                  "metric": "net_sales",
+                  "unit": "USD_millions",
+                  "period": "4Q26",
+                  "low": "1025",
+                  "high": "1055",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net sales $1,025 - $1,055",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris guides Q4 2026 Diluted non-GAAP earnings per common share to be between $1.32 and $1.40.",
+                  "metric": "diluted_non_gaap_eps",
+                  "unit": "USD",
+                  "period": "4Q26",
+                  "low": "1.32",
+                  "high": "1.40",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Diluted non-GAAP earnings per common share $1.32 - $1.40",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris guides Q4 2026 Adjusted EBITDA to be between $315 million and $329 million, representing 30.7% to 31.2% of net sales.",
+                  "metric": "adjusted_ebitda",
+                  "unit": "USD_millions",
+                  "period": "4Q26",
+                  "low": "315",
+                  "high": "329",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted EBITDA $315- $329 Adjusted EBITDA - as a % of net sales 30.7% - 31.2%",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "For the fourth quarter of 2026, GAAP diluted earnings per common share is expected to be between $1.09 and $1.17.",
+                  "metric": "diluted EPS",
+                  "unit": "USD",
+                  "period": "Q4 2026",
+                  "low": "1.09",
+                  "high": "1.17",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "diluted earnings per common share is expected to be between $1.09 and $1.17.",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "For the fourth quarter of 2026, non-GAAP diluted earnings per common share is expected to range from $1.32 to $1.40.",
+                  "metric": "non-GAAP diluted EPS",
+                  "unit": "USD",
+                  "period": "Q4 2026",
+                  "low": "1.32",
+                  "high": "1.40",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "On a non-GAAP basis, the Company expects diluted earnings per common share to range from $1.32 to $1.40",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris provides Q4 2026 net sales outlook of $1,025 million to $1,055 million.",
+                  "metric": "net_sales",
+                  "unit": "$M",
+                  "period": "Q4 2026",
+                  "low": 1025.0,
+                  "high": 1055.0,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,025 - $1,055",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris provides Q4 2026 GAAP operating income outlook of $235 million to $250 million.",
+                  "metric": "operating_income",
+                  "unit": "$M",
+                  "period": "Q4 2026",
+                  "low": 235.0,
+                  "high": 250.0,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "GAAP - Operating income\n$235 - $250",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris provides Q4 2026 GAAP diluted EPS outlook of $1.09 to $1.17 and non-GAAP diluted EPS of $1.32 to $1.40.",
+                  "metric": "diluted_eps",
+                  "unit": "$",
+                  "period": "Q4 2026",
+                  "low": 1.09,
+                  "high": 1.17,
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Diluted earnings per common share\n$1.09 - $1.17\nAdjustments to earnings per share:\nAmortization of intangible assets\n0.29\nIncome tax effect\n(0.06)\nDiluted non-GAAP earnings per common share\n$1.32 - $1.40",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Entegris guides Q4 2026 GAAP net income to be between $168 million and $181 million.",
+                  "metric": "GAAP net income",
+                  "unit": "USD_millions",
+                  "period": "4Q26",
+                  "low": "168",
+                  "high": "181",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "GAAP net income $168 - $181",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "GAAP gross margin for the third quarter of 2026 was 49.7%.",
+                  "metric": "Gross margin",
+                  "value": "49.7",
+                  "unit": "percent",
+                  "period": "Q3 2026",
+                  "comparison_value": "43.5",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Gross margin - as a % of net sales\n49.7\n%",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross profit was $500.2 million for the three months ended Sep 26, 2026, compared to $351.3 million for the three months ended Sep 27, 2025.",
+                  "metric": "Gross profit",
+                  "value": "500.2",
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "comparison_value": "351.3",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Gross profit\n500.2\n351.3\n420.0"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Operating income was $230.6 million for the three months ended Sep 26, 2026, compared to $122.6 million for the three months ended Sep 27, 2025.",
+                  "metric": "Operating income",
+                  "value": "230.6",
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "comparison_value": "122.6",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Operating income\n230.6\n122.6\n164.6"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "GAAP net income was $157.8 million and diluted earnings per common share was $1.03 for the three months ended September 26, 2026.",
+                  "metric": "Net income",
+                  "value": 157.8,
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net income\n$157.8\n$70.5\n$93.6\nDiluted earnings per common share\n$1.03\n$0.46\n$0.61"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross Margin for 3Q26 was 49.7%, compared to 43.5% in 3Q25 and 47.6% in 2Q26.",
+                  "metric": "Gross Margin",
+                  "value": "49.7",
+                  "unit": "PERCENT",
+                  "period": "3Q26",
+                  "comparison_value": "43.5",
+                  "comparison_period": "3Q25",
+                  "reported_change": "6.2%",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Gross Margin 49.7% 43.5% 47.6%",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Adjusted Gross Margin as a % of Net Sales for 3Q26 was 48.9%, compared to 43.6% in 3Q25.",
+                  "metric": "Adjusted Gross Margin",
+                  "value": "48.9",
+                  "unit": "PERCENT",
+                  "period": "3Q26",
+                  "comparison_value": "43.6",
+                  "comparison_period": "3Q25",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted Gross Margin – as a % of Net Sales1 48.9% 43.6% 47.6%",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Adjusted EBITDA for 3Q26 was $303.3 million.",
+                  "metric": "Adjusted EBITDA",
+                  "value": "303.3",
+                  "unit": "USD_millions",
+                  "period": "3Q26",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u5",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted EBITDA $220.7 $216.7 $220.7 $228.1 $886.2 $226.1 $250.7 $303.3"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "GAAP net income was $157.8 million and Non-GAAP net income was $189.7 million for 3Q26.",
+                  "metric": "Non-GAAP net income",
+                  "value": "189.7",
+                  "unit": "USD_millions",
+                  "period": "3Q26",
+                  "comparison_value": "109.9",
+                  "comparison_period": "3Q25",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Non-GAAP net income $189.7 $109.9 $142.7",
+                  "metric_type": "other_adjusted"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross profit - GAAP for 3Q26 was $500.2 million.",
+                  "metric": "Gross profit - GAAP",
+                  "value": "500.2",
+                  "unit": "USD_millions",
+                  "period": "3Q26",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Gross profit - GAAP $356.5 $351.5 $351.3 $360.6 $1,419.9 $380.8 $420.0 $500.2"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Net cash provided by operating activities was $266.8 million for the three months ended Sep 26, 2026, and $606.0 million for the nine months ended Sep 26, 2026.",
+                  "metric": "Net cash provided by operating activities",
+                  "value": "266.8",
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "comparison_value": "249.5",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net cash provided by operating activities\n266.8\n249.5\n606.0\n503.4",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Acquisition of property, plant and equipment was $43.2 million for the three months ended Sep 26, 2026, and $124.0 million for the nine months ended Sep 26, 2026.",
+                  "metric": "Acquisition of property, plant and equipment",
+                  "value": "-43.2",
+                  "unit": "USD_millions",
+                  "period": "Q3 2026",
+                  "comparison_value": "-66.7",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Acquisition of property, plant and equipment\n(43.2)\n(66.7)\n(124.0)\n(241.2)",
+                  "metric_type": "capex"
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales for the third quarter of 2026 were $1,005.7 million.",
+                "materiality_candidate": 5,
+                "quote": "Net sales\n$1,005.7",
+                "metric": "Net sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "807.1",
+                "comparison_period": "Q3 2025",
+                "metric_type": "other",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,005.7"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP gross margin for the third quarter of 2026 was 49.7%.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin - as a % of net sales\n49.7\n%",
+                "metric": "Gross margin",
+                "value": "49.7",
+                "unit": "percent",
+                "period": "Q3 2026",
+                "comparison_value": "43.5",
+                "comparison_period": "Q3 2025",
+                "metric_type": "other",
+                "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Gross margin - as a % of net sales\n49.7\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "For the fourth quarter of 2026, the company expects sales of $1,025 million to $1,055 million.",
+                "materiality_candidate": 5,
+                "quote": "For the Company’s guidance for the fourth quarter ending December 31, 2026, the Company expects sales of $1,025 million to $1,055 million.",
+                "metric": "sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "1025",
+                "high": "1055",
+                "unit": "USD_millions",
+                "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "For the Company’s guidance for the fourth quarter ending December 31, 2026, the Company expects sales of $1,025 million to $1,055 million."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "For the fourth quarter of 2026, GAAP diluted earnings per common share is expected to be between $1.09 and $1.17.",
+                "materiality_candidate": 4,
+                "quote": "diluted earnings per common share is expected to be between $1.09 and $1.17.",
+                "metric": "diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "1.09",
+                "high": "1.17",
+                "unit": "USD",
+                "card_id": "c4:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "diluted earnings per common share is expected to be between $1.09 and $1.17."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "For the fourth quarter of 2026, non-GAAP diluted earnings per common share is expected to range from $1.32 to $1.40.",
+                "materiality_candidate": 4,
+                "quote": "On a non-GAAP basis, the Company expects diluted earnings per common share to range from $1.32 to $1.40",
+                "metric": "non-GAAP diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "1.32",
+                "high": "1.40",
+                "unit": "USD",
+                "card_id": "c5:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u1",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "On a non-GAAP basis, the Company expects diluted earnings per common share to range from $1.32 to $1.40"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net sales were $1,005.7 million for the three months ended Sep 26, 2026, compared to $807.1 million for the three months ended Sep 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net sales\n$1,005.7\n$807.1\n$883.2",
+                "metric": "Net sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "807.1",
+                "comparison_period": "Q3 2025",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,005.7\n$807.1\n$883.2"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit was $500.2 million for the three months ended Sep 26, 2026, compared to $351.3 million for the three months ended Sep 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Gross profit\n500.2\n351.3\n420.0",
+                "metric": "Gross profit",
+                "value": "500.2",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "351.3",
+                "comparison_period": "Q3 2025",
+                "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Gross profit\n500.2\n351.3\n420.0"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income was $230.6 million for the three months ended Sep 26, 2026, compared to $122.6 million for the three months ended Sep 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Operating income\n230.6\n122.6\n164.6",
+                "metric": "Operating income",
+                "value": "230.6",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "122.6",
+                "comparison_period": "Q3 2025",
+                "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Operating income\n230.6\n122.6\n164.6"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $157.8 million for the three months ended Sep 26, 2026, compared to $70.5 million for the three months ended Sep 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$157.8\n$70.5\n$93.6",
+                "metric": "Net income",
+                "value": "157.8",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "70.5",
+                "comparison_period": "Q3 2025",
+                "card_id": "c4:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u3",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net income\n$157.8\n$70.5\n$93.6"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Nine months ended Sep 26, 2026 net sales were $2,700.8 million compared to $2,372.7 million for the nine months ended Sep 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Net sales\n$2,700.8\n$2,372.7",
+                "metric": "Net sales",
+                "value": "2700.8",
+                "unit": "USD_millions",
+                "period": "9M 2026",
+                "comparison_value": "2372.7",
+                "comparison_period": "9M 2025",
+                "card_id": "c5:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$2,700.8\n$2,372.7"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $266.8 million for the three months ended Sep 26, 2026, and $606.0 million for the nine months ended Sep 26, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Net cash provided by operating activities\n266.8\n249.5\n606.0\n503.4",
+                "metric_type": "operating_cash_flow",
+                "metric": "Net cash provided by operating activities",
+                "value": "266.8",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "249.5",
+                "comparison_period": "Q3 2025",
+                "card_id": "c6:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net cash provided by operating activities\n266.8\n249.5\n606.0\n503.4"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Acquisition of property, plant and equipment was $43.2 million for the three months ended Sep 26, 2026, and $124.0 million for the nine months ended Sep 26, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Acquisition of property, plant and equipment\n(43.2)\n(66.7)\n(124.0)\n(241.2)",
+                "metric_type": "capex",
+                "metric": "Acquisition of property, plant and equipment",
+                "value": "-43.2",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "-66.7",
+                "comparison_period": "Q3 2025",
+                "card_id": "c7:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u4",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Acquisition of property, plant and equipment\n(43.2)\n(66.7)\n(124.0)\n(241.2)"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net sales were $1,005.7 million for the three months ended September 26, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Total net sales\n$1,005.7\n$807.1\n$883.2",
+                "metric": "Net sales",
+                "value": 1005.7,
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u5",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Total net sales\n$1,005.7\n$807.1\n$883.2"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $157.8 million and diluted earnings per common share was $1.03 for the three months ended September 26, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Net income\n$157.8\n$70.5\n$93.6\nDiluted earnings per common share\n$1.03\n$0.46\n$0.61",
+                "metric": "Net income",
+                "value": 157.8,
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u6",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net income\n$157.8\n$70.5\n$93.6\nDiluted earnings per common share\n$1.03\n$0.46\n$0.61"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris provides Q4 2026 net sales outlook of $1,025 million to $1,055 million.",
+                "materiality_candidate": 4,
+                "quote": "Net sales\n$1,025 - $1,055",
+                "metric": "net_sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 1025.0,
+                "high": 1055.0,
+                "unit": "$M",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,025 - $1,055"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris provides Q4 2026 GAAP operating income outlook of $235 million to $250 million.",
+                "materiality_candidate": 4,
+                "quote": "GAAP - Operating income\n$235 - $250",
+                "metric": "operating_income",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 235.0,
+                "high": 250.0,
+                "unit": "$M",
+                "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "GAAP - Operating income\n$235 - $250"
+                }
+              },
+              {
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris provides Q4 2026 GAAP diluted EPS outlook of $1.09 to $1.17 and non-GAAP diluted EPS of $1.32 to $1.40.",
+                "materiality_candidate": 4,
+                "quote": "Diluted earnings per common share\n$1.09 - $1.17\nAdjustments to earnings per share:\nAmortization of intangible assets\n0.29\nIncome tax effect\n(0.06)\nDiluted non-GAAP earnings per common share\n$1.32 - $1.40",
+                "metric": "diluted_eps",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 1.09,
+                "high": 1.17,
+                "unit": "$",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Diluted earnings per common share\n$1.09 - $1.17\nAdjustments to earnings per share:\nAmortization of intangible assets\n0.29\nIncome tax effect\n(0.06)\nDiluted non-GAAP earnings per common share\n$1.32 - $1.40"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net Sales for 3Q26 were $1,005.7 million, up 24.6% year-over-year from $807.1 million and up 13.9% sequentially from $883.2 million.",
+                "materiality_candidate": 5,
+                "quote": "Net Sales $1,005.7 $807.1 $883.2 24.6% 13.9%",
+                "metric": "Net Sales",
+                "value": "1005.7",
+                "unit": "USD_MILLIONS",
+                "period": "3Q26",
+                "comparison_value": "807.1",
+                "comparison_period": "3Q25",
+                "reported_change": "24.6%",
+                "metric_type": "other",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $1,005.7 $807.1 $883.2 24.6% 13.9%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross Margin for 3Q26 was 49.7%, compared to 43.5% in 3Q25 and 47.6% in 2Q26.",
+                "materiality_candidate": 4,
+                "quote": "Gross Margin 49.7% 43.5% 47.6%",
+                "metric": "Gross Margin",
+                "value": "49.7",
+                "unit": "PERCENT",
+                "period": "3Q26",
+                "comparison_value": "43.5",
+                "comparison_period": "3Q25",
+                "reported_change": "6.2%",
+                "metric_type": "other",
+                "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Gross Margin 49.7% 43.5% 47.6%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted Gross Margin as a % of Net Sales for 3Q26 was 48.9%, compared to 43.6% in 3Q25.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted Gross Margin – as a % of Net Sales1 48.9% 43.6% 47.6%",
+                "metric": "Adjusted Gross Margin",
+                "value": "48.9",
+                "unit": "PERCENT",
+                "period": "3Q26",
+                "comparison_value": "43.6",
+                "comparison_period": "3Q25",
+                "metric_type": "other",
+                "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u2",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted Gross Margin – as a % of Net Sales1 48.9% 43.6% 47.6%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides 4Q26 GAAP Net Sales to a range of $1,025 million to $1,055 million.",
+                "materiality_candidate": 5,
+                "quote": "Net Sales $1,025 - $1,055 $1,005.7 $883.2",
+                "metric": "Net Sales",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "1025",
+                "high": "1055",
+                "unit": "USD_MILLIONS",
+                "card_id": "c4:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $1,025 - $1,055 $1,005.7 $883.2"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides 4Q26 Diluted non-GAAP Earnings per Common Share to a range of $1.32 to $1.40.",
+                "materiality_candidate": 5,
+                "quote": "Diluted non-GAAP Earnings per Common Share1 $1.32 - $1.40 $1.23 $0.93",
+                "metric": "Diluted non-GAAP Earnings per Common Share",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "1.32",
+                "high": "1.40",
+                "unit": "USD",
+                "card_id": "c5:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u3",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Diluted non-GAAP Earnings per Common Share1 $1.32 - $1.40 $1.23 $0.93"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net Sales for 3Q26 were $1,005.7 million.",
+                "materiality_candidate": 4,
+                "quote": "Net Sales $773.2 $792.4 $807.1 $823.9 $3,196.6 $811.9 $883.2 $1,005.7",
+                "metric": "Net Sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $773.2 $792.4 $807.1 $823.9 $3,196.6 $811.9 $883.2 $1,005.7"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit - GAAP for 3Q26 was $500.2 million.",
+                "materiality_candidate": 3,
+                "quote": "Gross profit - GAAP $356.5 $351.5 $351.3 $360.6 $1,419.9 $380.8 $420.0 $500.2",
+                "metric": "Gross profit - GAAP",
+                "value": "500.2",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u4",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Gross profit - GAAP $356.5 $351.5 $351.3 $360.6 $1,419.9 $380.8 $420.0 $500.2"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted EBITDA for 3Q26 was $303.3 million.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted EBITDA $220.7 $216.7 $220.7 $228.1 $886.2 $226.1 $250.7 $303.3",
+                "metric": "Adjusted EBITDA",
+                "value": "303.3",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u5",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted EBITDA $220.7 $216.7 $220.7 $228.1 $886.2 $226.1 $250.7 $303.3"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides Q4 2026 net sales to be between $1,025 million and $1,055 million.",
+                "materiality_candidate": 5,
+                "quote": "Net sales $1,025 - $1,055",
+                "metric": "net_sales",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "1025",
+                "high": "1055",
+                "unit": "USD_millions",
+                "card_id": "c2:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net sales $1,025 - $1,055"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides Q4 2026 GAAP net income to be between $168 million and $181 million.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income $168 - $181",
+                "metric": "GAAP net income",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "168",
+                "high": "181",
+                "unit": "USD_millions",
+                "card_id": "c3:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "GAAP net income $168 - $181"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides Q4 2026 Diluted non-GAAP earnings per common share to be between $1.32 and $1.40.",
+                "materiality_candidate": 5,
+                "quote": "Diluted non-GAAP earnings per common share $1.32 - $1.40",
+                "metric": "diluted_non_gaap_eps",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "1.32",
+                "high": "1.40",
+                "unit": "USD",
+                "card_id": "c4:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Diluted non-GAAP earnings per common share $1.32 - $1.40"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Entegris guides Q4 2026 Adjusted EBITDA to be between $315 million and $329 million, representing 30.7% to 31.2% of net sales.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted EBITDA $315- $329 Adjusted EBITDA - as a % of net sales 30.7% - 31.2%",
+                "metric": "adjusted_ebitda",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "low": "315",
+                "high": "329",
+                "unit": "USD_millions",
+                "card_id": "c5:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted EBITDA $315- $329 Adjusted EBITDA - as a % of net sales 30.7% - 31.2%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $157.8 million and Non-GAAP net income was $189.7 million for 3Q26.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP net income $189.7 $109.9 $142.7",
+                "metric": "Non-GAAP net income",
+                "value": "189.7",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "comparison_value": "109.9",
+                "comparison_period": "3Q25",
+                "metric_type": "other_adjusted",
+                "card_id": "c1:sec_edgar:0001101302-26-000159:entgq32026ex992.htm#u6",
+                "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Non-GAAP net income $189.7 $109.9 $142.7"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "Net sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "807.1",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,005.7"
+                }
+              },
+              {
+                "metric": "Gross margin",
+                "value": "49.7",
+                "unit": "percent",
+                "period": "Q3 2026",
+                "comparison_value": "43.5",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Gross margin - as a % of net sales\n49.7\n%"
+                }
+              },
+              {
+                "metric": "Net sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "807.1",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,005.7\n$807.1\n$883.2"
+                }
+              },
+              {
+                "metric": "Gross profit",
+                "value": "500.2",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "351.3",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Gross profit\n500.2\n351.3\n420.0"
+                }
+              },
+              {
+                "metric": "Operating income",
+                "value": "230.6",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "122.6",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Operating income\n230.6\n122.6\n164.6"
+                }
+              },
+              {
+                "metric": "Net income",
+                "value": "157.8",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "70.5",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net income\n$157.8\n$70.5\n$93.6"
+                }
+              },
+              {
+                "metric": "Net sales",
+                "value": "2700.8",
+                "unit": "USD_millions",
+                "period": "9M 2026",
+                "comparison_value": "2372.7",
+                "comparison_period": "9M 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$2,700.8\n$2,372.7"
+                }
+              },
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "266.8",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "249.5",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net cash provided by operating activities\n266.8\n249.5\n606.0\n503.4"
+                }
+              },
+              {
+                "metric": "Acquisition of property, plant and equipment",
+                "value": "-43.2",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "-66.7",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Acquisition of property, plant and equipment\n(43.2)\n(66.7)\n(124.0)\n(241.2)"
+                }
+              },
+              {
+                "metric": "Net sales",
+                "value": 1005.7,
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Total net sales\n$1,005.7\n$807.1\n$883.2"
+                }
+              },
+              {
+                "metric": "Net income",
+                "value": 157.8,
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net income\n$157.8\n$70.5\n$93.6\nDiluted earnings per common share\n$1.03\n$0.46\n$0.61"
+                }
+              },
+              {
+                "metric": "Net Sales",
+                "value": "1005.7",
+                "unit": "USD_MILLIONS",
+                "period": "3Q26",
+                "comparison_value": "807.1",
+                "comparison_period": "3Q25",
+                "reported_change": "24.6%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $1,005.7 $807.1 $883.2 24.6% 13.9%"
+                }
+              },
+              {
+                "metric": "Gross Margin",
+                "value": "49.7",
+                "unit": "PERCENT",
+                "period": "3Q26",
+                "comparison_value": "43.5",
+                "comparison_period": "3Q25",
+                "reported_change": "6.2%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Gross Margin 49.7% 43.5% 47.6%"
+                }
+              },
+              {
+                "metric": "Adjusted Gross Margin",
+                "value": "48.9",
+                "unit": "PERCENT",
+                "period": "3Q26",
+                "comparison_value": "43.6",
+                "comparison_period": "3Q25",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted Gross Margin – as a % of Net Sales1 48.9% 43.6% 47.6%"
+                }
+              },
+              {
+                "metric": "Net Sales",
+                "value": "1005.7",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $773.2 $792.4 $807.1 $823.9 $3,196.6 $811.9 $883.2 $1,005.7"
+                }
+              },
+              {
+                "metric": "Gross profit - GAAP",
+                "value": "500.2",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Gross profit - GAAP $356.5 $351.5 $351.3 $360.6 $1,419.9 $380.8 $420.0 $500.2"
+                }
+              },
+              {
+                "metric": "Adjusted EBITDA",
+                "value": "303.3",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted EBITDA $220.7 $216.7 $220.7 $228.1 $886.2 $226.1 $250.7 $303.3"
+                }
+              },
+              {
+                "metric": "Non-GAAP net income",
+                "value": "189.7",
+                "unit": "USD_millions",
+                "period": "3Q26",
+                "comparison_value": "109.9",
+                "comparison_period": "3Q25",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Non-GAAP net income $189.7 $109.9 $142.7"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1025",
+                "midpoint": null,
+                "high": "1055",
+                "unit": "USD_millions",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "For the Company’s guidance for the fourth quarter ending December 31, 2026, the Company expects sales of $1,025 million to $1,055 million."
+                }
+              },
+              {
+                "metric": "diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1.09",
+                "midpoint": null,
+                "high": "1.17",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "diluted earnings per common share is expected to be between $1.09 and $1.17."
+                }
+              },
+              {
+                "metric": "non-GAAP diluted EPS",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1.32",
+                "midpoint": null,
+                "high": "1.40",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "On a non-GAAP basis, the Company expects diluted earnings per common share to range from $1.32 to $1.40"
+                }
+              },
+              {
+                "metric": "net_sales",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 1025.0,
+                "midpoint": null,
+                "high": 1055.0,
+                "unit": "$M",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net sales\n$1,025 - $1,055"
+                }
+              },
+              {
+                "metric": "operating_income",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 235.0,
+                "midpoint": null,
+                "high": 250.0,
+                "unit": "$M",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "GAAP - Operating income\n$235 - $250"
+                }
+              },
+              {
+                "metric": "diluted_eps",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": 1.09,
+                "midpoint": null,
+                "high": 1.17,
+                "unit": "$",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Diluted earnings per common share\n$1.09 - $1.17\nAdjustments to earnings per share:\nAmortization of intangible assets\n0.29\nIncome tax effect\n(0.06)\nDiluted non-GAAP earnings per common share\n$1.32 - $1.40"
+                }
+              },
+              {
+                "metric": "Net Sales",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1025",
+                "midpoint": null,
+                "high": "1055",
+                "unit": "USD_MILLIONS",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net Sales $1,025 - $1,055 $1,005.7 $883.2"
+                }
+              },
+              {
+                "metric": "Diluted non-GAAP Earnings per Common Share",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1.32",
+                "midpoint": null,
+                "high": "1.40",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Diluted non-GAAP Earnings per Common Share1 $1.32 - $1.40 $1.23 $0.93"
+                }
+              },
+              {
+                "metric": "net_sales",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1025",
+                "midpoint": null,
+                "high": "1055",
+                "unit": "USD_millions",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Net sales $1,025 - $1,055"
+                }
+              },
+              {
+                "metric": "GAAP net income",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "value": null,
+                "low": "168",
+                "midpoint": null,
+                "high": "181",
+                "unit": "USD_millions",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "GAAP net income $168 - $181"
+                }
+              },
+              {
+                "metric": "diluted_non_gaap_eps",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1.32",
+                "midpoint": null,
+                "high": "1.40",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Diluted non-GAAP earnings per common share $1.32 - $1.40"
+                }
+              },
+              {
+                "metric": "adjusted_ebitda",
+                "period": "4Q26",
+                "guidance_type": "range",
+                "value": null,
+                "low": "315",
+                "midpoint": null,
+                "high": "329",
+                "unit": "USD_millions",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex992.htm",
+                  "quote": "Adjusted EBITDA $315- $329 Adjusted EBITDA - as a % of net sales 30.7% - 31.2%"
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "266.8",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "249.5",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Net cash provided by operating activities\n266.8\n249.5\n606.0\n503.4"
+                },
+                "metric_type": "operating_cash_flow",
+                "reconciliation": []
+              },
+              {
+                "metric": "Acquisition of property, plant and equipment",
+                "value": "-43.2",
+                "unit": "USD_millions",
+                "period": "Q3 2026",
+                "comparison_value": "-66.7",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001101302-26-000159:entgq32026ex991.htm",
+                  "quote": "Acquisition of property, plant and equipment\n(43.2)\n(66.7)\n(124.0)\n(241.2)"
+                },
+                "metric_type": "capex",
+                "reconciliation": []
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [
+              "facts.cards[29]:quote_not_found_in_sec_edgar:0001101302-26-000159:entgq32026ex992.htm"
+            ],
+            "extraction_batch_count": 7,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.54,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 2,
+                "kinds": {
+                  "financial_results": 2
+                },
+                "sources": {
+                  "sec_edgar": 2
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-10-29T14:26:17-04:00",
+              "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
+              "official_ir_check_count": 4,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "營收與毛利率同步顯著強勁擴張",
+                "why_it_matters": "顯示半導體材料需求回溫且營運槓桿效益持續釋放，帶動獲利能力提升。",
+                "fact_basis": [
+                  "Q3 2026 Net sales 為 $1,005.7M，同比成長 24.6%，環比成長 13.9%",
+                  "Q3 2026 GAAP Gross margin 為 49.7%，同比增加 6.2 個百分點"
+                ],
+                "inference": "產品組合改善與產能利用率提升帶動利潤率結構性改善，獲利爆發力強於營收成長。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 Net sales 達到 $1,005.7M，呈現雙位數的同比與環比成長",
+                "9M 2026 累計 Net sales 為 $2,700.8M，顯著高於 9M 2025 的 $2,372.7M"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 GAAP Gross margin 為 49.7%（3Q25 為 43.5%，2Q26 為 47.6%），Adjusted Gross Margin 達到 48.9%",
+                "Q3 2026 Operating income 為 $230.6M（3Q25 為 $122.6M），Adjusted EBITDA 達 $303.3M"
+              ],
+              "cash_capital_intensity": [
+                "Q3 2026 營業現金流 (CFO) 為 $266.8M，資本支出 (Capex) 下降至 $43.2M（3Q25 為 $66.7M），顯示自由現金流顯著強化"
+              ]
+            },
+            "guidance_assessment": [
+              "Q4 2026 Net sales 指引為 $1,025M 至 $1,055M，續創環比成長",
+              "Q4 2026 Adjusted EBITDA 指引為 $315M 至 $329M，佔營收比重 30.7% 至 31.2%",
+              "Q4 2026 non-GAAP diluted EPS 指引為 $1.32 至 $1.40，GAAP diluted EPS 指引為 $1.09 至 $1.17",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "數據顯示整體營收成長動能強勁，但由於 Packet 缺乏客戶數、大客戶留存率或產品線細項數據，無法獨立判定客戶廣度與深度之擴張品質。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "雖然毛利率達到 49.7% 顯現極佳的獲利能力，但 Packet 中缺乏直接定價權、市佔率轉移或客戶轉換成本之證據，無法僅由高成長與高利潤直接判定 Moat 擴大。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "若下游半導體客戶產能利用率下滑，可能導致材料消耗減緩，反證指標為 Q4 2026 實際營收低於指引下限 $1,025M。",
+              "資本支出減少可能影響長期產能擴充速度，若產業快速反彈，可能面臨產能瓶頸。"
+            ],
+            "watch_items": [
+              "Q4 2026 實際 Net sales 是否達指引高標 $1,055M",
+              "Adjusted EBITDA Margin 能否持續維持在 31% 以上水準",
+              "後續資本支出投資規劃與產能利用率走勢"
+            ],
+            "confidence": 85,
+            "telegram_draft": "ENTG ENTG_2026-10-29\n\n💡 投資結論與邏輯:\n• 營收規模顯著擴增與毛利率提升形成強烈營運槓桿，獲利成長速度明顯超越營收成長，顯示獲利能力強勁拉升。\n• 現金流創造能力大幅改善，資本支出隨建置階段性完成而放緩，大幅強化整體自由現金流品質。\n\n📊 關鍵數據與財測:\n• 營收動能：Q3 Net sales 為 $1,005.7M（同比 +24.6%、環比 +13.9%），9M 累計達 $2,700.8M，反映終端客戶材料需求拉貨強勁；但未揭露客戶集中度細節，無法單獨判定客戶擴張深度。\n• 獲利結構：Q3 Gross margin 達到 49.7%（同比 +6.2%），Adjusted EBITDA 達 $303.3M，GAAP Net income 達 $157.8M，顯示規模經濟與產品組合優化持續發揮效益。\n• 現金流與資本支出：Q3 營業現金流達 $266.8M，Capex 放緩至 $43.2M（3Q25 為 $66.7M），資本強度降低有助於自由現金流可持續性累積。\n• Q4 財測展望：下季指引 Net sales 為 $1,025M - $1,055M，Adjusted EBITDA 為 $315M - $329M（佔營收比 30.7% - 31.2%），non-GAAP EPS 為 $1.32 - $1.40；外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動分析：本季營收與毛利率雙雙突破，營運槓桿顯著釋放；惟逐字稿與法說問答數據未提供，無法進一步分析管理層針對具體產品線或客戶庫存調整之攻防回應。\n\n⚠️ 風險、反證與待驗證:\n• 若半導體晶圓廠稼動率回升不如預期，材料拉貨力道可能放緩，可觀察 Q4 實際營收是否低於指引下限 $1,025M。\n• 資本支出下降雖利於短期現金流，但需持續驗證是否影響先進製程產能之長期擴充能力。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "ENTG FY2026 Q3\n\n💡 投資結論與邏輯:\n• 營收規模擴增帶動營運槓桿釋放，帶動獲利成長速度超越營收，顯現獲利結構改善。\n• 營業現金流強勁，配合資本支出階段性放緩，提升自由現金流累積效益。\n\n📊 關鍵數據與財測:\n• 營收動能：Q3 Net sales 為 $1,005.7M（同比 +24.6%、環比 +13.9%），9M 累計 $2,700.8M，反映材料需求回溫；但未揭露客戶集中度，無法單獨判定客戶擴張品質。\n• 獲利結構：Q3 Gross margin 為 49.7%（3Q25 為 43.5%），Adjusted EBITDA 達 $303.3M，顯示規模效益發揮；但毛利提升不直接等同強大定價權。\n• 現金流與資本支出：Q3 營業現金流為 $266.8M，Capex 下降至 $43.2M（3Q25 為 $66.7M），資本強度降低有助於自由現金流可持續性。\n• 指引展望：下季 Net sales 指引為 $1,025M 至 $1,055M，Adjusted EBITDA 為 $315M 至 $329M（佔營收 30.7% 至 31.2%），non-GAAP EPS 為 $1.32 至 $1.40，GAAP EPS 為 $1.09 至 $1.17。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動分析：本季營收與利潤率同步增長；但因法說逐字稿與問答數據未揭露，無法分析管理層對具體產品線與庫存動態之說明。\n\n⚠️ 風險、反證與待驗證:\n• 下游晶圓廠稼動率若回升不如預期，可能減緩材料拉貨，觀察下季營收是否低於指引下限 $1,025M。\n• 資本支出放緩雖有利短期現金流，仍需驗證是否影響先進製程之長期產能供給能力。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:現金流與資本支出：Q3 營業現金流為 $266.8M，Capex 下降至 $43.2M（3Q25 為 $66.7M），資本強度降低有助於自由現金流可持續性。",
+              "kpi_without_readthrough:指引展望：下季 Net sales 指引為 $1,025M 至 $1,055M，Adjusted EBITDA 為 $315M 至 $329M（佔營收 30.7% 至 31.2%）"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "營收規模擴張與毛利率提升",
+                "why_it_matters": "反映營運槓桿效益帶動獲利能力改善。",
+                "fact_basis": [
+                  "Q3 2026 Net sales 為 $1,005.7M，同比成長 24.6%，環比成長 13.9%",
+                  "Q3 2026 GAAP Gross margin 為 49.7%，同比增加 6.2 個百分點"
+                ],
+                "inference": "規模效益釋放帶動利潤率結構改善，惟獲利成長仍受半導體產業週期影響。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 Net sales 達到 $1,005.7M，呈現同比與環比成長",
+                "9M 2026 累計 Net sales 為 $2,700.8M，高於 9M 2025 的 $2,372.7M"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 GAAP Gross margin 為 49.7%（3Q25 為 43.5%，2Q26 為 47.6%），Adjusted Gross Margin 達 48.9%",
+                "Q3 2026 Operating income 為 $230.6M（3Q25 為 $122.6M），Adjusted EBITDA 達 $303.3M"
+              ],
+              "cash_capital_intensity": [
+                "Q3 2026 營業現金流為 $266.8M，Capex 下降至 $43.2M（3Q25 為 $66.7M），顯示營運現金流入穩定與資本支出放緩"
+              ]
+            },
+            "guidance_assessment": [
+              "Q4 2026 Net sales 指引為 $1,025M 至 $1,055M，反映管理層對營收成長之預期",
+              "Q4 2026 Adjusted EBITDA 指引為 $315M 至 $329M，佔營收比重 30.7% 至 31.2%",
+              "Q4 2026 non-GAAP diluted EPS 指引為 $1.32 至 $1.40，GAAP diluted EPS 指引為 $1.09 至 $1.17",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "數據顯示整體營收成長，但由於未揭露客戶數或產品細項，無法獨立判定客戶擴張品質與集中度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "毛利率達到 49.7%，但缺乏直接定價權或客戶轉換成本之證據，無法僅由高利潤判定護城河擴大。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "若下游半導體客戶稼動率下滑可能減緩材料需求，觀察下季實際營收是否落於指引區間內。",
+              "資本支出放緩可能影響先進製程之長期產能供給能力。"
+            ],
+            "watch_items": [
+              "下季實際 Net sales 是否達成管理層指引區間",
+              "Adjusted EBITDA Margin 是否維持於指引水準",
+              "後續資本支出規劃與稼動率走勢"
+            ],
+            "confidence": 85,
+            "telegram_draft": "ENTG FY2026 Q3\n\n💡 投資結論與邏輯:\n• 營收規模擴增帶動營運槓桿釋放，帶動獲利成長速度超越營收，顯現獲利結構改善。\n• 營業現金流強勁，配合資本支出階段性放緩，提升自由現金流累積效益。\n\n📊 關鍵數據與財測:\n• 營收動能：Q3 Net sales 為 $1,005.7M（同比 +24.6%、環比 +13.9%），9M 累計 $2,700.8M，顯示材料需求回溫，但未揭露客戶集中度與訂單細項，仍不能據此證實產品單價或長週期需求轉變。\n• 獲利結構：Q3 Gross margin 為 49.7%（3Q25 為 43.5%），Adjusted EBITDA 達 $303.3M，顯示規模效益釋放，但毛利提升仍不能直接證實產品組合改善或具備強大定價權。\n• 現金流與資本支出：Q3 營業現金流為 $266.8M，Capex 下降至 $43.2M（3Q25 為 $66.7M），顯示營運現金產生能力穩定且資本強度下降，但 Capex 放緩仍不能保證自由現金流持續可持續性累積。\n• 指引展望：下季 Net sales 指引為 $1,025M 至 $1,055M，Adjusted EBITDA 為 $315M 至 $329M（佔營收 30.7% 至 31.2%），non-GAAP EPS 指引為 $1.32 至 $1.40，GAAP EPS 指引為 $1.09 至 $1.17，反映管理層對短期營運成長之預期，但指引屬管理層展望，仍不能視為已實現業績。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動分析：本季營收與利潤率同步增長；但因法說逐字稿與問答數據未揭露，無法分析管理層對具體產品線與庫存動態之說明。\n\n⚠️ 風險、反證與待驗證:\n• 下游晶圓廠稼動率若回升不如預期，可能減緩材料拉貨，反證指標可觀察下季實際營收是否達指引區間。\n• 資本支出放緩雖有利短期現金流，仍需驗證是否影響先進製程之長期產能供給能力。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "ENTG FY2026 Q3\n\n💡 投資結論與邏輯:\n• 營收規模擴增帶動營運槓桿釋放，帶動獲利成長速度超越營收，顯現獲利結構改善。\n• 營業現金流強勁，配合資本支出階段性放緩，提升自由現金流累積效益。\n\n📊 關鍵數據與財測:\n• 營收動能：Q3 Net sales 為 $1,005.7M（同比 +24.6%、環比 +13.9%），9M 累計 $2,700.8M，顯示材料需求回溫，但未揭露客戶集中度與訂單細項，仍不能據此證實產品單價或長週期需求轉變。\n• 獲利結構：Q3 Gross margin 為 49.7%（3Q25 為 43.5%），Adjusted EBITDA 達 $303.3M，顯示規模效益釋放，但毛利提升仍不能直接證實產品組合改善或具備強大定價權。\n• 現金流與資本支出：Q3 營業現金流為 $266.8M，Capex 下降至 $43.2M（3Q25 為 $66.7M），顯示營運現金產生能力穩定且資本強度下降，但 Capex 放緩仍不能保證自由現金流可持續累積。\n• 指引展望：下季 Net sales 指引為 $1,025M 至 $1,055M，Adjusted EBITDA 為 $315M 至 $329M（佔營收 30.7% 至 31.2%），non-GAAP EPS 指引為 $1.32 至 $1.40，GAAP EPS 指引為 $1.09 至 $1.17，反映管理層對短期營運成長之預期，但指引屬管理層展望，仍不能視為已實現業績。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動分析：本季營收與利潤率同步增長；但因法說逐字稿與問答數據未揭露，無法分析管理層對具體產品線與庫存動態之說明。\n\n⚠️ 風險、反證與待驗證:\n• 下游晶圓廠稼動率若回升不如預期，可能減緩材料拉貨，反證指標可觀察下季實際營收是否達指引區間。\n• 資本支出放緩雖有利短期現金流，仍需驗證是否影響先進製程之長期產能供給能力。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
             "customer_readthrough_errors": [],
             "density_errors": [],
             "numeric_provenance_errors": [],
