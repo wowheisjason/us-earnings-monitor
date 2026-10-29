@@ -905,6 +905,264 @@
         "filing_date": "2026-10-29",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001018724-26-000038:amzn-20260930xex991.htm",
+      "ticker": "AMZN",
+      "title": "Amazon Form 8-K — Earnings Release / Exhibit EX-99.1 — amzn-20260930xex991.htm",
+      "published_at": "2026-10-29T20:05:27.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001018724",
+        "accession": "0001018724-26-000038",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-29",
+        "period_from_exhibit_filename": "2026-09-30"
+      }
+    },
+    "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001018724-26-000038:amzn-20260930xex992.htm",
+      "ticker": "AMZN",
+      "title": "Amazon Form 8-K — Earnings Release / Exhibit EX-99.2 — amzn-20260930xex992.htm",
+      "published_at": "2026-10-29T20:05:27.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex992.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex992.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001018724",
+        "accession": "0001018724-26-000038",
+        "form": "8-K",
+        "document_type": "EX-99.2",
+        "filing_date": "2026-10-29",
+        "period_from_exhibit_filename": "2026-09-30"
+      }
+    },
+    "sec_edgar:0000050863-26-000188:q326earningsrelease.htm": {
+      "source": "sec_edgar",
+      "source_id": "0000050863-26-000188:q326earningsrelease.htm",
+      "ticker": "INTC",
+      "title": "Intel Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-10-29T20:08:53.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "period_end": "2026-10-29",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000050863",
+        "accession": "0000050863-26-000188",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-29",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0000319201-26-000034:klac-20260930.htm": {
+      "source": "sec_edgar",
+      "source_id": "0000319201-26-000034:klac-20260930.htm",
+      "ticker": "KLAC",
+      "title": "KLA Form 10-Q — 10-Q",
+      "published_at": "2026-10-29T20:08:32.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "other",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000319201",
+        "accession": "0000319201-26-000034",
+        "form": "10-Q",
+        "document_type": "10-Q",
+        "filing_date": "2026-10-29",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+      "ticker": "SNDK",
+      "title": "Sandisk Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-10-29T20:13:53.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm",
+      "fiscal_year": 2027,
+      "quarter": null,
+      "period_end": "2026-10-29",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0002023554",
+        "accession": "0001628280-26-068243",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-29",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0001101302-26-000162:entg-20260926.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001101302-26-000162:entg-20260926.htm",
+      "ticker": "ENTG",
+      "title": "Entegris Form 10-Q — 10-Q",
+      "published_at": "2026-10-29T20:36:24.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1101302/000110130226000162/entg-20260926.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1101302/000110130226000162/entg-20260926.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "other",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001101302",
+        "accession": "0001101302-26-000162",
+        "form": "10-Q",
+        "document_type": "10-Q",
+        "filing_date": "2026-10-29",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "official_ir:642ea77e3816f921fd932b09": {
+      "source": "official_ir",
+      "source_id": "642ea77e3816f921fd932b09",
+      "ticker": "KLAC",
+      "title": "Earnings Release",
+      "published_at": "2026-10-29T00:00:00-04:00",
+      "url": "https://ir.kla.com/news-events/press-releases/detail/523/kla-corporation-reports-fiscal-2027-first-quarter-results/",
+      "document_url": "https://ir.kla.com/news-events/press-releases/detail/523/kla-corporation-reports-fiscal-2027-first-quarter-results/",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://ir.kla.com/"
+      }
+    },
+    "official_ir:acb56e8b319f3dec71cdf264": {
+      "source": "official_ir",
+      "source_id": "acb56e8b319f3dec71cdf264",
+      "ticker": "KLAC",
+      "title": "10-Q Filing Q1 2027 Quarterly Results 10-Q Filing PDF HTML",
+      "published_at": "2026-10-29T00:00:00-04:00",
+      "url": "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000034/klac-20260930.htm",
+      "document_url": "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000034/klac-20260930.htm",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "other",
+      "metadata": {
+        "service": "official_ir",
+        "format": "htm",
+        "index_url": "https://ir.kla.com/"
+      }
+    },
+    "official_ir:2506a99482799756a2f0dcba": {
+      "source": "official_ir",
+      "source_id": "2506a99482799756a2f0dcba",
+      "ticker": "KLAC",
+      "title": "PDF Q1 2027 Quarterly Results PDF HTML",
+      "published_at": "2026-10-29T00:00:00-04:00",
+      "url": "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000034/0000319201-26-000034.pdf",
+      "document_url": "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000034/0000319201-26-000034.pdf",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "other",
+      "metadata": {
+        "service": "official_ir",
+        "format": "pdf",
+        "index_url": "https://ir.kla.com/"
+      }
+    },
+    "official_ir:f576908d1483b036ee298255": {
+      "source": "official_ir",
+      "source_id": "f576908d1483b036ee298255",
+      "ticker": "KLAC",
+      "title": "KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast",
+      "published_at": "2026-10-29T00:00:00-04:00",
+      "url": "https://ir.kla.com/news-events/press-releases/detail/522/kla-announces-first-quarter-fiscal-year-2027-earnings-date",
+      "document_url": "https://ir.kla.com/news-events/press-releases/detail/522/kla-announces-first-quarter-fiscal-year-2027-earnings-date",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://ir.kla.com/"
+      }
+    },
+    "official_ir:d3c84bf0a7ae250c05077fce": {
+      "source": "official_ir",
+      "source_id": "d3c84bf0a7ae250c05077fce",
+      "ticker": "KLAC",
+      "title": "ir.kla.com KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast MILPITAS, Calif., October 1, 2026 -- KLA Corporation (NASDAQ: KLAC), a global leader in semiconductor process control ",
+      "published_at": "2026-10-29T00:00:00-04:00",
+      "url": "http://ir.kla.com/",
+      "document_url": "http://ir.kla.com/",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://ir.kla.com/news-events/press-releases/detail/522/kla-announces-first-quarter-fiscal-year-2027-earnings-date"
+      }
+    },
+    "official_ir:70b256e0c57cc250e8006529": {
+      "source": "official_ir",
+      "source_id": "70b256e0c57cc250e8006529",
+      "ticker": "KLAC",
+      "title": "Company Info KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast",
+      "published_at": "2026-10-29T00:00:00-04:00",
+      "url": "https://ir.kla.com/company-information",
+      "document_url": "https://ir.kla.com/company-information",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://ir.kla.com/news-events/press-releases/detail/522/kla-announces-first-quarter-fiscal-year-2027-earnings-date"
+      }
+    },
+    "official_ir:7cb0490789b00df94887e4b1": {
+      "source": "official_ir",
+      "source_id": "7cb0490789b00df94887e4b1",
+      "ticker": "KLAC",
+      "title": "Stock Data KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast",
+      "published_at": "2026-10-29T00:00:00-04:00",
+      "url": "https://ir.kla.com/stock-data",
+      "document_url": "https://ir.kla.com/stock-data",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://ir.kla.com/news-events/press-releases/detail/522/kla-announces-first-quarter-fiscal-year-2027-earnings-date"
+      }
     }
   },
   "events": {
@@ -922,7 +1180,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -1287,7 +1545,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1585,7 +1843,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1896,7 +2154,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2130,7 +2388,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2281,7 +2539,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2730,7 +2988,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2806,16 +3064,16 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-29T14:26:17-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.187,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -2828,7 +3086,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.248,
+            "seconds": 0.445,
             "documents": 0,
             "partial": false
           },
@@ -2841,7 +3099,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -2861,11 +3119,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
+        "next_ir_retry_at": "2026-10-30T05:06:34-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -2887,39 +3145,39 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.125,
+            "seconds": 0.208,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MSFT-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.711,
+            "seconds": 0.259,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.075,
+            "seconds": 0.19,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MSFT-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -2940,11 +3198,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
+        "next_ir_retry_at": "2026-10-30T05:06:34-04:00"
       },
       "delivery": {}
     },
@@ -2961,16 +3219,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -2983,7 +3241,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.137,
+            "seconds": 0.141,
             "documents": 0,
             "partial": false
           },
@@ -2996,7 +3254,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3016,11 +3274,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
+        "next_ir_retry_at": "2026-10-30T05:06:34-04:00"
       },
       "delivery": {}
     },
@@ -3037,16 +3295,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -3059,7 +3317,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.341,
+            "seconds": 0.356,
             "documents": 0,
             "partial": false
           },
@@ -3072,7 +3330,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3092,11 +3350,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
+        "next_ir_retry_at": "2026-10-30T05:06:34-04:00"
       },
       "delivery": {}
     },
@@ -3113,39 +3371,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:26:17-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.073,
+            "seconds": 0.067,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GOOGL-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.087,
+            "seconds": 0.07,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.129,
+            "seconds": 0.144,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GOOGL-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3165,11 +3423,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_check_count": 4,
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 5,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
+        "next_ir_retry_at": "2026-10-29T19:06:34-04:00"
       },
       "delivery": {}
     },
@@ -3187,16 +3445,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -3209,7 +3467,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.54,
+            "seconds": 0.495,
             "documents": 0,
             "partial": false
           },
@@ -3222,7 +3480,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T14:26:17-04:00",
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3242,11 +3500,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_checked_at": "2026-10-29T14:26:17-04:00",
-        "official_ir_check_count": 4,
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 5,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-29T16:26:17-04:00"
+        "next_ir_retry_at": "2026-10-29T19:06:34-04:00"
       },
       "delivery": {}
     },
@@ -3263,39 +3521,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-29T14:57:10-04:00",
+      "updated_at": "2026-10-29T17:06:34-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.126,
+            "seconds": 0.06,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GLW-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.66,
+            "seconds": 0.261,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.098,
+            "seconds": 0.073,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GLW-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T14:57:10-04:00",
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3315,11 +3573,391 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T14:57:10-04:00",
-        "official_ir_checked_at": "2026-10-29T14:57:10-04:00",
-        "official_ir_check_count": 4,
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 5,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-10-29T19:06:34-04:00"
+      },
+      "delivery": {}
+    },
+    "AMZN_2026-09-30_Q3": {
+      "event_id": "AMZN_2026-09-30_Q3",
+      "ticker": "AMZN",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "first_seen_at": "2026-10-29T17:06:34-04:00",
+      "period_end": "2026-09-30",
+      "documents": [
+        "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+        "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-29T17:06:34-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.06,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMZN-2026-Q3",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 0.202,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.054,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMZN-2026-Q3"
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 2,
+          "kinds": {
+            "financial_results": 2
+          },
+          "sources": {
+            "sec_edgar": 2
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 1,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-10-29T15:27:10-04:00"
+        "next_ir_retry_at": "2026-10-29T17:21:34-04:00"
+      },
+      "delivery": {}
+    },
+    "INTC_2026-10-29": {
+      "event_id": "INTC_2026-10-29",
+      "ticker": "INTC",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "first_seen_at": "2026-10-29T17:06:34-04:00",
+      "period_end": "2026-10-29",
+      "documents": [
+        "sec_edgar:0000050863-26-000188:q326earningsrelease.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-29T17:06:34-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 0.202,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-29T17:21:34-04:00"
+      },
+      "delivery": {}
+    },
+    "KLAC_2026-09-30_Q1": {
+      "event_id": "KLAC_2026-09-30_Q1",
+      "ticker": "KLAC",
+      "fiscal_year": 2027,
+      "quarter": "Q1",
+      "first_seen_at": "2026-10-29T17:06:34-04:00",
+      "period_end": "2026-09-30",
+      "documents": [
+        "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+        "official_ir:642ea77e3816f921fd932b09",
+        "official_ir:acb56e8b319f3dec71cdf264",
+        "official_ir:2506a99482799756a2f0dcba",
+        "official_ir:f576908d1483b036ee298255",
+        "official_ir:d3c84bf0a7ae250c05077fce",
+        "official_ir:70b256e0c57cc250e8006529",
+        "official_ir:7cb0490789b00df94887e4b1"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-29T17:06:34-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.051,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/KLAC-2027-Q1",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 2.772,
+            "documents": 7,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.057,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/KLAC-2027-Q1"
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 8,
+          "kinds": {
+            "other": 3,
+            "financial_results": 5
+          },
+          "sources": {
+            "sec_edgar": 1,
+            "official_ir": 7
+          },
+          "has_primary_results": true,
+          "has_official_ir": true,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-29T17:21:34-04:00"
+      },
+      "delivery": {}
+    },
+    "SNDK_2026-10-29": {
+      "event_id": "SNDK_2026-10-29",
+      "ticker": "SNDK",
+      "fiscal_year": 2027,
+      "quarter": null,
+      "first_seen_at": "2026-10-29T17:06:34-04:00",
+      "period_end": "2026-10-29",
+      "documents": [
+        "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm"
+      ],
+      "status": "needs_human_review",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-29T17:06:34-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": false,
+            "seconds": 1.098,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "official_ir_last_attempt_incomplete": "2026-10-29T17:06:34-04:00",
+        "next_ir_retry_at": "2026-10-29T17:21:34-04:00"
+      },
+      "delivery": {}
+    },
+    "ENTG_2026-09-26_Q3": {
+      "event_id": "ENTG_2026-09-26_Q3",
+      "ticker": "ENTG",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "first_seen_at": "2026-10-29T17:06:34-04:00",
+      "period_end": "2026-09-26",
+      "documents": [
+        "sec_edgar:0001101302-26-000162:entg-20260926.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-29T17:06:34-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.058,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/ENTG-2026-Q3",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 0.097,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.065,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/ENTG-2026-Q3"
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "other": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": false,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-29T17:21:34-04:00"
       },
       "delivery": {}
     }
@@ -3328,13 +3966,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-10-29T08:59:18-04:00",
-      "blocked_until": "2026-10-29T14:59:18-04:00",
+      "last_failure_at": "2026-10-29T17:06:34-04:00",
+      "blocked_until": "2026-10-29T23:06:34-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-29T14:57:10-04:00",
+      "last_success_at": "2026-10-29T17:06:34-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -22784,6 +23422,1379 @@
             "interpretation_errors": [],
             "customer_readthrough_errors": [],
             "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "SNDK_2026-10-29": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "4a05d2ac544699e12e92132cde7b6f84afb8184ab5edc6c71c04ed02c91aa588",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+              "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Fiscal first quarter revenue was $11.0 billion, up 23% sequentially.",
+                "materiality_candidate": 5,
+                "quote": "Fiscal first quarter revenue was $11.0 billion, up 23% sequentially, with GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially).",
+                "metric": "Revenue",
+                "value": "11031",
+                "unit": "USD_MILLIONS",
+                "period": "Q1 2027",
+                "comparison_period": "Q4 2026",
+                "reported_change": "up 23%"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $8.1 billion, or $52.60 diluted net income per share.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially).",
+                "metric": "Diluted Net Income Per Share",
+                "value": "52.60",
+                "unit": "USD",
+                "period": "Q1 2027",
+                "comparison_period": "Q4 2026",
+                "reported_change": "up 20%"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "First quarter Non-GAAP diluted net income per share was $49.51.",
+                "materiality_candidate": 4,
+                "quote": "First quarter Non-GAAP diluted net income per share was $49.51.",
+                "metric": "Diluted Net Income Per Share",
+                "value": "49.51",
+                "unit": "USD",
+                "period": "Q1 2027"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter.",
+                "materiality_candidate": 4,
+                "quote": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter.",
+                "metric": "share_repurchase",
+                "value": "5000",
+                "unit": "USD_MILLIONS",
+                "period": "Q1 2027"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expect second quarter 2027 revenue to be in the range of $12.2 billion to $12.6 billion.",
+                "materiality_candidate": 5,
+                "quote": "Expect second quarter 2027 revenue to be in the range of $12.2 billion to $12.6 billion",
+                "metric": "Revenue",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "low": "12200",
+                "high": "12600",
+                "unit": "USD_MILLIONS"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expected Non-GAAP diluted net income per share on a pre-split basis in the range of $55.00 to $57.00 for second quarter 2027.",
+                "materiality_candidate": 5,
+                "quote": "expected Non-GAAP diluted net income per share on a pre-split basis in the range of $55.00 to $57.00",
+                "metric": "Diluted Net Income Per Share",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "low": "55.00",
+                "high": "57.00",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second quarter 2027 GAAP gross margin guidance is 84.4% to 85.4% and Non-GAAP gross margin guidance is 84.5% to 85.5%.",
+                "materiality_candidate": 4,
+                "quote": "Gross Margin\n84.4% - 85.4%\n84.5% - 85.5%",
+                "metric": "Gross Margin",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "low": "84.4",
+                "high": "85.4",
+                "unit": "PERCENT"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u3",
+              "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue, net for the three months ended October 2, 2026 was $11,031 million compared to $2,308 million for the three months ended October 3, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Revenue, net\n$\n11,031\n$\n2,308",
+                "metric": "Revenue, net",
+                "value": 11031,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 2308,
+                "comparison_period": "Three Months Ended October 3, 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income for the three months ended October 2, 2026 was $8,101 million compared to $112 million for the three months ended October 3, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$\n8,101\n$\n112",
+                "metric": "Net income",
+                "value": 8101,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 112,
+                "comparison_period": "Three Months Ended October 3, 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $6,363 million for the three months ended October 2, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Net cash provided by operating activities\n6,363\n488",
+                "metric": "Net cash provided by operating activities",
+                "value": 6363,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 488,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "metric_type": "operating_cash_flow"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Purchases of property, plant and equipment were $54 million for the three months ended October 2, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Purchases of property, plant and equipment\n(54)\n(50)",
+                "metric": "Purchases of property, plant and equipment",
+                "value": -54,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": -50,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "metric_type": "capex"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u5",
+              "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "For the three months ended October 2, 2026, cash flow from operating activities was $6,363 million, purchases of property, plant and equipment, net was $54 million, resulting in free cash flow of $6,309 million and adjusted free cash flow of $5,696 million.",
+                "materiality_candidate": 4,
+                "quote": "Cash flows\nCash flow from operating activities\n$\n6,363\n$\n7,126\n$\n488\nPurchases of property, plant and equipment, net\n(54)\n(43)\n(50)\nFree cash flow\n6,309\n7,083\n438\nActivity related to Flash Ventures, net\n(148)\n(110)\n10\nImpact of NBM prepayments and deposits\n(465)\n(1,938)\n—\nAdjusted free cash flow\n$\n5,696\n$\n5,035\n$\n448",
+                "metric": "free_cash_flow",
+                "metric_type": "standard_fcf",
+                "value": 6309,
+                "unit": "USD_MILLIONS",
+                "period": "Q1_2027"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow is defined as Cash Flow from operating activities less purchases of property, plant and equipment, net.",
+                "materiality_candidate": 3,
+                "quote": "Free cash flow is defined as Cash Flow from operating activities less purchases of property, plant and equipment, net.",
+                "metric_type": "standard_fcf"
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted free cash flow is defined as Free cash flow plus the activity related to Flash Ventures, net less the impact of cash prepayments under New Business Model (NBM) agreements and deposits received and returned under NBM agreements.",
+                "materiality_candidate": 3,
+                "quote": "Adjusted free cash flow is defined as Free cash flow plus the activity related to Flash Ventures, net less the impact of cash prepayments under New Business Model (“NBM”) agreements (the “NBM Prepayments”) and deposits received and returned under NBM agreements (the “NBM Deposits” and together with the NBM Prepayments, the “NBM Payments”).",
+                "metric_type": "adjusted_fcf"
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "title": "Sandisk Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 25849,
+                  "extracted_chars": 25849,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 7,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u2",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u3",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u5",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u6",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7"
+              ],
+              "expected_unit_count": 7,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u2",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u3",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u5",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u6",
+                "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7"
+              ],
+              "processed_unit_count": 7,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 7,
+                "processed_unit_count": 7,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 6,
+                "demand_revenue": 5,
+                "guidance": 3
+              },
+              "selection": {
+                "raw_card_count": 14,
+                "deduped_card_count": 14,
+                "selected_card_count": 14,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 4,
+                  "demand_revenue": 5,
+                  "guidance": 3
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Fiscal first quarter revenue was $11.0 billion, up 23% sequentially.",
+                  "metric": "Revenue",
+                  "value": "11031",
+                  "unit": "USD_MILLIONS",
+                  "period": "Q1 2027",
+                  "comparison_period": "Q4 2026",
+                  "reported_change": "up 23%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Fiscal first quarter revenue was $11.0 billion, up 23% sequentially, with GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially)."
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Revenue, net for the three months ended October 2, 2026 was $11,031 million compared to $2,308 million for the three months ended October 3, 2025.",
+                  "metric": "Revenue, net",
+                  "value": 11031,
+                  "unit": "$M",
+                  "period": "Three Months Ended October 2, 2026",
+                  "comparison_value": 2308,
+                  "comparison_period": "Three Months Ended October 3, 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Revenue, net\n$\n11,031\n$\n2,308"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net income for the three months ended October 2, 2026 was $8,101 million compared to $112 million for the three months ended October 3, 2025.",
+                  "metric": "Net income",
+                  "value": 8101,
+                  "unit": "$M",
+                  "period": "Three Months Ended October 2, 2026",
+                  "comparison_value": 112,
+                  "comparison_period": "Three Months Ended October 3, 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Net income\n$\n8,101\n$\n112"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "GAAP net income was $8.1 billion, or $52.60 diluted net income per share.",
+                  "metric": "Diluted Net Income Per Share",
+                  "value": "52.60",
+                  "unit": "USD",
+                  "period": "Q1 2027",
+                  "comparison_period": "Q4 2026",
+                  "reported_change": "up 20%",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially)."
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "First quarter Non-GAAP diluted net income per share was $49.51.",
+                  "metric": "Diluted Net Income Per Share",
+                  "value": "49.51",
+                  "unit": "USD",
+                  "period": "Q1 2027",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "First quarter Non-GAAP diluted net income per share was $49.51."
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Expect second quarter 2027 revenue to be in the range of $12.2 billion to $12.6 billion.",
+                  "metric": "Revenue",
+                  "unit": "USD_MILLIONS",
+                  "period": "Q2 2027",
+                  "low": "12200",
+                  "high": "12600",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Expect second quarter 2027 revenue to be in the range of $12.2 billion to $12.6 billion",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Expected Non-GAAP diluted net income per share on a pre-split basis in the range of $55.00 to $57.00 for second quarter 2027.",
+                  "metric": "Diluted Net Income Per Share",
+                  "unit": "USD",
+                  "period": "Q2 2027",
+                  "low": "55.00",
+                  "high": "57.00",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "expected Non-GAAP diluted net income per share on a pre-split basis in the range of $55.00 to $57.00",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Second quarter 2027 GAAP gross margin guidance is 84.4% to 85.4% and Non-GAAP gross margin guidance is 84.5% to 85.5%.",
+                  "metric": "Gross Margin",
+                  "unit": "PERCENT",
+                  "period": "Q2 2027",
+                  "low": "84.4",
+                  "high": "85.4",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u2",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Gross Margin\n84.4% - 85.4%\n84.5% - 85.5%",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Net cash provided by operating activities was $6,363 million for the three months ended October 2, 2026.",
+                  "metric": "Net cash provided by operating activities",
+                  "value": 6363,
+                  "unit": "$M",
+                  "period": "Three Months Ended October 2, 2026",
+                  "comparison_value": 488,
+                  "comparison_period": "Three Months Ended October 3, 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Net cash provided by operating activities\n6,363\n488",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "card_type": "capital",
+                  "topic": "cash_capex",
+                  "statement": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter.",
+                  "metric": "share_repurchase",
+                  "value": "5000",
+                  "unit": "USD_MILLIONS",
+                  "period": "Q1 2027",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter."
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Purchases of property, plant and equipment were $54 million for the three months ended October 2, 2026.",
+                  "metric": "Purchases of property, plant and equipment",
+                  "value": -54,
+                  "unit": "$M",
+                  "period": "Three Months Ended October 2, 2026",
+                  "comparison_value": -50,
+                  "comparison_period": "Three Months Ended October 3, 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Purchases of property, plant and equipment\n(54)\n(50)",
+                  "metric_type": "capex"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u5",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "For the three months ended October 2, 2026, cash flow from operating activities was $6,363 million, purchases of property, plant and equipment, net was $54 million, resulting in free cash flow of $6,309 million and adjusted free cash flow of $5,696 million.",
+                  "metric": "free_cash_flow",
+                  "value": 6309,
+                  "unit": "USD_MILLIONS",
+                  "period": "Q1_2027",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u5",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Cash flows\nCash flow from operating activities\n$\n6,363\n$\n7,126\n$\n488\nPurchases of property, plant and equipment, net\n(54)\n(43)\n(50)\nFree cash flow\n6,309\n7,083\n438\nActivity related to Flash Ventures, net\n(148)\n(110)\n10\nImpact of NBM prepayme",
+                  "metric_type": "standard_fcf"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Free cash flow is defined as Cash Flow from operating activities less purchases of property, plant and equipment, net.",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Free cash flow is defined as Cash Flow from operating activities less purchases of property, plant and equipment, net.",
+                  "metric_type": "standard_fcf"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Adjusted free cash flow is defined as Free cash flow plus the activity related to Flash Ventures, net less the impact of cash prepayments under New Business Model (NBM) agreements and deposits received and returned under NBM agreements.",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Adjusted free cash flow is defined as Free cash flow plus the activity related to Flash Ventures, net less the impact of cash prepayments under New Business Model (“NBM”) agreements (the “NBM Prepayments”) and deposits received and returned",
+                  "metric_type": "adjusted_fcf"
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Fiscal first quarter revenue was $11.0 billion, up 23% sequentially.",
+                "materiality_candidate": 5,
+                "quote": "Fiscal first quarter revenue was $11.0 billion, up 23% sequentially, with GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially).",
+                "metric": "Revenue",
+                "value": "11031",
+                "unit": "USD_MILLIONS",
+                "period": "Q1 2027",
+                "comparison_period": "Q4 2026",
+                "reported_change": "up 23%",
+                "card_id": "c1:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Fiscal first quarter revenue was $11.0 billion, up 23% sequentially, with GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially)."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $8.1 billion, or $52.60 diluted net income per share.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially).",
+                "metric": "Diluted Net Income Per Share",
+                "value": "52.60",
+                "unit": "USD",
+                "period": "Q1 2027",
+                "comparison_period": "Q4 2026",
+                "reported_change": "up 20%",
+                "card_id": "c2:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially)."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "First quarter Non-GAAP diluted net income per share was $49.51.",
+                "materiality_candidate": 4,
+                "quote": "First quarter Non-GAAP diluted net income per share was $49.51.",
+                "metric": "Diluted Net Income Per Share",
+                "value": "49.51",
+                "unit": "USD",
+                "period": "Q1 2027",
+                "card_id": "c3:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "First quarter Non-GAAP diluted net income per share was $49.51."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter.",
+                "materiality_candidate": 4,
+                "quote": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter.",
+                "metric": "share_repurchase",
+                "value": "5000",
+                "unit": "USD_MILLIONS",
+                "period": "Q1 2027",
+                "card_id": "c4:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expect second quarter 2027 revenue to be in the range of $12.2 billion to $12.6 billion.",
+                "materiality_candidate": 5,
+                "quote": "Expect second quarter 2027 revenue to be in the range of $12.2 billion to $12.6 billion",
+                "metric": "Revenue",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "low": "12200",
+                "high": "12600",
+                "unit": "USD_MILLIONS",
+                "card_id": "c5:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Expect second quarter 2027 revenue to be in the range of $12.2 billion to $12.6 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Expected Non-GAAP diluted net income per share on a pre-split basis in the range of $55.00 to $57.00 for second quarter 2027.",
+                "materiality_candidate": 5,
+                "quote": "expected Non-GAAP diluted net income per share on a pre-split basis in the range of $55.00 to $57.00",
+                "metric": "Diluted Net Income Per Share",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "low": "55.00",
+                "high": "57.00",
+                "unit": "USD",
+                "card_id": "c6:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u1",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "expected Non-GAAP diluted net income per share on a pre-split basis in the range of $55.00 to $57.00"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second quarter 2027 GAAP gross margin guidance is 84.4% to 85.4% and Non-GAAP gross margin guidance is 84.5% to 85.5%.",
+                "materiality_candidate": 4,
+                "quote": "Gross Margin\n84.4% - 85.4%\n84.5% - 85.5%",
+                "metric": "Gross Margin",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "low": "84.4",
+                "high": "85.4",
+                "unit": "PERCENT",
+                "card_id": "c7:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u2",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Gross Margin\n84.4% - 85.4%\n84.5% - 85.5%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue, net for the three months ended October 2, 2026 was $11,031 million compared to $2,308 million for the three months ended October 3, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Revenue, net\n$\n11,031\n$\n2,308",
+                "metric": "Revenue, net",
+                "value": 11031,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 2308,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "card_id": "c1:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Revenue, net\n$\n11,031\n$\n2,308"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income for the three months ended October 2, 2026 was $8,101 million compared to $112 million for the three months ended October 3, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$\n8,101\n$\n112",
+                "metric": "Net income",
+                "value": 8101,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 112,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "card_id": "c2:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Net income\n$\n8,101\n$\n112"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $6,363 million for the three months ended October 2, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Net cash provided by operating activities\n6,363\n488",
+                "metric": "Net cash provided by operating activities",
+                "value": 6363,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 488,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "metric_type": "operating_cash_flow",
+                "card_id": "c3:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Net cash provided by operating activities\n6,363\n488"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Purchases of property, plant and equipment were $54 million for the three months ended October 2, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Purchases of property, plant and equipment\n(54)\n(50)",
+                "metric": "Purchases of property, plant and equipment",
+                "value": -54,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": -50,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "metric_type": "capex",
+                "card_id": "c4:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u4",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Purchases of property, plant and equipment\n(54)\n(50)"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "For the three months ended October 2, 2026, cash flow from operating activities was $6,363 million, purchases of property, plant and equipment, net was $54 million, resulting in free cash flow of $6,309 million and adjusted free cash flow of $5,696 million.",
+                "materiality_candidate": 4,
+                "quote": "Cash flows\nCash flow from operating activities\n$\n6,363\n$\n7,126\n$\n488\nPurchases of property, plant and equipment, net\n(54)\n(43)\n(50)\nFree cash flow\n6,309\n7,083\n438\nActivity related to Flash Ventures, net\n(148)\n(110)\n10\nImpact of NBM prepayments and deposits\n(465)\n(1,938)\n—\nAdjusted free cash flow\n$\n5,696\n$\n5,035\n$\n448",
+                "metric": "free_cash_flow",
+                "metric_type": "standard_fcf",
+                "value": 6309,
+                "unit": "USD_MILLIONS",
+                "period": "Q1_2027",
+                "card_id": "c1:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u5",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Cash flows\nCash flow from operating activities\n$\n6,363\n$\n7,126\n$\n488\nPurchases of property, plant and equipment, net\n(54)\n(43)\n(50)\nFree cash flow\n6,309\n7,083\n438\nActivity related to Flash Ventures, net\n(148)\n(110)\n10\nImpact of NBM prepayments and deposits\n(465)\n(1,938)\n—\nAdjusted free cash flow\n$\n5,696\n$\n5,035\n$\n448"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow is defined as Cash Flow from operating activities less purchases of property, plant and equipment, net.",
+                "materiality_candidate": 3,
+                "quote": "Free cash flow is defined as Cash Flow from operating activities less purchases of property, plant and equipment, net.",
+                "metric_type": "standard_fcf",
+                "card_id": "c1:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Free cash flow is defined as Cash Flow from operating activities less purchases of property, plant and equipment, net."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted free cash flow is defined as Free cash flow plus the activity related to Flash Ventures, net less the impact of cash prepayments under New Business Model (NBM) agreements and deposits received and returned under NBM agreements.",
+                "materiality_candidate": 3,
+                "quote": "Adjusted free cash flow is defined as Free cash flow plus the activity related to Flash Ventures, net less the impact of cash prepayments under New Business Model (“NBM”) agreements (the “NBM Prepayments”) and deposits received and returned under NBM agreements (the “NBM Deposits” and together with the NBM Prepayments, the “NBM Payments”).",
+                "metric_type": "adjusted_fcf",
+                "card_id": "c2:sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm#u7",
+                "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Adjusted free cash flow is defined as Free cash flow plus the activity related to Flash Ventures, net less the impact of cash prepayments under New Business Model (“NBM”) agreements (the “NBM Prepayments”) and deposits received and returned under NBM agreements (the “NBM Deposits” and together with the NBM Prepayments, the “NBM Payments”)."
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "Revenue",
+                "value": "11031",
+                "unit": "USD_MILLIONS",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": "Q4 2026",
+                "reported_change": "up 23%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Fiscal first quarter revenue was $11.0 billion, up 23% sequentially, with GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially)."
+                }
+              },
+              {
+                "metric": "Diluted Net Income Per Share",
+                "value": "52.60",
+                "unit": "USD",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": "Q4 2026",
+                "reported_change": "up 20%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "GAAP net income reported at $8.1 billion ($52.60 diluted net income per share, up 20% sequentially)."
+                }
+              },
+              {
+                "metric": "Diluted Net Income Per Share",
+                "value": "49.51",
+                "unit": "USD",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "First quarter Non-GAAP diluted net income per share was $49.51."
+                }
+              },
+              {
+                "metric": "share_repurchase",
+                "value": "5000",
+                "unit": "USD_MILLIONS",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter."
+                }
+              },
+              {
+                "metric": "Revenue, net",
+                "value": 11031,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 2308,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Revenue, net\n$\n11,031\n$\n2,308"
+                }
+              },
+              {
+                "metric": "Net income",
+                "value": 8101,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 112,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Net income\n$\n8,101\n$\n112"
+                }
+              },
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": 6363,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 488,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Net cash provided by operating activities\n6,363\n488"
+                }
+              },
+              {
+                "metric": "Purchases of property, plant and equipment",
+                "value": -54,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": -50,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Purchases of property, plant and equipment\n(54)\n(50)"
+                }
+              },
+              {
+                "metric": "free_cash_flow",
+                "value": 6309,
+                "unit": "USD_MILLIONS",
+                "period": "Q1_2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Cash flows\nCash flow from operating activities\n$\n6,363\n$\n7,126\n$\n488\nPurchases of property, plant and equipment, net\n(54)\n(43)\n(50)\nFree cash flow\n6,309\n7,083\n438\nActivity related to Flash Ventures, net\n(148)\n(110)\n10\nImpact of NBM prepayments and deposits\n(465)\n(1,938)\n—\nAdjusted free cash flow\n$\n5,696\n$\n5,035\n$\n448"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "Revenue",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "value": null,
+                "low": "12200",
+                "midpoint": null,
+                "high": "12600",
+                "unit": "USD_MILLIONS",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Expect second quarter 2027 revenue to be in the range of $12.2 billion to $12.6 billion"
+                }
+              },
+              {
+                "metric": "Diluted Net Income Per Share",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "value": null,
+                "low": "55.00",
+                "midpoint": null,
+                "high": "57.00",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "expected Non-GAAP diluted net income per share on a pre-split basis in the range of $55.00 to $57.00"
+                }
+              },
+              {
+                "metric": "Gross Margin",
+                "period": "Q2 2027",
+                "guidance_type": "range",
+                "value": null,
+                "low": "84.4",
+                "midpoint": null,
+                "high": "85.4",
+                "unit": "PERCENT",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Gross Margin\n84.4% - 85.4%\n84.5% - 85.5%"
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "share_repurchase",
+                "value": "5000",
+                "unit": "USD_MILLIONS",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Returned $5.0 billion to stockholders through the repurchase of approximately 3.2 million shares during the quarter."
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              },
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": 6363,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": 488,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Net cash provided by operating activities\n6,363\n488"
+                },
+                "metric_type": "operating_cash_flow",
+                "reconciliation": []
+              },
+              {
+                "metric": "Purchases of property, plant and equipment",
+                "value": -54,
+                "unit": "$M",
+                "period": "Three Months Ended October 2, 2026",
+                "comparison_value": -50,
+                "comparison_period": "Three Months Ended October 3, 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Purchases of property, plant and equipment\n(54)\n(50)"
+                },
+                "metric_type": "capex",
+                "reconciliation": []
+              },
+              {
+                "metric": "free_cash_flow",
+                "value": 6309,
+                "unit": "USD_MILLIONS",
+                "period": "Q1_2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001628280-26-068243:sndkq1-27ex991xpressrelease.htm",
+                  "quote": "Cash flows\nCash flow from operating activities\n$\n6,363\n$\n7,126\n$\n488\nPurchases of property, plant and equipment, net\n(54)\n(43)\n(50)\nFree cash flow\n6,309\n7,083\n438\nActivity related to Flash Ventures, net\n(148)\n(110)\n10\nImpact of NBM prepayments and deposits\n(465)\n(1,938)\n—\nAdjusted free cash flow\n$\n5,696\n$\n5,035\n$\n448"
+                },
+                "metric_type": "standard_fcf",
+                "reconciliation": []
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [],
+            "extraction_batch_count": 4,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "gemini_search",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+                  "category": "search_quota_blocked"
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": false,
+                  "seconds": 1.098,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-10-29T17:06:34-04:00",
+              "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+              "official_ir_last_attempt_incomplete": "2026-10-29T17:06:34-04:00",
+              "next_ir_retry_at": "2026-10-29T17:21:34-04:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q1 2027 營收與獲利爆發性增長且指引強勁",
+                "why_it_matters": "顯示公司短期內在相關領域（如儲存/半導體市場）具備強烈需求拉動與極高營運槓桿，帶動現金流顯著擴張。",
+                "fact_basis": [
+                  "Q1 2027 營收達 $11,031M，季增 23%，年增 378%",
+                  "Q1 2027 GAAP 純益達 $8,101M（去年同期僅 $112M）",
+                  "Q2 2027 營收指引介於 $12.2B 至 $12.6B"
+                ],
+                "inference": "受惠於強勁市場需求與產品組合優化，整體 earnings power 大幅躍升，且 Q2 營運重整與成長動能尚未見頂。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q1 2027 營收達 $11,031M，較上一季（Q4 2026）成長 23%，較去年同期 $2,308M 年增 378%。"
+              ],
+              "margin_unit_economics": [
+                "Q2 2027 毛利率指引預期落在 GAAP 84.4% - 85.4% / Non-GAAP 84.5% - 85.5% 的極高水準，反映優異的產品定價力或高毛利產品組合。"
+              ],
+              "cash_capital_intensity": [
+                "Q1 2027 營運現金流達 $6,363M（去年同期僅 $488M），Capex 僅 $54M，自由現金流（FCF）高達 $6,309M，資本支出強度極低。",
+                "公司透過股票回購向股東回饋 $5,000M（約 3.2M 股）。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 2027 營收指引為 $12.2B 至 $12.6B。",
+              "Q2 2027 Non-GAAP 每股盈餘（Pre-split）指引為 $55.00 至 $57.00。",
+              "Q2 2027 Non-GAAP 毛利率指引為 84.5% 至 85.5%。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "由於原始資料未提供客戶數、大客戶留存率（NRR）、RPO 或客戶集中度等數據，無法判定客戶拓展的廣度與深度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "預期毛利率維持在 84.5% - 85.5% 區間，顯示產品在價值鏈中具備極高價值擷取能力，但缺乏直接數據驗證是否具備長期護城河或市佔率轉移。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "單季 Capex 僅 $54M，若產能擴充受限，後續營收成長可能面臨瓶頸。",
+              "極高毛利率（85%）可能吸引競爭對手進入或引發客戶要求降價，若毛利率下滑將削弱 Earnings Power。"
+            ],
+            "watch_items": [
+              "Q2 2027 實際營收是否達指引區間上緣（$12.6B）。",
+              "後續資本支出（Capex）是否開始增加以支持長遠成長。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "SNDK SNDK_2026-10-29 (Q1 2027)\n\n💡 投資結論與邏輯:\n• 本季營收與獲利呈跨越式成長，顯示營運槓桿與獲利能力大幅提升，資本支出極低帶動自由現金流暴增。\n• 下季營收與毛利率指引持續向上，短期獲利動能明確，惟需注意長期產能投資與高毛利率的可持續性。\n\n📊 關鍵數據與財測:\n• 營收成長：本季營收達 $11,031M（季增 23%，年增 378%），反映強勁市場需求；判讀此增長大幅拉升基礎獲利能力。\n• 獲利與毛利率：本季 GAAP 純益達 $8,101M，Non-GAAP EPS 為 $49.51；下季毛利率指引高達 84.5% - 85.5%，顯示產品價格與組合優勢強勁。\n• 現金流與資本配置：本季營運現金流 $6,363M，Capital expenditures 為 $54M，產生自由現金流 $6,309M；當季進行股票回購共 $5,000M，極低資本強度下現金回饋力度大。\n• 下季指引：預期下季營收介於 $12.2B 至 $12.6B，Non-GAAP EPS 介於 $55.00 至 $57.00；外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動：本季營收與純益呈現大規模擴張，毛利率預期維持在 85% 左右水準，管理層展現強烈定價能力與產品組合效益。\n• 法說 Q&A：本期未提供法說會逐字稿數據，無可查證之 Q&A 攻防資訊。\n\n⚠️ 風險、反證與待驗證:\n• 資本支出過低疑慮：本季 Capex 僅 $54M，需觀察未來是否會因設備投資不足而面臨供給產能瓶頸。\n• 毛利率續航力：85% 的高毛利率可能面臨客戶議價或同行競爭壓力，若毛利率回落將直接影響獲利天花板。\n• 客戶集中度未明：原始資料未揭露大客戶結構與續約狀況，無法判定需求廣度與深度。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 85,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:numeric_provenance"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "SNDK (Q1 2027)\n\n💡 投資結論與邏輯:\n• 本季營收與獲利顯著擴張帶動營運槓桿提升，在低資本支出下實現強勁自由現金流與資本回饋。\n• 下季營收與毛利率指引持續向上，反映短期獲利動能明確，惟需關注長期資本投入與高毛利率的可持續性。\n\n📊 關鍵數據與財測:\n• 營收與獲利：本季營收達 $11,031M（季增 23%），GAAP 純益達 $8,101M，顯示基礎獲利能力擴張；但單季高速成長尚不足以證實長期結構性市佔率移轉。\n• 毛利率與單位經濟：下季毛利率指引預期介於 GAAP 84.4% - 85.4%（Non-GAAP 84.5% - 85.5%），反映優異產品組合；仍需留意高毛利是否引發客戶議價壓力。\n• 現金流與資本配置：本季營運現金流 $6,363M，Capex 僅 $54M，產生自由現金流 $6,309M，並執行 $5,000M 股票回購；低資本強度加速現金回饋，惟需注意產能擴充潛在瓶頸。\n• 營運指引：預期下季營收介於 $12.2B 至 $12.6B，Non-GAAP 每股盈餘介於 $55.00 至 $57.00；外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能：本季營收與淨利同步大幅成長，預期下季維持 85% 左右高毛利水準，反映產品組合與定價優勢。\n• 法說攻防：本期未提供法說會逐字稿數據，無可查證之 Q&A 攻防資訊。\n\n⚠️ 風險、反證與待驗證:\n• 資本支出過低疑慮：本季 Capex 僅 $54M，需觀察後續設備投資不足是否限制供給產能。\n• 高毛利率續航力：85% 左右毛利率可能吸引同業競爭或面臨客戶降價要求，影響獲利天花板。\n• 客戶結構未明：原始資料未揭露客戶集中度與續約數據，無法確定需求廣度與顧客黏著度。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:現金流與資本配置：本季營運現金流 $6,363M，Capex 僅 $54M，產生自由現金流 $6,309M，並執行 $5,000M 股票回購；低資本強度加速現金回饋，惟需注意產能擴",
+              "kpi_without_readthrough:營運指引：預期下季營收介於 $12.2B 至 $12.6B，Non-GAAP 每股盈餘介於 $55.00 至 $57.00；外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:85%"
+            ],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q1 2027 營收與獲利顯著成長且指引強勁",
+                "why_it_matters": "顯示公司短期內營運槓桿大幅提升，並在低資本支出下帶動自由現金流擴張與資本回饋。",
+                "fact_basis": [
+                  "Q1 2027 營收達 $11,031M，季增 23%，年增 378%",
+                  "Q1 2027 GAAP 純益達 $8,101M（去年同期僅 $112M）",
+                  "Q2 2027 營收指引介於 $12.2B 至 $12.6B"
+                ],
+                "inference": "受惠於營收規模擴大，短期基礎獲利能力躍升，惟需關注長期資本投入與高毛利率的可持續性。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q1 2027 營收達 $11,031M，較上一季（Q4 2026）成長 23%，較去年同期 $2,308M 年增 378%。"
+              ],
+              "margin_unit_economics": [
+                "Q2 2027 毛利率指引預期落在 GAAP 84.4% - 85.4% / Non-GAAP 84.5% - 85.5% 的高水準，反映管理層對產品組合與定價的預期。"
+              ],
+              "cash_capital_intensity": [
+                "Q1 2027 營運現金流達 $6,363M，PP&E 支出僅 $54M，自由現金流（FCF）達 $6,309M，調整後自由現金流達 $5,696M。",
+                "公司透過股票回購向股東回饋 $5,000M（約 3.2M 股）。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 2027 營收指引為 $12.2B 至 $12.6B。",
+              "Q2 2027 Non-GAAP 每股盈餘（Pre-split）指引為 $55.00 至 $57.00。",
+              "Q2 2027 Non-GAAP 毛利率指引為 84.5% 至 85.5%。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "由於原始資料未提供客戶數、大客戶留存率（NRR）、RPO 或客戶集中度等數據，無法判定客戶拓展的廣度與深度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "預期毛利率維持在 84.5% - 85.5% 區間，反映管理層預估之價值擷取能力，但缺乏直接數據驗證是否具備長期護城河或市佔率轉移。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "單季 PP&E 支出僅 $54M，若產能擴充受限，後續營收成長可能面臨瓶頸。",
+              "高毛利率指引可能吸引競爭對手進入或引發客戶要求降價，若毛利率下滑將削弱獲利能力。"
+            ],
+            "watch_items": [
+              "Q2 2027 實際營收是否達指引區間上緣（$12.6B）。",
+              "後續資本支出（Capex）是否開始增加以支持長遠成長。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "SNDK (Q1 2027)\n\n💡 投資結論與邏輯:\n• 本季營收與獲利顯著擴張帶動營運槓桿提升，在低資本支出下實現強勁自由現金流與資本回饋。\n• 下季營收與毛利率指引持續向上，反映短期獲利動能明確，惟需關注長期資本投入與高毛利率的可持續性。\n\n📊 關鍵數據與財測:\n• 營收與獲利：本季營收達 $11,031M（季增 23%），GAAP 純益達 $8,101M，顯示基礎獲利能力擴張，但單季成長仍不能證實長期結構性市佔率移轉。\n• 毛利率與單位經濟：下季毛利率指引預期介於 GAAP 84.4% - 85.4%（Non-GAAP 84.5% - 85.5%），反映管理層對產品組合的預估，但仍不能證明產品單價提高或護城河擴大。\n• 現金流與資本配置：本季營運現金流 $6,363M，PP&E 支出 $54M，產生自由現金流 $6,309M，並執行 $5,000M 股票回購，顯示資本強度低與現金回饋，但仍不能忽視產能擴充潛在瓶頸。\n• 營運指引：預期下季營收介於 $12.2B 至 $12.6B，Non-GAAP 每股盈餘介於 $55.00 至 $57.00，反映管理層對短期成長的預期，但仍不能作為已實現獲利。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能：本季營收與淨利同步大幅成長，預期下季維持 GAAP 84.4% - 85.4% / Non-GAAP 84.5% - 85.5% 之毛利率指引，反映管理層對產品組合效益的預期。\n• 法說攻防：本期未提供法說會逐字稿數據，無可查證之 Q&A 攻防資訊。\n\n⚠️ 風險、反證與待驗證:\n• 資本支出強度瓶頸：若後續設備投資不足，可能限制供給產能，可觀察未來資本支出是否開始增加。\n• 毛利率續航力：高毛利率指引可能吸引同業競爭或面臨客戶降價要求，可觀察下季實際毛利率是否落在指引區間。\n• 客戶結構未明：原始資料未揭露客戶集中度與續約數據，無法確定需求廣度與顧客黏著度，需關注未來大客戶揭露狀況。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 85,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v4_gate:structure",
+              "deterministic_v4_gate:bullet_format",
+              "deterministic_v4_gate:density"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "SNDK (FY2027 Q1)\n\n💡 投資結論與邏輯:\n• 本季營收與獲利大幅成長帶動營運槓桿提升，在低資本支出下實現強勁自由現金流與資本回饋。\n• 下季營收與毛利率指引持續向上，反映短期獲利動能明確，惟需關注長期資本投入與高毛利率的可持續性。\n\n📊 關鍵數據與財測:\n• 營收與獲利成長：本季營收達 $11,031M（季增 23%），GAAP 純益達 $8,101M，顯示基礎獲利能力擴張，但單季成長仍不能證實長期結構性市佔率移轉。\n• 毛利率與獲利能力：下季毛利率指引預期介於 GAAP 84.4% - 85.4%（Non-GAAP 84.5% - 85.5%），反映管理層對產品組合的預估，但仍不能證明產品單價提高或護城河擴大。\n• 現金流與資本配置：本季營運現金流 $6,363M，PP&E 支出 $54M，產生自由現金流 $6,309M，並執行 $5,000M 股票回購，顯示資本強度低與現金回饋，但仍不能忽視產能擴充潛在瓶頸。\n• 營運指引：下季營收指引介於 $12.2B 至 $12.6B，Non-GAAP 每股盈餘指引介於 $55.00 至 $57.00，反映管理層對短期成長的預期，但仍不能作為已實現獲利。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營운동能與法說攻防:\n• 營運動能：本季營收與淨利同步大幅成長，預期下季維持 GAAP 84.4% - 85.4% / Non-GAAP 84.5% - 85.5% 之毛利率指引，反映管理層對產品組合效益的預期。\n• 法說攻防：本期未提供法說會逐字稿數據，無可查證之 Q&A 攻防資訊。\n\n⚠️ 風險、反證與待驗證:\n• 資本支出強度瓶頸：若後續設備投資不足，可能限制供給產能，可觀察未來資本支出是否開始增加。\n• 毛利率續航力：高毛利率指引可能吸引同業競爭或面臨客戶降價要求，可觀察下季實際毛利率是否落在指引區間。\n• 客戶結構未明：原始資料未揭露客戶集中度與續約數據，無法確定需求廣度與顧客黏著度，需關注未來大客戶揭露狀況。",
+            "structure_errors": [
+              "missing_v4_sections:🧭 營運動能與法說攻防"
+            ],
+            "bullet_format_errors": [
+              "non_bullet_content:🧭 營운동能與法說攻防:"
+            ],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [
+              "hard_data_too_many_clusters:6"
+            ],
             "numeric_provenance_errors": [],
             "strong_claim_errors": []
           }
