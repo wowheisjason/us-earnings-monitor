@@ -1,0 +1,45 @@
+name: Deliver verified STMicro Q3 optics report v1
+on:
+  push:
+    branches: [codex/optics-delivery-stmicro-q3-rf-optical-20261029-v1]
+    paths: [.github/workflows/optics-delivery-stmicro-q3-rf-optical-20261029-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-stmicro-q3-rf-optical-20261029-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜STMicro Q3光通訊相關部門營收與獲利同步跳升（2026/10/29）\n\n1）重大變化與門檻\nSTMicroelectronics（NYSE／巴黎：STM）Q3「RF Optical Communications」部門營收5.04億美元，季增13.4%、年增46.2%；營業利益1.32億美元、年增131.2%，營業利益率由16.6%升至26.2%。公司並把AI資料中心列為2026全年成長驅動，稱整體需求仍顯著高於供給並持續擴產。這是已實現部門收入與獲利，不是展示或送樣，足以提高對ST光通訊／矽光子業務營收與毛利貢獻的判斷。\n\n2）已確認事實\n• 公告日：2026/10/29；財季截至2026/9/26。\n• 集團Q3營收37.57億美元，季增7.7%、年增17.9%；毛利率37.3%；營業利益3.67億美元。\n• RFOC營收5.04億美元，較Q2的4.45億美元增13.4%，較去年同期3.45億美元增46.2%；營業利益1.32億美元、年增131.2%，營業利益率26.2%。\n• RFOC同時包含RF、衛星及光通訊，官方未拆分PIC100、BiCMOS EIC、800G／1.6T收入；不能把全部增幅歸因矽光子。\n• Q4集團營收指引中值41.5億美元、季增10.5%，毛利率39%；這是集團指引，不是光通訊分項預測。\n• 既有官方基準：PIC100已在300mm晶圓進入量產，支援800G／1.6T；2027產能規劃超過4倍且由客戶長期產能預留承諾支持。這是3月已公告資訊，本次新增證據是RFOC季度財務實績與獲利率。\n\n官方Q3：https://www.globenewswire.com/news-release/2026/10/29/3390920/0/en/stmicroelectronics-reports-q3-2026-financial-results.html\n官方PIC100：https://newsroom.st.com/media-center/press-item.html/t4761.html\n官方矽光平台：https://www.st.com/content/st_com/en/about/innovation-and-technology/silicon-photonics.html\n\n3）供應鏈角色\n• STMicro：300mm PIC100矽光PIC、SiGe BiCMOS驅動器／TIA，直接曝險。\n• AWS與未具名hyperscalers：已公開合作或量產需求端；本季未新增具名客戶、訂單量或採購份額。\n• Tower、GlobalFoundries、聯電：矽光子晶圓代工／平台競爭者。\n• Coherent、Lumentum：雷射、光元件與光引擎競爭／互補；本結果不證明其訂單同步增長。\n• 光模組、InP／EML／CW雷射與封裝商僅間接曝險；無BOM，不得指定直接受益者或推論整鏈缺貨。\n\n4）合理推論\n若RFOC成長主要由PIC100與光收發器EIC拉動，且2027擴產按期，矽光子可繼續提升收入規模並以較高利用率、產品組合支撐毛利。但成立條件是客戶拉貨、模組良率、雷射與封裝供應及資料中心部署如期。現有數字不足以判斷CPO量產收入；PIC100目前主要證據仍是800G／1.6T可插拔光學。\n\n5）機會與風險\n催化劑：公司拆分資料中心／PIC100收入、2027四倍產能實際開出、具名客戶新增、1.6T出貨與PIC100-TSV由開發轉量產。\n風險：RFOC增長可能含RF與LEO衛星；客戶集中、長約調整、擴產良率與折舊、光模組降價、Tower／GF／聯電擴產，以及InP EML、TFLN等替代架構。未核對即時估值，不判斷低估或給買賣指令。\n\n6）待驗證\n追蹤RFOC內資料中心、PIC100與EIC收入占比；PIC100晶圓片數、ASP、良率、產能與利用率；800G／1.6T客戶與模組量；長期產能預留是否含預付款／最低採購；PIC100-TSV、NPO／CPO認證及量產日期。"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"stmicro-q3-rf-optical-20261029","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
