@@ -1,0 +1,78 @@
+name: Optics delivery STMicro Q3 RF optical v2
+on:
+  push:
+    branches: [codex/optics-delivery-stmicro-q3-rf-optical-20261029-v2]
+    paths: [.github/workflows/optics-delivery-stmicro-q3-rf-optical-20261029-v2.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-stmicro-q3-rf-optical-20261029-v2
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大更新｜STMicro資料中心指引上修（2026/10/29）
+
+1）重大變化／門檻
+STMicro（NYSE: STM；EPA: STMPA）在Q3法說將2026年資料中心營收預期由6月的「逾10億美元」上修至約13億美元，並首次表示2027年矽光子可占資料中心營收「數十個百分點」。這是可影響營收結構與競爭地位的新增管理層指引，達通知門檻；不是量產實績或已認列營收。
+
+2）已確認事實
+・公告／法說日：2026/10/29；Q3截至2026/09/26。
+・官方Q3新聞稿：通訊與電腦週邊營收年增64.1%；RF與光通訊業務營收5.04億美元、營業利益1.32億美元（營益率26.2%）。公司稱相關需求仍顯著高於供給並持續擴產。
+・官方6月基準：2026資料中心營收「逾10億美元」、2027「遠逾20億美元」；PIC100已進入高量產並規劃四倍化產能，且有客戶長期產能預留。
+・本次法說逐字稿（Benzinga、Investing.com均轉錄）：2026資料中心營收約13億美元；逾85%來自MCU/RF群組，涵蓋MCU、矽光子與BiCMOS EIC，不能把13億美元全算成矽光子。管理層稱2027年矽光子將占資料中心營收「數十個百分點」，MCU資料中心營收約倍增，BiCMOS近期取得socket win、主要貢獻預計2028年。
+・管理層稱整體book-to-bill逾2，通訊／電腦週邊明顯逾2；屬前瞻說法，非訂單金額或出貨量。
+・Reuters轉述公司對部分產品漲價，且明年價格穩定至略升；官方書面稿未提供價格幅度，故列為媒體交叉驗證，不能外推整條InP／EML鏈缺貨。
+・客戶未具名；不得猜測特定hyperscaler。
+
+3）供應鏈角色
+ST直接受惠於PIC100矽光子平台、MCU與BiCMOS EIC；Coherent（COHR）、Lumentum（LITE）等外部雷射／InP供應商多為互補，也可能在整合方案競爭。Tower（TSEM）、GlobalFoundries（GFS）及UMC（2303.TW／UMC）在高速類比、矽光子或相關代工環節具競爭曝險。光模組、封裝測試與交換器供應商僅屬間接受益，未有本事件具名訂單證據。
+
+4）合理推論
+若13億美元指引、PIC擴產及客戶拉貨落實，矽光子將由技術平台升為2027重要營收引擎，改善ST在AI互連的規模與議價地位。成立條件包括PIC良率與產能到位、外部CW雷射供應、1.6T模組認證／良率及客戶部署不延後。CPO、可插拔模組、EML與CW雷射架構不可混為一談。
+
+5）投資機會／風險
+機會：ST矽光子、MCU、EIC的組合銷售與產能利用率上升；互補雷射與封裝供應商可能隨出貨受惠。
+風險：13億美元與「數十個百分點」均為管理層指引；RF與光通訊分部含非AI業務；客戶集中、擴產折舊、良率、價格競爭、替代架構及需求遞延可能使轉化低於預期。未查即時估值，不判斷股價是否反映。
+
+6）待驗證／下一步
+追蹤2027年1月量化指引、PIC／資料中心營收拆分、PIC100產能與良率、1.6T實際量產出貨、客戶長約轉為訂單的比例、價格與毛利。法說Q&A轉錄中的「2027遠高於倍增」與官方既有「遠逾20億美元」口徑不完全一致，待官方逐字稿或下一次指引澄清。
+
+相較上次新增：上次通知僅涵蓋Q3 RFOC實績與既有PIC100擴產；本次新增13億美元上修、2027矽光子占比、book-to-bill與供需／價格訊號，故為同事件v2。
+
+官方Q3：https://newsroom.st.com/media-center/press-item.html/stmicroelectronics-reports-q3-2026-financial-results.html
+官方法說入口：https://investors.st.com/financials/quarterly-results
+官方6月基準：https://newsroom.st.com/media-center/press-item.html/f0022.html
+PIC100量產：https://newsroom.st.com/media-center/press-item.html/t4761.html
+Reuters交叉驗證：https://www.reuters.com/business/retail-consumer/stmicro-beats-q3-profit-estimates-sees-q4-sales-above-4-billion-2026-10-29/"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"stmicro-q3-rf-optical-20261029","version":2}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-stmicro-q3-rf-optical-20261029-v2
+          path: telegram-receipt.json
