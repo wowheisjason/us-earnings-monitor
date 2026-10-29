@@ -1,0 +1,45 @@
+name: Optics delivery AIXTRON Q3 InP orders v1
+on:
+  push:
+    branches: [codex/optics-delivery-aixtron-q3-inp-orders-20261029-v1]
+    paths: [.github/workflows/optics-delivery-aixtron-q3-inp-orders-20261029-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-aixtron-q3-inp-orders-20261029-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜AIXTRON Q3 InP設備訂單與擴產｜2026/10/29\n\n1）重大變化及通知理由\nAIXTRON（Xetra：AIXA）Q3設備訂單2.749億歐元，年增122%；光電設備約占68%。設備積壓訂單5.494億歐元、年增92%，公司表示InP光元件設備已占積壓訂單多數，能見度延伸至2027年。這是已接受訂單、客戶預付款、實際出貨與供應鏈擴產同步發生，足以改變2027營收與InP MOCVD競爭地位判斷。\n\n2）已確認事實\n公告／事件日：2026/10/29；財季截至2026/9/30。\nQ3營收1.836億歐元、年增54%；毛利8,730萬歐元、毛利率48%；EBIT 5,670萬歐元、年增268%。Q3訂單2.749億歐元；9M訂單6.609億歐元、年增76%。積壓訂單5.494億歐元，較2025年底2.578億歐元增加113%。\n公司稱AI資料中心高速光互連雷射帶動InP需求；800G仍是量產主平台，1.6T投資已開始顯現，但客戶認證與供應鏈成熟使轉換屬漸進式。未披露EML、CW雷射、光模組別訂單或具名客戶。\n生產輸出2026年逐季增加，Q4預計再提高。公司把交期描述為約12個月，故Q3訂單較可能自2027年中後段轉為收入，不是立即全數認列。\n馬來西亞檳城新廠投資約4,000萬歐元（2026–2027）；預計2027年秋可使用、首批系統於2027年底交付。公司稱現階段限制在供應鏈與人員爬坡速度，而非最終廠房上限。\nInP晶圓由100mm轉150mm慢於預期，主因150mm基板供應有限；目前多數設備訂單仍為100mm，甚至75mm。這是特定基板尺寸轉換瓶頸，不能外推整條光通訊鏈缺貨。\n\n官方：\nhttps://www.aixtron.com/en/investors/news/finance-news/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801\nhttps://www.aixtron.com/en/investors/publications\nhttps://www.aixtron.com/en/investors/events/conference-calls/active\n\n3）供應鏈角色\nAIXTRON：InP／GaAs MOCVD設備，直接受益。\n聯亞（3081.TW）：已官方披露AIXTRON設備採購及CW雷射擴產，為獨立需求旁證；但不能推定其占AIXTRON訂單多數。\nVeeco（NASDAQ：VECO）：化合物半導體沉積設備競爭者；本事件未證明其訂單同步增加。\nSumitomo Electric等InP基板業者僅為可能受益環節；AIXTRON未具名供應商，不確認個別供應關係。\nCoherent、Lumentum及光模組／封裝廠屬下游或互補環節；設備訂單不等於其收入已同步認列。\n\n4）合理推論\n若約12個月交期、供應商擴產與客戶預付款轉為按期交貨，AIXTRON 2027光電收入與產能利用率可明顯提升；高毛利InP設備組合亦可能支撐獲利。成立條件是客戶資本支出不延後、MOCVD零組件及人力到位、設備驗收順利，且800G／1.6T終端拉貨持續。\nInP設備可用於EML、CW雷射、光偵測器及PIC磊晶，現有資料不能判斷各自占比，更不能把設備需求等同CPO已大規模部署。\n\n5）投資機會與風險\n催化劑：2027正式指引、積壓訂單轉收入、Q4／2027輸出增幅、檳城首批交付、1.6T設備占比與150mm基板供應改善。\n風險：訂單遞延／取消、客戶集中、供應商爬坡、設備驗收、2028後產能過剩、800G／1.6T價格下降、150mm轉換延遲，以及Veeco或客戶自有製程競爭。未核對即時估值，不判斷已反映或低估。\n\n6）待驗證及去重\n追蹤InP訂單金額與不可取消比例、客戶預付款、出貨／驗收時點、G10-AsP台數、100／150mm組合、EML與CW設備占比、檳城良率與成本。\n已比對已知Telegram收據及GitHub交付分支，未發現相同事件；事件鍵aixtron-q3-inp-orders-20261029，版本1。"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"aixtron-q3-inp-orders-20261029","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
