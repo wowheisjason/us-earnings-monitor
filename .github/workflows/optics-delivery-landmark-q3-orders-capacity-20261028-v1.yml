@@ -1,0 +1,45 @@
+name: Deliver verified Landmark Q3 optics report v1
+on:
+  push:
+    branches: [codex/optics-delivery-landmark-q3-orders-capacity-20261028-v1]
+    paths: [.github/workflows/optics-delivery-landmark-q3-orders-capacity-20261028-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-landmark-q3-orders-capacity-20261028-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜聯亞Q3訂單超產能、擴產約6倍（2026/10/28）\n\n1）重大變化與門檻\n聯亞光電（TPEX：3081）Q3矽光／CW雷射出貨已轉化為創高財務實績；管理層稱主要客戶訂單期間超過6個月、已簽在手訂單金額超過2026全年營收、現有訂單大於產能。公司規劃2027年產能達目前2.5倍，2028年再較2027年2.5倍，約為目前6.25倍。這是實績、長單、供需缺口與大規模擴產的同時確認，足以改變2027–2028營收與競爭地位判斷。\n\n2）已確認事實\n• 事件／法說日：2026/10/28；公告日同日。\n• Q3營收15.62億元新台幣，季增28%、年增183%；毛利率58.56%；稅後純益6.21億元，季增33%、年增528%；EPS 6.12元。前三季營收36.88億元、歸母淨利14.07億元、EPS 13.88元。財務數字為已實現績效。\n• 管理層預估Q4營收季增約16%；這是指引，不是實績。\n• 主要客戶下達6個月以上長單，在手訂單金額超過2026全年營收；未披露客戶、數量、價格、取消條款，不能當作不可取消訂單。\n• CW雷射已用於800G／1.6T量產；1.6T相關產品已量產。3.2T、NPO與下一代CPO所需高功率產品仍在共同開發／驗證，不能列為量產收入。\n• 過去一年累計資本支出逾80億元；2027/2028產能倍增屬規劃。先前官方公告已確認2027–2030美國客戶四年CW雷射長約、22.7億元設備投資、9.9億元AIXTRON設備，以及未具名日／美InP基板供應合約。本次新增的是Q3實績、訂單覆蓋與供不應求狀態。\n\n官方：公司財務資料 https://www.lmoc.com.tw/index.php?lang=cht&temp=investment\n公司法說資料 https://www.lmoc.com.tw/index.php?id=308&index=5&lang=cht&option=module&task=showlist\nMOPS https://mops.twse.com.tw/\n交叉驗證：https://news.cnyes.com/news/id/6639816\nhttps://money.udn.com/money/story/5710/9842994\n\n3）供應鏈角色\n• 聯亞：InP磊晶、CW雷射／矽光光源，直接受益。\n• 未具名美國客戶：2027–2030資料中心CW雷射長約需求端；不得猜測為特定hyperscaler。\n• 未具名日／美供應商：InP基板上游；不得猜測公司。\n• AIXTRON：MOCVD設備供應商，屬擴產間接受益。\n• Coherent、Lumentum等：InP雷射／光元件競爭者；本事件不證明其訂單或供需相同。\n• 光模組、DSP、封裝商僅間接曝險，官方未披露BOM或客戶，不能外推整條EML／光模組鏈都缺貨。\n\n4）合理推論\n若長單按期拉貨、設備與基板到位且良率穩定，2027新產能可把未滿足需求轉為收入，較高功率CW產品組合可能支撐毛利。2028約6倍產能會放大規模優勢，但必須在客戶部署、價格及良率成立下才有效；NPO／CPO目前仍不是量產依據。\n\n5）機會與風險\n催化劑：新產能按季開出、1.6T出貨量／ASP、在手訂單轉收入、3.2T或NPO完成認證。\n風險：客戶集中與訂單取消、InP基板／設備延遲、良率與代工瓶頸、折舊／人力先於收入、2028需求不及擴產造成過剩、CW與EML／TFLN等架構替代及價格壓力。未核對即時估值，不判斷低估或給買賣指令。\n\n6）待驗證\n追蹤長單不可取消比例、具名客戶／拉貨量、季度CW與1.6T收入、良率、實際月產能、InP基板交期與價格、折舊占營收、3.2T/NPO/CPO由驗證轉量產日期。"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"landmark-q3-orders-capacity-20261028","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
