@@ -1,0 +1,77 @@
+name: CIG optical capacity Telegram delivery v1
+on:
+  push:
+    branches: [codex/optics-delivery-cig-optical-capacity-reallocation-20261030-v1]
+    paths: [.github/workflows/optics-cig-optical-capacity-reallocation-20261030-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-cig-optical-capacity-reallocation-20261030-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified CIG optical capacity report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜劍橋科技擬把17.685億港元轉投800G／1.6T光模組擴產（2026/10/30）
+
+1）重大變化／達門檻原因
+劍橋科技（603083.SH／6166.HK）董事會通過，擬把原用於寬頻、無線及部分研發／行銷的17.685億港元H股募資，改投800G／1.6T光模組設備、原料與自動化。原編列12.893億港元光模組擴產資金已全數使用；公司並明示現有訂單增速高於產能增速。這不是展示或送樣，而是大型資本配置轉向，且已有營收／獲利與產能數字支持，因此足以改變中期營收能力與競爭判斷。
+
+2）已確認事實
+公告日／董事會日：2026/10/30；公告所署日期：2026/10/31。方案仍須股東會批准，不能視為已完成投資。
+• 擬重配17.685億港元，目標於2027年底前用於800G／1.6T光模組產能；用途含生產機器、設備、原材料、既有設備改造及全自動化。
+• 截至公告日，原12.893億港元光模組擴產額度已使用完畢、餘額為零。
+• 2026年9月初月設計產能約100萬顆；公司計畫未來約15個月「大幅」擴產，但未披露新增顆數、良率或稼動率。
+• 2026Q3營收22.16億元人民幣、年增67.26%；歸母淨利4.33億元、年增212.81%。前三季營收49.21億元、年增46.46%；歸母淨利7.61億元、年增193.35%。
+• Q3高速光產品收入占公司營收逾50%；800G占高速光產品出貨「絕大多數」。公司稱已導入北美傳統雲端及新興雲端客戶，但未具名，亦未披露訂單金額。
+• 公司稱需求涵蓋800G、1.6T及NPO；NPO／薄膜鈮酸鋰／USFP／XPO仍屬研發、驗證或共同開發，不等同量產收入。
+• 公司透過股權投資、長約、預付款等保障雷射、矽光晶片、PCB及自動化設備供應，但未公開供應商。
+
+3）供應鏈角色與競合
+劍橋科技是高速光模組製造商，直接曝險最高。未具名的雷射／EML、矽光晶片、PCB、自動化設備供應商可能隨擴產受益，但因官方未披露名單，不能指認個別美日台廠商或推定訂單。中際旭創（300308.SZ）、新易盛（300502.SZ）、Coherent（COHR）、Fabrinet（FN）、Lumentum（LITE）等同屬高速光互連競爭／供應生態；本公告未證實其與劍橋科技的交易關係。
+
+4）合理推論
+若股東會通過、設備與上游料件按期到位，新增資本將提高2027年前後800G／1.6T交付上限，並以自動化改善單位成本及良率，支撐營收與毛利；成立條件是客戶驗證轉為量產訂單、稼動率可維持且關鍵雷射／矽光晶片供應無阻。反面是多家模組廠同步擴產，供給釋放後可能壓價。此事件只證明劍橋科技自身需求與產能壓力，不能外推整條InP／EML／CPO鏈全面短缺；可插拔800G／1.6T、NPO與CPO亦不可混同。
+
+5）投資機會與風險
+催化劑：股東會批准、設備到廠、月產能／良率提升、1.6T收入占比上升、具名客戶或訂單落地。受益方向是公司光模組營收上限與經核實的核心料件供應商；受壓方向是寬頻／無線資本配置及同業價格。主要風險為提案未過、擴產延遲、原料瓶頸、客戶集中、認證不及預期、800G轉1.6T節奏偏慢、產能過剩與降價。未查即時估值，不判斷股價是否已反映。
+
+6）待驗證／追蹤
+追蹤股東會結果、17.685億港元實際支用、月設計產能與稼動率、良率、自動化節省幅度、1.6T/NPO由驗證轉量產的日期、客戶集中度、雷射／矽光晶片長約與預付款規模，以及新增產能是否帶來營收與現金流而非庫存累積。
+
+官方原文（港交所，2026/10/30）：
+https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103002345.pdf
+官方Q3報告（港交所，2026/10/30）：
+https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103002353.pdf
+
+去重：已查既有通知分支，未見劍橋科技／CIG同公司、同產品、同事件及同里程碑版本；本次為v1。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"cig-optical-capacity-reallocation-20261030","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
