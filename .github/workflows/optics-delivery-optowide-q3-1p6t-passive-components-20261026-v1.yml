@@ -1,0 +1,79 @@
+name: Optowide Q3 1.6T passive components delivery
+on:
+  push:
+    branches: [codex/optics-delivery-optowide-q3-1p6t-passive-components-20261026-v1]
+    paths: [.github/workflows/optics-delivery-optowide-q3-1p6t-passive-components-20261026-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-optowide-q3-1p6t-passive-components-20261026-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜騰景科技（688195.SH）800G／1.6T無源光學元件批量交付
+
+【1｜重大變化與通知理由】
+騰景科技於2026/10/26第三季業績說明會確認，配套800G、1.6T光模組的無源光學元組件正批量交付；10/24公布的Q3實績顯示高速光模組無源元件、OCS釩酸釔晶體與可調諧雷射器等訂單交付持續放量，營收與獲利同步大幅成長。這已跨越展示／送樣，且有財務實績旁證，足以提高對公司AI光互連營收與競爭地位的判斷。
+
+【2｜已確認事實】
+事件日：2026/10/26；Q3公告日：2026/10/24；財報截至2026/9/30。
+公司稱800G、1.6T配套無源光學元組件正批量交付，未披露出貨量、ASP、客戶、訂單金額或各速率收入。
+Q3營收3.1429億元人民幣，年增93.70%；歸母淨利4,602.2萬元，年增69.11%；扣非淨利4,564.9萬元，年增71.31%。
+前三季營收7.4369億元，年增74.93%；營業成本4.3178億元，據此推算毛利率約41.94%，高於去年同期約39.12%；歸母淨利9,610.4萬元，年增50.63%；經營現金流1.7701億元，年增87.12%。
+公司明確把增長歸因於高速光模組無源元件、OCS釩酸釔晶體及光測試儀器等多項產品，因此不能把全部增幅歸因於1.6T。
+期末存貨1.6909億元，較年初增55.17%；固定資產10.7167億元，較年初增77.87%；總資產增加45.38%，公司稱與擴產融資有關。這支持備貨／產能建設，但沒有公開月產能與良率。
+公司稱技術可適配可插拔模組、OCS及CPO/NPO；這是平台能力，不等於CPO或NPO系統已量產。
+
+官方季報：https://static.cninfo.com.cn/finalpage/2026-10-24/1225619065.PDF
+上證路演入口：https://roadshow.sseinfo.com/
+媒體轉錄（待官方逐字頁完整索引）：https://finance.sina.com.cn/jjxw/2026-10-26/doc-iniwprzt9251756.shtml
+
+【3｜供應鏈角色】
+騰景科技：直接曝險於FAU／透鏡／棱鏡等精密無源光學、OCS釩酸釔晶體及光測試儀器。
+光模組與AI資料中心客戶：需求端，但官方未具名，不推測中際旭創、新易盛或特定hyperscaler。
+天孚通信、Coherent等：在無源耦合、光學封裝或相關器件環節可能競爭或互補；本事件不能證明其訂單同步變化。
+InP、EML、CW雷射、矽光PIC與DSP供應商僅屬間接曝險，不能由無源元件批量交付推論整條鏈缺貨。
+
+【4｜合理推論】
+若1.6T客戶拉貨延續、良率與ASP穩定，騰景科技可受益於每代模組更高的精密耦合與無源元件需求；固定資產擴張與現金流改善可支撐後續交付。成立條件包括客戶認證維持、擴產按期、良率達標、價格降幅可控及終端AI部署不延後。
+現有證據只支持配套元件批量交付，不能量化1.6T收入，更不能解讀為CPO交換器大規模部署。
+
+【5｜機會與風險】
+催化劑：1.6T分項收入／出貨量、具名客戶、月產能與良率、OCS訂單、CPO/NPO由適配或送樣轉量產。
+風險：客戶集中、800G／1.6T降價、存貨與折舊先於收入、擴產良率不及預期、技術架構改變元件價值量，以及Q3增長部分來自非光模組產品。未查即時估值，不判斷股價是否已反映。
+
+【6｜待驗證與去重】
+追蹤無源元件按速率的收入、出貨量、ASP、毛利率、客戶數與訂單覆蓋期；核對CPO/NPO目前究竟是送樣、認證或量產。
+已比對既有通知與GitHub交付分支，未發現相同事件。本次事件鍵：optowide-q3-1p6t-passive-components-20261026，版本1。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"optowide-q3-1p6t-passive-components-20261026","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
