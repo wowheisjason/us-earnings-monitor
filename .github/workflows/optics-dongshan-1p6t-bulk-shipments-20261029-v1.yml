@@ -1,0 +1,80 @@
+name: Optics delivery dongshan 1p6t bulk shipments 20261029 v1
+on:
+  push:
+    branches: [codex/optics-delivery-dongshan-1p6t-bulk-shipments-20261029-v1]
+    paths: [.github/workflows/optics-dongshan-1p6t-bulk-shipments-20261029-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-dongshan-1p6t-bulk-shipments-20261029-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜東山精密1.6T進入批量出貨、光模組擴產與財務實績同步落地
+
+1）重大變化及通知理由
+東山精密（002384.SZ／02384.HK）10月29日向多家媒體一致確認，1.6T光模組已於2026年第四季進入批量出貨，AI高端光模組出貨逐季快速提升；10月31日官方Q3報告同時確認光模組業務「爆發性增長」、新增訂單、材料備貨及大規模擴產投入。這是由產品與擴產規畫進入批量交付並獲財務數據佐證，達通知門檻。
+
+限制：1.6T批量里程碑是公司對媒體的直接回應，尚未在監管文件拆分出貨量、客戶、ASP或收入，故不能視為獨立第三方驗證，也不能推斷全部光模組增長來自1.6T。
+
+2）已確認事實
+事件日／公司回應日：2026-10-29；季報公告日：2026-10-31；財務期間：2026Q3及截至9月30日前三季，未經審計。
+Q3營收175.817億元，年增73.81%；歸母淨利23.318億元，年增401.18%；扣非淨利20.993億元，年增406.69%。
+前三季營收453.793億元，年增67.63%；歸母淨利52.887億元，年增332.34%；經營現金流35.150億元，年增19.32%。
+官方季報稱增長包含索爾思光電併表，且光模組業務爆發性增長；因此同比並非全為有機增長。
+索爾思預付款增至11.306億元；存貨增至123.667億元、較年初增38.50%，公司稱主要因索爾思銷量增長；在建工程54.670億元、增133.04%，其他非流動資產27.069億元、增85.46%，均主要受光模組與AI PCB擴產推動。
+公司官方產品頁列有1.6T 2FR4、2公里OSFP、3nm DSP、EML方案；不代表每一型號都已大規模量產。
+
+3）供應鏈角色
+東山精密／索爾思：光模組、EML光晶片及InP PIC垂直整合，直接曝險。
+未具名AI資料中心客戶：公司未公開名稱，不猜測hyperscaler。
+InP材料／磊晶、DSP、驅動器、FAU與封裝測試：潛在配套環節，但官方未披露BOM、供應商或採購份額，不能指定個股取得新增訂單。
+Coherent、Lumentum、中際旭創、新易盛等為競爭或比較對象；本次資料不能證明其市占流失。
+本事件是1.6T可插拔EML路線，不能混同CPO、NPO或外置CW雷射架構。
+
+4）合理推論
+若1.6T批量出貨持續、EML自製率提高且擴產良率達標，東山精密可透過模組與光晶片垂直整合提升收入、供應韌性及產品組合；但毛利改善仍需分部數據驗證。推論成立條件為客戶持續拉貨、DSP與InP供應正常、新產線良率達標、索爾思整合順利。
+
+5）機會與風險
+催化劑：1.6T出貨量／收入／客戶首次量化、200G EML自製占比、光模組分部毛利、擴產投產與良率。
+風險：併表使同比可比性下降；存貨、預付款、在建工程與借款先於收入增加；Q3計提存貨跌價2.783億元；長期借款增至109.070億元、財務費用前三季8.239億元。另有客戶集中、ASP下降、認證延誤、產能過剩及替代技術風險。未查即時估值，不判斷是否已反映。
+
+6）待驗證與去重
+追蹤1.6T正式PO、出貨量、ASP、不可取消比例、具名客戶、EML／InP PIC良率與自製率、光模組分部收入及毛利。既有通知未見同事件；事件鍵dongshan-1p6t-bulk-shipments-20261029，版本1。
+
+官方季報：https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12682651&stockid=002384
+官方產品頁：https://cn.dsbj.com/Cn/Index/listView/catid/122.html
+媒體交叉驗證：https://www.nbd.com.cn/articles/2026-10-29/4626614.html
+"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"dongshan-1p6t-bulk-shipments-20261029","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
