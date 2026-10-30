@@ -1,0 +1,76 @@
+name: Optics delivery HGTECH Q3 800G LPO 1.6T NPO 20261030 v1
+on:
+  push:
+    branches: [codex/optics-delivery-hgtech-q3-800g-lpo-1p6t-npo-20261030-v1]
+    paths: [.github/workflows/optics-delivery-hgtech-q3-800g-lpo-1p6t-npo-20261030-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-hgtech-q3-800g-lpo-1p6t-npo-20261030-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜華工科技（000988.SZ）｜2026/10/30
+
+1）重大變化／通知門檻
+華工科技首次以實際交付與營運數字證明800G矽光LPO、1.6T光模組已從展示／送樣進入規模交付：前三季北美與東南亞光模組出口增396%，泰國廠800G LPO月出貨約10萬只並已簽長單；同時取得一家未具名北美知名客戶6.4T NPO供應商資格。這些新增證據足以改變其海外營收能見度與NPO競爭地位，達通知門檻。
+
+2）已確認事實
+• 公告／事件日：2026/10/30。公司IR紀錄稱，前三季光互聯營收65.39億元人民幣、年增26%；淨利5.66億元、年增30%；Q3淨利2.90億元、季增201%（分部口徑屬公司披露）。公司合併前三季營收126.54億元、歸母淨利16.66億元，年增15%／26%。
+• 已實績：800G矽光LPO與1.6T光模組規模交付且訂單規模增加；泰國廠目前約月出貨10萬只800G LPO並簽長單。1.6T FRO/LRO仍在海外頭部AI客戶測試，不能視為量產採用。
+• 供應鏈：高階3nm／5nm DSP為主要瓶頸，PCB亦偏緊；公司稱以長單鎖定「十幾億美元」物料，DSP到貨較Q2改善。雲嶺光電的光晶片、CW光源已量產並批量交付；未披露材料體系，不推定為InP。
+• NPO：已取得一家未具名北美客戶6.4T NPO供應商資格；產品定型、目前送樣測試，公司預計2027年7月批量交付。這是資格＋預期，不是已量產或已認列營收。
+• 管理層指引（非實績）：2027年800G LPO交付120萬–150萬只；1.6T LPO需求指引100萬–200萬只、預計Q1完成測試。海外產能目前約20萬只／月，指引2027Q2達40萬–50萬、Q3逾100萬只／月。
+
+3）供應鏈角色
+華工科技／華工正源：矽光LPO、FRO/LRO、1.6T及NPO模組；雲嶺光電：光晶片與CW光源。北美AI客戶、DSP／PCB供應商均未具名，不猜測。LPO／可插拔、NPO與CPO架構不可混為一談；此次主要營收證據仍來自可插拔/LPO。
+
+4）合理推論
+若長單、認證與產能爬坡按期兌現，2027年海外高速光模組收入與規模效益可上升，6.4T NPO資格也使公司更早進入下一代客戶清單。成立條件是1.6T測試通過、NPO在2027年7月如期轉批量、DSP供應持續改善及新增產能有足夠稼動率。
+
+5）投資機會與風險
+受益對象是華工科技及其光晶片／CW光源垂直供應；壓力可能落在未能取得客戶認證的同業。催化劑：1.6T認證與訂單、NPO首批出貨、泰國擴產。風險：管理層指引未轉訂單、認證／良率延誤、DSP瓶頸、長單造成庫存或現金壓力、產能過剩與價格競爭。未查即時估值，不判斷是否已反映。
+
+6）待驗證／追蹤
+追蹤2027年實際訂單與出貨、1.6T認證客戶數、NPO 7月批量里程碑、泰國廠稼動率、光互聯毛利率、鎖料的預付款與庫存變化。公司未公開客戶、DSP品牌及NPO訂單金額。
+
+去重：相較2026/8/27既有披露，本次新增泰國實際月出貨與長單、出口增396%、6.4T NPO供應商資格與批量時點、CW光源實際量產，以及2027年量／產能指引；非舊聞重刊。
+
+官方Q3報告（2026/10/30）：
+https://static.cninfo.com.cn/finalpage/2026-10-30/1225643857.PDF
+公司IR紀錄鏡像（2026/10/30；原始披露內容）：
+https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12683587&stockid=000988
+前次官方IR基準（2026/8/27）：
+https://static.cninfo.com.cn/finalpage/2026-08-27/1225519368.PDF"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"hgtech-q3-800g-lpo-1p6t-npo-20261030","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
