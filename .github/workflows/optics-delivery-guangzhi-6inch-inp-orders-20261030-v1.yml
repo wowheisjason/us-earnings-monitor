@@ -1,0 +1,69 @@
+name: Deliver Guangzhi 6-inch InP orders report v1
+on:
+  push:
+    branches: [codex/optics-delivery-guangzhi-6inch-inp-orders-20261030-v1]
+    paths: [.github/workflows/optics-delivery-guangzhi-6inch-inp-orders-20261030-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-guangzhi-6inch-inp-orders-20261030-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified Guangzhi InP report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜光智科技6吋InP訂單量化｜2026/10/30
+
+1）重大變化
+光智科技（300489.SZ）首次量化披露：截至2026/9/30，控股子公司先銳科技6吋InP襯底在手訂單接近1萬片；6吋產品海外在手訂單金額占全部海外在手訂單約63%。相較9月僅披露「取得全球頭部客戶訂單、已批量交付」，這是可改變營收能見度與6吋InP競爭地位判斷的新增規模證據。
+
+2）已確認事實
+公告日2026/10/30；報告期截至9/30。先銳產品涵蓋2、3、4、6吋InP襯底，8/25完成股權交割，本季納入合併。公司稱6吋產品持續取得某全球優質客戶訂單，客戶驗證與合作進展順利。
+公司前三季營收20.929億元人民幣，年增45.04%；Q3營收9.001億元，年增112.68%；前三季歸母淨利0.843億元。收入增長同時受到紅外業務與先銳併表影響，不能把全部增幅歸因InP。
+公司整體存貨18.412億元、較年初增44.36%；預付款0.976億元、增188.32%；合約負債1.319億元、增194.89%。這些是公司合併口徑，不是InP專項數據。
+
+3）供應鏈
+光智／先銳是InP襯底上游，直接供應未具名的國內外光通訊晶片及元件廠。AXT（AXTI）、住友電工（5802.T）等屬全球競爭者；本公告不證明其訂單流失。EML、CW雷射、光偵測器及InP PIC為下游用途，但沒有BOM，不能指定Coherent、Lumentum或特定模組廠為客戶。
+
+4）合理推論
+若近萬片訂單按期交付、6吋良率與出口許可達標，先銳併表可由資產收購轉為實際營收來源；大尺寸晶圓可提高晶片產出效率，強化高速光晶片升級中的競爭位置。成立條件是訂單未取消、產能與良率足夠、客戶驗收完成，且AI光互連需求持續。
+
+5）機會與風險
+催化劑：6吋出貨量與收入、具名客戶或追加訂單、月產能／良率、40噸晶片與百萬片規劃的實際投產。
+風險：訂單取消條款與ASP未披露；海外出口許可、客戶集中、擴產良率、存貨與負債上升；50億元／百萬片項目仍是規劃，不是已投產產能。公司所稱InP供需缺口屬管理層判斷，沒有獨立價格或交期證據，不能外推整條EML、CPO或光模組鏈缺貨。
+
+6）待驗證
+追蹤近萬片訂單交付期、不可取消比例、6吋良率與ASP、先銳分部收入／毛利、出口許可及客戶認證。未公開客戶不猜測；本事件不代表CPO或1.6T模組已由先銳直接量產。
+
+官方季報：https://static.cninfo.com.cn/finalpage/2026-10-30/1225645205.PDF
+去重：guangzhi-6inch-inp-orders-20261030 v1"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"guangzhi-6inch-inp-orders-20261030","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
