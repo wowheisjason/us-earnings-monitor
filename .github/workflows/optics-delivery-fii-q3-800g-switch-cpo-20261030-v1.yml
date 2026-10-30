@@ -1,0 +1,45 @@
+name: Optics delivery FII Q3 800G switch CPO v1
+on:
+  push:
+    branches: [codex/optics-delivery-fii-q3-800g-switch-cpo-20261030-v1]
+    paths: [.github/workflows/optics-delivery-fii-q3-800g-switch-cpo-20261030-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-fii-q3-800g-switch-cpo-20261030-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AI光通訊重大進展｜工業富聯高速交換器實績｜2026/10/30】\n\n1）重大變化及通知理由\n工業富聯（601138.SH）2026年第三季報首次量化披露，Q3「800G及以上交換器」出貨量年增80%、季增25%；網路設備收入年增1.2倍、季增25%。產品組合明確涵蓋多晶片平台乙太網交換器、CPO交換器、NVLink交換器及SuperNIC。這是已發生的出貨與收入增長，不是展示或送樣，足以提高對公司AI網路設備營收及交換器製造競爭位置的判斷，因此達通知門檻。\n\n重要限制：80%／25%是800G及以上交換器合計增速，季報沒有拆分CPO交換器數量或收入。只能確認CPO交換器已列入商業產品組合，不能宣稱CPO已大規模量產部署。\n\n2）已確認事實\n• 事件期間：2026/7/1–9/30；公告日：2026/10/30；季報未經審計。\n• Q3營收人民幣3,835.54億元，年增57.73%；歸母淨利166.34億元，年增60.35%；扣非淨利164.65億元，年增64.82%。\n• 前三季營收9,414.14億元，年增55.88%；歸母淨利403.75億元，年增79.55%。\n• 雲端運算業務收入年增75%、季增25%；AI-ASIC伺服器出貨年增1.5倍、季增80%；AI-GPU機櫃出貨年增70%、季增15%；新一代AI機櫃已開始出貨。\n• 通信及移動網路設備中的網路設備收入年增120%、季增25%；800G及以上交換器出貨年增80%、季增25%。\n• 公司將整體增長歸因於AI算力需求、主要客戶份額提升及雲端服務商業務。這是公司說明；未披露交換器台數、ASP、具名客戶或CPO占比。\n官方原始資料：\nhttps://static.cninfo.com.cn/finalpage/2026-10-30/1225639532.PDF\n\n3）供應鏈角色及競爭關係\n• 工業富聯（601138.SH）：直接曝險，負責AI伺服器、機櫃、800G+交換器、CPO／NVLink交換器及SuperNIC的設計製造與系統整合。\n• 鴻海（2317.TW）：控股集團，屬間接曝險；不能把工業富聯全部增長直接等同鴻海同幅度獲利。\n• 未具名雲端服務商及AI客戶：需求端。公司沒有公開客戶名稱，不能推測特定hyperscaler。\n• 交換ASIC、DSP、CPO光引擎、CW雷射／EML、矽光PIC、FAU、連接器及封裝測試供應商：可能隨高速交換器放量受益，但季報未揭露BOM或供應商，不能指定Broadcom、NVIDIA或任何美日台光元件廠取得新增訂單。\n• Celestica、Jabil及其他交換器／AI硬體ODM：競爭比較對象；本公告不能證明其市占流失。\n\n4）合理推論\n實際出貨增長顯示800G以上交換平台正由開發轉為規模交付，工業富聯在AI網路設備的收入傳導已經發生。若高速交換器出貨持續、客戶拉貨未延後，交換ASIC、PCB、電源散熱及光互連需求可同步增加。\n\n但「產品覆蓋CPO交換器」不等於80%增長來自CPO，也不能證明外置CW雷射、矽光光引擎或特定封裝方案已量產。成立條件包括CPO產品已通過終端驗證、光引擎良率及熱管理達標、800G／1.6T鏈路如期配套，以及AI資料中心交換器部署未延後。\n\n5）投資機會及風險\n潛在催化劑：CPO交換器台數／收入首次拆分、具名客戶採用、1.6T光介面配置、光引擎供應商與良率、下一代AI機櫃及NVLink交換器持續放量。\n主要風險：客戶集中、產品降價與ODM毛利率壓力；應收帳款由年初1,107.42億元升至1,974.55億元、存貨由1,509.13億元升至1,889.40億元，可能造成回款及庫存風險；CPO認證或良率延誤；可插拔光模組、LPO／NPO與CPO架構改變價值分配；AI建置或電力供應延後。\n未核對即時股價或估值，不判斷是否已反映，亦不構成買賣建議。\n\n6）待驗證及去重\n後續追蹤CPO交換器的實際出貨台數、收入、客戶與量產日期；800G／1.6T光介面比例；光引擎、CW雷射／EML、矽光PIC及封裝供應商；分產品毛利率、訂單覆蓋期與庫存週轉。\n去重：未發現既有同事件通知。事件鍵 fii-q3-800g-switch-cpo-20261030，版本1。"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"fii-q3-800g-switch-cpo-20261030","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
