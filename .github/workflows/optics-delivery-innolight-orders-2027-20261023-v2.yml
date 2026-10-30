@@ -1,0 +1,78 @@
+name: Optics Telegram delivery innolight orders 2027 v2
+on:
+  push:
+    branches: [codex/optics-delivery-innolight-orders-2027-20261023-v2]
+    paths: [.github/workflows/optics-delivery-innolight-orders-2027-20261023-v2.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-innolight-orders-2027-20261023-v2
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT_TEXT: |
+            AI光通訊重大續報｜中際旭創Q3實績驗證800G／1.6T放量（v2）
+            
+            1）重大變化及為何達門檻
+            中際旭創（300308.SZ）2026/10/30披露Q3報告：Q3營收277.692億元、歸母淨利85.868億元，分別年增171.83%及173.74%；前三季營收695.471億元、歸母淨利222.379億元，分別年增178.13%及211.81%。公司正式將增長歸因於高速光模組需求強勁、800G與1.6T銷售持續增加。相較10/23的v1僅有2027訂單及2028需求指引，本次新增已認列營收／獲利、備料鎖料及設備投入，驗證訂單正在轉為交付，達續報門檻。
+            
+            2）已確認事實
+            • 事件／董事會日2026/10/29；公告日2026/10/30；財季截至9/30。季報未經審計。
+            • Q3扣非淨利90.181億元、年增190.13%；前三季扣非淨利221.097億元、年增212.12%；經營現金流80.084億元、年增46.81%。
+            • 前三季營業成本372.809億元、年增151.60%；依官方數字推算毛利率46.39%，去年同期40.74%。這是推算，不是公司分產品披露。
+            • 公司稱800G／1.6T銷售持續增加，但未拆分各自出貨量、收入、ASP、毛利或客戶。
+            • 期末存貨238.777億元、較年初+88.30%；預付款15.670億元、+1068.43%；其他非流動資產19.540億元、+2541.23%，後者主要為長期鎖定上游材料的預付款。
+            • 固定資產124.554億元、+75.91%；在建工程54.952億元、+286.46%，公司稱源於訂單增加、設備投入及待安裝設備。
+            • 應收帳款173.090億元、+175.76%，接近收入增幅；備料與應收擴張同時提高交付能力及營運資金風險。
+            官方季報：https://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF
+            10/23 v1公告：https://static.cninfo.com.cn/finalpage/2026-10-23/1225617691.pdf
+            
+            3）供應鏈與競爭關係
+            • 中際旭創：800G／1.6T可插拔光模組及矽光方案，直接曝險。
+            • 未具名海外AI資料中心客戶：需求端；公司未公開名稱，不推測特定hyperscaler。
+            • DSP、EML／CW雷射、矽光PIC、FAU及封裝測試供應商：可能受益於備料，但無BOM或採購份額，不能指定直接受益者。
+            • 新易盛、Coherent、AAOI等：競爭或比較對象；本季報不能證明其訂單同步增減。
+            • NPO／XPO仍屬合作研發或送樣，不能把本次可插拔模組放量解讀為CPO量產。
+            
+            4）合理推論
+            Q3實績與資產負債表共同支持10/23所稱訂單正在轉為交付；若2027訂單按期拉貨，新增設備與長期鎖料可提高產能及營收可見度，規模效應亦可能支撐毛利。成立條件是客戶不遞延／取消、1.6T良率與認證穩定、關鍵雷射及DSP供應充足、擴產按期開出。影響時間軸以2026Q4至2027為主；2028目前仍只是需求指引。
+            
+            5）投資機會與風險
+            潛在催化劑：1.6T收入／出貨占比、2027不可取消訂單、產能與良率、海外產能放量、NPO／XPO由送樣轉認證／量產。
+            風險：存貨與設備投入先於收入、存貨跌價與折舊、應收回款、ASP下滑、客戶集中、關鍵物料短缺、訂單重複或遞延、可插拔與NPO／CPO架構替代。不能由一家公司的鎖料推論整條InP／EML鏈全面缺貨。未核對即時估值，不判斷市場是否已反映。
+            
+            6）待驗證及去重
+            追蹤800G／1.6T分項出貨、ASP與毛利、存貨結構及週轉、資本支出與新增月產能、長期預付款對應物料、2027訂單取消條款、NPO／XPO階段。已核對既有通知：v1已送（message_id=572）；本次只報季報帶來的實績、備料與擴產新證據，事件鍵innolight-orders-2027-20261023，版本2。
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat=os.environ.get('TELEGRAM_CHAT_ID')
+          message=os.environ.get('REPORT_TEXT')
+          if not token or not chat or not message:
+              raise SystemExit('Telegram credentials unavailable')
+          payload=json.dumps({'chat_id':chat,'text':message,'link_preview_options':{'is_disabled':True}}).encode()
+          req=urllib.request.Request('https://api.telegram.org/bot'+token+'/sendMessage',data=payload,headers={'Content-Type':'application/json'})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit('Telegram delivery failed or unknown; do not retry blindly')
+          mid=result.get('result',{}).get('message_id')
+          if result.get('ok') is not True or type(mid) is not int or mid<=0:
+              raise SystemExit('Telegram receipt invalid')
+          receipt={'accepted':True,'message_id':mid,'event':'innolight-orders-2027-20261023','version':2}
+          with open('telegram-receipt.json','w') as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
