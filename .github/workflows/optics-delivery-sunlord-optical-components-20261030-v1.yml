@@ -1,0 +1,80 @@
+name: Optics delivery Sunlord optical components 20261030 v1
+on:
+  push:
+    branches:
+      - codex/optics-delivery-sunlord-optical-components-20261030-v1
+    paths:
+      - .github/workflows/optics-delivery-sunlord-optical-components-20261030-v1.yml
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-sunlord-optical-components-20261030-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊供應鏈重大進展｜順絡電子（002138.SZ）｜2026/10/30
+
+1）重大變化與門檻
+順絡電子首次確認光模組相關電子元件已於2026年下半年批量交付一線光模組客戶；公司並稱日系同業的疊層工藝磁珠交付持續緊張，使其承接部分既有客戶外溢需求，信號處理產線稼動率維持高檔。這同時構成量產出貨與供應替代證據，達通知門檻，但未公開出貨量、客戶或專項收入。
+
+2）已確認事實
+• 事件日：2026/10/29；IR紀錄公告日：2026/10/30。
+• 公司稱光模組領域下半年已有批量化交付，預計2027年市占明顯提升；後者是管理層預期，不是訂單。
+• 800G／1.6T光模組現有方案中，磁珠等電子物料的單模組加權ASP估計約人民幣15–20元；這是方案估算，不是公司實際ASP。
+• 光模組客戶因日系友商疊層磁珠交付持續緊張而快速起量，公司承接部分外溢需求。不能由單一物料外推整條EML、InP或光模組鏈缺貨。
+• 公司同時加大陶瓷管殼、陶瓷基板開發；未披露哪些產品已批量、客戶及800G／1.6T占比。
+• Q3實績：營收24.755億元、年增36.94%、季增13.89%；歸母淨利3.511億元、年增23.97%、季增30.4%。前三季營收63.340億元、年增25.87%；歸母淨利7.982億元、年增3.79%。
+• 前三季信號處理收入22.031億元、年增21.14%；陶瓷、PCB及其他收入5.004億元、年增26.17%。兩項均包含非光模組業務，不能將增幅全部歸因於AI光通訊。
+• 珠海斗門工廠總投資不低於12億元、固定資產投資7.8億元，涵蓋疊層元件、汽車電子、固體燃料電池及精密陶瓷；土地交付後48個月內投產。這不是專屬光模組產能，亦不是近期已投產。
+
+3）供應鏈角色
+順絡電子是光模組上游磁性元件、陶瓷管殼／基板供應商，屬電子與封裝配套，不是InP、EML、CW雷射、矽光PIC或光引擎製造商。客戶與日系競爭者未具名，不推測為特定光模組廠或TDK、村田等公司。
+
+4）合理推論
+若日系供應持續受限且順絡通過更多一線客戶認證，批量交付可使光通訊成為信號處理與陶瓷業務的新成長來源，並降低公司對手機射頻需求的敏感度。成立條件是客戶份額轉換持續、光模組需求未降、良率與交期達標，且2027份額預期轉為正式訂單。
+
+5）機會與風險
+催化劑：光模組專項收入／出貨首次量化、具名客戶認證、磁珠交期與價格、陶瓷管殼／基板量產、珠海設備進場。風險：批量規模小、日系供應恢復、價格競爭、客戶集中、原材料與人工成本上升、12億元擴產跨多業務且回報期長。未查即時估值，不判斷是否已反映。
+
+6）待驗證／去重
+追蹤光模組元件出貨量、ASP、毛利率、800G／1.6T占比、客戶數、日系物料交期及珠海光通訊相關產能。事件鍵sunlord-optical-components-20261030 v1；目前可讀通知未發現同事件，但不宣稱涵蓋所有外部歷史。
+
+官方披露索引（2026/10/30）：
+https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002138
+公司IR紀錄鏡像：
+https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12681154&stockid=002138
+公司Q3報告鏡像：
+https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12679871&stockid=002138"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid <= 0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"sunlord-optical-components-20261030","version":1}
+          with open("telegram-receipt.json","w") as f:
+              json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
