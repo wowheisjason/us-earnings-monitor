@@ -1,0 +1,77 @@
+name: ASE CPO volume production Telegram delivery v1
+on:
+  push:
+    branches: [codex/optics-delivery-ase-cpo-volume-production-20261029-v1]
+    paths: [.github/workflows/optics-ase-cpo-volume-production-20261029-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-ase-cpo-volume-production-20261029-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified ASE CPO report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜日月光CPO已於Q4開始量產，2027年營收指引逾5億美元（2026/10/29）
+
+1）重大變化／達門檻原因
+日月光投控（TWSE:3711／NYSE:ASX）財務長在Q3法說確認，CPO已於2026Q4開始量產，將延續至2027年；依現有客戶業務預估，2027年CPO營收將超過5億美元並計入LEAP。這是由研發／展示跨入量產，且首次提供具金額的營收指引，足以改變其先進封裝成長與CPO商業化判斷。
+
+2）已確認事實
+• 事件／法說日：2026/10/29；財務期間截至9/30。
+• 管理層原話：CPO已在Q4開始mass production，2027年預估營收超過US$0.5bn。這是公司指引，尚非已認列收入，也未披露客戶、產品、出貨量或合約約束。
+• 公司稱與晶圓代工夥伴及客戶共同投入CPO，但均未具名，不猜測為台積電、NVIDIA、Broadcom或其他公司。
+• 管理層認為CPO與NPO將共存，依封裝效能需求分流；不能把兩者合併計算。
+• Q3合併營收NT$2441.61億元，年增44.8%、季增27.8%；歸母淨利NT$269.96億元。封測ATM營收NT$1514.85億元，年增51.0%，毛利率30.6%。
+• Q3實際設備資本支出US$21.04億，其中封裝US$9.91億、測試US$10.67億；並非CPO專屬支出。
+• 2026全年資本支出指引由US$105億上調至US$115億；新增US$10億約半數用於廠房、半數設備，設備增量約60%投入LEAP。CPO列入LEAP，但不能將全部LEAP資本支出視為CPO。
+• 2026 LEAP營收指引由US$37億上調至逾US$40億；2027目標約翻倍。先進封裝全製程2026收入約US$3億、2027指引逾US$10億，管理層稱良率已支援量產與大批出貨；這些數字範圍大於CPO。
+
+3）供應鏈角色與競合
+日月光是封裝測試／系統整合端，直接受益來自CPO光電整合、封裝、測試及可能的基板服務。晶圓代工夥伴、光引擎／矽光PIC、外置CW雷射、FAU／光纖連接與交換器ASIC供應商可能間接受益，但官方未公開BOM或名單，不能指認個別美日台公司取得訂單。Amkor（AMKR）、晶圓代工廠的先進封裝平台及其他光電封裝供應商構成競爭或互補；本次沒有市占資料。CPO不是800G／1.6T可插拔模組，也不代表EML路線被全面取代。
+
+4）合理推論
+若量產良率、客戶部署與產能按期提升，2027年逾5億美元CPO可形成日月光新的高階封裝收入池，並推升LEAP產品組合與封測毛利；成立條件是客戶系統驗證完成、光學封裝良率／可維修性達標、測試成本受控，以及光引擎、CW雷射、FAU與ASIC供應同步。5億美元為管理層預估，不能視為不可取消訂單或已簽合約。
+
+5）機會與風險
+催化劑：首次拆分CPO季度收入、具名客戶／平台、量產出貨量、良率、單機封裝價值、CPO資本支出與2027逐季爬坡。受益方向為日月光及經確認的矽光PIC、光引擎、CW雷射、FAU與測試設備供應商。風險包括客戶部署延後、CPO／NPO／可插拔替代關係變動、良率與散熱／可靠性問題、資本支出超前、客戶集中及同業擴產。未查即時估值，不判斷股價是否反映。
+
+6）待驗證／追蹤
+追蹤2026Q4實際CPO收入、2027逾5億美元是否為PO或需求預估、產品速率與架構、客戶數、量產良率、測試／封裝分工、CPO在LEAP中的收入與毛利，以及設備與廠房投產進度。管理層法說為公司一手說法，但CPO數字未列入6-K財報或簡報，尚缺客戶／供應商獨立確認。
+
+官方Q3財報：https://www.prnewswire.com/news-releases/ase-technology-holding-co-ltd-reports-its-unaudited-consolidated-financial-results-for-the-third-quarter-of-2026-302923021.html
+官方IR入口：https://www.aseglobal.com/
+法說逐字稿／音訊：https://stockanalysis.com/quote/tpe/3711/transcripts/719333-q3-2026/
+交叉驗證（中央社）：https://www.cna.com.tw/news/afe/202610290229.aspx
+
+去重：已查ASE、ASEH、ASX、3711及CPO既有通知分支，未見同公司、同事件及同里程碑；本次為v1。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"ase-cpo-volume-production-20261029","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
