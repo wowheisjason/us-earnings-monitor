@@ -1,0 +1,81 @@
+name: Innolight 2027 PO and NPO timing v3 delivery
+on:
+  push:
+    branches: [codex/optics-delivery-innolight-orders-2027-20261023-v3]
+    paths: [.github/workflows/optics-delivery-innolight-orders-2027-20261023-v3.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-innolight-orders-2027-20261023-v3
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""【中際旭創續報 v3｜2027訂單確認為PO，NPO大規模部署指向2028】
+
+1）重大變化及門檻
+中際旭創（300308.SZ／3308.HK）10月29日晚電話會議正式澄清：公司所稱「主要客戶訂單已基本覆蓋2027全年」是客戶給出的確定性PO，不是尚未轉單的需求指引。公司同時確認Q3的1.6T收入進一步加速，並把NPO等新品節奏明確為2027下半年逐步上量、2028年才真正大規模部署。相較已通知的v1訂單展望與v2季報實績，PO性質、NPO節點及供應瓶頸均為新證據，足以提高可插拔800G／1.6T營收能見度，也下修對NPO短期大規模貢獻的預期，達通知門檻。
+
+2）已確認事實
+事件／公告日：2026-10-29；紀錄編號2026-009。Q3收入環比約增25%，單季毛利率約46.6%、環比升0.2個百分點；公司稱主因高階產品占比、矽光滲透率及降本。Q3營收增長主要來自800G／1.6T出貨擴大，其中1.6T收入加速；產品價格與毛利率保持穩定。以上單季數字為公司電話會議口徑，季報實績另已於v2核實。
+
+2027：主要客戶訂單已基本覆蓋全年，未見砍單或下調需求指引；公司明確稱該「訂單」為確定性PO，與guidance有嚴格區別，但未披露金額、取消條款、客戶或各速率數量。更多下游客戶將導入1.6T；800G基數較大，兩者仍為2027主要出貨及收入來源。
+
+供需：部分核心物料仍緊張。DSP供給偏緊、價格較堅挺，但公司稱可取得與自身份額相匹配的供應；透過長協、預付款及新供應商保障交付，並預期未來數季隨供應商產能釋放而改善。CW光源同時由海外及國內供應商供貨，比例未披露。這只能證明特定關鍵物料偏緊，不能外推整條InP／EML／光模組鏈缺貨。
+
+NPO：2027年仍屬新品導入、產能及良率爬坡；預計下半年逐步上量，2028年加速，真正大規模部署預計在2028年。公司稱2027–2028新品主要仍依賴單波200G。其OCP NPO方案採低功耗內置光源；這不等於CPO或外置CW雷射架構已被淘汰。
+
+價格／資本支出：Q3價格較上半年穩定，公司預期2027報價總體良性、未見惡性競爭；2027仍將維持較強資本投入，支援下半年擴產並準備2028需求。均屬管理層展望，不是已完成擴產或已認列收入。
+
+官方原文：https://static.cninfo.com.cn/finalpage/2026-10-29/1225645972.PDF
+Q3季報：https://static.cninfo.com.cn/finalpage/2026-10-30/1225643953.PDF
+
+3）供應鏈角色
+中際旭創：800G／1.6T可插拔模組、矽光及NPO直接曝險。
+未具名AI資料中心客戶：PO與需求端；公司未公開名稱，不推測hyperscaler。
+DSP供應商：直接瓶頸環節；未具名，不能指定個股。
+CW雷射、EML、矽光PIC、FAU、封裝測試：互補或替代環節；無BOM及採購份額，不能推定特定美日台供應商受益。
+新易盛、Coherent、AAOI等：競爭者；本紀錄不證明其訂單得失。
+
+4）合理推論
+確定性PO較一般需求指引提供更高2027營收可見度；若客戶按期拉貨、DSP與光源供應改善、1.6T良率及ASP穩定，新增設備與備料可轉為收入並支撐毛利率。另一方面，NPO大規模部署落在2028，表示2027主體仍是800G／1.6T可插拔，NPO短期貢獻不宜高估。成立條件包括PO未取消或遞延、產能按期、客戶認證完成、供應商釋放產能及AI資料中心部署不延後。
+
+5）機會與風險
+催化劑：PO金額及不可取消比例、1.6T季度出貨／ASP／毛利率、DSP交期與價格、NPO良率及2027下半年首批量產、2028更多客戶指引。
+風險：客戶集中、PO取消或重排、DSP／光源瓶頸、存貨與折舊先於收入、光模組降價、NPO認證或良率延誤，以及可插拔、LPO／LRO、NPO、CPO路線改變價值分配。未查即時價格，不判斷估值或下買賣指令。
+
+6）待驗證及去重
+待追蹤PO法律約束與取消條款、具名客戶、800G／1.6T拆分、DSP及CW光源供應商、產能與良率、NPO首批營收日期。事件鍵innolight-orders-2027-20261023，版本3；只續報10月29日官方調研新增的PO性質、供需與NPO時間表。"""
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"innolight-orders-2027-20261023","version":3}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
