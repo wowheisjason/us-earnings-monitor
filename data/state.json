@@ -1163,6 +1163,288 @@
         "format": "unknown",
         "index_url": "https://ir.kla.com/news-events/press-releases/detail/522/kla-announces-first-quarter-fiscal-year-2027-earnings-date"
       }
+    },
+    "sec_edgar:0001018724-26-000040:amzn-20260930.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001018724-26-000040:amzn-20260930.htm",
+      "ticker": "AMZN",
+      "title": "Amazon Form 10-Q — 10-Q",
+      "published_at": "2026-10-29T22:20:46.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-30",
+      "document_kind": "other",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001018724",
+        "accession": "0001018724-26-000040",
+        "form": "10-Q",
+        "document_type": "10-Q",
+        "filing_date": "2026-10-30",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0000050863-26-000191:intc-20260926.htm": {
+      "source": "sec_edgar",
+      "source_id": "0000050863-26-000191:intc-20260926.htm",
+      "ticker": "INTC",
+      "title": "Intel Form 10-Q — 10-Q",
+      "published_at": "2026-10-29T22:50:31.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "other",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0000050863",
+        "accession": "0000050863-26-000191",
+        "form": "10-Q",
+        "document_type": "10-Q",
+        "filing_date": "2026-10-30",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0001030894-26-000054:ncibpressrelease-oct302026.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001030894-26-000054:ncibpressrelease-oct302026.htm",
+      "ticker": "CLS",
+      "title": "Celestica Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-10-30T11:18:35.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000054/ncibpressrelease-oct302026.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000054/ncibpressrelease-oct302026.htm",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "period_end": "2026-10-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001030894",
+        "accession": "0001030894-26-000054",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-10-30",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "official_ir:c16de595c99f19268b30020a": {
+      "source": "official_ir",
+      "source_id": "c16de595c99f19268b30020a",
+      "ticker": "INTC",
+      "title": "Earnings Release",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results/",
+      "document_url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results/",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/"
+      }
+    },
+    "official_ir:e6dc875b4aad3053774eb619": {
+      "source": "official_ir",
+      "source_id": "e6dc875b4aad3053774eb619",
+      "ticker": "INTC",
+      "title": "10-Q Filing Q3 2026 Quarterly Results 10-Q Filing PDF HTML",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000191/intc-20260926.htm",
+      "document_url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000191/intc-20260926.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "other",
+      "metadata": {
+        "service": "official_ir",
+        "format": "htm",
+        "index_url": "https://www.intc.com/"
+      }
+    },
+    "official_ir:711dc1ead9e37fb24f6e9240": {
+      "source": "official_ir",
+      "source_id": "711dc1ead9e37fb24f6e9240",
+      "ticker": "INTC",
+      "title": "PDF Q3 2026 Quarterly Results PDF HTML",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000191/0000050863-26-000191.pdf",
+      "document_url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000191/0000050863-26-000191.pdf",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "other",
+      "metadata": {
+        "service": "official_ir",
+        "format": "pdf",
+        "index_url": "https://www.intc.com/"
+      }
+    },
+    "official_ir:e16822b2695c6ec335fd5219": {
+      "source": "official_ir",
+      "source_id": "e16822b2695c6ec335fd5219",
+      "ticker": "INTC",
+      "title": "View All Press Releases Q3 2026 Quarterly Results Latest News Oct 29, 2026 • 4:01 PM EDT Intel Reports Third-Quarter 2026 Financial Results View All Press Releases",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/news-events/press-releases",
+      "document_url": "https://www.intc.com/news-events/press-releases",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/"
+      }
+    },
+    "official_ir:1b61a4b651a35fe1dc05ed3b": {
+      "source": "official_ir",
+      "source_id": "1b61a4b651a35fe1dc05ed3b",
+      "ticker": "INTC",
+      "title": "Q3 2026 Intel Corporation Earnings Conference Call",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call",
+      "document_url": "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/"
+      }
+    },
+    "official_ir:7bf5b516c340bc4db64f7e77": {
+      "source": "official_ir",
+      "source_id": "7bf5b516c340bc4db64f7e77",
+      "ticker": "INTC",
+      "title": "View All Events Q3 2026 Quarterly Results Latest Events Oct 29, 2026  • 2:00 PM PDT Q3 2026 Intel Corporation Earnings Conference Call View All Events",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/news-events/ir-calendar",
+      "document_url": "https://www.intc.com/news-events/ir-calendar",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/"
+      }
+    },
+    "official_ir:995d59b508f909faee25fecd": {
+      "source": "official_ir",
+      "source_id": "995d59b508f909faee25fecd",
+      "ticker": "INTC",
+      "title": "HTML Q3 2026 Intel Corporation Earnings Conference Call PDF HTML",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+      "document_url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call"
+      }
+    },
+    "official_ir:af02439ebec5d0f4a29f00ca": {
+      "source": "official_ir",
+      "source_id": "af02439ebec5d0f4a29f00ca",
+      "ticker": "INTC",
+      "title": "XBRL Q3 2026 Intel Corporation Earnings Conference Call XBRL ZIP HTML",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/xbrl_doc_only/4423",
+      "document_url": "https://www.intc.com/filings-reports/all-sec-filings/xbrl_doc_only/4423",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call"
+      }
+    },
+    "official_ir:4059b8938f0642a4fa7fa88f": {
+      "source": "official_ir",
+      "source_id": "4059b8938f0642a4fa7fa88f",
+      "ticker": "INTC",
+      "title": "ZIP Q3 2026 Intel Corporation Earnings Conference Call ZIP HTML",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000191/0000050863-26-000191-xbrl.zip",
+      "document_url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000191/0000050863-26-000191-xbrl.zip",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "zip",
+        "index_url": "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call"
+      }
+    },
+    "official_ir:32bd6b00b34c0d1fb6d6e442": {
+      "source": "official_ir",
+      "source_id": "32bd6b00b34c0d1fb6d6e442",
+      "ticker": "INTC",
+      "title": "Email Alerts Q3 2026 Intel Corporation Earnings Conference Call",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/news-events/email-alerts",
+      "document_url": "https://www.intc.com/news-events/email-alerts",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call"
+      }
+    },
+    "official_ir:f1ae374ecbac98a58e41989d": {
+      "source": "official_ir",
+      "source_id": "f1ae374ecbac98a58e41989d",
+      "ticker": "INTC",
+      "title": "Contacts Q3 2026 Intel Corporation Earnings Conference Call",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/about-intel/contacts",
+      "document_url": "https://www.intc.com/about-intel/contacts",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call"
+      }
+    },
+    "official_ir:5205c9c94662c8c33526b0e8": {
+      "source": "official_ir",
+      "source_id": "5205c9c94662c8c33526b0e8",
+      "ticker": "INTC",
+      "title": "RSS News Feed Q3 2026 Intel Corporation Earnings Conference Call",
+      "published_at": "2026-10-30T00:00:00-04:00",
+      "url": "https://www.intc.com/news-events/press-releases/rss",
+      "document_url": "https://www.intc.com/news-events/press-releases/rss",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-26",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://www.intc.com/news-events/ir-calendar/detail/20261029-q3-2026-intel-corporation-earnings-conference-call"
+      }
     }
   },
   "events": {
@@ -1180,7 +1462,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -1545,7 +1827,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -1843,7 +2125,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2154,7 +2436,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2388,7 +2670,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2539,7 +2821,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2988,7 +3270,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3064,14 +3346,14 @@
       "status": "published",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-29T17:06:34-04:00",
+      "updated_at": "2026-10-30T08:53:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
             "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.187,
+            "seconds": 0.242,
             "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
             "category": "search_quota_blocked"
           },
@@ -3086,7 +3368,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.445,
+            "seconds": 0.264,
             "documents": 0,
             "partial": false
           },
@@ -3099,7 +3381,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3119,11 +3401,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
-        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
-        "official_ir_check_count": 9,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 10,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T05:06:34-04:00"
+        "next_ir_retry_at": "2026-10-30T20:53:20-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -3145,7 +3427,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3159,25 +3441,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.208,
+            "seconds": 0.051,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MSFT-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.259,
+            "seconds": 0.176,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.19,
+            "seconds": 0.05,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/MSFT-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3198,11 +3480,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
-        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
-        "official_ir_check_count": 9,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 10,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T05:06:34-04:00"
+        "next_ir_retry_at": "2026-10-30T20:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3219,7 +3501,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3241,7 +3523,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.141,
+            "seconds": 0.074,
             "documents": 0,
             "partial": false
           },
@@ -3254,7 +3536,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3274,11 +3556,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
-        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
-        "official_ir_check_count": 9,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 10,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T05:06:34-04:00"
+        "next_ir_retry_at": "2026-10-30T20:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3295,7 +3577,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3317,7 +3599,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.356,
+            "seconds": 0.295,
             "documents": 0,
             "partial": false
           },
@@ -3330,7 +3612,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-29T17:06:34-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3350,11 +3632,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-29T17:06:34-04:00",
-        "official_ir_checked_at": "2026-10-29T17:06:34-04:00",
-        "official_ir_check_count": 9,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 10,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T05:06:34-04:00"
+        "next_ir_retry_at": "2026-10-30T20:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3371,7 +3653,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:53:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3385,25 +3667,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.212,
+            "seconds": 0.024,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GOOGL-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.193,
+            "seconds": 0.069,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.16,
+            "seconds": 0.048,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GOOGL-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T02:12:02-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3423,11 +3705,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_checked_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T04:12:02-04:00"
+        "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3445,7 +3727,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3467,7 +3749,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.3,
+            "seconds": 0.653,
             "documents": 0,
             "partial": false
           },
@@ -3480,7 +3762,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T02:12:02-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3500,11 +3782,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_checked_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T04:12:02-04:00"
+        "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3521,7 +3803,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:53:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3535,25 +3817,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.16,
+            "seconds": 0.04,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GLW-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.279,
+            "seconds": 0.282,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.127,
+            "seconds": 0.133,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/GLW-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T02:12:02-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3573,11 +3855,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_checked_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_check_count": 8,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 9,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T04:12:02-04:00"
+        "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3590,12 +3872,13 @@
       "period_end": "2026-09-30",
       "documents": [
         "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-        "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm"
+        "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm",
+        "sec_edgar:0001018724-26-000040:amzn-20260930.htm"
       ],
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3609,35 +3892,36 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.154,
+            "seconds": 0.035,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMZN-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.306,
+            "seconds": 0.316,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.151,
+            "seconds": 0.085,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMZN-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T02:12:02-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
         "source_manifest": {
-          "document_count": 2,
+          "document_count": 3,
           "kinds": {
-            "financial_results": 2
+            "financial_results": 2,
+            "other": 1
           },
           "sources": {
-            "sec_edgar": 2
+            "sec_edgar": 3
           },
           "has_primary_results": true,
           "has_official_ir": false,
@@ -3647,11 +3931,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_checked_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_check_count": 6,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 7,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T04:12:02-04:00"
+        "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3668,7 +3952,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3690,7 +3974,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.459,
+            "seconds": 0.256,
             "documents": 0,
             "partial": false
           },
@@ -3703,7 +3987,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T02:12:02-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3723,11 +4007,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_checked_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_check_count": 6,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 7,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T04:12:02-04:00"
+        "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3751,7 +4035,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3765,25 +4049,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.234,
+            "seconds": 0.03,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/KLAC-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 2.237,
+            "seconds": 3.722,
             "documents": 7,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.133,
+            "seconds": 0.017,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/KLAC-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T02:12:02-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3805,11 +4089,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_checked_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_check_count": 6,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 7,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T04:12:02-04:00"
+        "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3826,7 +4110,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:58:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3848,7 +4132,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.219,
+            "seconds": 1.149,
             "documents": 0,
             "partial": false
           },
@@ -3861,7 +4145,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T02:12:02-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3881,10 +4165,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T02:12:02-04:00",
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-10-30T02:12:02-04:00",
-        "next_ir_retry_at": "2026-10-30T04:12:02-04:00"
+        "official_ir_last_attempt_incomplete": "2026-10-30T08:53:20-04:00",
+        "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
       },
       "delivery": {}
     },
@@ -3901,7 +4185,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T02:12:02-04:00",
+      "updated_at": "2026-10-30T08:53:20-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3915,25 +4199,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.12,
+            "seconds": 0.019,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/ENTG-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.135,
+            "seconds": 0.103,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.164,
+            "seconds": 0.033,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/ENTG-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T02:12:02-04:00",
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -3953,26 +4237,192 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_checked_at": "2026-10-30T02:12:02-04:00",
-        "official_ir_check_count": 6,
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 7,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T04:12:02-04:00"
+        "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
       },
       "delivery": {}
+    },
+    "INTC_2026-09-26_Q3": {
+      "event_id": "INTC_2026-09-26_Q3",
+      "ticker": "INTC",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "first_seen_at": "2026-10-30T08:53:20-04:00",
+      "period_end": "2026-09-26",
+      "documents": [
+        "sec_edgar:0000050863-26-000191:intc-20260926.htm",
+        "official_ir:c16de595c99f19268b30020a",
+        "official_ir:e6dc875b4aad3053774eb619",
+        "official_ir:711dc1ead9e37fb24f6e9240",
+        "official_ir:e16822b2695c6ec335fd5219",
+        "official_ir:1b61a4b651a35fe1dc05ed3b",
+        "official_ir:7bf5b516c340bc4db64f7e77",
+        "official_ir:995d59b508f909faee25fecd",
+        "official_ir:af02439ebec5d0f4a29f00ca",
+        "official_ir:4059b8938f0642a4fa7fa88f",
+        "official_ir:32bd6b00b34c0d1fb6d6e442",
+        "official_ir:f1ae374ecbac98a58e41989d",
+        "official_ir:5205c9c94662c8c33526b0e8"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-10-30T08:53:20-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.048,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/INTC-2026-Q3",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 3.884,
+            "documents": 12,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.022,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/INTC-2026-Q3"
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 13,
+          "kinds": {
+            "other": 3,
+            "financial_results": 10
+          },
+          "sources": {
+            "sec_edgar": 1,
+            "official_ir": 12
+          },
+          "has_primary_results": true,
+          "has_official_ir": true,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "next_ir_retry_at": "2026-10-30T09:08:20-04:00"
+      },
+      "delivery": {}
+    },
+    "CLS_2026-10-30": {
+      "event_id": "CLS_2026-10-30",
+      "ticker": "CLS",
+      "fiscal_year": 2026,
+      "quarter": null,
+      "first_seen_at": "2026-10-30T08:53:20-04:00",
+      "period_end": "2026-10-30",
+      "documents": [
+        "sec_edgar:0001030894-26-000054:ncibpressrelease-oct302026.htm"
+      ],
+      "status": "published_sec_pending",
+      "report_version": 1,
+      "last_analyzed_document_count": 1,
+      "updated_at": "2026-10-30T08:58:20-04:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.0,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          },
+          {
+            "provider": "direct_ir",
+            "ok": false,
+            "seconds": 1.09,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "reason": "period_unavailable",
+            "provenance": null
+          }
+        ],
+        "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 1,
+          "kinds": {
+            "financial_results": 1
+          },
+          "sources": {
+            "sec_edgar": 1
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "official_ir_last_attempt_incomplete": "2026-10-30T08:53:20-04:00",
+        "next_ir_retry_at": "2026-10-30T09:08:20-04:00"
+      },
+      "delivery": {
+        "status": "accepted",
+        "message_id": 594,
+        "report_version": 1
+      }
     }
   },
   "source_checks": {},
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-10-30T02:12:02-04:00",
-      "blocked_until": "2026-10-30T08:12:02-04:00",
+      "last_failure_at": "2026-10-30T08:53:20-04:00",
+      "blocked_until": "2026-10-30T14:53:20-04:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-30T02:12:02-04:00",
+      "last_success_at": "2026-10-30T08:53:20-04:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -24806,7 +25256,7 @@
     },
     "AMZN_2026-09-30_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "dbd59a41b3cd958edf8354b69df0afc55e6ec765106a2fdbacfd3a46c7ded231",
+      "evidence_fingerprint": "dd99514661e780308c94ba21f920b69a4e472209cfb74df07f1d90b965d1efdc",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -24820,30 +25270,16 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Net sales increased 12% to $201.9 billion in the third quarter of 2026 compared with $180.2 billion in the third quarter of 2025.",
+                "statement": "Net sales increased 12% to $201.9 billion in the third quarter of 2026 compared to $180.2 billion in the third quarter of 2025.",
                 "materiality_candidate": 5,
                 "quote": "Net sales\nincreased 12% to $201.9 billion in the third quarter, compared with $180.2 billion in third quarter 2025.",
-                "metric": "Net sales",
-                "value": "201.9",
-                "unit": "USD_B",
+                "metric": "net_sales",
+                "value": 201.9,
+                "unit": "billion_usd",
                 "period": "Q3 2026",
-                "comparison_value": "180.2",
+                "comparison_value": 180.2,
                 "comparison_period": "Q3 2025",
                 "reported_change": "12%"
-              },
-              {
-                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "AWS segment sales increased 39% year-over-year to $46.0 billion in Q3 2026.",
-                "materiality_candidate": 5,
-                "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
-                "metric": "AWS segment sales",
-                "value": "46.0",
-                "unit": "USD_B",
-                "period": "Q3 2026",
-                "reported_change": "39%"
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
@@ -24853,10 +25289,27 @@
                 "statement": "Operating income was $28.1 billion and operating margin was 13.9% in Q3 2026.",
                 "materiality_candidate": 5,
                 "quote": "Operating income was $28.1 billion and operating margin was 13.9%—Amazon’s highest operating margin ever",
-                "metric": "Operating income",
-                "value": "28.1",
-                "unit": "USD_B",
-                "period": "Q3 2026"
+                "metric": "operating_income",
+                "value": 28.1,
+                "unit": "billion_usd",
+                "period": "Q3 2026",
+                "comparison_value": 17.4,
+                "comparison_period": "Q3 2025",
+                "reported_change": "61.5%"
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AWS segment net sales increased 39% year-over-year to $46.0 billion in Q3 2026.",
+                "materiality_candidate": 5,
+                "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
+                "metric": "aws_net_sales",
+                "value": 46.0,
+                "unit": "billion_usd",
+                "period": "Q3 2026",
+                "reported_change": "39%"
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
@@ -24866,11 +25319,27 @@
                 "statement": "Projected AWS revenue growth rates of over 40% both in 2027 and in 2028.",
                 "materiality_candidate": 5,
                 "quote": "projected revenue growth rates of over 40% both in 2027 and in 2028",
-                "metric": "AWS revenue growth rate",
-                "period": "2027-2028",
+                "metric": "aws_revenue_growth",
+                "period": "FY 2027 - FY 2028",
                 "guidance_type": "lower_bound",
-                "value": "40",
-                "unit": "PERCENT"
+                "value": 40,
+                "unit": "percent"
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow decreased to an outflow of $42.4 billion for the trailing twelve months ended September 30, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Free cash flow\ndecreased to an outflow of $42.4 billion for the trailing twelve months, driven primarily by a year-over-year increase of $94.8 billion in purchases of property and equipment, net of proceeds from sales and incentives.",
+                "metric": "free_cash_flow",
+                "value": -42.4,
+                "unit": "billion_usd",
+                "period": "TTM Sep 30 2026",
+                "comparison_value": 14.8,
+                "comparison_period": "TTM Sep 30 2025",
+                "metric_type": "standard_fcf"
               }
             ]
           }
@@ -24883,48 +25352,66 @@
             ],
             "cards": [
               {
-                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Fourth quarter 2026 net sales are expected to be between $240.0 billion and $247.0 billion, growing between 12% and 16% compared with fourth quarter 2025.",
-                "materiality_candidate": 5,
-                "quote": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025.",
-                "metric": "net_sales",
-                "period": "Q4 2026",
-                "guidance_type": "range",
-                "low": 240.0,
-                "high": 247.0,
-                "unit": "USD_B"
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                "card_type": "customer",
+                "topic": "customer_usage",
+                "fact_class": "objective_fact",
+                "statement": "Increased selection from notable brands by more than 20% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Increased selection from notable brands like Banana Republic, Jean Paul Gaultier fragrances, Carolina Herrera fragrances, La-Z-Boy, The Farmer’s Dog, and FAO Schwarz by more than 20% year-over-year.",
+                "quantified_result": "up >20% YoY"
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                "card_type": "customer",
+                "topic": "customer_usage",
+                "fact_class": "objective_fact",
+                "statement": "Alexa for Shopping was used by 400 million+ customers in the last 12 months with interactions up 570% year-over-year.",
+                "materiality_candidate": 4,
+                "quote": "Continued to drive rapid adoption of Alexa for Shopping, its agentic shopping assistant, which was used by 400 million+ customers in the last 12 months, with customer interactions up 570% year-over-year.",
+                "quantified_result": "400M+ customers, interactions up 570% YoY"
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Fourth quarter 2026 operating income is expected to be between $28.5 billion and $33.5 billion.",
+                "statement": "Q4 2026 net sales expected to be between $240.0 billion and $247.0 billion, growing 12% to 16%.",
+                "materiality_candidate": 5,
+                "quote": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025.",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 240.0,
+                "high": 247.0,
+                "unit": "billion USD"
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q4 2026 operating income expected to be between $28.5 billion and $33.5 billion.",
                 "materiality_candidate": 5,
                 "quote": "Operating income is expected to be between $28.5 billion and $33.5 billion, compared with $25.0 billion in fourth quarter 2025.",
-                "metric": "operating_income",
                 "period": "Q4 2026",
                 "guidance_type": "range",
                 "low": 28.5,
                 "high": 33.5,
-                "unit": "USD_B"
+                "unit": "billion USD"
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                 "card_type": "guidance",
                 "topic": "cash_capex",
                 "fact_class": "company_guidance",
-                "statement": "Expected 2026 cash capital expenditures to be approximately $220 billion.",
+                "statement": "Expects 2026 cash capital expenditures to be approximately $220 billion.",
                 "materiality_candidate": 5,
                 "quote": "We continue to expect 2026 cash capital expenditures to be approximately $220 billion.",
-                "metric": "capex",
+                "metric": "cash_capex",
                 "period": "FY 2026",
                 "guidance_type": "point",
-                "value": 220.0,
-                "unit": "USD_B"
+                "value": 220,
+                "unit": "billion USD"
               }
             ]
           }
@@ -24939,77 +25426,79 @@
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
                 "card_type": "fact",
-                "topic": "demand_revenue",
+                "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Net cash provided by operating activities was $42,422 million for the three months ended September 30, 2026, compared to $35,525 million for the prior year period.",
-                "materiality_candidate": 4,
+                "statement": "Net cash provided by operating activities was $42,422 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 5,
                 "quote": "Net cash provided by (used in) operating activities\n35,525\n42,422",
-                "metric": "operating_cash_flow",
-                "value": "42422",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "35525",
-                "comparison_period": "Q3 2025"
+                "metric": "net_cash_from_operating_activities",
+                "value": 42422,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 35525,
+                "comparison_period": "Q3_2025",
+                "metric_type": "operating_cash_flow"
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Purchases of property and equipment were $77,259 million for the three months ended September 30, 2026, compared to $35,095 million in Q3 2025.",
-                "materiality_candidate": 4,
+                "statement": "Purchases of property and equipment were $77,259 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 5,
                 "quote": "Purchases of property and equipment\n(35,095)\n(77,259)",
                 "metric": "purchases_of_property_and_equipment",
-                "value": "-77259",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "-35095",
-                "comparison_period": "Q3 2025"
+                "value": -77259,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": -35095,
+                "comparison_period": "Q3_2025",
+                "metric_type": "capex"
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Total net sales for the three months ended September 30, 2026 were $201,944 million, up from $180,169 million in Q3 2025.",
+                "statement": "Total net sales were $201,944 million for the three months ended September 30, 2026.",
                 "materiality_candidate": 5,
                 "quote": "Total net sales\n180,169\n201,944",
                 "metric": "total_net_sales",
-                "value": "201944",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "180169",
-                "comparison_period": "Q3 2025"
+                "value": 201944,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 180169,
+                "comparison_period": "Q3_2025"
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Operating income for the three months ended September 30, 2026 was $28,076 million compared to $17,422 million for Q3 2025.",
+                "statement": "Operating income was $28,076 million for the three months ended September 30, 2026.",
                 "materiality_candidate": 5,
                 "quote": "Operating income\n17,422\n28,076",
                 "metric": "operating_income",
-                "value": "28076",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "17422",
-                "comparison_period": "Q3 2025"
+                "value": 28076,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 17422,
+                "comparison_period": "Q3_2025"
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net income for the three months ended September 30, 2026 was $20,685 million, compared to $21,187 million in Q3 2025.",
-                "materiality_candidate": 4,
+                "statement": "Net income was $20,685 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 5,
                 "quote": "Net income\n$\n21,187\n$\n20,685",
                 "metric": "net_income",
-                "value": "20685",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "21187",
-                "comparison_period": "Q3 2025"
+                "value": 20685,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 21187,
+                "comparison_period": "Q3_2025"
               }
             ]
           }
@@ -25026,12 +25515,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "North America net sales were $112,852 million for Q3 2026, compared to $106,267 million for Q3 2025.",
+                "statement": "North America net sales were $112,852 million for Q3 2026, representing 6% Y/Y growth.",
                 "materiality_candidate": 4,
                 "quote": "North America\nNet sales\n$\n106,267\n$\n112,852",
                 "metric": "North America Net sales",
                 "value": "112852",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "106267",
                 "comparison_period": "Q3 2025",
@@ -25042,12 +25531,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "AWS net sales were $45,984 million for Q3 2026, compared to $33,006 million for Q3 2025.",
+                "statement": "AWS net sales were $45,984 million for Q3 2026, representing 39% Y/Y growth.",
                 "materiality_candidate": 5,
                 "quote": "AWS\nNet sales\n$\n33,006\n$\n45,984",
                 "metric": "AWS Net sales",
                 "value": "45984",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "33006",
                 "comparison_period": "Q3 2025",
@@ -25058,12 +25547,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Consolidated net sales were $201,944 million for Q3 2026, compared to $180,169 million for Q3 2025.",
-                "materiality_candidate": 5,
+                "statement": "Consolidated net sales were $201,944 million for Q3 2026, representing 12% Y/Y growth.",
+                "materiality_candidate": 4,
                 "quote": "Consolidated\nNet sales\n$\n180,169\n$\n201,944",
                 "metric": "Consolidated Net sales",
                 "value": "201944",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "180169",
                 "comparison_period": "Q3 2025",
@@ -25074,12 +25563,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "AWS operating income was $17,773 million for Q3 2026, compared to $11,434 million for Q3 2025.",
+                "statement": "AWS segment operating income was $17,773 million for Q3 2026.",
                 "materiality_candidate": 5,
-                "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773\n55\n%",
+                "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773",
                 "metric": "AWS Operating income",
                 "value": "17773",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "11434",
                 "comparison_period": "Q3 2025",
@@ -25103,10 +25592,25 @@
                 "statement": "AWS net sales were $45,984 million with 39% Y/Y growth.",
                 "materiality_candidate": 5,
                 "quote": "AWS\n$\n30,873\n$\n33,006\n$\n35,579\n$\n37,587\n$\n42,232\n$\n45,984\n39\n%",
-                "metric": "AWS net sales",
-                "value": "45984",
+                "metric": "AWS Net Sales",
+                "value": "45,984",
                 "unit": "USD $M",
-                "reported_change": "39%"
+                "period": "Q3 2026",
+                "reported_center": "39%"
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Online stores net sales were $68,470 million with 2% Y/Y growth.",
+                "materiality_candidate": 3,
+                "quote": "Online stores (1)\n$\n61,485\n$\n67,407\n$\n82,988\n$\n64,254\n$\n70,432\n$\n68,470\n2\n%",
+                "metric": "Online stores net sales",
+                "value": "68,470",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "reported_center": "2%"
               }
             ]
           }
@@ -25114,7 +25618,8 @@
         "v5_extract_batch_6": {
           "payload": {
             "processed_unit_ids": [
-              "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1"
+              "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1",
+              "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u1"
             ],
             "cards": [
               {
@@ -25122,12 +25627,122 @@
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Free cash flow is defined as cash flow from operations reduced by Purchases of property and equipment, net of proceeds from sales and incentives.",
+                "statement": "Free cash flow is defined as cash flow from operations reduced by purchases of property and equipment, net of proceeds from sales and incentives.",
                 "materiality_candidate": 3,
-                "quote": "Free cash flow is cash flow from operations reduced by “Purchases of property and equipment, net of proceeds from sales and incentives.”",
-                "metric_type": "standard_fcf"
+                "quote": "Free cash flow is cash flow from operations reduced by “Purchases of property and equipment, net of proceeds from sales and incentives.”"
               }
             ]
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u2",
+              "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u3"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_8": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u4",
+              "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u5"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_9": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u6"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_10": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $21,187 million for the period.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:NetIncomeLoss",
+                "metric": "NetIncomeLoss",
+                "value": "21,187",
+                "unit": "usd"
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contracts with customers was $180,169 million for the period.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "180,169",
+                "unit": "usd"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_10": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $21,187 million for the period.",
+                "materiality_candidate": 4,
+                "quote": "Net income $ 21,187",
+                "metric": "NetIncomeLoss",
+                "value": "21,187",
+                "unit": "usd",
+                "card_id": "c1:sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "quote": "Net income $ 21,187"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contracts with customers was $180,169 million for the period.",
+                "materiality_candidate": 4,
+                "quote": "Total net sales $ 180,169",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "180,169",
+                "unit": "usd",
+                "card_id": "c2:sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "quote": "Total net sales $ 180,169"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured"
+            ],
+            "replace_only_invalid_cards": true
           }
         },
         "facts": {
@@ -25160,6 +25775,19 @@
                   "relevant_paragraphs": 1,
                   "unit_count": 1,
                   "transcript": false
+                },
+                {
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "title": "Amazon Form 10-Q — 10-Q",
+                  "document_kind": "other",
+                  "selection_mode": "full",
+                  "raw_chars": 234321,
+                  "extracted_chars": 24000,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 7,
+                  "transcript": false
                 }
               ],
               "expected_unit_ids": [
@@ -25173,9 +25801,16 @@
                 "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u8",
                 "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
                 "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u10",
-                "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1"
+                "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u1",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u2",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u3",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u4",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u5",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u6",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured"
               ],
-              "expected_unit_count": 11,
+              "expected_unit_count": 18,
               "transcript_unit_count": 0,
               "qa_unit_count": 0,
               "source_truncated_documents": [],
@@ -25190,9 +25825,16 @@
                 "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u8",
                 "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
                 "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u10",
-                "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1"
+                "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u1",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u2",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u3",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u4",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u5",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#u6",
+                "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured"
               ],
-              "processed_unit_count": 11,
+              "processed_unit_count": 18,
               "missing_unit_ids": [],
               "unexpected_unit_ids": [],
               "coverage_ratio": 1.0,
@@ -25201,8 +25843,8 @@
             "research_packet": {
               "packet_version": 5,
               "coverage": {
-                "expected_unit_count": 11,
-                "processed_unit_count": 11,
+                "expected_unit_count": 18,
+                "processed_unit_count": 18,
                 "coverage_ratio": 1.0,
                 "complete": true,
                 "transcript_unit_count": 0,
@@ -25211,19 +25853,21 @@
                 "source_truncated_documents": []
               },
               "topic_inventory": {
-                "cash_capex": 3,
-                "demand_revenue": 9,
+                "cash_capex": 5,
+                "customer_usage": 2,
+                "demand_revenue": 11,
                 "guidance": 3,
                 "margin_unit_economics": 3
               },
               "selection": {
-                "raw_card_count": 18,
-                "deduped_card_count": 18,
-                "selected_card_count": 18,
+                "raw_card_count": 24,
+                "deduped_card_count": 24,
+                "selected_card_count": 24,
                 "omitted_low_materiality_card_count": 0,
                 "selected_topic_counts": {
-                  "cash_capex": 2,
-                  "demand_revenue": 9,
+                  "cash_capex": 4,
+                  "customer_usage": 2,
+                  "demand_revenue": 10,
                   "guidance": 3,
                   "margin_unit_economics": 3
                 }
@@ -25233,12 +25877,12 @@
                   "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "Net sales increased 12% to $201.9 billion in the third quarter of 2026 compared with $180.2 billion in the third quarter of 2025.",
-                  "metric": "Net sales",
-                  "value": "201.9",
-                  "unit": "USD_B",
+                  "statement": "Net sales increased 12% to $201.9 billion in the third quarter of 2026 compared to $180.2 billion in the third quarter of 2025.",
+                  "metric": "net_sales",
+                  "value": 201.9,
+                  "unit": "billion_usd",
                   "period": "Q3 2026",
-                  "comparison_value": "180.2",
+                  "comparison_value": 180.2,
                   "comparison_period": "Q3 2025",
                   "reported_change": "12%",
                   "materiality_candidate": 5,
@@ -25250,13 +25894,13 @@
                   "quote": "Net sales\nincreased 12% to $201.9 billion in the third quarter, compared with $180.2 billion in third quarter 2025."
                 },
                 {
-                  "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                  "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "AWS segment sales increased 39% year-over-year to $46.0 billion in Q3 2026.",
-                  "metric": "AWS segment sales",
-                  "value": "46.0",
-                  "unit": "USD_B",
+                  "statement": "AWS segment net sales increased 39% year-over-year to $46.0 billion in Q3 2026.",
+                  "metric": "aws_net_sales",
+                  "value": 46.0,
+                  "unit": "billion_usd",
                   "period": "Q3 2026",
                   "reported_change": "39%",
                   "materiality_candidate": 5,
@@ -25271,13 +25915,13 @@
                   "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "Total net sales for the three months ended September 30, 2026 were $201,944 million, up from $180,169 million in Q3 2025.",
+                  "statement": "Total net sales were $201,944 million for the three months ended September 30, 2026.",
                   "metric": "total_net_sales",
-                  "value": "201944",
-                  "unit": "USD_millions",
-                  "period": "Q3 2026",
-                  "comparison_value": "180169",
-                  "comparison_period": "Q3 2025",
+                  "value": 201944,
+                  "unit": "USD_M",
+                  "period": "Q3_2026",
+                  "comparison_value": 180169,
+                  "comparison_period": "Q3_2025",
                   "materiality_candidate": 5,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
@@ -25290,10 +25934,10 @@
                   "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u7",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "AWS net sales were $45,984 million for Q3 2026, compared to $33,006 million for Q3 2025.",
+                  "statement": "AWS net sales were $45,984 million for Q3 2026, representing 39% Y/Y growth.",
                   "metric": "AWS Net sales",
                   "value": "45984",
-                  "unit": "USD $M",
+                  "unit": "USD",
                   "period": "Q3 2026",
                   "comparison_value": "33006",
                   "comparison_period": "Q3 2025",
@@ -25307,33 +25951,13 @@
                   "quote": "AWS\nNet sales\n$\n33,006\n$\n45,984"
                 },
                 {
-                  "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u7",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "statement": "Consolidated net sales were $201,944 million for Q3 2026, compared to $180,169 million for Q3 2025.",
-                  "metric": "Consolidated Net sales",
-                  "value": "201944",
-                  "unit": "USD $M",
-                  "period": "Q3 2026",
-                  "comparison_value": "180169",
-                  "comparison_period": "Q3 2025",
-                  "reported_change": "12%",
-                  "materiality_candidate": 5,
-                  "fact_class": "objective_fact",
-                  "source": "sec_edgar",
-                  "provenance": "primary_or_official",
-                  "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u7",
-                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                  "quote": "Consolidated\nNet sales\n$\n180,169\n$\n201,944"
-                },
-                {
                   "card_id": "c4:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u8",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "AWS operating income was $17,773 million for Q3 2026, compared to $11,434 million for Q3 2025.",
+                  "statement": "AWS segment operating income was $17,773 million for Q3 2026.",
                   "metric": "AWS Operating income",
                   "value": "17773",
-                  "unit": "USD $M",
+                  "unit": "USD",
                   "period": "Q3 2026",
                   "comparison_value": "11434",
                   "comparison_period": "Q3 2025",
@@ -25344,17 +25968,17 @@
                   "provenance": "primary_or_official",
                   "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u8",
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                  "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773\n55\n%"
+                  "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773"
                 },
                 {
                   "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
                   "card_type": "fact",
                   "topic": "demand_revenue",
                   "statement": "AWS net sales were $45,984 million with 39% Y/Y growth.",
-                  "metric": "AWS net sales",
-                  "value": "45984",
+                  "metric": "AWS Net Sales",
+                  "value": "45,984",
                   "unit": "USD $M",
-                  "reported_change": "39%",
+                  "period": "Q3 2026",
                   "materiality_candidate": 5,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
@@ -25364,32 +25988,13 @@
                   "quote": "AWS\n$\n30,873\n$\n33,006\n$\n35,579\n$\n37,587\n$\n42,232\n$\n45,984\n39\n%"
                 },
                 {
-                  "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "statement": "Net cash provided by operating activities was $42,422 million for the three months ended September 30, 2026, compared to $35,525 million for the prior year period.",
-                  "metric": "operating_cash_flow",
-                  "value": "42422",
-                  "unit": "USD_millions",
-                  "period": "Q3 2026",
-                  "comparison_value": "35525",
-                  "comparison_period": "Q3 2025",
-                  "materiality_candidate": 4,
-                  "fact_class": "objective_fact",
-                  "source": "sec_edgar",
-                  "provenance": "primary_or_official",
-                  "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
-                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                  "quote": "Net cash provided by (used in) operating activities\n35,525\n42,422"
-                },
-                {
                   "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u7",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "North America net sales were $112,852 million for Q3 2026, compared to $106,267 million for Q3 2025.",
+                  "statement": "North America net sales were $112,852 million for Q3 2026, representing 6% Y/Y growth.",
                   "metric": "North America Net sales",
                   "value": "112852",
-                  "unit": "USD $M",
+                  "unit": "USD",
                   "period": "Q3 2026",
                   "comparison_value": "106267",
                   "comparison_period": "Q3 2025",
@@ -25403,14 +26008,83 @@
                   "quote": "North America\nNet sales\n$\n106,267\n$\n112,852"
                 },
                 {
+                  "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u7",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Consolidated net sales were $201,944 million for Q3 2026, representing 12% Y/Y growth.",
+                  "metric": "Consolidated Net sales",
+                  "value": "201944",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "comparison_value": "180169",
+                  "comparison_period": "Q3 2025",
+                  "reported_change": "12%",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u7",
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Consolidated\nNet sales\n$\n180,169\n$\n201,944"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net income was $21,187 million for the period.",
+                  "metric": "NetIncomeLoss",
+                  "value": "21,187",
+                  "unit": "usd",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "quote": "Net income $ 21,187"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Revenue from contracts with customers was $180,169 million for the period.",
+                  "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "value": "180,169",
+                  "unit": "usd",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "quote": "Total net sales $ 180,169"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Online stores net sales were $68,470 million with 2% Y/Y growth.",
+                  "metric": "Online stores net sales",
+                  "value": "68,470",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Online stores (1)\n$\n61,485\n$\n67,407\n$\n82,988\n$\n64,254\n$\n70,432\n$\n68,470\n2\n%"
+                },
+                {
                   "card_id": "c4:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
                   "card_type": "guidance",
                   "topic": "guidance",
                   "statement": "Projected AWS revenue growth rates of over 40% both in 2027 and in 2028.",
-                  "metric": "AWS revenue growth rate",
-                  "value": "40",
-                  "unit": "PERCENT",
-                  "period": "2027-2028",
+                  "metric": "aws_revenue_growth",
+                  "value": 40,
+                  "unit": "percent",
+                  "period": "FY 2027 - FY 2028",
                   "materiality_candidate": 5,
                   "fact_class": "company_guidance",
                   "source": "sec_edgar",
@@ -25421,12 +26095,11 @@
                   "guidance_type": "lower_bound"
                 },
                 {
-                  "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
+                  "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                   "card_type": "guidance",
                   "topic": "guidance",
-                  "statement": "Fourth quarter 2026 net sales are expected to be between $240.0 billion and $247.0 billion, growing between 12% and 16% compared with fourth quarter 2025.",
-                  "metric": "net_sales",
-                  "unit": "USD_B",
+                  "statement": "Q4 2026 net sales expected to be between $240.0 billion and $247.0 billion, growing 12% to 16%.",
+                  "unit": "billion USD",
                   "period": "Q4 2026",
                   "low": 240.0,
                   "high": 247.0,
@@ -25440,12 +26113,11 @@
                   "guidance_type": "range"
                 },
                 {
-                  "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
+                  "card_id": "c4:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                   "card_type": "guidance",
                   "topic": "guidance",
-                  "statement": "Fourth quarter 2026 operating income is expected to be between $28.5 billion and $33.5 billion.",
-                  "metric": "operating_income",
-                  "unit": "USD_B",
+                  "statement": "Q4 2026 operating income expected to be between $28.5 billion and $33.5 billion.",
+                  "unit": "billion USD",
                   "period": "Q4 2026",
                   "low": 28.5,
                   "high": 33.5,
@@ -25459,14 +26131,17 @@
                   "guidance_type": "range"
                 },
                 {
-                  "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                  "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
                   "statement": "Operating income was $28.1 billion and operating margin was 13.9% in Q3 2026.",
-                  "metric": "Operating income",
-                  "value": "28.1",
-                  "unit": "USD_B",
+                  "metric": "operating_income",
+                  "value": 28.1,
+                  "unit": "billion_usd",
                   "period": "Q3 2026",
+                  "comparison_value": 17.4,
+                  "comparison_period": "Q3 2025",
+                  "reported_change": "61.5%",
                   "materiality_candidate": 5,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
@@ -25479,13 +26154,13 @@
                   "card_id": "c4:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
-                  "statement": "Operating income for the three months ended September 30, 2026 was $28,076 million compared to $17,422 million for Q3 2025.",
+                  "statement": "Operating income was $28,076 million for the three months ended September 30, 2026.",
                   "metric": "operating_income",
-                  "value": "28076",
-                  "unit": "USD_millions",
-                  "period": "Q3 2026",
-                  "comparison_value": "17422",
-                  "comparison_period": "Q3 2025",
+                  "value": 28076,
+                  "unit": "USD_M",
+                  "period": "Q3_2026",
+                  "comparison_value": 17422,
+                  "comparison_period": "Q3_2025",
                   "materiality_candidate": 5,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
@@ -25498,14 +26173,14 @@
                   "card_id": "c5:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
-                  "statement": "Net income for the three months ended September 30, 2026 was $20,685 million, compared to $21,187 million in Q3 2025.",
+                  "statement": "Net income was $20,685 million for the three months ended September 30, 2026.",
                   "metric": "net_income",
-                  "value": "20685",
-                  "unit": "USD_millions",
-                  "period": "Q3 2026",
-                  "comparison_value": "21187",
-                  "comparison_period": "Q3 2025",
-                  "materiality_candidate": 4,
+                  "value": 20685,
+                  "unit": "USD_M",
+                  "period": "Q3_2026",
+                  "comparison_value": 21187,
+                  "comparison_period": "Q3_2025",
+                  "materiality_candidate": 5,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
                   "provenance": "primary_or_official",
@@ -25514,13 +26189,33 @@
                   "quote": "Net income\n$\n21,187\n$\n20,685"
                 },
                 {
-                  "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
+                  "card_id": "c5:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Free cash flow decreased to an outflow of $42.4 billion for the trailing twelve months ended September 30, 2026.",
+                  "metric": "free_cash_flow",
+                  "value": -42.4,
+                  "unit": "billion_usd",
+                  "period": "TTM Sep 30 2026",
+                  "comparison_value": 14.8,
+                  "comparison_period": "TTM Sep 30 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Free cash flow\ndecreased to an outflow of $42.4 billion for the trailing twelve months, driven primarily by a year-over-year increase of $94.8 billion in purchases of property and equipment, net of proceeds from sales and incentives.",
+                  "metric_type": "standard_fcf"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                   "card_type": "guidance",
                   "topic": "cash_capex",
-                  "statement": "Expected 2026 cash capital expenditures to be approximately $220 billion.",
-                  "metric": "capex",
-                  "value": 220.0,
-                  "unit": "USD_B",
+                  "statement": "Expects 2026 cash capital expenditures to be approximately $220 billion.",
+                  "metric": "cash_capex",
+                  "value": 220,
+                  "unit": "billion USD",
                   "period": "FY 2026",
                   "materiality_candidate": 5,
                   "fact_class": "company_guidance",
@@ -25532,37 +26227,85 @@
                   "guidance_type": "point"
                 },
                 {
-                  "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
+                  "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
                   "card_type": "fact",
                   "topic": "cash_capex",
-                  "statement": "Purchases of property and equipment were $77,259 million for the three months ended September 30, 2026, compared to $35,095 million in Q3 2025.",
-                  "metric": "purchases_of_property_and_equipment",
-                  "value": "-77259",
-                  "unit": "USD_millions",
-                  "period": "Q3 2026",
-                  "comparison_value": "-35095",
-                  "comparison_period": "Q3 2025",
-                  "materiality_candidate": 4,
+                  "statement": "Net cash provided by operating activities was $42,422 million for the three months ended September 30, 2026.",
+                  "metric": "net_cash_from_operating_activities",
+                  "value": 42422,
+                  "unit": "USD_M",
+                  "period": "Q3_2026",
+                  "comparison_value": 35525,
+                  "comparison_period": "Q3_2025",
+                  "materiality_candidate": 5,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
                   "provenance": "primary_or_official",
                   "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                  "quote": "Purchases of property and equipment\n(35,095)\n(77,259)"
+                  "quote": "Net cash provided by (used in) operating activities\n35,525\n42,422",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Purchases of property and equipment were $77,259 million for the three months ended September 30, 2026.",
+                  "metric": "purchases_of_property_and_equipment",
+                  "value": -77259,
+                  "unit": "USD_M",
+                  "period": "Q3_2026",
+                  "comparison_value": -35095,
+                  "comparison_period": "Q3_2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Purchases of property and equipment\n(35,095)\n(77,259)",
+                  "metric_type": "capex"
                 },
                 {
                   "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1",
                   "card_type": "fact",
                   "topic": "cash_capex",
-                  "statement": "Free cash flow is defined as cash flow from operations reduced by Purchases of property and equipment, net of proceeds from sales and incentives.",
+                  "statement": "Free cash flow is defined as cash flow from operations reduced by purchases of property and equipment, net of proceeds from sales and incentives.",
                   "materiality_candidate": 3,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
                   "provenance": "primary_or_official",
                   "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1",
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm",
-                  "quote": "Free cash flow is cash flow from operations reduced by “Purchases of property and equipment, net of proceeds from sales and incentives.”",
-                  "metric_type": "standard_fcf"
+                  "quote": "Free cash flow is cash flow from operations reduced by “Purchases of property and equipment, net of proceeds from sales and incentives.”"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                  "card_type": "customer",
+                  "topic": "customer_usage",
+                  "statement": "Alexa for Shopping was used by 400 million+ customers in the last 12 months with interactions up 570% year-over-year.",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "quantified_result": "400M+ customers, interactions up 570% YoY",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Continued to drive rapid adoption of Alexa for Shopping, its agentic shopping assistant, which was used by 400 million+ customers in the last 12 months, with customer interactions up 570% year-over-year."
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                  "card_type": "customer",
+                  "topic": "customer_usage",
+                  "statement": "Increased selection from notable brands by more than 20% year-over-year.",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "quantified_result": "up >20% YoY",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Increased selection from notable brands like Banana Republic, Jean Paul Gaultier fragrances, Carolina Herrera fragrances, La-Z-Boy, The Farmer’s Dog, and FAO Schwarz by more than 20% year-over-year."
                 }
               ]
             },
@@ -25572,14 +26315,14 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Net sales increased 12% to $201.9 billion in the third quarter of 2026 compared with $180.2 billion in the third quarter of 2025.",
+                "statement": "Net sales increased 12% to $201.9 billion in the third quarter of 2026 compared to $180.2 billion in the third quarter of 2025.",
                 "materiality_candidate": 5,
                 "quote": "Net sales\nincreased 12% to $201.9 billion in the third quarter, compared with $180.2 billion in third quarter 2025.",
-                "metric": "Net sales",
-                "value": "201.9",
-                "unit": "USD_B",
+                "metric": "net_sales",
+                "value": 201.9,
+                "unit": "billion_usd",
                 "period": "Q3 2026",
-                "comparison_value": "180.2",
+                "comparison_value": 180.2,
                 "comparison_period": "Q3 2025",
                 "reported_change": "12%",
                 "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
@@ -25595,39 +26338,19 @@
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
                 "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "AWS segment sales increased 39% year-over-year to $46.0 billion in Q3 2026.",
-                "materiality_candidate": 5,
-                "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
-                "metric": "AWS segment sales",
-                "value": "46.0",
-                "unit": "USD_B",
-                "period": "Q3 2026",
-                "reported_change": "39%",
-                "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
-                "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 1,
-                "evidence": {
-                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                  "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion."
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
-                "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
                 "statement": "Operating income was $28.1 billion and operating margin was 13.9% in Q3 2026.",
                 "materiality_candidate": 5,
                 "quote": "Operating income was $28.1 billion and operating margin was 13.9%—Amazon’s highest operating margin ever",
-                "metric": "Operating income",
-                "value": "28.1",
-                "unit": "USD_B",
+                "metric": "operating_income",
+                "value": 28.1,
+                "unit": "billion_usd",
                 "period": "Q3 2026",
-                "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                "comparison_value": 17.4,
+                "comparison_period": "Q3 2025",
+                "reported_change": "61.5%",
+                "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
                 "provenance": "primary_or_official",
@@ -25639,17 +26362,40 @@
               },
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AWS segment net sales increased 39% year-over-year to $46.0 billion in Q3 2026.",
+                "materiality_candidate": 5,
+                "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion.",
+                "metric": "aws_net_sales",
+                "value": 46.0,
+                "unit": "billion_usd",
+                "period": "Q3 2026",
+                "reported_change": "39%",
+                "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "AWS segment sales increased 39% year-over-year to $46.0 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
                 "statement": "Projected AWS revenue growth rates of over 40% both in 2027 and in 2028.",
                 "materiality_candidate": 5,
                 "quote": "projected revenue growth rates of over 40% both in 2027 and in 2028",
-                "metric": "AWS revenue growth rate",
-                "period": "2027-2028",
+                "metric": "aws_revenue_growth",
+                "period": "FY 2027 - FY 2028",
                 "guidance_type": "lower_bound",
-                "value": "40",
-                "unit": "PERCENT",
+                "value": 40,
+                "unit": "percent",
                 "card_id": "c4:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
@@ -25661,20 +26407,82 @@
                 }
               },
               {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow decreased to an outflow of $42.4 billion for the trailing twelve months ended September 30, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Free cash flow\ndecreased to an outflow of $42.4 billion for the trailing twelve months, driven primarily by a year-over-year increase of $94.8 billion in purchases of property and equipment, net of proceeds from sales and incentives.",
+                "metric": "free_cash_flow",
+                "value": -42.4,
+                "unit": "billion_usd",
+                "period": "TTM Sep 30 2026",
+                "comparison_value": 14.8,
+                "comparison_period": "TTM Sep 30 2025",
+                "metric_type": "standard_fcf",
+                "card_id": "c5:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u1",
+                "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Free cash flow\ndecreased to an outflow of $42.4 billion for the trailing twelve months, driven primarily by a year-over-year increase of $94.8 billion in purchases of property and equipment, net of proceeds from sales and incentives."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                "card_type": "customer",
+                "topic": "customer_usage",
+                "fact_class": "objective_fact",
+                "statement": "Increased selection from notable brands by more than 20% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Increased selection from notable brands like Banana Republic, Jean Paul Gaultier fragrances, Carolina Herrera fragrances, La-Z-Boy, The Farmer’s Dog, and FAO Schwarz by more than 20% year-over-year.",
+                "quantified_result": "up >20% YoY",
+                "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Increased selection from notable brands like Banana Republic, Jean Paul Gaultier fragrances, Carolina Herrera fragrances, La-Z-Boy, The Farmer’s Dog, and FAO Schwarz by more than 20% year-over-year."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                "card_type": "customer",
+                "topic": "customer_usage",
+                "fact_class": "objective_fact",
+                "statement": "Alexa for Shopping was used by 400 million+ customers in the last 12 months with interactions up 570% year-over-year.",
+                "materiality_candidate": 4,
+                "quote": "Continued to drive rapid adoption of Alexa for Shopping, its agentic shopping assistant, which was used by 400 million+ customers in the last 12 months, with customer interactions up 570% year-over-year.",
+                "quantified_result": "400M+ customers, interactions up 570% YoY",
+                "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u3",
+                "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Continued to drive rapid adoption of Alexa for Shopping, its agentic shopping assistant, which was used by 400 million+ customers in the last 12 months, with customer interactions up 570% year-over-year."
+                }
+              },
+              {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Fourth quarter 2026 net sales are expected to be between $240.0 billion and $247.0 billion, growing between 12% and 16% compared with fourth quarter 2025.",
+                "statement": "Q4 2026 net sales expected to be between $240.0 billion and $247.0 billion, growing 12% to 16%.",
                 "materiality_candidate": 5,
                 "quote": "Net sales are expected to be between $240.0 billion and $247.0 billion, or to grow between 12% and 16% compared with fourth quarter 2025.",
-                "metric": "net_sales",
                 "period": "Q4 2026",
                 "guidance_type": "range",
                 "low": 240.0,
                 "high": 247.0,
-                "unit": "USD_B",
-                "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
+                "unit": "billion USD",
+                "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
                 "provenance": "primary_or_official",
@@ -25689,16 +26497,15 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Fourth quarter 2026 operating income is expected to be between $28.5 billion and $33.5 billion.",
+                "statement": "Q4 2026 operating income expected to be between $28.5 billion and $33.5 billion.",
                 "materiality_candidate": 5,
                 "quote": "Operating income is expected to be between $28.5 billion and $33.5 billion, compared with $25.0 billion in fourth quarter 2025.",
-                "metric": "operating_income",
                 "period": "Q4 2026",
                 "guidance_type": "range",
                 "low": 28.5,
                 "high": 33.5,
-                "unit": "USD_B",
-                "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
+                "unit": "billion USD",
+                "card_id": "c4:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
                 "provenance": "primary_or_official",
@@ -25713,15 +26520,15 @@
                 "card_type": "guidance",
                 "topic": "cash_capex",
                 "fact_class": "company_guidance",
-                "statement": "Expected 2026 cash capital expenditures to be approximately $220 billion.",
+                "statement": "Expects 2026 cash capital expenditures to be approximately $220 billion.",
                 "materiality_candidate": 5,
                 "quote": "We continue to expect 2026 cash capital expenditures to be approximately $220 billion.",
-                "metric": "capex",
+                "metric": "cash_capex",
                 "period": "FY 2026",
                 "guidance_type": "point",
-                "value": 220.0,
-                "unit": "USD_B",
-                "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
+                "value": 220,
+                "unit": "billion USD",
+                "card_id": "c5:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u4",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
                 "provenance": "primary_or_official",
@@ -25734,17 +26541,18 @@
               {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
                 "card_type": "fact",
-                "topic": "demand_revenue",
+                "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Net cash provided by operating activities was $42,422 million for the three months ended September 30, 2026, compared to $35,525 million for the prior year period.",
-                "materiality_candidate": 4,
+                "statement": "Net cash provided by operating activities was $42,422 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 5,
                 "quote": "Net cash provided by (used in) operating activities\n35,525\n42,422",
-                "metric": "operating_cash_flow",
-                "value": "42422",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "35525",
-                "comparison_period": "Q3 2025",
+                "metric": "net_cash_from_operating_activities",
+                "value": 42422,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 35525,
+                "comparison_period": "Q3_2025",
+                "metric_type": "operating_cash_flow",
                 "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
@@ -25760,15 +26568,16 @@
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Purchases of property and equipment were $77,259 million for the three months ended September 30, 2026, compared to $35,095 million in Q3 2025.",
-                "materiality_candidate": 4,
+                "statement": "Purchases of property and equipment were $77,259 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 5,
                 "quote": "Purchases of property and equipment\n(35,095)\n(77,259)",
                 "metric": "purchases_of_property_and_equipment",
-                "value": "-77259",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "-35095",
-                "comparison_period": "Q3 2025",
+                "value": -77259,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": -35095,
+                "comparison_period": "Q3_2025",
+                "metric_type": "capex",
                 "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u5",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
@@ -25784,15 +26593,15 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Total net sales for the three months ended September 30, 2026 were $201,944 million, up from $180,169 million in Q3 2025.",
+                "statement": "Total net sales were $201,944 million for the three months ended September 30, 2026.",
                 "materiality_candidate": 5,
                 "quote": "Total net sales\n180,169\n201,944",
                 "metric": "total_net_sales",
-                "value": "201944",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "180169",
-                "comparison_period": "Q3 2025",
+                "value": 201944,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 180169,
+                "comparison_period": "Q3_2025",
                 "card_id": "c3:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
@@ -25808,15 +26617,15 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Operating income for the three months ended September 30, 2026 was $28,076 million compared to $17,422 million for Q3 2025.",
+                "statement": "Operating income was $28,076 million for the three months ended September 30, 2026.",
                 "materiality_candidate": 5,
                 "quote": "Operating income\n17,422\n28,076",
                 "metric": "operating_income",
-                "value": "28076",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "17422",
-                "comparison_period": "Q3 2025",
+                "value": 28076,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 17422,
+                "comparison_period": "Q3_2025",
                 "card_id": "c4:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
@@ -25832,15 +26641,15 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net income for the three months ended September 30, 2026 was $20,685 million, compared to $21,187 million in Q3 2025.",
-                "materiality_candidate": 4,
+                "statement": "Net income was $20,685 million for the three months ended September 30, 2026.",
+                "materiality_candidate": 5,
                 "quote": "Net income\n$\n21,187\n$\n20,685",
                 "metric": "net_income",
-                "value": "20685",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "21187",
-                "comparison_period": "Q3 2025",
+                "value": 20685,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 21187,
+                "comparison_period": "Q3_2025",
                 "card_id": "c5:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u6",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
@@ -25856,12 +26665,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "North America net sales were $112,852 million for Q3 2026, compared to $106,267 million for Q3 2025.",
+                "statement": "North America net sales were $112,852 million for Q3 2026, representing 6% Y/Y growth.",
                 "materiality_candidate": 4,
                 "quote": "North America\nNet sales\n$\n106,267\n$\n112,852",
                 "metric": "North America Net sales",
                 "value": "112852",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "106267",
                 "comparison_period": "Q3 2025",
@@ -25881,12 +26690,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "AWS net sales were $45,984 million for Q3 2026, compared to $33,006 million for Q3 2025.",
+                "statement": "AWS net sales were $45,984 million for Q3 2026, representing 39% Y/Y growth.",
                 "materiality_candidate": 5,
                 "quote": "AWS\nNet sales\n$\n33,006\n$\n45,984",
                 "metric": "AWS Net sales",
                 "value": "45984",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "33006",
                 "comparison_period": "Q3 2025",
@@ -25906,12 +26715,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Consolidated net sales were $201,944 million for Q3 2026, compared to $180,169 million for Q3 2025.",
-                "materiality_candidate": 5,
+                "statement": "Consolidated net sales were $201,944 million for Q3 2026, representing 12% Y/Y growth.",
+                "materiality_candidate": 4,
                 "quote": "Consolidated\nNet sales\n$\n180,169\n$\n201,944",
                 "metric": "Consolidated Net sales",
                 "value": "201944",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "180169",
                 "comparison_period": "Q3 2025",
@@ -25931,12 +26740,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "AWS operating income was $17,773 million for Q3 2026, compared to $11,434 million for Q3 2025.",
+                "statement": "AWS segment operating income was $17,773 million for Q3 2026.",
                 "materiality_candidate": 5,
-                "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773\n55\n%",
+                "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773",
                 "metric": "AWS Operating income",
                 "value": "17773",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "11434",
                 "comparison_period": "Q3 2025",
@@ -25948,7 +26757,7 @@
                 "position": 8,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                  "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773\n55\n%"
+                  "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773"
                 }
               },
               {
@@ -25959,10 +26768,11 @@
                 "statement": "AWS net sales were $45,984 million with 39% Y/Y growth.",
                 "materiality_candidate": 5,
                 "quote": "AWS\n$\n30,873\n$\n33,006\n$\n35,579\n$\n37,587\n$\n42,232\n$\n45,984\n39\n%",
-                "metric": "AWS net sales",
-                "value": "45984",
+                "metric": "AWS Net Sales",
+                "value": "45,984",
                 "unit": "USD $M",
-                "reported_change": "39%",
+                "period": "Q3 2026",
+                "reported_center": "39%",
                 "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                 "source": "sec_edgar",
@@ -25974,14 +26784,36 @@
                 }
               },
               {
+                "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Online stores net sales were $68,470 million with 2% Y/Y growth.",
+                "materiality_candidate": 3,
+                "quote": "Online stores (1)\n$\n61,485\n$\n67,407\n$\n82,988\n$\n64,254\n$\n70,432\n$\n68,470\n2\n%",
+                "metric": "Online stores net sales",
+                "value": "68,470",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "reported_center": "2%",
+                "card_id": "c2:sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm#u9",
+                "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 9,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Online stores (1)\n$\n61,485\n$\n67,407\n$\n82,988\n$\n64,254\n$\n70,432\n$\n68,470\n2\n%"
+                }
+              },
+              {
                 "unit_id": "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1",
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Free cash flow is defined as cash flow from operations reduced by Purchases of property and equipment, net of proceeds from sales and incentives.",
+                "statement": "Free cash flow is defined as cash flow from operations reduced by purchases of property and equipment, net of proceeds from sales and incentives.",
                 "materiality_candidate": 3,
                 "quote": "Free cash flow is cash flow from operations reduced by “Purchases of property and equipment, net of proceeds from sales and incentives.”",
-                "metric_type": "standard_fcf",
                 "card_id": "c1:sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm#u1",
                 "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm",
                 "source": "sec_edgar",
@@ -25991,15 +26823,57 @@
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex992.htm",
                   "quote": "Free cash flow is cash flow from operations reduced by “Purchases of property and equipment, net of proceeds from sales and incentives.”"
                 }
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $21,187 million for the period.",
+                "materiality_candidate": 4,
+                "quote": "Net income $ 21,187",
+                "metric": "NetIncomeLoss",
+                "value": "21,187",
+                "unit": "usd",
+                "card_id": "c1:sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "quote": "Net income $ 21,187"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contracts with customers was $180,169 million for the period.",
+                "materiality_candidate": 4,
+                "quote": "Total net sales $ 180,169",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "180,169",
+                "unit": "usd",
+                "card_id": "c2:sec_edgar:0001018724-26-000040:amzn-20260930.htm#structured",
+                "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "quote": "Total net sales $ 180,169"
+                }
               }
             ],
             "facts": [
               {
-                "metric": "Net sales",
-                "value": "201.9",
-                "unit": "USD_B",
+                "metric": "net_sales",
+                "value": 201.9,
+                "unit": "billion_usd",
                 "period": "Q3 2026",
-                "comparison_value": "180.2",
+                "comparison_value": 180.2,
                 "comparison_period": "Q3 2025",
                 "reported_change": "12%",
                 "evidence": {
@@ -26008,9 +26882,22 @@
                 }
               },
               {
-                "metric": "AWS segment sales",
-                "value": "46.0",
-                "unit": "USD_B",
+                "metric": "operating_income",
+                "value": 28.1,
+                "unit": "billion_usd",
+                "period": "Q3 2026",
+                "comparison_value": 17.4,
+                "comparison_period": "Q3 2025",
+                "reported_change": "61.5%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Operating income was $28.1 billion and operating margin was 13.9%—Amazon’s highest operating margin ever"
+                }
+              },
+              {
+                "metric": "aws_net_sales",
+                "value": 46.0,
+                "unit": "billion_usd",
                 "period": "Q3 2026",
                 "comparison_value": null,
                 "comparison_period": null,
@@ -26021,25 +26908,25 @@
                 }
               },
               {
-                "metric": "Operating income",
-                "value": "28.1",
-                "unit": "USD_B",
-                "period": "Q3 2026",
-                "comparison_value": null,
-                "comparison_period": null,
+                "metric": "free_cash_flow",
+                "value": -42.4,
+                "unit": "billion_usd",
+                "period": "TTM Sep 30 2026",
+                "comparison_value": 14.8,
+                "comparison_period": "TTM Sep 30 2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                  "quote": "Operating income was $28.1 billion and operating margin was 13.9%—Amazon’s highest operating margin ever"
+                  "quote": "Free cash flow\ndecreased to an outflow of $42.4 billion for the trailing twelve months, driven primarily by a year-over-year increase of $94.8 billion in purchases of property and equipment, net of proceeds from sales and incentives."
                 }
               },
               {
-                "metric": "operating_cash_flow",
-                "value": "42422",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "35525",
-                "comparison_period": "Q3 2025",
+                "metric": "net_cash_from_operating_activities",
+                "value": 42422,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 35525,
+                "comparison_period": "Q3_2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
@@ -26048,11 +26935,11 @@
               },
               {
                 "metric": "purchases_of_property_and_equipment",
-                "value": "-77259",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "-35095",
-                "comparison_period": "Q3 2025",
+                "value": -77259,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": -35095,
+                "comparison_period": "Q3_2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
@@ -26061,11 +26948,11 @@
               },
               {
                 "metric": "total_net_sales",
-                "value": "201944",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "180169",
-                "comparison_period": "Q3 2025",
+                "value": 201944,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 180169,
+                "comparison_period": "Q3_2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
@@ -26074,11 +26961,11 @@
               },
               {
                 "metric": "operating_income",
-                "value": "28076",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "17422",
-                "comparison_period": "Q3 2025",
+                "value": 28076,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 17422,
+                "comparison_period": "Q3_2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
@@ -26087,11 +26974,11 @@
               },
               {
                 "metric": "net_income",
-                "value": "20685",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "21187",
-                "comparison_period": "Q3 2025",
+                "value": 20685,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 21187,
+                "comparison_period": "Q3_2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
@@ -26101,7 +26988,7 @@
               {
                 "metric": "North America Net sales",
                 "value": "112852",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "106267",
                 "comparison_period": "Q3 2025",
@@ -26114,7 +27001,7 @@
               {
                 "metric": "AWS Net sales",
                 "value": "45984",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "33006",
                 "comparison_period": "Q3 2025",
@@ -26127,7 +27014,7 @@
               {
                 "metric": "Consolidated Net sales",
                 "value": "201944",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "180169",
                 "comparison_period": "Q3 2025",
@@ -26140,40 +27027,79 @@
               {
                 "metric": "AWS Operating income",
                 "value": "17773",
-                "unit": "USD $M",
+                "unit": "USD",
                 "period": "Q3 2026",
                 "comparison_value": "11434",
                 "comparison_period": "Q3 2025",
                 "reported_change": "55%",
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
-                  "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773\n55\n%"
+                  "quote": "Operating income\n$\n10,160\n$\n11,434\n$\n12,465\n$\n14,161\n$\n16,621\n$\n17,773"
                 }
               },
               {
-                "metric": "AWS net sales",
-                "value": "45984",
+                "metric": "AWS Net Sales",
+                "value": "45,984",
                 "unit": "USD $M",
-                "period": null,
+                "period": "Q3 2026",
                 "comparison_value": null,
                 "comparison_period": null,
-                "reported_change": "39%",
+                "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                   "quote": "AWS\n$\n30,873\n$\n33,006\n$\n35,579\n$\n37,587\n$\n42,232\n$\n45,984\n39\n%"
+                }
+              },
+              {
+                "metric": "Online stores net sales",
+                "value": "68,470",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Online stores (1)\n$\n61,485\n$\n67,407\n$\n82,988\n$\n64,254\n$\n70,432\n$\n68,470\n2\n%"
+                }
+              },
+              {
+                "metric": "NetIncomeLoss",
+                "value": "21,187",
+                "unit": "usd",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "quote": "Net income $ 21,187"
+                }
+              },
+              {
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "180,169",
+                "unit": "usd",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+                  "quote": "Total net sales $ 180,169"
                 }
               }
             ],
             "guidance": [
               {
-                "metric": "AWS revenue growth rate",
-                "period": "2027-2028",
+                "metric": "aws_revenue_growth",
+                "period": "FY 2027 - FY 2028",
                 "guidance_type": "lower_bound",
-                "value": "40",
+                "value": 40,
                 "low": null,
                 "midpoint": null,
                 "high": null,
-                "unit": "PERCENT",
+                "unit": "percent",
                 "previous_low": null,
                 "previous_midpoint": null,
                 "previous_high": null,
@@ -26184,14 +27110,14 @@
                 }
               },
               {
-                "metric": "net_sales",
+                "metric": null,
                 "period": "Q4 2026",
                 "guidance_type": "range",
                 "value": null,
                 "low": 240.0,
                 "midpoint": null,
                 "high": 247.0,
-                "unit": "USD_B",
+                "unit": "billion USD",
                 "previous_low": null,
                 "previous_midpoint": null,
                 "previous_high": null,
@@ -26202,14 +27128,14 @@
                 }
               },
               {
-                "metric": "operating_income",
+                "metric": null,
                 "period": "Q4 2026",
                 "guidance_type": "range",
                 "value": null,
                 "low": 28.5,
                 "midpoint": null,
                 "high": 33.5,
-                "unit": "USD_B",
+                "unit": "billion USD",
                 "previous_low": null,
                 "previous_midpoint": null,
                 "previous_high": null,
@@ -26220,14 +27146,14 @@
                 }
               },
               {
-                "metric": "capex",
+                "metric": "cash_capex",
                 "period": "FY 2026",
                 "guidance_type": "point",
-                "value": 220.0,
+                "value": 220,
                 "low": null,
                 "midpoint": null,
                 "high": null,
-                "unit": "USD_B",
+                "unit": "billion USD",
                 "previous_low": null,
                 "previous_midpoint": null,
                 "previous_high": null,
@@ -26240,67 +27166,101 @@
             ],
             "cash_flow_and_capex": [
               {
+                "metric": "free_cash_flow",
+                "value": -42.4,
+                "unit": "billion_usd",
+                "period": "TTM Sep 30 2026",
+                "comparison_value": 14.8,
+                "comparison_period": "TTM Sep 30 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Free cash flow\ndecreased to an outflow of $42.4 billion for the trailing twelve months, driven primarily by a year-over-year increase of $94.8 billion in purchases of property and equipment, net of proceeds from sales and incentives."
+                },
+                "metric_type": "standard_fcf",
+                "reconciliation": []
+              },
+              {
+                "metric": "net_cash_from_operating_activities",
+                "value": 42422,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": 35525,
+                "comparison_period": "Q3_2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
+                  "quote": "Net cash provided by (used in) operating activities\n35,525\n42,422"
+                },
+                "metric_type": "operating_cash_flow",
+                "reconciliation": []
+              },
+              {
                 "metric": "purchases_of_property_and_equipment",
-                "value": "-77259",
-                "unit": "USD_millions",
-                "period": "Q3 2026",
-                "comparison_value": "-35095",
-                "comparison_period": "Q3 2025",
+                "value": -77259,
+                "unit": "USD_M",
+                "period": "Q3_2026",
+                "comparison_value": -35095,
+                "comparison_period": "Q3_2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001018724-26-000038:amzn-20260930xex991.htm",
                   "quote": "Purchases of property and equipment\n(35,095)\n(77,259)"
                 },
-                "metric_type": "other",
+                "metric_type": "capex",
                 "reconciliation": []
               }
             ],
             "qa": [],
             "market_consensus": [],
-            "quote_validation_issues": [],
-            "extraction_batch_count": 6,
+            "quote_validation_issues": [
+              "facts.cards[22]:quote_not_found_in_sec_edgar:0001018724-26-000040:amzn-20260930.htm",
+              "facts.cards[23]:quote_not_found_in_sec_edgar:0001018724-26-000040:amzn-20260930.htm"
+            ],
+            "extraction_batch_count": 10,
             "collection_status": {
               "ir_retrieval_provider": "direct_ir",
               "ir_retrieval_attempts": [
                 {
-                  "provider": "none",
+                  "provider": "gemini_search",
                   "ok": false,
                   "seconds": 0.0,
-                  "documents": 0,
-                  "model": null
+                  "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+                  "category": "search_quota_blocked"
                 },
                 {
                   "provider": "public_transcript",
                   "ok": false,
-                  "seconds": 0.12,
+                  "seconds": 0.035,
                   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMZN-2026-Q3",
                   "reason": "no_eligible_official_documents"
                 },
                 {
                   "provider": "direct_ir",
                   "ok": true,
-                  "seconds": 0.394,
+                  "seconds": 0.316,
                   "documents": 0,
                   "partial": false
                 },
                 {
                   "provider": "public_transcript",
                   "ok": false,
-                  "seconds": 0.086,
+                  "seconds": 0.085,
                   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMZN-2026-Q3"
                 }
               ],
-              "ir_retrieval_last_at": "2026-10-29T20:58:51-04:00",
+              "ir_retrieval_last_at": "2026-10-30T08:53:20-04:00",
               "gemini_ir_research_notes": [],
               "gemini_ir_grounding": {},
               "gemini_ir_rejected_unofficial_urls": [],
               "source_manifest": {
-                "document_count": 2,
+                "document_count": 3,
                 "kinds": {
-                  "financial_results": 2
+                  "financial_results": 2,
+                  "other": 1
                 },
                 "sources": {
-                  "sec_edgar": 2
+                  "sec_edgar": 3
                 },
                 "has_primary_results": true,
                 "has_official_ir": false,
@@ -26310,11 +27270,11 @@
                 "has_performance_review": false,
                 "has_presentation": false
               },
-              "last_collection_check_at": "2026-10-29T20:58:51-04:00",
-              "official_ir_checked_at": "2026-10-29T20:58:51-04:00",
-              "official_ir_check_count": 4,
-              "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-              "next_ir_retry_at": "2026-10-29T21:28:51-04:00"
+              "last_collection_check_at": "2026-10-30T08:53:20-04:00",
+              "official_ir_checked_at": "2026-10-30T08:53:20-04:00",
+              "official_ir_check_count": 7,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-10-30T10:53:20-04:00"
             },
             "deterministic_validation_issues": [],
             "deterministic_report_issues": []
@@ -26324,84 +27284,80 @@
           "payload": {
             "investment_thesis": [
               {
-                "signal": "AWS 成長率顯著回升至 39%，且管理層給出 2027-2028 年持續 40%+ 成長的長遠指引",
-                "why_it_matters": "顯示 AI 與雲端需求加速，資本支出大規模擴張可轉化為中長期營收動能，大幅提升長期 earnings power",
+                "signal": "AWS 營收年增達 39% 且給出 2027-2028 年持續 >40% 的長期指引，驅動整體營運利潤率升至歷史新高 13.9%",
+                "why_it_matters": "雲端與 AI 需求大幅加速成長，顯著提升集團長期盈利動能與高毛利營收比重。",
                 "fact_basis": [
-                  "AWS Q3 2026 營收達 $45,984M (年增 39%)",
-                  "官方指引預測 2027 與 2028 年 AWS 營收成長率均將超過 40%"
+                  "AWS Q3 2026 營收達 $45.984B，年增 39%",
+                  "AWS 營運利潤達 $17.773B，年增 55%",
+                  "Q3 2026 整體營運利潤達 $28.1B，營運利潤率為 13.9%",
+                  "官方指引預計 2027 與 2028 年 AWS 營收成長率皆將超過 40%"
                 ],
-                "inference": "AWS 正處於新一輪 AI 驅動的長期成長週期，營收規模擴大將進一步拉升集團整體獲利能力",
+                "inference": "AWS 的高速擴張已取代電商成為盈利增長主引擎，獲利結構出現長期結構性改善。",
                 "confidence": "high"
               },
               {
-                "signal": "營業利潤率創歷史新高的 13.9%，營業利潤達 $28.1B",
-                "why_it_matters": "證明整體營運槓桿持續發揮，高利潤率的 AWS 占比提升優化了整體產品組合獲利能力",
+                "signal": "資本支出大規模擴張導致自由現金流轉為淨流出",
+                "why_it_matters": "資本強度劇烈上升，對短中期自由現金流產生直接擠壓，需持續觀察投資報酬率（ROI）及產能開出效率。",
                 "fact_basis": [
-                  "Q3 2026 營業利潤為 $28,076M（去年同期為 $17,422M）",
-                  "Q3 2026 營業利潤率達 13.9%，創公司歷史新高"
+                  "TTM 自由現金流轉為淨流出 $42.4B（去年同期為淨流入 $14.8B）",
+                  "Q3 2026 不動產與設備購置支出達 $77.259B",
+                  "全年 Cash Capex 指引維持約 $220B"
                 ],
-                "inference": "AWS 獲利比重增加與零售營運效率提升，帶動獲利結構出現結構性改善",
+                "inference": "管理層將幾乎所有營運現金流與新增資本投向 AI/AWS 基礎建設，短期資本回報率壓低 FCF 轉換率。",
                 "confidence": "high"
               }
             ],
             "earnings_power_bridge": {
               "revenue_demand": [
-                "整體 Consolidated 淨銷售額 Q3 2026 達 $201,944M，年增 12%（去年同期 $180,169M）",
-                "AWS Q3 銷售額達 $45,984M，年增 39%（去年同期 $33,006M），為整體成長主要核心驅動力",
-                "北美市場淨銷售額 Q3 達 $112,852M，年增 6%（去年同期 $106,267M），保持穩定個位數成長"
+                "總營收 Q3 2026 達 $201.9B (年增 12%)，其中 AWS 營收達 $46.0B (年增 39%)，為主要成長動力來源。",
+                "北美區域營收為 $112.852B (年增 6%)，線上門市 (Online stores) 營收為 $68.470B (年增 2%)，顯示零售核心業務呈現溫和低速增長。"
               ],
               "margin_unit_economics": [
-                "Q3 2026 全公司營業利潤達 $28,076M，年增 61%，營業利潤率達 13.9% 歷史新高",
-                "AWS 營業利潤達 $17,773M，年增 55%（去年同期 $11,434M），佔整體營業利潤過半，高毛利業務比重提升顯著優化 Margins",
-                "淨利潤為 $20,685M，相比去年同期的 $21,187M 略微下滑，主因非營業項目或稅務波動影響，營業利潤本身仍大幅增長"
+                "集團 Q3 營運利潤達 $28.1B，營運利潤率達 13.9%（創歷史新高），主要受益於高利潤率的 AWS 營業利潤年增 55% 至 $17.773B。",
+                "高利潤率業務占比提升帶動整體營業利益率擴張，惟零售端單位成本改善缺乏直接數據證明。"
               ],
               "cash_capital_intensity": [
-                "Q3 2026 營運現金流達 $42,422M，相比去年同期的 $35,525M 持續成長，提供強勁內部資金來源",
-                "不動產與設備購買（Capex）在 Q3 大幅增加至 $77,259M（去年同期為 $35,095M），且指引預估 2026 全年資本支出約 $220B",
-                "Capex 爆發性成長將對短期自由現金流（FCF）造成顯著擠壓，長遠可持續性取決於 AWS 產能開出後的變現速度"
+                "Q3 營運現金流達 $42.422B，但單季資本支出 (Purchases of property and equipment) 高達 $77.259B。",
+                "TTM 自由現金流轉為 -$42.4B，主因不動產與設備購置資本支出同比增加 $94.8B；全年 Cash Capex 指引約為 $220B，資本強度顯著維持於高位。"
               ]
             },
             "guidance_assessment": [
-              "Q4 2026 淨銷售額指引為 $240.0B 至 $247.0B，預計年增 12% 至 16%",
-              "Q4 2026 營業利潤指引為 $28.5B 至 $33.5B（去年同期為 $25.0B）",
-              "2026 全年 Capex 指引維持約 $220B 的高水準投資",
-              "長期 AWS 指引：預測 2027 年與 2028 年 AWS 營收成長率均將高於 40%",
+              "Q4 2026 營收指引區間為 $240.0B 至 $247.0B，預計年增 12% 至 16%。",
+              "Q4 2026 營運利潤指引區間為 $28.5B 至 $33.5B（去年同期為 $25.0B）。",
+              "長期指引方面，管理層預期 2027 年與 2028 年 AWS 營收成長率均將超過 40%。",
               "外部市場共識未納入，本報告不判定 Beat/Miss。"
             ],
             "demand_quality": [
-              "AWS 營收年增率達 39% 且官方指引未來兩年保持 40%+ 成長，顯示雲端與 AI 需求具備極高深度與持續性",
-              "北美零售業務年增 6%，顯示基礎消費需求平穩但動能相對溫和",
-              "Packet 未提供客群集中度、NRR 或特定客戶 Cohort 數據，無法單獨判定客戶廣度與擴展品質"
+              "AWS 營收加速成長至 39%，展現強勁雲端需求與客戶擴張，但資料集缺乏大客戶集中度與 RPO/NRR 細項數據，無法單獨判定擴張品質與客戶集中風險。",
+              "Alexa for Shopping 過去 12 個月使用者超過 400M，互動量年增 570%，顯示 AI 購物代理工具採納率提升；知名品牌選品數量年增 >20%，顯示零售生態系擴展。"
             ],
             "qa_readthrough": [
               {
-                "debate": "無 Q3 逐字稿資料",
-                "management_answer": "本集 Research Packet 未包含 Q&A 逐字稿資料（qa_unit_count: 0）。",
+                "debate": "法說會 Q&A 數據缺乏",
+                "management_answer": "本次 Research Packet 未包含法說會問答逐字稿紀錄。",
                 "answer_quality": "unknown",
-                "investment_readthrough": "無法進行 Q&A 對抗性分析或管理層回應品質評估。"
+                "investment_readthrough": "無法從管理層問答細節判斷分析師追問之供需瓶頸或微觀營運細節。"
               }
             ],
             "competitive_value_chain": [
-              "AWS 規模效益與資本投入（全年預計 $220B Capex）形成極高資本壁壘，鞏固其在雲端基礎設施與 AI 運算市場的領先地位",
-              "僅憑營收高成長與高利潤率無法直接證明 Switching Costs 或 pricing power 是否進一步擴大，需觀察後續產能開出後的單價與客戶留存率"
+              "AWS 營收成長顯著加速，且管理層給出未來兩年高於 40% 的成長預期，反映其在雲端與 AI 基礎設施領域強烈的市場吸引力與營收捕獲能力，惟高成長本身不直接等同於不可複製的護城河或定價權證明。"
             ],
             "risks_and_disconfirming_evidence": [
-              "若 AWS 2027-2028 年營收成長率低於指引的 40%，將證實高 Capex 投資未達預期回報",
-              "Q3 Capex 達到 $77,259M，若營運現金流無法同步拉升，自由現金流將面臨持續轉負或顯著壓縮的風險",
-              "北美零售業務成長若降至中低個位數以下，可能削弱 AWS 以外的獲利支撐力道"
+              "若 2027-2028 年 AWS 營收成長未能達到管理層指引之 >40% 門檻，將證偽 AI 投資轉換效率與長期獲利增長假設。",
+              "全年度高達 $220B 的 Cash Capex 若無法如期轉化為強勁的現金流入，巨額折舊費用與 FCF 流出將對資本報酬率（ROIC）構成長期壓抑。"
             ],
             "watch_items": [
-              "AWS 未來數季營收成長率是否持續朝 40%+ 邁進",
-              "2026 全年 Capex 執行狀況是否符合 $220B 的指引目標",
-              "營運現金流成長是否足以支撐 Capex 擴張並改善 FCF"
+              "未來數季 AWS 營收成長是否持續朝向 >40% 的中期指引目標靠攏。",
+              "2026 全年 $220B 資本支出的執行進度與營運現金流淨額對比（FCF 缺口變化）。",
+              "電商與線上門市營收成長率（Q3 為 2%）是否出現進一步趨緩。"
             ],
             "confidence": 85,
-            "telegram_draft": "AMZN FY2026 Q3\n\n💡 投資結論與邏輯:\n• AWS 營收成長強勢回升並給出長期高成長目標，搭配營業利潤率創歷史新高，確立結構性獲利能力提升與 AI 擴張週期。\n• 資本支出大幅躍升以支撐雲端基礎設施需求，短中期現金流承壓，但營運現金流同步成長提供實質資金緩衝。\n\n📊 關鍵數據與財測:\n• 營收與整體需求：Q3 淨銷售額達 $201.944B (年增 12%)；其中 AWS 營收 $45.984B (年增 39%)，顯示 AI 與雲端轉型需求極強；北美市場營收 $112.852B (年增 6%)，反映零售基礎穩健但動能相對溫和。客戶集中度與擴展細節因資料不足無法判定。\n• 獲利與單元經濟：Q3 營業利潤達 $28.076B，營業利潤率 13.9% 創歷史新高，反映高毛利 AWS 佔比提升帶動整體獲利結構優化；AWS 營業利潤 $17.773B (年增 55%) 為主要獲利來源。淨利潤為 $20.685M（去年同期 $21.187M），主要受非營運項目波動影響，核心本業獲利仍實質強勁。\n• 現金流與資本強度：Q3 營運現金流達 $42.422B (去年同期 $35.525B)；不動產與設備購買支出大幅升至 $77.259B (去年同期 $35.095B)，全年 Capex 指引維持約 $220B，極高的資本強度將顯著壓縮短期自由現金流，長期回報取決於 AWS 產能變現速度。\n• 營運指引：預利 Q4 淨銷售額介於 $240.0B 至 $247.0B (年增 12% 至 16%)，Q4 營業利潤介於 $28.5B 至 $33.5B；管理層另給出長期指引，預估 2027 年與 2028 年 AWS 營收年增率均將超過 40%。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動因素：AWS 成長率達 39% 成爲整體業務核心加速器，規模經濟效應帶動營業利潤率衝上歷史新高，顯示雲端基礎設施的巨大供給投放正轉化為營收與利潤。\n• 法說會攻防與 Q&A：本期材料無法說會逐字稿資料，無法評估管理層對質疑之回應品質與對抗性細節。\n\n⚠️ 風險、反證與待驗證:\n• 若未來 AWS 營收成長率無法達到管理層指引的 40%+ 水準，將驗證高額 Capex 產生產能過剩或資本回報率遞減風險。\n• 全年約 $220B 的高額 Capex 投放若持續擴大，且營運現金流成長放緩，將導致自由現金流結構性惡化。\n• 後續觀察重點：AWS 未來數季成長率是否持續向 40%+ 推進、全年 Capex 執行率，以及營運現金流是否足以覆蓋龐大資本支出。"
+            "telegram_draft": "AMZN FY2026 Q3\n\n💡 投資結論與邏輯:\n• AWS 營收年增達 39% 且給出未來兩年 >40% 的高成長指引，帶動整體營運利潤率提升至 13.9% 歷史新高，顯示獲利結構持續轉向高毛利的雲端基礎建設。\n• 全年 Cash Capex 指引高達約 $220B，導致 TTM 自由現金流轉為淨流出 $42.4B，顯示公司將大量營運資金轉投注於 AI 產能建置，短期現金流承受明顯壓力。\n\n📊 關鍵數據與財測:\n• 營收與成長：Q3 淨銷售額達 $201.9B，年增 12%；AWS 營收達 $46.0B，年增 39%；線上門市營收為 $68.470B，年增 2%。反映雲端需求顯著強於零售業務。\n• 客戶採納與生態：Alexa for Shopping 過去 12 個月使用者突破 400M，互動量年增 570%；知名品牌選品數量年增 >20%。顯示 AI 購物助手用戶參與度提升。\n• 獲利能力：Q3 營運利潤達 $28.1B，營運利潤率 13.9%；AWS 營運利潤達 $17.773B，年增 55%。高利潤業務佔比提升帶動整體獲利擴張。\n• 現金流與資本支出：Q3 營運現金流為 $42.422B，不動產與設備購置支出達 $77.259B；TTM 自由現金流為流出 $42.4B。反映極高資本強度對 FCF 之擠壓。\n• 財測指引：預測 Q4 淨銷售額為 $240.0B 至 $247.0B (年增 12% 至 16%)，營運利潤為 $28.5B 至 $33.5B；全年 Cash Capex 約 $220B；管理層另指引 2027 年與 2028 年 AWS 營收成長率均將超過 40%。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• AWS 成為整體利潤擴張核心引擎，管理層明確給出未來兩年 AWS 營收年增率 >40% 的強烈指引，顯示對 AI 及雲端需求長期可持續性具高度信心。\n• 本報告未獲取驗證之法說會 Q&A 逐字稿資料，不進行管理層問答攻防分析。\n\n⚠️ 風險、反證與待驗證:\n• 鉅額資本支出風險：全年約 $220B 的 Cash Capex 及 TTM 自由現金流轉負，若雲端 AI 營收轉化不如預期，高額資本折舊將顯著侵蝕後續利潤率。\n• 零售業務成長趨緩：線上門市營收年增僅 2%，北美市場營收年增 6%，若消費需求進一步轉弱，整體非 AWS 業務動能將承壓。\n• 指引驗證點：需持續觀察 2027-2028 年 AWS 營收成長能否切實達到 >40% 門檻，作為 AI 基礎建設投資回報率之關鍵驗證指標。"
           }
         },
         "audit": {
           "payload": {
-            "overall_score": 85,
+            "overall_score": 80,
             "unsupported_claims": [],
             "numerical_errors": [],
             "missing_material_points": [],
@@ -26409,101 +27365,103 @@
             "qa_interpretation_errors": [],
             "accounting_guidance_errors": [],
             "critical_issues": [
-              "deterministic_v4_gate:structure",
-              "deterministic_v4_gate:strong_claim"
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation"
             ],
             "pass": false,
-            "corrected_telegram_draft": "AMZN FY2026 Q3\n\n1. 💡 投資結論與邏輯:\n• AWS 營收成長率回升至 39%，且管理層給出 2027 與 2028 年持續 40%+ 的長遠指引，搭配營業利潤率創下 13.9% 的歷史新高，確立雲端與 AI 需求帶動的獲利能力擴張週期。\n• 大規模資本支出以支撐基礎設施建置，短期內將顯著擠壓自由現金流，中長期回報高度取決於未來產能的實際變現速度。\n\n2. 📊 關鍵數據與財測:\n• Q3 總淨銷售額達 $201.944B (年增 12%)；其中 AWS 營收 $45.984B (年增 39%) 為主要成長核心；北美市場營收 $112.852B (年增 6%) 保持穩定但動能相對溫和。\n• 全公司營業利潤達 $28.076B，營業利潤率 13.9% 創歷史新高，反映高毛利 AWS 佔比顯著提升；淨利潤為 $20.685B（去年同期 $21.187M），主要受非營運項目影響。\n• Q3 營運現金流達 $42.422B；不動產與設備購買支出（Capex）大幅增至 $77.259B，全年 Capex 指引維持約 $220B，高資本強度將壓縮短期自由現金流。\n• 預期 Q4 淨銷售額介於 $240.0B 至 $247.0B (年增 12% 至 16%)，Q4 營業利潤介於 $28.5B 至 $33.5B；管理層預估 2027 與 2028 年 AWS 營收年增率均將超過 40%。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• AWS 規模擴張與資本投入帶動營業利潤率上升，但營收成長與利潤率提升本身尚不足以直接證明定價能力或轉換成本的擴大。\n• 本期 Research Packet 未包含 Q&A 逐字稿資料，無法進行對抗性分析或管理層回應品質評估。\n\n4. ⚠️ 風險、反證與待驗證:\n• 若未來 AWS 營收成長率未能達到 40%+ 的長期指引，將驗證高額 Capex 產生資本回報率遞減的風險。\n• 全年約 $220B 的高額 Capex 投放若持續擴大，且營運現金流未能同步成長，將導致自由現金流結構性惡化。\n• 後續觀察重點包含 AWS 未來數季成長率是否持續向 40%+ 推進、全年 Capex 執行率，以及營運現金流是否足以覆蓋龐大資本支出。",
-            "structure_errors": [
-              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
-            ],
+            "corrected_telegram_draft": "AMZN FY2026 Q3\n\n💡 投資結論與邏輯:\n• AWS 成長顯著加速並給出長遠高成長指引，帶動集團營業利潤率擴張，獲利結構轉向高毛利雲端服務。\n• 資本支出大幅擴張壓低自由現金流，極高資本強度使短中期現金流轉換承壓，需關注後續投資報酬率。\n\n📊 關鍵數據與財測:\n• 營收與成長：Q3 淨銷售額達 $201.9B (年增 12%)；AWS 營收達 $46.0B (年增 39%)；線上門市營收為 $68.470B (年增 2%)。顯示雲端需求強勁，但零售核心業務呈現低速增長。\n• 客戶採納與生態：Alexa for Shopping 過去 12 個月使用者達 400M+，互動量年增 570%；知名品牌選品數量年增 >20%。反映 AI 工具用戶參與度提升與零售生態擴展，惟無法單獨據此判定客戶集中度或定價權。\n• 獲利能力：Q3 營業利潤達 $28.1B，營業利益率升至 13.9%；AWS 營業利潤達 $17.773B (年增 55%)。高利潤率業務比重提升帶動整體獲利結構改善。\n• 現金流與資本支出：Q3 營運現金流達 $42.422B，不動產與設備購置支出達 $77.259B；TTM 自由現金流轉為 -$42.4B。反映大規模 AI 基礎建設投資對 FCF 造成直接擠壓。\n• 財測指引：預測下季淨銷售額為 $240.0B 至 $247.0B (年增 12% 至 16%)，營業利潤為 $28.5B 至 $33.5B；全年 Cash Capex 指引約 $220B；管理層另給出 2027 年與 2028 年 AWS 營收成長率均將超過 40% 之指引。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• AWS 成為整體利潤擴張主引擎，管理層預期未來兩年 AWS 營收年增率均將高於 40%，反映對雲端及 AI 需求的長期信心。\n• 本報告未獲取驗證之法說會 Q&A 逐字稿資料，不進行管理層問答攻防分析。\n\n⚠️ 風險、反證與待驗證:\n• 鉅額資本支出風險：全年約 $220B 的 Cash Capex 導致 TTM 自由現金流轉負，若雲端營收轉化效率不如預期，折舊費用將壓抑長期 ROIC。\n• 零售業務成長趨緩：線上門市營收年增僅 2%，北美市場營收年增 6%，若消費需求進一步轉弱將拖累非 AWS 業務動能。\n• 指引驗證點：需持續觀察 2027-2028 年 AWS 營收成長能否達到 >40% 門檻，作為 AI 基礎建設投資回報率之關鍵驗證指標。",
+            "structure_errors": [],
             "bullet_format_errors": [],
             "redundancy_errors": [],
             "period_label_errors": [],
-            "interpretation_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:獲利能力：Q3 營業利潤達 $28.1B，營業利益率升至 13.9%；AWS 營業利潤達 $17.773B (年增 55%)。高利潤率業務比重提升帶動整體獲利結構改善。",
+              "kpi_without_readthrough:財測指引：預測下季淨銷售額為 $240.0B 至 $247.0B (年增 12% 至 16%)，營業利潤為 $28.5B 至 $33.5B；全年 Cash Capex 指引約 $2"
+            ],
             "customer_readthrough_errors": [],
             "density_errors": [],
             "numeric_provenance_errors": [],
-            "strong_claim_errors": [
-              "strong_claim_without_direct_evidence:pricing_power"
-            ]
+            "strong_claim_errors": []
           }
         },
         "revision_analysis": {
           "payload": {
             "investment_thesis": [
               {
-                "signal": "AWS 營收成長率回升至 39%，且管理層給出 2027 與 2028 年持續 40%+ 的長遠指引",
-                "why_it_matters": "顯示雲端與 AI 需求帶動的規模擴張，有助於支撐中長期營收動能與 earnings power",
+                "signal": "AWS 營收年增達 39% 且給出 2027-2028 年持續 >40% 的長期指引，驅動整體營運利潤率升至 13.9%",
+                "why_it_matters": "雲端與 AI 需求帶動營收擴張，顯著提升集團盈利表現與高利潤率業務比重。",
                 "fact_basis": [
-                  "AWS Q3 2026 營收達 $45,984M (年增 39%)",
-                  "官方指引預測 2027 與 2028 年 AWS 營收成長率均將超過 40%"
+                  "AWS Q3 2026 營收達 $45.984B，年增 39%",
+                  "AWS 營運利潤達 $17.773B，年增 55%",
+                  "Q3 2026 整體營運利潤達 $28.1B，營運利潤率為 13.9%",
+                  "官方指引預計 2027 與 2028 年 AWS 營收成長率皆將超過 40%"
                 ],
-                "inference": "AWS 業務規模擴大，營收成長加速，但仍不能直接證實特定產品組合或稼動率變化",
+                "inference": "AWS 的高速擴張已成為盈利增長主引擎，營運利潤結構隨之變動。",
                 "confidence": "high"
               },
               {
-                "signal": "全公司營業利潤率達到 13.9%，營業利潤達 $28.1B",
-                "why_it_matters": "反映高毛利的 AWS 業務佔比提升，進一步帶動整體營業利潤表現",
+                "signal": "資本支出大規模擴張導致自由現金流轉為淨流出",
+                "why_it_matters": "資本強度上升對短中期自由現金流產生直接擠壓，需持續觀察投資報酬率（ROI）及產能開出效率。",
                 "fact_basis": [
-                  "Q3 2026 營業利潤為 $28,076M（去年同期為 $17,422M）",
-                  "Q3 2026 營業利潤率達 13.9%"
+                  "TTM 自由現金流轉為淨流出 $42.4B（去年同期為淨流入 $14.8B）",
+                  "Q3 2026 不動產與設備購置支出達 $77.259B",
+                  "全年 Cash Capex 指引維持約 $220B"
                 ],
-                "inference": "獲利結構受到高利潤率業務比重上升所影響，但仍不能單憑利潤率推論定價能力擴大",
+                "inference": "管理層將營運現金流與資金投向基礎建設，短期資本回報率壓低 FCF 轉換率。",
                 "confidence": "high"
               }
             ],
             "earnings_power_bridge": {
               "revenue_demand": [
-                "Q3 2026 總淨銷售額達 $201,944M (年增 12%)；AWS 營收達 $45,984M (年增 39%)；北美市場淨銷售額達 $112,852M (年增 6%)"
+                "總營收 Q3 2026 達 $201.9B (年增 12%)，其中 AWS 營收達 $46.0B (年增 39%)。",
+                "北美區域營收為 $112.852B (年增 6%)，線上門市營收為 $68.470B (年增 2%)，顯示零售核心業務呈現溫和增長。"
               ],
               "margin_unit_economics": [
-                "Q3 2026 營業利潤達 $28,076M，營業利潤率達 13.9%，AWS 營業利潤達 $17,773M (年增 55%)；淨利潤為 $20,685M（去年同期 $21,187M）"
+                "集團 Q3 營運利潤達 $28.1B，營運利潤率達 13.9%，受益於高利潤率的 AWS 營業利潤年增 55% 至 $17.773B。",
+                "高利潤率業務占比提升帶動整體營業利益率變動，惟零售端單位成本改善缺乏直接數據證明。"
               ],
               "cash_capital_intensity": [
-                "Q3 2026 營運現金流達 $42,422M；不動產與設備購買支出達 $77,259M，全年 Capex 指引維持約 $220B"
+                "Q3 營運現金流達 $42.422B，單季資本支出 (Purchases of property and equipment) 為 $77.259B。",
+                "TTM 自由現金流轉為 -$42.4B，主因不動產與設備購置資本支出增加；全年 Cash Capex 指引約為 $220B。"
               ]
             },
             "guidance_assessment": [
-              "Q4 2026 淨銷售額指引為 $240.0B 至 $247.0B (年增 12% 至 16%)",
-              "Q4 2026 營業利潤指引為 $28.5B 至 $33.5B",
-              "2026 全年 Capex 指引維持約 $220B",
-              "長期 AWS 指引：預測 2027 年與 2028 年 AWS 營收成長率均將高於 40%",
+              "Q4 2026 營收指引區間為 $240.0B 至 $247.0B，預計年增 12% 至 16%。",
+              "Q4 2026 營運利潤指引區間為 $28.5B 至 $33.5B（去年同期為 $25.0B）。",
+              "長期指引方面，管理層預期 2027 年與 2028 年 AWS 營收成長率均將超過 40%。",
               "外部市場共識未納入，本報告不判定 Beat/Miss。"
             ],
             "demand_quality": [
-              "AWS 營收年增率達 39% 且官方指引未來兩年保持 40%+ 成長，反映雲端需求規模擴大",
-              "北美零售業務年增 6%，顯示基礎消費需求平穩",
-              "Packet 未提供客群集中度或特定客戶 Cohort 數據，無法單獨判定客戶廣度與擴展品質"
+              "AWS 營收成長至 39%，展現雲端需求與客戶擴張，但資料集缺乏大客戶集中度與 RPO/NRR 細項數據，無法單獨判定擴張品質與客戶集中風險。",
+              "Alexa for Shopping 過去 12 個月使用者超過 400M，互動量年增 570%；知名品牌選品數量年增 >20%，顯示零售生態系擴展。"
             ],
             "qa_readthrough": [
               {
-                "debate": "無 Q3 逐字稿資料",
-                "management_answer": "本集 Research Packet 未包含 Q&A 逐字稿資料（qa_unit_count: 0）。",
+                "debate": "法說會 Q&A 數據缺乏",
+                "management_answer": "本次 Research Packet 未包含法說會問答逐字稿紀錄。",
                 "answer_quality": "unknown",
-                "investment_readthrough": "無法進行 Q&A 對抗性分析或管理層回應品質評估。"
+                "investment_readthrough": "無法從管理層問答細節判斷分析師追問之供需瓶頸或微觀營運細節。"
               }
             ],
             "competitive_value_chain": [
-              "AWS 資本投入與規模擴張反映其在雲端基礎設施的佈局，但僅憑營收高成長與高利潤率無法直接證明定價能力是否擴大"
+              "AWS 營收成長顯著加速，且管理層給出未來兩年高於 40% 的成長預期，反映其在雲端與基礎設施領域的營收捕獲能力，惟高成長本身不直接等同於不可複製的護城河或定價權證明。"
             ],
             "risks_and_disconfirming_evidence": [
-              "若 AWS 2027-2028 年營收成長率低於指引的 40%，將顯示高 Capex 投資回報不如預期",
-              "Q3 不動產與設備購買支出達到 $77,259M，若營運現金流未能同步擴張，自由現金流將面臨壓縮風險",
-              "北美零售業務成長若放緩，可能影響整體獲利支撐力道"
+              "若 2027-2028 年 AWS 營收成長未能達到管理層指引之 >40% 門檻，將影響投資轉換效率與長期獲利增長假設。",
+              "全年度高達 $220B 的 Cash Capex 若無法如期轉化為強勁的現金流入，巨額折舊費用與 FCF 流出將對資本報酬率構成壓力。"
             ],
             "watch_items": [
-              "AWS 未來數季營收成長率是否持續朝 40%+ 邁進",
-              "2026 全年 Capex 執行狀況是否符合 $220B 的指引目標",
-              "營運現金流成長是否足以支撐 Capex 擴張"
+              "未來數季 AWS 營收成長是否持續朝向 >40% 的中期指引目標靠攏。",
+              "2026 全年 $220B 資本支出的執行進度與營運現金流淨額對比。",
+              "電商與線上門市營收成長率是否出現進一步趨緩。"
             ],
             "confidence": 85,
-            "telegram_draft": "AMZN FY2026 Q3\n\n💡 投資結論與邏輯:\n• AWS 營收成長率回升並給出長期高成長目標，搭配營業利潤率變化，反映雲端與 AI 需求帶動的業務規模擴張。\n• 大規模資本支出以支撐基礎設施建置，短期內將對自由現金流造成擠壓，中長期回報取決於未來產能的實際變現速度。\n\n📊 關鍵數據與財測:\n• 營收與需求：Q3 總淨銷售額達 $201,944M，年增 12%；其中 AWS 營收 $45,984M，年增 39%，顯示雲端業務規模顯著擴大；北美市場淨銷售額 $112,852M，年增 6%，反映基礎需求保持平穩但動能相對溫和。客戶集中度因資料不足無法判定。\n• 獲利與利潤率：Q3 營業利潤達 $28,076M，營業利潤率達 13.9%，反映高毛利 AWS 佔比提升帶動整體獲利結構變化；AWS 營業利潤 $17,773M，年增 55%。淨利潤為 $20,685M（去年同期 $21,187M），主要受非營運項目影響。\n• 現金流與資本支出：Q3 營運現金流達 $42,422M；不動產與設備購買支出達 $77,259M，全年 Capex 指引維持約 $220B，高資本強度將壓縮短期自由現金流，長期回報取決於產能變現速度。\n• 營運指引：預期 Q4 淨銷售額介於 $240.0B 至 $247.0B，年增 12% 至 16%，Q4 營業利潤介於 $28.5B 至 $33.5B；管理層預估 2027 與 2028 年 AWS 營收年增率均將超過 40%。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• AWS 規模擴張與資本投入帶動營業利潤率上升，但營收成長與利潤率提升本身尚不足以直接證明定價能力或轉換成本的擴大。\n• 本期 Research Packet 未包含 Q&A 逐字稿資料，無法進行對抗性分析或管理層回應品質評估。\n\n⚠️ 風險、反證與待驗證:\n• 若未來 AWS 營收成長率未能達到 40%+ 的長期指引，將驗證高額 Capex 產生資本回報率遞減的風險。\n• 全年約 $220B 的高額 Capex 投放若持續擴大，且營運現金流未能同步成長，將導致自由現金流結構性惡化。\n• 後續觀察重點包含 AWS 未來數季成長率是否持續向 40%+ 推進、全年 Capex 執行率，以及營運現金流是否足以覆蓋龐大資本支出。"
+            "telegram_draft": "AMZN FY2026 Q3\n\n💡 投資結論與邏輯:\n• AWS 營收年增達 39% 且給出長期高成長指引，帶動整體營運利潤率提升，顯示獲利結構轉向雲端基礎建設。\n• 全年 Cash Capex 指引高達約 $220B，導致 TTM 自由現金流轉為淨流出 $42.4B，顯示公司將大量營運資金轉投注於產能建置，短期現金流承受明顯壓力。\n\n📊 關鍵數據與財測:\n• 營收與成長：Q3 淨銷售額達 $201.9B (年增 12%)；AWS 營收達 $46.0B (年增 39%)；線上門市營收為 $68.470B (年增 2%)。顯示雲端需求顯著強於零售業務。\n• 客戶採納與生態：Alexa for Shopping 過去 12 個月使用者突破 400M，互動量年增 570%；知名品牌選品數量年增 >20%。反映工具用戶參與度提升與零售生態擴展，惟無法單獨據此判定客戶集中度或定價權。\n• 現金流與資本支出：Q3 營運現金流為 $42.422B，不動產與設備購置支出達 $77.259B；TTM 自由現金流為流出 $42.4B。反映資本強度對 FCF 之擠壓。\n• 財測指引：預測下季淨銷售額為 $240.0B 至 $247.0B (年增 12% 至 16%)，營業利潤為 $28.5B 至 $33.5B；全年 Cash Capex 指引約 $220B；管理層另給出 2027 年與 2028 年 AWS 營收成長率均將超過 40% 之指引。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• AWS 成為整體利潤擴張核心引擎，管理層明確給出未來兩年 AWS 營收年增率 >40% 的指引，顯示對雲端需求長期動能之預期。\n• 本報告未獲取驗證之法說會 Q&A 逐字稿資料，不進行管理層問答攻防分析。\n\n⚠️ 風險、反證與待驗證:\n• 鉅額資本支出風險：全年約 $220B 的 Cash Capex 及 TTM 自由現金流轉負，若雲端營收轉化不如預期，高額資本折舊將顯著侵蝕後續利潤率。\n• 零售業務成長趨緩：線上門市營收年增僅 2%，北美市場營收年增 6%，若消費需求進一步轉弱，整體非 AWS 業務動能將承壓。\n• 指引驗證點：需持續觀察 2027-2028 年 AWS 營收成長能否切實達到 >40% 門檻，作為基礎建設投資回報率之關鍵驗證指標。"
           }
         },
         "revision_audit": {
           "payload": {
-            "overall_score": 82,
+            "overall_score": 75,
             "unsupported_claims": [],
             "numerical_errors": [],
             "missing_material_points": [],
@@ -26511,27 +27469,27 @@
             "qa_interpretation_errors": [],
             "accounting_guidance_errors": [],
             "critical_issues": [
-              "deterministic_v4_gate:interpretation",
-              "deterministic_v4_gate:strong_claim"
+              "Analyst output telegram_draft violates the strict V4.3 contract format. Section 1 contains 3 bullet points instead of the maximum allowed 2. Section 2 contains too many individual unclustered bullets exceeding the compact cluster limit.",
+              "Quote validation issues exist in SEC EDGAR source cards (cards[22] and cards[23]), though they do not block overall numerical validation since primary metrics are backed by other valid units.",
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:redundancy",
+              "deterministic_v4_gate:interpretation"
             ],
             "pass": false,
-            "corrected_telegram_draft": "AMZN FY2026 Q3\n\n💡 投資結論與邏輯:\n• AWS 營收成長率回升並給出長期高成長指引，搭配營業利潤率變動，反映雲端與 AI 需求帶動的業務規模擴張。\n• 大規模資本支出以支撐基礎設施建置，短期內將對自由現金流造成擠壓，中長期回報取決於未來產能的實際變現速度。\n\n📊 關鍵數據與財測:\n• 營收與需求：Q3 總淨銷售額達 $201,944M，年增 12%；其中 AWS 營收 $45,984M，年增 39%；北美市場淨銷售額 $112,852M，年增 6%。\n• 獲利與利潤率：Q3 營業利潤達 $28,076M，營業利潤率達 13.9%；AWS 營業利潤 $17,773M，年增 55%。淨利潤為 $20,685M（去年同期 $21,187M）。\n• 現金流與資本支出：Q3 營運現金流達 $42,422M；不動產與設備購買支出達 $77,259M，全年 Capex 指引維持約 $220B。\n• 營運指引：預期 Q4 淨銷售額介於 $240.0B 至 $247.0B，年增 12% 至 16%，Q4 營業利潤介於 $28.5B 至 $33.5B；管理層預估 2027 與 2028 年 AWS 營收年增率均將超過 40%。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• AWS 規模擴張與資本投入帶動營業利潤率上升，但營收成長與利潤率提升本身尚不足以直接證明定價能力或轉換成本的擴大。\n• 本期 Research Packet 未包含 Q&A 逐字稿資料，無法進行對抗性分析或管理層回應品質評估。\n\n⚠️ 風險、反證與待驗證:\n• 若未來 AWS 營收成長率未能達到 40%+ 的長期指引，將驗證高額 Capex 產生資本回報率遞減的風險。\n• 全年約 $220B 的高額 Capex 投放若持續擴大，且營運現金流未能同步成長，將導致自由現金流結構性惡化。\n• 後續觀察重點包含 AWS 未來數季成長率是否持續向 40%+ 推進、全年 Capex 執行率，以及營運現金流是否足以覆蓋龐大資本支出。",
+            "corrected_telegram_draft": "AMZN FY2026 Q3\n\n💡 投資結論與邏輯:\n• AWS 營收年增達 39% 且給出長期高成長指引，帶動整體營運利潤率提升，顯示獲利結構轉向雲端基礎建設。\n• 全年 Cash Capex 指引高達約 $220B，導致 TTM 自由現金流轉為淨流出 $42.4B，顯示公司將大量營運資金轉投注於產能建置，短期現金流承受明顯壓力。\n\n📊 關鍵數據與財測:\n• 營收與需求：Q3 淨銷售額達 $201.9B (年增 12%)；AWS 營收達 $46.0B (年增 39%)；線上門市營收為 $68.470B (年增 2%)，顯示雲端需求顯著強於零售業務。\n• 獲利與現金流：Q3 營運現金流為 $42.422B，不動產與設備購置支出達 $77.259B；TTM 自由現金流為流出 $42.4B，反映資本強度對 FCF 之擠壓。\n• 財測指引：預測下季淨銷售額為 $240.0B 至 $247.0B (年增 12% 至 16%)，營業利潤為 $28.5B 至 $33.5B；全年 Cash Capex 指引約 $220B；管理層另給出 2027 年與 2028 年 AWS 營收成長率均將超過 40% 之指引。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• AWS 成為整體利潤擴張核心引擎，管理層明確給出未來兩年 AWS 營收年增率 >40% 的指引，顯示對雲端需求長期動能之預期。本報告未獲取驗證之法說會 Q&A 逐字稿資料，不進行管理層問答攻防分析。\n\n⚠️ 風險、反證與待驗證:\n• 鉅額資本支出風險：全年約 $220B 的 Cash Capex 及 TTM 自由現金流轉負，若雲端營收轉化不如預期，高額資本折舊將顯著侵蝕後續利潤率。\n• 零售業務成長趨緩：線上門市營收年增僅 2%，北美市場營收年增 6%，若消費需求進一步轉弱，整體非 AWS 業務動能將承壓。\n• 指引驗證點：需持續觀察 2027-2028 年 AWS 營收成長能否切實達到 >40% 門檻，作為基礎建設投資回報率之關鍵驗證指標。",
             "structure_errors": [],
             "bullet_format_errors": [],
-            "redundancy_errors": [],
+            "redundancy_errors": [
+              "summary_repeats_hard_data:capex=$220b,營收=39%"
+            ],
             "period_label_errors": [],
             "interpretation_errors": [
-              "kpi_without_readthrough:營收與需求：Q3 總淨銷售額達 $201,944M，年增 12%；其中 AWS 營收 $45,984M，年增 39%；北美市場淨銷售額 $112,852M，年增 6%。",
-              "kpi_without_readthrough:獲利與利潤率：Q3 營業利潤達 $28,076M，營業利潤率達 13.9%；AWS 營業利潤 $17,773M，年增 55%。淨利潤為 $20,685M（去年同期 $21,187M",
-              "kpi_without_readthrough:現金流與資本支出：Q3 營運現金流達 $42,422M；不動產與設備購買支出達 $77,259M，全年 Capex 指引維持約 $220B。",
-              "kpi_without_readthrough:營運指引：預期 Q4 淨銷售額介於 $240.0B 至 $247.0B，年增 12% 至 16%，Q4 營業利潤介於 $28.5B 至 $33.5B；管理層預估 2027 與 20"
+              "kpi_without_readthrough:財測指引：預測下季淨銷售額為 $240.0B 至 $247.0B (年增 12% 至 16%)，營業利潤為 $28.5B 至 $33.5B；全年 Cash Capex 指引約 $2"
             ],
             "customer_readthrough_errors": [],
             "density_errors": [],
             "numeric_provenance_errors": [],
-            "strong_claim_errors": [
-              "strong_claim_without_direct_evidence:pricing_power"
-            ]
+            "strong_claim_errors": []
           }
         }
       },
