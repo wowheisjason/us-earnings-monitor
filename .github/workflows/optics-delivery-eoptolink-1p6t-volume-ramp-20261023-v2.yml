@@ -1,0 +1,45 @@
+name: Optics delivery Eoptolink 1.6T ramp v2
+on:
+  push:
+    branches: [codex/optics-delivery-eoptolink-1p6t-volume-ramp-20261023-v2]
+    paths: [.github/workflows/optics-delivery-eoptolink-1p6t-volume-ramp-20261023-v2.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-eoptolink-1p6t-volume-ramp-20261023-v2
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AI光通訊重大續報｜新易盛1.6T／NPO及供應鏈｜v2】\n\n1）重大變化及通知理由\n相較已送出的v1（2026/10/23、message_id=580），新易盛（300502.SZ）10/29電話會議新增三項足以改變判斷的證據：\n• NPO已看到2027年「明確訂單指引」，預計2027年批量出貨、2028年大規模出貨。\n• 1.6T在Q3、Q4放量更明顯，管理層預期2027年占比提升加快。\n• 原材料供應整體偏緊且不只單一物料，已對Q3出貨造成一定影響；公司預計Q4產能及產量環比大幅增長，成都、泰國同步大規模擴產。\n同時Q3財務實績驗證高速光互連需求已轉為收入，因此達續報門檻。注意「訂單指引」不是不可取消PO，NPO目前仍在開發，不能寫成已量產。\n\n2）已確認事實\n• 電話會議：2026/10/29 19:00–19:45；活動紀錄編號2026-006。季報公告日2026/10/30，財務期間截至9/30，未經審計。\n• Q3營收109.401億元人民幣，年增80.30%；歸母淨利38.432億元，年增61.15%；扣非淨利36.297億元，年增53.32%。\n• 前三季營收318.499億元，年增92.97%；歸母淨利113.723億元，年增79.74%。\n• 前三季經營現金流14.644億元，年減68.42%，公司歸因支付材料款及稅費增加。\n• 9月底存貨174.127億元，較年初增140.70%；預付款13.219億元，增7,695.01%；固定資產50.105億元，增49.40%；在建工程6.331億元，增93.70%。公司分別解釋為訂單與備貨週期、預付材料款及擴產設備投入。\n• 存貨增量約一半為庫存商品。泰國洪災未影響園區生產或造成貨損，但物流延遲令部分9月收入跨期，受影響貨物已於10月確認收入。\n• 公司稱客戶需求旺盛、VMI提貨正常，但未披露客戶、出貨量、ASP或訂單金額。\n官方：\nIR：https://static.cninfo.com.cn/finalpage/2026-10-29/1225645963.PDF\nQ3：https://static.cninfo.com.cn/finalpage/2026-10-30/1225642947.PDF\n\n3）供應鏈角色\n• 新易盛（300502.SZ）：800G／1.6T可插拔光模組、矽光及NPO，直接曝險。\n• 未具名CSP／AI資料中心客戶：提供NPO訂單指引及1.6T需求；官方未具名，不推測hyperscaler。\n• DSP、CW雷射／EML、矽光PIC、FAU及封裝測試商：原料緊張可能傳導至這些環節，但公司明確說「不局限單一物料」，且未公開BOM或供應商，不能指定特定美日台公司受益。\n• 中際旭創、Coherent、AAOI等：競爭或比較對象；本紀錄不能證明其訂單增減。\n\n4）合理推論\nQ3收入與擴產、備料共同支持1.6T已由放量指引轉為財務實績；若Q4產能按期開出、原料供應改善，跨期收入與更高產量可能支撐Q4增長。NPO的2027批量／2028大規模節點，增加中期產品延續性，但2027指引仍可能調整，不能等同正式PO或已認列收入。\n成立條件：客戶按期拉貨；DSP及光源供應正常；成都／泰國良率與產能達標；1.6T及NPO認證不延後；AI資料中心建置持續。\n\n5）機會與風險\n催化劑：NPO由訂單指引轉為PO、2027首批出貨、1.6T收入占比、Q4產量、擴產月產能與良率、核心材料交期。\n風險：存貨與預付款先於收入、現金流下降、原料瓶頸、客戶集中、ASP下降、擴產折舊與良率、NPO延遲；可插拔、LPO／NPO／CPO架構改變價值量。單一公司原料緊張不能外推整條InP／EML鏈全面缺貨。未核對即時估值，不構成買賣建議。\n\n6）待驗證及去重\n追蹤NPO訂單金額、取消條款、客戶與交付季度；1.6T出貨、ASP及毛利率；核心物料名稱、交期與供應商；庫存轉銷及現金回收；成都／泰國產能與良率。\n去重：沿用事件鍵eoptolink-1p6t-volume-ramp-20261023，版本2；只續報Q3實績、NPO訂單指引、供應緊張及擴產新證據，不重送v1。"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"eoptolink-1p6t-volume-ramp-20261023","version":2}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-eoptolink-1p6t-volume-ramp-20261023-v2
+          path: telegram-receipt.json
