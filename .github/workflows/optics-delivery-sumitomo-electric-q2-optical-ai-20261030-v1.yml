@@ -1,0 +1,79 @@
+name: Sumitomo Electric Q2 AI optical growth v1 delivery
+on:
+  push:
+    branches: [codex/optics-delivery-sumitomo-electric-q2-optical-ai-20261030-v1]
+    paths: [.github/workflows/optics-delivery-sumitomo-electric-q2-optical-ai-20261030-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-sumitomo-electric-q2-optical-ai-20261030-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""【住友電工：AI資料中心光元件推升獲利，資訊通信全年營益再上修】
+
+1）重大變化及門檻
+住友電氣工業（5802.T）2026/10/30公布截至9月底的2026年度上半年業績。資訊通信部門營業利益由去年同期221億日圓增至612億日圓、約增177%；公司直接把改善歸因於生成式AI擴張帶動資料中心光配線產品與光元件增加。公司又把該部門全年營業利益預測由7月的1,330億上修至1,560億日圓，正式上修230億日圓／17.3%。這是已認列獲利與正式指引上修，不是展示，足以改變對住友電工AI光互連營收與競爭地位的判斷。
+
+2）已確認事實
+公告日／事件日：2026/10/30 15:00日本時間；上半年期間為2026/4/1–9/30；全年預測截至2027/3/31。
+資訊通信上半年營收2,015億日圓，去年同期1,354億，增加661億／約48.8%；營業利益612億，去年同期221億，增加391億／約177%。依官方數字推算部門營業利益率約30.4%，去年同期約16.3%。公司沒有拆分光元件、光纖／配線、網路設備等各產品收入，故不能把全部增幅歸因EML或CW雷射。
+
+資訊通信全年預測：營收5,100億日圓，較7月預測5,000億上修100億／2%；營業利益1,560億，較7月1,330億上修230億／17.3%。相較2025年度實績，預測營收增加1,834億／約56%，營業利益增加786億／約102%。推算營業利益率約30.6%。以上為管理層預測，尚非實績。
+
+住友電工旗下SEDI具InP材料、磊晶至光元件的垂直能力，官方既有資料列出EML、CW-LD與可調諧雷射；公司曾稱其CW-LD已取得全球市場主導地位、EML位居領先群，但本次財報未更新市占、產能、良率、出貨量或具名客戶，這些仍屬公司宣稱，未作獨立市占驗證。
+
+官方補充資料：https://sumitomoelectric.com/jp/sites/japan/files/2026-10/download_documents/2026_2_hosokum.pdf
+官方決算：https://sumitomoelectric.com/jp/sites/japan/files/2026-10/download_documents/2026_2m.pdf
+官方光元件介紹：https://sumitomoelectric.com/id/project/v27/02
+
+3）供應鏈角色
+住友電工／SEDI（5802.T）：直接曝險於InP材料與磊晶、EML、CW-LD、可調諧雷射、光纖及資料中心光配線。
+未具名AI資料中心、光模組與網路客戶：需求端；公司未公開名稱，不推測hyperscaler。
+Mitsubishi Electric（6503.T）、Coherent（COHR）、Lumentum（LITE）、Broadcom（AVGO）等：在EML、CW雷射或光元件存在不同程度競爭；本事件不證明其訂單得失。
+矽光PIC、光模組、FAU、封裝測試及交換器商：互補環節，但沒有BOM或採購份額，不能指定特定美台供應商受益。
+
+4）合理推論
+上半年獲利與全年上修同時出現，代表AI資料中心需求已轉為實際收入，且高價值光元件／配線產品組合可能改善部門利潤率。若1.6T持續放量、EML與CW-LD良率及ASP穩定，住友電工垂直整合可提高供應保障與議價能力。
+成立條件：新增產能按期、InP基板與磊晶供應穩定、客戶拉貨延續、價格未明顯下降、認證及AI資料中心部署不延後。財報未區分可插拔EML與矽光外置CW架構，不能由整體光元件增長判斷CPO已大規模部署。
+
+5）機會與風險
+催化劑：資訊通信再次上修、EML／CW-LD產能與出貨量、1.6T客戶認證、具名長期訂單及CPO光源量產。
+風險：資訊通信部門含非AI產品；未披露EML／CW拆分；客戶集中、擴產良率與折舊、InP供應、ASP下降、CPO／NPO／可插拔架構替代，以及需求高峰後產能過剩。未查即時估值，不判斷股價已反映或低估。
+
+6）待驗證及去重
+追蹤分產品收入／毛利率、EML與CW-LD月產能、良率、200G單波與1.6T出貨、客戶長約、資本支出及CPO認證。已比對既有通知與交付分支，未見相同事件。事件鍵sumitomo-electric-q2-optical-ai-20261030，版本1。"""
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"sumitomo-electric-q2-optical-ai-20261030","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
