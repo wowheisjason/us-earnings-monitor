@@ -1,0 +1,77 @@
+name: AXT InP backlog capacity Telegram delivery v1
+on:
+  push:
+    branches: [codex/optics-delivery-axt-inp-backlog-capacity-20261029-v1]
+    paths: [.github/workflows/optics-axt-inp-backlog-capacity-20261029-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-axt-inp-backlog-capacity-20261029-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified AXT InP report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜AXT InP積壓訂單突破5億美元、已超額完成產能倍增（2026/10/29）
+
+1）重大變化／達門檻原因
+AXT（NASDAQ: AXTI）Q3營收創7,341萬美元新高，季增54%、年增162%，GAAP毛利率由去年22.3%升至56.0%；公司稱核心動能為AI資料中心InP基板。管理層並在法說透露InP backlog已超過5億美元，較Q2所稱「遠高於1億美元」大幅提高；年初承諾的InP產能倍增已於8月超額完成，仍供不應求。這同時具備實際營收／毛利、產能落地、客戶合約與積壓訂單證據，足以改變營收與競爭判斷。
+
+2）已確認事實
+• 財報公告日：2026/10/29（美國）；財務期間截至9/30。
+• Q3營收7,341萬美元；GAAP淨利2,572萬美元／稀釋EPS 0.39美元，去年同期淨損191萬美元。
+• 法說分項：InP營收5,430萬美元，主要來自資料中心；屬管理層口徑，尚未由10-Q分項覆核。
+• 管理層稱InP backlog逾5億美元，含多年長約、12個月內合約及現貨PO；所有客戶均受配額管理，部分交期逾9個月。backlog不是當期收入，亦可能受取消、出口許可與交付能力影響。
+• 公司已於8月超過2026年InP產能翻倍目標；正設計改造鄰接新廠，2027年仍計畫大幅擴產。未披露晶圓／月、良率或新增設備投產日。
+• Q4管理層指引：已有約9,000萬美元產品／原料可望認列，已取得出口許可或無須許可；此為指引，不是實績。
+• 既有客戶證據：Lumentum六年InP產能預留協議首筆預付款4,350萬美元，2028年另規劃4,350萬美元；Coherent三年6吋InP開發供應協議預付款2,228.85萬美元。兩份合約早於Q3財報，本次新增是需求、產能與財務落地證據。
+• 10/28公告同美子公司擬募資19.1235億至36.6864億元人民幣，用於InP產能等，預計12月完成；仍有交割條件，非已到帳。
+
+3）供應鏈角色與競合
+AXT是InP基板上游，直接客戶包含已公開的Lumentum（LITE）與Coherent（COHR）；兩者再製成CW雷射、EML、探測器等，供800G／1.6T可插拔、矽光與未來NPO／CPO。日本住友電工、JX Advanced Metals等InP基板廠屬競爭者；台灣InP磊晶／雷射廠屬下游或替代供應生態，但本次沒有公開其採購關係。AXT本身不製造完整光模組。
+
+4）合理推論
+若5億美元backlog可按期交付、出口許可持續取得且新產能良率達標，AXT將由短期景氣受益轉為具多年供貨能見度，較高價4吋／6吋產品與固定成本吸收可支撐毛利。Lumentum、Coherent取得預留產能有助其雷射供應，但不代表其終端模組訂單已全部鎖定。AXT一家供應商的配額不能外推整條InP、EML或CPO鏈全面短缺；不同尺寸、規格與客戶認證不可互換。
+
+5）機會與風險
+催化劑：同美融資交割、新廠動工、晶圓產能／良率披露、backlog轉收入、第二筆客戶預付款、6吋認證與量產。受益為AXT及成功取得基板配額的雷射廠；受壓為未取得長約的競爭客戶。風險包括中國出口許可／地緣政治、擴產良率、backlog取消或遞延、客戶集中、價格在供給釋放後回落、2027產能過剩、同美融資稀釋及預付款退款義務。未查即時估值，不判斷股價是否已反映。
+
+6）待驗證／追蹤
+追蹤5億美元backlog中不可取消比例、年度交付分布、實際ASP、3吋轉4吋／6吋比重、新廠月產能與良率、出口許可取得率、Lumentum／Coherent預付款消化、同美融資實際交割，以及Q4約9,000萬美元指引是否認列。
+
+官方財報：https://investors.axt.com/Investors/news/news-details/2026/AXT-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx
+官方同美融資：https://investors.axt.com/Investors/news/news-details/2026/AXT-Inc--Announces-Up-to-RMB-3-67-Billion-Approximately-US545-Million-in-Private-Equity-Financing-for-Subsidiary-Tongmei/default.aspx
+SEC Lumentum合約：https://www.sec.gov/Archives/edgar/data/1051627/000143774926024883/axti20260715_8k.htm
+SEC Q2 10-Q（Coherent/Lumentum條款）：https://www.sec.gov/Archives/edgar/data/1051627/000143774926027677/axti20260630_10q.htm
+
+去重：已查既有通知分支，未見AXT／AXTI同公司、同事件及同里程碑；本次為v1。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"axt-inp-backlog-capacity-20261029","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
