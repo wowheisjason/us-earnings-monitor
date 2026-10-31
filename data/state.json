@@ -1506,7 +1506,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -1871,7 +1871,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2169,7 +2169,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2480,7 +2480,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2714,7 +2714,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2865,7 +2865,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3314,7 +3314,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3471,7 +3471,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3545,7 +3545,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3621,7 +3621,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3771,7 +3771,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3922,7 +3922,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3996,7 +3996,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4079,7 +4079,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4154,7 +4154,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4314,7 +4314,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-10-30T21:34:18-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4328,25 +4328,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.026,
+            "seconds": 0.3,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/INTC-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 4.734,
+            "seconds": 2.56,
             "documents": 12,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.055,
+            "seconds": 0.103,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/INTC-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T19:39:45-04:00",
+        "ir_retrieval_last_at": "2026-10-30T21:49:08-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -4368,11 +4368,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T19:39:45-04:00",
-        "official_ir_checked_at": "2026-10-30T19:39:45-04:00",
-        "official_ir_check_count": 6,
+        "last_collection_check_at": "2026-10-30T21:49:08-04:00",
+        "official_ir_checked_at": "2026-10-30T21:49:08-04:00",
+        "official_ir_check_count": 7,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-10-30T21:39:45-04:00"
+        "next_ir_retry_at": "2026-10-30T23:49:08-04:00"
       },
       "delivery": {}
     },
@@ -4389,7 +4389,7 @@
       "status": "published_sec_pending",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-10-30T19:39:45-04:00",
+      "updated_at": "2026-10-30T21:49:08-04:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4411,7 +4411,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.159,
+            "seconds": 1.298,
             "documents": 0,
             "partial": false
           },
@@ -4424,7 +4424,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-10-30T19:39:45-04:00",
+        "ir_retrieval_last_at": "2026-10-30T21:49:08-04:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -4444,10 +4444,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-10-30T19:39:45-04:00",
+        "last_collection_check_at": "2026-10-30T21:49:08-04:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-10-30T19:39:45-04:00",
-        "next_ir_retry_at": "2026-10-30T21:39:45-04:00"
+        "official_ir_last_attempt_incomplete": "2026-10-30T21:49:08-04:00",
+        "next_ir_retry_at": "2026-10-30T23:49:08-04:00"
       },
       "delivery": {
         "status": "accepted",
@@ -4611,7 +4611,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-10-30T21:02:30-04:00",
+      "last_success_at": "2026-10-30T21:49:08-04:00",
       "blocked_until": null
     },
     "public_transcript": {
