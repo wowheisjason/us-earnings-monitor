@@ -1,0 +1,72 @@
+name: Optics delivery chroma CPO test equipment orders v1
+on:
+  push:
+    branches: [codex/optics-delivery-chroma-cpo-test-equipment-orders-20261029-v1]
+    paths: [.github/workflows/optics-delivery-chroma-cpo-test-equipment-orders-20261029-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-chroma-cpo-test-equipment-orders-20261029-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT: |
+            AI光通訊重大進展｜致茂 CPO 量產測試設備訂單（2026/10/29）
+            
+            1）重大變化及門檻
+            致茂電子（TWSE：2360）於10月29日法說表示，既有CPO客戶預計2026年底完成試產，公司已收到2027年第一季量產設備PO；以光引擎單顆測試的Insertion 3設備數量計，2027年量產需求至少為2026年試產期4–5倍。這是由驗證／試產轉為具PO的量產設備採購，且前三季光子業務營收年增約4倍，足以改變致茂光電測試收入與CPO測試競爭地位判斷，達通知門檻。
+            
+            2）已確認事實
+            公告／法說日：2026/10/29；預計量產設備交付：2027 Q1。管理層稱客戶已提供2027年需求預測，但未披露設備台數、PO金額、不可取消比例、ASP或客戶分部收入。
+            Q3營收新台幣179.26億元，年增180%、季增33%；毛利103.08億元，毛利率57.5%；營業利益71.67億元，營益率40%；歸母淨利56.47億元，基本EPS 13.34元。前三季營收433.15億元、年增120%；歸母淨利146.34億元、年增60%；基本EPS 34.61元。
+            前三季光子業務（含收發模組與CPO測試）營收約為去年同期4倍；未拆分CPO金額。Insertion 4為致茂自行提出並獲客戶採用，公司稱目前為唯一供應商；Insertion 3則有兩家供應商，均屬管理層說法，尚無客戶採購文件獨立驗證。
+            管理層另稱另一美系客戶預計2027年前三季試產、Q4量產；逐字稿清楚辨識Marvell，既有量產客戶名稱在轉錄中不完整，因此不把媒體所稱NVIDIA訂單當成已獨立確認。
+            官方IR：https://www.chromaate.com/en/investors/quarterly_results
+            法說逐字稿：https://www.investing.com/news/transcripts/earnings-call-transcript-chroma-posts-strong-q3-2026-growth-as-stock-falls-44-93CH-4981652
+            媒體交叉驗證：https://www.yuanta.com.tw/eYuanta/News/GetAPItem?Type=StockTodayNews&id=202610290171514
+            
+            3）供應鏈與競合
+            致茂直接供應光引擎／CPO製造與量產測試設備，曝險在封裝測試設備而非InP、EML或光模組本體。既有客戶若按期放量，OSAT、光引擎與交換器供應鏈為互補環節；Marvell為已具名的後續試產客戶。Advantest、Teradyne及專用光電測試廠可能形成競爭，但本次無市占可比資料。不能把致茂設備PO外推為整條CPO、InP或EML供應鏈全面缺貨，也不能與800G／1.6T可插拔模組需求混為一談。
+            
+            4）合理推論
+            若客戶CPO平台按期由試產轉量產、設備驗收與光學測試良率達標，2027年Insertion 3設備需求增至試產期4–5倍，可提高致茂高毛利光電測試收入、安裝基礎及後續維護／升級機會；Insertion 4若維持單一供應，競爭地位更強。傳導仍取決於客戶平台部署、設備ASP、驗收認列時點、量產良率與測試流程是否改版。4–5倍是設備數量規畫，不等於營收或獲利也成長4–5倍。
+            
+            5）投資機會與風險
+            催化劑：2027 Q1設備交付與驗收、CPO收入首次拆分、具名客戶確認、Insertion 4量產訂單、2027 Q4第二客戶由試產轉量產。
+            風險：客戶平台延遲、PO取消／遞延、量產良率或光耦合測試未達標、測試流程重新設計、競爭者導入、資本支出提前而利用率不足。Q3毛利率受產品組合壓低，不能由公司整體獲利直接推定CPO設備毛利。未核對即時估值，不判斷市場是否已反映，亦非買賣建議。
+            
+            6）待驗證與去重
+            追蹤PO金額／台數／不可取消比例、Insertion 3與4 ASP及驗收時點、CPO分部收入與毛利、具名客戶平台、設備稼動率及量產良率。事件鍵chroma-cpo-test-equipment-orders-20261029、版本1；GitHub分支與現有通知檢索未見同事件版本，但無法保證完整Telegram歷史全面可見。
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          message=os.environ.get("REPORT")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"chroma-cpo-test-equipment-orders-20261029","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
