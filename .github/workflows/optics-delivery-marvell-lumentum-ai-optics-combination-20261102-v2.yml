@@ -1,0 +1,76 @@
+name: Optics delivery Marvell Lumentum v2
+on:
+  push:
+    branches: [codex/optics-delivery-marvell-lumentum-ai-optics-combination-20261102-v2]
+    paths: [.github/workflows/optics-delivery-marvell-lumentum-ai-optics-combination-20261102-v2.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-marvell-lumentum-ai-optics-combination-20261102-v2
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜Marvell–Lumentum併購協議 SEC 新證據（v2）
+
+1）重大變化及門檻
+Marvell於2026/11/2向SEC提交11/1簽署的完整合併協議，首次公開終止費、監管終止費及可延長的最晚截止日。這些新條款直接改變交易完成機率、資金風險與整合時程評估，屬相較v1的實質新增證據，不是新聞重刊。
+
+2）已確認事實
+• 交易沿用固定換股比率：每股Lumentum換4.5股Marvell；公告估計企業價值約1,150億美元，完成後Marvell／Lumentum股東約持有67%／33%。此為交易條款，非已完成實績。
+• Outside Date為2027/11/1；若僅剩監管核准未完成，可依約延至2028/2/1、5/1及8/1。
+• 特定情況下Marvell終止費為58億美元；Lumentum反向終止費為29億美元。
+• 若其他主要成交條件已滿足、但因特定監管原因未完成，Marvell須支付32億美元監管終止費。
+• 成交仍須Lumentum股東通過、Marvell股東批准增發股份與公司章程修訂、HSR及其他監管核准、S-4生效、Nasdaq上市核准，且不存在禁止交易的法律命令或重大不利影響。
+• 以上是簽署後的法律承諾與條件，尚非監管核准、成交、客戶認證或營收認列。
+
+官方8-K（2026/11/2）：
+https://www.sec.gov/Archives/edgar/data/1835632/000119312526442717/d352474d8k.htm
+完整合併協議：
+https://www.sec.gov/Archives/edgar/data/1835632/000119312526442717/d352474dex21.htm
+
+3）受影響供應鏈
+直接：Marvell（NASDAQ: MRVL，交換器／DSP／電互連與矽光平台）與Lumentum（NASDAQ: LITE，InP雷射、EML、光元件及NPO／CPO光引擎）。
+競爭／替代：Broadcom、Coherent等在交換器、DSP、雷射及光引擎的重疊或鄰接領域；實際客戶轉單尚無官方證據。
+間接：InP材料與磊晶、封裝測試、光模組供應商可能受整合採購影響，但協議未揭露新增訂單、指定供應商或具名CPO客戶，不能據此推論整條InP／EML鏈短缺。
+
+4）合理推論
+58億美元終止費與32億美元監管費顯示Marvell承擔高額履約與監管風險，提升契約承諾強度，但不等於交易必然完成。最晚可拖至2028/8/1，代表在監管審查期間，產品整合、客戶中立性與全棧協同效益可能延後；若順利成交，Marvell把交換器／DSP與Lumentum InP雷射、EML、NPO／CPO光引擎納入同一平台，才可能提高AI互連內容價值與議價能力。成立條件包括監管放行、客戶不因供應商中立性而轉單，以及整合不破壞既有良率與交付。
+
+5）投資機會及風險
+機會催化劑：S-4揭露、股東投票、HSR與海外監管核准、具名客戶維持或擴大採用、NPO／CPO採購承諾轉為出貨。
+主要風險：固定換股造成MRVL股東稀釋與相對股價風險；反壟斷／外資審查；客戶多源化；整合延誤；AI光學需求低於承諾；CPO、可插拔光模組、EML與CW雷射路線競爭。未查即時價格，不判斷是否已反映或低估。
+
+6）待驗證與去重
+下一步追蹤S-4、兩家公司股東會、監管司法管轄區與補救措施、客戶採購承諾是否轉成出貨／營收，以及InP／EML產能與良率。v2新增的是SEC完整協議中的終止費、監管費與Outside Date；先前v1沒有可驗證Telegram收據，本次不把v1標記為已送出，也未重跑v1。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"marvell-lumentum-ai-optics-combination-20261102","version":2}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-marvell-lumentum-v2
+          path: telegram-receipt.json
