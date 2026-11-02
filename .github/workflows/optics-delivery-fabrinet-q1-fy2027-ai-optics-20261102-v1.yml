@@ -1,0 +1,77 @@
+name: Optics delivery Fabrinet Q1 FY2027 v1
+on:
+  push:
+    branches: [codex/optics-delivery-fabrinet-q1-fy2027-ai-optics-20261102-v1]
+    paths: [.github/workflows/optics-delivery-fabrinet-q1-fy2027-ai-optics-20261102-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-fabrinet-q1-fy2027-ai-optics-20261102-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜Fabrinet（NYSE: FN）Q1 FY2027｜公告日 2026/11/2
+
+1) 重大變化／通知門檻
+Fabrinet截至2026/9/25季度營收達14.74459億美元、年增51%，並將下一季營收指引提高至16.0–16.5億美元。更具供應鏈意義的是：本季資本支出1.58698億美元，為去年同期4,526.6萬美元的3.51倍；法說分部數字顯示資料中心光學與互連營收7.77億美元、年增78%。這是已實現需求與重資本擴張同時出現，足以改變Fabrinet FY2027營收／現金流判斷，達通知門檻。
+
+2) 已確認事實
+• 事件期間：FY2027 Q1截至2026/9/25；公告／法說日：2026/11/2。
+• 官方財報：營收14.74459億美元（去年同期9.78128億）；GAAP淨利1.03497億、稀釋EPS 2.86美元；非GAAP EPS 4.34美元。
+• 管理層指引（非實績）：下一季營收16.0–16.5億美元；GAAP EPS 3.81–3.96美元、非GAAP EPS 4.77–4.92美元。
+• 官方現金流／資產負債表：本季資本支出1.58698億美元；期末存貨11.93億美元（2026/6/26為10.21億）；PP&E 7.782億美元（前季末6.151億）；自由現金流約負1.374億美元。
+• 法說分部數字由Barron's轉述：資料中心光學／互連7.77億美元、年增78%；電信與企業光學／網通4.44億美元、年增35%。這些分部數字屬公司法說內容，但未見於新聞稿／SEC表格，證據層級低於官方書面財報。
+• 公司未揭露1.6T、CPO、NPO各自出貨量、量產收入、良率、具名客戶訂單或新增產能單位，不能把本事件寫成特定1.6T或CPO量產認證。
+
+官方：https://investor.fabrinet.com/node/13781/pdf
+官方法說入口／重播：https://investor.fabrinet.com/events-and-presentations/events
+交叉驗證：https://www.barrons.com/articles/fabrinet-earnings-stock-price-8ad9bad7
+
+3) 受影響供應鏈
+• Fabrinet（FN）：光學封裝、精密製造與EMS；對資料中心光模組、DCI及其他互連屬直接曝險。
+• 上游InP／EML／CW雷射、DSP、驅動器／TIA、連接器與測試設備商可能因產量擴張而間接受益，但本次未公開料號或供應商，不能指認Coherent、Lumentum、Broadcom、Semtech或台日廠商取得新增訂單。
+• 客戶集中與專案關係本次未新增官方具名證據，不據此猜測超大規模客戶。
+
+4) 合理推論
+若16.0–16.5億美元指引能落實，資料中心需求與新增產能爬坡將延續至截至2026/12/25季度；資本支出與PP&E同步大增，較單純訂單展望更能支持「正擴充實體產能」的判斷。營收傳導需滿足：客戶預測轉成排程、光／電元件供應到位、良率與認證不延誤。7.77億美元類別含光學及互連，不能全部歸因800G／1.6T，更不能推論整條InP／EML鏈缺貨。
+
+5) 投資機會與風險
+受益面：Fabrinet可藉資料中心規模與泰國製造提升競爭位置；若高階光學專案占比續升，上游雷射、驅動／接收IC、測試與封裝需求可能跟進。
+風險：季度毛利率約12.1%，低於去年同期約12.3%；重資本支出使自由現金流轉負，存貨增加約1.72億美元，若客戶排程推遲會放大利用率與庫存風險。替代架構（EML可插拔、矽光子CW雷射、CPO／NPO）份額仍未披露；亦未核對即時估值，不主張市場已低估或充分反映。
+
+6) 待驗證／追蹤
+追蹤下一份10-Q與法說逐字稿中的：資料中心分部正式書面數字、1.6T／800G量產收入與客戶數、Building 10等產能的合格／投產面積、存貨與現金流回轉、元件瓶頸、良率及毛利率。若只有展示或送樣而無出貨／營收，不升級為量產事件。
+
+去重：既有光學通知與GitHub事件分支中未找到本Fabrinet Q1 FY2027事件；相較先前FY2026 Q4展望，本次新增的是Q1實績落地、資料中心光學／互連年增78%、資本支出3.51倍，以及下一季16.0–16.5億美元指引。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"fabrinet-q1-fy2027-ai-optics-20261102","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
