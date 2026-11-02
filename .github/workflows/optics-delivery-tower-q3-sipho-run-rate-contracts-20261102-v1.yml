@@ -1,0 +1,77 @@
+name: Optics delivery Tower Q3 SiPho run rate contracts v1
+on:
+  push:
+    branches: [codex/optics-delivery-tower-q3-sipho-run-rate-contracts-20261102-v1]
+    paths: [.github/workflows/optics-delivery-tower-q3-sipho-run-rate-contracts-20261102-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-tower-q3-sipho-run-rate-contracts-20261102-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPORT: |
+            AI光通訊重大進展｜Tower矽光收入與合約能見度上修（2026/11/2）
+            
+            1）重大變化及門檻
+            Tower Semiconductor（NASDAQ／TASE：TSEM）公布Q3實績，並把2026 Q4矽光子（SiPho）收入目標提高至11億美元年化、約為2025年SiPho全年收入5倍；日本Track-1 300mm產能建置提前，支撐產能的客戶合約首次明確延長至2029年。相較Q2「Q4突破10億美元年化」及既有2027／2028合約，本次是收入目標上修、擴產時程改善及合約期延長，足以改變營收能見度與執行風險判斷。
+            
+            2）已確認事實
+            財報／公告日：2026/11/2；財務期間截至2026/9/30。
+            Q3營收5.2616億美元，年增33%、季增14%；毛利1.7876億美元，毛利率約34.0%；GAAP營業利益1.2714億美元；歸母淨利1.2026億美元，稀釋EPS 1.05美元。
+            Q4管理層指引為營收6億美元、上下5%，中值年增36%、季增14%；全年收入約20億美元、Q4年化總營收24億美元。此為指引，不是已實現收入。
+            管理層目標Q4 SiPho收入達11億美元年化，約占Q4公司總年化收入46%；公司沒有披露單季SiPho實際收入、晶圓量、ASP或客戶分布。
+            Track-1 Japan 300mm建置進度提前，客戶合約正延長至2029年；未披露新增合約金額、不可取消比例、個別客戶及各年度交付量。
+            Q3營運現金流1.85億美元，含客戶預付款增加2,300萬美元；前九月營運現金流8.72億美元，含客戶預付款淨增3.05億美元。期末流動及長期客戶預付款／遞延收入合計約3.41億美元，但財報未證明全數屬SiPho。
+            官方：https://towersemi.com/2026/11/02/11022026/
+            官方PDF：https://towersemi.com/wp-content/uploads/2026/11/TSEM_Q3_2026_PR_FF_isa.pdf
+            官方簡報：https://towersemi.com/wp-content/uploads/2026/11/TSEM_Q32026_IRCALL_SLIDES_FF.pdf
+            
+            3）供應鏈與競合
+            Tower直接角色是SiPho與SiGe晶圓代工、200mm／300mm產能供應。SiPho可服務光引擎、可插拔模組、NPO／CPO等架構，但本次未拆分800G、1.6T或CPO占比。
+            NewPhotonics、Marvell等是Tower已公開的SiPho合作／量產生態；本次2029合約客戶未具名，不能推定為其中任何一家。Semtech的SiGe專用產能是另一供應鏈事件，不能與SiPho收入合併。
+            GlobalFoundries、TSMC、Intel及其他矽光代工／整合平台為競爭或替代；IQE等InP磊晶供應商可能間接受益，但11億美元年化收入不能直接外推為InP或EML全面缺貨。
+            
+            4）合理推論
+            若Q4指引與11億美元SiPho年化目標達成，SiPho將成為Tower最大成長引擎之一，並透過較高產能利用率推升收入與毛利。合約延長至2029及預付款增加降低擴產的裸曝險；但年化run-rate是單季速度乘四，不等同已取得11億美元全年收入。
+            影響成立條件包括日本300mm設備按期安裝／認證、良率及週期時間達標、客戶依承諾下PO，以及AI光互連需求未出現轉折。
+            
+            5）投資機會與風險
+            催化劑：Q4實際SiPho收入、2027／2028／2029合約金額與預付款、Track-1投產與量產認證、晶圓量／ASP／良率、具名800G／1.6T或CPO客戶。
+            風險：擴產與設備認證延誤、需求低於容量承諾、預付款返還或訂單少於forecast、瓶頸導致週期拉長與良率下降、客戶集中、矽光代工價格競爭及擴產後過剩。公司亦明確警告過度需求可能造成瓶頸、延遲、賠償或預付款返還。未查即時估值，不判斷是否已反映。
+            
+            6）待驗證與去重
+            追蹤Q4 SiPho實績、2029合約法律約束力、產能／良率／稼動率、客戶與產品架構、預付款對應年度及Track-1量產日。事件鍵tower-q3-sipho-run-rate-contracts-20261102、版本1。與已送出的Semtech–Tower SiGe v1按公司／產品／里程碑去重；本次只報Tower Q3新增的SiPho收入上修、擴產提前及合約延長。
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          message=os.environ.get("REPORT")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"tower-q3-sipho-run-rate-contracts-20261102","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
