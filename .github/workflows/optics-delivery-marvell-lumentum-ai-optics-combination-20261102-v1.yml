@@ -1,0 +1,45 @@
+name: Optics delivery Marvell Lumentum AI optics combination
+on:
+  push:
+    branches: [codex/optics-delivery-marvell-lumentum-ai-optics-combination-20261102-v1]
+    paths: [.github/workflows/optics-delivery-marvell-lumentum-ai-optics-combination-20261102-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-marvell-lumentum-ai-optics-combination-20261102-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜2026/11/02\nMarvell確定以全股票交易收購Lumentum；Lumentum同日披露第二筆重大NPO／CPO訂單，採購承諾逾50億美元。\n\n1）重大變化／通知門檻\n兩家公司已簽署最終協議，不再是市場傳聞。交易把Marvell的交換器、客製AI晶片、光DSP、CMOS與矽光子能力，和Lumentum的InP、高速／高功率雷射、光收發器、OCS及化合物半導體製造整合，可能改變Broadcom等全棧AI連接競爭格局。同日Lumentum確認第二個重大NPO／CPO專案，具逾50億美元採購承諾；這是實質客戶承諾而非展示，兩項均達通知門檻。\n\n2）已確認事實\n・公告／事件日：2026/11/02。\n・每股LITE換4.500股MRVL；以10/28未受傳聞影響收盤價計，Lumentum隱含企業價值1,150億美元、約每股1,132美元、溢價23.9%。換股比率固定，實際價值會隨MRVL股價變動。\n・完成後MRVL原股東約持67%，LITE股東約33%；雙方董事會一致通過。\n・預計2028上半年完成，仍須雙方股東、監管機關及其他慣常條件批准；目前不是已完成收購。\n・公司稱合併後可服務市場規模達5,500億美元、年化成本綜效逾10億美元，且交割後首年增厚Marvell非GAAP EPS；均屬管理層預估，非實績。\n・Lumentum FY2027 Q1（截至9/26）營收12.626億美元，年增136.5%；GAAP毛利率51.0%、營益率28.5%、淨利3.603億美元。\n・管理層確認本季取得第二筆重大NPO／CPO訂單，採購承諾逾50億美元；未公開客戶、交付期、不可取消比例、產品速率或收入認列時程。\n・Q2營收指引15.75億至16.25億美元、非GAAP營益率45%至46%；是指引非實績。公司稱OCS可成為數十億美元年收入來源，但未給日期，不能視為已下單收入。\n\n官方來源：\n交易：https://www.businesswire.com/news/home/20261102374788/en\nLumentum Q1／8-K：https://www.sec.gov/edgar/browse/?CIK=1633978&owner=exclude\n交叉驗證：https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/\n\n3）供應鏈與競合\n・Marvell（MRVL）：直接收購方；從DSP／交換器／客製晶片延伸至InP雷射、收發器、OCS與製造。\n・Lumentum（LITE）：直接標的及NPO／CPO、雷射、OCS供應商；交割前仍為獨立公司。\n・Broadcom（AVGO）：最直接的全棧AI連接競爭者之一；但沒有證據顯示既有客戶已轉單。\n・AXT（AXTI）：已公開與Lumentum有InP基板產能預留協議，屬上游間接曝險；合併不等於Marvell立即自製全部InP基板，也不能推論AXT訂單變動。\n・Coherent（COHR）：InP、雷射與光元件競爭者，也是產業供應生態參與者；本公告未證明其被替代。\n・NVIDIA（NVDA）：既有Lumentum策略投資／採購合作方；逾50億美元新NPO／CPO客戶未具名，不得推定是NVIDIA。\n・日月光、致茂等封裝／測試商可能隨CPO量產受益，但本公告未確認供應關係。\nNPO、CPO、可插拔800G／1.6T、EML與外置CW雷射架構不可混為一談。\n\n4）合理推論\n若交易獲批且整合順利，Marvell可進行電／光端到端共同設計，縮短客戶驗證、提高單一AI互連平台內容價值，並以Lumentum的InP與雷射產能強化供應控制。逾50億美元承諾則提高NPO／CPO商業化可信度，可能帶動雷射、PIC、先進封裝與量產測試需求。\n成立條件：採購承諾可執行並轉為出貨；客戶平台按期部署；InP／雷射良率與產能達標；監管批准；客戶接受供應商垂直整合。不能由Lumentum單一訂單推論整條InP或EML市場全面短缺。\n\n5）投資機會與風險\n催化劑：S-4與合併協議細節、客戶／監管批准、逾50億美元承諾的交付節奏、NPO／CPO收入認列、OCS訂單與產能、綜效落實。\n風險：2028前交易失敗／延後；固定換股造成價值波動及MRVL稀釋；反壟斷與客戶中立性疑慮；整合InP／矽光／封裝的良率與文化風險；重複研發／產能；客戶自研或轉向Broadcom、Coherent及其他供應商；CPO部署延遲、可插拔方案延壽；50億美元承諾可取消或跨多年而使收入後移。未核對即時估值，不判斷已反映或低估。\n\n6）待驗證／去重\n追蹤S-4、正式合併協議、終止費、承諾的不可取消比例、客戶數與平台、速率／架構、年度交付、InP與雷射產能／良率、OCS收入及監管進度。\n本次為2026/11/02首次官方確認；已查現有GitHub通知分支，未見同公司／交易／CPO承諾事件版本。既有Lumentum／AXT長約及Chroma CPO設備PO不重複計為新事件。事件鍵：marvell-lumentum-ai-optics-combination-20261102-v1。"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"marvell-lumentum-ai-optics-combination-20261102","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
