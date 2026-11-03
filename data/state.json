@@ -1748,7 +1748,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2113,7 +2113,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2411,7 +2411,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2722,7 +2722,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2956,7 +2956,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3107,7 +3107,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3556,7 +3556,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3713,7 +3713,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3787,7 +3787,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3863,7 +3863,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4013,7 +4013,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4164,7 +4164,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4238,7 +4238,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4321,7 +4321,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4396,7 +4396,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4556,7 +4556,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4856,7 +4856,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4934,7 +4934,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5007,7 +5007,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5021,25 +5021,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.125,
+            "seconds": 0.252,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/FN-2027-Q2",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.48,
+            "seconds": 1.457,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.073,
+            "seconds": 0.129,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/FN-2027-Q2"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-03T13:27:16-05:00",
+        "ir_retrieval_last_at": "2026-11-03T15:29:49-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5059,10 +5059,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-03T13:27:16-05:00",
+        "last_collection_check_at": "2026-11-03T15:29:49-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-03T13:27:16-05:00",
-        "next_ir_retry_at": "2026-11-03T15:27:16-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-03T15:29:49-05:00",
+        "next_ir_retry_at": "2026-11-03T17:29:49-05:00"
       },
       "delivery": {}
     },
@@ -5079,7 +5079,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5101,7 +5101,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.307,
+            "seconds": 0.558,
             "documents": 0,
             "partial": false
           },
@@ -5114,7 +5114,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-03T13:27:16-05:00",
+        "ir_retrieval_last_at": "2026-11-03T15:29:49-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5134,11 +5134,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-03T13:27:16-05:00",
-        "official_ir_checked_at": "2026-11-03T13:27:16-05:00",
-        "official_ir_check_count": 7,
+        "last_collection_check_at": "2026-11-03T15:29:49-05:00",
+        "official_ir_checked_at": "2026-11-03T15:29:49-05:00",
+        "official_ir_check_count": 8,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-03T15:27:16-05:00"
+        "next_ir_retry_at": "2026-11-03T17:29:49-05:00"
       },
       "delivery": {}
     },
@@ -5155,7 +5155,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-03T15:04:38-05:00",
+      "updated_at": "2026-11-03T15:29:49-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5177,7 +5177,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.199,
+            "seconds": 0.242,
             "documents": 0,
             "partial": false
           },
@@ -5190,7 +5190,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-03T13:27:16-05:00",
+        "ir_retrieval_last_at": "2026-11-03T15:29:49-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5210,11 +5210,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-03T13:27:16-05:00",
-        "official_ir_checked_at": "2026-11-03T13:27:16-05:00",
-        "official_ir_check_count": 7,
+        "last_collection_check_at": "2026-11-03T15:29:49-05:00",
+        "official_ir_checked_at": "2026-11-03T15:29:49-05:00",
+        "official_ir_check_count": 8,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-03T15:27:16-05:00"
+        "next_ir_retry_at": "2026-11-03T17:29:49-05:00"
       },
       "delivery": {}
     },
@@ -5447,7 +5447,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-03T15:04:38-05:00",
+      "last_success_at": "2026-11-03T15:29:49-05:00",
       "blocked_until": null
     },
     "public_transcript": {
