@@ -1682,7 +1682,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2047,7 +2047,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2345,7 +2345,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2656,7 +2656,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2890,7 +2890,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3041,7 +3041,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3490,7 +3490,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3647,7 +3647,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3721,7 +3721,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3797,7 +3797,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3947,7 +3947,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4098,7 +4098,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4172,7 +4172,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4255,7 +4255,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4330,7 +4330,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4490,7 +4490,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4790,7 +4790,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4812,7 +4812,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.15,
+            "seconds": 0.201,
             "documents": 0,
             "partial": false
           },
@@ -4825,7 +4825,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-02T17:17:44-05:00",
+        "ir_retrieval_last_at": "2026-11-02T21:52:24-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -4845,11 +4845,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-02T17:17:44-05:00",
-        "official_ir_checked_at": "2026-11-02T17:17:44-05:00",
-        "official_ir_check_count": 4,
+        "last_collection_check_at": "2026-11-02T21:52:24-05:00",
+        "official_ir_checked_at": "2026-11-02T21:52:24-05:00",
+        "official_ir_check_count": 5,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-02T19:17:44-05:00"
+        "next_ir_retry_at": "2026-11-02T23:52:24-05:00"
       },
       "delivery": {}
     },
@@ -4868,7 +4868,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4882,25 +4882,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.148,
+            "seconds": 0.316,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/LITE-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.208,
+            "seconds": 0.229,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.037,
+            "seconds": 0.054,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/LITE-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-02T17:17:44-05:00",
+        "ir_retrieval_last_at": "2026-11-02T21:52:24-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -4920,11 +4920,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-02T17:17:44-05:00",
-        "official_ir_checked_at": "2026-11-02T17:17:44-05:00",
-        "official_ir_check_count": 4,
+        "last_collection_check_at": "2026-11-02T21:52:24-05:00",
+        "official_ir_checked_at": "2026-11-02T21:52:24-05:00",
+        "official_ir_check_count": 5,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-02T19:17:44-05:00"
+        "next_ir_retry_at": "2026-11-02T23:52:24-05:00"
       },
       "delivery": {}
     },
@@ -4941,39 +4941,39 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
-            "seconds": 0.292,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "seconds": 0.0,
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.264,
+            "seconds": 0.09,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/FN-2027-Q2",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.368,
+            "seconds": 1.39,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.103,
+            "seconds": 0.062,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/FN-2027-Q2"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-02T18:52:10-05:00",
+        "ir_retrieval_last_at": "2026-11-02T21:52:24-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -4993,10 +4993,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-02T18:52:10-05:00",
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "official_ir_last_attempt_incomplete": "2026-11-02T18:52:10-05:00",
-        "next_ir_retry_at": "2026-11-02T19:22:10-05:00"
+        "last_collection_check_at": "2026-11-02T21:52:24-05:00",
+        "transcript_status": "UNKNOWN",
+        "official_ir_last_attempt_incomplete": "2026-11-02T21:52:24-05:00",
+        "next_ir_retry_at": "2026-11-02T23:52:24-05:00"
       },
       "delivery": {}
     },
@@ -5010,19 +5010,19 @@
       "documents": [
         "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
@@ -5035,7 +5035,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.384,
+            "seconds": 0.334,
             "documents": 0,
             "partial": false
           },
@@ -5048,7 +5048,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-02T18:52:10-05:00",
+        "ir_retrieval_last_at": "2026-11-02T21:52:24-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5068,11 +5068,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-02T18:52:10-05:00",
-        "official_ir_checked_at": "2026-11-02T18:52:10-05:00",
-        "official_ir_check_count": 3,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-11-02T19:22:10-05:00"
+        "last_collection_check_at": "2026-11-02T21:52:24-05:00",
+        "official_ir_checked_at": "2026-11-02T21:52:24-05:00",
+        "official_ir_check_count": 4,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-11-02T23:52:24-05:00"
       },
       "delivery": {}
     },
@@ -5086,19 +5086,19 @@
       "documents": [
         "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T18:52:10-05:00",
+      "updated_at": "2026-11-02T21:52:24-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
@@ -5111,7 +5111,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.107,
+            "seconds": 0.139,
             "documents": 0,
             "partial": false
           },
@@ -5124,7 +5124,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-02T18:52:10-05:00",
+        "ir_retrieval_last_at": "2026-11-02T21:52:24-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5144,11 +5144,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-02T18:52:10-05:00",
-        "official_ir_checked_at": "2026-11-02T18:52:10-05:00",
-        "official_ir_check_count": 3,
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-11-02T19:22:10-05:00"
+        "last_collection_check_at": "2026-11-02T21:52:24-05:00",
+        "official_ir_checked_at": "2026-11-02T21:52:24-05:00",
+        "official_ir_check_count": 4,
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-11-02T23:52:24-05:00"
       },
       "delivery": {}
     }
@@ -5163,7 +5163,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-02T18:52:10-05:00",
+      "last_success_at": "2026-11-02T21:52:24-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -41074,6 +41074,2012 @@
             "density_errors": [],
             "numeric_provenance_errors": [],
             "strong_claim_errors": []
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "AAPL_2026-11-02": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "2823f763ee12a17f6ccd007c29b63824c0f88b7403b1c2a8989b489de67255ad",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+              "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Fourth quarter revenue was $114.5 billion, up 12 percent year over year.",
+                "materiality_candidate": 5,
+                "quote": "The Company posted quarterly revenue of $114.5 billion, up 12 percent year over year.",
+                "metric": "revenue",
+                "value": "114.5",
+                "unit": "billion",
+                "period": "Q4 2026",
+                "reported_change": "12%"
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds.",
+                "materiality_candidate": 4,
+                "quote": "Company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds.",
+                "metric": "gross margin",
+                "value": "47.9",
+                "unit": "percent",
+                "period": "Q4 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Diluted earnings per share was $2.10, up 14 percent year over year.",
+                "materiality_candidate": 5,
+                "quote": "Diluted earnings per share was $2.10, up 14 percent year over year, and included a favorable impact of $0.05 from tariff refunds.",
+                "metric": "diluted EPS",
+                "value": "2.10",
+                "unit": "USD",
+                "period": "Q4 2026",
+                "reported_change": "14%"
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Operating cash flow was $28 billion during the quarter.",
+                "materiality_candidate": 4,
+                "quote": "We generated $28 billion in operating cash flow during the quarter, allowing us to return $28 billion to shareholders.",
+                "metric": "operating_cash_flow",
+                "value": "28",
+                "unit": "billion",
+                "period": "Q4 2026",
+                "metric_type": "operating_cash_flow"
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net sales for Q4 2026 were $114,477 million compared to $102,466 million in Q4 2025.",
+                "materiality_candidate": 5,
+                "quote": "Total net sales\n(1)\n114,477\n102,466",
+                "metric": "total net sales",
+                "value": "114477",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "102466",
+                "comparison_period": "Q4 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q4 2026 iPhone net sales were $57,583 million compared to $49,025 million in Q4 2025.",
+                "materiality_candidate": 5,
+                "quote": "iPhone\n$\n57,583\n$\n49,025",
+                "metric": "iPhone net sales",
+                "value": "57583",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "49025",
+                "comparison_period": "Q4 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q4 2026 Services net sales were $31,573 million compared to $28,750 million in Q4 2025.",
+                "materiality_candidate": 5,
+                "quote": "Services\n31,573\n28,750",
+                "metric": "Services net sales",
+                "value": "31573",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "28750",
+                "comparison_period": "Q4 2025"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Apple reported cash generated by operating activities of $145,097 million for the twelve months ended September 26, 2026, compared to $111,482 million for the twelve months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Cash generated by operating activities\n145,097\n111,482",
+                "metric": "Cash generated by operating activities",
+                "metric_type": "operating_cash_flow",
+                "value": "145097",
+                "unit": "USD_Millions",
+                "period": "FY 2026",
+                "comparison_value": "111482",
+                "comparison_period": "FY 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Apple reported payments for acquisition of property, plant and equipment of $9,041 million for the twelve months ended September 26, 2026, compared to $12,715 million for the twelve months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Payments for acquisition of property, plant and equipment\n(9,041)\n(12,715)",
+                "metric": "Payments for acquisition of property, plant and equipment",
+                "metric_type": "capex",
+                "value": "-9041",
+                "unit": "USD_Millions",
+                "period": "FY 2026",
+                "comparison_value": "-12715",
+                "comparison_period": "FY 2025"
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "title": "Apple Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 11061,
+                  "extracted_chars": 11061,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 3,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3"
+              ],
+              "expected_unit_count": 3,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3"
+              ],
+              "processed_unit_count": 3,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 3,
+                "processed_unit_count": 3,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 3,
+                "demand_revenue": 5,
+                "margin_unit_economics": 1
+              },
+              "selection": {
+                "raw_card_count": 9,
+                "deduped_card_count": 9,
+                "selected_card_count": 9,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 3,
+                  "demand_revenue": 5,
+                  "margin_unit_economics": 1
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Fourth quarter revenue was $114.5 billion, up 12 percent year over year.",
+                  "metric": "revenue",
+                  "value": "114.5",
+                  "unit": "billion",
+                  "period": "Q4 2026",
+                  "reported_change": "12%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "The Company posted quarterly revenue of $114.5 billion, up 12 percent year over year."
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Diluted earnings per share was $2.10, up 14 percent year over year.",
+                  "metric": "diluted EPS",
+                  "value": "2.10",
+                  "unit": "USD",
+                  "period": "Q4 2026",
+                  "reported_change": "14%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Diluted earnings per share was $2.10, up 14 percent year over year, and included a favorable impact of $0.05 from tariff refunds."
+                },
+                {
+                  "card_id": "c5:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total net sales for Q4 2026 were $114,477 million compared to $102,466 million in Q4 2025.",
+                  "metric": "total net sales",
+                  "value": "114477",
+                  "unit": "million",
+                  "period": "Q4 2026",
+                  "comparison_value": "102466",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Total net sales\n(1)\n114,477\n102,466"
+                },
+                {
+                  "card_id": "c6:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Q4 2026 iPhone net sales were $57,583 million compared to $49,025 million in Q4 2025.",
+                  "metric": "iPhone net sales",
+                  "value": "57583",
+                  "unit": "million",
+                  "period": "Q4 2026",
+                  "comparison_value": "49025",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "iPhone\n$\n57,583\n$\n49,025"
+                },
+                {
+                  "card_id": "c7:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Q4 2026 Services net sales were $31,573 million compared to $28,750 million in Q4 2025.",
+                  "metric": "Services net sales",
+                  "value": "31573",
+                  "unit": "million",
+                  "period": "Q4 2026",
+                  "comparison_value": "28750",
+                  "comparison_period": "Q4 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Services\n31,573\n28,750"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds.",
+                  "metric": "gross margin",
+                  "value": "47.9",
+                  "unit": "percent",
+                  "period": "Q4 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds."
+                },
+                {
+                  "card_id": "c4:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Operating cash flow was $28 billion during the quarter.",
+                  "metric": "operating_cash_flow",
+                  "value": "28",
+                  "unit": "billion",
+                  "period": "Q4 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "We generated $28 billion in operating cash flow during the quarter, allowing us to return $28 billion to shareholders.",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Apple reported cash generated by operating activities of $145,097 million for the twelve months ended September 26, 2026, compared to $111,482 million for the twelve months ended September 27, 2025.",
+                  "metric": "Cash generated by operating activities",
+                  "value": "145097",
+                  "unit": "USD_Millions",
+                  "period": "FY 2026",
+                  "comparison_value": "111482",
+                  "comparison_period": "FY 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Cash generated by operating activities\n145,097\n111,482",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Apple reported payments for acquisition of property, plant and equipment of $9,041 million for the twelve months ended September 26, 2026, compared to $12,715 million for the twelve months ended September 27, 2025.",
+                  "metric": "Payments for acquisition of property, plant and equipment",
+                  "value": "-9041",
+                  "unit": "USD_Millions",
+                  "period": "FY 2026",
+                  "comparison_value": "-12715",
+                  "comparison_period": "FY 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Payments for acquisition of property, plant and equipment\n(9,041)\n(12,715)",
+                  "metric_type": "capex"
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Fourth quarter revenue was $114.5 billion, up 12 percent year over year.",
+                "materiality_candidate": 5,
+                "quote": "The Company posted quarterly revenue of $114.5 billion, up 12 percent year over year.",
+                "metric": "revenue",
+                "value": "114.5",
+                "unit": "billion",
+                "period": "Q4 2026",
+                "reported_change": "12%",
+                "card_id": "c1:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "The Company posted quarterly revenue of $114.5 billion, up 12 percent year over year."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds.",
+                "materiality_candidate": 4,
+                "quote": "Company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds.",
+                "metric": "gross margin",
+                "value": "47.9",
+                "unit": "percent",
+                "period": "Q4 2026",
+                "card_id": "c2:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Diluted earnings per share was $2.10, up 14 percent year over year.",
+                "materiality_candidate": 5,
+                "quote": "Diluted earnings per share was $2.10, up 14 percent year over year, and included a favorable impact of $0.05 from tariff refunds.",
+                "metric": "diluted EPS",
+                "value": "2.10",
+                "unit": "USD",
+                "period": "Q4 2026",
+                "reported_change": "14%",
+                "card_id": "c3:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Diluted earnings per share was $2.10, up 14 percent year over year, and included a favorable impact of $0.05 from tariff refunds."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Operating cash flow was $28 billion during the quarter.",
+                "materiality_candidate": 4,
+                "quote": "We generated $28 billion in operating cash flow during the quarter, allowing us to return $28 billion to shareholders.",
+                "metric": "operating_cash_flow",
+                "value": "28",
+                "unit": "billion",
+                "period": "Q4 2026",
+                "metric_type": "operating_cash_flow",
+                "card_id": "c4:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u1",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "We generated $28 billion in operating cash flow during the quarter, allowing us to return $28 billion to shareholders."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net sales for Q4 2026 were $114,477 million compared to $102,466 million in Q4 2025.",
+                "materiality_candidate": 5,
+                "quote": "Total net sales\n(1)\n114,477\n102,466",
+                "metric": "total net sales",
+                "value": "114477",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "102466",
+                "comparison_period": "Q4 2025",
+                "card_id": "c5:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Total net sales\n(1)\n114,477\n102,466"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q4 2026 iPhone net sales were $57,583 million compared to $49,025 million in Q4 2025.",
+                "materiality_candidate": 5,
+                "quote": "iPhone\n$\n57,583\n$\n49,025",
+                "metric": "iPhone net sales",
+                "value": "57583",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "49025",
+                "comparison_period": "Q4 2025",
+                "card_id": "c6:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "iPhone\n$\n57,583\n$\n49,025"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q4 2026 Services net sales were $31,573 million compared to $28,750 million in Q4 2025.",
+                "materiality_candidate": 5,
+                "quote": "Services\n31,573\n28,750",
+                "metric": "Services net sales",
+                "value": "31573",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "28750",
+                "comparison_period": "Q4 2025",
+                "card_id": "c7:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u2",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Services\n31,573\n28,750"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Apple reported cash generated by operating activities of $145,097 million for the twelve months ended September 26, 2026, compared to $111,482 million for the twelve months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Cash generated by operating activities\n145,097\n111,482",
+                "metric": "Cash generated by operating activities",
+                "metric_type": "operating_cash_flow",
+                "value": "145097",
+                "unit": "USD_Millions",
+                "period": "FY 2026",
+                "comparison_value": "111482",
+                "comparison_period": "FY 2025",
+                "card_id": "c1:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Cash generated by operating activities\n145,097\n111,482"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Apple reported payments for acquisition of property, plant and equipment of $9,041 million for the twelve months ended September 26, 2026, compared to $12,715 million for the twelve months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Payments for acquisition of property, plant and equipment\n(9,041)\n(12,715)",
+                "metric": "Payments for acquisition of property, plant and equipment",
+                "metric_type": "capex",
+                "value": "-9041",
+                "unit": "USD_Millions",
+                "period": "FY 2026",
+                "comparison_value": "-12715",
+                "comparison_period": "FY 2025",
+                "card_id": "c2:sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm#u3",
+                "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Payments for acquisition of property, plant and equipment\n(9,041)\n(12,715)"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "revenue",
+                "value": "114.5",
+                "unit": "billion",
+                "period": "Q4 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "12%",
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "The Company posted quarterly revenue of $114.5 billion, up 12 percent year over year."
+                }
+              },
+              {
+                "metric": "gross margin",
+                "value": "47.9",
+                "unit": "percent",
+                "period": "Q4 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Company gross margin was 47.9 percent, including a favorable impact of approximately 1 percentage point from tariff refunds."
+                }
+              },
+              {
+                "metric": "diluted EPS",
+                "value": "2.10",
+                "unit": "USD",
+                "period": "Q4 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "14%",
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Diluted earnings per share was $2.10, up 14 percent year over year, and included a favorable impact of $0.05 from tariff refunds."
+                }
+              },
+              {
+                "metric": "operating_cash_flow",
+                "value": "28",
+                "unit": "billion",
+                "period": "Q4 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "We generated $28 billion in operating cash flow during the quarter, allowing us to return $28 billion to shareholders."
+                }
+              },
+              {
+                "metric": "total net sales",
+                "value": "114477",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "102466",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Total net sales\n(1)\n114,477\n102,466"
+                }
+              },
+              {
+                "metric": "iPhone net sales",
+                "value": "57583",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "49025",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "iPhone\n$\n57,583\n$\n49,025"
+                }
+              },
+              {
+                "metric": "Services net sales",
+                "value": "31573",
+                "unit": "million",
+                "period": "Q4 2026",
+                "comparison_value": "28750",
+                "comparison_period": "Q4 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Services\n31,573\n28,750"
+                }
+              },
+              {
+                "metric": "Cash generated by operating activities",
+                "value": "145097",
+                "unit": "USD_Millions",
+                "period": "FY 2026",
+                "comparison_value": "111482",
+                "comparison_period": "FY 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Cash generated by operating activities\n145,097\n111,482"
+                }
+              },
+              {
+                "metric": "Payments for acquisition of property, plant and equipment",
+                "value": "-9041",
+                "unit": "USD_Millions",
+                "period": "FY 2026",
+                "comparison_value": "-12715",
+                "comparison_period": "FY 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Payments for acquisition of property, plant and equipment\n(9,041)\n(12,715)"
+                }
+              }
+            ],
+            "guidance": [],
+            "cash_flow_and_capex": [
+              {
+                "metric": "operating_cash_flow",
+                "value": "28",
+                "unit": "billion",
+                "period": "Q4 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "We generated $28 billion in operating cash flow during the quarter, allowing us to return $28 billion to shareholders."
+                },
+                "metric_type": "operating_cash_flow",
+                "reconciliation": []
+              },
+              {
+                "metric": "Cash generated by operating activities",
+                "value": "145097",
+                "unit": "USD_Millions",
+                "period": "FY 2026",
+                "comparison_value": "111482",
+                "comparison_period": "FY 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Cash generated by operating activities\n145,097\n111,482"
+                },
+                "metric_type": "operating_cash_flow",
+                "reconciliation": []
+              },
+              {
+                "metric": "Payments for acquisition of property, plant and equipment",
+                "value": "-9041",
+                "unit": "USD_Millions",
+                "period": "FY 2026",
+                "comparison_value": "-12715",
+                "comparison_period": "FY 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000320193-26-000024:a8-kex991q4202609262026.htm",
+                  "quote": "Payments for acquisition of property, plant and equipment\n(9,041)\n(12,715)"
+                },
+                "metric_type": "capex",
+                "reconciliation": []
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [],
+            "extraction_batch_count": 2,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.334,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-11-02T21:52:24-05:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-11-02T21:52:24-05:00",
+              "official_ir_checked_at": "2026-11-02T21:52:24-05:00",
+              "official_ir_check_count": 4,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-11-02T23:52:24-05:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q4 revenue reached $114.5B, up 12% YoY, driven by growth in iPhone net sales ($57,583M vs $49,025M YoY) and Services net sales ($31,573M vs $28,750M YoY).",
+                "why_it_matters": "Demonstrates solid top-line acceleration supported by core product demand and expanding high-margin services.",
+                "fact_basis": [
+                  "Fourth quarter revenue was $114.5 billion, up 12 percent year over year.",
+                  "Q4 2026 iPhone net sales were $57,583 million compared to $49,025 million in Q4 2025.",
+                  "Q4 2026 Services net sales were $31,573 million compared to $28,750 million in Q4 2025."
+                ],
+                "inference": "Core hardware upgrade cycles and services recurring revenue are scaling effectively, lifting overall earnings power.",
+                "confidence": "high"
+              },
+              {
+                "signal": "Operating cash flow for the quarter was $28B, with FY 2026 operating cash flow reaching $145,097M compared to $111,482M in FY 2025.",
+                "why_it_matters": "Significant cash generation underpins shareholder return capacity and capital allocation flexibility.",
+                "fact_basis": [
+                  "Operating cash flow was $28 billion during the quarter.",
+                  "Apple reported cash generated by operating activities of $145,097 million for the twelve months ended September 26, 2026, compared to $111,482 million for the twelve months ended September 27, 2025."
+                ],
+                "inference": "Strong cash conversion provides robust downside protection and capital return sustainability.",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Total net sales for Q4 2026 grew to $114,477 million from $102,466 million in Q4 2025, supported by iPhone net sales of $57,583 million and Services net sales of $31,573 million."
+              ],
+              "margin_unit_economics": [
+                "Company gross margin was 47.9%, which included a favorable impact of approximately 1 percentage point from tariff refunds; diluted EPS reached $2.10, up 14% YoY including a $0.05 favorable tariff refund impact."
+              ],
+              "cash_capital_intensity": [
+                "Operating cash flow reached $28 billion for Q4, while full-year operating cash flow expanded to $145,097 million against property, plant, and equipment capex of $9,041 million."
+              ]
+            },
+            "guidance_assessment": [
+              "本系統提供的 Research Packet 未包含明確的未來季度或全年 guidance 數值範圍，因此無法進行前瞻性財測比較。"
+            ],
+            "demand_quality": [
+              "iPhone 與 Services 銷售額均呈年增，但因缺乏客戶數、大型客戶 cohort、NRR 或 RPO 等細部指標，無法判定具體的客戶 breadth、depth 與 concentration 細節。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據顯示營收與毛利率擴張，但缺乏直接的 pricing power、switching cost 或 control-point 證據，無法據此斷定 moat 的結構性擴大。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "Q4 gross margin 包含約 1 percentage point 的 tariff refunds 助益，若扣除此一次性或非經常性項目，核心毛利率表現需重新檢視。",
+              "稀釋後每股盈餘包含 $0.05 的 tariff refunds 正面影響，代表本季獲利成長部分依賴外部政策退款而非純粹營運擴張。"
+            ],
+            "watch_items": [
+              "持續追蹤後續季度扣除關稅退款後的常態性毛利率走勢。",
+              "觀察 iPhone 與 Services 營收成長的續航力及其對現金流的轉化效率。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "AAPL AAPL_2026-11-02\n\n💡 投資結論與邏輯:\n• 本季總營收達 $114.5B，年增 12%，反映核心硬體與服務業務同步擴張，帶動未來 1–3 年 earnings power 向上修正。\n• 全年營業現金流顯著增長至 $145.097B，資本支出維持在 $9.041B，展現極佳的現金創造能力與股東回報支撐力。\n\n📊 關鍵數據與財測:\n• Q4 總淨銷售額為 $114,477M（對比去年同期 $102,466M），其中 iPhone 淨銷售額報 $57,583M（對比 $49,025M），Services 淨銷售額報 $31,573M（對比 $28,750M）。\n• 公司毛利率為 47.9%，稀釋後 EPS 為 $2.10（年增 14%）；惟毛利率與 EPS 分別包含約 1 percentage point 及 $0.05 來自關稅退款（tariff refunds）的有利影響。\n• Q4 單季營業現金流為 $28B，全年營業現金流達 $145,097M（對比去年 $111,482M），資本支出（PPE 購置）為 $9,041M（對比去年 $12,715M）。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能主要由 iPhone 換機需求與高毛利的 Services 營收持續擴大所驅動，推升整體淨銷售額與現金流入。\n• 本次研究包未提供具體管理層 Q&A 逐字稿，無法評估細部法說攻防與管理層對特定質疑的答覆品質。\n\n⚠️ 風險、反證與待驗證:\n• 本季毛利率與 EPS 包含關稅退款帶來的正面助益，扣除此因素後的本業毛利率實質改善幅度仍待後續財報驗證。\n• 現有證據未能提供客戶集中度、NRR 或詳細 cohort 數據，無法進一步確認終端需求結構的穩固性。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "telegram_draft 的 Section 2 包含過多數字與列點，違反了 V4.3 契約中「3–5 COMPACT METRIC CLUSTERS, maximum 7 non-empty lines」的限制。",
+              "telegram_draft 的 Section 1 包含了具體數據，違反了 V4.3 契約中「Summary bullets should contain NO numbers; keep necessary values in Section 2」的規定。",
+              "部分美元金額在 Telegram 內容中使用了中文單位（如 $145.097B），雖然用了 $B 但部分語法或格式未完全符合強制規定（應嚴格保持 source-backed $M/$B 格式，且不得轉換為中文億/兆）。",
+              "deterministic_v4_gate:numeric_provenance"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "AAPL AAPL_2026-11-02\n\n💡 投資結論與邏輯:\n• 本季營收與獲利隨核心硬體與服務擴張而增長，帶動整體 earnings power 向上修正。\n• 全年營業現金流顯著增長，資本支出維持低檔，展現穩健的現金創造能力與股東回報支撐力。\n\n📊 關鍵數據與財測:\n• 總淨銷售額 $114.477B（年增 12%），其中 iPhone 佔 $57.583B、Services 佔 $31.573B；反映核心需求與高毛利服務同步成長，但詳細客戶結構與 NRR 數據未在財報揭露。\n• 毛利率 47.9%、稀釋後 EPS $2.10（年增 14%）；但兩者皆包含約 1 percentage point 及 $0.05 來自關稅退款（tariff refunds）的短期助益，扣除後的常態獲利水準仍待驗證。\n• 單季營業現金流 $28B，全年營業現金流達 $145.097B，PPE 資本支出 $9.041B；提供充沛的資本配置彈性，但資本強度與長期自由現金流轉化需持續觀察。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能主要由 iPhone 換機潮與 Services 營收擴大所驅動，推升整體淨銷售額與現金流入；現有證據無法直接證實其具備結構性 pricing power 或 moat 擴大。\n• 本次研究包未提供具體管理層 Q&A 逐字稿，無法評估法說會中的細部攻防與質疑答覆品質。\n\n⚠️ 風險、反證與待驗證:\n• 本季獲利與毛利率包含非經常性關稅退款的正面影響，扣除後之本業毛利率實質改善幅度仍待後續財報驗證。\n• 現有證據未能提供客戶集中度或詳細 cohort 數據，無法進一步確認終端需求結構的穩固性。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:47.9%"
+            ],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q4 revenue reached $114.5B, up 12% YoY, driven by growth in iPhone net sales ($57,583M vs $49,025M YoY) and Services net sales ($31,573M vs $28,750M YoY).",
+                "why_it_matters": "Demonstrates solid top-line acceleration supported by core product demand and expanding high-margin services.",
+                "fact_basis": [
+                  "Fourth quarter revenue was $114.5 billion, up 12 percent year over year.",
+                  "Q4 2026 iPhone net sales were $57,583 million compared to $49,025 million in Q4 2025.",
+                  "Q4 2026 Services net sales were $31,573 million compared to $28,750 million in Q4 2025."
+                ],
+                "inference": "Core hardware upgrade cycles and services recurring revenue are scaling effectively, lifting overall earnings power.",
+                "confidence": "high"
+              },
+              {
+                "signal": "Operating cash flow for the quarter was $28B, with FY 2026 operating cash flow reaching $145,097M compared to $111,482M in FY 2025.",
+                "why_it_matters": "Significant cash generation underpins shareholder return capacity and capital allocation flexibility.",
+                "fact_basis": [
+                  "Operating cash flow was $28 billion during the quarter.",
+                  "Apple reported cash generated by operating activities of $145,097 million for the twelve months ended September 26, 2026, compared to $111,482 million for the twelve months ended September 27, 2025."
+                ],
+                "inference": "Strong cash conversion provides robust downside protection and capital return sustainability.",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Total net sales for Q4 2026 grew to $114,477 million from $102,466 million in Q4 2025, supported by iPhone net sales of $57,583 million and Services net sales of $31,573 million."
+              ],
+              "margin_unit_economics": [
+                "Company gross margin was 47.9%, which included a favorable impact of approximately 1 percentage point from tariff refunds; diluted EPS reached $2.10, up 14% YoY including a $0.05 favorable tariff refund impact."
+              ],
+              "cash_capital_intensity": [
+                "Operating cash flow reached $28 billion for Q4, while full-year operating cash flow expanded to $145,097 million against property, plant, and equipment capex of $9,041 million."
+              ]
+            },
+            "guidance_assessment": [
+              "本系統提供的 Research Packet 未包含明確的未來季度或全年 guidance 數值範圍，因此無法進行前瞻性財測比較。"
+            ],
+            "demand_quality": [
+              "iPhone 與 Services 銷售額均呈年增，但因缺乏客戶數、大型客戶 cohort、NRR 或 RPO 等細部指標，無法判定具體的客戶 breadth、depth 與 concentration 細節。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據顯示營收與毛利率擴張，但缺乏直接的 pricing power、switching cost 或 control-point 證據，無法據此斷定 moat 的結構性擴大。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "Q4 gross margin 包含約 1 percentage point 的 tariff refunds 助益，若扣除此一次性或非經常性項目，核心毛利率表現需重新檢視。",
+              "稀釋後每股盈餘包含 $0.05 的 tariff refunds 正面影響，代表本季獲利成長部分依賴外部政策退款而非純粹營運擴張。"
+            ],
+            "watch_items": [
+              "持續追蹤後續季度扣除關稅退款後的常態性毛利率走勢。",
+              "觀察 iPhone 與 Services 營收成長的續航力及其對現金流的轉化效率。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "AAPL AAPL_2026-11-02\n\n💡 投資結論與邏輯:\n• 本季營收與獲利隨核心硬體與服務擴張而增長，反映核心需求上升，帶動整體 earnings power 向上修正。\n• 全年營業現金流顯著增長，資本支出維持低檔，展現穩健的現金創造能力與股東回報支撐力。\n\n📊 關鍵數據與財測:\n• 總淨銷售額報 $114.477B（年增 12%），其中 iPhone 佔 $57.583B、Services 佔 $31.573B；反映核心需求與高毛利服務同步成長，但詳細客戶結構與 NRR 數據未在財報揭露。\n• 毛利率報 47.9%、稀釋後 EPS 報 $2.10（年增 14%）；但兩者皆包含約 1 percentage point 及 $0.05 來自關稅退款（tariff refunds）的短期助益，扣除後的常態獲利水準仍待驗證。\n• 單季營業現金流報 $28B，全年營業現金流達 $145.097B，PPE 資本支出報 $9.041B；提供充沛的資本配置彈性，但資本強度與長期自由現金流轉化需持續觀察。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能主要由 iPhone 換機潮與 Services 營收擴大所驅動，推升整體淨銷售額與現金流入；現有證據無法直接證實其具備結構性 pricing power 或 moat 擴大。\n• 本次研究包未提供具體管理層 Q&A 逐字稿，無法評估法說會中的細部攻防與質疑答覆品質。\n\n⚠️ 風險、反證與待驗證:\n• 本季獲利與毛利率包含非經常性關稅退款的正面影響，扣除後之本業毛利率實質改善幅度仍待後續財報驗證。\n• 現有證據未能提供客戶集中度或詳細 cohort 數據，無法進一步確認終端需求結構的穩固性。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Telegram draft Section 2 contains too many lines (exceeds 7 lines limit).",
+              "Telegram draft Section 1 includes specific metric/value pairs which should be minimized or restricted to Section 2.",
+              "Telegram draft contains monetary values converted or expressed in ways not strictly matching the required format (e.g., $114.477B needs to align with source precision or strict rules).",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:numeric_provenance"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "AAPL_2026-11-02\n\n💡 投資結論與邏輯:\n• 本季營收與獲利隨核心硬體與服務擴張而增長，反映需求回升並帶動整體 earnings power 向上修正。\n• 營業現金流顯著增長且資本支出維持低檔，展現穩健的現金創造能力與股東回報支撐力。\n\n📊 關鍵數據與財測:\n• 總淨銷售額報 $114.477B（年增 12%），其中 iPhone 佔 $57.583B、Services 佔 $31.573B；反映核心需求與高毛利服務同步成長，但詳細客戶結構與 NRR 數據未揭露。\n• 毛利率報 47.9%、稀釋後 EPS 報 $2.10（年增 14%）；兩者皆包含約 1 percentage point 及 $0.05 來自關稅退款的短期助益，常態獲利水準仍待後續驗證。\n• 單季營業現金流報 $28B，全年營業現金流達 $145.097B，PPE 資本支出報 $9.041B；提供充沛的資本配置彈性。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能主要由硬體換機潮與服務營收擴大所驅動，推升整體淨銷售額與現金流入；現有證據無法直接證實其具備結構性 pricing power 或 moat 擴大。\n• 本次研究包未提供管理層 Q&A 逐字稿，無對應法說會攻防紀錄。\n\n⚠️ 風險、反證與待驗證:\n• 本季獲利與毛利率包含非經常性關稅退款的正面影響，扣除後之本業毛利率實質改善幅度仍待後續財報驗證。\n• 現有證據未能提供客戶集中度或詳細 cohort 數據，無法進一步確認終端需求結構的穩固性。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:毛利率報 47.9%、稀釋後 EPS 報 $2.10（年增 14%）；兩者皆包含約 1 percentage point 及 $0.05 來自關稅退款的短期助益，常態獲利水準仍待後",
+              "kpi_without_readthrough:單季營業現金流報 $28B，全年營業現金流達 $145.097B，PPE 資本支出報 $9.041B；提供充沛的資本配置彈性。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:47.9%"
+            ],
+            "strong_claim_errors": []
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "PLTR_2026-11-02": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "e50bae824a04dd5465ee3fcac606fea50e93eb151a7cad6057c83cbee93f3d26",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+              "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 2026 revenue grew 96% year-over-year to $2.313 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue grew 96% year-over-year and 20% quarter-over-quarter to $2.313 billion",
+                "metric": "Revenue",
+                "value": "2313411",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "reported_change": "96%"
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q4 2026 revenue expected to be between $2.649 and $2.653 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue of between $2.649 - $2.653 billion.",
+                "metric": "Revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "2.649",
+                "high": "2.653",
+                "unit": "USD_billions"
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full year 2026 revenue guidance raised to between $8.530 and $8.534 billion.",
+                "materiality_candidate": 5,
+                "quote": "We are raising our revenue guidance to between $8.530 - $8.534 billion.",
+                "metric": "Revenue",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": "8.530",
+                "high": "8.534",
+                "unit": "USD_billions"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u3",
+              "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u4"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+              "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue for the three months ended September 30, 2026 was $2,313,411 thousand compared to $1,181,092 thousand in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n2,313,411\n$\n1,181,092",
+                "metric": "Revenue",
+                "value": "2313411",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "1181092",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income for the three months ended September 30, 2026 was $1,134,441 thousand compared to $476,748 thousand in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n1,134,441\n476,748",
+                "metric": "Net income",
+                "value": "1134441",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "476748",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted income from operations for the three months ended September 30, 2026 was $1,426,840 thousand with an adjusted operating margin of 62%.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted income from operations\n$\n1,426,840\n$\n600,540\n$\n3,604,857\n$\n1,455,635\nAdjusted operating margin\n62\n%\n51\n%\n61\n%\n47\n%",
+                "metric": "Adjusted income from operations",
+                "value": "1426840",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "600540",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted free cash flow for the three months ended September 30, 2026 was $1,216,077 thousand, with an adjusted free cash flow margin of 53%.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted free cash flow\n$\n1,216,077\n$\n539,862\nAdjusted free cash flow margin\n53\n%\n46\n%",
+                "metric_type": "adjusted_fcf",
+                "metric": "Adjusted free cash flow",
+                "value": "1216077",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "539862",
+                "comparison_period": "Q3 2025",
+                "reconciliation": [
+                  {
+                    "item": "Net cash provided by operating activities",
+                    "value": "1204570",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Net cash provided by operating activities\n$\n1,204,570"
+                    }
+                  },
+                  {
+                    "item": "Add: cash paid for employer payroll taxes related to stock-based compensation",
+                    "value": "19521",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Add: cash paid for employer payroll taxes related to stock-based compensation\n19,521"
+                    }
+                  },
+                  {
+                    "item": "Less: purchases of property and equipment",
+                    "value": "-8014",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Less: purchases of property and equipment\n(8,014)"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "title": "Palantir Technologies Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 23669,
+                  "extracted_chars": 23669,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 6,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u2",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u3",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u4",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6"
+              ],
+              "expected_unit_count": 6,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u2",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u3",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u4",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6"
+              ],
+              "processed_unit_count": 6,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 6,
+                "processed_unit_count": 6,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 1,
+                "demand_revenue": 2,
+                "guidance": 2,
+                "margin_unit_economics": 2
+              },
+              "selection": {
+                "raw_card_count": 7,
+                "deduped_card_count": 7,
+                "selected_card_count": 7,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 1,
+                  "demand_revenue": 2,
+                  "guidance": 2,
+                  "margin_unit_economics": 2
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Q3 2026 revenue grew 96% year-over-year to $2.313 billion.",
+                  "metric": "Revenue",
+                  "value": "2313411",
+                  "unit": "USD_thousands",
+                  "period": "Q3 2026",
+                  "reported_change": "96%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue grew 96% year-over-year and 20% quarter-over-quarter to $2.313 billion"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Revenue for the three months ended September 30, 2026 was $2,313,411 thousand compared to $1,181,092 thousand in the prior year period.",
+                  "metric": "Revenue",
+                  "value": "2313411",
+                  "unit": "USD_thousands",
+                  "period": "Q3 2026",
+                  "comparison_value": "1181092",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue\n$\n2,313,411\n$\n1,181,092"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Q4 2026 revenue expected to be between $2.649 and $2.653 billion.",
+                  "metric": "Revenue",
+                  "unit": "USD_billions",
+                  "period": "Q4 2026",
+                  "low": "2.649",
+                  "high": "2.653",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue of between $2.649 - $2.653 billion.",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Full year 2026 revenue guidance raised to between $8.530 and $8.534 billion.",
+                  "metric": "Revenue",
+                  "unit": "USD_billions",
+                  "period": "FY 2026",
+                  "low": "8.530",
+                  "high": "8.534",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "We are raising our revenue guidance to between $8.530 - $8.534 billion.",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Net income for the three months ended September 30, 2026 was $1,134,441 thousand compared to $476,748 thousand in the prior year period.",
+                  "metric": "Net income",
+                  "value": "1134441",
+                  "unit": "USD_thousands",
+                  "period": "Q3 2026",
+                  "comparison_value": "476748",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Net income\n1,134,441\n476,748"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Adjusted income from operations for the three months ended September 30, 2026 was $1,426,840 thousand with an adjusted operating margin of 62%.",
+                  "metric": "Adjusted income from operations",
+                  "value": "1426840",
+                  "unit": "USD_thousands",
+                  "period": "Q3 2026",
+                  "comparison_value": "600540",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Adjusted income from operations\n$\n1,426,840\n$\n600,540\n$\n3,604,857\n$\n1,455,635\nAdjusted operating margin\n62\n%\n51\n%\n61\n%\n47\n%"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Adjusted free cash flow for the three months ended September 30, 2026 was $1,216,077 thousand, with an adjusted free cash flow margin of 53%.",
+                  "metric": "Adjusted free cash flow",
+                  "value": "1216077",
+                  "unit": "USD_thousands",
+                  "period": "Q3 2026",
+                  "comparison_value": "539862",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Adjusted free cash flow\n$\n1,216,077\n$\n539,862\nAdjusted free cash flow margin\n53\n%\n46\n%",
+                  "metric_type": "adjusted_fcf",
+                  "reconciliation": [
+                    {
+                      "item": "Net cash provided by operating activities",
+                      "value": "1204570",
+                      "unit": "USD_thousands",
+                      "evidence": {
+                        "quote": "Net cash provided by operating activities\n$\n1,204,570"
+                      }
+                    },
+                    {
+                      "item": "Add: cash paid for employer payroll taxes related to stock-based compensation",
+                      "value": "19521",
+                      "unit": "USD_thousands",
+                      "evidence": {
+                        "quote": "Add: cash paid for employer payroll taxes related to stock-based compensation\n19,521"
+                      }
+                    },
+                    {
+                      "item": "Less: purchases of property and equipment",
+                      "value": "-8014",
+                      "unit": "USD_thousands",
+                      "evidence": {
+                        "quote": "Less: purchases of property and equipment\n(8,014)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 2026 revenue grew 96% year-over-year to $2.313 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue grew 96% year-over-year and 20% quarter-over-quarter to $2.313 billion",
+                "metric": "Revenue",
+                "value": "2313411",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "reported_change": "96%",
+                "card_id": "c1:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue grew 96% year-over-year and 20% quarter-over-quarter to $2.313 billion"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q4 2026 revenue expected to be between $2.649 and $2.653 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue of between $2.649 - $2.653 billion.",
+                "metric": "Revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "2.649",
+                "high": "2.653",
+                "unit": "USD_billions",
+                "card_id": "c2:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue of between $2.649 - $2.653 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full year 2026 revenue guidance raised to between $8.530 and $8.534 billion.",
+                "materiality_candidate": 5,
+                "quote": "We are raising our revenue guidance to between $8.530 - $8.534 billion.",
+                "metric": "Revenue",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "low": "8.530",
+                "high": "8.534",
+                "unit": "USD_billions",
+                "card_id": "c3:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u1",
+                "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "We are raising our revenue guidance to between $8.530 - $8.534 billion."
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue for the three months ended September 30, 2026 was $2,313,411 thousand compared to $1,181,092 thousand in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n2,313,411\n$\n1,181,092",
+                "metric": "Revenue",
+                "value": "2313411",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "1181092",
+                "comparison_period": "Q3 2025",
+                "card_id": "c1:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue\n$\n2,313,411\n$\n1,181,092"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income for the three months ended September 30, 2026 was $1,134,441 thousand compared to $476,748 thousand in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n1,134,441\n476,748",
+                "metric": "Net income",
+                "value": "1134441",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "476748",
+                "comparison_period": "Q3 2025",
+                "card_id": "c2:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u5",
+                "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Net income\n1,134,441\n476,748"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted income from operations for the three months ended September 30, 2026 was $1,426,840 thousand with an adjusted operating margin of 62%.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted income from operations\n$\n1,426,840\n$\n600,540\n$\n3,604,857\n$\n1,455,635\nAdjusted operating margin\n62\n%\n51\n%\n61\n%\n47\n%",
+                "metric": "Adjusted income from operations",
+                "value": "1426840",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "600540",
+                "comparison_period": "Q3 2025",
+                "card_id": "c3:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Adjusted income from operations\n$\n1,426,840\n$\n600,540\n$\n3,604,857\n$\n1,455,635\nAdjusted operating margin\n62\n%\n51\n%\n61\n%\n47\n%"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted free cash flow for the three months ended September 30, 2026 was $1,216,077 thousand, with an adjusted free cash flow margin of 53%.",
+                "materiality_candidate": 5,
+                "quote": "Adjusted free cash flow\n$\n1,216,077\n$\n539,862\nAdjusted free cash flow margin\n53\n%\n46\n%",
+                "metric_type": "adjusted_fcf",
+                "metric": "Adjusted free cash flow",
+                "value": "1216077",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "539862",
+                "comparison_period": "Q3 2025",
+                "reconciliation": [
+                  {
+                    "item": "Net cash provided by operating activities",
+                    "value": "1204570",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Net cash provided by operating activities\n$\n1,204,570"
+                    }
+                  },
+                  {
+                    "item": "Add: cash paid for employer payroll taxes related to stock-based compensation",
+                    "value": "19521",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Add: cash paid for employer payroll taxes related to stock-based compensation\n19,521"
+                    }
+                  },
+                  {
+                    "item": "Less: purchases of property and equipment",
+                    "value": "-8014",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Less: purchases of property and equipment\n(8,014)"
+                    }
+                  }
+                ],
+                "card_id": "c4:sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm#u6",
+                "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Adjusted free cash flow\n$\n1,216,077\n$\n539,862\nAdjusted free cash flow margin\n53\n%\n46\n%"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "Revenue",
+                "value": "2313411",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": "96%",
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue grew 96% year-over-year and 20% quarter-over-quarter to $2.313 billion"
+                }
+              },
+              {
+                "metric": "Revenue",
+                "value": "2313411",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "1181092",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue\n$\n2,313,411\n$\n1,181,092"
+                }
+              },
+              {
+                "metric": "Net income",
+                "value": "1134441",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "476748",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Net income\n1,134,441\n476,748"
+                }
+              },
+              {
+                "metric": "Adjusted income from operations",
+                "value": "1426840",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "600540",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Adjusted income from operations\n$\n1,426,840\n$\n600,540\n$\n3,604,857\n$\n1,455,635\nAdjusted operating margin\n62\n%\n51\n%\n61\n%\n47\n%"
+                }
+              },
+              {
+                "metric": "Adjusted free cash flow",
+                "value": "1216077",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "539862",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Adjusted free cash flow\n$\n1,216,077\n$\n539,862\nAdjusted free cash flow margin\n53\n%\n46\n%"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "Revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "2.649",
+                "midpoint": null,
+                "high": "2.653",
+                "unit": "USD_billions",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Revenue of between $2.649 - $2.653 billion."
+                }
+              },
+              {
+                "metric": "Revenue",
+                "period": "FY 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "8.530",
+                "midpoint": null,
+                "high": "8.534",
+                "unit": "USD_billions",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "We are raising our revenue guidance to between $8.530 - $8.534 billion."
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Adjusted free cash flow",
+                "value": "1216077",
+                "unit": "USD_thousands",
+                "period": "Q3 2026",
+                "comparison_value": "539862",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0001321655-26-000045:a2026q3ex991pressrelease.htm",
+                  "quote": "Adjusted free cash flow\n$\n1,216,077\n$\n539,862\nAdjusted free cash flow margin\n53\n%\n46\n%"
+                },
+                "metric_type": "adjusted_fcf",
+                "reconciliation": [
+                  {
+                    "item": "Net cash provided by operating activities",
+                    "value": "1204570",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Net cash provided by operating activities\n$\n1,204,570"
+                    }
+                  },
+                  {
+                    "item": "Add: cash paid for employer payroll taxes related to stock-based compensation",
+                    "value": "19521",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Add: cash paid for employer payroll taxes related to stock-based compensation\n19,521"
+                    }
+                  },
+                  {
+                    "item": "Less: purchases of property and equipment",
+                    "value": "-8014",
+                    "unit": "USD_thousands",
+                    "evidence": {
+                      "quote": "Less: purchases of property and equipment\n(8,014)"
+                    }
+                  }
+                ]
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [],
+            "extraction_batch_count": 3,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.139,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-11-02T21:52:24-05:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-11-02T21:52:24-05:00",
+              "official_ir_checked_at": "2026-11-02T21:52:24-05:00",
+              "official_ir_check_count": 4,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-11-02T23:52:24-05:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q3 2026 revenue grew 96% year-over-year to $2.313B, accompanied by a raised full-year 2026 revenue guidance range to between $8.530B and $8.534B.",
+                "why_it_matters": "Demonstrates accelerated top-line expansion and management confidence in sustained near-term demand.",
+                "fact_basis": [
+                  "Q3 2026 revenue of $2.313B, up 96% YoY from $1.181B.",
+                  "FY 2026 revenue guidance raised to between $8.530B and $8.534B."
+                ],
+                "inference": "The upward revision in annual revenue guidance reflects strong conversion of existing pipeline and order momentum.",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 revenue reached $2.313B, representing a 96% YoY growth compared to $1.181B in Q3 2025."
+              ],
+              "margin_unit_economics": [
+                "Net income for Q3 2026 was $1.134B versus $476M in the prior year period.",
+                "Adjusted income from operations for Q3 2026 was $1.426B with an adjusted operating margin of 62%, compared to 51% in Q3 2025."
+              ],
+              "cash_capital_intensity": [
+                "Adjusted free cash flow for Q3 2026 was $1.216B, yielding an adjusted free cash flow margin of 53%, up from 46% in Q3 2025."
+              ]
+            },
+            "guidance_assessment": [
+              "Q4 2026 revenue expected to be between $2.649B and $2.653B.",
+              "Full year 2026 revenue guidance raised to between $8.530B and $8.534B."
+            ],
+            "demand_quality": [
+              "本研究包未提供足夠的客戶數、大客戶組合、NRR 或 RPO 細節，無法判定需求廣度、深度、擴張品質與集中度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "本研究包缺乏直接證據證明定價權、控制點、市佔率增減或轉換成本，故不對競爭優勢下定論。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "若後續季度營收增速未能支撐已調高的全年指引範圍 ($8.530B 至 $8.534B)，可能顯示需求動能提前放緩。"
+            ],
+            "watch_items": [
+              "Q4 2026 實際營收是否落於 $2.649B 至 $2.653B 的指引區間內。",
+              "自由現金流與調整後營業利益率的高檔水準能否持續。"
+            ],
+            "confidence": 90,
+            "telegram_draft": "PLTR PLTR_2026-11-02\n\n💡 投資結論與邏輯:\n• 本季營收展現強勁年增率，且管理層調高全年營收指引，反映短期業務動能持續擴張。\n• 利潤率與自由現金流同步擴增，顯示營運規模化帶來的獲利能力提升。\n\n📊 關鍵數據與財測:\n• Q3 2026 營收達 $2.313B，較去年同期成長 96%；淨利為 $1.134B。\n• Q3 2026 調整後營業利益達 $1.426B，調整後營業利益率達 62%；調整後自由現金流為 $1.216B。\n• 預估 Q4 2026 營收介於 $2.649B 至 $2.653B 之間。\n• 全年 2026 營收指引調高至 $8.530B 至 $8.534B 之間。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營收與獲利數據顯示本季業務規模顯著擴張，但本研究包未包含逐字稿與問答紀錄，無法評估管理層對細部營運驅動因素的說明。\n• 需求廣度與客戶集中度相關指標尚缺具體證據，無法進一步驗證擴張品質。\n\n⚠️ 風險、反證與待驗證:\n• 高達 62% 的調整後營業利益率與 53% 的自由現金流 margin 是否具備長期結構性持續性仍待後續季度驗證。\n• 缺乏競爭護城河與定價權的直接結構性證據，需觀察後續市佔與客戶續約表現。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 85,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "PLTR PLTR_2026Q3\n\n💡 投資結論與邏輯:\n• 本季營收年增率展現顯著擴張，且管理層上調全年營收指引，反映短期業務動能持續成長。\n• 獲利能力與自由現金流同步提升，顯示營運規模化帶來的正面槓桿效應。\n\n📊 關鍵數據與財測:\n• Q3 營收達 $2.313B，年增 96%；調整後營業利益達 $1.426B，調整後營業利益率達 62%。\n• 調整後自由現金流達 $1.216B，自由現金流 margin 達 53%。\n• 預估 Q4 營收介於 $2.649B 至 $2.653B 之間。\n• 全年營收指引上調至 $8.530B 至 $8.534B 之間。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 財務數據顯示本季營收與現金流規模顯著擴張，但本研究包未包含逐字稿與問答紀錄，無法評估管理層對細部營運驅動因素的說明。\n• 需求廣度與客戶集中度相關指標尚缺具體證據，無法進一步驗證擴張品質。\n\n⚠️ 風險、反證與待驗證:\n• 高達 62% 的調整後營業利益率與 53% 的自由現金流 margin 是否具備長期結構性持續性仍待後續季度驗證。\n• 缺乏競爭護城河與定價權的直接結構性證據，需觀察後續市佔與客戶續約表現。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:Q3 營收達 $2.313B，年增 96%；調整後營業利益達 $1.426B，調整後營業利益率達 62%。",
+              "kpi_without_readthrough:調整後自由現金流達 $1.216B，自由現金流 margin 達 53%。",
+              "kpi_without_readthrough:預估 Q4 營收介於 $2.649B 至 $2.653B 之間。",
+              "kpi_without_readthrough:全年營收指引上調至 $8.530B 至 $8.534B 之間。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q3 2026 營收達 $2.313B（年增 96%），且管理層上調全年營收指引至 $8.530B 至 $8.534B 之間。",
+                "why_it_matters": "顯示短期業務動能持續擴張，訂單轉化效率支撐全年預期。",
+                "fact_basis": [
+                  "Q3 2026 營收達 $2.313B，較去年同期 $1.181B 成長 96%。",
+                  "全年 2026 營收指引調整為 $8.530B 至 $8.534B。"
+                ],
+                "inference": "營收與指引雙增反映既有管道轉換順暢，但仍不能逕自推論為長週期結構改變或定價權提升。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 營收達 $2.313B，年增 96%。"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 淨利達 $1.134B；調整後營業利益達 $1.426B，調整後營業利益率達 62%。"
+              ],
+              "cash_capital_intensity": [
+                "Q3 2026 調整後自由現金流達 $1.216B，自由現金流 margin 達 53%。"
+              ]
+            },
+            "guidance_assessment": [
+              "預估 Q4 2026 營收介於 $2.649B 至 $2.653B 之間。",
+              "全年 2026 營收指引上調至 $8.530B 至 $8.534B 之間。"
+            ],
+            "demand_quality": [
+              "本研究包未提供客戶數、大客戶組合、NRR 或 RPO 細節，無法判定需求廣度、深度與集中度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "本研究包缺乏直接證據證明定價權、市佔率增減或轉換成本，故不對競爭優勢下定論。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "若後續季度營收增速未能支撐已調高的全年指引範圍 ($8.530B 至 $8.534B)，可能顯示需求動能提前放緩。"
+            ],
+            "watch_items": [
+              "Q4 2026 實際營收是否落於 $2.649B 至 $2.653B 的指引區間內。",
+              "高檔調整後營業利益率與自由現金流 margin 是否具備持續性。"
+            ],
+            "confidence": 90,
+            "telegram_draft": "PLTR PLTR_2026Q3\n\n💡 投資結論與邏輯:\n• 本季營收展現顯著年增率，且管理層上調全年營收指引，反映短期業務動能持續成長。\n• 獲利能力與自由現金流同步提升，顯示營運規模化帶來的正面槓桿效應，但仍需觀察其長期持續性。\n\n📊 關鍵數據與財測:\n• 營收與獲利表現顯示：Q3 營收達 $2.313B，年增 96%；調整後營業利益達 $1.426B，調整後營業利益率達 62%，顯示營運規模擴張，但缺乏細部產品組合與稼動率數據佐證。\n• 現金流表現顯示：調整後自由現金流達 $1.216B，自由現金流 margin 達 53%，反映現金創造能力強勁，但未納入完整資本支出細節無法推論全面資本效率。\n• 財務指引範圍顯示：預估 Q4 營收介於 $2.649B 至 $2.653B 之間，且全年營收指引上調至 $8.530B 至 $8.534B 之間，反映管理層對短期能見度的信心，但指引屬預期性質。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 財務數據顯示本季營收與現金流規模顯著擴張，但本研究包未包含逐字稿與問答紀錄，無法評估管理層對細部營運驅動因素的說明。\n• 需求廣度與客戶集中度相關指標尚缺具體證據，無法進一步驗證擴張品質。\n\n⚠️ 風險、反證與待驗證:\n• 高達 62% 的調整後營業利益率與 53% 的自由現金流 margin 是否具備長期結構性持續性仍待後續季度驗證。\n• 缺乏競爭護城河與定價權的直接結構性證據，需觀察後續市佔與客戶續約表現。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 85,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v4_gate:redundancy",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "PLTR PLTR_2026Q3\n\n💡 投資結論與邏輯:\n• 本季營收達 $2.313B（年增 96%），且管理層上調全年營收指引至 $8.530B 至 $8.534B 之間，反映短期業務動能持續擴張，但仍不能逕自推論為長週期結構改變或定價權提升。\n• 獲利與自由現金流同步顯著成長，顯示營運規模化帶來的正面槓桿效應，但高檔利潤率的結構性持續性仍待後續驗證。\n\n📊 關鍵數據與財測:\n• 成長與營收：Q3 營收達 $2.313B，較去年同期 $1.181B 成長 96%，顯示短期管道轉換順暢。\n• 獲利與利潤率：Q3 淨利達 $1.134B；調整後營業利益達 $1.426B，調整後營業利益率達 62%，反映營運規模擴張。\n• 現金流表現：Q3 調整後自由現金流達 $1.216B，自由現金流 margin 達 53%，顯示現金創造能力強勁，但未納入完整資本支出細節無法推論全面資本效率。\n• 財測指引：預估 Q4 營收介於 $2.649B 至 $2.653B 之間，且全年營收指引上調至 $8.530B 至 $8.534B 之間。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 本研究包未包含逐字稿與問答紀錄，無法評估管理層對細部營運驅動因素的說明。\n• 需求廣度與客戶集中度相關指標尚缺具體證據，本研究包未提供客戶數、大客戶組合、NRR 或 RPO 細節，無法判定需求廣度與深度。\n• 缺乏競爭護城河與定價權的直接結構性證據，故不對市佔率增減或轉換成本下定論。\n\n⚠️ 風險、反證與待驗證:\n• 若後續季度營收增速未能支撐已調高的全年指引範圍（$8.530B 至 $8.534B），可能顯示需求動能提前放緩。\n• 高達 62% 的調整後營業利益率與 53% 的自由現金流 margin 是否具備長期結構性持續性仍待後續季度驗證。\n• 觀察 Q4 實際營收是否落於 $2.649B 至 $2.653B 的指引區間內。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [
+              "summary_repeats_hard_data:指引=$8.530b,指引=$8.534b,營收=$2.313b,營收=$8.530b,營收=$8.534b,營收=96%"
+            ],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:財測指引：預估 Q4 營收介於 $2.649B 至 $2.653B 之間，且全年營收指引上調至 $8.530B 至 $8.534B 之間。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
           }
         }
       },
