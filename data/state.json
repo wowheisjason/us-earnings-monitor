@@ -1682,7 +1682,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2047,7 +2047,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2345,7 +2345,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2656,7 +2656,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2890,7 +2890,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3041,7 +3041,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3490,7 +3490,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3647,7 +3647,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3721,7 +3721,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3797,7 +3797,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3947,7 +3947,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4098,7 +4098,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4172,7 +4172,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4255,7 +4255,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:28:00-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4330,7 +4330,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4490,7 +4490,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4790,7 +4790,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4868,7 +4868,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4941,7 +4941,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5013,7 +5013,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5089,7 +5089,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-02T22:43:40-05:00",
+      "updated_at": "2026-11-02T22:54:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -32249,7 +32249,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-03T00:03:35-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -32343,6 +32344,103 @@
             "customer_readthrough_errors": [],
             "density_errors": [],
             "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q1 FY 2027 總營收達 $4.14B，超越原先預期 ($4.0B +/- $200M)，帶動 GAAP 與 non-GAAP Diluted EPS 分別達 $1.18 與 $1.22，優於指引中位數。",
+                "why_it_matters": "顯示出短期出貨與銷售動能強勁，銷量增長與成本管控帶來實質獲利提升。",
+                "fact_basis": [
+                  "Total revenues were $4.14 billion in Q1 FY 2027.",
+                  "GAAP diluted EPS was $1.18 and non-GAAP diluted EPS was $1.22 in Q1 FY 2027."
+                ],
+                "inference": "營收與獲利優於指引反映出短期出貨順暢與營運效率改善，但單季表現尚不足以直接推論長期結構性需求改變。",
+                "confidence": "high"
+              },
+              {
+                "signal": "管理層預估 Q2 FY 2027 總營收為 $4.7B +/- $200M，維持持續成長趨勢。",
+                "why_it_matters": "產能擴充與生產水準提升正直接轉化為下一季的營收動能。",
+                "fact_basis": [
+                  "Q2 FY 2027 total revenues are expected to be in a range of $4.7 billion +/- $200 million.",
+                  "Expects continued revenue growth looking ahead as manufacturing capacity and production levels are expanded."
+                ],
+                "inference": "產能擴張帶動的指引上修顯示短期需求能見度良好，但仍需觀察終端交付與供應鏈承諾的實際執行狀況。",
+                "confidence": "medium"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q1 FY 2027 總營收達 $4.14B ($4,136,015 thousand)，較去年同期的 $3.21B 明顯成長，主要由銷售量增加與成本紀律推動。",
+                "服務業務在 Q1 FY 2027 約占總營收的 20%，維持穩健的年增表現。"
+              ],
+              "margin_unit_economics": [
+                "Q1 FY 2027 GAAP Diluted EPS 為 $1.18，Non-GAAP Diluted EPS 為 $1.22，雙雙高於指引中位數。",
+                "Q2 FY 2027 GAAP 預估毛利率為 61.8% +/- 1.0%，Non-GAAP 預估毛利率為 62.5% +/- 1.0%。"
+              ],
+              "cash_capital_intensity": [
+                "Q1 FY 2027 營業活動現金淨流入 (Net cash provided by operating activities) 為 $1.531B ($1,530,939 thousand)，高於去年同期的 $1.162B。",
+                "Q1 FY 2027 資本支出 (Capital expenditures) 為 $194.756M ($194,756 thousand)，高於去年同期的 $95.894M，反映產能擴充投入。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 FY 2027 總營收預期為 $4.7B +/- $200M (區間 $4.5B 至 $4.9B)。",
+              "Q2 FY 2027 GAAP gross margin 預期為 61.8% +/- 1.0% (區間 60.8% 至 62.8%)。",
+              "Q2 FY 2027 Non-GAAP gross margin 預期為 62.5% +/- 1.0% (區間 61.5% 至 63.5%)。",
+              "Q2 FY 2027 GAAP diluted EPS 預期為 $1.41 +/- $0.11 (區間 $1.30 至 $1.52)。",
+              "Q2 FY 2027 Non-GAAP diluted EPS 預期為 $1.44 +/- $0.11 (區間 $1.33 至 $1.55)。"
+            ],
+            "demand_quality": [
+              "現有證據無法完整拆解新客戶成長與現有客戶擴張的比例，亦無具體大客戶集中度數據，因此無法判定需求廣度與深度之品質細節。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據僅支持公司營收成長與產能擴張，尚不足以直接證實其具備定價權、控制點或獨占市占地位。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "significant purchase commitments 達到 $8.87B，多數將於未來 12 個月內到期，若未來需求不如預期可能形成成本壓力。",
+              "合約負債 (Contract liabilities) 較前一季微幅下降 4% 至 $1.708B ($1,707,802 thousand)，需持續追蹤訂單能見度變化。"
+            ],
+            "watch_items": [
+              "Q2 FY 2027 財測目標 ($4.7B +/- $200M) 之實際達成狀況。",
+              "資本支出 ($194.756M) 持續投入後的產能利用率與毛利率變化。",
+              "重大採購承諾 ($8.87B) 的執行進度與合約負債後續走勢。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "KLAC FY2027 Q2\n\n💡 投資結論與邏輯:\n• 短期出貨順暢與成本管控帶動上季獲利優於指引中位數，產能擴充正逐步轉化為下季營收動能，但單季表現尚不足以推論長期結構性需求改變。\n• 管理層預期下季營收將持續成長，反映接單與生產能見度良好，但實際交付與供應鏈承諾的執行狀況仍待後續驗證。\n\n📊 關鍵數據與財測:\n• 營收與獲利: 上季總營收 $4.14B、GAAP Diluted EPS $1.18、Non-GAAP Diluted EPS $1.22，顯示出貨順暢與費用紀律，但仍不能證明產品組合或單價改善。\n• 現金流與資本支出: 上季營業現金流 $1.531B、資本支出 $194.756M，反映現金創造力良好且持續擴充產能，但仍不能排除資本密集度提升對自由現金流的擠壓。\n• 營運資產變動: 應收帳款淨額增加 6% 至 $3.072B、合約負債微幅減少 4% 至 $1.708B，反映營收認列與接單節奏波動，但仍不能直接判定需求下滑。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n• 下季財測指引: 預估總營收 $4.7B +/- $200M（區間 $4.5B 至 $4.9B）、GAAP 毛利率 61.8% +/- 1.0%（區間 60.8% 至 62.8%）、Non-GAAP 毛利率 62.5% +/- 1.0%（區間 61.5% 至 63.5%）、GAAP Diluted EPS $1.41 +/- $0.11（區間 $1.30 至 $1.52）、Non-GAAP Diluted EPS $1.44 +/- $0.11（區間 $1.33 至 $1.55）。\n\n🧭 營運動能與法說攻防:\n• 營運動能顯示服務業務維持穩定成長，提供長期運營基底支撐。\n• 本次 Packet 未提供逐字稿與 Q&A 紀錄，無相應之法說攻防與管理層問答讀解。\n\n⚠️ 風險、反證與待驗證:\n• 重大採購承諾金額龐大且多數將於短期內到期，若終端需求轉弱可能形成成本負擔。\n• 現有數據缺乏新舊客戶擴張比例與集中度拆解，無法確定需求廣度。\n• 後續需追蹤下季產能擴張轉化為營收的實際進度，以及毛利率能否維持於指引區間內。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:numeric_provenance"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "KLAC FY2027 Q1\n\n💡 投資結論與邏輯:\n• 短期出貨順暢與成本管控帶動上季獲利優於指引中位數，產能擴充正逐步轉化為下季營收動能，但單季表現尚不足以推論長期結構性需求改變。\n• 管理層預期下季營收將持續成長，反映接單與生產能見度良好，但實際交付與供應鏈承諾的執行狀況仍待後續驗證。\n\n📊 關鍵數據與財測:\n• 營收與獲利: 上季總營收 $4.14B、GAAP Diluted EPS $1.18、Non-GAAP Diluted EPS $1.22，顯示出貨順暢與費用紀律，但仍不能證明產品組合或單價改善。\n• 現金流與資本支出: 上季營業現金流 $1.531B、資本支出 $194.756M，反映現金創造力良好且持續擴充產能，但仍不能排除資本密集度提升對自由現金流的擠壓。\n• 營運資產變動: 應收帳款淨額增加 6% 至 $3.072B、合約負債微幅減少 4% 至 $1.708B，反映營收認列與接單節奏波動，但仍不能直接判定需求下滑。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n• 下季財測指引: 預估總營收 $4.7B +/- $200M（區間 $4.5B 至 $4.9B）、GAAP 毛利率 61.8% +/- 1.0%（區間 60.8% 至 62.8%）、Non-GAAP 毛利率 62.5% +/- 1.0%（區間 61.5% 至 63.5%）、GAAP Diluted EPS $1.41 +/- $0.11（區間 $1.30 至 $1.52）、Non-GAAP Diluted EPS $1.44 +/- $0.11（區間 $1.33 至 $1.55）。\n\n🧭 營運動能與法說攻防:\n• 營運動能顯示服務業務維持穩定成長，提供長期運營基底支撐。\n• 本次數據源未提供逐字稿與 Q&A 紀錄，無相應之法說攻防與管理層問答讀解。\n\n⚠️ 風險、反證與待驗證:\n• 重大採購承諾金額達 $8.87B 且多數將於短期內到期，若終端需求轉弱可能形成成本負擔。\n• 現有數據缺乏新舊客戶擴張比例與集中度拆解，無法確定需求廣度。\n• 後續需追蹤下季產能擴張轉化為營收的實際進度，以及毛利率能否維持於指引區間內。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:下季財測指引: 預估總營收 $4.7B +/- $200M（區間 $4.5B 至 $4.9B）、GAAP 毛利率 61.8% +/- 1.0%（區間 60.8% 至 62.8%）、"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:61.5%",
+              "unbacked_derived_rate:63.5%"
+            ],
             "strong_claim_errors": []
           }
         }
