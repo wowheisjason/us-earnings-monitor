@@ -1,0 +1,45 @@
+name: Optics delivery FormFactor Triton CPO test ramp v1
+on:
+  push:
+    branches: [codex/optics-delivery-formfactor-triton-cpo-test-ramp-20261028-v1]
+    paths: [.github/workflows/optics-delivery-formfactor-triton-cpo-test-ramp-20261028-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-formfactor-triton-cpo-test-ramp-20261028-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜FormFactor CPO測試需求落地（2026/10/28）\n\n1）重大變化與門檻\nFormFactor（NASDAQ：FORM）Q3 Systems部門營收創紀錄，季增23%至5,945.2萬美元；公司明確指出主因為TRITON光子測試系統需求增加。管理層並把2026年TRITON收入預期，由年初1,000萬–2,000萬美元提高至「逾3,000萬美元」。相較2025年幾乎零收入，這是CPO測試由研發工具轉為可辨識商業收入的量化證據，足以改變FORM在光子晶片量產測試的營收與競爭位置判斷。\n\n2）已確認事實\n• 事件／公告日：2026/10/28；財務期間截至2026/9/26。\n• 公司Q3總營收2.805億美元，季增8.6%、年增38.4%。\n• Systems營收5,945.2萬美元，Q2為4,854.7萬美元，季增1,090.5萬美元／22.5%；年增63.8%。\n• Systems GAAP毛利率61.0%，去年同期42.0%。管理層表示約一半季增改善來自創紀錄營收帶來的固定成本槓桿，主要由TRITON銷售增加推動；其餘部分含不會持續的有利項目，因此不能把61%視為CPO產品長期毛利。\n• 官方新聞稿確認Systems營收「逾20%季增」源自較高CPO需求；官方補充簡報確認部門營收與毛利數字。\n• 「2026年TRITON逾3,000萬美元」來自法說管理層說法，屬全年預期，不是已全數認列實績。\n• TRITON聚焦Test Insertion 1，在PIC與電子IC整合前驗證known-good die；亦可用於NPO與可插拔光子元件，不能把全部TRITON收入等同CPO。\n• 未披露設備台數、ASP、具名客戶、CPO/NPO/可插拔占比、量產良率或800G／1.6T速率組合。\n\n官方來源：\n財報／SEC：https://www.sec.gov/Archives/edgar/data/1039399/000103939926000040/ex9901-earningsreleasexq326.htm\n補充簡報：https://formfactorinc.gcs-web.com/static-files/4c4528d9-8514-46c4-8e10-957ba0c8a176\n官方法說入口：https://formfactorinc.gcs-web.com/events-and-presentations/?page=1,0\n逐字稿交叉驗證：https://www.fool.com/earnings/call-transcripts/2026/10/29/formfactor-form-q3-2026-earnings-call-transcript/\n\n3）供應鏈與競合\n• FORM：直接受益，提供PIC晶圓／die級光電探測、探針台與TRITON系統。\n• Teradyne（NASDAQ：TER）與Advantest（TSE：6857）：ATE生態合作方，合作目標包括CPO高量產驗證；不是本次新增TRITON客戶證據。\n• 致茂（TWSE：2360）：已公開布局Insertion 3／4，與FORM的Insertion 1較偏互補；仍可能在整體測試預算與流程設計上競合。\n• InP、EML、CW雷射、模組與封裝商僅屬待測下游生態；本事件沒有證明特定供應商取得訂單，也不能推論整條InP／EML鏈缺貨。\n\n4）合理推論\n若逾3,000萬美元指引落實，TRITON約占FORM 2026年預估逾10億美元公司營收的約3%，但對Systems部門的增量與毛利槓桿已具可見性。Insertion 1若被客戶納入量產流程，具備設備基礎、耗材／服務及共同定義測試方法的黏著度；且CPO、NPO及矽光可插拔皆需先篩出合格PIC，讓FORM不必押注單一封裝架構。成立條件是客戶從開發驗證轉為持續量產、光耦合測試的吞吐量與重複性達標、設備稼動率與服務收入跟上。\n\n5）機會與風險\n催化劑：TRITON實際全年收入超過3,000萬美元、2027指引、設備台數／ASP、量產客戶數、Insertion 1市占或耗材服務收入。\n風險：Systems收入含量子、熱控及其他系統；TRITON預期可能遞延；CPO部署放慢或測試流程重設；客戶自建測試、競爭者進入、光耦合良率／吞吐量不足；本季61%毛利含非經常性利益。未查即時估值，不判斷是否已反映或低估。\n\n6）待驗證與去重\n待追蹤CPO/NPO/可插拔收入拆分、設備台數與ASP、客戶驗收、量產稼動率、良率與服務收入。事件鍵formfactor-triton-cpo-test-ramp-20261028-v1；已查既有通知分支，未發現同事件版本。此事件與致茂Insertion 3／4訂單及Fabrinet光模組製造實績不同，未重複計算。"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"formfactor-triton-cpo-test-ramp-20261028","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
