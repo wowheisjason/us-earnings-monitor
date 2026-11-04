@@ -1,0 +1,85 @@
+name: Deliver AIXTRON Q3 InP MOCVD report
+on:
+  push:
+    branches: [codex/optics-delivery-aixtron-q3-inp-mocvd-orders-20261029-v1]
+    paths: [.github/workflows/optics-delivery-aixtron-q3-inp-mocvd-orders-20261029-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-aixtron-q3-inp-mocvd-orders-20261029-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified AIXTRON optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          messages=[
+          """AI光通訊重大進展｜AIXTRON Q3 InP MOCVD訂單與基板瓶頸（2026/10/29）
+
+          1）重大變化及通知理由
+          AIXTRON（FSE：AIXA；美國OTC：AIXXF）Q3設備訂單2.749億歐元、年增122%；其中光電設備約占68%。設備積壓訂單5.494億歐元、年增92%，公司明確表示InP光學應用設備已占積壓訂單多數，收入能見度延伸至2027年。這不是市場展示或需求預測，而是已接訂單、客戶預付款及產能爬坡，足以改變2027營收與競爭地位判斷。
+
+          官方法說另首次明確指出：150 mm InP基板供應有限，使產業由100 mm轉向150 mm的速度慢於原先預期；客戶將更久留在75/100 mm平台，反而增加MOCVD工具需求。此項供需證據會影響JX金屬、AXT、住友系材料商與InP磊晶／雷射廠的產能判斷。""",
+          """2）已確認事實
+          • 公告／法說日：2026/10/29；財務期截至2026/9/30。
+          • Q3訂單2.749億歐元（年增122%、季增約40%）；9M訂單6.609億歐元（年增76%）。
+          • Q3光電設備占訂單約68%；InP光學設備占5.494億歐元設備積壓訂單多數。公司未披露InP精確金額、客戶或機台數。
+          • Q3營收1.836億歐元（年增54%）；光電設備占設備收入61%。毛利率48%、EBIT率31%，但管理層稱Q3毛利率不具Q4代表性。
+          • 客戶預付款由2025年底4,400萬升至3.09億歐元；存貨由2.84億升至3.23億歐元，反映後續出貨備料。
+          • 2026全年指引維持：營收5.60億歐元±3,000萬、毛利率約42%、EBIT率17%–20%；2027強勁成長僅為管理層展望，正式指引待2027/3/4。
+          • 產出2026年逐季增加，年底前預計再提高；檳城新廠預計2027年秋季可使用。
+          • 800G仍是既有量產平台；1.6T轉換預計隨客戶認證與供應鏈成熟逐步進行，不能把本次訂單全部視為1.6T或CPO。
+          • 管理層稱高功率與更複雜雷射結構需要更大晶片面積、更多晶圓及額外磊晶步驟，因此推升MOCVD工具需求；需求已由美歐擴至日本、台灣、新加坡及中國。
+          
+          官方：
+          https://www.aixtron.com/en/investors/news/finance-news/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801
+          https://www.aixtron.com/investoren/events/telefonkonferenz/2026/Q3-2026%20Results%20Speech.pdf""",
+          """3）供應鏈與競合
+          • AIXTRON：InP/GaAs MOCVD設備直接受益者；G10-AsP等平台的訂單、交付、驗收與服務收入最直接。
+          • JX金屬、AXT、住友系InP材料／基板商：150 mm供應限制提供擴產與議價機會，但本次未具名供應商，不能推定已取得AIXTRON客戶訂單。
+          • Veeco及其他化合物半導體磊晶設備商：面臨AIXTRON在AI雷射設備的訂單與 installed base 壓力；本次沒有新市占數據。
+          • Coherent、Lumentum及其他InP/EML/CW雷射商：屬下游需求來源或潛在客戶群，但未公開客戶，不得猜測。
+          • 800G/1.6T可插拔、LPO/NPO/CPO需求都可能傳導至InP雷射與磊晶設備，但架構不能混為同一市場。
+
+          4）合理推論
+          若積壓訂單按期交付並通過驗收，AIXTRON 2027營收與固定成本吸收有望改善；客戶預付款可降低產能爬坡的營運資金風險。150 mm基板不足延長75/100 mm平台生命週期，短期可能增加每單位產能所需的MOCVD機台；中期若150 mm供應擴大，則可能提高單機產能並改變工具需求節奏。這些推論須以客戶不取消／遞延、AIXTRON供應鏈到位及驗收良率達標為前提。""",
+          """5）投資機會與風險
+          受益催化劑：Q4交付與驗收、2027正式指引、InP訂單占比、G10-AsP出貨、檳城新廠進度、150 mm基板擴產與客戶認證。
+          主要風險：積壓訂單取消或延遲、客戶集中、設備零組件限制、150 mm供應突然改善導致單位產能工具需求下降、1.6T/CPO部署慢於預期、競爭者搶單、Q3高毛利率回落。未查即時估值，不判斷股價是否已反映。
+
+          6）待驗證及去重
+          待追蹤：InP積壓訂單精確金額與機台數、客戶預付款不可退比例、75/100/150 mm機台組合、交期、驗收時點、服務收入、具名日本／台灣客戶及150 mm基板供應改善。
+          事件鍵：aixtron-q3-inp-mocvd-orders-20261029-v1。既有通知未發現相同公司、產品與里程碑事件；但完整Telegram歷史不可全面檢索，因此不宣稱絕對完整去重。"""
+          ]
+          ids=[]
+          for message in messages:
+              payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+              req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+              try:
+                  with urllib.request.urlopen(req,timeout=30) as response:
+                      result=json.load(response)
+              except Exception:
+                  raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+              mid=result.get("result",{}).get("message_id")
+              if result.get("ok") is not True or type(mid) is not int or mid<=0:
+                  raise SystemExit("Telegram receipt invalid")
+              ids.append(mid)
+          receipt={"accepted":True,"message_id":ids[0],"message_ids":ids,"event":"aixtron-q3-inp-mocvd-orders-20261029","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-aixtron-q3-inp-mocvd-orders-20261029-v1
+          path: telegram-receipt.json
