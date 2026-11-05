@@ -24,36 +24,7 @@ jobs:
           chat=os.environ.get("TELEGRAM_CHAT_ID")
           if not token or not chat:
               raise SystemExit("Telegram credentials unavailable")
-          message="""AI光通訊重大進展｜Coherent PhotonLink／InP｜2026/11/04公告
-
-1) 重大變化與門檻
-Coherent（NYSE: COHR）首次量化新一份PhotonLink長期協議：約200億美元、五年，2028年初開始貢獻營收；同時確認PhotonLink整體營收將於2027年3月季度超過1億美元、2027年底前超過每季2.5億美元。Q1內部InP產出能力年增一倍、較原計畫提前一季，且公司規劃2027年底前再增加逾一倍。這同時構成重大訂單可見度、量產爬坡與產能／良率里程碑，足以改變營收與競爭地位判斷。
-
-2) 已確認事實
-・事件／公告日：2026/11/04；財報期間截至2026/09/30。
-・新LTA：未具名「major AI company」，約200億美元／五年，2028年初起爬坡；公司明確表示這是「另一份」協議，與先前已公布的NVIDIA LTA分開。不得據此猜測客戶。
-・PhotonLink：本季開始少量出貨；公司指引2027年3月季度營收>1億美元、2027年底前>2.5億美元／季。當季預計出貨含400mW超高功率CW雷射、光纖組件及其他CPO產品；初期用於scale-out CPO，scale-up CPO／NPO預計2027年下半年開始出貨。
-・InP：Q1內部產出能力年增一倍，提前一季；Q1為100G／200G EML歷來最高產量季度。德州與瑞典6吋線已生產EML、CW雷射與高速光偵測器，良率高於3吋線；400mW CPO CW雷射預計本季開始認列營收。蘇黎世6吋InP線仍預計2027上半年投產。
-・公司稱已取得支撐擴產所需基板與關鍵投入，並規劃2027年後追加產能；2027年底前內部InP產能將再增加逾一倍。這些屬管理層陳述／指引，尚非未來實績。
-・資料中心與通訊部門Q1營收約19.5億美元，季增21%、年增79%，占總營收82%；資料中心年增85%。Scale-across／DCI Q1營收>2億美元、約年增四倍，接近10億美元年化水準。
-官方財報：https://ir.coherent.com/news-releases/news-release-details/coherent-corp-reports-first-quarter-fiscal-2027-results
-官方簡報：https://ir.coherent.com/static-files/4c75f2dd-b6ef-4abb-9cf1-df95638a9058
-官方法說頁：https://ir.coherent.com/events/event-details/first-quarter-fiscal-year-2027-conference-call
-
-3) 供應鏈與競爭影響
-・Coherent／COHR：直接受益，角色涵蓋InP磊晶／雷射、EML、CW雷射、SiPho、光偵測器、精密光纖組件、光引擎整合與測試。
-・可插拔800G／1.6T與CPO並非同一架構：EML擴產主要支援InP可插拔收發器；400mW CW雷射與PhotonLink組件則支援CPO／NPO。兩者共用部分InP製造能力，但需求不可混為一談。
-・Lumentum／LITE、Broadcom／AVGO及其他雷射、SiPho與光引擎供應商面臨更強的垂直整合競爭；但多來源供應、客戶自研與不同架構仍可能共存，不能由單一LTA推論競爭者失單。
-
-4) 合理推論
-若PhotonLink指引如期落實，2027年將先由多客戶CPO出貨形成營收，200億美元LTA則自2028年起提供第二段成長；內製6吋InP占比提升可降低外購雷射成本，支持毛利率。成立條件是客戶平台量產、認證與部署節奏不延遲，且6吋線良率／產出持續提升。約200億美元為多年協議總值，不等同保證採購、單年營收或已認列訂單。
-
-5) 投資機會與風險
-機會：Coherent取得從InP／CW雷射到SiPho與光纖組件的內容價值，若整套方案被採用，單機／單晶片內容可高於只供單一元件。催化劑包括2027年3月季度>1億美元、2027年底前>2.5億美元／季、蘇黎世線投產及內製占比提升。
-風險：未具名客戶集中、LTA可執行性與取消條款未知；CPO／NPO認證延遲、scale-up採用不及預期、替代技術與客戶自研、擴產後利用率不足、良率回落及價格壓力。未查即時股價，不判斷是否已反映或低估。
-
-6) 待驗證與追蹤
-追蹤PhotonLink實際季度營收、具約束力採購量／取消條款、400mW CW雷射實際收入、2027年3月與年底指引落實、6吋InP內製占比與毛利貢獻、蘇黎世投產及後續資本支出。現階段缺乏獨立第三方對200億美元LTA與最終部署量的驗證；已由公司官方簡報與法說交叉核對，但均屬同一公司來源。"""
+          message="AI光通訊重大進展｜Coherent PhotonLink／InP｜2026/11/04公告\n\n1) 重大變化與門檻\nCoherent（NYSE: COHR）首次量化新一份PhotonLink長期協議：約200億美元、五年，2028年初開始貢獻營收；同時確認PhotonLink整體營收將於2027年3月季度超過1億美元、2027年底前超過每季2.5億美元。Q1內部InP產出能力年增一倍、較原計畫提前一季，且公司規劃2027年底前再增加逾一倍。這同時構成重大訂單可見度、量產爬坡與產能／良率里程碑。\n\n2) 已確認事實\n・事件／公告日：2026/11/04；財報期間截至2026/09/30。\n・新LTA：未具名「major AI company」，約200億美元／五年，2028年初起爬坡；公司明確表示這是「另一份」協議，與先前已公布的NVIDIA LTA分開。不得據此猜測客戶。\n・PhotonLink：本季少量出貨；管理層指引2027年3月季度營收>1億美元、2027年底前>2.5億美元／季。當季預計出貨含400mW超高功率CW雷射、光纖組件及其他CPO產品；初期用於scale-out CPO，scale-up CPO／NPO預計2027年下半年開始出貨。\n・InP：Q1內部產出能力年增一倍，提前一季；100G／200G EML產量創歷史新高。德州與瑞典6吋線已生產EML、CW雷射及高速光偵測器，良率高於3吋線；400mW CPO CW雷射預計本季開始認列營收。蘇黎世6吋InP線預計2027上半年投產。\n・公司稱已取得支撐擴產所需基板與關鍵投入；2027年底前內部InP產能將再增加逾一倍，並規劃2027年後追加產能。均屬管理層陳述／指引，尚非未來實績。\n・資料中心與通訊部門Q1營收約19.5億美元，季增21%、年增79%，占總營收82%；Scale-across／DCI Q1營收>2億美元、約年增四倍。\n官方財報：https://ir.coherent.com/news-releases/news-release-details/coherent-corp-reports-first-quarter-fiscal-2027-results\n官方簡報：https://ir.coherent.com/static-files/4c75f2dd-b6ef-4abb-9cf1-df95638a9058\n官方法說：https://ir.coherent.com/events/event-details/first-quarter-fiscal-year-2027-conference-call\n\n3) 供應鏈與競爭影響\n・Coherent／COHR：直接受益，角色涵蓋InP磊晶／雷射、EML、CW雷射、SiPho、光偵測器、精密光纖組件、光引擎整合與測試。\n・可插拔800G／1.6T與CPO並非同一架構：EML擴產主要支援InP可插拔收發器；400mW CW雷射與PhotonLink組件則支援CPO／NPO。兩者共用部分InP製造能力，但需求不可混為一談。\n・Lumentum／LITE、Broadcom／AVGO及其他雷射、SiPho與光引擎供應商面臨更強的垂直整合競爭；多來源供應、客戶自研與不同架構仍可能共存，不能由單一LTA推論競爭者失單。\n\n4) 合理推論\n若指引落實，2027年先由多客戶CPO出貨形成營收，約200億美元LTA自2028年提供第二段成長；內製6吋InP占比提升可降低外購雷射成本並支持毛利。條件是客戶平台量產、認證與部署不延遲，且6吋線良率／產出持續提升。協議總值不等同保證採購、單年營收或已認列訂單。\n\n5) 投資機會與風險\n機會：Coherent取得從InP／CW雷射到SiPho與光纖組件的整套內容價值。催化劑為2027年3月季度>1億美元、年底前>2.5億美元／季、蘇黎世投產及內製占比提升。\n風險：未具名客戶集中、LTA約束力與取消條款未知；CPO／NPO認證延遲、scale-up採用不及預期、替代技術與客戶自研、擴產後利用率不足、良率回落及價格壓力。未查即時股價，不判斷是否已反映或低估。\n\n6) 待驗證與追蹤\n追蹤PhotonLink實際季度營收、採購量／取消條款、400mW CW雷射實際收入、2027年指引落實、6吋InP內製占比與毛利、蘇黎世投產及後續資本支出。現階段缺乏獨立第三方對約200億美元LTA與最終部署量的驗證；官方簡報與法說均屬同一公司來源。"
           if len(message) > 4096:
               raise SystemExit("Report exceeds Telegram message limit")
           payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
