@@ -24,41 +24,7 @@ jobs:
           chat=os.environ.get("TELEGRAM_CHAT_ID")
           if not token or not chat:
               raise SystemExit("Telegram credentials unavailable")
-          message="""AI光通訊重大進展｜Lumentum 第二項 NPO／CPO 商業承諾逾 50 億美元
-公告／事件日：2026/11/2｜量產與營收認列日：未揭露
-
-1）重大變化與門檻
-Lumentum（NASDAQ：LITE）公布第二項主要 NPO／CPO 客戶勝出，並稱已有超過 50 億美元的採購承諾；管理層另稱該案預期可產生逾 50 億美元營收。這是具商業金額的客戶承諾，不是展示或送樣，足以改變公司中長期營收能見度與 CPO／NPO 競爭位置，達通知門檻。
-
-2）已確認事實
-• Lumentum 於 2026/11/2 公布截至 2026/9/26 的 FY2027 Q1：營收 12.626 億美元，季增 25.5%、年增 136.5%；非 GAAP 毛利率 53.2%。
-• 元件營收 7.542 億美元，季增 16.1%、年增 98.9%；系統營收 5.084 億美元，季增 42.4%、年增 228.8%。
-• 公司稱取得「第二項主要 NPO／CPO win」，由超過 50 億美元採購承諾支持；電話會議稱預期產生逾 50 億美元營收。
-• FY2027 Q2 管理層指引：營收 15.75–16.25 億美元、非 GAAP 營益率 45–46%、EPS 5.90–6.20 美元；這是指引，不是實績。
-• 未公開客戶、NPO／CPO 金額拆分、產品規格、出貨起點、履約期間、最低採購／取消條款或已認列營收。上述訂單性質與金額目前是公司聲明，尚無客戶獨立確認。
-
-3）供應鏈與受影響公司
-• Lumentum（LITE，直接）：InP 雷射、外部光源、調變器、光偵測器、OCS 與光模組供應能力，直接受益於客戶勝出，但本案實際產品組合未揭露。
-• Marvell（MRVL，未來互補）：DSP、SerDes、TIA／driver、矽光子與電氣訊號鏈。雙方交易完成前仍是獨立公司，不能把本案歸為合併後營收。
-• Coherent（COHR）、Broadcom（AVGO）等在雷射、矽光子、CPO／高速光元件上具競合關係；沒有證據顯示本案由任何特定競爭者轉單。
-• 上游 InP 基板／磊晶與封裝測試可能受惠，但 Lumentum 未公布供應商，不能推定美、日、台特定廠商取得訂單，也不能由此推論整條 InP／EML 鏈缺貨。
-
-4）合理推論
-若採購承諾具可執行最低量、客戶部署按期、良率與產能到位，第二項主要客戶可降低單一專案風險，並讓 Lumentum 在 NPO／CPO 光源與光元件的多年營收能見度上升；高階產品組合亦可能支撐毛利。但 50 億美元未給期間，不能直接換算年營收或利潤。NPO 是近封裝光學、CPO 是與交換 ASIC 共封裝，兩者部署與維修模式不同，不能視為同一量產階段。
-
-5）投資機會與風險
-機會：客戶後續公開認證、首批量產出貨、產能／良率提升、第二與更多客戶導入，可能成為 LITE 與相關雷射／封裝供應鏈催化劑。
-風險：承諾條款可能含取消或調整權；客戶集中、產能與良率爬坡、部署延後、價格壓力、NPO／可插拔模組延長壽命、客戶自研或替代光源，以及 Marvell 交易整合與監管風險。未核對即時股價，不判斷是否已反映或低估。
-
-6）待驗證與追蹤
-追蹤客戶身分、具約束力最低採購量、取消條款、履約年度、NPO／CPO 與光源／元件拆分、首次出貨與營收認列、InP 產能及良率、外包封裝供應商，以及 50 億美元承諾是否轉為 backlog 與實際現金流。
-
-去重：可存取的既有分支／收據中未找到此「第二項 NPO／CPO、逾 50 億美元承諾」事件版本；2026/11/2 的 Marvell–Lumentum 合併事件為不同里程碑。因無法取得完整 Telegram 歷史，不宣稱已完成全面去重。
-
-官方來源（2026/11/2）
-Lumentum 財報：https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx
-SEC 財報附件：https://www.sec.gov/Archives/edgar/data/1633978/000162828026068655/lite_ex991xq1fy27.htm
-SEC 聯合電話會議逐字稿：https://www.sec.gov/Archives/edgar/data/1633978/000119312526443876/d178787d425.htm"""
+          message=json.loads("AI光通訊重大進展｜Lumentum 第二項 NPO／CPO 商業承諾逾 50 億美元\n公告／事件日：2026/11/2｜量產與營收認列日：未揭露\n\n1）重大變化與門檻\nLumentum（NASDAQ：LITE）公布第二項主要 NPO／CPO 客戶勝出，並稱已有超過 50 億美元的採購承諾；管理層另稱該案預期可產生逾 50 億美元營收。這是具商業金額的客戶承諾，不是展示或送樣，足以改變公司中長期營收能見度與 CPO／NPO 競爭位置，達通知門檻。\n\n2）已確認事實\n• Lumentum 於 2026/11/2 公布截至 2026/9/26 的 FY2027 Q1：營收 12.626 億美元，季增 25.5%、年增 136.5%；非 GAAP 毛利率 53.2%。\n• 元件營收 7.542 億美元，季增 16.1%、年增 98.9%；系統營收 5.084 億美元，季增 42.4%、年增 228.8%。\n• 公司稱取得「第二項主要 NPO／CPO win」，由超過 50 億美元採購承諾支持；電話會議稱預期產生逾 50 億美元營收。\n• FY2027 Q2 管理層指引：營收 15.75–16.25 億美元、非 GAAP 營益率 45–46%、EPS 5.90–6.20 美元；這是指引，不是實績。\n• 未公開客戶、NPO／CPO 金額拆分、產品規格、出貨起點、履約期間、最低採購／取消條款或已認列營收。上述訂單性質與金額目前是公司聲明，尚無客戶獨立確認。\n\n3）供應鏈與受影響公司\n• Lumentum（LITE，直接）：InP 雷射、外部光源、調變器、光偵測器、OCS 與光模組供應能力，直接受益於客戶勝出，但本案實際產品組合未揭露。\n• Marvell（MRVL，未來互補）：DSP、SerDes、TIA／driver、矽光子與電氣訊號鏈。雙方交易完成前仍是獨立公司，不能把本案歸為合併後營收。\n• Coherent（COHR）、Broadcom（AVGO）等在雷射、矽光子、CPO／高速光元件上具競合關係；沒有證據顯示本案由任何特定競爭者轉單。\n• 上游 InP 基板／磊晶與封裝測試可能受惠，但 Lumentum 未公布供應商，不能推定美、日、台特定廠商取得訂單，也不能由此推論整條 InP／EML 鏈缺貨。\n\n4）合理推論\n若採購承諾具可執行最低量、客戶部署按期、良率與產能到位，第二項主要客戶可降低單一專案風險，並讓 Lumentum 在 NPO／CPO 光源與光元件的多年營收能見度上升；高階產品組合亦可能支撐毛利。但 50 億美元未給期間，不能直接換算年營收或利潤。NPO 是近封裝光學、CPO 是與交換 ASIC 共封裝，兩者部署與維修模式不同，不能視為同一量產階段。\n\n5）投資機會與風險\n機會：客戶後續公開認證、首批量產出貨、產能／良率提升、第二與更多客戶導入，可能成為 LITE 與相關雷射／封裝供應鏈催化劑。\n風險：承諾條款可能含取消或調整權；客戶集中、產能與良率爬坡、部署延後、價格壓力、NPO／可插拔模組延長壽命、客戶自研或替代光源，以及 Marvell 交易整合與監管風險。未核對即時股價，不判斷是否已反映或低估。\n\n6）待驗證與追蹤\n追蹤客戶身分、具約束力最低採購量、取消條款、履約年度、NPO／CPO 與光源／元件拆分、首次出貨與營收認列、InP 產能及良率、外包封裝供應商，以及 50 億美元承諾是否轉為 backlog 與實際現金流。\n\n去重：可存取的既有分支／收據中未找到此「第二項 NPO／CPO、逾 50 億美元承諾」事件版本；2026/11/2 的 Marvell–Lumentum 合併事件為不同里程碑。因無法取得完整 Telegram 歷史，不宣稱已完成全面去重。\n\n官方來源（2026/11/2）\nLumentum 財報：https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx\nSEC 財報附件：https://www.sec.gov/Archives/edgar/data/1633978/000162828026068655/lite_ex991xq1fy27.htm\nSEC 聯合電話會議逐字稿：https://www.sec.gov/Archives/edgar/data/1633978/000119312526443876/d178787d425.htm")
           if len(message) > 4096:
               raise SystemExit("Telegram message too long")
           payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
