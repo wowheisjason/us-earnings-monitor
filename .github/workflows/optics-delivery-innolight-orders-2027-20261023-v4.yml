@@ -1,0 +1,47 @@
+name: Optics delivery Innolight Tower NPO early production v4
+on:
+  push:
+    branches: [codex/optics-delivery-innolight-orders-2027-20261023-v4]
+    paths: [.github/workflows/optics-delivery-innolight-orders-2027-20261023-v4.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-innolight-orders-2027-20261023-v4
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【中際旭創續報v4｜首款NPO矽光元件進入early production，300mm多產品已tape‑out】\n\n1）重大變化及門檻\nTower Semiconductor（NASDAQ／TASE：TSEM）與中際旭創／Innolight（300308.SZ／3308.HK）於2026/11/3聯合公告：Innolight首款NPO元件已在Tower美國加州廠、採PH18M矽光製程進入early production；另有多款NPO產品完成Tower 300mm矽光平台tape‑out。相較已通知v3「2027下半年逐步上量、2028大規模部署」，這是晶片製造階段已落實的新里程碑，並首次核實Tower為NPO代工夥伴，達通知門檻。\n\n2）已確認事實\n事件／公告日：2026/11/3；量產模組出貨及營收認列日：未披露。\n首款NPO device在Tower Newport Beach、California的200mm PH18M Silicon Photonics flow進入early production。\n多款後續NPO產品已在Tower 300mm SiPho平台tape‑out；tape‑out代表設計送製造，不等於驗證完成或量產。\nTower稱Innolight現為其四座廠的關鍵製造客戶：美國Newport Beach與San Antonio、以色列及日本。未披露晶圓量、合約金額、良率、ASP、終端客戶或出貨承諾。\n公司稱NPO單一元件常整合16個以上光通道；這是架構描述，不是本案實際出貨規格。\n官方：\nhttps://www.sec.gov/Archives/edgar/data/928876/000117891326004972/zk2636316.htm\nhttps://ir.towersemi.com/news-releases/news-release-details/tower-semiconductor-and-innolight-advance-high-performance-near\n\n3）供應鏈與競合\nInnolight直接曝險：NPO光引擎／模組設計、客戶認證與系統整合。\nTower直接曝險：200mm PH18M早期生產與300mm SiPho後續世代代工，可能提高多廠利用率與客戶黏著。\nGlobalFoundries、TSMC、Intel及其他矽光平台為潛在競爭者；公告不證明其失單。\n本案核實的是矽光PIC製造，未公開雷射架構、InP／EML／CW供應商、DSP、封裝或終端hyperscaler，不能推定特定美日台供應商受益，也不能推論整條雷射鏈短缺。\n\n4）合理推論\nearly production表示首款元件已越過純設計／展示階段，Tower的200mm製程開始承接實際生產；多款300mm tape‑out則提高後續世代轉向較大晶圓的可見度。若晶片良率、封裝、散熱、光耦合與系統認證按期完成，Tower可取得晶圓代工與可能的後續服務收入，Innolight則可把NPO由元件早期生產推向2027下半年模組爬坡。\n這不推翻v3時間表：early production是PIC晶片階段，不能等同NPO模組已大規模出貨；2028大規模部署仍屬Innolight管理層展望。\n\n5）機會與風險\n催化劑：PH18M實際晶圓量與良率、300mm首批樣品回片、客戶認證、2027下半年模組收入、四廠產能分配及Tower SiPho收入。\n風險：early production停留在小量、300mm驗證延誤、封裝／光纖耦合與熱管理良率、終端客戶部署延後、NPO與CPO／可插拔／LPO路線競爭、客戶集中及代工價格壓力。未查即時價格，不判斷估值。\n\n6）待驗證及去重\n待追蹤首款NPO元件速率與通道、模組規格、雷射與封裝供應商、量產定義、晶圓及模組出貨、營收認列與終端客戶。事件沿用innolight-orders-2027-20261023，版本4；相較v3新增的是Tower具名代工、PH18M early production、300mm多產品tape‑out及四廠關係。完整Telegram歷史不可全面檢索，不宣稱絕對全面去重。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"innolight-orders-2027-20261023","version":4}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-innolight-orders-2027-20261023-v4
+          path: telegram-receipt.json
