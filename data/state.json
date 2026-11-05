@@ -2090,7 +2090,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2455,7 +2455,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2753,7 +2753,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3064,7 +3064,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3298,7 +3298,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3449,7 +3449,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3898,7 +3898,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4055,7 +4055,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4129,7 +4129,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4205,7 +4205,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4355,7 +4355,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4506,7 +4506,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4580,7 +4580,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4738,7 +4738,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4898,7 +4898,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5198,7 +5198,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5276,7 +5276,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5349,7 +5349,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5421,7 +5421,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5497,7 +5497,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5792,7 +5792,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5870,7 +5870,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5951,7 +5951,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6027,7 +6027,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T21:30:05-05:00",
+      "updated_at": "2026-11-04T21:49:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -30930,6 +30930,108 @@
               }
             ]
           }
+        },
+        "v5_evidence_repair_v3_4": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $1,548,588 thousand for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:NetIncomeLoss",
+                "metric": "NetIncomeLoss",
+                "value": "1548588",
+                "unit": "usd",
+                "card_id": "c2:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                  "quote": "us-gaap:NetIncomeLoss"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:642ea77e3816f921fd932b09#u1",
+              "official_ir:642ea77e3816f921fd932b09#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues were $4,136 million for Q1 FY 2027.",
+                "materiality_candidate": 5,
+                "quote": "Total Revenues\nQ1 FY 2027\nQ4 FY 2026\nQ1 FY 2026\nTotal Revenues\n$4,136 million",
+                "metric": "Total Revenues",
+                "value": "4136",
+                "unit": "USD_M",
+                "period": "Q1 FY 2027"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Total revenues for Q2 FY 2027 are expected to be in a range of $4.7 billion +/- $200 million.",
+                "materiality_candidate": 5,
+                "quote": "Total revenues are expected to be in a range of $4.7 billion +/- $200 million",
+                "metric": "Total Revenues",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "4.5",
+                "midpoint": "4.7",
+                "high": "4.9",
+                "unit": "USD_B"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP gross margin for Q2 FY 2027 is expected to be in a range of 61.8% +/- 1.0%.",
+                "materiality_candidate": 4,
+                "quote": "GAAP gross margin is expected to be in a range of 61.8% +/- 1.0%",
+                "metric": "GAAP Gross Margin",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "60.8",
+                "midpoint": "61.8",
+                "high": "62.8",
+                "unit": "PERCENT"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP gross margin for Q2 FY 2027 is expected to be in a range of 62.5% +/- 1.0%.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%",
+                "metric": "Non-GAAP Gross Margin",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "61.5",
+                "midpoint": "62.5",
+                "high": "63.5",
+                "unit": "PERCENT"
+              }
+            ]
+          }
         }
       },
       "evidence_repair_policy": 3,
@@ -50027,6 +50129,403 @@
             "strong_claim_errors": [
               "strong_claim_without_direct_evidence:pricing_power"
             ]
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "COHR_2026-09-30_Q1": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "d427d47c8eebd2745482e433490e7f31af7b277b336b8d3fafdea01220e61489",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000820318-26-000023:iivi-20260930.htm#u1",
+              "sec_edgar:0000820318-26-000023:iivi-20260930.htm#u2"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000820318-26-000023:iivi-20260930.htm#u3",
+              "sec_edgar:0000820318-26-000023:iivi-20260930.htm#u4"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000820318-26-000023:iivi-20260930.htm#u5",
+              "sec_edgar:0000820318-26-000023:iivi-20260930.htm#u6"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from Contract with Customer Excluding Assessed Tax was $2,370,324 thousand.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "2,370,324",
+                "unit": "usd",
+                "period": "Q1 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net Income Loss was $384,673 thousand.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:NetIncomeLoss",
+                "metric": "NetIncomeLoss",
+                "value": "384,673",
+                "unit": "usd",
+                "period": "Q1 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Earnings Per Share Basic was $1.96.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:EarningsPerShareBasic",
+                "metric": "EarningsPerShareBasic",
+                "value": "1.96",
+                "unit": "usdPerShare",
+                "period": "Q1 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Earnings Per Share Diluted was $1.90.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:EarningsPerShareDiluted",
+                "metric": "EarningsPerShareDiluted",
+                "value": "1.90",
+                "unit": "usdPerShare",
+                "period": "Q1 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash and Cash Equivalents at Carrying Value was $1,552,929 thousand.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+                "metric": "CashAndCashEquivalentsAtCarryingValue",
+                "value": "1,552,929",
+                "unit": "usd",
+                "period": "Q1 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "supply_capacity",
+                "fact_class": "objective_fact",
+                "statement": "Inventory Net was $3,341,373 thousand.",
+                "materiality_candidate": 3,
+                "quote": "us-gaap:InventoryNet",
+                "metric": "InventoryNet",
+                "value": "3,341,373",
+                "unit": "usd",
+                "period": "Q1 2026"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_4": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from Contract with Customer Excluding Assessed Tax was $2,370,324 thousand.",
+                "materiality_candidate": 5,
+                "quote": "0000820318\n2026-07-01\n2026-09-30",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "2,370,324",
+                "unit": "usd",
+                "period": "Q1 2026",
+                "card_id": "c1:sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                  "quote": "0000820318\n2026-07-01\n2026-09-30"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net Income Loss was $384,673 thousand.",
+                "materiality_candidate": 5,
+                "quote": "0000820318\n2026-07-01\n2026-09-30",
+                "metric": "NetIncomeLoss",
+                "value": "384,673",
+                "unit": "usd",
+                "period": "Q1 2026",
+                "card_id": "c2:sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                  "quote": "0000820318\n2026-07-01\n2026-09-30"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Earnings Per Share Basic was $1.96.",
+                "materiality_candidate": 4,
+                "quote": "0000820318\n2026-07-01\n2026-09-30",
+                "metric": "EarningsPerShareBasic",
+                "value": "1.96",
+                "unit": "usdPerShare",
+                "period": "Q1 2026",
+                "card_id": "c3:sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                  "quote": "0000820318\n2026-07-01\n2026-09-30"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Earnings Per Share Diluted was $1.90.",
+                "materiality_candidate": 4,
+                "quote": "0000820318\n2026-07-01\n2026-09-30",
+                "metric": "EarningsPerShareDiluted",
+                "value": "1.90",
+                "unit": "usdPerShare",
+                "period": "Q1 2026",
+                "card_id": "c4:sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                  "quote": "0000820318\n2026-07-01\n2026-09-30"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash and Cash Equivalents at Carrying Value was $1,552,929 thousand.",
+                "materiality_candidate": 4,
+                "quote": "0000820318\n2026-09-30",
+                "metric": "CashAndCashEquivalentsAtCarryingValue",
+                "value": "1,552,929",
+                "unit": "usd",
+                "period": "Q1 2026",
+                "card_id": "c5:sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                  "quote": "0000820318\n2026-09-30"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "supply_capacity",
+                "fact_class": "objective_fact",
+                "statement": "Inventory Net was $3,341,373 thousand.",
+                "materiality_candidate": 3,
+                "quote": "0000820318\n2026-09-30",
+                "metric": "InventoryNet",
+                "value": "3,341,373",
+                "unit": "usd",
+                "period": "Q1 2026",
+                "card_id": "c6:sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured",
+                "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000820318-26-000023:iivi-20260930.htm",
+                  "quote": "0000820318\n2026-09-30"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0000820318-26-000023:iivi-20260930.htm#structured"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001193125-26-447200:d176836dex991.htm#u1",
+              "sec_edgar:0001193125-26-447200:d176836dex991.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001193125-26-447200:d176836dex991.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q1 FY27 revenue was $2.37 billion, up 49.9% Y/Y.",
+                "materiality_candidate": 5,
+                "quote": "Revenues $ 2,370 $ 1,581 15.9 % 49.9 %",
+                "metric": "Revenue",
+                "value": 2370,
+                "unit": "USD_millions",
+                "period": "Q1_FY27",
+                "comparison_value": 1581,
+                "comparison_period": "Q1_FY26",
+                "reported_change": "49.9%"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-447200:d176836dex991.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Q1 FY27 GAAP gross margin was 39.1% and non-GAAP gross margin was 40.6%.",
+                "materiality_candidate": 4,
+                "quote": "• Q1 GAAP GROSS MARGIN OF 39.1%, INCREASED 254 bps Y/Y; Q1 NON-GAAP GROSS MARGIN OF 40.6%, INCREASED 184 bps Y/Y",
+                "metric": "Gross Margin",
+                "value": 39.1,
+                "unit": "percent",
+                "period": "Q1_FY27"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-447200:d176836dex991.htm#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Q1 FY27 GAAP EPS was $1.90 and non-GAAP EPS was $2.09.",
+                "materiality_candidate": 4,
+                "quote": "• Q1 GAAP EPS OF $1.90, INCREASED $0.71 Y/Y; Q1 NON-GAAP EPS OF $2.09, INCREASED $0.93 Y/Y",
+                "metric": "Diluted EPS",
+                "value": 1.9,
+                "unit": "USD",
+                "period": "Q1_FY27"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-447200:d176836dex991.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY27 revenue is expected to be between $2.55 billion and $2.75 billion.",
+                "materiality_candidate": 5,
+                "quote": "• Revenue for the second quarter of fiscal 2027 is expected to be between $2.55 billion and $2.75 billion.",
+                "metric": "Revenue",
+                "period": "Q2_FY27",
+                "guidance_type": "range",
+                "low": 2550,
+                "high": 2750,
+                "unit": "USD_millions"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-447200:d176836dex991.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY27 non-GAAP gross margin is expected to be between 40% and 42%.",
+                "materiality_candidate": 4,
+                "quote": "• Gross margin percentage for the second quarter of fiscal 2027 is expected to be between 40% and 42% on a non-GAAP basis.",
+                "metric": "Non-GAAP Gross Margin",
+                "period": "Q2_FY27",
+                "guidance_type": "range",
+                "low": 40.0,
+                "high": 42.0,
+                "unit": "percent"
+              },
+              {
+                "unit_id": "sec_edgar:0001193125-26-447200:d176836dex991.htm#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q2 FY27 non-GAAP EPS is expected to be between $2.28 and $2.48.",
+                "materiality_candidate": 5,
+                "quote": "• EPS for the second quarter of fiscal 2027 is expected to be between $2.28 and $2.48 on a non-GAAP basis.",
+                "metric": "Non-GAAP Diluted EPS",
+                "period": "Q2_FY27",
+                "guidance_type": "range",
+                "low": 2.28,
+                "high": 2.48,
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_5": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001193125-26-447200:d176836dex991.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q1 FY27 revenue was $2,370.3 million, up 49.9% Y/Y.",
+                "materiality_candidate": 5,
+                "quote": "Revenues\n$\n2,370.3\n$\n2,045.5\n$\n1,581.4",
+                "metric": "Revenue",
+                "value": 2370.3,
+                "unit": "USD_millions",
+                "period": "Q1_FY27",
+                "comparison_value": 1581.4,
+                "comparison_period": "Q1_FY26",
+                "reported_change": "49.9%",
+                "card_id": "c1:sec_edgar:0001193125-26-447200:d176836dex991.htm#u1",
+                "document_key": "sec_edgar:0001193125-26-447200:d176836dex991.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "sec_edgar:0001193125-26-447200:d176836dex991.htm",
+                  "quote": "Revenues $\n2,370 $\n1,581 \n15.9 %\n49.9 %"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001193125-26-447200:d176836dex991.htm#u1"
+            ],
+            "replace_only_invalid_cards": true
           }
         }
       },
