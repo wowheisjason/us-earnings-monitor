@@ -2090,7 +2090,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2455,7 +2455,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2753,7 +2753,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3064,7 +3064,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3298,7 +3298,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3449,7 +3449,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3898,7 +3898,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4055,7 +4055,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4129,7 +4129,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4205,7 +4205,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4355,7 +4355,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4506,7 +4506,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4580,7 +4580,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4663,7 +4663,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T15:51:29-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4738,7 +4738,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4898,7 +4898,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5198,7 +5198,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5276,7 +5276,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5349,7 +5349,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5421,7 +5421,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5497,7 +5497,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5792,7 +5792,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5870,7 +5870,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5951,39 +5951,39 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.217,
+            "seconds": 0.295,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMD-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.447,
+            "seconds": 0.588,
             "documents": 7,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.139,
+            "seconds": 0.084,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMD-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-04T17:36:42-05:00",
+        "ir_retrieval_last_at": "2026-11-04T20:25:41-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6006,11 +6006,11 @@
           "has_performance_review": false,
           "has_presentation": true
         },
-        "last_collection_check_at": "2026-11-04T17:36:42-05:00",
-        "official_ir_checked_at": "2026-11-04T17:36:42-05:00",
-        "official_ir_check_count": 5,
+        "last_collection_check_at": "2026-11-04T20:25:41-05:00",
+        "official_ir_checked_at": "2026-11-04T20:25:41-05:00",
+        "official_ir_check_count": 6,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-04T19:36:42-05:00"
+        "next_ir_retry_at": "2026-11-04T22:25:41-05:00"
       },
       "delivery": {}
     },
@@ -6027,16 +6027,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:38:39-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
@@ -6049,7 +6049,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.098,
+            "seconds": 1.143,
             "documents": 0,
             "partial": false
           },
@@ -6062,7 +6062,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-04T17:36:42-05:00",
+        "ir_retrieval_last_at": "2026-11-04T20:25:41-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6082,10 +6082,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-04T17:36:42-05:00",
+        "last_collection_check_at": "2026-11-04T20:25:41-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-04T17:36:42-05:00",
-        "next_ir_retry_at": "2026-11-04T19:36:42-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-04T20:25:41-05:00",
+        "next_ir_retry_at": "2026-11-04T22:25:41-05:00"
       },
       "delivery": {}
     },
@@ -6102,39 +6102,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:36:42-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.077,
+            "seconds": 0.075,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/Q-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.085,
+            "seconds": 1.066,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.043,
+            "seconds": 0.081,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/Q-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-04T17:36:42-05:00",
+        "ir_retrieval_last_at": "2026-11-04T20:25:41-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6154,10 +6154,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-04T17:36:42-05:00",
+        "last_collection_check_at": "2026-11-04T20:25:41-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-04T17:36:42-05:00",
-        "next_ir_retry_at": "2026-11-04T19:36:42-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-04T20:25:41-05:00",
+        "next_ir_retry_at": "2026-11-04T22:25:41-05:00"
       },
       "delivery": {}
     },
@@ -6176,39 +6176,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T17:36:42-05:00",
+      "updated_at": "2026-11-04T20:25:41-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.083,
+            "seconds": 0.071,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/COHR-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.705,
+            "seconds": 0.515,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.093,
+            "seconds": 0.07,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/COHR-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-04T17:36:42-05:00",
+        "ir_retrieval_last_at": "2026-11-04T20:25:41-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6229,11 +6229,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-04T17:36:42-05:00",
-        "official_ir_checked_at": "2026-11-04T17:36:42-05:00",
-        "official_ir_check_count": 1,
+        "last_collection_check_at": "2026-11-04T20:25:41-05:00",
+        "official_ir_checked_at": "2026-11-04T20:25:41-05:00",
+        "official_ir_check_count": 2,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-11-04T17:51:42-05:00"
+        "next_ir_retry_at": "2026-11-04T20:55:41-05:00"
       },
       "delivery": {}
     }
@@ -6248,7 +6248,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-04T17:36:42-05:00",
+      "last_success_at": "2026-11-04T20:25:41-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -33679,7 +33679,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-04T22:24:54-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -33763,6 +33764,94 @@
             "numeric_provenance_errors": [
               "unbacked_derived_rate:28.9%"
             ],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "本季營收與淨利維持增長，出貨動能延續。",
+                "why_it_matters": "奠定短期營運規模與現金流入基礎。",
+                "fact_basis": [
+                  "Total revenues were $4,136 million in Q1 FY 2027.",
+                  "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand, compared to $3,209,696 thousand for Q1 2026."
+                ],
+                "inference": "營收增長反映出貨動能維持高檔，但缺乏產品組合細節，尚不足以完全歸因於特定終端市場的結構性需求強弱。",
+                "confidence": "high"
+              },
+              {
+                "signal": "自由現金流表現強健，惟高額採購承諾顯示資金調度風險。",
+                "why_it_matters": "現金轉換能力良好，但潛在合約義務需持續追蹤。",
+                "fact_basis": [
+                  "Net cash provided by operating activities was $1,530,939 thousand and capital expenditures were $194,756 thousand, resulting in free cash flow of $1,336,183 thousand for the three months ended September 30, 2026.",
+                  "Significant purchase commitments primarily for material, services, supplies and asset purchases were approximately $8.87 billion as of September 30, 2026."
+                ],
+                "inference": "現金流充沛顯示獲利實質轉化為現金，但龐大採購承諾構成未來資金承擔。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q1 FY 2027 總營收為 $4,136M（$4,136,015 thousand），對比去年同期 Q1 2026 的 $3,209,696 thousand 成長。",
+                "Services 業務佔 Q1 2027 總營收約 20%。"
+              ],
+              "margin_unit_economics": [
+                "Q1 FY 2027 Net income 達 $1,548,588 thousand，高於去年同期的 $1,121,040 thousand；由於缺乏完整的毛利率細分數據，無法精確拆解單一產品組合或定價對 unit economics 的貢獻。"
+              ],
+              "cash_capital_intensity": [
+                "Q1 FY 2027 營業現金流為 $1,530,939 thousand，資本支出為 $194,756 thousand，產生自由現金流 $1,336,183 thousand，展現現金轉換能力，但重大採購承諾約達 $8.87B 且多數將於未來 12 個月內到期。"
+              ]
+            },
+            "guidance_assessment": [
+              "預期 Q2 FY 2027 總營收為 $4.7B +/- $200M（區間 $4.5B 至 $4.9B）。",
+              "預期 Q2 FY 2027 GAAP gross margin 為 61.8% +/- 1.0%（區間 60.8% 至 62.8%），Non-GAAP gross margin 為 62.5% +/- 1.0%（區間 61.5% 至 63.5%）。",
+              "預期 Q2 FY 2027 GAAP diluted EPS 為 $1.41 +/- $0.11（區間 $1.30 至 $1.52），Non-GAAP diluted EPS 為 $1.44 +/- $0.11（區間 $1.33 至 $1.55）。"
+            ],
+            "demand_quality": [
+              "現有證據包含 Services 佔總營收 20%，以及應收帳款與合約負債的變動（如 Accounts receivable, net 增至 $3,072,087 thousand，合約負債降至 $1,707,802 thousand），但因缺乏客戶集中度與詳細數據，無法判定客戶廣度與擴張品質。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據僅支持營收與淨利成長，缺乏直接證據證明定價權、控制點或市佔率變動，故不作相關誇大推論。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "重大採購承諾高達 $8.87B 且多數將在 12 個月內到期，若未來需求不如預期可能對營運現金流造成壓力。",
+              "長期應收帳款（Long-term accounts receivable, net）增至 $266,755 thousand（較前期顯著增加），須持續關注收款狀況與信用風險。"
+            ],
+            "watch_items": [
+              "Q2 FY 2027 財測目標達成情況（營收 $4.7B +/- $200M）。",
+              "採購承諾之履約進度與長期應收帳款回收狀況。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "KLAC FY2027 Q2\n\n1. 💡 投資結論與邏輯:\n• 本季營收與淨利維持增長，出貨動能延續，但因缺乏產品組合細節，尚不足以完全歸因於特定終端市場的結構性需求強弱。\n• 自由現金流表現強健，惟高額採購承諾與應收帳款變動顯示未來資金調度與收款風險仍需持續追蹤。\n\n2. 📊 關鍵數據與財測:\n• 營收與獲利：總營收達 $4,136M，淨利達 $1,549M；反映出貨動能維持高檔，但缺乏產品組合細節，無法證實特定長週期改變。\n• 現金流量：營業現金流 $1,531M，資本支出 $195M，自由現金流達 $1,336M；展現現金轉換能力，但未扣除其他非資本支出項目。\n• 財務承諾與應收款：重大採購承諾約 $8.87B（多數於 12 個月內到期）；長期應收帳款增至 $267M，須關注實際收款風險。\n• 下季營收與獲利指引：預期營收為 $4.7B +/- $200M（區間 $4.5B 至 $4.9B）；GAAP 毛利率預期 61.8% +/- 1.0%，Non-GAAP 毛利率預期 62.5% +/- 1.0%。\n• 下季每股盈餘指引：GAAP diluted EPS 預期 $1.41 +/- $0.11（$1.30 至 $1.52），Non-GAAP diluted EPS 預期 $1.44 +/- $0.11（$1.33 至 $1.55）。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 業務結構：Services 業務維持穩定，約佔本季總營收 20%，但缺乏客戶集中度細節。\n• 法說紀錄：Packet 未提供對應逐字稿與 Q&A 紀錄，故無法呈現經營團隊與分析師之法說攻防細節。\n\n4. ⚠️ 風險、反證與待驗證:\n• $8.87B 的重大採購承諾若遭遇終端需求反轉，可能對短期資本配置與現金流構成負擔。\n• 長期應收帳款顯著增加，須持續監控客戶履約與實際收款品質。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:structure"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "KLAC FY2027 Q1\n\n1. 💡 投資結論與邏輯:\n• 本季營收與淨利維持成長，出貨動能良好，奠定短期營運規模與現金流入基礎；但因缺乏產品組合細節，判讀尚不足以完全歸因於特定終端市場的結構性需求強弱。\n• 營業現金流與自由現金流表現強勁，展現高效現金轉換能力；惟高額採購承諾與長期應收帳款增加，顯示未來資金調度與收款風險仍需持續追蹤。\n\n2. 📊 關鍵數據與財測:\n• 營收與獲利：總營收達 $4,136M（YoY 成長，前次同期為 $3,210M），淨利達 $1,549M（前次同期為 $1,121M）→ 顯示出貨動能維持高檔 → 但缺乏產品組合細節，尚無法精確拆解單一產品對單位經濟學的貢獻。\n• 現金流與資本強度：營業現金流 $1,531M，資本支出 $195M，產生自由現金流 $1,336M → 反映強勁現金轉換能力 → 但重大採購承諾達 $8.87B 且多數將於未來 12 個月內到期，構成未來資金承擔。\n• 營運資金變動：長期應收帳款增至 $267M（前期為 $181M），合約負債降至 $1,708M → 反映客戶帳款結構變動 → 判讀需關注實際收款品質與信用風險。\n• 下季營收與毛利率指引：預期營收為 $4.7B +/- $200M（區間 $4.5B 至 $4.9B）；GAAP 毛利率預期 61.8% +/- 1.0%（區間 60.8% 至 62.8%），Non-GAAP 毛利率預期 62.5% +/- 1.0%（區間 61.5% 至 63.5%）→ 顯示管理層對下季營運動能維持正面預期。\n• 下季每股盈餘指引：GAAP diluted EPS 預期 $1.41 +/- $0.11（$1.30 至 $1.52），Non-GAAP diluted EPS 預期 $1.44 +/- $0.11（$1.33 至 $1.55）→ 提供市場對獲利能力的明確區間預估。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 業務結構：Services 業務本季佔總營收約 20% → 顯示服務收入提供一定程度的營運基本盤 → 但因缺乏客戶集中度細節，無法判定客戶廣度與擴張品質。\n• 法說紀錄：資料庫未提供官方逐字稿與 Q&A 紀錄，故無法呈現經營團隊與分析師之法說攻防細節。\n\n4. ⚠️ 風險、反證與待驗證:\n• 重大採購承諾高達 $8.87B，若未來終端需求反轉，可能對營運現金流與資本配置構成壓力。\n• 長期應收帳款較前期顯著增加至 $267M，須持續監控客戶履約能力與實際收款狀況。\n• 觀察重點為 Q2 FY2027 財測目標達成情況（營收 $4.7B +/- $200M）與採購承諾之履約進度。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
             "strong_claim_errors": []
           }
         }
