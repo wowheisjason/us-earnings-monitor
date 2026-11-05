@@ -1,0 +1,47 @@
+name: Optics delivery AAOI tier1 capacity q3 v1
+on:
+  push:
+    branches: [codex/optics-delivery-aaoi-tier1-capacity-q3-20261105-v1]
+    paths: [.github/workflows/optics-delivery-aaoi-tier1-capacity-q3-20261105-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-aaoi-tier1-capacity-q3-20261105-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AI光通訊重大進展｜AAOI取得Tier‑1多年協議，但美國擴產因電力延誤】\n\n1）重大變化及門檻\nApplied Optoelectronics（NASDAQ：AAOI）於2026/11/5公布，已取得一家未具名Tier‑1超大規模資料中心客戶的多年策略協議；同時揭露800G／1.6T設備產能已接近每月33萬件。更重要的是，美國2027擴產因取得電力時間超預期等工程問題延後，2026年底設備產能目標由8月所稱約65萬件降為逾50萬件。具名層級客戶協議、量化產能與近端擴產下修均足以改變營收能見度與執行風險，達通知門檻。\n\n2）已確認事實\n事件／公告日：2026/11/5；財務期間截至2026/9/30。\nQ3營收2.699億美元，Q2為1.919億、去年同期1.186億；GAAP毛利率28.2%，非GAAP 28.7%；GAAP淨利630萬美元，為公司所稱重返GAAP獲利。\n公司稱新簽多年策略協議，客戶僅披露為Tier‑1 hyperscale datacenter customer；未公布客戶、金額、產品拆分、最低採購量、取消條款、出貨期或已認列收入，不能視為無條件backlog。\n設備產能現接近33萬件／月；最新指引為2026年底具備逾50萬件／月800G與1.6T產品設備產能，2027年底逾100萬件／月。8/6官方口徑曾預計2026年底約65萬件／月，故近端目標實質下修約15萬件／月或約23%；公司明確歸因美國擴建取得必要電力時間較長及其他工程問題。這是設備安裝能力，不等於實際產量、良品或出貨。\nQ4管理層指引：營收3.85–4.20億美元、非GAAP毛利率29.5%–31%、非GAAP EPS 0.48–0.63美元，均非實績。\n官方：\nhttps://www.sec.gov/Archives/edgar/data/1158114/000168316826008351/aaoi_ex9901.htm\nhttps://www.sec.gov/Archives/edgar/data/1158114/000168316826006055/aaoi_ex9901.htm\nhttps://investors.ao-inc.com/news-releases/news-release-details/aoi-begins-expansion-pearland-manufacturing-campus-scale-800g\n\n3）供應鏈與競合\nAAOI直接曝險：自製雷射二極體、光元件及800G／1.6T收發器，並在美國、台灣及中國設有製造能力；本次未披露協議採用EML、CW雷射或矽光架構，不可猜測。\n未具名Tier‑1 hyperscaler為需求端；不推測Microsoft、Amazon或其他客戶。\n中際旭創、新易盛、Coherent、Lumentum及其他模組供應商屬競爭或互補者；本協議不證明其失單。InP基板、磊晶、DSP、EML／CW雷射、FAU與封測供應商均未具名，不能把AAOI設備瓶頸外推為整條光通訊鏈缺貨。\n\n4）合理推論\n若協議含可執行採購量、客戶按期拉貨，且電力、廠務、設備安裝、良率及關鍵物料到位，AAOI可提高2027–2028收入可見度及固定成本吸收。Q4指引中點相對Q3約增49%，顯示短期爬坡強，但近端產能目標下修代表收入轉換仍受基礎設施限制。成立條件是客戶認證與部署不延後、協議未取消、產量／良率跟上設備能力。\n\n5）機會與風險\n催化劑：協議金額與不可取消比例、首批1.6T收入、月產量／良率、Q4達標、電力接入及Pearland擴建完成。\n風險：電力與工程再延誤、設備能力未轉為良品出貨、客戶集中、價格壓力、存貨與折舊先於收入、DSP／雷射供應、競爭者擴產及800G／1.6T產品組合變化。未查即時價格，不判斷估值。\n\n6）待驗證及去重\n待追蹤客戶身分、協議法律約束、800G／1.6T拆分、實際出貨、產能利用率、良率、台灣與美國產能占比及毛利。可存取的既有通知分支未發現相同AAOI事件；完整Telegram歷史不可全面檢索，不宣稱絕對全面去重。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"aaoi-tier1-capacity-q3-20261105","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-aaoi-tier1-capacity-q3-20261105-v1
+          path: telegram-receipt.json
