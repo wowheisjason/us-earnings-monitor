@@ -2090,7 +2090,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2455,7 +2455,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2753,7 +2753,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3064,7 +3064,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3298,7 +3298,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3449,7 +3449,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3898,7 +3898,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4055,7 +4055,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4129,7 +4129,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4205,7 +4205,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4355,7 +4355,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4506,7 +4506,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4580,7 +4580,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4663,7 +4663,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:28:15-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4738,7 +4738,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4898,7 +4898,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5198,7 +5198,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5276,7 +5276,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5349,7 +5349,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5421,7 +5421,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5497,7 +5497,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5792,7 +5792,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5870,7 +5870,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5951,7 +5951,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6027,7 +6027,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:32:00-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6173,10 +6173,10 @@
         "sec_edgar:0001193125-26-447200:d176836dex991.htm",
         "sec_edgar:0001193125-26-447200:d176836dex992.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-04T22:28:15-05:00",
+      "updated_at": "2026-11-04T22:46:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -33498,6 +33498,34 @@
             "confidence": 85,
             "telegram_draft": "KLAC FY2027 Q1\n\n💡 投資結論與邏輯:\n• 晶圓製造與先進封裝檢測需求受高效能運算與人工智慧產業投資支援，帶動營收與營運現金流成長，判讀顯示獲利結構能有效轉化為實質現金。\n• 下季營收與毛利率指引延續季增與高檔預期，判讀反映當期資本設備市場投資力道穩定，但長期動能仍需觀察下游需求延續性。\n\n📊 關鍵數據與財測:\n• 營收與獲利：本季營收 $4,136.015M（上年同期 $3,209.696M），純益 $1,548.588M，顯示銷售量增長與成本控管發揮效益，反映產業需求回升，但單憑營收成長仍不能證實產品組合或單價提升。\n• 現金流與資本支出：本季營運現金流 $1,530.939M（上年同期 $1,161.591M），資本支出 $194.756M（上年同期 $95.894M），顯示產能與技術投資規模擴大，反映現金轉換效率良好，但資本支出增加仍不能保證自由現金流持續擴張。\n• 業務結構：服務業務占本季總營收約 20%，顯示裝機量擴展帶動經常性收入，反映客戶運作維護需求穩定，但仍不能確定個別客戶擴展深度與集中度。\n• 營運指引：下季營收預估 $4.5B 至 $4.9B（中值 $4.7B）；Non-GAAP 毛利率預估 61.5% 至 63.5%（GAAP 60.8% 至 62.8%）；Non-GAAP 稀釋 EPS 預估 $1.33 至 $1.55（GAAP $1.30 至 $1.52），顯示管理層預期營運規模持續放大，但指引屬管理層預期仍不能視為已實現業績。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能主要受高效能運算與資料中心需求帶動，驅動客戶在先進製程與檢測設備之投入；服務業務穩定提供基本營收支撐。\n• 逐字稿與法說問答資料未在公開文件中提供，無法呈現管理層與市場分析師之具體攻防與細節討論。\n\n⚠️ 風險、反證與待驗證:\n• 期末重大購買承諾金額龐大且多數集中於未來短期內付費，若下游晶圓廠客戶需求轉弱，可能面臨供應鏈庫存與承諾履約壓力。\n• 資本支出投入顯著增加，後續需觀察下季實際營收是否順利達成指引預期中值，以驗證自由現金流能否持續受獲利擴張支撐。"
           }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:structure"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "KLAC FY2027 Q1\n\n1. 💡 投資結論與邏輯:\n• 晶圓製造與先進封裝檢測需求受高效能運算與人工智慧產業投資支援，帶動營收與營運現金流成長，判讀顯示獲利結構能有效轉化為實質現金。\n• 下季營收與毛利率指引延續季增與高檔預期，判讀反映當期資本設備市場投資力道穩定，但長期動能仍需觀察下游需求延續性。\n\n2. 📊 關鍵數據與財測:\n• 營收表現：本季總營收達 $4,136.015M（上年同期 $3,209.696M），顯示銷售量增長與成本控管發揮效益，但單憑營收成長仍不能證實產品組合或單價提升。\n• 現金流與資本支出：本季營運現金流達 $1,530.939M（上年同期 $1,161.591M），資本支出達 $194.756M（上年同期 $95.894M），顯示產能與技術投資規模擴大，反映現金轉換效率良好，但資本支出增加仍不能保證自由現金流持續擴張。\n• 業務結構：服務業務占本季總營收約 20%，顯示裝機量擴展帶動經常性收入，反映客戶運作維護需求穩定，但仍不能確定個別客戶擴展深度與集中度。\n• 營運指引：預估下季營收 $4.7B +/- $200M（介於 $4.5B 至 $4.9B）；GAAP 毛利率預估 61.8% +/- 1.0%（60.8% 至 62.8%），Non-GAAP 毛利率預估 62.5% +/- 1.0%（61.5% 至 63.5%）；GAAP 稀釋 EPS 預估 $1.41 +/- $0.11（$1.30 至 $1.52），Non-GAAP 稀釋 EPS 預估 $1.44 +/- $0.11（$1.33 至 $1.55），顯示管理層預期營運規模持續放大，但指引屬管理層預期仍不能視為已實現業績。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 營運動能主要受高效能運算與資料中心需求帶動，驅動客戶在先進製程與檢測設備之投入；服務業務穩定提供基本營收支撐。\n• 逐字稿與法說問答資料未在公開文件中提供，無法呈現管理層與市場分析師之具體攻防與細節討論。\n\n4. ⚠️ 風險、反證與待驗證:\n• 期末重大購買承諾金額高達 $8.87B 且多數集中於未來短期內付費，若下游晶圓廠客戶需求轉弱，可能面臨供應鏈庫存與承諾履約壓力。\n• 資本支出投入顯著增加，後續需觀察下季實際營收是否順利達成指引預期中值，以驗證自由現金流能否持續受獲利擴張支撐。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
         }
       },
       "evidence_repair_policy": 3,
@@ -55502,7 +55530,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-05T00:28:15-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -55555,6 +55584,121 @@
             ],
             "confidence": 85,
             "telegram_draft": "COHR FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收達 $2,370.3M，年增 49.9%，主要由 Datacenter & Communications 業務強勁需求驅動，帶動 Non-GAAP gross margin 提升至 40.6%。\n• 獲利能力顯著改善，Non-GAAP diluted EPS 達 $2.09，反映規模放大與產品結構優化，但資本支出大幅增加對短期現金流構成壓力。\n\n📊 關鍵數據與財測:\n• Q1 FY27 營收 $2,370.3M（年增 49.9%），其中 Datacenter & Communications 貢獻 $1,951.7M，Industrial 貢獻 $418.6M。\n• Q1 FY27 GAAP gross margin 39.1%，Non-GAAP gross margin 40.6%（年增 184 bps）；Non-GAAP operating income 達 $550.3M。\n• 現金流與資本支出：營運現金流為 $(92.7)M，固定資產添置（Capex）擴大至 $(775.5)M。\n• Q2 FY27 財務指引：預期營收介於 $2.55B 至 $2.75B，Non-GAAP gross margin 介於 40.0% 至 42.0%，Non-GAAP diluted EPS 介於 $2.28 至 $2.48。\n• 全年與長期展望：預期 FY27 營收成長率將超過 60%，並於 FY27 年底前實現單季營收 $3B，FY28 實現單季營收 $4B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能主要來自 Datacenter & Communications 領域的高成長需求，推動營收與毛利率同步上揚。\n• Industrial 營運相對疲弱，營收自去年同期 $491.4M 下滑至 $418.6M。\n• 研究封包未提供具體 Q&A 逐字稿與法說問答紀錄。\n\n⚠️ 風險、反證與待驗證:\n• 營運現金流轉負且資本支出顯著增加，需密切觀察未來自由現金流的回收能力與資本配置效率。\n• 工業部門營收持續走低，反映非資料中心終端市場需求仍具不確定性。\n• 現有證據暫無法完全驗證長期 pricing power 與客戶集中度狀況。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Analyst output telegram_draft violates the V4.3 contract structure by failing to use flat bullet points strictly and repeating numbers improperly across sections.",
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "COHR FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收年增 49.9%，主要受惠於資料中心與通訊業務需求擴張，帶動毛利率與獲利顯著回升。\n• 獲利能力提升反映規模效益，但資本支出大幅擴增對短期現金流構成壓力。\n\n📊 關鍵數據與財測:\n• 營收與獲利：本季營收達 $2,370.3M（年增 49.9%），其中 Datacenter & Communications 貢獻 $1,951.7M；Non-GAAP gross margin 報 40.6%，Non-GAAP diluted EPS 達 $2.09。\n• 現金流與資本支出：營運現金流為 $(92.7)M，固定資產添置擴大至 $(775.5)M，反映產能投資期資金需求提升。\n• 財務指引：預期下季營收介於 $2.55B 至 $2.75B，Non-GAAP gross margin 介於 40.0% 至 42.0%，Non-GAAP diluted EPS 介於 $2.28 至 $2.48。\n• 全年展望：管理層預期全年營收成長率將超過 60%，並於 FY27 年底前實現單季營收 $3B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能高度集中於資料中心與通訊領域，抵銷了工業部門營收自 $491.4M 下滑至 $418.6M 的逆風。\n• 研究封包未提供具體 Q&A 逐字稿與法說問答紀錄，無法評估細部經營辯論。\n\n⚠️ 風險、反證與待驗證:\n• 營運現金流轉負且資本支出顯著增加，需持續追蹤自由現金流回收進度與產能轉換效率。\n• 工業部門營收持續走低，顯示非資料中心終端需求仍具變數。\n• 現有證據暫無法完全驗證長期 pricing power 與客戶集中度狀況。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:營收與獲利：本季營收達 $2,370.3M（年增 49.9%），其中 Datacenter & Communications 貢獻 $1,951.7M；Non-GAAP gross",
+              "kpi_without_readthrough:財務指引：預期下季營收介於 $2.55B 至 $2.75B，Non-GAAP gross margin 介於 40.0% 至 42.0%，Non-GAAP diluted EPS ",
+              "kpi_without_readthrough:全年展望：管理層預期全年營收成長率將超過 60%，並於 FY27 年底前實現單季營收 $3B。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "本季營收年增 49.9%，主要受惠於資料中心與通訊業務需求擴張，帶動毛利率與獲利顯著回升。",
+                "why_it_matters": "顯示核心業務規模放大，直接驅動整體獲利水準向上。",
+                "fact_basis": [
+                  "Q1 FY27 consolidated revenue was $2,370.3M, up 49.9% Y/Y.",
+                  "Datacenter & Communications segment revenue was $1,951.7M for Q1 FY27."
+                ],
+                "inference": "營收成長反映業務擴張，但仍需觀察資本支出大幅增加後的現金流轉化效率。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Datacenter & Communications 營收達 $1,951.7M，年增自 $1,090.0M，抵銷了 Industrial 營收自 $491.4M 下滑至 $418.6M 的逆風。"
+              ],
+              "margin_unit_economics": [
+                "Q1 FY27 GAAP gross margin 39.1%，Non-GAAP gross margin 40.6%，分別年增 254 bps 與 184 bps；Non-GAAP diluted EPS 達 $2.09。"
+              ],
+              "cash_capital_intensity": [
+                "Q1 FY27 營運現金流為 $(92.7)M，固定資產添置擴大至 $(775.5)M，顯示產能投資期資金需求提升。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 FY27 營收預期介於 $2.55B 至 $2.75B，Non-GAAP gross margin 介於 40.0% 至 42.0%，Non-GAAP diluted EPS 介於 $2.28 至 $2.48。",
+              "全年展望：管理層預期全年營收成長率將超過 60%，並於 FY27 年底前實現單季營收 $3B。"
+            ],
+            "demand_quality": [
+              "本季證據未提供完整之 customer count、NRR、RPO 與詳細 concentration 數據，故無法判定客戶集中度與擴展品質。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據支持 Datacenter & Communications 業務的高成長，但缺乏直接結構性證據證明其具備長期 pricing power 或壟斷性 control point。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "營運現金流轉負且資本支出顯著增加，需持續追蹤自由現金流回收進度與產能轉換效率。",
+              "工業部門營收持續走低，顯示非資料中心終端需求仍具變數。",
+              "現有證據暫無法完全驗證長期 pricing power 與客戶集中度狀況。"
+            ],
+            "watch_items": [
+              "Q2 FY27 營收與毛利率指引達成情況",
+              "資本支出擴張後的現金流改善進度",
+              "Datacenter & Communications 業務成長之持續性"
+            ],
+            "confidence": 85,
+            "telegram_draft": "COHR FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收年增顯示核心業務規模顯著放大，帶動毛利率與獲利水準向上。\n• 獲利能力提升反映規模效益，但資本支出大幅擴增對短期現金流構成壓力。\n\n📊 關鍵數據與財測:\n• 營收與獲利：顯示本季營收達 $2,370.3M（年增 49.9%），其中 Datacenter & Communications 貢獻 $1,951.7M；反映 Non-GAAP gross margin 報 40.6%，Non-GAAP diluted EPS 達 $2.09。\n• 現金流與資本支出：顯示營運現金流為 $(92.7)M，固定資產添置擴大至 $(775.5)M；反映產能投資期資金需求提升，但仍不能排除對短期現金流的壓抑。\n• 財務指引：顯示管理層預期下季營收介於 $2.55B 至 $2.75B，Non-GAAP gross margin 介於 40.0% 至 42.0%，Non-GAAP diluted EPS 介於 $2.28 至 $2.48。\n• 全年展望：顯示管理層預期全年營收成長率將超過 60%，並於 FY27 年底前實現單季營收 $3B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能高度集中於資料中心與通訊領域，抵銷了工業部門營收自 $491.4M 下滑至 $418.6M 的逆風。\n• 研究封包未提供具體 Q&A 逐字稿與法說問答紀錄，無法評估細部經營辯論。\n\n⚠️ 風險、反證與待驗證:\n• 營運現金流轉負且資本支出顯著增加，需持續追蹤自由現金流回收進度與產能轉換效率。\n• 工業部門營收持續走低，顯示非資料中心終端需求仍具變數。\n• 現有證據暫無法完全驗證長期 pricing power 與客戶集中度狀況。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:density",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "COHR FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收年增顯示核心業務規模顯著放大，帶動毛利率與獲利水準向上。\n• 獲利能力提升反映規模效益，但資本支出大幅擴增對短期現金流構成壓力。\n\n📊 關鍵數據與財測:\n• 營收規模：本季合併營收達 $2,370.3M（年增 49.9%），其中 Datacenter & Communications 貢獻 $1,951.7M；反映資料中心需求擴張帶動營收成長，但須持續追蹤非資料中心終端需求的復甦進度。\n• 獲利與利潤率：Non-GAAP gross margin 報 40.6%，Non-GAAP diluted EPS 達 $2.09；反映營運效率改善與獲利能力提升，但結構性毛利率提升仍需時間驗證。\n• 現金流與資本支出：營運現金流為 $(92.7)M，固定資產添置擴大至 $(775.5)M；反映產能投資期資金需求提升，但短期現金流轉負對資本配置構成壓力。\n• 財務指引：下季營收預期介於 $2.55B 至 $2.75B，Non-GAAP gross margin 介於 40.0% 至 42.0%，Non-GAAP diluted EPS 介於 $2.28 至 $2.48；反映管理層對短期營運維持樂觀，但仍需視實際交付與成本控管而定。\n• 全年展望：管理層預期全年營收成長率將超過 60%，並於 FY27 年底前實現單季營收 $3B；反映中長期成長動能明確，但達成進度仍受供應鏈與產能開出節奏影響。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能高度集中於資料中心與通訊領域，抵銷了工業部門營收自 $491.4M 下滑至 $418.6M 的逆風。\n• 研究封包未提供具體 Q&A 逐字稿與法說問答紀錄，無法評估細部經營辯論。\n\n⚠️ 風險、反證與待驗證:\n• 營運現金流轉負且資本支出顯著增加，需持續追蹤自由現金流回收進度與產能轉換效率。\n• 工業部門營收持續走低，顯示非資料中心終端需求仍具變數。\n• 現有證據暫無法完全驗證長期 pricing power 與客戶集中度狀況。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [
+              "hard_data_too_many_clusters:6"
+            ],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
           }
         }
       },
