@@ -2090,7 +2090,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2455,7 +2455,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2753,7 +2753,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3064,7 +3064,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3298,7 +3298,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3449,7 +3449,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3898,7 +3898,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4055,7 +4055,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4129,7 +4129,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4205,7 +4205,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4355,7 +4355,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4506,7 +4506,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4580,7 +4580,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4663,7 +4663,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4738,7 +4738,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5198,16 +5198,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
-            "seconds": 0.291,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "seconds": 0.0,
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
@@ -5220,7 +5220,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.252,
+            "seconds": 0.328,
             "documents": 0,
             "partial": false
           },
@@ -5233,7 +5233,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-05T01:50:58-05:00",
+        "ir_retrieval_last_at": "2026-11-05T15:38:05-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5253,11 +5253,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-05T01:50:58-05:00",
-        "official_ir_checked_at": "2026-11-05T01:50:58-05:00",
-        "official_ir_check_count": 11,
+        "last_collection_check_at": "2026-11-05T15:38:05-05:00",
+        "official_ir_checked_at": "2026-11-05T15:38:05-05:00",
+        "official_ir_check_count": 12,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-05T13:50:58-05:00"
+        "next_ir_retry_at": "2026-11-06T03:38:05-05:00"
       },
       "delivery": {}
     },
@@ -5276,39 +5276,39 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.188,
+            "seconds": 0.176,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/LITE-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.643,
+            "seconds": 0.747,
             "documents": 2,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.069,
+            "seconds": 0.147,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/LITE-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-05T01:50:58-05:00",
+        "ir_retrieval_last_at": "2026-11-05T15:38:05-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5328,11 +5328,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-05T01:50:58-05:00",
-        "official_ir_checked_at": "2026-11-05T01:50:58-05:00",
-        "official_ir_check_count": 11,
+        "last_collection_check_at": "2026-11-05T15:38:05-05:00",
+        "official_ir_checked_at": "2026-11-05T15:38:05-05:00",
+        "official_ir_check_count": 12,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-05T13:50:58-05:00"
+        "next_ir_retry_at": "2026-11-06T03:38:05-05:00"
       },
       "delivery": {}
     },
@@ -5349,7 +5349,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5421,7 +5421,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5497,7 +5497,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5792,7 +5792,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5870,7 +5870,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T10:27:16-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6027,7 +6027,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6176,7 +6176,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T13:46:53-05:00",
+      "updated_at": "2026-11-05T15:40:36-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6248,7 +6248,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-05T13:45:04-05:00",
+      "last_success_at": "2026-11-05T15:38:05-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -33674,7 +33674,7 @@
     },
     "INTC_2026-09-26_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "fca71fe68c83104d1dbdd6645ebaa8080684caf485352e27d42070350b6c618b",
+      "evidence_fingerprint": "d1b5e69fd3debb41ffefce86a62219e3fbe6ccb60e8c354074e0af7ed0a90898",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -33682,26 +33682,7 @@
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2"
             ],
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
-                "card_type": "fact",
-                "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Intel Form 10-Q filing metadata for the quarterly period ended September 26, 2026.",
-                "materiality_candidate": 1,
-                "quote": "intc-20260926"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2",
-                "card_type": "fact",
-                "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Intel Form 10-Q segment and reporting unit metadata references for Q3 2026.",
-                "materiality_candidate": 1,
-                "quote": "intc:IntelFoundryMember"
-              }
-            ]
+            "cards": []
           }
         },
         "v5_extract_batch_2": {
@@ -33733,26 +33714,24 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD for context c-3.",
+                "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD.",
                 "materiality_candidate": 3,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
-                "metric": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 16,513",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": "16,513",
-                "unit": "usd",
-                "period": "c-3"
+                "unit": "usd"
               },
               {
                 "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross profit was 7,096 million USD for context c-3.",
+                "statement": "Gross profit was 7,096 million USD.",
                 "materiality_candidate": 3,
-                "quote": "us-gaap:GrossProfit",
-                "metric": "us-gaap:GrossProfit",
+                "quote": "us-gaap:GrossProfit, 7,096",
+                "metric": "GrossProfit",
                 "value": "7,096",
-                "unit": "usd",
-                "period": "c-3"
+                "unit": "usd"
               }
             ]
           }
@@ -33765,13 +33744,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD for context c-3.",
+                "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD.",
                 "materiality_candidate": 3,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
-                "metric": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 16,513",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": "16,513",
                 "unit": "usd",
-                "period": "c-3",
                 "card_id": "c1:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
                 "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
                 "source": "sec_edgar",
@@ -33779,7 +33757,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 16,513"
                 }
               },
               {
@@ -33787,13 +33765,12 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross profit was 7,096 million USD for context c-3.",
+                "statement": "Gross profit was 7,096 million USD.",
                 "materiality_candidate": 3,
-                "quote": "us-gaap:GrossProfit",
-                "metric": "us-gaap:GrossProfit",
+                "quote": "us-gaap:GrossProfit, 7,096",
+                "metric": "GrossProfit",
                 "value": "7,096",
                 "unit": "usd",
-                "period": "c-3",
                 "card_id": "c2:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
                 "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
                 "source": "sec_edgar",
@@ -33801,7 +33778,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "us-gaap:GrossProfit"
+                  "quote": "us-gaap:GrossProfit, 7,096"
                 }
               }
             ],
@@ -33810,6 +33787,206 @@
             ],
             "replace_only_invalid_cards": true
           }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:c16de595c99f19268b30020a#u1",
+              "official_ir:c16de595c99f19268b30020a#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third-quarter revenue was $16.5 billion, up 21% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Third-quarter revenue was $16.5 billion, up 21% year-over-year (YoY).",
+                "metric": "revenue",
+                "value": "16.5",
+                "unit": "USD_$B",
+                "period": "Q3 2026",
+                "comparison_value": "13.7",
+                "comparison_period": "Q3 2025",
+                "reported_change": "up 21%"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Third-quarter EPS was $0.60 and non-GAAP EPS was $0.52.",
+                "materiality_candidate": 5,
+                "quote": "Third-quarter earnings per share (EPS) attributable to Intel was $0.60; non-GAAP EPS attributable to Intel was $0.52.",
+                "metric": "diluted_eps",
+                "value": "0.60",
+                "unit": "USD",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion, GAAP EPS of $0.10, and non-GAAP EPS of $0.25.",
+                "materiality_candidate": 5,
+                "quote": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion; forecasting fourth-quarter EPS attributable to Intel of $0.10 and non-GAAP EPS attributable to Intel of $0.25.",
+                "metric": "revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "15.0",
+                "high": "16.0",
+                "unit": "USD_$B"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "management_claim",
+                "topic": "demand_revenue",
+                "fact_class": "management_claim",
+                "statement": "CEO Lip-Bu Tan notes robust demand for CPUs and immediate priority to unlock supply for the Xeon family.",
+                "materiality_candidate": 4,
+                "quote": "Despite near-term headwinds across the PC industry, demand for our CPUs remains robust, reinforcing our confidence in the long-term growth opportunities for our business.",
+                "speaker": "Lip-Bu Tan"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "In the third quarter, the company generated $5.1 billion in cash from operations.",
+                "materiality_candidate": 4,
+                "quote": "In the third quarter, the company generated $5.1 billion in cash from operations.",
+                "metric": "operating_cash_flow",
+                "value": "5.1",
+                "unit": "USD_$B",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:c16de595c99f19268b30020a#u3",
+              "official_ir:c16de595c99f19268b30020a#u4"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": [
+            {
+              "processed_unit_ids": [
+                "official_ir:c16de595c99f19268b30020a#u5",
+                "official_ir:c16de595c99f19268b30020a#u6"
+              ],
+              "cards": [
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Intel reported Q3 2026 net revenue of $16,513 million compared to $13,653 million in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Net revenue\n$\n16,513\n$\n13,653",
+                  "metric": "Net revenue",
+                  "value": "16513",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "13653",
+                  "comparison_period": "Q3 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "Intel reported Q3 2026 gross profit of $7,096 million compared to $5,218 million in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Gross profit\n7,096\n5,218",
+                  "metric": "Gross profit",
+                  "value": "7096",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "5218",
+                  "comparison_period": "Q3 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "Intel reported Q3 2026 operating income of $2,522 million compared to $683 million in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Operating income (loss)\n2,522\n683",
+                  "metric": "Operating income (loss)",
+                  "value": "2522",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "683",
+                  "comparison_period": "Q3 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Diluted earnings per share attributable to Intel was $0.60 in Q3 2026 compared to $0.90 in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Earnings (loss) per share attributable to Intel—diluted\n1\n$\n0.60\n$\n0.90",
+                  "metric": "Earnings (loss) per share attributable to Intel—diluted",
+                  "value": "0.60",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "comparison_value": "0.90",
+                  "comparison_period": "Q3 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                  "card_type": "capital",
+                  "topic": "cash_capex",
+                  "fact_class": "objective_fact",
+                  "statement": "For the nine months ended Sep 26, 2026, operating cash flow was $13,184 million and additions to property, plant, and equipment were $10,216 million.",
+                  "materiality_candidate": 4,
+                  "quote": "Net cash provided by (used for) operating activities\n13,184\n5,409\nCash flows provided by (used for) investing activities:\nAdditions to property, plant, and equipment\n(10,216\n)\n(11,158\n)",
+                  "metric": "Net cash provided by (used for) operating activities",
+                  "value": "13184",
+                  "unit": "USD $M",
+                  "period": "9M 2026",
+                  "comparison_value": "5409",
+                  "comparison_period": "9M 2025",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "In Q3 2026, CCPG revenue was $8,097 million, DCAI revenue was $7,318 million, and Intel Foundry revenue was $6,697 million.",
+                  "materiality_candidate": 4,
+                  "quote": "Revenue\n$\n8,097\n$\n7,318\n$\n15,415\n$\n6,697\n$\n692\n$\n—\n$\n(6,291\n)\n$\n16,513",
+                  "metric": "Revenue",
+                  "value": "16513",
+                  "unit": "USD $M",
+                  "period": "Q3 2026"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "In Q3 2026, Intel Products operating income was $5,324 million while Intel Foundry reported an operating loss of $(1,853) million.",
+                  "materiality_candidate": 4,
+                  "quote": "Operating income (loss)\n$\n2,285\n$\n3,039\n$\n5,324\n$\n(1,853\n)\n$\n179\n$\n(1,058\n)\n$\n(70\n)\n$\n2,522",
+                  "metric": "Operating income (loss)",
+                  "value": "2522",
+                  "unit": "USD $M",
+                  "period": "Q3 2026"
+                }
+              ]
+            }
+          ]
         }
       },
       "evidence_repair_policy": 3,
@@ -45098,7 +45275,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-05T22:27:16-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -45164,6 +45342,129 @@
             ],
             "confidence": 75,
             "telegram_draft": "LITE FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收與 Non-GAAP 獲利表現強勁，管理層宣稱 NPO/CPO 業務取得第二家主要客戶並鎖定逾 $5B 採購承諾，為長期營運能見度提供支撐。\n• 營運規模顯著擴大帶動獲利能力提升，下季 Non-GAAP 營業利潤率指引維持高檔，反映出良好之營運槓桿效益。\n\n📊 關鍵數據與財測:\n• Q1 營收達 $1,262.6M（季增 25.5%、年增 136.5%），顯示需求端持續強勁成長，但具體產品組合佔比未揭露。\n• Q1 GAAP 毛利率為 51.0%、Non-GAAP 毛利率為 53.2%；Non-GAAP 營業利潤率達 42.3%，Adjusted EBITDA 為 $578.0M，反映本業獲利能力擴張。\n• Q1 GAAP 淨虧損為 $360.3M，與 Non-GAAP 獲利表現有較大差距，反映非營運或一次性調整項目之影響。\n• Q1 季末現金、現金等價物及短期投資總額為 $2.0B（較上季減少 $758.8M），顯示資金動態出現大幅變動，但資本支出與現金流細節尚不可得。\n• 財測指引：下季預估營收為 $1.575B 至 $1.625B，Non-GAAP 營業利潤率為 45.0% 至 46.0%，Non-GAAP EPS 為 $5.90 至 $6.20；外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 管理層表示在本季取得第二家 major NPO/CPO 客戶，並獲逾 $5B 的採購承諾，判讀此將成為未來數年光電整合業務的重要支柱；但因數據源未包含逐字稿，法說會問答攻防細節無法判定。\n• 客戶廣度與流失率等指標本季缺乏數據支持，無法客觀評估客戶集中度風險與擴展質量。\n\n⚠️ 風險、反證與待驗證:\n• 現金與短期投資單季消耗 $758.8M，若無強勁營運現金流補足，可能限制未來資本配置彈性。\n• 逾 $5B 採購承諾屬於管理層主張，若後續客戶下單時程延後或執行率不如預期，將為長線成長邏輯帶來反證風險。\n• 需持續追蹤 GAAP 與 Non-GAAP 損益差距是否擴大，以及下季營收是否能順利達標。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 78,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Analyst output telegram_draft violates the V4.3 OUTPUT CONTRACT structure (it uses old headers and formatting).",
+              "Section 2 in telegram_draft contains more than 7 non-empty lines, exceeding the hard limit.",
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "LITE FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收與 Non-GAAP 獲利顯著成長，且管理層宣稱 NPO/CPO 業務取得第二家重大客戶並獲逾 $5B 採購承諾，為長期營運能見度提供支撐。\n• 營運規模擴大帶動固定成本攤銷效益，下季財測指引維持高營業利潤率，反映良好的獲利動能。\n\n📊 關鍵數據與財測:\n• Q1 營收達 $1,262.6M（季增 25.5%、年增 136.5%），反映強勁的需求拉動。\n• Q1 GAAP 毛利率為 51.0%、Non-GAAP 毛利率為 53.2%；GAAP 營業利潤率為 28.5%、Non-GAAP 營業利潤率達 42.3%，Adjusted EBITDA 達 $578.0M。\n• Q1 GAAP 淨虧損為 $360.3M，與 Non-GAAP 獲利存在差距，反映非營運或一次性調整項目之影響。\n• Q1 季末現金、現金等價物及短期投資總額為 $2.0B（較上季減少 $758.8M），現金及現金等價物為 $1,272.2M。\n• 下季（Q2 FY2027）官方指引：預估營收為 $1.575B 至 $1.625B，Non-GAAP 營業利潤率為 45.0% 至 46.0%，Non-GAAP 稀釋每股盈餘為 $5.90 至 $6.20；外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 管理層表示secured 第二家 major NPO/CPO 訂單（>$5B），判讀此將成為次世代光電互連的重要支柱；但因 packet 未包含 Q&A 逐字稿，法說會攻防細節無法判定。\n• 客戶廣度與流失率等指標本季缺乏數據支持，無法客觀評估客戶集中度風險與擴展質量。\n\n⚠️ 風險、反證與待驗證:\n• 現金與短期投資單季減少 $758.8M，若無強勁營運現金流回補，將影響資產負債表韌性。\n• 逾 $5B 採購承諾屬於管理層主張，若客戶延後下單或執行率不如預期，將為長線成長假設帶來反證風險。\n• 需持續追蹤 GAAP 與 Non-GAAP 損益差距之性質，以及下季營收能否順利達標。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:Q1 GAAP 毛利率為 51.0%、Non-GAAP 毛利率為 53.2%；GAAP 營業利潤率為 28.5%、Non-GAAP 營業利潤率達 42.3%，Adjusted EB",
+              "kpi_without_readthrough:Q1 季末現金、現金等價物及短期投資總額為 $2.0B（較上季減少 $758.8M），現金及現金等價物為 $1,272.2M。",
+              "kpi_without_readthrough:下季（Q2 FY2027）官方指引：預估營收為 $1.575B 至 $1.625B，Non-GAAP 營業利潤率為 45.0% 至 46.0%，Non-GAAP 稀釋每股盈餘為 $"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "NPO/CPO 業務取得第二家重大客戶並獲逾 $5B 採購承諾",
+                "why_it_matters": "顯示公司在下一代光互連技術領域進入長期供貨架構，為未來營運能見度提供支撐。",
+                "fact_basis": [
+                  "Secured second major NPO/CPO win backed by purchase commitments exceeding $5 billion."
+                ],
+                "inference": "若採購承諾能順利轉化為實際出貨，將有助於推升營收規模。",
+                "confidence": "medium"
+              },
+              {
+                "signal": "營收與獲利成長，下季財測指引維持高營業利潤率",
+                "why_it_matters": "Q1 營收與獲利表現擴張，且 Q2 非 GAAP 營業利潤率指引維持高檔，反映營運規模帶動的獲利動能。",
+                "fact_basis": [
+                  "Net revenue for Q1 FY2027 was $1.26 billion ($1,262.6 million), up 25.5% sequentially and 136.5% YoY.",
+                  "Q2 FY2027 guidance: non-GAAP operating margin of 45.0% to 46.0%."
+                ],
+                "inference": "營運規模擴大有助於固定成本攤銷，維持短期獲利水準。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q1 FY2027 營收達 $1,262.6M（季增 25.5%、年增 136.5%），反映需求拉動。",
+                "管理層宣稱 NPO/CPO 業務取得第二家重大客戶，獲逾 $5B 採購承諾（未拆解具體季度拉貨時程）。"
+              ],
+              "margin_unit_economics": [
+                "Q1 GAAP 毛利率為 51.0%、Non-GAAP 毛利率為 53.2%；GAAP 營業利潤率為 28.5%、Non-GAAP 營業利潤率達 42.3%，Adjusted EBITDA 達 $578.0M。",
+                "Q1 GAAP 淨虧損為 $360.3M，與 Non-GAAP 獲利存在差距，反映非營運或一次性調整項目之影響。"
+              ],
+              "cash_capital_intensity": [
+                "Q1 季末現金、現金等價物及短期投資總額為 $2.0B（較上季減少 $758.8M），現金及現金等價物為 $1,272.2M。",
+                " packet 缺乏詳細的 Capex 與 CFO 拆解，無法完全判定資本支出強度與現金流轉換率。"
+              ]
+            },
+            "guidance_assessment": [
+              "下季（Q2 FY2027）官方指引：預估營收為 $1.575B 至 $1.625B，Non-GAAP 營業利潤率為 45.0% 至 46.0%，Non-GAAP 稀釋每股盈餘為 $5.90 至 $6.20。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "管理層表示取得超過 $5B 的 NPO/CPO 採購承諾，顯示單一大型客戶/專案布局有所進展。",
+              "packet 缺乏客戶總數、客戶集中度比率或 RPO 等結構化指標，無法客觀判定客戶擴充廣度與留存質量。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "取得第二家 major NPO/CPO 訂單承諾（>$5B）顯示在次世代光學互連具備早期市場地位，但缺乏同業市占率與定價權直接數據，尚無法判定是否具備結構性護城河。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "現金與短期投資單季減少 $758.8M，若無強勁營運現金流回補，將影響資產負債表韌性。",
+              "逾 $5B 採購承諾屬於管理層主張，若客戶延後下單或執行率不如預期，將為長線成長假設帶來反證風險。",
+              "需持續追蹤 GAAP 與 Non-GAAP 損益差距之性質，以及下季營收能否順利達標。"
+            ],
+            "watch_items": [
+              "Q2 FY2027 營收能否達到指引區間上緣。",
+              "NPO/CPO >$5B 訂單轉化為實際採購單與出貨營收的時間表。",
+              "現金資產減少後的資本支出計畫與營運現金流回升速度。"
+            ],
+            "confidence": 75,
+            "telegram_draft": "LITE FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收與 Non-GAAP 獲利顯著成長，且管理層宣稱 NPO/CPO 業務取得第二家重大客戶並獲逾 $5B 採購承諾，為長期營運能見度提供支撐。\n• 營運規模擴大帶動固定成本攤銷效益，下季財測指引維持高營業利潤率，反映良好的獲利動能。\n\n📊 關鍵數據與財測:\n• Q1 營收達 $1,262.6M，反映需求拉動，但具體產品組合佔比未揭露。\n• Q1 GAAP 毛利率為 51.0%、Non-GAAP 毛利率為 53.2%；GAAP 營業利潤率為 28.5%、Non-GAAP 營業利潤率達 42.3%，Adjusted EBITDA 達 $578.0M。\n• Q1 GAAP 淨虧損為 $360.3M，與 Non-GAAP 獲利存在差距，反映非營運或一次性調整項目之影響。\n• Q1 季末現金、現金等價物及短期投資總額為 $2.0B（較上季減少 $758.8M），現金及現金等價物為 $1,272.2M。\n• 下季（Q2 FY2027）官方指引：預估營收為 $1.575B 至 $1.625B，Non-GAAP 營業利潤率為 45.0% 至 46.0%，Non-GAAP 稀釋每股盈餘為 $5.90 至 $6.20；外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 管理層表示取得第二家 major NPO/CPO 訂單（>$5B），判讀此將成為次世代光電互連的重要支柱；但因 packet 未包含 Q&A 逐字稿，法說會攻防細節無法判定。\n• 客戶廣度與流失率等指標本季缺乏數據支持，無法客觀評估客戶集中度風險與擴展質量。\n\n⚠️ 風險、反證與待驗證:\n• 現金與短期投資單季減少 $758.8M，若無強勁營運現金流回補，將影響資產負債表韌性。\n• 逾 $5B 採購承諾屬於管理層主張，若客戶延後下單或執行率不如預期，將為長線成長假設帶來反證風險。\n• 需持續追蹤 GAAP 與 Non-GAAP 損益差距之性質，以及下季營收能否順利達標。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:structure"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "LITE FY2027 Q1\n\n1. 💡 投資結論與邏輯:\n• 本季營收與 Non-GAAP 獲利顯著擴張，且管理層宣稱 NPO/CPO 業務取得第二家重大客戶並獲逾 $5B 採購承諾，為長期營運能見度提供支撐。\n• 營運規模擴大帶動固定成本攤銷效益，下季財測指引維持高營業利潤率，反映良好的獲利動能。\n\n2. 📊 關鍵數據與財測:\n• Q1 營收達 $1,262.6M，季增 25.5%、年增 136.5%，反映需求拉動；具體產品組合佔比未揭露。\n• Q1 GAAP 營業利潤率為 28.5%、Non-GAAP 營業利潤率達 42.3%，Adjusted EBITDA 達 $578.0M；GAAP 淨虧損為 $360.3M，與 Non-GAAP 獲利存在差距，反映非營運或一次性調整項目之影響。\n• Q1 季末現金、現金等價物及短期投資總額為 $2.0B（較上季減少 $758.8M），現金及現金等價物為 $1,272.2M。\n• Q2 官方指引預估營收為 $1.575B 至 $1.625B，Non-GAAP 營業利潤率為 45.0% 至 46.0%，Non-GAAP 稀釋每股盈餘為 $5.90 至 $6.20；外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 管理層表示取得第二家 major NPO/CPO 訂單（>$5B），判讀此將成為次世代光電互連的重要支柱；但因 packet 未包含 Q&A 逐字稿，法說會攻防細節無法判定。\n• 客戶廣度與流失率等指標本季缺乏數據支持，無法客觀評估客戶集中度風險與擴展質量。\n\n4. ⚠️ 風險、反證與待驗證:\n• 現金與短期投資單季減少 $758.8M，若無強勁營運現金流回補，將影響資產負債表韌性。\n• 逾 $5B 採購承諾屬於管理層主張，若客戶延後下單或執行率不如預期，將為長線成長假設帶來反證風險。\n• 需持續追蹤 GAAP 與 Non-GAAP 損益差距之性質，以及下季營收能否順利達標。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
           }
         }
       },
@@ -46972,6 +47273,67 @@
                 "period": "Q3 2026",
                 "comparison_value": "1243",
                 "comparison_period": "Q3 2025"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $13,377 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax value 13,377",
+                "metric": "Revenue",
+                "value": "13377",
+                "unit": "usd_millions",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit was $7,210 million for the period.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:GrossProfit value 7,210",
+                "metric": "Gross Profit",
+                "value": "7210",
+                "unit": "usd_millions",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income was $2,832 million for the period.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:OperatingIncomeLoss value 2,832",
+                "metric": "Operating Income",
+                "value": "2832",
+                "unit": "usd_millions",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $2,428 million and diluted EPS was $1.46 for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:NetIncomeLoss value 2,428",
+                "metric": "Net Income",
+                "value": "2428",
+                "unit": "usd_millions",
+                "period": "Q3 2026"
               }
             ]
           }
