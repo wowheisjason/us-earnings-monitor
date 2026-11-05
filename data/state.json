@@ -2073,6 +2073,72 @@
         "filing_date": "2026-11-04",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0001477333-26-000061:cloud-20260930.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001477333-26-000061:cloud-20260930.htm",
+      "ticker": "NET",
+      "title": "Cloudflare Form 10-Q — 10-Q",
+      "published_at": "2026-11-05T21:21:33.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-30",
+      "document_kind": "other",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001477333",
+        "accession": "0001477333-26-000061",
+        "form": "10-Q",
+        "document_type": "10-Q",
+        "filing_date": "2026-11-05",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0001477333-26-000060:q326exhibit991.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001477333-26-000060:q326exhibit991.htm",
+      "ticker": "NET",
+      "title": "Cloudflare Form 8-K — Earnings Release / Exhibit EX-99.1 — EX-99.1",
+      "published_at": "2026-11-05T21:18:21.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit991.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit991.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001477333",
+        "accession": "0001477333-26-000060",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-11-05",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "sec_edgar:0001477333-26-000060:q326exhibit992.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001477333-26-000060:q326exhibit992.htm",
+      "ticker": "NET",
+      "title": "Cloudflare Form 8-K — Earnings Release / Exhibit EX-99.2 — EX-99.2",
+      "published_at": "2026-11-05T21:18:21.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit992.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit992.htm",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "period_end": "2026-09-30",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001477333",
+        "accession": "0001477333-26-000060",
+        "form": "8-K",
+        "document_type": "EX-99.2",
+        "filing_date": "2026-11-05",
+        "period_from_exhibit_filename": null
+      }
     }
   },
   "events": {
@@ -2090,7 +2156,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2455,7 +2521,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2753,7 +2819,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3064,7 +3130,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3298,7 +3364,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3449,7 +3515,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3898,7 +3964,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4055,7 +4121,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4129,7 +4195,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4205,7 +4271,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4355,7 +4421,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4506,7 +4572,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4580,7 +4646,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4738,7 +4804,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5198,7 +5264,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5276,7 +5342,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5349,7 +5415,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5421,7 +5487,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5497,7 +5563,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5792,7 +5858,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5870,7 +5936,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6027,7 +6093,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6176,7 +6242,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-05T16:06:46-05:00",
+      "updated_at": "2026-11-05T17:42:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6236,14 +6302,89 @@
         "next_ir_retry_at": "2026-11-05T18:04:57-05:00"
       },
       "delivery": {}
+    },
+    "NET_2026-09-30_Q3": {
+      "event_id": "NET_2026-09-30_Q3",
+      "ticker": "NET",
+      "fiscal_year": 2026,
+      "quarter": "Q3",
+      "first_seen_at": "2026-11-05T17:40:13-05:00",
+      "period_end": "2026-09-30",
+      "documents": [
+        "sec_edgar:0001477333-26-000061:cloud-20260930.htm",
+        "sec_edgar:0001477333-26-000060:q326exhibit991.htm",
+        "sec_edgar:0001477333-26-000060:q326exhibit992.htm"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-11-05T17:40:13-05:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "gemini_search",
+            "ok": false,
+            "seconds": 0.311,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.157,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/NET-2026-Q3",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": false,
+            "seconds": 1.081,
+            "documents": 0,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.077,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/NET-2026-Q3"
+          }
+        ],
+        "ir_retrieval_last_at": "2026-11-05T17:40:13-05:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 3,
+          "kinds": {
+            "other": 1,
+            "financial_results": 2
+          },
+          "sources": {
+            "sec_edgar": 3
+          },
+          "has_primary_results": true,
+          "has_official_ir": false,
+          "has_transcript_or_qa": false,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": false,
+          "has_performance_review": false,
+          "has_presentation": false
+        },
+        "last_collection_check_at": "2026-11-05T17:40:13-05:00",
+        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
+        "official_ir_last_attempt_incomplete": "2026-11-05T17:40:13-05:00",
+        "next_ir_retry_at": "2026-11-05T17:55:13-05:00"
+      },
+      "delivery": {}
     }
   },
   "source_checks": {},
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-11-05T10:27:16-05:00",
-      "blocked_until": "2026-11-05T16:27:16-05:00",
+      "last_failure_at": "2026-11-05T17:40:13-05:00",
+      "blocked_until": "2026-11-05T23:40:13-05:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
@@ -30869,7 +31010,7 @@
     },
     "KLAC_2026-09-30_Q1": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "4ba4ca668df371d658e9e0b8f6348e9a56e0ea18b1a5a6fd7d83ebd2c90ad5e4",
+      "evidence_fingerprint": "624a21598027c1d7aa71f7eee10156195a10168e273d18db434c9215f25de9f8",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -30920,7 +31061,7 @@
               {
                 "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
                 "card_type": "fact",
-                "topic": "demand_revenue",
+                "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
                 "statement": "Net income loss was $1,548,588 thousand for the period.",
                 "materiality_candidate": 5,
@@ -30939,13 +31080,13 @@
               {
                 "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
                 "card_type": "fact",
-                "topic": "demand_revenue",
+                "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net income was $1,548,588 thousand for the period.",
+                "statement": "Net income was $678,610 thousand for the period from July 1, 2026 to September 30, 2026.",
                 "materiality_candidate": 5,
-                "quote": "klac-20260930",
+                "quote": "us-gaap:NetIncomeLoss",
                 "metric": "NetIncomeLoss",
-                "value": "1548588",
+                "value": "678,610",
                 "unit": "usd",
                 "metric_type": "other",
                 "card_id": "c2:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
@@ -30955,7 +31096,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
-                  "quote": "klac-20260930"
+                  "quote": "us-gaap:NetIncomeLoss"
                 }
               }
             ],
@@ -30963,6 +31104,474 @@
               "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured"
             ],
             "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:642ea77e3816f921fd932b09#u1",
+              "official_ir:642ea77e3816f921fd932b09#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues were $4,136 million for Q1 FY 2027.",
+                "materiality_candidate": 5,
+                "quote": "Total Revenues\n$4,136 million\n$3,658 million\n$3,210 million",
+                "metric": "total_revenues",
+                "value": "4136",
+                "unit": "USD_millions",
+                "period": "Q1 FY 2027",
+                "metric_type": "revenue"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $1,549 million and GAAP diluted EPS was $1.18 for Q1 FY 2027.",
+                "materiality_candidate": 5,
+                "quote": "Net Income\n$1,549 million\n$1,363 million\n$1,121 million\nNet Income per Diluted Share\n(1)\n$1.18\n$1.04\n$0.85",
+                "metric": "gaap_diluted_eps",
+                "value": "1.18",
+                "unit": "USD",
+                "period": "Q1 FY 2027",
+                "metric_type": "eps"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP net income was $1,603 million and Non-GAAP diluted EPS was $1.22 for Q1 FY 2027.",
+                "materiality_candidate": 5,
+                "quote": "Net Income\n$1,603 million\n$1,386 million\n$1,167 million\nNet Income per Diluted Share\n(1)\n$1.22\n$1.05\n$0.88",
+                "metric": "non_gaap_diluted_eps",
+                "value": "1.22",
+                "unit": "USD",
+                "period": "Q1 FY 2027",
+                "metric_type": "non_gaap_eps"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Total revenues for Q2 FY 2027 are expected to be in a range of $4.7 billion +/- $200 million.",
+                "materiality_candidate": 5,
+                "quote": "Total revenues are expected to be in a range of $4.7 billion +/- $200 million",
+                "metric": "total_revenues",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "4.5",
+                "midpoint": "4.7",
+                "high": "4.9",
+                "unit": "USD_billions"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP gross margin for Q2 FY 2027 is expected to be in a range of 61.8% +/- 1.0%.",
+                "materiality_candidate": 4,
+                "quote": "GAAP g\nross margin is expected to be in a range of 61.8% +/- 1.0%",
+                "metric": "gaap_gross_margin",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "60.8",
+                "midpoint": "61.8",
+                "high": "62.8",
+                "unit": "percent"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP gross margin for Q2 FY 2027 is expected to be in a range of 62.5% +/- 1.0%.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%",
+                "metric": "non_gaap_gross_margin",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "61.5",
+                "midpoint": "62.5",
+                "high": "63.5",
+                "unit": "percent"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP diluted EPS for Q2 FY 2027 is expected to be in a range of $1.41 +/- $0.11.",
+                "materiality_candidate": 5,
+                "quote": "GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11",
+                "metric": "gaap_diluted_eps",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "1.30",
+                "midpoint": "1.41",
+                "high": "1.52",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP diluted EPS for Q2 FY 2027 is expected to be in a range of $1.44 +/- $0.11.",
+                "materiality_candidate": 5,
+                "quote": "Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11",
+                "metric": "non_gaap_diluted_eps",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "1.33",
+                "midpoint": "1.44",
+                "high": "1.55",
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:642ea77e3816f921fd932b09#u3",
+              "official_ir:642ea77e3816f921fd932b09#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
+                "materiality_candidate": 4,
+                "quote": "Total revenues\n4,136,015\n3,657,556\n3,209,696",
+                "metric": "Total revenues",
+                "value": "4136015",
+                "unit": "USD_$K",
+                "period": "Q1 2027",
+                "comparison_value": "3209696",
+                "comparison_period": "Q1 2026"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities for the three months ended September 30, 2026 was $1,530,939 thousand.",
+                "materiality_candidate": 4,
+                "quote": "Net cash provided by operating activities\n1,530,939\n906,430\n1,161,591",
+                "metric": "Net cash provided by operating activities",
+                "value": "1530939",
+                "unit": "USD_$K",
+                "period": "Q1 2027",
+                "metric_type": "operating_cash_flow",
+                "comparison_value": "1161591",
+                "comparison_period": "Q1 2026"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Capital expenditures for the three months ended September 30, 2026 were $194,756 thousand.",
+                "materiality_candidate": 4,
+                "quote": "Capital expenditures\n(194,756)\n(89,288)\n(95,894)",
+                "metric": "Capital expenditures",
+                "value": "-194756",
+                "unit": "USD_$K",
+                "period": "Q1 2027",
+                "metric_type": "capex",
+                "comparison_value": "-95894",
+                "comparison_period": "Q1 2026"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:642ea77e3816f921fd932b09#u5",
+              "official_ir:642ea77e3816f921fd932b09#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
+                "materiality_candidate": 4,
+                "quote": "Total revenues\n$      4,136,015",
+                "metric": "Total revenues",
+                "value": "4136015",
+                "unit": "USD $",
+                "period": "Three Months Ended September 30, 2026",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow for the three months ended September 30, 2026 was $1,336,183 thousand.",
+                "materiality_candidate": 4,
+                "quote": "Free cash flow\n$      1,336,183",
+                "metric": "Free cash flow",
+                "value": "1336183",
+                "unit": "USD $",
+                "period": "Three Months Ended September 30, 2026",
+                "metric_type": "standard_fcf"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second Quarter Fiscal 2027 GAAP net income per diluted share guidance is $1.30 to $1.52.",
+                "materiality_candidate": 4,
+                "quote": "Second Quarter Fiscal 2027 Guidance\nReconciliation of GAAP Diluted EPS\nto Non-GAAP\nDiluted EPS\nThree Months Ending December 31, 2026\n(\nIn millions, except per share amounts\n)\nLow\nHigh\nGAAP net income per diluted share\n$1.30\n$1.52",
+                "metric": "GAAP net income per diluted share",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "low": "1.30",
+                "high": "1.52",
+                "unit": "USD $"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second Quarter Fiscal 2027 Non-GAAP net income per diluted share guidance is $1.33 to $1.55.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP net income per diluted share\n$1.33\n$1.55",
+                "metric": "Non-GAAP net income per diluted share",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "low": "1.33",
+                "high": "1.55",
+                "unit": "USD $"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_8": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:642ea77e3816f921fd932b09#u7",
+              "official_ir:acb56e8b319f3dec71cdf264#u1"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_9": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:acb56e8b319f3dec71cdf264#u2",
+              "official_ir:acb56e8b319f3dec71cdf264#u3"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_10": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:acb56e8b319f3dec71cdf264#u4",
+              "official_ir:acb56e8b319f3dec71cdf264#u5"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_11": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:acb56e8b319f3dec71cdf264#u6"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_12": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:acb56e8b319f3dec71cdf264#structured"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 4,136,015",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "4,136,015",
+                "unit": "usd"
+              },
+              {
+                "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income loss was $1,548,588 thousand for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:NetIncomeLoss, 1,548,588",
+                "metric": "NetIncomeLoss",
+                "value": "1,548,588",
+                "unit": "usd"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_12": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 4,136,015",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "4,136,015",
+                "unit": "usd",
+                "card_id": "c1:official_ir:acb56e8b319f3dec71cdf264#structured",
+                "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+                }
+              },
+              {
+                "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income loss was $1,548,588 thousand for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:NetIncomeLoss, 1,548,588",
+                "metric": "NetIncomeLoss",
+                "value": "1,548,588",
+                "unit": "usd",
+                "card_id": "c2:official_ir:acb56e8b319f3dec71cdf264#structured",
+                "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                  "quote": "us-gaap:OtherAssetsCurrent"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:acb56e8b319f3dec71cdf264#structured"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_13": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2506a99482799756a2f0dcba#u1",
+              "official_ir:2506a99482799756a2f0dcba#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Common stock shares outstanding as of October 26, 2026 were 1,302,962,435.",
+                "materiality_candidate": 3,
+                "quote": "As of October 26, 2026, there were \n1,302,962,435\n shares of the registrant’s Common Stock, $0.001 par value per share, outstanding.",
+                "metric": "shares_outstanding",
+                "value": 1302962435,
+                "period": "as_of_2026-10-26"
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Accounts receivable, net was $3,072,087 thousand as of September 30, 2026, compared to $2,889,208 thousand as of June 30, 2026, an increase of 6%.",
+                "materiality_candidate": 3,
+                "quote": "Accounts receivable, net\n$\n3,072,087\n\n$\n2,889,208\n\n$\n182,879\n\n6\n\n%",
+                "metric": "accounts_receivable_net",
+                "value": 3072087,
+                "unit": "USD_thousands",
+                "period": "Q1_2027",
+                "comparison_value": 2889208,
+                "comparison_period": "Q4_2026",
+                "reported_change": 6,
+                "metric_type": "other"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_14": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2506a99482799756a2f0dcba#u3",
+              "official_ir:2506a99482799756a2f0dcba#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Significant purchase commitments primarily for material, services, supplies and asset purchases were approximately $8.87 billion as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Our estimate of our significant purchase commitments primarily for material, services, supplies and asset purchases is approximately $\n8.87\n billion as of September 30, 2026",
+                "metric": "purchase_commitments",
+                "value": "8.87",
+                "unit": "billion_usd",
+                "period": "as_of_2026-09-30",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Committed $100.0 million for future payment obligations under the Cash LTI Plan as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "As of September 30, 2026, we have committed $\n100.0\n million for future payment obligations under our Cash LTI Plan.",
+                "metric": "cash_lti_plan_commitments",
+                "value": "100.0",
+                "unit": "million_usd",
+                "period": "as_of_2026-09-30",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                "card_type": "fact",
+                "topic": "risk",
+                "fact_class": "objective_fact",
+                "statement": "Guarantee arrangements available through financial institutions were up to $180.6 million, with $147.2 million issued as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "We maintain guarantee arrangements available through various financial institutions for up to $\n180.6\n million, of which $\n147.2\nmillion had been issued as of September 30, 2026",
+                "metric": "guarantees_issued",
+                "value": "147.2",
+                "unit": "million_usd",
+                "period": "as_of_2026-09-30",
+                "metric_type": "other"
+              }
+            ]
           }
         }
       },
@@ -30972,7 +31581,7 @@
     },
     "INTC_2026-09-26_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "305f071a7312c6baa423cac19dd46911dfc49cb4b03736dfe330eab6c7017af5",
+      "evidence_fingerprint": "ebbc06035a168dadd5ef4b47e0fe93cfccf6736f522dbf8c2a3dcb5ac38d196d",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -30980,7 +31589,26 @@
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2"
             ],
-            "cards": []
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
+                "card_type": "fact",
+                "topic": "other",
+                "fact_class": "objective_fact",
+                "statement": "Intel Form 10-Q XBRL header data for Q3 2026 covering period ended September 26, 2026.",
+                "materiality_candidate": 1,
+                "quote": "intc-20260926"
+              },
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2",
+                "card_type": "fact",
+                "topic": "other",
+                "fact_class": "objective_fact",
+                "statement": "Intel Form 10-Q segment and operating unit context definitions for Q3 2026.",
+                "materiality_candidate": 1,
+                "quote": "intc:IntelFoundryMember"
+              }
+            ]
           }
         },
         "v5_extract_batch_2": {
@@ -30989,7 +31617,26 @@
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u3",
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u4"
             ],
-            "cards": []
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u3",
+                "card_type": "other",
+                "topic": "other",
+                "fact_class": "unknown",
+                "statement": "XBRL taxonomic metadata containing segments and dates for various company entities and programs.",
+                "materiality_candidate": 1,
+                "quote": "ndPhysicalAIGroupMember"
+              },
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u4",
+                "card_type": "other",
+                "topic": "other",
+                "fact_class": "unknown",
+                "statement": "XBRL taxonomic metadata continuation covering restructuring plans, debt instruments, and subsidiaries.",
+                "materiality_candidate": 1,
+                "quote": ":NondesignatedMember"
+              }
+            ]
           }
         },
         "v5_extract_batch_3": {
@@ -31019,6 +31666,19 @@
                 "value": "16,513",
                 "unit": "usd",
                 "period": "c-3"
+              },
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit was 7,096 million USD for context c-3.",
+                "materiality_candidate": 3,
+                "quote": "us-gaap:GrossProfit",
+                "metric": "GrossProfit",
+                "value": "7,096",
+                "unit": "usd",
+                "period": "c-3"
               }
             ]
           }
@@ -31031,14 +31691,36 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD for context c-3.",
+                "statement": "Revenue from contract with customer excluding assessed tax was not explicitly detailed in the provided excerpt.",
                 "materiality_candidate": 3,
                 "quote": "intc-20260926",
                 "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
-                "value": "16,513",
+                "value": null,
                 "unit": "usd",
                 "period": "c-3",
                 "card_id": "c1:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
+                "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
+                  "quote": "intc-20260926"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit was not explicitly detailed in the provided excerpt.",
+                "materiality_candidate": 3,
+                "quote": "intc-20260926",
+                "metric": "GrossProfit",
+                "value": null,
+                "unit": "usd",
+                "period": "c-3",
+                "card_id": "c2:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
                 "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
                 "source": "sec_edgar",
                 "provenance": "primary_or_official",
@@ -31053,6 +31735,211 @@
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured"
             ],
             "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:c16de595c99f19268b30020a#u1",
+              "official_ir:c16de595c99f19268b30020a#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third-quarter revenue was $16.5 billion, up 21% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Third-quarter revenue was $16.5 billion, up 21% year-over-year (YoY).",
+                "metric": "revenue",
+                "value": "16.5",
+                "unit": "billion USD",
+                "period": "Q3 2026",
+                "reported_change": "up 21%",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Third-quarter GAAP earnings per share attributable to Intel was $0.60; non-GAAP EPS was $0.52.",
+                "materiality_candidate": 4,
+                "quote": "Third-quarter earnings per share (EPS) attributable to Intel was $0.60; non-GAAP EPS attributable to Intel was $0.52.",
+                "metric": "diluted earnings per share",
+                "value": "0.60",
+                "unit": "USD",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion.",
+                "materiality_candidate": 5,
+                "quote": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion",
+                "metric": "revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "15.0",
+                "high": "16.0",
+                "unit": "billion USD"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting fourth-quarter GAAP EPS of $0.10 and non-GAAP EPS of $0.25.",
+                "materiality_candidate": 5,
+                "quote": "forecasting fourth-quarter EPS attributable to Intel of $0.10 and non-GAAP EPS attributable to Intel of $0.25.",
+                "metric": "diluted earnings per share",
+                "period": "Q4 2026",
+                "guidance_type": "point",
+                "value": "0.10",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "In the third quarter, the company generated $5.1 billion in cash from operations.",
+                "materiality_candidate": 4,
+                "quote": "In the third quarter, the company generated $5.1 billion in cash from operations.",
+                "metric": "cash from operations",
+                "value": "5.1",
+                "unit": "billion USD",
+                "period": "Q3 2026",
+                "metric_type": "operating_cash_flow"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:c16de595c99f19268b30020a#u3",
+              "official_ir:c16de595c99f19268b30020a#u4"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:c16de595c99f19268b30020a#u5",
+              "official_ir:c16de595c99f19268b30020a#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net revenue for the three months ended September 26, 2026 was $16,513 million compared to $13,653 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net revenue\n$\n16,513\n$\n13,653",
+                "metric": "Net revenue",
+                "value": 16513,
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": 13653,
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit for the three months ended September 26, 2026 was $7,096 million compared to $5,218 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Gross profit\n7,096\n5,218",
+                "metric": "Gross profit",
+                "value": 7096,
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": 5218,
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for the three months ended September 26, 2026 was $2,522 million compared to $683 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Operating income (loss)\n2,522\n683",
+                "metric": "Operating income",
+                "value": 2522,
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": 683,
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities for the nine months ended September 26, 2026 was $13,184 million compared to $5,409 million for the nine months ended September 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net cash provided by (used for) operating activities\n13,184\n5,409",
+                "metric": "Net cash provided by operating activities",
+                "value": 13184,
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": 5409,
+                "comparison_period": "9M 2025",
+                "metric_type": "operating_cash_flow"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Additions to property, plant, and equipment for the nine months ended September 26, 2026 were $10,216 million compared to $11,158 million for the nine months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Additions to property, plant, and equipment\n(10,216\n)\n(11,158\n)",
+                "metric": "Additions to property, plant, and equipment",
+                "value": -10216,
+                "unit": "USD $M",
+                "period": "9M 2026",
+                "comparison_value": -11158,
+                "comparison_period": "9M 2025",
+                "metric_type": "capex"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_8": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:c16de595c99f19268b30020a#u7",
+              "official_ir:c16de595c99f19268b30020a#u8"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u7",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Projected non-GAAP tax rates are 11% for 2026 and 12% for 2025.",
+                "materiality_candidate": 3,
+                "quote": "For 2026 and 2025, we determined the projected non-GAAP tax rate to be 11% and 12%, respectively."
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u8",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Q3 2026 and Q3 2025 per share calculations exclude a gain of $120 million and a loss of $2 million, respectively, related to the mark-to-market of contingent Escrowed Shares.",
+                "materiality_candidate": 3,
+                "quote": "Q3 2026 and Q3 2025 per share calculations exclude the gain of $120 million and loss of $2 million, respectively, related to the mark-to-market of contingent Escrowed Shares that were included in the weighted average shares of common stock outstanding-diluted during the period."
+              }
+            ]
           }
         }
       },
@@ -44254,7 +45141,7 @@
     },
     "AMD_2026-09-26_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "ab7be2edf70059cf2033546dfd2caef7da886091ac8fcbfb44f022213d1b6627",
+      "evidence_fingerprint": "cff6531950618db2552f20855c2a58159de6edb0a45a2b03fe4a40aa8137d0d4",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -44288,10 +45175,10 @@
                 "fact_class": "objective_fact",
                 "statement": "Net revenue was $13,377 million for the three months ended September 26, 2026, compared to $9,246 million for the three months ended September 27, 2025.",
                 "materiality_candidate": 5,
-                "quote": "Net revenue\n$\n13,377\n$\n9,246",
+                "quote": "Net revenue\n$\n13,377\n$\n9,246\n$\n35,166\n$\n24,369",
                 "metric": "Net revenue",
                 "value": "13377",
-                "unit": "$M",
+                "unit": "USD $M",
                 "period": "Q3 2026",
                 "comparison_value": "9246",
                 "comparison_period": "Q3 2025"
@@ -44302,11 +45189,11 @@
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
                 "statement": "Gross profit was $7,210 million for the three months ended September 26, 2026, compared to $4,780 million for the three months ended September 27, 2025.",
-                "materiality_candidate": 5,
-                "quote": "Gross profit\n7,210\n4,780",
+                "materiality_candidate": 4,
+                "quote": "Gross profit\n7,210\n4,780\n18,829\n11,575",
                 "metric": "Gross profit",
                 "value": "7210",
-                "unit": "$M",
+                "unit": "USD $M",
                 "period": "Q3 2026",
                 "comparison_value": "4780",
                 "comparison_period": "Q3 2025"
@@ -44318,10 +45205,10 @@
                 "fact_class": "objective_fact",
                 "statement": "Operating income was $2,832 million for the three months ended September 26, 2026, compared to $1,270 million for the three months ended September 27, 2025.",
                 "materiality_candidate": 5,
-                "quote": "Operating income\n2,832\n1,270",
+                "quote": "Operating income\n2,832\n1,270\n6,298\n1,942",
                 "metric": "Operating income",
                 "value": "2832",
-                "unit": "$M",
+                "unit": "USD $M",
                 "period": "Q3 2026",
                 "comparison_value": "1270",
                 "comparison_period": "Q3 2025"
@@ -44333,12 +45220,27 @@
                 "fact_class": "objective_fact",
                 "statement": "Net income was $2,428 million for the three months ended September 26, 2026, compared to $1,243 million for the three months ended September 27, 2025.",
                 "materiality_candidate": 5,
-                "quote": "Net income\n$\n2,428\n$\n1,243",
+                "quote": "Net income\n$\n2,428\n$\n1,243\n$\n6,108\n$\n2,824",
                 "metric": "Net income",
                 "value": "2428",
-                "unit": "$M",
+                "unit": "USD $M",
                 "period": "Q3 2026",
                 "comparison_value": "1243",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Diluted earnings per share from continuing operations was $1.46 for the three months ended September 26, 2026, compared to $0.71 for the three months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Diluted earnings from continuing operations\n$\n1.46\n$\n0.71\n$\n3.69\n$\n1.62",
+                "metric": "Diluted earnings per share from continuing operations",
+                "value": "1.46",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": "0.71",
                 "comparison_period": "Q3 2025"
               }
             ]
@@ -44358,9 +45260,9 @@
                 "statement": "Revenue from contract with customer excluding assessed tax was $13,377 million for the period.",
                 "materiality_candidate": 5,
                 "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax value 13,377",
-                "metric": "Revenue",
+                "metric": "revenue",
                 "value": "13377",
-                "unit": "usd_millions",
+                "unit": "USD",
                 "period": "Q3 2026"
               },
               {
@@ -44369,11 +45271,11 @@
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
                 "statement": "Gross profit was $7,210 million for the period.",
-                "materiality_candidate": 4,
+                "materiality_candidate": 5,
                 "quote": "us-gaap:GrossProfit value 7,210",
-                "metric": "Gross Profit",
+                "metric": "gross_profit",
                 "value": "7210",
-                "unit": "usd_millions",
+                "unit": "USD",
                 "period": "Q3 2026"
               },
               {
@@ -44382,27 +45284,2192 @@
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
                 "statement": "Operating income was $2,832 million for the period.",
-                "materiality_candidate": 4,
+                "materiality_candidate": 5,
                 "quote": "us-gaap:OperatingIncomeLoss value 2,832",
-                "metric": "Operating Income",
+                "metric": "operating_income",
                 "value": "2832",
-                "unit": "usd_millions",
+                "unit": "USD",
                 "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $2,428 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:NetIncomeLoss value 2,428",
+                "metric": "net_income",
+                "value": "2428",
+                "unit": "USD",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_4": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $13,377 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "Net revenue\n$\n13,377",
+                "metric": "revenue",
+                "value": "13377",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net revenue\n$\n13,377"
+                }
               },
               {
                 "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net income was $2,428 million and diluted EPS was $1.46 for the period.",
+                "statement": "Gross profit was $7,210 million for the period.",
                 "materiality_candidate": 5,
-                "quote": "us-gaap:NetIncomeLoss value 2,428",
-                "metric": "Net Income",
+                "quote": "Gross profit\n7,210",
+                "metric": "gross_profit",
+                "value": "7210",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c2:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Gross profit\n7,210"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income was $2,832 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "Operating income\n2,832",
+                "metric": "operating_income",
+                "value": "2832",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c3:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Operating income\n2,832"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $2,428 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$\n2,428",
+                "metric": "net_income",
                 "value": "2428",
-                "unit": "usd_millions",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c4:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net income\n$\n2,428"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:50e36827f339577a87ad816d#u1",
+              "official_ir:50e36827f339577a87ad816d#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter 2026 revenue was $13,377 million, up 45% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46.",
+                "metric": "Revenue",
+                "value": "13,377",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "9,246",
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 45%",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter 2026 GAAP gross margin was 54% and non-GAAP gross margin was 56%.",
+                "materiality_candidate": 4,
+                "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46. On a non-GAAP\n(*)\nbasis, gross margin was 56%",
+                "metric": "Gross Margin",
+                "value": "54",
+                "unit": "PERCENT",
+                "period": "Q3 2026",
+                "comparison_value": "52",
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 2 ppts",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year, driven by strong demand for AMD EPYC™ processors and the launch of AMD Instinct™ MI450 Series GPUs.",
+                "metric": "Data Center segment revenue",
+                "value": "8.5",
+                "unit": "USD_B",
+                "period": "Q3 2026",
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 97%",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%.",
+                "materiality_candidate": 5,
+                "quote": "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%.",
+                "metric": "Revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": "17,000",
+                "low": "16,490",
+                "midpoint": "17,000",
+                "high": "17,510",
+                "unit": "USD_M"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP gross margin is expected to be approximately 55% for the fourth quarter of 2026.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP gross margin is expected to be approximately 55%.",
+                "metric": "Non-GAAP Gross Margin",
+                "period": "Q4 2026",
+                "guidance_type": "point",
+                "value": "55",
+                "unit": "PERCENT"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                "card_type": "customer",
+                "topic": "customer_usage",
+                "fact_class": "objective_fact",
+                "statement": "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on AMD Helios rackscale solutions.",
+                "materiality_candidate": 4,
+                "quote": "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on the first\nAMD Helios\n™ rackscale solutions, powered by AMD Instinct MI450 Series GPUs and 6\nth\nGen AMD EPYC CPUs.",
+                "customer": "Anthropic, Meta, Microsoft, OpenAI, Oracle Cloud Infrastructure",
+                "product": "AMD Helios rackscale solutions",
+                "use_case": "running models and workloads"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:50e36827f339577a87ad816d#u3",
+              "official_ir:50e36827f339577a87ad816d#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $2,428 million or $1.46 per share for the three months ended September 26, 2026.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income / earnings per share\n$\n2,428\n$\n1.46",
+                "metric": "GAAP net income",
+                "value": "2428",
+                "unit": "USD_$M",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP gross margin was 54% for the three months ended September 26, 2026.",
+                "materiality_candidate": 3,
+                "quote": "GAAP gross margin\n54\n%",
+                "metric": "GAAP gross margin",
+                "value": "54",
+                "unit": "%",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP gross margin was 56% for the three months ended September 26, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Non-GAAP gross margin\n56\n%",
+                "metric": "Non-GAAP gross margin",
+                "value": "56",
+                "unit": "%",
                 "period": "Q3 2026"
               }
             ]
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:50e36827f339577a87ad816d#u5",
+              "official_ir:50e36827f339577a87ad816d#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net revenue for the third quarter of 2026 was $13,377 million.",
+                "materiality_candidate": 5,
+                "quote": "Net revenue\n$\n13,377",
+                "metric": "Net revenue",
+                "value": "13377",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "9246",
+                "comparison_period": "Q3 2025",
+                "reported_change": "44.7%"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit for the third quarter of 2026 was $7,210 million, with a gross margin of 54%.",
+                "materiality_candidate": 4,
+                "quote": "Gross profit\n7,210\nGross margin\n54\n%",
+                "metric": "Gross profit",
+                "value": "7210",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "4780",
+                "comparison_period": "Q3 2025"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_7": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit for the third quarter of 2026 was $7,210 million, with a gross margin of 54%.",
+                "materiality_candidate": 4,
+                "quote": "Gross profit ($M)\n$13,377\n$9,246\nUp 45%\n$11,536\nUp 16%\nGross profit ($M)\n$7,210\n$4,780\nUp 51%\n$6,203\nUp 16%\nGross margin\n54%\n52%\nUp 2 ppts\n54%\nFlat",
+                "metric": "Gross profit",
+                "value": "7210",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "4780",
+                "comparison_period": "Q3 2025",
+                "card_id": "c2:official_ir:50e36827f339577a87ad816d#u6",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Gross profit ($M)\n$7,210\n$4,780"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:50e36827f339577a87ad816d#u6"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_8": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:50e36827f339577a87ad816d#u7",
+              "official_ir:50e36827f339577a87ad816d#u8"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Data Center segment net revenue was $8,546 million for the three months ended September 26, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Data Center Segment\n$\n8,546",
+                "metric": "Data Center Segment net revenue",
+                "value": "8546",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "4341",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net revenue was $13,377 million for the three months ended September 26, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Total net revenue\n$\n13,377",
+                "metric": "Total net revenue",
+                "value": "13377",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "9246",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u8",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow was $554 million for the three months ended September 26, 2026, with purchases of property and equipment of $648 million.",
+                "materiality_candidate": 4,
+                "quote": "Free cash flow\n$\n554",
+                "metric": "Free cash flow",
+                "value": "554",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1530",
+                "comparison_period": "Q3 2025",
+                "metric_type": "standard_fcf",
+                "reconciliation": [
+                  {
+                    "item": "GAAP net cash provided by operating activities of continuing operations",
+                    "value": "1202",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "GAAP net cash provided by operating activities of continuing operations\n$\n1,202"
+                    }
+                  },
+                  {
+                    "item": "Purchases of property and equipment",
+                    "value": "-648",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Purchases of property and equipment\n(648\n)"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_9": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:50e36827f339577a87ad816d#u9",
+              "official_ir:fcb9e77270940ced63a108ca#u1"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_10": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:d1d89f8a269c8feb08af83b5#u1",
+              "official_ir:d1d89f8a269c8feb08af83b5#u2"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_11": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:16d65984b95824f3e986f1aa#u1",
+              "official_ir:16d65984b95824f3e986f1aa#u2"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_12": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2f47417b8390c026e26dd5f4#u1",
+              "official_ir:9082229c62a0fa388826830b#u1"
+            ],
+            "cards": []
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "title": "AMD Form 10-Q — 10-Q",
+                  "document_kind": "other",
+                  "selection_mode": "full",
+                  "raw_chars": 274579,
+                  "extracted_chars": 24000,
+                  "source_truncated": false,
+                  "raw_paragraphs": 3,
+                  "relevant_paragraphs": 3,
+                  "unit_count": 7,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "title": "AMD Reports Third Quarter 2026 Financial Results",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 33256,
+                  "extracted_chars": 33256,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 9,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:fcb9e77270940ced63a108ca",
+                  "title": "AMD to Report Fiscal Third Quarter 2026 Financial Results",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 2717,
+                  "extracted_chars": 2717,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:d1d89f8a269c8feb08af83b5",
+                  "title": "Financial Information Financial Information Financial Results SEC Filings",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 4848,
+                  "extracted_chars": 4848,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 2,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:16d65984b95824f3e986f1aa",
+                  "title": "Financial Results",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 4848,
+                  "extracted_chars": 4848,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 2,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:2f47417b8390c026e26dd5f4",
+                  "title": "ir.amd.com AMD to Report Fiscal Third Quarter 2026 Financial Results Webcasts of the presentations can be accessed on AMD’s Investor Relations website: ir.amd.com .",
+                  "document_kind": "presentation",
+                  "selection_mode": "full",
+                  "raw_chars": 1637,
+                  "extracted_chars": 1637,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:9082229c62a0fa388826830b",
+                  "title": "Accessibility Statement AMD to Report Fiscal Third Quarter 2026 Financial Results Terms and Conditions Privacy Trademarks Supply Chain Transparency Fair & Open Competition UK Tax Strategy Accessibilit",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 3294,
+                  "extracted_chars": 3294,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u1",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u2",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u3",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u4",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u5",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "official_ir:50e36827f339577a87ad816d#u1",
+                "official_ir:50e36827f339577a87ad816d#u2",
+                "official_ir:50e36827f339577a87ad816d#u3",
+                "official_ir:50e36827f339577a87ad816d#u4",
+                "official_ir:50e36827f339577a87ad816d#u5",
+                "official_ir:50e36827f339577a87ad816d#u6",
+                "official_ir:50e36827f339577a87ad816d#u7",
+                "official_ir:50e36827f339577a87ad816d#u8",
+                "official_ir:50e36827f339577a87ad816d#u9",
+                "official_ir:fcb9e77270940ced63a108ca#u1",
+                "official_ir:d1d89f8a269c8feb08af83b5#u1",
+                "official_ir:d1d89f8a269c8feb08af83b5#u2",
+                "official_ir:16d65984b95824f3e986f1aa#u1",
+                "official_ir:16d65984b95824f3e986f1aa#u2",
+                "official_ir:2f47417b8390c026e26dd5f4#u1",
+                "official_ir:9082229c62a0fa388826830b#u1"
+              ],
+              "expected_unit_count": 23,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u1",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u2",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u3",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u4",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u5",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "official_ir:50e36827f339577a87ad816d#u1",
+                "official_ir:50e36827f339577a87ad816d#u2",
+                "official_ir:50e36827f339577a87ad816d#u3",
+                "official_ir:50e36827f339577a87ad816d#u4",
+                "official_ir:50e36827f339577a87ad816d#u5",
+                "official_ir:50e36827f339577a87ad816d#u6",
+                "official_ir:50e36827f339577a87ad816d#u7",
+                "official_ir:50e36827f339577a87ad816d#u8",
+                "official_ir:50e36827f339577a87ad816d#u9",
+                "official_ir:fcb9e77270940ced63a108ca#u1",
+                "official_ir:d1d89f8a269c8feb08af83b5#u1",
+                "official_ir:d1d89f8a269c8feb08af83b5#u2",
+                "official_ir:16d65984b95824f3e986f1aa#u1",
+                "official_ir:16d65984b95824f3e986f1aa#u2",
+                "official_ir:2f47417b8390c026e26dd5f4#u1",
+                "official_ir:9082229c62a0fa388826830b#u1"
+              ],
+              "processed_unit_count": 23,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 23,
+                "processed_unit_count": 23,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "cash_capex": 1,
+                "customer_usage": 1,
+                "demand_revenue": 10,
+                "guidance": 2,
+                "margin_unit_economics": 9
+              },
+              "selection": {
+                "raw_card_count": 23,
+                "deduped_card_count": 23,
+                "selected_card_count": 23,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 1,
+                  "customer_usage": 1,
+                  "demand_revenue": 10,
+                  "guidance": 2,
+                  "margin_unit_economics": 7
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:official_ir:50e36827f339577a87ad816d#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Third quarter 2026 revenue was $13,377 million, up 45% year-over-year.",
+                  "metric": "Revenue",
+                  "value": "13,377",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "comparison_value": "9,246",
+                  "comparison_period": "Q3 2025",
+                  "reported_change": "Up 45%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46.",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c3:official_ir:50e36827f339577a87ad816d#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year.",
+                  "metric": "Data Center segment revenue",
+                  "value": "8.5",
+                  "unit": "USD_B",
+                  "period": "Q3 2026",
+                  "comparison_period": "Q3 2025",
+                  "reported_change": "Up 97%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year, driven by strong demand for AMD EPYC™ processors and the launch of AMD Instinct™ MI450 Series GPUs.",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c1:official_ir:50e36827f339577a87ad816d#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net revenue for the third quarter of 2026 was $13,377 million.",
+                  "metric": "Net revenue",
+                  "value": "13377",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "comparison_value": "9246",
+                  "comparison_period": "Q3 2025",
+                  "reported_change": "44.7%",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u6",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Net revenue\n$\n13,377"
+                },
+                {
+                  "card_id": "c1:official_ir:50e36827f339577a87ad816d#u7",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Data Center segment net revenue was $8,546 million for the three months ended September 26, 2026.",
+                  "metric": "Data Center Segment net revenue",
+                  "value": "8546",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "4341",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u7",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Data Center Segment\n$\n8,546"
+                },
+                {
+                  "card_id": "c2:official_ir:50e36827f339577a87ad816d#u7",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total net revenue was $13,377 million for the three months ended September 26, 2026.",
+                  "metric": "Total net revenue",
+                  "value": "13377",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "9246",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u7",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Total net revenue\n$\n13,377"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Revenue from contract with customer excluding assessed tax was $13,377 million for the period.",
+                  "metric": "revenue",
+                  "value": "13377",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net revenue\n$\n13,377"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net income was $2,428 million for the period.",
+                  "metric": "net_income",
+                  "value": "2428",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net income\n$\n2,428"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net revenue was $13,377 million for the three months ended September 26, 2026, compared to $9,246 million for the three months ended September 27, 2025.",
+                  "metric": "Net revenue",
+                  "value": "13377",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "9246",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net revenue\n$\n13,377\n$\n9,246\n$\n35,166\n$\n24,369"
+                },
+                {
+                  "card_id": "c4:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Net income was $2,428 million for the three months ended September 26, 2026, compared to $1,243 million for the three months ended September 27, 2025.",
+                  "metric": "Net income",
+                  "value": "2428",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "1243",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net income\n$\n2,428\n$\n1,243\n$\n6,108\n$\n2,824"
+                },
+                {
+                  "card_id": "c1:official_ir:50e36827f339577a87ad816d#u3",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "GAAP net income was $2,428 million or $1.46 per share for the three months ended September 26, 2026.",
+                  "metric": "GAAP net income",
+                  "value": "2428",
+                  "unit": "USD_$M",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "GAAP net income / earnings per share\n$\n2,428\n$\n1.46"
+                },
+                {
+                  "card_id": "c4:official_ir:50e36827f339577a87ad816d#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%.",
+                  "metric": "Revenue",
+                  "value": "17,000",
+                  "unit": "USD_M",
+                  "period": "Q4 2026",
+                  "low": "16,490",
+                  "midpoint": "17,000",
+                  "high": "17,510",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%.",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c5:official_ir:50e36827f339577a87ad816d#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Non-GAAP gross margin is expected to be approximately 55% for the fourth quarter of 2026.",
+                  "metric": "Non-GAAP Gross Margin",
+                  "value": "55",
+                  "unit": "PERCENT",
+                  "period": "Q4 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Non-GAAP gross margin is expected to be approximately 55%.",
+                  "guidance_type": "point"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross profit was $7,210 million for the period.",
+                  "metric": "gross_profit",
+                  "value": "7210",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Gross profit\n7,210"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Operating income was $2,832 million for the period.",
+                  "metric": "operating_income",
+                  "value": "2832",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Operating income\n2,832"
+                },
+                {
+                  "card_id": "c3:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Operating income was $2,832 million for the three months ended September 26, 2026, compared to $1,270 million for the three months ended September 27, 2025.",
+                  "metric": "Operating income",
+                  "value": "2832",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "1270",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Operating income\n2,832\n1,270\n6,298\n1,942"
+                },
+                {
+                  "card_id": "c2:official_ir:50e36827f339577a87ad816d#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Third quarter 2026 GAAP gross margin was 54% and non-GAAP gross margin was 56%.",
+                  "metric": "Gross Margin",
+                  "value": "54",
+                  "unit": "PERCENT",
+                  "period": "Q3 2026",
+                  "comparison_value": "52",
+                  "comparison_period": "Q3 2025",
+                  "reported_change": "Up 2 ppts",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46. On a non-GAAP\n(*)\nbasis, gross margin was 56%",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c1:official_ir:50e36827f339577a87ad816d#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross profit for the third quarter of 2026 was $7,210 million, with a gross margin of 54%.",
+                  "metric": "Gross profit",
+                  "value": "7210",
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "comparison_value": "4780",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u6",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Gross profit ($M)\n$13,377\n$9,246\nUp 45%\n$11,536\nUp 16%\nGross profit ($M)\n$7,210\n$4,780\nUp 51%\n$6,203\nUp 16%\nGross margin\n54%\n52%\nUp 2 ppts\n54%\nFlat"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross profit was $7,210 million for the three months ended September 26, 2026, compared to $4,780 million for the three months ended September 27, 2025.",
+                  "metric": "Gross profit",
+                  "value": "7210",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "4780",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Gross profit\n7,210\n4,780\n18,829\n11,575"
+                },
+                {
+                  "card_id": "c5:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Diluted earnings per share from continuing operations was $1.46 for the three months ended September 26, 2026, compared to $0.71 for the three months ended September 27, 2025.",
+                  "metric": "Diluted earnings per share from continuing operations",
+                  "value": "1.46",
+                  "unit": "USD",
+                  "period": "Q3 2026",
+                  "comparison_value": "0.71",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Diluted earnings from continuing operations\n$\n1.46\n$\n0.71\n$\n3.69\n$\n1.62"
+                },
+                {
+                  "card_id": "c2:official_ir:50e36827f339577a87ad816d#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "GAAP gross margin was 54% for the three months ended September 26, 2026.",
+                  "metric": "GAAP gross margin",
+                  "value": "54",
+                  "unit": "%",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "GAAP gross margin\n54\n%"
+                },
+                {
+                  "card_id": "c3:official_ir:50e36827f339577a87ad816d#u3",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Non-GAAP gross margin was 56% for the three months ended September 26, 2026.",
+                  "metric": "Non-GAAP gross margin",
+                  "value": "56",
+                  "unit": "%",
+                  "period": "Q3 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Non-GAAP gross margin\n56\n%"
+                },
+                {
+                  "card_id": "c3:official_ir:50e36827f339577a87ad816d#u8",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "Free cash flow was $554 million for the three months ended September 26, 2026, with purchases of property and equipment of $648 million.",
+                  "metric": "Free cash flow",
+                  "value": "554",
+                  "unit": "USD $M",
+                  "period": "Q3 2026",
+                  "comparison_value": "1530",
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u8",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Free cash flow\n$\n554",
+                  "metric_type": "standard_fcf",
+                  "reconciliation": [
+                    {
+                      "item": "GAAP net cash provided by operating activities of continuing operations",
+                      "value": "1202",
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "GAAP net cash provided by operating activities of continuing operations\n$\n1,202"
+                      }
+                    },
+                    {
+                      "item": "Purchases of property and equipment",
+                      "value": "-648",
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "Purchases of property and equipment\n(648\n)"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "card_id": "c6:official_ir:50e36827f339577a87ad816d#u2",
+                  "card_type": "customer",
+                  "topic": "customer_usage",
+                  "statement": "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on AMD Helios rackscale solutions.",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "customer": "Anthropic, Meta, Microsoft, OpenAI, Oracle Cloud Infrastructure",
+                  "product": "AMD Helios rackscale solutions",
+                  "use_case": "running models and workloads",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on the first\nAMD Helios\n™ rackscale solutions, powered by AMD Instinct MI450 Series GPUs and 6\nth\nGen AMD EPYC CPUs."
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net revenue was $13,377 million for the three months ended September 26, 2026, compared to $9,246 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net revenue\n$\n13,377\n$\n9,246\n$\n35,166\n$\n24,369",
+                "metric": "Net revenue",
+                "value": "13377",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "9246",
+                "comparison_period": "Q3 2025",
+                "card_id": "c1:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net revenue\n$\n13,377\n$\n9,246\n$\n35,166\n$\n24,369"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit was $7,210 million for the three months ended September 26, 2026, compared to $4,780 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Gross profit\n7,210\n4,780\n18,829\n11,575",
+                "metric": "Gross profit",
+                "value": "7210",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "4780",
+                "comparison_period": "Q3 2025",
+                "card_id": "c2:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Gross profit\n7,210\n4,780\n18,829\n11,575"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income was $2,832 million for the three months ended September 26, 2026, compared to $1,270 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Operating income\n2,832\n1,270\n6,298\n1,942",
+                "metric": "Operating income",
+                "value": "2832",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1270",
+                "comparison_period": "Q3 2025",
+                "card_id": "c3:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Operating income\n2,832\n1,270\n6,298\n1,942"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $2,428 million for the three months ended September 26, 2026, compared to $1,243 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$\n2,428\n$\n1,243\n$\n6,108\n$\n2,824",
+                "metric": "Net income",
+                "value": "2428",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1243",
+                "comparison_period": "Q3 2025",
+                "card_id": "c4:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net income\n$\n2,428\n$\n1,243\n$\n6,108\n$\n2,824"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Diluted earnings per share from continuing operations was $1.46 for the three months ended September 26, 2026, compared to $0.71 for the three months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Diluted earnings from continuing operations\n$\n1.46\n$\n0.71\n$\n3.69\n$\n1.62",
+                "metric": "Diluted earnings per share from continuing operations",
+                "value": "1.46",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": "0.71",
+                "comparison_period": "Q3 2025",
+                "card_id": "c5:sec_edgar:0000002488-26-000191:amd-20260926.htm#u6",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Diluted earnings from continuing operations\n$\n1.46\n$\n0.71\n$\n3.69\n$\n1.62"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $13,377 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "Net revenue\n$\n13,377",
+                "metric": "revenue",
+                "value": "13377",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net revenue\n$\n13,377"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit was $7,210 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "Gross profit\n7,210",
+                "metric": "gross_profit",
+                "value": "7210",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c2:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Gross profit\n7,210"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income was $2,832 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "Operating income\n2,832",
+                "metric": "operating_income",
+                "value": "2832",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c3:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Operating income\n2,832"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $2,428 million for the period.",
+                "materiality_candidate": 5,
+                "quote": "Net income\n$\n2,428",
+                "metric": "net_income",
+                "value": "2428",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c4:sec_edgar:0000002488-26-000191:amd-20260926.htm#structured",
+                "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net income\n$\n2,428"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter 2026 revenue was $13,377 million, up 45% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46.",
+                "metric": "Revenue",
+                "value": "13,377",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "9,246",
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 45%",
+                "metric_type": "other",
+                "card_id": "c1:official_ir:50e36827f339577a87ad816d#u1",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46."
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter 2026 GAAP gross margin was 54% and non-GAAP gross margin was 56%.",
+                "materiality_candidate": 4,
+                "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46. On a non-GAAP\n(*)\nbasis, gross margin was 56%",
+                "metric": "Gross Margin",
+                "value": "54",
+                "unit": "PERCENT",
+                "period": "Q3 2026",
+                "comparison_value": "52",
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 2 ppts",
+                "metric_type": "other",
+                "card_id": "c2:official_ir:50e36827f339577a87ad816d#u1",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46. On a non-GAAP\n(*)\nbasis, gross margin was 56%"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year, driven by strong demand for AMD EPYC™ processors and the launch of AMD Instinct™ MI450 Series GPUs.",
+                "metric": "Data Center segment revenue",
+                "value": "8.5",
+                "unit": "USD_B",
+                "period": "Q3 2026",
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 97%",
+                "metric_type": "other",
+                "card_id": "c3:official_ir:50e36827f339577a87ad816d#u1",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year, driven by strong demand for AMD EPYC™ processors and the launch of AMD Instinct™ MI450 Series GPUs."
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%.",
+                "materiality_candidate": 5,
+                "quote": "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%.",
+                "metric": "Revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": "17,000",
+                "low": "16,490",
+                "midpoint": "17,000",
+                "high": "17,510",
+                "unit": "USD_M",
+                "card_id": "c4:official_ir:50e36827f339577a87ad816d#u2",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%."
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP gross margin is expected to be approximately 55% for the fourth quarter of 2026.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP gross margin is expected to be approximately 55%.",
+                "metric": "Non-GAAP Gross Margin",
+                "period": "Q4 2026",
+                "guidance_type": "point",
+                "value": "55",
+                "unit": "PERCENT",
+                "card_id": "c5:official_ir:50e36827f339577a87ad816d#u2",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Non-GAAP gross margin is expected to be approximately 55%."
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u2",
+                "card_type": "customer",
+                "topic": "customer_usage",
+                "fact_class": "objective_fact",
+                "statement": "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on AMD Helios rackscale solutions.",
+                "materiality_candidate": 4,
+                "quote": "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on the first\nAMD Helios\n™ rackscale solutions, powered by AMD Instinct MI450 Series GPUs and 6\nth\nGen AMD EPYC CPUs.",
+                "customer": "Anthropic, Meta, Microsoft, OpenAI, Oracle Cloud Infrastructure",
+                "product": "AMD Helios rackscale solutions",
+                "use_case": "running models and workloads",
+                "card_id": "c6:official_ir:50e36827f339577a87ad816d#u2",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on the first\nAMD Helios\n™ rackscale solutions, powered by AMD Instinct MI450 Series GPUs and 6\nth\nGen AMD EPYC CPUs."
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "GAAP net income was $2,428 million or $1.46 per share for the three months ended September 26, 2026.",
+                "materiality_candidate": 4,
+                "quote": "GAAP net income / earnings per share\n$\n2,428\n$\n1.46",
+                "metric": "GAAP net income",
+                "value": "2428",
+                "unit": "USD_$M",
+                "period": "Q3 2026",
+                "card_id": "c1:official_ir:50e36827f339577a87ad816d#u3",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "GAAP net income / earnings per share\n$\n2,428\n$\n1.46"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP gross margin was 54% for the three months ended September 26, 2026.",
+                "materiality_candidate": 3,
+                "quote": "GAAP gross margin\n54\n%",
+                "metric": "GAAP gross margin",
+                "value": "54",
+                "unit": "%",
+                "period": "Q3 2026",
+                "card_id": "c2:official_ir:50e36827f339577a87ad816d#u3",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "GAAP gross margin\n54\n%"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u3",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP gross margin was 56% for the three months ended September 26, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Non-GAAP gross margin\n56\n%",
+                "metric": "Non-GAAP gross margin",
+                "value": "56",
+                "unit": "%",
+                "period": "Q3 2026",
+                "card_id": "c3:official_ir:50e36827f339577a87ad816d#u3",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Non-GAAP gross margin\n56\n%"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net revenue for the third quarter of 2026 was $13,377 million.",
+                "materiality_candidate": 5,
+                "quote": "Net revenue\n$\n13,377",
+                "metric": "Net revenue",
+                "value": "13377",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "9246",
+                "comparison_period": "Q3 2025",
+                "reported_change": "44.7%",
+                "card_id": "c1:official_ir:50e36827f339577a87ad816d#u6",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Net revenue\n$\n13,377"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit for the third quarter of 2026 was $7,210 million, with a gross margin of 54%.",
+                "materiality_candidate": 4,
+                "quote": "Gross profit ($M)\n$13,377\n$9,246\nUp 45%\n$11,536\nUp 16%\nGross profit ($M)\n$7,210\n$4,780\nUp 51%\n$6,203\nUp 16%\nGross margin\n54%\n52%\nUp 2 ppts\n54%\nFlat",
+                "metric": "Gross profit",
+                "value": "7210",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "4780",
+                "comparison_period": "Q3 2025",
+                "card_id": "c1:official_ir:50e36827f339577a87ad816d#u6",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Gross profit ($M)\n$13,377\n$9,246\nUp 45%\n$11,536\nUp 16%\nGross profit ($M)\n$7,210\n$4,780\nUp 51%\n$6,203\nUp 16%\nGross margin\n54%\n52%\nUp 2 ppts\n54%\nFlat"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Data Center segment net revenue was $8,546 million for the three months ended September 26, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Data Center Segment\n$\n8,546",
+                "metric": "Data Center Segment net revenue",
+                "value": "8546",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "4341",
+                "comparison_period": "Q3 2025",
+                "card_id": "c1:official_ir:50e36827f339577a87ad816d#u7",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Data Center Segment\n$\n8,546"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net revenue was $13,377 million for the three months ended September 26, 2026.",
+                "materiality_candidate": 5,
+                "quote": "Total net revenue\n$\n13,377",
+                "metric": "Total net revenue",
+                "value": "13377",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "9246",
+                "comparison_period": "Q3 2025",
+                "card_id": "c2:official_ir:50e36827f339577a87ad816d#u7",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Total net revenue\n$\n13,377"
+                }
+              },
+              {
+                "unit_id": "official_ir:50e36827f339577a87ad816d#u8",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow was $554 million for the three months ended September 26, 2026, with purchases of property and equipment of $648 million.",
+                "materiality_candidate": 4,
+                "quote": "Free cash flow\n$\n554",
+                "metric": "Free cash flow",
+                "value": "554",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1530",
+                "comparison_period": "Q3 2025",
+                "metric_type": "standard_fcf",
+                "reconciliation": [
+                  {
+                    "item": "GAAP net cash provided by operating activities of continuing operations",
+                    "value": "1202",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "GAAP net cash provided by operating activities of continuing operations\n$\n1,202"
+                    }
+                  },
+                  {
+                    "item": "Purchases of property and equipment",
+                    "value": "-648",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Purchases of property and equipment\n(648\n)"
+                    }
+                  }
+                ],
+                "card_id": "c3:official_ir:50e36827f339577a87ad816d#u8",
+                "document_key": "official_ir:50e36827f339577a87ad816d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 8,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Free cash flow\n$\n554"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "Net revenue",
+                "value": "13377",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "9246",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net revenue\n$\n13,377\n$\n9,246\n$\n35,166\n$\n24,369"
+                }
+              },
+              {
+                "metric": "Gross profit",
+                "value": "7210",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "4780",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Gross profit\n7,210\n4,780\n18,829\n11,575"
+                }
+              },
+              {
+                "metric": "Operating income",
+                "value": "2832",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1270",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Operating income\n2,832\n1,270\n6,298\n1,942"
+                }
+              },
+              {
+                "metric": "Net income",
+                "value": "2428",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1243",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net income\n$\n2,428\n$\n1,243\n$\n6,108\n$\n2,824"
+                }
+              },
+              {
+                "metric": "Diluted earnings per share from continuing operations",
+                "value": "1.46",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": "0.71",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Diluted earnings from continuing operations\n$\n1.46\n$\n0.71\n$\n3.69\n$\n1.62"
+                }
+              },
+              {
+                "metric": "revenue",
+                "value": "13377",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net revenue\n$\n13,377"
+                }
+              },
+              {
+                "metric": "gross_profit",
+                "value": "7210",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Gross profit\n7,210"
+                }
+              },
+              {
+                "metric": "operating_income",
+                "value": "2832",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Operating income\n2,832"
+                }
+              },
+              {
+                "metric": "net_income",
+                "value": "2428",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000002488-26-000191:amd-20260926.htm",
+                  "quote": "Net income\n$\n2,428"
+                }
+              },
+              {
+                "metric": "Revenue",
+                "value": "13,377",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "9,246",
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 45%",
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46."
+                }
+              },
+              {
+                "metric": "Gross Margin",
+                "value": "54",
+                "unit": "PERCENT",
+                "period": "Q3 2026",
+                "comparison_value": "52",
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 2 ppts",
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Third quarter revenue was $13.4 billion, gross margin was 54%, operating income was $2.8 billion, net income was $2.4 billion and diluted earnings per share was $1.46. On a non-GAAP\n(*)\nbasis, gross margin was 56%"
+                }
+              },
+              {
+                "metric": "Data Center segment revenue",
+                "value": "8.5",
+                "unit": "USD_B",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": "Q3 2025",
+                "reported_change": "Up 97%",
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year, driven by strong demand for AMD EPYC™ processors and the launch of AMD Instinct™ MI450 Series GPUs."
+                }
+              },
+              {
+                "metric": "GAAP net income",
+                "value": "2428",
+                "unit": "USD_$M",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "GAAP net income / earnings per share\n$\n2,428\n$\n1.46"
+                }
+              },
+              {
+                "metric": "GAAP gross margin",
+                "value": "54",
+                "unit": "%",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "GAAP gross margin\n54\n%"
+                }
+              },
+              {
+                "metric": "Non-GAAP gross margin",
+                "value": "56",
+                "unit": "%",
+                "period": "Q3 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Non-GAAP gross margin\n56\n%"
+                }
+              },
+              {
+                "metric": "Net revenue",
+                "value": "13377",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "9246",
+                "comparison_period": "Q3 2025",
+                "reported_change": "44.7%",
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Net revenue\n$\n13,377"
+                }
+              },
+              {
+                "metric": "Gross profit",
+                "value": "7210",
+                "unit": "USD_M",
+                "period": "Q3 2026",
+                "comparison_value": "4780",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Gross profit ($M)\n$13,377\n$9,246\nUp 45%\n$11,536\nUp 16%\nGross profit ($M)\n$7,210\n$4,780\nUp 51%\n$6,203\nUp 16%\nGross margin\n54%\n52%\nUp 2 ppts\n54%\nFlat"
+                }
+              },
+              {
+                "metric": "Data Center Segment net revenue",
+                "value": "8546",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "4341",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Data Center Segment\n$\n8,546"
+                }
+              },
+              {
+                "metric": "Total net revenue",
+                "value": "13377",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "9246",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Total net revenue\n$\n13,377"
+                }
+              },
+              {
+                "metric": "Free cash flow",
+                "value": "554",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1530",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Free cash flow\n$\n554"
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "Revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "value": "17,000",
+                "low": "16,490",
+                "midpoint": "17,000",
+                "high": "17,510",
+                "unit": "USD_M",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%."
+                }
+              },
+              {
+                "metric": "Non-GAAP Gross Margin",
+                "period": "Q4 2026",
+                "guidance_type": "point",
+                "value": "55",
+                "low": null,
+                "midpoint": null,
+                "high": null,
+                "unit": "PERCENT",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Non-GAAP gross margin is expected to be approximately 55%."
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Free cash flow",
+                "value": "554",
+                "unit": "USD $M",
+                "period": "Q3 2026",
+                "comparison_value": "1530",
+                "comparison_period": "Q3 2025",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:50e36827f339577a87ad816d",
+                  "quote": "Free cash flow\n$\n554"
+                },
+                "metric_type": "standard_fcf",
+                "reconciliation": [
+                  {
+                    "item": "GAAP net cash provided by operating activities of continuing operations",
+                    "value": "1202",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "GAAP net cash provided by operating activities of continuing operations\n$\n1,202"
+                    }
+                  },
+                  {
+                    "item": "Purchases of property and equipment",
+                    "value": "-648",
+                    "unit": "USD $M",
+                    "evidence": {
+                      "quote": "Purchases of property and equipment\n(648\n)"
+                    }
+                  }
+                ]
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [
+              "facts.cards[19]:quote_not_found_in_official_ir:50e36827f339577a87ad816d"
+            ],
+            "extraction_batch_count": 12,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "gemini_search",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+                  "category": "search_quota_blocked"
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.132,
+                  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMD-2026-Q3",
+                  "reason": "no_eligible_official_documents"
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.526,
+                  "documents": 7,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.101,
+                  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMD-2026-Q3"
+                }
+              ],
+              "ir_retrieval_last_at": "2026-11-05T10:27:16-05:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 7,
+                "kinds": {
+                  "other": 1,
+                  "financial_results": 5,
+                  "presentation": 1
+                },
+                "sources": {
+                  "sec_edgar": 1,
+                  "official_ir": 6
+                },
+                "has_primary_results": true,
+                "has_official_ir": true,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": true
+              },
+              "last_collection_check_at": "2026-11-05T10:27:16-05:00",
+              "official_ir_checked_at": "2026-11-05T10:27:16-05:00",
+              "official_ir_check_count": 9,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-11-05T22:27:16-05:00"
+            },
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Data Center segment revenue reached $8.5B, up 97% year-over-year, driven by EPYC processors and Instinct MI450 Series GPUs.",
+                "why_it_matters": "Demonstrates rapid expansion in high-performance computing demand and successful product deployment among major hyperscalers.",
+                "fact_basis": [
+                  "Data Center segment revenue was $8.5 billion, up 97% year-over-year."
+                ],
+                "inference": "The strong growth in Data Center revenue reflects robust adoption of AMD's latest GPU and CPU solutions by top-tier cloud and AI providers.",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Total net revenue for Q3 2026 was $13,377M, up 45% year-over-year from $9,246M."
+              ],
+              "margin_unit_economics": [
+                "GAAP gross margin was 54% and non-GAAP gross margin was 56% for Q3 2026, compared to 52% in Q3 2025."
+              ],
+              "cash_capital_intensity": [
+                "Free cash flow was $554M for Q3 2026, with purchases of property and equipment of $648M, supported by GAAP net cash from operating activities of $1,202M."
+              ]
+            },
+            "guidance_assessment": [
+              "For Q4 2026, AMD expects revenue to be approximately $17B, plus or minus 3% (range of $16.49B to $17.51B).",
+              "Non-GAAP gross margin is expected to be approximately 55% for the fourth quarter of 2026."
+            ],
+            "demand_quality": [
+              "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on AMD Helios rackscale solutions powered by Instinct MI450 Series GPUs and 6th Gen EPYC CPUs."
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "Adoption of AMD Helios rackscale solutions by leading AI and cloud providers indicates strengthening positioning in large-scale AI infrastructure."
+            ],
+            "risks_and_disconfirming_evidence": [
+              "Free cash flow decreased year-over-year to $554M due to higher capital expenditures of $648M, requiring continued monitoring of capital intensity sustainability."
+            ],
+            "watch_items": [
+              "Execution and delivery of Q4 2026 revenue guidance of $17B.",
+              "Sustained adoption and workload scaling of AMD Helios rackscale solutions across major enterprise and cloud customers."
+            ],
+            "confidence": 90,
+            "telegram_draft": "AMD FY2026 Q3\n\n💡 投資結論與邏輯:\n• Data Center segment revenue 達到 $8.5B，年增 97%，反映 EPYC 處理器與 Instinct MI450 系列 GPU 需求強勁。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n📊 關鍵數據與財測:\n• Q3 總淨營收顯示為 $13,377M，較去年同期之 $9,246M 成長 45%，帶動 GAAP 稀釋每股盈餘來到 $1.46。\n• Q3 GAAP 毛利率為 54%，Non-GAAP 毛利率為 56%，較去年同期之 52% 提升 2 個百分點。\n• Q3 自由現金流為 $554M，其中包含 $648M 之不動產與設備採購支出，營業活動現金流入為 $1,202M。\n• 公司預期 Q4 2026 營收約為 $17B（加減 3%），介於 $16.49B 至 $17.51B 之間，Non-GAAP 毛利率預期約為 55%。\n\n🧭 營運動能與法說攻防:\n• Anthropic、Meta、Microsoft、OpenAI 與 Oracle Cloud Infrastructure 正在 AMD Helios 系統上運行模型與工作負載，顯示高階產品獲得主要客戶採用。\n• 本次 Research Packet 未包含質化逐字稿與 Q&A 紀錄，故無法提供法說問答攻防分析。\n\n⚠️ 風險、反證與待驗證:\n• Q3 自由現金流降至 $554M，資本支出上升至 $648M，需持續追蹤現金流轉化率與資本密集度的可持續性。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:numeric_provenance"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "AMD FY2026 Q3\n\n💡 投資結論與邏輯:\n• Data Center segment revenue 達到 $8.5B，年增 97%，反映 EPYC 處理器與 Instinct MI450 系列 GPU 需求強勁。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n📊 關鍵數據與財測:\n• Q3 總淨營收顯示為 $13,377M，較去年同期之 $9,246M 成長 45%，帶動 GAAP 稀釋每股盈餘來到 $1.46。\n• Q3 GAAP 毛利率為 54%，Non-GAAP 毛利率為 56%，較去年同期之 52% 提升 2 個百分點。\n• Q3 自由現金流為 $554M，其中包含 $648M 之不動產與設備採購支出，營業活動現金流入為 $1,202M。\n• 公司預期 Q4 2026 營收約為 $17B（加減 3%），介於 $16.49B 至 $17.51B 之間，Non-GAAP 毛利率預期約為 55%。\n\n🧭 營運動能與法說攻防:\n• Anthropic、Meta、Microsoft、OpenAI 與 Oracle Cloud Infrastructure 正在 AMD Helios 系統上運行模型與工作負載，顯示高階產品獲得主要客戶採用。\n• 本次 Research Packet 未包含質化逐字稿與 Q&A 紀錄，故無法提供法說問答攻防分析。\n\n⚠️ 風險、反證與待驗證:\n• Q3 自由現金流降至 $554M，資本支出上升至 $648M，需持續追蹤現金流轉化率與資本密集度的可持續性。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:Q3 GAAP 毛利率為 54%，Non-GAAP 毛利率為 56%，較去年同期之 52% 提升 2 個百分點。",
+              "kpi_without_readthrough:Q3 自由現金流為 $554M，其中包含 $648M 之不動產與設備採購支出，營業活動現金流入為 $1,202M。",
+              "kpi_without_readthrough:公司預期 Q4 2026 營收約為 $17B（加減 3%），介於 $16.49B 至 $17.51B 之間，Non-GAAP 毛利率預期約為 55%。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:52%"
+            ],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Data Center segment revenue reached $8.546B, up year-over-year, driven by EPYC processors and Instinct MI450 Series GPUs.",
+                "why_it_matters": "Demonstrates rapid expansion in high-performance computing demand and successful product deployment among major hyperscalers.",
+                "fact_basis": [
+                  "Data Center Segment net revenue was $8,546 million for the three months ended September 26, 2026, compared to $4,341 million for the three months ended September 27, 2025."
+                ],
+                "inference": "The strong growth in Data Center revenue reflects adoption of AMD's latest GPU and CPU solutions by top-tier cloud and AI providers.",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Total net revenue for Q3 2026 was $13,377 million, up 45% year-over-year from $9,246 million."
+              ],
+              "margin_unit_economics": [
+                "GAAP gross margin was 54% and non-GAAP gross margin was 56% for Q3 2026, compared to 52% in Q3 2025."
+              ],
+              "cash_capital_intensity": [
+                "Free cash flow was $554 million for Q3 2026, with purchases of property and equipment of $648 million, supported by GAAP net cash from operating activities of $1,202 million."
+              ]
+            },
+            "guidance_assessment": [
+              "For Q4 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3% (range of $16,490 million to $17,510 million).",
+              "Non-GAAP gross margin is expected to be approximately 55% for the fourth quarter of 2026."
+            ],
+            "demand_quality": [
+              "Anthropic, Meta, Microsoft, OpenAI and Oracle Cloud Infrastructure are running models and workloads on AMD Helios rackscale solutions powered by Instinct MI450 Series GPUs and 6th Gen EPYC CPUs."
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "Adoption of AMD Helios rackscale solutions by leading AI and cloud providers indicates strengthening positioning in large-scale AI infrastructure."
+            ],
+            "risks_and_disconfirming_evidence": [
+              "Free cash flow decreased year-over-year to $554 million due to higher capital expenditures of $648 million, requiring continued monitoring of capital intensity sustainability."
+            ],
+            "watch_items": [
+              "Execution and delivery of Q4 2026 revenue guidance of approximately $17 billion.",
+              "Sustained adoption and workload scaling of AMD Helios rackscale solutions across major enterprise and cloud customers."
+            ],
+            "confidence": 90,
+            "telegram_draft": "AMD FY2026 Q3\n\n💡 投資結論與邏輯:\n• Data Center segment 營收顯著成長，反映 EPYC 處理器與 Instinct MI450 系列 GPU 獲得主要雲端與 AI 客戶採用。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n📊 關鍵數據與財測:\n• Q3 總淨營收顯示為 $13,377M，較去年同期之 $9,246M 成長 45%，帶動 GAAP 稀釋每股盈餘來到 $1.46。\n• Q3 GAAP 毛利率為 54%，Non-GAAP 毛利率為 56%，較去年同期之 52% 提升 2 個百分點。\n• Q3 自由現金流為 $554M，其中包含 $648M 之不動產與設備採購支出，營業活動現金流入為 $1,202M。\n• 公司預期 Q4 2026 營收約為 $17B（加減 3%），介於 $16.49B 至 $17.51B 之間，Non-GAAP 毛利率預期約為 55%。\n\n🧭 營運動能與法說攻防:\n• Anthropic、Meta、Microsoft、OpenAI 與 Oracle Cloud Infrastructure 正在 AMD Helios 系統上運行模型與工作負載，顯示高階產品獲得主要客戶採用。\n• 本次 Research Packet 未包含質化逐字稿與 Q&A 紀錄，故無法提供法說問答攻防分析。\n\n⚠️ 風險、反證與待驗證:\n• Q3 自由現金流降至 $554M，資本支出上升至 $648M，需持續追蹤現金流轉化率與資本密集度的可持續性。"
           }
         }
       },
@@ -47479,6 +50546,24 @@
             "strong_claim_errors": [
               "strong_claim_without_direct_evidence:pricing_power"
             ]
+          }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "NET_2026-09-30_Q3": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "9f12e0e71e251cd6b8674d65e086bbc098b538e65648e655bdd8298945f0af68",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001477333-26-000061:cloud-20260930.htm#u1",
+              "sec_edgar:0001477333-26-000061:cloud-20260930.htm#u2"
+            ],
+            "cards": []
           }
         }
       },
