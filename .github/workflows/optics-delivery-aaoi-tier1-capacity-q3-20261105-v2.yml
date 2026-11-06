@@ -1,0 +1,47 @@
+name: Optics delivery AAOI tier1 capacity q3 v2
+on:
+  push:
+    branches: [codex/optics-delivery-aaoi-tier1-capacity-q3-20261105-v2]
+    paths: [.github/workflows/optics-delivery-aaoi-tier1-capacity-q3-20261105-v2.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-aaoi-tier1-capacity-q3-20261105-v2
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AAOI續報v2｜1.6T LTA量化：三年最低需求占比、預估10–15億美元；Q4受物料與DSP限制】\n\n1）重大變化及相較v1新增\nAAOI（NASDAQ：AAOI）在2026/11/5財報電話會議首次量化早上已通知的Tier‑1多年協議：客戶為既有客戶，首款1.6T產品已通過該客戶認證；協議只涵蓋1.6T收發器，期間為2026/6至2029/5。公司稱在包括AAOI供貨能力等條件成立時，客戶同意向AAOI採購其1.6T需求至少10%，管理層估計三年可帶來10–15億美元收入。這把v1的「未披露金額／產品」升級為可量化的認證、最低需求占比與收入區間，足以改變營收能見度與投資判斷。\n\n2）已確認事實\n事件日／公司電話會議：2026/11/5；逐字轉錄公開：2026/11/6。\n• 既有Tier‑1客戶；AAOI首款1.6T產品已通過認證。\n• LTA專屬1.6T；三年期2026/6–2029/5。最低10%是客戶實際1.6T需求的比例，不是固定台數；且受AAOI供貨能力等條件限制。\n• 管理層預估協議收入10–15億美元，但明言會隨客戶實際需求大幅變動；AAOI承諾供貨與議定價格，期間包含降價；客戶未提供資本承諾。這是管理層估計，不是已認列營收或無條件backlog。\n• 管理層口頭稱現有1.6T在手訂單約4.5億美元，Q4受物料供應限制只能交付約5,000萬–7,000萬美元；客戶由800G轉向1.6T快於預期，Q4缺乏足夠1.6T原料，並點名DSP供應商是瓶頸之一。\n• 1.6T預計Q4開始貢獻收入、2027年擴大爬坡；公司預期800G與1.6T需求在2027全年高於其產能。\n• 2027年底設備產能目標由先前93萬上調至逾100萬件／月，約30%預計在德州製造；仍是合格設備能力預測，不等於實際良品或出貨。\n• 第二份LTA僅處於最後談判階段；管理層稱可能為首份5倍以上並涵蓋800G、雷射等，但尚未簽署，不能列為訂單或收入。\n\n官方來源：\nAAOI財報與官方公告（11/5）\nhttps://investors.ao-inc.com/2026-11-05-Applied-Optoelectronics-Reports-Third-Quarter-2026-Results\n官方會議錄音存檔\nhttps://appliedoptoelectronics.gcs-web.com/news-events/events-and-presentations\nSEC 10-Q（截至9/30）\nhttps://www.sec.gov/Archives/edgar/data/1158114/000143774926035282/aaoi20260930_10q.htm\n補充逐字稿（非獨立來源，應以官方錄音為準）\nhttps://www.fool.com/earnings/call-transcripts/2026/11/06/applied-optics-aaoi-q3-2026-earnings-call-transcript/\n\n3）供應鏈與競合\nAAOI直接曝險：1.6T模組、內製InP雷射、自動化組裝與德州／台灣產能。未具名hyperscaler為直接需求端，不猜測客戶身分。DSP供應商及其他1.6T原料商未具名；不能把AAOI的Q4物料缺口外推為整條InP、EML或光模組鏈全面缺貨。\n公司稱已有六家InP基板供應來源，並與日本兩家、德國一家合作；亦表示現有基板與庫存可支應近期需求。因此本次明確瓶頸較接近1.6T關鍵物料／DSP，而非已證實的InP基板短缺。中際旭創、新易盛、Coherent、Lumentum等屬競爭或互補者，但本LTA不證明其失單。\n\n4）合理推論\n若客戶1.6T部署按期、10%條款可執行且AAOI能供貨，10–15億美元三年收入相對公司現有規模具有實質意義，並可能提高2027–2029收入可見度。管理層稱1.6T定價與毛利高於800G，產品組合轉換可能改善毛利；但合約內降價、DSP與材料成本、良率及產能折舊會決定實際幅度。\n短期主要限制從需求轉為供給：Q4可交付1.6T金額遠低於所稱在手訂單，代表訂單轉收入時間可能延後，而非需求消失。\n\n5）投資機會與風險\n催化劑：Q4實際1.6T收入達5,000萬–7,000萬美元、DSP多來源認證、德州一期12月投產、月產量與良率提高，以及第二LTA真正簽署。\n風險：最低採購量隨客戶總需求浮動、供貨條件、客戶集中、協議降價、DSP／材料短缺、電力與工程延誤、認證或部署推遲、4.5億美元口頭訂單未轉收入。第二LTA與「5倍」目前只是前瞻談判，不納入基準情境。未查即時價格，不判斷估值。\n\n6）待驗證與去重\n追蹤LTA正式合約／最低量與取消條款、客戶端確認、Q4 1.6T實際收入、DSP供應改善、第二LTA是否簽署、2027實際產量／良率／ASP及毛利。既有v1收據message_id=622已核對；本次只續報新增條款與瓶頸，事件鍵不變、版本2。逐字稿由第三方轉錄官方會議，非獨立驗證，數字仍應以公司後續SEC文件或客戶確認覆核。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"aaoi-tier1-capacity-q3-20261105","version":2}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-aaoi-tier1-capacity-q3-20261105-v2
+          path: telegram-receipt.json
