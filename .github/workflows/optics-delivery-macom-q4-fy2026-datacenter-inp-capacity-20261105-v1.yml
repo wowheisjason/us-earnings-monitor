@@ -1,0 +1,79 @@
+name: Optics delivery MACOM FY2026 Q4 v1
+on:
+  push:
+    branches: [codex/optics-delivery-macom-q4-fy2026-datacenter-inp-capacity-20261105-v1]
+    paths: [.github/workflows/optics-delivery-macom-q4-fy2026-datacenter-inp-capacity-20261105-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-macom-q4-fy2026-datacenter-inp-capacity-20261105-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜MACOM資料中心加速、InP與NPO產能擴張（v1）
+
+1）重大變化及門檻
+MACOM（NASDAQ:MTSI）11/5法說揭露：截至10/2的FY2026 Q4資料中心營收1.881億美元、季增約37%並創高；管理層以既有積壓與訂單趨勢為據，預期FY2027資料中心營收年增將高於FY2026的74%，問答中稱基準情境約80%。同時FY2027資本支出由FY2026的6,440萬美元提高至1.0–1.1億美元，約60%投向晶圓廠，且法國廠由3吋轉6吋並已裝新G10反應器。這組「已實現成長＋量化前景＋實體擴產」足以改變營收與競爭力判斷，達通知門檻。
+
+2）已確認事實
+• 公告日／法說日：2026/11/5；財季截止：2026/10/2。
+• 公司總營收4.248億美元，季增24.1%、年增62.7%；Q1 FY2027官方指引4.50–4.60億美元，調整後毛利率62%–63%。
+• 法說稱Q4資料中心營收1.881億美元、季增約37%；公司整體Q4 book-to-bill 1.4、期末積壓創高。book-to-bill未按資料中心拆分，不能全歸因光通訊。
+• 管理層展望：FY2027資料中心年增率高於FY2026的74%，問答稱約80%為目前基準；這不是正式全年財測，也非已實現營收。
+• 成長動因包括1.6T量增及單模組內容價值提高。公司現正生產200G光偵測器；預計提高200G／400G PD與800G／1.6T／3.2T CW雷射，但未公布出貨量或客戶名稱。
+• NPO仍為「多家hyperscaler送樣、共同開發、爭取高量機會」；公司明言未公開得標／合約，早期NPO營收可能在FY2027或更晚，不能視為訂單。
+• Lowell擴產第一階段完成約三分之二，支援2027既有與新增業務；CW雷射第二階段擬於2027年中啟動，目標FY2028機會。法國廠由3吋轉6吋並已裝G10反應器；Ann Arbor有MBE磊晶能力。
+• CW雷射已達客戶光學性能要求；InP雷射facet品質近六個月有技術改善，但管理層明確表示仍未宣告成功，可靠度與量產驗證尚待完成。
+
+官方財報與Q1指引：
+https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-fourth-quarter-and-fiscal-year-2026
+官方法說／重播：
+https://ir.macom.com/events/event-details/macom-technology-solutions-fourth-quarter-fiscal-year-2026-financial-results
+逐字稿交叉核對（Quartr轉錄，非公司正式文字稿）：
+https://stockanalysis.com/stocks/mtsi/transcripts/717293-q4-2026/
+
+3）受影響供應鏈
+直接受益候選：MACOM，自有InP／PD／雷射與類比前端（driver、TIA）並供應EML、TFLN、SiPho架構，曝險跨可插拔、LPO及NPO。潛在代工環節包括SiGe晶圓與後段封測；公司只表示將確保供應，未公開具體供應商承諾。
+競爭／互補：Lumentum（LITE）、Coherent（COHR）在InP/CW雷射與光元件競爭；Marvell（MRVL）、Broadcom（AVGO）等在DSP、矽光與整合平台競合。MACOM偏單／多功能高性能SiGe與分立光電元件，並不做高度整合CMOS完整光引擎，因此既可受益於多種調變架構，也面臨整合方案壓縮分立內容價值。
+
+4）合理推論
+若1.6T放量與新增內容如期發生，資料中心營收增速可維持高檔，較高毛利新品及規模效應有利毛利；擴產可降低自身InP／PD供給限制並提高美國商用雷射供應地位。成立條件是良率、可靠度、客戶認證、外部SiGe晶圓與後段產能同步到位。NPO尚未得標，不能把送樣推成客戶採用；CW雷射主要營收時點仍偏FY2028。
+
+5）投資機會及風險
+催化劑：FY2027資料中心營收驗證約80%基準、200G/400G PD與InP出貨增量、NPO正式design win、6吋轉換良率、CW雷射可靠度與75/100mW認證。
+風險：1.6T需求或客戶排程延後、SiGe外包晶圓需更強承諾、後段封測瓶頸、資本支出先行造成折舊／利用率壓力、NPO被整合CMOS方案取代、CW可靠度未達標，以及競爭者擴產。未查即時價格，不判斷估值是否已反映。
+
+6）待驗證與去重
+追蹤資料中心分部實際營收、產品別出貨與毛利、NPO由送樣轉認證／量產、CW雷射量產日與客戶承諾、法國6吋產能與良率。已核對既有optics-delivery分支，未見同一MACOM事件／版本；Marvell–Lumentum、Lumentum CPO、AAOI等既有事件未重送。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"macom-q4-fy2026-datacenter-inp-capacity-20261105","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-macom-q4-fy2026-v1
+          path: telegram-receipt.json
