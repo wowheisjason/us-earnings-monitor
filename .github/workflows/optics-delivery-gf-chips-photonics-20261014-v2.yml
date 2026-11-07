@@ -1,0 +1,105 @@
+name: Deliver optics report gf-chips-photonics-20261014 v2
+
+on:
+  push:
+    branches:
+      - codex/optics-delivery-gf-chips-photonics-20261014-v2
+    paths:
+      - .github/workflows/optics-delivery-gf-chips-photonics-20261014-v2.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: optics-delivery-gf-chips-photonics-20261014-v2
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    if: ${{ github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified report to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+
+          message="""
+          【CPO／矽光子重大更新｜GlobalFoundries（GFS）｜事件 v2】
+          
+          1) 重大變化與通知門檻
+          GlobalFoundries 於2026-11-04公布Q3結果並在法說上大幅提前矽光子營收與擴產時間軸：2026年矽光子營收預期5億美元；2027年底年化營收run-rate約10億美元，較先前預期提前一年；2027年計畫將矽光子產能擴至約3倍。管理層另稱SiPh／SiGe 2027年產能已排滿、2028年排程增加，客戶預付款支持擴產。這些新增數字足以改變GFS營收成長、資本支出與競爭地位判斷，達通知門檻。
+          
+          相較v1新增：v1（2026-10-14，Telegram message_id=550）僅涵蓋9.55億美元CHIPS資金重配與投資方向；本次首次加入Q3實績、2026／2027矽光子營收指引、約3倍擴產、產能排程與客戶預付款證據。
+          
+          2) 已確認事實
+          • 公告日／法說日：2026-11-04；財報期間：截至2026-09-30的Q3。
+          • Q3總營收18.99億美元；通訊基礎設施與資料中心營收3.16億美元、年增81%，占總營收約16.6%。該成長由SiPh與SiGe帶動；公司在一個「新光收發器客戶」取得SiPh及SiGe design wins，需求來源指向hyperscaler。design win不等於認證完成、量產訂單或營收認列。
+          • 管理層指引（非實績）：2026年矽光子營收5億美元；2027年底年化run-rate約10億美元，提前一年；2027年矽光子產能約增至3倍。
+          • 管理層稱2027年SiPh／SiGe產能已排滿、2028年排程增加；但公司未揭露具約束力backlog、客戶別、wafer/月、價格或take-or-pay條款。
+          • 2027年淨資本支出預估約40億美元，其中約三分之一預期由客戶預付款支持；Q3自由現金流包含約1.5億美元客戶預付款與補助。這是資金來源／管理層預期，不等於已認列銷售。
+          • 官方財報：https://investors.gf.com/news-releases/news-release-details/globalfoundries-reports-third-quarter-2026-financial-results
+          • 官方簡報：https://investors.gf.com/static-files/583a0cd2-826f-4724-abee-606b1c24ae5d
+          • SEC 6-K：https://www.sec.gov/Archives/edgar/data/1709048/000170904826000259/form6-kshellxearningsrelea.htm
+          • 官方法說頁：https://investors.gf.com/investor-relations/news-events/events
+          
+          3) 供應鏈與競爭影響
+          • GFS（NASDAQ:GFS）：直接受益；提供矽光子、SiGe晶圓代工與相關先進封裝／光纖接合能力。
+          • Marvell（NASDAQ:MRVL）：已公開的SiGe擴產客戶，屬直接互補；本次未新增其訂單金額。官方合作：https://investors.gf.com/news-releases/news-release-details/globalfoundries-and-marvell-expand-collaboration-next-generation
+          • 新光收發器客戶未具名，不猜測。Tower Semiconductor、TSMC、UMC、Intel等為不同製程／整合路線的潛在競爭者，但沒有證據顯示本次design win由其轉單。
+          • Lumentum、Coherent、MACOM等InP雷射供應商多屬互補。GFS談的是把InP雷射／SOA整合進平台，沒有宣布自建獨立InP磊晶或EML量產線；不得推論InP／EML全面短缺。
+          • NPO／CPO是未來內容量提升機會，現階段不能把可插拔模組design win解讀為CPO量產。
+          
+          4) 合理推論
+          若3倍產能如期安裝、良率達標且客戶排程轉為wafer出貨，2026至2027矽光子年化收入可能約翻倍，並以高價值組合與利用率改善支撐毛利；客戶預付款可降低擴產的資金壓力。成立條件是設備交期、製程／封裝良率、客戶認證及實際拉貨均按期。10億美元是2027年底年化run-rate，不是2027全年營收。
+          
+          5) 投資機會與風險
+          機會：GFS可藉SiPh＋SiGe＋先進封裝提升AI光互連單位內容；已排產與客戶共同出資提高需求可見度。Marvell及具量產資格的雷射、光纖接合、測試設備供應商可能間接受益，但本次沒有足夠證據點名新增訂單。
+          風險：2027年約40億美元淨CapEx、工具導入／良率爬坡、客戶集中、預付款條款不明、2028後供給過剩、CPO／NPO採用延遲，以及EML、CW雷射、矽光子調變器等架構替代。未檢查即時估值，不判斷市場是否已反映。
+          
+          6) 待驗證與追蹤
+          追蹤季度SiPh實際營收、wafer/月與利用率、良率、2027年底10億美元run-rate達成度、預付款是否具取消／take-or-pay條款、新客戶認證轉量產時間，以及NPO／CPO收入首次單獨揭露。
+          """.strip()
+          data=urllib.parse.urlencode({
+              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+              "text": message,
+              "disable_web_page_preview": "true",
+          }).encode()
+          req=urllib.request.Request(
+              "https://api.telegram.org/bot" + os.environ["TELEGRAM_BOT_TOKEN"] + "/sendMessage",
+              data=data,
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  payload=json.loads(response.read().decode())
+          except Exception as exc:
+              raise SystemExit(f"Telegram request failed: {type(exc).__name__}: {exc}")
+          if payload.get("ok") is not True:
+              raise SystemExit("Telegram response ok was not true")
+          message_id=payload.get("result", {}).get("message_id")
+          if not isinstance(message_id, int) or message_id <= 0:
+              raise SystemExit("Telegram response lacked a positive integer message_id")
+          receipt={
+              "event": "gf-chips-photonics-20261014",
+              "version": 2,
+              "ok": True,
+              "message_id": message_id,
+          }
+          with open("telegram-receipt.json", "w", encoding="utf-8") as handle:
+              json.dump(receipt, handle, ensure_ascii=False, indent=2)
+          print(json.dumps(receipt, ensure_ascii=False))
+          PY
+      - name: Upload delivery receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-gf-chips-photonics-20261014-v2
+          path: telegram-receipt.json
+          if-no-files-found: error
+          retention-days: 90
