@@ -1,0 +1,74 @@
+name: Optics delivery sodick optical connector machines q3 capacity 20261106 v1
+on:
+  push:
+    branches: [codex/optics-delivery-sodick-optical-connector-machines-q3-capacity-20261106-v1]
+    paths: [.github/workflows/optics-delivery-sodick-optical-connector-machines-q3-capacity-20261106-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-sodick-optical-connector-machines-q3-capacity-20261106-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜Sodick（東證6143）光連接器設備需求已進入財報與擴產
+
+1) 重大變化／門檻
+Sodick先於2026/11/4公告：光通訊連接器用超精密射出成形機「詢價」約為上年同期300%，規劃自2027/7分階段擴產，2028年把射出成形機整體出貨能力提高至2026年的約3倍。11/6財報再確認，AI／資料中心光連接器設備的實際銷售已帶動工業機械部門營收、獲利與公司全年預測上修。這不只是展示或遠期市場宣稱，已具實績與指引影響，達通知門檻；本事件首次通知。
+
+2) 已確認事實
+・公告日：擴產11/4；財報與預測修正11/6。預計擴產起點2027/7；目標年2028。
+・2026年前9月工業機械部門：營收83.58億日圓、年增16.3%；部門利益6.67億日圓、年增82.9%；利益率8.0%。公司明確稱資料中心光連接器需求持續強勁，增產提高稼動率與獲利。
+・FY2026工業機械指引由營收115億上修至125億日圓（+8.7%），部門利益由8億上修至13億日圓（+62.5%）；公司明確把上修歸因之一列為AI／資料中心光連接器用精密射出成形機銷售強勁。
+・公司整體FY2026指引：營收970億→1,014億日圓（+4.5%）；營業利益92億→110億（+19.6%）；淨利74億→95億（+28.4%）。但整體上修也包含大中華區放電加工機及一次性搬遷補償，不能全歸因光通訊。
+・2026年射出成形機預計出貨約900台；2028年整體出貨能力目標約為其3倍。新增中國廈門生產，與日本、泰國形成三據點；不新建廠房，而以既有區域重整增產。上述為公司目標，不是已完成產能。
+・「詢價300%」不是訂單、出貨或營收；公司未揭露光連接器設備的台數、ASP、積壓訂單或客戶名稱。
+
+官方財報(11/6)：https://www.sodick.co.jp/en/ir/pdf/tmp/20261106125331.pdf
+官方預測修正(11/6)：https://www.sodick.co.jp/en/ir/pdf/tmp/20261106124936.pdf
+官方擴產公告(11/4)：https://www.sodick.co.jp/pdf/261104122703_Press_Release_Expansion_of_Injection_Molding_Machine_Production_Capacity_20261104.pdf
+
+3) 受影響供應鏈
+直接：Sodick（6143 JP）供應MT ferrule／多芯光連接器等高精度樹脂零件所需射出成形設備，屬光模組／光纖互連上游製造設備，不是InP、EML、矽光子PIC或光模組廠。
+間接：光連接器與MT ferrule製造商的擴產可能增加設備需求，但Sodick未公開客戶，不能把Corning、US Conec、Furukawa、Sumitomo Electric等任一廠商視為已確認客戶或訂單受益者。
+
+4) 合理推論
+若詢價能轉為訂單，且三據點按期提升產能，工業機械部門可在2027下半年至2028延續高成長並改善固定成本吸收；2026指引上修已提供近期實績支持。另一方面，設備能力擴至約3倍可能逐步緩解光連接器成形設備瓶頸，但不能由此推論InP、EML、CW雷射或整條800G／1.6T鏈皆短缺，也不能等同CPO量產。
+
+5) 投資機會與風險
+機會：6143 JP取得AI資料中心「光互連資本設備」直接曝險；催化劑為光連接器設備訂單／出貨、工業機械毛利率、2027擴產按期。
+風險：詢價轉單率未知；中國設備投資波動、客戶集中、競爭與價格壓力；三倍能力可能早於需求造成利用率下滑；整體獲利上修含非光通訊與一次性因素。未查即時股價，不判斷已反映或低估。
+
+6) 待驗證／追蹤
+下一步應追蹤：光連接器設備實際訂單與出貨台數、積壓訂單、三廠月產能與良率、2027/7啟動是否落實、工業機械部門毛利率／利用率、具名客戶或客戶端擴產確認。目前沒有獨立客戶證據覆核「詢價300%」。"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"sodick-optical-connector-machines-q3-capacity-20261106","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
