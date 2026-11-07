@@ -1,8 +1,8 @@
-name: Optics delivery sodick optical connector machines q3 capacity 20261106 v1
+name: Sodick optics delivery v1
 on:
   push:
-    branches: [codex/optics-delivery-sodick-optical-connector-machines-q3-capacity-20261106-v1]
-    paths: [.github/workflows/optics-delivery-sodick-optical-connector-machines-q3-capacity-20261106-v1.yml]
+    branches: ['codex/optics-delivery-sodick-optical-connector-machines-q3-capacity-20261106-v1']
+    paths: ['.github/workflows/optics-delivery-sodick-optical-connector-machines-q3-capacity-20261106-v1.yml']
 permissions:
   contents: read
 concurrency:
@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   deliver:
-    if: github.run_attempt == 1
+    if: \${{ github.run_attempt == 1 }}
     runs-on: ubuntu-latest
     steps:
       - name: Send verified optics report
