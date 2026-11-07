@@ -2192,7 +2192,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2557,7 +2557,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2855,7 +2855,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3166,7 +3166,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3400,7 +3400,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3551,7 +3551,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4000,7 +4000,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4157,7 +4157,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4231,7 +4231,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4307,7 +4307,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4457,7 +4457,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4608,7 +4608,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4682,7 +4682,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4767,7 +4767,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4842,7 +4842,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5002,7 +5002,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T15:26:51-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5302,7 +5302,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5380,7 +5380,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5453,7 +5453,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5525,7 +5525,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5601,7 +5601,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5896,7 +5896,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5974,7 +5974,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6055,7 +6055,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6131,7 +6131,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6280,7 +6280,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6356,7 +6356,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-06T19:54:27-05:00",
+      "updated_at": "2026-11-06T19:59:01-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -37804,7 +37804,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-06T23:46:44-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -37873,6 +37874,148 @@
             ],
             "confidence": 85,
             "telegram_draft": "INTC FY2026 Q3\n\n💡 投資結論與邏輯:\n• 營運結構顯著分化，Data center受惠AI基礎設施建置需求強勁且供不應求，但Client端受零組件成本上漲與IT預算緊縮拖累，影響短期獲利韌性。\n• 公司透過發行新股挹注$22.6B資金並調控資本支出，帶動營運現金流與自由現金流改善，但增資帶來的股本稀釋與Client市場放緩將壓抑未來數季EPS表現。\n\n📊 關鍵數據與財測:\n• 營收與盈利：Q3營收$16.5B（年增21%），Net revenue為$16,513M；GAAP EPS為$0.60，Non-GAAP EPS為$0.52；GAAP gross profit為$7,096M（對比Q3 2025的$5,218M）。數據顯示終端出貨規模回升，但Q3包含認列與政府託管股票相關之$1.0B公允價值變動收益，非單純營運獲利。\n• 現金流與Capex：Q3營運現金流為$5.1B，9M 2026累積營運現金流為$13,184M（對比9M 2025的$5,409M）；9M 2026 Capex下降至$10,216M（對比9M 2025的$11,158M）；Q3 Adjusted free cash flow升至$1,639M（對比Q3 2025的$896M）。顯示資本強度獲得控制，現金轉化能力回升。\n• 業績指引：Q4營收指引為$15.0B至$16.0B；Q4 GAAP EPS指引為$0.10，Non-GAAP EPS指引為$0.25。管理層表示Data center強勁需求將持續至Q4及未來，但Client疲軟將在Q4加劇並延續至2027年。反映短期獲利能力受Client業務拖累而修正。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 管理層表示Data center產品在Q3持續處於供不應求狀態，AI基礎設施帶動的訂單拉貨動能延伸至Q4；判讀Data center業務為目前主要營運支柱，惟產能限制了短期營收上限。\n• 管理層指出Client市場因記憶體價格高企及企業客戶縮減IT預算，需求自上半年高點下滑；判讀PC鏈零組件成本壓力短期難以消化，將持續壓抑Client產品線毛利率。\n• 8月完成發行242M股普通股，取得淨收益$22.6B；判讀資產負債表流動性風險獲得緩解，但股本擴張對長期EPS產生稀釋效果。\n\n⚠️ 風險、反證與待驗證:\n• Client市場疲軟若持續延長至2027全年度，將反向侵蝕Data center所帶來的獲利成長。\n• 資本支出雖然下滑，但若擴產進度與外部代工客戶爭取不如預期，$22.6B增資效益將難以顯現。\n• 需持續追蹤Downfall安全漏洞訴訟、分段財務報告證券訴訟進度，以及中東營運據點之地緣政治風險。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Telegram draft section 2 exceeds the maximum allowed 7 non-empty lines (currently 9 lines).",
+              "Telegram draft section 1 contains metric/value pairs ('$16.5B') that are repeated in Section 2, violating the rule 'Use at most ONE metric/value pair repeated in Section 2'.",
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "INTC FY2026 Q3\n\n💡 投資結論與邏輯:\n• 營運結構顯著分化，Data center受惠AI基礎設施建置需求強勁，但Client端受零組件成本上漲與IT預算緊縮拖累，影響短期獲利韌性。\n• 公司透過發行新股籌資並調控資本支出，帶動現金流改善，但股本稀釋與Client市場放緩將壓抑未來數季表現。\n\n📊 關鍵數據與財測:\n• 營收：Q3營收$16.5B（年增21%），Net revenue為$16,513M；顯示終端出貨規模回升，但Q3包含認列與政府託管股票相關之$1.0B公允價值變動收益，非單純營運獲利。\n• 獲利：GAAP EPS為$0.60，Non-GAAP EPS為$0.52；GAAP gross profit為$7,096M（對比Q3 2025的$5,218M）。\n• 現金流：Q3營運現金流為$5.1B，9M 2026累積營運現金流為$13,184M（對比9M 2025的$5,409M）；9M 2026 Capex下降至$10,216M；Q3 Adjusted free cash flow升至$1,639M（對比Q3 2025的$896M）。\n• 財測：Q4營收指引區間為$15.0B至$16.0B；Q4 GAAP EPS指引為$0.10，Non-GAAP EPS指引為$0.25。\n• 共識：外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 管理層表示Data center產品在Q3持續處於供不應求狀態，AI基礎設施帶動的訂單拉貨動能延伸至Q4；判讀Data center業務為目前主要營運支柱，惟產能限制了短期營收上限。\n• 管理層指出Client市場因記憶體價格高企及企業客戶縮減IT預算，需求自上半年高點下滑；判讀PC鏈零組件成本壓力短期難以消化，將持續壓抑Client產品線毛利率。\n• 8月完成發行242M股普通股，取得淨收益$22.6B；判讀資產負債表流動性風險獲得緩解，但股本擴張對長期EPS產生稀釋效果。\n\n⚠️ 風險、反證與待驗證:\n• Client市場疲軟若持續延長，將反向侵蝕Data center所帶來的獲利成長。\n• 資本支出雖然下滑，但若擴產進度與外部代工客戶爭取不如預期，增資效益將難以顯現。\n• 需持續追蹤Downfall安全漏洞訴訟、分段財務報告證券訴訟進度，以及中東營運據點之地緣政治風險。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:獲利：GAAP EPS為$0.60，Non-GAAP EPS為$0.52；GAAP gross profit為$7,096M（對比Q3 2025的$5,218M）。",
+              "kpi_without_readthrough:現金流：Q3營運現金流為$5.1B，9M 2026累積營運現金流為$13,184M（對比9M 2025的$5,409M）；9M 2026 Capex下降至$10,216M；Q3 A",
+              "kpi_without_readthrough:財測：Q4營收指引區間為$15.0B至$16.0B；Q4 GAAP EPS指引為$0.10，Non-GAAP EPS指引為$0.25。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Data center需求強勁與Client市場放緩呈現顯著分化",
+                "why_it_matters": "AI基礎設施投資推動Data center產品需求持續超出可用供應，但Client市場因記憶體等零組件價格上漲與IT預算緊縮而衰退，整體盈利結構向高資本支出的Data center傾斜。",
+                "fact_basis": [
+                  "Q3 2026 revenue為$16.5B，年增21%",
+                  "Data center產品需求強勁且供不應求， Client需求相較2026上半年下降"
+                ],
+                "inference": "Client業務短期承壓將拖累近季毛利，但Data center業務的產能瓶頸解除狀況將決定未來1–3年的Earnings Power。",
+                "confidence": "high"
+              },
+              {
+                "signal": "自由現金流受增資與資本支出優化而改善",
+                "why_it_matters": "實施$22.6B（公開發行242M股）普通股現增籌資，且9M 2026資本支出降至$10,216M（對比9M 2025的$11,158M），顯著緩解資產負債表壓力。",
+                "fact_basis": [
+                  "Q3 2026 Adjusted free cash flow為$1,639M（Q3 2025為$896M）",
+                  "9M 2026 Net cash provided by operating activities達到$13,184M（9M 2025為$5,409M）"
+                ],
+                "inference": "資本強度有所控制，但股本擴大（增加約242M股）將稀釋長期每股盈餘表現。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026總營收為$16,513M（年增20.9%），驅動力主要來自Data center AI基礎設施強勁需求。",
+                "Client市場受零組件（特別是記憶體）成本上升及IT預算緊縮影響，需求較2026上半年下滑。"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 GAAP gross profit為$7,096M（Q3 2025為$5,218M）；Non-GAAP gross profit為$7,284M（Q3 2025為$5,456M）。",
+                "Q3 2026 GAAP EPS為$0.60，Non-GAAP EPS為$0.52。Q3 2026包含認列與美國政府託管股票公允價值變動相關之$1.0B收益（每股計算排除$120M相關處分利得）。"
+              ],
+              "cash_capital_intensity": [
+                "Q3 2026營運現金流為$5.1B，9M 2026累積營運現金流達$13,184M（對比9M 2025的$5,409M）。",
+                "9M 2026不動產、廠房及設備添置（Capex）為$10,216M，低於9M 2025的$11,158M；Q3 2026 Adjusted free cash flow增至$1,639M。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q4 2026營收指引區間為$15.0B至$16.0B，顯示營收季減趨勢。",
+              "Q4 2026 GAAP EPS指引為$0.10，Non-GAAP EPS指引為$0.25，顯著低於Q3 2026水平（GAAP $0.60 / Non-GAAP $0.52）。",
+              "管理層指引：Data center強勁需求將持續至Q4 2026及更遠；Client市場疲軟趨勢預計於Q4 2026進一步惡化並持續至2027年。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "Data center產品需求超越現有產能（supply-constrained），顯示終端AI基礎設施需求具高度深度。",
+              "Client端受記憶體價格高企與客戶庫存精細管理影響，終端客戶拉貨力道放緩，需求品質出現短期轉弱。",
+              "Packet中未提供客戶數、NRR、RPO及客戶集中度等具體數據，無法判定客戶拓展廣度與淨留存表現。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              " Data center產品目前處於供不應求狀態，顯示其在AI伺服器供應鏈中具備一定程度的交貨優先權與價值擷取能力。",
+              "無直接數據證明晶圓代工與封裝業務的外部客戶簽約進度或市占率變化，無法直接推論長期Control point或Pricing power增強。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "Client市場疲軟若從PC零組件成本問題演變為結構性終端需求衰退，將進一步侵蝕Q4 2026及2027年高毛利產品組合。",
+              "2026年8月發行約242M股新股籌資$22.6B，若資本支出無法有效轉化為代工或晶片產出效能，將帶來長期股權稀釋風險。",
+              "涉及訴訟風險（Downfall安全漏洞消費訴訟、內部代工模式證券訴訟）與中東營運地區的地緣政治風險。"
+            ],
+            "watch_items": [
+              "Data center產品供不應求瓶頸是否能在Q4 2026解除並反映於營收上上游。",
+              "Client PC終端庫存去化速度與記憶體價格走勢是否在2027上半年止跌回穩。",
+              "現增資金$22.6B對晶圓製造擴產計畫的實質投入進度與政府補助落實情況。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "INTC FY2026 Q3\n\n💡 投資結論與邏輯:\n• 營運結構顯著分化，Data center受惠AI基礎設施建置需求強勁，但Client端受零組件成本上漲與IT預算緊縮拖累，影響短期獲利韌性。\n• 公司透過發行新股籌資並調控資本支出，帶動現金流改善，但股本稀釋與Client市場放緩將壓抑未來數季表現。\n\n📊 關鍵數據與財測:\n• 營收：Q3營收$16.5B（年增21%），Net revenue為$16,513M；顯示終端出貨規模回升，但Q3包含認列與政府託管股票相關之$1.0B公允價值變動收益，非單純營運獲利。\n• 現金流：9M 2026累積營運現金流達$13,184M（對比9M 2025的$5,409M）；9M 2026 Capex下降至$10,216M；Q3 Adjusted free cash flow升至$1,639M（對比Q3 2025的$896M）。\n• 財測：Q4營收指引區間為$15.0B至$16.0B；Q4 GAAP EPS指引為$0.10，Non-GAAP EPS指引為$0.25。\n• 共識：外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 管理層表示Data center產品在Q3持續處於供不應求狀態，AI基礎設施帶動的訂單拉貨動能延伸至Q4；判讀Data center業務為目前主要營運支柱，惟產能限制了短期營收上限。\n• 管理層指出Client市場因記憶體價格高企及企業客戶縮減IT預算，需求自上半年高點下滑；判讀PC鏈零組件成本壓力短期難以消化，將持續壓抑Client產品線毛利率。\n• 8月完成發行242M股普通股，取得淨收益$22.6B；判讀資產負債表流動性風險獲得緩解，但股本擴張對長期EPS產生稀釋效果。\n\n⚠️ 風險、反證與待驗證:\n• Client市場疲軟若持續延長，將反向侵蝕Data center所帶來的獲利成長。\n• 資本支出雖然下滑，但若擴產進度與外部代工客戶爭取不如預期，增資效益將難以顯現。\n• 需持續追蹤Downfall安全漏洞訴訟、分段財務報告證券訴訟進度，以及中東營運據點之地緣政治風險。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 0,
+            "unsupported_claims": [
+              "facts.cards[2]:quote_not_found_in_sec_edgar:0000050863-26-000191:intc-20260926.htm (Quote validation failure)",
+              "facts.cards[20]:quote_not_found_in_official_ir:e6dc875b4aad3053774eb619 (Quote validation failure)",
+              "facts.cards[21]:quote_not_found_in_official_ir:e6dc875b4aad3053774eb619 (Quote validation failure)",
+              "Analyst output 將 Q3 包含 $1.0B 美國政府託管股票收益寫成「營收包含認列 $1.0B 公允價值變動收益」，混淆營收與營業外收益/公允價值變動。"
+            ],
+            "numerical_errors": [
+              "telegram_draft 內文出現中文貨幣單位「$22.6B」，雖為 $B 但在 Telegram draft 中將淨收益與增資細節混淆；且未嚴格遵守 USD $M/$B 格式與 Buy-side 審核標準。"
+            ],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [
+              "將 Data center 供不應求直接推論為「在 AI 伺服器供應鏈中具備一定程度的交貨優先權與價值擷取能力」，缺乏直接結構化數據支持，犯了將 bottleneck/pricing power 外推之錯誤。"
+            ],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [
+              "將與美國政府託管股票相關之 $1.0B 公允價值變動收益誤寫為營收的一部分（「營收：...包含認列與政府託管股票相關之$1.0B公允價值變動收益」），會計分類嚴重錯誤。"
+            ],
+            "critical_issues": [
+              "Quote validation 存在 3 個無效引用失敗（facts.cards[2], facts.cards[20], facts.cards[21]）。",
+              "會計分類錯誤：把 $1.0B 託管股票處分/公允價值收益歸類為營收（Revenue）影響數。",
+              "deterministic_v5_gate:unsupported_claims",
+              "deterministic_v5_gate:numerical_errors",
+              "deterministic_v5_gate:causal_reasoning_errors",
+              "deterministic_v5_gate:accounting_guidance_errors",
+              "deterministic_v5_gate:unverified_source_quotes"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "INTC FY2026 Q3\n\n💡 投資結論與邏輯:\n• 營運結構顯著分化，Data center 受惠 AI 基礎設施建置需求強勁，但 Client 端受零組件成本上漲與 IT 預算緊縮拖累，壓抑整體盈利動能。\n• 公司透過發行普通股籌資並適度調控資本支出以改善現金流，惟股本稀釋與 Client 市場疲軟將持續壓抑近季每股盈餘表現。\n\n📊 關鍵數據與財測:\n• 營收與獲利：Q3 營收為 $16.5B（年增 21%），Net revenue 為 $16,513M；GAAP EPS 為 $0.60，Non-GAAP EPS 為 $0.52。Q3 另認列與美國政府託管股票相關之 $1.0B 收益，反映非單純營運獲利之影響。\n• 現金流與資本支出：Q3 營運現金流為 $5.1B，9M 2026 累積營運現金流達 $13,184M；9M 2026 Capex 為 $10,216M；Q3 Adjusted free cash flow 升至 $1,639M，反映資本強度受到調控與營運現金回升。\n• 下季指引：Q4 營收指引區間為 $15.0B 至 $16.0B；Q4 GAAP EPS 指引為 $0.10，Non-GAAP EPS 指引為 $0.25，顯示盈利將較 Q3 回落。\n• 共識：外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 管理層表示 Data center 產品需求持續超過可用供應，強勁動能預計延續至 Q4 及未來；判讀 Data center 為當前主要營運支柱，惟產能限制了短期營收上限。\n• 管理層表示 Client 市場因記憶體等零組件價格上漲及 IT 預算緊縮，需求較 2026 上半年下滑，且疲軟趨勢預計於 Q4 惡化並持續至 2027 年；判讀 PC 供應鏈成本壓力難以快速轉嫁，將持續壓抑 Client 毛利。\n• 8 月完成發行約 242M 股普通股取得淨收益 $22.6B；判讀流動性壓力獲得緩解，惟股本擴張對長期 EPS 產生稀釋效果。\n• 本期 Packet 未包含 Q&A 逐字稿驗證內容。\n\n⚠️ 風險、反證與待驗證:\n• Client 市場疲軟若從零組件成本問題演變為結構性需求衰退，將進一步侵蝕 Q4 及 2027 年產品組合與毛利率。\n• 資本支出雖有下降，但若現增資金未有效轉化為產能與晶片競爭力，增資效益將難以顯現並加重稀釋。\n• 需持續追蹤 Downfall 安全漏洞訴訟、內部代工模式證券訴訟進度，以及中東營運據點之地緣政治風險。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
           }
         }
       },
