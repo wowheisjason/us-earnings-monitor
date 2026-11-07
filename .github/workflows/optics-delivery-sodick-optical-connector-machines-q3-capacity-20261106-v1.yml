@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   deliver:
-    if: \${{ github.run_attempt == 1 }}
+    if: ${{ github.run_attempt == 1 }}
     runs-on: ubuntu-latest
     steps:
       - name: Send verified optics report
