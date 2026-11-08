@@ -1,0 +1,102 @@
+name: Deliver optics report aehr q1fy27 sipho production orders v1
+
+on:
+  push:
+    branches:
+      - codex/optics-delivery-aehr-q1fy27-sipho-production-orders-20261102-v1
+    paths:
+      - .github/workflows/optics-delivery-aehr-q1fy27-sipho-production-orders-20261102-v1.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: optics-delivery-aehr-q1fy27-sipho-production-orders-20261102-v1
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    if: ${{ github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified report to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+
+          message="""
+          【AI光通訊重大更新｜Aehr Test Systems（AEHR）｜事件v1】
+          
+          1) 重大變化及門檻
+          Aehr於2026-11-02法說揭露，Q1 FY2027已從「多家」矽光子客戶取得額外量產訂單，產品為全自動FOX-XP晶圓級燒機系統，用於高速光互連與資料中心PIC。相較先前主要集中於單一lead customer的公告，本次首次確認多客戶量產訂單，顯示晶圓級可靠度篩選由個別驗證走向較廣泛商業採用，足以改變Aehr在矽光子測試設備的競爭位置，達通知門檻。
+          
+          2) 已確認事實
+          • 公告／法說日：2026-11-02；財季截至2026-09-25。
+          • 公司Q1總營收3,300萬美元，年增200%、季增75%；bookings 4,670萬美元，book-to-bill約1.4；9/25 backlog 1.009億美元，含期後訂單的11/1 effective backlog為1.093億美元。
+          • FY2027總營收指引由1.3億～1.5億美元區間上修至1.5億美元，約為FY2026三倍；這是全公司指引，主要亦受AI處理器測試設備推動，不能歸因於矽光子。
+          • 管理層在法說稱，多家矽光子客戶已下全自動FOX-XP追加量產訂單，用於高速光互連與資料中心PIC；但未公開客戶、訂單金額、台數、交付季度或光通訊營收拆分。此項為管理層聲明，尚無客戶端獨立確認。
+          • 公司過往已確認lead silicon photonics customer的全自動系統完成安裝與production qualification；FOX-XP可支援300mm晶圓的高量產燒機。此次「多客戶」是新增證據，但不能假定所有訂單皆採相同九片並行配置。
+          • 官方財報／SEC：https://www.sec.gov/Archives/edgar/data/1040470/000165495426009385/aehr_ex991.htm
+          • 官方公司公告：https://www.aehr.com/2026/11/aehr-test-systems-reports-record-first-quarter-fiscal-2027-revenue-of-33-0-million-raises-full-year-revenue-outlook-to-150-million-triple-fiscal-2026-revenue/
+          • 法說轉錄（第三方，供核對管理層原話）：https://stockanalysis.com/stocks/aehr/transcripts/708298-q1-2027/
+          
+          3) 供應鏈與競合
+          • Aehr（NASDAQ:AEHR）：直接受益，角色為PIC晶圓級burn-in／可靠度篩選設備與WaferPak接觸器，不是InP磊晶、EML、光引擎或模組廠。
+          • 客戶未具名，不推測為GlobalFoundries、Tower、TSMC或任何光模組廠。
+          • FormFactor、Advantest、Teradyne及其他晶圓／光電測試平台可能競爭或互補；各設備涵蓋的burn-in、參數測試、封裝後測試不同，不能以此認定競爭者失單。
+          • 台灣OSAT的FOX-XP評估是另一個AI處理器專案，官方沒有說它屬於本次矽光子訂單，不應混為一談。
+          
+          4) 合理推論
+          若多客戶訂單如期安裝、通過量產驗收，Aehr可由單一矽光子客戶擴展為多客戶installed base，後續設備、WaferPak接觸器與服務收入的可重複性可能提高。CPO、光I/O與高速PIC增加早期失效篩選價值，可能提高晶圓級burn-in滲透率。
+          成立條件：客戶PIC實際放量、系統驗收、良率／吞吐達標及burn-in成為量產標準流程。這不是CPO已量產的證據，也不能推論InP／EML或整條光通訊鏈短缺。
+          
+          5) 投資機會與風險
+          機會：多客戶量產訂單強化Aehr在矽光子可靠度設備的先行位置；設備installed base可能帶動接觸器與服務等後續收入。
+          風險：光通訊訂單金額與占比未揭露；全公司成長可能主要來自AI處理器而非SiPh；客戶集中、驗收時點、資本支出波動、burn-in流程被替代或縮短，均可能使收入低於預期。未查即時估值，不判斷是否已反映。
+          
+          6) 待驗證
+          追蹤具名客戶或客戶端確認、光通訊訂單金額／台數、交貨與驗收、SiPh營收占比、WaferPak消耗收入，以及新增PIC客戶是否由量產訂單進一步擴至多線部署。
+          """.strip()
+          data=urllib.parse.urlencode({
+              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+              "text": message,
+              "disable_web_page_preview": "true",
+          }).encode()
+          req=urllib.request.Request(
+              "https://api.telegram.org/bot" + os.environ["TELEGRAM_BOT_TOKEN"] + "/sendMessage",
+              data=data,
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  payload=json.loads(response.read().decode())
+          except Exception as exc:
+              raise SystemExit(f"Telegram request failed: {type(exc).__name__}: {exc}")
+          if payload.get("ok") is not True:
+              raise SystemExit("Telegram response ok was not true")
+          message_id=payload.get("result", {}).get("message_id")
+          if not isinstance(message_id, int) or message_id <= 0:
+              raise SystemExit("Telegram response lacked a positive integer message_id")
+          receipt={
+              "event": "aehr-q1fy27-sipho-production-orders-20261102",
+              "version": 1,
+              "ok": True,
+              "message_id": message_id,
+          }
+          with open("telegram-receipt.json", "w", encoding="utf-8") as handle:
+              json.dump(receipt, handle, ensure_ascii=False, indent=2)
+          print(json.dumps(receipt, ensure_ascii=False))
+          PY
+      - name: Upload delivery receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-aehr-q1fy27-sipho-production-orders-20261102-v1
+          path: telegram-receipt.json
+          if-no-files-found: error
+          retention-days: 90
