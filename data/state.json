@@ -2236,7 +2236,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2601,7 +2601,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2899,7 +2899,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3210,7 +3210,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3444,7 +3444,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3595,7 +3595,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4044,7 +4044,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4201,7 +4201,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4275,7 +4275,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4351,7 +4351,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4501,7 +4501,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4652,7 +4652,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4726,7 +4726,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4886,7 +4886,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5346,7 +5346,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5424,7 +5424,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5497,7 +5497,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5569,7 +5569,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5645,7 +5645,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5940,7 +5940,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6018,7 +6018,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6099,7 +6099,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6175,7 +6175,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6324,7 +6324,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6400,7 +6400,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T15:30:22-05:00",
+      "updated_at": "2026-11-10T15:51:15-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -31169,7 +31169,7 @@
     },
     "KLAC_2026-09-30_Q1": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "77dad5c9384c7945231c84f9d2dba0c250257db832451b54daad3a0a7266ea57",
+      "evidence_fingerprint": "bfe0a6605ebcbe7af055cf590d4c778a911e9a192b57d8973597899f3f2afecb",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -31209,26 +31209,24 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand.",
+                "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand for the period.",
                 "materiality_candidate": 5,
-                "quote": "RevenueFromContractWithCustomerExcludingAssessedTax: 4,136,015",
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
                 "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": "4,136,015",
-                "unit": "usd",
-                "metric_type": "other"
+                "unit": "usd"
               },
               {
                 "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net income loss was $1,548,588 thousand.",
+                "statement": "Net income loss was $1,548,588 thousand for the period.",
                 "materiality_candidate": 5,
-                "quote": "NetIncomeLoss: 1,548,588",
+                "quote": "us-gaap:NetIncomeLoss",
                 "metric": "NetIncomeLoss",
                 "value": "1,548,588",
-                "unit": "usd",
-                "metric_type": "other"
+                "unit": "usd"
               }
             ]
           }
@@ -31239,37 +31237,14 @@
               {
                 "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
                 "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "The official document does not contain an explicit text quote for RevenueFromContractWithCustomerExcludingAssessedTax outside the structured XBRL header.",
-                "materiality_candidate": 5,
-                "quote": "RevenueFromContractWithCustomerExcludingAssessedTax",
-                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
-                "value": null,
-                "unit": "usd",
-                "metric_type": "other",
-                "card_id": "c1:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
-                "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
-                  "quote": "RevenueFromContractWithCustomerExcludingAssessedTax"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
-                "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "The official document does not contain an explicit text quote for NetIncomeLoss outside the structured XBRL header.",
+                "statement": "Net income loss was $1,548,588 thousand for the period.",
                 "materiality_candidate": 5,
-                "quote": "NetIncomeLoss",
+                "quote": "Net income loss was $1,548,588 thousand",
                 "metric": "NetIncomeLoss",
-                "value": null,
-                "unit": "usd",
-                "metric_type": "other",
+                "value": "1548588",
+                "unit": "USD",
                 "card_id": "c2:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
                 "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
                 "source": "sec_edgar",
@@ -31277,7 +31252,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
-                  "quote": "NetIncomeLoss"
+                  "quote": "us-gaap:NetIncomeLoss"
                 }
               }
             ],
@@ -31305,17 +31280,14 @@
                 "metric": "total_revenues",
                 "value": "4136",
                 "unit": "USD_millions",
-                "period": "Q1 FY 2027",
-                "comparison_value": "3210",
-                "comparison_period": "Q1 FY 2026",
-                "metric_type": "revenue"
+                "period": "Q1 FY 2027"
               },
               {
                 "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 total revenues are expected to be in a range of $4.7 billion +/- $200 million.",
+                "statement": "Second quarter fiscal 2027 total revenues are expected to be in a range of $4.7 billion +/- $200 million.",
                 "materiality_candidate": 5,
                 "quote": "Total revenues are expected to be in a range of $4.7 billion +/- $200 million",
                 "metric": "total_revenues",
@@ -31331,8 +31303,8 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 GAAP gross margin is expected to be in a range of 61.8% +/- 1.0%.",
-                "materiality_candidate": 5,
+                "statement": "GAAP gross margin for Q2 FY 2027 is expected to be in a range of 61.8% +/- 1.0%.",
+                "materiality_candidate": 4,
                 "quote": "GAAP gross margin is expected to be in a range of 61.8% +/- 1.0%",
                 "metric": "gaap_gross_margin",
                 "period": "Q2 FY 2027",
@@ -31347,8 +31319,8 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%.",
-                "materiality_candidate": 5,
+                "statement": "Non-GAAP gross margin for Q2 FY 2027 is expected to be in a range of 62.5% +/- 1.0%.",
+                "materiality_candidate": 4,
                 "quote": "Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%",
                 "metric": "non_gaap_gross_margin",
                 "period": "Q2 FY 2027",
@@ -31363,7 +31335,7 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11.",
+                "statement": "GAAP diluted EPS for Q2 FY 2027 is expected to be in a range of $1.41 +/- $0.11.",
                 "materiality_candidate": 5,
                 "quote": "GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11",
                 "metric": "gaap_diluted_eps",
@@ -31379,7 +31351,7 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11.",
+                "statement": "Non-GAAP diluted EPS for Q2 FY 2027 is expected to be in a range of $1.44 +/- $0.11.",
                 "materiality_candidate": 5,
                 "quote": "Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11",
                 "metric": "non_gaap_diluted_eps",
@@ -31405,32 +31377,16 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand compared to $3,209,696 thousand for the three months ended September 30, 2025.",
-                "materiality_candidate": 5,
+                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
+                "materiality_candidate": 3,
                 "quote": "Total revenues\n4,136,015\n3,657,556\n3,209,696",
                 "metric": "Total revenues",
-                "metric_type": "other",
                 "value": "4136015",
-                "unit": "USD Thousands",
+                "unit": "USD $",
                 "period": "Q1 2027",
                 "comparison_value": "3209696",
-                "comparison_period": "Q1 2026"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income for the three months ended September 30, 2026 was $1,548,588 thousand compared to $1,121,040 thousand for the three months ended September 30, 2025.",
-                "materiality_candidate": 5,
-                "quote": "Net income\n$      1,548,588\n$      1,363,059\n$      1,121,040",
-                "metric": "Net income",
-                "metric_type": "other",
-                "value": "1548588",
-                "unit": "USD Thousands",
-                "period": "Q1 2027",
-                "comparison_value": "1121040",
-                "comparison_period": "Q1 2026"
+                "comparison_period": "Q1 2026",
+                "metric_type": "other"
               },
               {
                 "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
@@ -31438,31 +31394,15 @@
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
                 "statement": "Net cash provided by operating activities was $1,530,939 thousand for the three months ended September 30, 2026.",
-                "materiality_candidate": 4,
+                "materiality_candidate": 3,
                 "quote": "Net cash provided by operating activities\n1,530,939\n906,430\n1,161,591",
                 "metric": "Net cash provided by operating activities",
-                "metric_type": "operating_cash_flow",
                 "value": "1530939",
-                "unit": "USD Thousands",
+                "unit": "USD $",
                 "period": "Q1 2027",
                 "comparison_value": "1161591",
-                "comparison_period": "Q1 2026"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
-                "card_type": "capital",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Capital expenditures were $194,756 thousand for the three months ended September 30, 2026.",
-                "materiality_candidate": 4,
-                "quote": "Capital expenditures\n(194,756)\n(89,288)\n(95,894)",
-                "metric": "Capital expenditures",
-                "metric_type": "capex",
-                "value": "194756",
-                "unit": "USD Thousands",
-                "period": "Q1 2027",
-                "comparison_value": "95894",
-                "comparison_period": "Q1 2026"
+                "comparison_period": "Q1 2026",
+                "metric_type": "operating_cash_flow"
               }
             ]
           }
@@ -31479,22 +31419,23 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Total revenues were $4,136,015 thousand for the three months ended September 30, 2026.",
+                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
                 "materiality_candidate": 4,
                 "quote": "Total revenues\n$      4,136,015",
                 "metric": "Total revenues",
                 "value": "4136015",
                 "unit": "USD $",
-                "period": "Three Months Ended September 30, 2026"
+                "period": "Three Months Ended September 30, 2026",
+                "metric_type": "other"
               },
               {
                 "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Second Quarter Fiscal 2027 guidance for GAAP net income per diluted share is $1.30 to $1.52.",
-                "materiality_candidate": 5,
-                "quote": "GAAP net income per diluted share\n$1.30\n$1.52",
+                "statement": "Second Quarter Fiscal 2027 GAAP net income per diluted share guidance is $1.30 to $1.52.",
+                "materiality_candidate": 4,
+                "quote": "Second Quarter Fiscal 2027 Guidance\nReconciliation of GAAP Diluted EPS\nto Non-GAAP\nDiluted EPS\nThree Months Ending December 31, 2026\n(\nIn millions, except per share amounts\n)\nLow\nHigh\nGAAP net income per diluted share\n$1.30\n$1.52",
                 "metric": "GAAP net income per diluted share",
                 "period": "Three Months Ending December 31, 2026",
                 "guidance_type": "range",
@@ -31507,8 +31448,8 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Second Quarter Fiscal 2027 guidance for Non-GAAP net income per diluted share is $1.33 to $1.55.",
-                "materiality_candidate": 5,
+                "statement": "Second Quarter Fiscal 2027 Non-GAAP net income per diluted share guidance is $1.33 to $1.55.",
+                "materiality_candidate": 4,
                 "quote": "Non-GAAP net income per diluted share\n$1.33\n$1.55",
                 "metric": "Non-GAAP net income per diluted share",
                 "period": "Three Months Ending December 31, 2026",
@@ -31522,14 +31463,29 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Second Quarter Fiscal 2027 guidance for GAAP gross margin is 60.8% to 62.8%.",
+                "statement": "Second Quarter Fiscal 2027 GAAP gross margin guidance is 60.8% to 62.8%.",
                 "materiality_candidate": 4,
-                "quote": "GAAP gross margin\n60.8 %\n62.8 %",
+                "quote": "Reconciliation of GAAP Gross Margin to Non-GAAP\nGross Margin\nThree Months Ending December 31, 2026\nLow\nHigh\nGAAP gross margin\n60.8 %\n62.8 %",
                 "metric": "GAAP gross margin",
                 "period": "Three Months Ending December 31, 2026",
                 "guidance_type": "range",
                 "low": "60.8",
                 "high": "62.8",
+                "unit": "%"
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second Quarter Fiscal 2027 Non-GAAP gross margin guidance is 61.5% to 63.5%.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP gross margin\n61.5 %\n63.5 %",
+                "metric": "Non-GAAP gross margin",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "low": "61.5",
+                "high": "63.5",
                 "unit": "%"
               }
             ]
@@ -31581,12 +31537,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand for Q1 2027.",
+                "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand.",
                 "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
-                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 4,136,015",
+                "metric": "revenue",
                 "value": "4,136,015",
-                "unit": "usd",
+                "unit": "USD",
                 "period": "Q1 2027"
               },
               {
@@ -31594,12 +31550,12 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net income loss was $1,548,588 thousand for Q1 2027.",
+                "statement": "Net income loss was $1,548,588 thousand.",
                 "materiality_candidate": 5,
-                "quote": "us-gaap:NetIncomeLoss",
-                "metric": "NetIncomeLoss",
+                "quote": "us-gaap:NetIncomeLoss, 1,548,588",
+                "metric": "net_income",
                 "value": "1,548,588",
-                "unit": "usd",
+                "unit": "USD",
                 "period": "Q1 2027"
               }
             ]
@@ -31611,14 +31567,34 @@
               {
                 "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
                 "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "The official document does not contain valid text or tables to support this revenue value; the provided text snippet is truncated XBRL/HTML metadata.",
+                "materiality_candidate": 5,
+                "metric": "revenue",
+                "value": null,
+                "unit": "USD",
+                "period": "Q1 2027",
+                "card_id": "c1:official_ir:acb56e8b319f3dec71cdf264#structured",
+                "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                  "quote": "klac-20260930"
+                }
+              },
+              {
+                "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net income was not reported in the provided excerpt.",
+                "statement": "The official document does not contain valid text or tables to support this net income value; the provided text snippet is truncated XBRL/HTML metadata.",
                 "materiality_candidate": 5,
-                "quote": "klac-20260930",
-                "metric": "NetIncomeLoss",
+                "metric": "net_income",
                 "value": null,
-                "unit": "usd",
+                "unit": "USD",
                 "period": "Q1 2027",
                 "card_id": "c2:official_ir:acb56e8b319f3dec71cdf264#structured",
                 "document_key": "official_ir:acb56e8b319f3dec71cdf264",
@@ -31651,11 +31627,11 @@
                 "fact_class": "objective_fact",
                 "statement": "Common stock shares outstanding as of October 26, 2026 were 1,302,962,435.",
                 "materiality_candidate": 3,
-                "quote": "As of October 26, 2026, there were 1,302,962,435 shares of the registrant’s Common Stock, $0.001 par value per share, outstanding.",
+                "quote": "As of October 26, 2026, there were \n1,302,962,435\n shares of the registrant’s Common Stock, $0.001 par value per share, outstanding.",
                 "metric": "shares_outstanding",
                 "value": 1302962435,
                 "unit": "shares",
-                "period": "2026-10-26"
+                "period": "as_of_oct_26_2026"
               },
               {
                 "unit_id": "official_ir:2506a99482799756a2f0dcba#u2",
@@ -31664,14 +31640,30 @@
                 "fact_class": "objective_fact",
                 "statement": "Accounts receivable, net was $3,072,087 thousand as of September 30, 2026, compared to $2,889,208 thousand as of June 30, 2026, an increase of 6%.",
                 "materiality_candidate": 3,
-                "quote": "Accounts receivable, net $\n3,072,087\n $\n2,889,208\n $\n182,879\n 6\n %",
+                "quote": "Accounts receivable, net\n$\n3,072,087\n\n$\n2,889,208\n\n$\n182,879\n\n6\n\n%",
                 "metric": "accounts_receivable_net",
                 "value": 3072087,
-                "unit": "USD $",
-                "period": "Q1 2027",
+                "unit": "thousands_usd",
+                "period": "Q1 F2027",
                 "comparison_value": 2889208,
-                "comparison_period": "Q4 2026",
+                "comparison_period": "Q4 F2026",
                 "reported_change": 6
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Contract liabilities were $1,707,802 thousand as of September 30, 2026, compared to $1,775,139 thousand as of June 30, 2026, a decrease of 4%.",
+                "materiality_candidate": 3,
+                "quote": "Contract liabilities\n$\n1,707,802\n\n$\n1,775,139\n\n$\n(\n67,337\n)\n(\n4\n)\n%",
+                "metric": "contract_liabilities",
+                "value": 1707802,
+                "unit": "thousands_usd",
+                "period": "Q1 F2027",
+                "comparison_value": 1775139,
+                "comparison_period": "Q4 F2026",
+                "reported_change": -4
               }
             ]
           }
@@ -31686,21 +31678,20 @@
               {
                 "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
                 "card_type": "fact",
-                "topic": "cash_capex",
+                "topic": "supply_capacity",
                 "fact_class": "objective_fact",
                 "statement": "Significant purchase commitments primarily for material, services, supplies and asset purchases were approximately $8.87 billion as of September 30, 2026.",
                 "materiality_candidate": 3,
-                "quote": "Our estimate of our significant purchase commitments primarily for material, services, supplies and asset purchases is approximately $\n8.87\n billion as of September 30, 2026, a majority of which are due within the next\n12\n months.",
+                "quote": "Our estimate of our significant purchase\ncommitments primarily for material, services, supplies and asset purchases is approximately $\n8.87\n billion as of September 30, 2026",
                 "metric": "purchase_commitments",
                 "value": "8.87",
                 "unit": "billion",
-                "period": "as_of_2026-09-30",
-                "metric_type": "other"
+                "period": "as_of_2026-09-30"
               },
               {
                 "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
                 "card_type": "fact",
-                "topic": "cash_capex",
+                "topic": "capital",
                 "fact_class": "objective_fact",
                 "statement": "Committed $100.0 million for future payment obligations under the Cash LTI Plan as of September 30, 2026.",
                 "materiality_candidate": 3,
@@ -31708,22 +31699,20 @@
                 "metric": "cash_lti_plan_commitments",
                 "value": "100.0",
                 "unit": "million",
-                "period": "as_of_2026-09-30",
-                "metric_type": "other"
+                "period": "as_of_2026-09-30"
               },
               {
                 "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
                 "card_type": "fact",
                 "topic": "risk",
                 "fact_class": "objective_fact",
-                "statement": "Guarantee arrangements available through financial institutions totaled up to $180.6 million, with $147.2 million issued as of September 30, 2026.",
+                "statement": "Guarantee arrangements available through various financial institutions for up to $180.6 million, of which $147.2 million had been issued as of September 30, 2026.",
                 "materiality_candidate": 3,
                 "quote": "We maintain guarantee arrangements available through various financial institutions for up to $\n180.6\n million, of which $\n147.2\nmillion had been issued as of September 30, 2026",
                 "metric": "guarantee_arrangements_issued",
                 "value": "147.2",
                 "unit": "million",
-                "period": "as_of_2026-09-30",
-                "metric_type": "other"
+                "period": "as_of_2026-09-30"
               }
             ]
           }
@@ -31743,9 +31732,9 @@
                 "statement": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $40.6 million net gain.",
                 "materiality_candidate": 3,
                 "quote": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $\n40.6\n million net gain.",
-                "metric": "aggregate unamortized fair value of forward contracts for Rate Lock Agreements",
+                "metric": "aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements",
                 "value": "40.6",
-                "unit": "USD_MILLIONS",
+                "unit": "USD Millions",
                 "period": "Q1 2027",
                 "metric_type": "other"
               }
@@ -31775,26 +31764,2053 @@
               },
               {
                 "unit_id": "official_ir:2506a99482799756a2f0dcba#u8",
-                "card_type": "management_claim",
+                "card_type": "fact",
                 "topic": "demand_revenue",
-                "fact_class": "management_claim",
-                "statement": "Delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025, driven by increased sales volume and disciplined cost management.",
+                "fact_class": "objective_fact",
+                "statement": "Delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025.",
                 "materiality_candidate": 4,
-                "quote": "we delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025, driven by increased sales volume and disciplined cost management.",
-                "speaker": "management"
+                "quote": "we delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025",
+                "period": "Q1 FY2027",
+                "metric_type": "other"
               },
               {
                 "unit_id": "official_ir:2506a99482799756a2f0dcba#u8",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Looking ahead, we expect continued revenue growth as we expand manufacturing capacity and increase production levels to meet customer demand.",
+                "statement": "Looking ahead, company expects continued revenue growth as manufacturing capacity expands and production levels increase.",
                 "materiality_candidate": 4,
                 "quote": "Looking ahead, we expect continued revenue growth as we expand manufacturing capacity and increase production levels to meet customer demand.",
-                "metric": "revenue",
+                "period": "forward",
                 "guidance_type": "qualitative"
               }
             ]
+          }
+        },
+        "v5_extract_batch_17": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:f576908d1483b036ee298255#u1",
+              "official_ir:d3c84bf0a7ae250c05077fce#u1"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_18": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:70b256e0c57cc250e8006529#u1",
+              "official_ir:7cb0490789b00df94887e4b1#u1"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_19": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:40871f02054583cb88e6662c#u1",
+              "official_ir:7461d1f7bd40111b079526f2#u1"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:7461d1f7bd40111b079526f2#u1",
+                "card_type": "management_claim",
+                "topic": "other",
+                "fact_class": "management_claim",
+                "statement": "KLA Corporation announced upcoming investor webcasts for Citi's 2026 Global TMT Conference and Goldman Sachs Communacopia + Technology Conference 2026 in September 2026.",
+                "materiality_candidate": 1,
+                "quote": "Wednesday, September 9, 2026 –\nCiti's 2026 Global TMT Conference at 9:30AM ET\nFriday, September 11, 2026 - Goldman Sachs Communacopia + Technology Conference 2026 at 9:30AM PT",
+                "speaker": "Company Announcement"
+              }
+            ]
+          }
+        },
+        "facts": {
+          "payload": {
+            "research_pipeline_version": 5,
+            "coverage": {
+              "documents": [
+                {
+                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                  "title": "KLA Form 10-Q — 10-Q",
+                  "document_kind": "other",
+                  "selection_mode": "full",
+                  "raw_chars": 181316,
+                  "extracted_chars": 24000,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 7,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "title": "Earnings Release",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 24695,
+                  "extracted_chars": 24695,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 7,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                  "title": "10-Q Filing Q1 2027 Quarterly Results 10-Q Filing PDF HTML",
+                  "document_kind": "other",
+                  "selection_mode": "full",
+                  "raw_chars": 181159,
+                  "extracted_chars": 24000,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 7,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "title": "PDF Q1 2027 Quarterly Results PDF HTML",
+                  "document_kind": "other",
+                  "selection_mode": "full",
+                  "raw_chars": 157913,
+                  "extracted_chars": 24000,
+                  "source_truncated": false,
+                  "raw_paragraphs": 31,
+                  "relevant_paragraphs": 31,
+                  "unit_count": 8,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:f576908d1483b036ee298255",
+                  "title": "KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 2732,
+                  "extracted_chars": 2732,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:d3c84bf0a7ae250c05077fce",
+                  "title": "ir.kla.com KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast MILPITAS, Calif., October 1, 2026 -- KLA Corporation (NASDAQ: KLAC), a global leader in semiconductor process control ",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 3302,
+                  "extracted_chars": 3302,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:70b256e0c57cc250e8006529",
+                  "title": "Company Info KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 1688,
+                  "extracted_chars": 1688,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:7cb0490789b00df94887e4b1",
+                  "title": "Stock Data KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 1102,
+                  "extracted_chars": 1102,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:40871f02054583cb88e6662c",
+                  "title": "View all news KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 1936,
+                  "extracted_chars": 1936,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                },
+                {
+                  "document_key": "official_ir:7461d1f7bd40111b079526f2",
+                  "title": "KLA Announces First Quarter Fiscal Year 2027 Earnings Date and Webcast",
+                  "document_kind": "financial_results",
+                  "selection_mode": "full",
+                  "raw_chars": 2277,
+                  "extracted_chars": 2277,
+                  "source_truncated": false,
+                  "raw_paragraphs": 1,
+                  "relevant_paragraphs": 1,
+                  "unit_count": 1,
+                  "transcript": false
+                }
+              ],
+              "expected_unit_ids": [
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u1",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u2",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u3",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u4",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u5",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u6",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                "official_ir:642ea77e3816f921fd932b09#u1",
+                "official_ir:642ea77e3816f921fd932b09#u2",
+                "official_ir:642ea77e3816f921fd932b09#u3",
+                "official_ir:642ea77e3816f921fd932b09#u4",
+                "official_ir:642ea77e3816f921fd932b09#u5",
+                "official_ir:642ea77e3816f921fd932b09#u6",
+                "official_ir:642ea77e3816f921fd932b09#u7",
+                "official_ir:acb56e8b319f3dec71cdf264#u1",
+                "official_ir:acb56e8b319f3dec71cdf264#u2",
+                "official_ir:acb56e8b319f3dec71cdf264#u3",
+                "official_ir:acb56e8b319f3dec71cdf264#u4",
+                "official_ir:acb56e8b319f3dec71cdf264#u5",
+                "official_ir:acb56e8b319f3dec71cdf264#u6",
+                "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "official_ir:2506a99482799756a2f0dcba#u1",
+                "official_ir:2506a99482799756a2f0dcba#u2",
+                "official_ir:2506a99482799756a2f0dcba#u3",
+                "official_ir:2506a99482799756a2f0dcba#u4",
+                "official_ir:2506a99482799756a2f0dcba#u5",
+                "official_ir:2506a99482799756a2f0dcba#u6",
+                "official_ir:2506a99482799756a2f0dcba#u7",
+                "official_ir:2506a99482799756a2f0dcba#u8",
+                "official_ir:f576908d1483b036ee298255#u1",
+                "official_ir:d3c84bf0a7ae250c05077fce#u1",
+                "official_ir:70b256e0c57cc250e8006529#u1",
+                "official_ir:7cb0490789b00df94887e4b1#u1",
+                "official_ir:40871f02054583cb88e6662c#u1",
+                "official_ir:7461d1f7bd40111b079526f2#u1"
+              ],
+              "expected_unit_count": 35,
+              "transcript_unit_count": 0,
+              "qa_unit_count": 0,
+              "source_truncated_documents": [],
+              "processed_unit_ids": [
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u1",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u2",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u3",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u4",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u5",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#u6",
+                "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                "official_ir:642ea77e3816f921fd932b09#u1",
+                "official_ir:642ea77e3816f921fd932b09#u2",
+                "official_ir:642ea77e3816f921fd932b09#u3",
+                "official_ir:642ea77e3816f921fd932b09#u4",
+                "official_ir:642ea77e3816f921fd932b09#u5",
+                "official_ir:642ea77e3816f921fd932b09#u6",
+                "official_ir:642ea77e3816f921fd932b09#u7",
+                "official_ir:acb56e8b319f3dec71cdf264#u1",
+                "official_ir:acb56e8b319f3dec71cdf264#u2",
+                "official_ir:acb56e8b319f3dec71cdf264#u3",
+                "official_ir:acb56e8b319f3dec71cdf264#u4",
+                "official_ir:acb56e8b319f3dec71cdf264#u5",
+                "official_ir:acb56e8b319f3dec71cdf264#u6",
+                "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "official_ir:2506a99482799756a2f0dcba#u1",
+                "official_ir:2506a99482799756a2f0dcba#u2",
+                "official_ir:2506a99482799756a2f0dcba#u3",
+                "official_ir:2506a99482799756a2f0dcba#u4",
+                "official_ir:2506a99482799756a2f0dcba#u5",
+                "official_ir:2506a99482799756a2f0dcba#u6",
+                "official_ir:2506a99482799756a2f0dcba#u7",
+                "official_ir:2506a99482799756a2f0dcba#u8",
+                "official_ir:f576908d1483b036ee298255#u1",
+                "official_ir:d3c84bf0a7ae250c05077fce#u1",
+                "official_ir:70b256e0c57cc250e8006529#u1",
+                "official_ir:7cb0490789b00df94887e4b1#u1",
+                "official_ir:40871f02054583cb88e6662c#u1",
+                "official_ir:7461d1f7bd40111b079526f2#u1"
+              ],
+              "processed_unit_count": 35,
+              "missing_unit_ids": [],
+              "unexpected_unit_ids": [],
+              "coverage_ratio": 1.0,
+              "complete": true
+            },
+            "research_packet": {
+              "packet_version": 5,
+              "coverage": {
+                "expected_unit_count": 35,
+                "processed_unit_count": 35,
+                "coverage_ratio": 1.0,
+                "complete": true,
+                "transcript_unit_count": 0,
+                "qa_unit_count": 0,
+                "missing_unit_ids": [],
+                "source_truncated_documents": []
+              },
+              "topic_inventory": {
+                "capital": 1,
+                "cash_capex": 2,
+                "demand_revenue": 10,
+                "guidance": 10,
+                "margin_unit_economics": 2,
+                "other": 1,
+                "risk": 1,
+                "supply_capacity": 1
+              },
+              "selection": {
+                "raw_card_count": 28,
+                "deduped_card_count": 28,
+                "selected_card_count": 28,
+                "omitted_low_materiality_card_count": 0,
+                "selected_topic_counts": {
+                  "cash_capex": 2,
+                  "demand_revenue": 5,
+                  "guidance": 10,
+                  "margin_unit_economics": 2,
+                  "other": 1,
+                  "risk": 1,
+                  "supply_capacity": 1
+                }
+              },
+              "cards": [
+                {
+                  "card_id": "c1:official_ir:642ea77e3816f921fd932b09#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total revenues were $4,136 million for Q1 FY 2027.",
+                  "metric": "total_revenues",
+                  "value": "4136",
+                  "unit": "USD_millions",
+                  "period": "Q1 FY 2027",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total Revenues\n$4,136 million\n$3,658 million\n$3,210 million"
+                },
+                {
+                  "card_id": "c1:official_ir:acb56e8b319f3dec71cdf264#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "The official document does not contain valid text or tables to support this revenue value; the provided text snippet is truncated XBRL/HTML metadata.",
+                  "metric": "revenue",
+                  "unit": "USD",
+                  "period": "Q1 2027",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand for the period.",
+                  "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                  "value": "4,136,015",
+                  "unit": "usd",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+                },
+                {
+                  "card_id": "c2:official_ir:2506a99482799756a2f0dcba#u8",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025.",
+                  "period": "Q1 FY2027",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u8",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "we delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c1:official_ir:642ea77e3816f921fd932b09#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
+                  "metric": "Total revenues",
+                  "value": "4136015",
+                  "unit": "USD $",
+                  "period": "Three Months Ended September 30, 2026",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues\n$      4,136,015",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c1:official_ir:2506a99482799756a2f0dcba#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Common stock shares outstanding as of October 26, 2026 were 1,302,962,435.",
+                  "metric": "shares_outstanding",
+                  "value": 1302962435,
+                  "unit": "shares",
+                  "period": "as_of_oct_26_2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u1",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of October 26, 2026, there were \n1,302,962,435\n shares of the registrant’s Common Stock, $0.001 par value per share, outstanding."
+                },
+                {
+                  "card_id": "c2:official_ir:2506a99482799756a2f0dcba#u2",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Accounts receivable, net was $3,072,087 thousand as of September 30, 2026, compared to $2,889,208 thousand as of June 30, 2026, an increase of 6%.",
+                  "metric": "accounts_receivable_net",
+                  "value": 3072087,
+                  "unit": "thousands_usd",
+                  "period": "Q1 F2027",
+                  "comparison_value": 2889208,
+                  "comparison_period": "Q4 F2026",
+                  "reported_change": 6,
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u2",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Accounts receivable, net\n$\n3,072,087\n\n$\n2,889,208\n\n$\n182,879\n\n6\n\n%"
+                },
+                {
+                  "card_id": "c3:official_ir:2506a99482799756a2f0dcba#u2",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Contract liabilities were $1,707,802 thousand as of September 30, 2026, compared to $1,775,139 thousand as of June 30, 2026, a decrease of 4%.",
+                  "metric": "contract_liabilities",
+                  "value": 1707802,
+                  "unit": "thousands_usd",
+                  "period": "Q1 F2027",
+                  "comparison_value": 1775139,
+                  "comparison_period": "Q4 F2026",
+                  "reported_change": -4,
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u2",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Contract liabilities\n$\n1,707,802\n\n$\n1,775,139\n\n$\n(\n67,337\n)\n(\n4\n)\n%"
+                },
+                {
+                  "card_id": "c1:official_ir:2506a99482799756a2f0dcba#u7",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Services business accounted for approximately 20% of total revenues in the first quarter of fiscal 2027.",
+                  "metric": "services_revenue_percentage",
+                  "value": "20",
+                  "unit": "percent",
+                  "period": "Q1 FY2027",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u7",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "accounted for approximately 20% of our total revenues in the first quarter of fiscal 2027.",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c1:official_ir:642ea77e3816f921fd932b09#u4",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
+                  "metric": "Total revenues",
+                  "value": "4136015",
+                  "unit": "USD $",
+                  "period": "Q1 2027",
+                  "comparison_value": "3209696",
+                  "comparison_period": "Q1 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues\n4,136,015\n3,657,556\n3,209,696",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c2:official_ir:642ea77e3816f921fd932b09#u1",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Second quarter fiscal 2027 total revenues are expected to be in a range of $4.7 billion +/- $200 million.",
+                  "metric": "total_revenues",
+                  "unit": "USD_billions",
+                  "period": "Q2 FY 2027",
+                  "low": "4.5",
+                  "midpoint": "4.7",
+                  "high": "4.9",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues are expected to be in a range of $4.7 billion +/- $200 million",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c5:official_ir:642ea77e3816f921fd932b09#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "GAAP diluted EPS for Q2 FY 2027 is expected to be in a range of $1.41 +/- $0.11.",
+                  "metric": "gaap_diluted_eps",
+                  "unit": "USD",
+                  "period": "Q2 FY 2027",
+                  "low": "1.30",
+                  "midpoint": "1.41",
+                  "high": "1.52",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c6:official_ir:642ea77e3816f921fd932b09#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Non-GAAP diluted EPS for Q2 FY 2027 is expected to be in a range of $1.44 +/- $0.11.",
+                  "metric": "non_gaap_diluted_eps",
+                  "unit": "USD",
+                  "period": "Q2 FY 2027",
+                  "low": "1.33",
+                  "midpoint": "1.44",
+                  "high": "1.55",
+                  "materiality_candidate": 5,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:official_ir:2506a99482799756a2f0dcba#u8",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Looking ahead, company expects continued revenue growth as manufacturing capacity expands and production levels increase.",
+                  "period": "forward",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u8",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Looking ahead, we expect continued revenue growth as we expand manufacturing capacity and increase production levels to meet customer demand.",
+                  "guidance_type": "qualitative"
+                },
+                {
+                  "card_id": "c3:official_ir:642ea77e3816f921fd932b09#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "GAAP gross margin for Q2 FY 2027 is expected to be in a range of 61.8% +/- 1.0%.",
+                  "metric": "gaap_gross_margin",
+                  "unit": "percent",
+                  "period": "Q2 FY 2027",
+                  "low": "60.8",
+                  "midpoint": "61.8",
+                  "high": "62.8",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "GAAP gross margin is expected to be in a range of 61.8% +/- 1.0%",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c4:official_ir:642ea77e3816f921fd932b09#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Non-GAAP gross margin for Q2 FY 2027 is expected to be in a range of 62.5% +/- 1.0%.",
+                  "metric": "non_gaap_gross_margin",
+                  "unit": "percent",
+                  "period": "Q2 FY 2027",
+                  "low": "61.5",
+                  "midpoint": "62.5",
+                  "high": "63.5",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:official_ir:642ea77e3816f921fd932b09#u5",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Second Quarter Fiscal 2027 GAAP net income per diluted share guidance is $1.30 to $1.52.",
+                  "metric": "GAAP net income per diluted share",
+                  "unit": "USD $",
+                  "period": "Three Months Ending December 31, 2026",
+                  "low": "1.30",
+                  "high": "1.52",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Second Quarter Fiscal 2027 Guidance\nReconciliation of GAAP Diluted EPS\nto Non-GAAP\nDiluted EPS\nThree Months Ending December 31, 2026\n(\nIn millions, except per share amounts\n)\nLow\nHigh\nGAAP net income per diluted share\n$1.30\n$1.52",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:official_ir:642ea77e3816f921fd932b09#u6",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Second Quarter Fiscal 2027 Non-GAAP net income per diluted share guidance is $1.33 to $1.55.",
+                  "metric": "Non-GAAP net income per diluted share",
+                  "unit": "USD $",
+                  "period": "Three Months Ending December 31, 2026",
+                  "low": "1.33",
+                  "high": "1.55",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP net income per diluted share\n$1.33\n$1.55",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c4:official_ir:642ea77e3816f921fd932b09#u6",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Second Quarter Fiscal 2027 GAAP gross margin guidance is 60.8% to 62.8%.",
+                  "metric": "GAAP gross margin",
+                  "unit": "%",
+                  "period": "Three Months Ending December 31, 2026",
+                  "low": "60.8",
+                  "high": "62.8",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Reconciliation of GAAP Gross Margin to Non-GAAP\nGross Margin\nThree Months Ending December 31, 2026\nLow\nHigh\nGAAP gross margin\n60.8 %\n62.8 %",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c5:official_ir:642ea77e3816f921fd932b09#u6",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Second Quarter Fiscal 2027 Non-GAAP gross margin guidance is 61.5% to 63.5%.",
+                  "metric": "Non-GAAP gross margin",
+                  "unit": "%",
+                  "period": "Three Months Ending December 31, 2026",
+                  "low": "61.5",
+                  "high": "63.5",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP gross margin\n61.5 %\n63.5 %",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c2:official_ir:acb56e8b319f3dec71cdf264#structured",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "The official document does not contain valid text or tables to support this net income value; the provided text snippet is truncated XBRL/HTML metadata.",
+                  "metric": "net_income",
+                  "unit": "USD",
+                  "period": "Q1 2027",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264"
+                },
+                {
+                  "card_id": "c1:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Net income loss was $1,548,588 thousand for the period.",
+                  "metric": "NetIncomeLoss",
+                  "value": "1548588",
+                  "unit": "USD",
+                  "materiality_candidate": 5,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                  "quote": "Net income loss was $1,548,588 thousand"
+                },
+                {
+                  "card_id": "c1:official_ir:2506a99482799756a2f0dcba#u5",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
+                  "statement": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $40.6 million net gain.",
+                  "metric": "aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements",
+                  "value": "40.6",
+                  "unit": "USD Millions",
+                  "period": "Q1 2027",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u5",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $\n40.6\n million net gain.",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c2:official_ir:642ea77e3816f921fd932b09#u4",
+                  "card_type": "capital",
+                  "topic": "cash_capex",
+                  "statement": "Net cash provided by operating activities was $1,530,939 thousand for the three months ended September 30, 2026.",
+                  "metric": "Net cash provided by operating activities",
+                  "value": "1530939",
+                  "unit": "USD $",
+                  "period": "Q1 2027",
+                  "comparison_value": "1161591",
+                  "comparison_period": "Q1 2026",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Net cash provided by operating activities\n1,530,939\n906,430\n1,161,591",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "card_id": "c1:official_ir:2506a99482799756a2f0dcba#u3",
+                  "card_type": "fact",
+                  "topic": "supply_capacity",
+                  "statement": "Significant purchase commitments primarily for material, services, supplies and asset purchases were approximately $8.87 billion as of September 30, 2026.",
+                  "metric": "purchase_commitments",
+                  "value": "8.87",
+                  "unit": "billion",
+                  "period": "as_of_2026-09-30",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Our estimate of our significant purchase\ncommitments primarily for material, services, supplies and asset purchases is approximately $\n8.87\n billion as of September 30, 2026"
+                },
+                {
+                  "card_id": "c3:official_ir:2506a99482799756a2f0dcba#u3",
+                  "card_type": "fact",
+                  "topic": "risk",
+                  "statement": "Guarantee arrangements available through various financial institutions for up to $180.6 million, of which $147.2 million had been issued as of September 30, 2026.",
+                  "metric": "guarantee_arrangements_issued",
+                  "value": "147.2",
+                  "unit": "million",
+                  "period": "as_of_2026-09-30",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "We maintain guarantee arrangements available through various financial institutions for up to $\n180.6\n million, of which $\n147.2\nmillion had been issued as of September 30, 2026"
+                },
+                {
+                  "card_id": "c1:official_ir:7461d1f7bd40111b079526f2#u1",
+                  "card_type": "management_claim",
+                  "topic": "other",
+                  "statement": "KLA Corporation announced upcoming investor webcasts for Citi's 2026 Global TMT Conference and Goldman Sachs Communacopia + Technology Conference 2026 in September 2026.",
+                  "materiality_candidate": 1,
+                  "fact_class": "management_claim",
+                  "speaker": "Company Announcement",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:7461d1f7bd40111b079526f2#u1",
+                  "document_key": "official_ir:7461d1f7bd40111b079526f2",
+                  "quote": "Wednesday, September 9, 2026 –\nCiti's 2026 Global TMT Conference at 9:30AM ET\nFriday, September 11, 2026 - Goldman Sachs Communacopia + Technology Conference 2026 at 9:30AM PT"
+                },
+                {
+                  "card_id": "c2:official_ir:2506a99482799756a2f0dcba#u3",
+                  "card_type": "fact",
+                  "topic": "capital",
+                  "statement": "Committed $100.0 million for future payment obligations under the Cash LTI Plan as of September 30, 2026.",
+                  "metric": "cash_lti_plan_commitments",
+                  "value": "100.0",
+                  "unit": "million",
+                  "period": "as_of_2026-09-30",
+                  "materiality_candidate": 3,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of September 30, 2026, we have committed $\n100.0\n million for future payment obligations under our Cash LTI Plan."
+                }
+              ]
+            },
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand for the period.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "4,136,015",
+                "unit": "usd",
+                "card_id": "c1:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Net income loss was $1,548,588 thousand for the period.",
+                "materiality_candidate": 5,
+                "quote": "Net income loss was $1,548,588 thousand",
+                "metric": "NetIncomeLoss",
+                "value": "1548588",
+                "unit": "USD",
+                "card_id": "c1:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
+                "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                  "quote": "Net income loss was $1,548,588 thousand"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues were $4,136 million for Q1 FY 2027.",
+                "materiality_candidate": 5,
+                "quote": "Total Revenues\n$4,136 million\n$3,658 million\n$3,210 million",
+                "metric": "total_revenues",
+                "value": "4136",
+                "unit": "USD_millions",
+                "period": "Q1 FY 2027",
+                "card_id": "c1:official_ir:642ea77e3816f921fd932b09#u1",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total Revenues\n$4,136 million\n$3,658 million\n$3,210 million"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second quarter fiscal 2027 total revenues are expected to be in a range of $4.7 billion +/- $200 million.",
+                "materiality_candidate": 5,
+                "quote": "Total revenues are expected to be in a range of $4.7 billion +/- $200 million",
+                "metric": "total_revenues",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "4.5",
+                "midpoint": "4.7",
+                "high": "4.9",
+                "unit": "USD_billions",
+                "card_id": "c2:official_ir:642ea77e3816f921fd932b09#u1",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues are expected to be in a range of $4.7 billion +/- $200 million"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP gross margin for Q2 FY 2027 is expected to be in a range of 61.8% +/- 1.0%.",
+                "materiality_candidate": 4,
+                "quote": "GAAP gross margin is expected to be in a range of 61.8% +/- 1.0%",
+                "metric": "gaap_gross_margin",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "60.8",
+                "midpoint": "61.8",
+                "high": "62.8",
+                "unit": "percent",
+                "card_id": "c3:official_ir:642ea77e3816f921fd932b09#u2",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "GAAP gross margin is expected to be in a range of 61.8% +/- 1.0%"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP gross margin for Q2 FY 2027 is expected to be in a range of 62.5% +/- 1.0%.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%",
+                "metric": "non_gaap_gross_margin",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "61.5",
+                "midpoint": "62.5",
+                "high": "63.5",
+                "unit": "percent",
+                "card_id": "c4:official_ir:642ea77e3816f921fd932b09#u2",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "GAAP diluted EPS for Q2 FY 2027 is expected to be in a range of $1.41 +/- $0.11.",
+                "materiality_candidate": 5,
+                "quote": "GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11",
+                "metric": "gaap_diluted_eps",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "1.30",
+                "midpoint": "1.41",
+                "high": "1.52",
+                "unit": "USD",
+                "card_id": "c5:official_ir:642ea77e3816f921fd932b09#u2",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Non-GAAP diluted EPS for Q2 FY 2027 is expected to be in a range of $1.44 +/- $0.11.",
+                "materiality_candidate": 5,
+                "quote": "Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11",
+                "metric": "non_gaap_diluted_eps",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "low": "1.33",
+                "midpoint": "1.44",
+                "high": "1.55",
+                "unit": "USD",
+                "card_id": "c6:official_ir:642ea77e3816f921fd932b09#u2",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
+                "materiality_candidate": 3,
+                "quote": "Total revenues\n4,136,015\n3,657,556\n3,209,696",
+                "metric": "Total revenues",
+                "value": "4136015",
+                "unit": "USD $",
+                "period": "Q1 2027",
+                "comparison_value": "3209696",
+                "comparison_period": "Q1 2026",
+                "metric_type": "other",
+                "card_id": "c1:official_ir:642ea77e3816f921fd932b09#u4",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues\n4,136,015\n3,657,556\n3,209,696"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Net cash provided by operating activities was $1,530,939 thousand for the three months ended September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Net cash provided by operating activities\n1,530,939\n906,430\n1,161,591",
+                "metric": "Net cash provided by operating activities",
+                "value": "1530939",
+                "unit": "USD $",
+                "period": "Q1 2027",
+                "comparison_value": "1161591",
+                "comparison_period": "Q1 2026",
+                "metric_type": "operating_cash_flow",
+                "card_id": "c2:official_ir:642ea77e3816f921fd932b09#u4",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 4,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Net cash provided by operating activities\n1,530,939\n906,430\n1,161,591"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
+                "materiality_candidate": 4,
+                "quote": "Total revenues\n$      4,136,015",
+                "metric": "Total revenues",
+                "value": "4136015",
+                "unit": "USD $",
+                "period": "Three Months Ended September 30, 2026",
+                "metric_type": "other",
+                "card_id": "c1:official_ir:642ea77e3816f921fd932b09#u5",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues\n$      4,136,015"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second Quarter Fiscal 2027 GAAP net income per diluted share guidance is $1.30 to $1.52.",
+                "materiality_candidate": 4,
+                "quote": "Second Quarter Fiscal 2027 Guidance\nReconciliation of GAAP Diluted EPS\nto Non-GAAP\nDiluted EPS\nThree Months Ending December 31, 2026\n(\nIn millions, except per share amounts\n)\nLow\nHigh\nGAAP net income per diluted share\n$1.30\n$1.52",
+                "metric": "GAAP net income per diluted share",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "low": "1.30",
+                "high": "1.52",
+                "unit": "USD $",
+                "card_id": "c2:official_ir:642ea77e3816f921fd932b09#u5",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Second Quarter Fiscal 2027 Guidance\nReconciliation of GAAP Diluted EPS\nto Non-GAAP\nDiluted EPS\nThree Months Ending December 31, 2026\n(\nIn millions, except per share amounts\n)\nLow\nHigh\nGAAP net income per diluted share\n$1.30\n$1.52"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second Quarter Fiscal 2027 Non-GAAP net income per diluted share guidance is $1.33 to $1.55.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP net income per diluted share\n$1.33\n$1.55",
+                "metric": "Non-GAAP net income per diluted share",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "low": "1.33",
+                "high": "1.55",
+                "unit": "USD $",
+                "card_id": "c3:official_ir:642ea77e3816f921fd932b09#u6",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP net income per diluted share\n$1.33\n$1.55"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second Quarter Fiscal 2027 GAAP gross margin guidance is 60.8% to 62.8%.",
+                "materiality_candidate": 4,
+                "quote": "Reconciliation of GAAP Gross Margin to Non-GAAP\nGross Margin\nThree Months Ending December 31, 2026\nLow\nHigh\nGAAP gross margin\n60.8 %\n62.8 %",
+                "metric": "GAAP gross margin",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "low": "60.8",
+                "high": "62.8",
+                "unit": "%",
+                "card_id": "c4:official_ir:642ea77e3816f921fd932b09#u6",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Reconciliation of GAAP Gross Margin to Non-GAAP\nGross Margin\nThree Months Ending December 31, 2026\nLow\nHigh\nGAAP gross margin\n60.8 %\n62.8 %"
+                }
+              },
+              {
+                "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Second Quarter Fiscal 2027 Non-GAAP gross margin guidance is 61.5% to 63.5%.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP gross margin\n61.5 %\n63.5 %",
+                "metric": "Non-GAAP gross margin",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "low": "61.5",
+                "high": "63.5",
+                "unit": "%",
+                "card_id": "c5:official_ir:642ea77e3816f921fd932b09#u6",
+                "document_key": "official_ir:642ea77e3816f921fd932b09",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP gross margin\n61.5 %\n63.5 %"
+                }
+              },
+              {
+                "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "The official document does not contain valid text or tables to support this revenue value; the provided text snippet is truncated XBRL/HTML metadata.",
+                "materiality_candidate": 5,
+                "metric": "revenue",
+                "value": null,
+                "unit": "USD",
+                "period": "Q1 2027",
+                "card_id": "c1:official_ir:acb56e8b319f3dec71cdf264#structured",
+                "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                  "quote": ""
+                },
+                "quote": ""
+              },
+              {
+                "unit_id": "official_ir:acb56e8b319f3dec71cdf264#structured",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "The official document does not contain valid text or tables to support this net income value; the provided text snippet is truncated XBRL/HTML metadata.",
+                "materiality_candidate": 5,
+                "metric": "net_income",
+                "value": null,
+                "unit": "USD",
+                "period": "Q1 2027",
+                "card_id": "c2:official_ir:acb56e8b319f3dec71cdf264#structured",
+                "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                  "quote": ""
+                },
+                "quote": ""
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Common stock shares outstanding as of October 26, 2026 were 1,302,962,435.",
+                "materiality_candidate": 3,
+                "quote": "As of October 26, 2026, there were \n1,302,962,435\n shares of the registrant’s Common Stock, $0.001 par value per share, outstanding.",
+                "metric": "shares_outstanding",
+                "value": 1302962435,
+                "unit": "shares",
+                "period": "as_of_oct_26_2026",
+                "card_id": "c1:official_ir:2506a99482799756a2f0dcba#u1",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of October 26, 2026, there were \n1,302,962,435\n shares of the registrant’s Common Stock, $0.001 par value per share, outstanding."
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Accounts receivable, net was $3,072,087 thousand as of September 30, 2026, compared to $2,889,208 thousand as of June 30, 2026, an increase of 6%.",
+                "materiality_candidate": 3,
+                "quote": "Accounts receivable, net\n$\n3,072,087\n\n$\n2,889,208\n\n$\n182,879\n\n6\n\n%",
+                "metric": "accounts_receivable_net",
+                "value": 3072087,
+                "unit": "thousands_usd",
+                "period": "Q1 F2027",
+                "comparison_value": 2889208,
+                "comparison_period": "Q4 F2026",
+                "reported_change": 6,
+                "card_id": "c2:official_ir:2506a99482799756a2f0dcba#u2",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Accounts receivable, net\n$\n3,072,087\n\n$\n2,889,208\n\n$\n182,879\n\n6\n\n%"
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Contract liabilities were $1,707,802 thousand as of September 30, 2026, compared to $1,775,139 thousand as of June 30, 2026, a decrease of 4%.",
+                "materiality_candidate": 3,
+                "quote": "Contract liabilities\n$\n1,707,802\n\n$\n1,775,139\n\n$\n(\n67,337\n)\n(\n4\n)\n%",
+                "metric": "contract_liabilities",
+                "value": 1707802,
+                "unit": "thousands_usd",
+                "period": "Q1 F2027",
+                "comparison_value": 1775139,
+                "comparison_period": "Q4 F2026",
+                "reported_change": -4,
+                "card_id": "c3:official_ir:2506a99482799756a2f0dcba#u2",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Contract liabilities\n$\n1,707,802\n\n$\n1,775,139\n\n$\n(\n67,337\n)\n(\n4\n)\n%"
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                "card_type": "fact",
+                "topic": "supply_capacity",
+                "fact_class": "objective_fact",
+                "statement": "Significant purchase commitments primarily for material, services, supplies and asset purchases were approximately $8.87 billion as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Our estimate of our significant purchase\ncommitments primarily for material, services, supplies and asset purchases is approximately $\n8.87\n billion as of September 30, 2026",
+                "metric": "purchase_commitments",
+                "value": "8.87",
+                "unit": "billion",
+                "period": "as_of_2026-09-30",
+                "card_id": "c1:official_ir:2506a99482799756a2f0dcba#u3",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Our estimate of our significant purchase\ncommitments primarily for material, services, supplies and asset purchases is approximately $\n8.87\n billion as of September 30, 2026"
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                "card_type": "fact",
+                "topic": "capital",
+                "fact_class": "objective_fact",
+                "statement": "Committed $100.0 million for future payment obligations under the Cash LTI Plan as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "As of September 30, 2026, we have committed $\n100.0\n million for future payment obligations under our Cash LTI Plan.",
+                "metric": "cash_lti_plan_commitments",
+                "value": "100.0",
+                "unit": "million",
+                "period": "as_of_2026-09-30",
+                "card_id": "c2:official_ir:2506a99482799756a2f0dcba#u3",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of September 30, 2026, we have committed $\n100.0\n million for future payment obligations under our Cash LTI Plan."
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u3",
+                "card_type": "fact",
+                "topic": "risk",
+                "fact_class": "objective_fact",
+                "statement": "Guarantee arrangements available through various financial institutions for up to $180.6 million, of which $147.2 million had been issued as of September 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "We maintain guarantee arrangements available through various financial institutions for up to $\n180.6\n million, of which $\n147.2\nmillion had been issued as of September 30, 2026",
+                "metric": "guarantee_arrangements_issued",
+                "value": "147.2",
+                "unit": "million",
+                "period": "as_of_2026-09-30",
+                "card_id": "c3:official_ir:2506a99482799756a2f0dcba#u3",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 3,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "We maintain guarantee arrangements available through various financial institutions for up to $\n180.6\n million, of which $\n147.2\nmillion had been issued as of September 30, 2026"
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $40.6 million net gain.",
+                "materiality_candidate": 3,
+                "quote": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $\n40.6\n million net gain.",
+                "metric": "aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements",
+                "value": "40.6",
+                "unit": "USD Millions",
+                "period": "Q1 2027",
+                "metric_type": "other",
+                "card_id": "c1:official_ir:2506a99482799756a2f0dcba#u5",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $\n40.6\n million net gain."
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Services business accounted for approximately 20% of total revenues in the first quarter of fiscal 2027.",
+                "materiality_candidate": 3,
+                "quote": "accounted for approximately 20% of our total revenues in the first quarter of fiscal 2027.",
+                "metric": "services_revenue_percentage",
+                "value": "20",
+                "unit": "percent",
+                "period": "Q1 FY2027",
+                "metric_type": "other",
+                "card_id": "c1:official_ir:2506a99482799756a2f0dcba#u7",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 7,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "accounted for approximately 20% of our total revenues in the first quarter of fiscal 2027."
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u8",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025.",
+                "materiality_candidate": 4,
+                "quote": "we delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025",
+                "period": "Q1 FY2027",
+                "metric_type": "other",
+                "card_id": "c2:official_ir:2506a99482799756a2f0dcba#u8",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 8,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "we delivered higher revenue and net income in the three months ended September 30, 2026 compared to the three months ended June 30, 2026 and September 30, 2025"
+                }
+              },
+              {
+                "unit_id": "official_ir:2506a99482799756a2f0dcba#u8",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Looking ahead, company expects continued revenue growth as manufacturing capacity expands and production levels increase.",
+                "materiality_candidate": 4,
+                "quote": "Looking ahead, we expect continued revenue growth as we expand manufacturing capacity and increase production levels to meet customer demand.",
+                "period": "forward",
+                "guidance_type": "qualitative",
+                "card_id": "c3:official_ir:2506a99482799756a2f0dcba#u8",
+                "document_key": "official_ir:2506a99482799756a2f0dcba",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 8,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Looking ahead, we expect continued revenue growth as we expand manufacturing capacity and increase production levels to meet customer demand."
+                }
+              },
+              {
+                "unit_id": "official_ir:7461d1f7bd40111b079526f2#u1",
+                "card_type": "management_claim",
+                "topic": "other",
+                "fact_class": "management_claim",
+                "statement": "KLA Corporation announced upcoming investor webcasts for Citi's 2026 Global TMT Conference and Goldman Sachs Communacopia + Technology Conference 2026 in September 2026.",
+                "materiality_candidate": 1,
+                "quote": "Wednesday, September 9, 2026 –\nCiti's 2026 Global TMT Conference at 9:30AM ET\nFriday, September 11, 2026 - Goldman Sachs Communacopia + Technology Conference 2026 at 9:30AM PT",
+                "speaker": "Company Announcement",
+                "card_id": "c1:official_ir:7461d1f7bd40111b079526f2#u1",
+                "document_key": "official_ir:7461d1f7bd40111b079526f2",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 1,
+                "evidence": {
+                  "document_key": "official_ir:7461d1f7bd40111b079526f2",
+                  "quote": "Wednesday, September 9, 2026 –\nCiti's 2026 Global TMT Conference at 9:30AM ET\nFriday, September 11, 2026 - Goldman Sachs Communacopia + Technology Conference 2026 at 9:30AM PT"
+                }
+              }
+            ],
+            "facts": [
+              {
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "value": "4,136,015",
+                "unit": "usd",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+                }
+              },
+              {
+                "metric": "NetIncomeLoss",
+                "value": "1548588",
+                "unit": "USD",
+                "period": null,
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
+                  "quote": "Net income loss was $1,548,588 thousand"
+                }
+              },
+              {
+                "metric": "total_revenues",
+                "value": "4136",
+                "unit": "USD_millions",
+                "period": "Q1 FY 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total Revenues\n$4,136 million\n$3,658 million\n$3,210 million"
+                }
+              },
+              {
+                "metric": "Total revenues",
+                "value": "4136015",
+                "unit": "USD $",
+                "period": "Q1 2027",
+                "comparison_value": "3209696",
+                "comparison_period": "Q1 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues\n4,136,015\n3,657,556\n3,209,696"
+                }
+              },
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "1530939",
+                "unit": "USD $",
+                "period": "Q1 2027",
+                "comparison_value": "1161591",
+                "comparison_period": "Q1 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Net cash provided by operating activities\n1,530,939\n906,430\n1,161,591"
+                }
+              },
+              {
+                "metric": "Total revenues",
+                "value": "4136015",
+                "unit": "USD $",
+                "period": "Three Months Ended September 30, 2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues\n$      4,136,015"
+                }
+              },
+              {
+                "metric": "revenue",
+                "value": null,
+                "unit": "USD",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                  "quote": ""
+                }
+              },
+              {
+                "metric": "net_income",
+                "value": null,
+                "unit": "USD",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:acb56e8b319f3dec71cdf264",
+                  "quote": ""
+                }
+              },
+              {
+                "metric": "shares_outstanding",
+                "value": 1302962435,
+                "unit": "shares",
+                "period": "as_of_oct_26_2026",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of October 26, 2026, there were \n1,302,962,435\n shares of the registrant’s Common Stock, $0.001 par value per share, outstanding."
+                }
+              },
+              {
+                "metric": "accounts_receivable_net",
+                "value": 3072087,
+                "unit": "thousands_usd",
+                "period": "Q1 F2027",
+                "comparison_value": 2889208,
+                "comparison_period": "Q4 F2026",
+                "reported_change": 6,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Accounts receivable, net\n$\n3,072,087\n\n$\n2,889,208\n\n$\n182,879\n\n6\n\n%"
+                }
+              },
+              {
+                "metric": "contract_liabilities",
+                "value": 1707802,
+                "unit": "thousands_usd",
+                "period": "Q1 F2027",
+                "comparison_value": 1775139,
+                "comparison_period": "Q4 F2026",
+                "reported_change": -4,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Contract liabilities\n$\n1,707,802\n\n$\n1,775,139\n\n$\n(\n67,337\n)\n(\n4\n)\n%"
+                }
+              },
+              {
+                "metric": "purchase_commitments",
+                "value": "8.87",
+                "unit": "billion",
+                "period": "as_of_2026-09-30",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Our estimate of our significant purchase\ncommitments primarily for material, services, supplies and asset purchases is approximately $\n8.87\n billion as of September 30, 2026"
+                }
+              },
+              {
+                "metric": "cash_lti_plan_commitments",
+                "value": "100.0",
+                "unit": "million",
+                "period": "as_of_2026-09-30",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of September 30, 2026, we have committed $\n100.0\n million for future payment obligations under our Cash LTI Plan."
+                }
+              },
+              {
+                "metric": "guarantee_arrangements_issued",
+                "value": "147.2",
+                "unit": "million",
+                "period": "as_of_2026-09-30",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "We maintain guarantee arrangements available through various financial institutions for up to $\n180.6\n million, of which $\n147.2\nmillion had been issued as of September 30, 2026"
+                }
+              },
+              {
+                "metric": "aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements",
+                "value": "40.6",
+                "unit": "USD Millions",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $\n40.6\n million net gain."
+                }
+              },
+              {
+                "metric": "services_revenue_percentage",
+                "value": "20",
+                "unit": "percent",
+                "period": "Q1 FY2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "accounted for approximately 20% of our total revenues in the first quarter of fiscal 2027."
+                }
+              }
+            ],
+            "guidance": [
+              {
+                "metric": "total_revenues",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "value": null,
+                "low": "4.5",
+                "midpoint": "4.7",
+                "high": "4.9",
+                "unit": "USD_billions",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Total revenues are expected to be in a range of $4.7 billion +/- $200 million"
+                }
+              },
+              {
+                "metric": "gaap_gross_margin",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "value": null,
+                "low": "60.8",
+                "midpoint": "61.8",
+                "high": "62.8",
+                "unit": "percent",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "GAAP gross margin is expected to be in a range of 61.8% +/- 1.0%"
+                }
+              },
+              {
+                "metric": "non_gaap_gross_margin",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "value": null,
+                "low": "61.5",
+                "midpoint": "62.5",
+                "high": "63.5",
+                "unit": "percent",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%"
+                }
+              },
+              {
+                "metric": "gaap_diluted_eps",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1.30",
+                "midpoint": "1.41",
+                "high": "1.52",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11"
+                }
+              },
+              {
+                "metric": "non_gaap_diluted_eps",
+                "period": "Q2 FY 2027",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1.33",
+                "midpoint": "1.44",
+                "high": "1.55",
+                "unit": "USD",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11"
+                }
+              },
+              {
+                "metric": "GAAP net income per diluted share",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1.30",
+                "midpoint": null,
+                "high": "1.52",
+                "unit": "USD $",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Second Quarter Fiscal 2027 Guidance\nReconciliation of GAAP Diluted EPS\nto Non-GAAP\nDiluted EPS\nThree Months Ending December 31, 2026\n(\nIn millions, except per share amounts\n)\nLow\nHigh\nGAAP net income per diluted share\n$1.30\n$1.52"
+                }
+              },
+              {
+                "metric": "Non-GAAP net income per diluted share",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "1.33",
+                "midpoint": null,
+                "high": "1.55",
+                "unit": "USD $",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP net income per diluted share\n$1.33\n$1.55"
+                }
+              },
+              {
+                "metric": "GAAP gross margin",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "60.8",
+                "midpoint": null,
+                "high": "62.8",
+                "unit": "%",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Reconciliation of GAAP Gross Margin to Non-GAAP\nGross Margin\nThree Months Ending December 31, 2026\nLow\nHigh\nGAAP gross margin\n60.8 %\n62.8 %"
+                }
+              },
+              {
+                "metric": "Non-GAAP gross margin",
+                "period": "Three Months Ending December 31, 2026",
+                "guidance_type": "range",
+                "value": null,
+                "low": "61.5",
+                "midpoint": null,
+                "high": "63.5",
+                "unit": "%",
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Non-GAAP gross margin\n61.5 %\n63.5 %"
+                }
+              },
+              {
+                "metric": null,
+                "period": "forward",
+                "guidance_type": "qualitative",
+                "value": null,
+                "low": null,
+                "midpoint": null,
+                "high": null,
+                "unit": null,
+                "previous_low": null,
+                "previous_midpoint": null,
+                "previous_high": null,
+                "change": null,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "Looking ahead, we expect continued revenue growth as we expand manufacturing capacity and increase production levels to meet customer demand."
+                }
+              }
+            ],
+            "cash_flow_and_capex": [
+              {
+                "metric": "Net cash provided by operating activities",
+                "value": "1530939",
+                "unit": "USD $",
+                "period": "Q1 2027",
+                "comparison_value": "1161591",
+                "comparison_period": "Q1 2026",
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:642ea77e3816f921fd932b09",
+                  "quote": "Net cash provided by operating activities\n1,530,939\n906,430\n1,161,591"
+                },
+                "metric_type": "operating_cash_flow",
+                "reconciliation": []
+              },
+              {
+                "metric": "aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements",
+                "value": "40.6",
+                "unit": "USD Millions",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:2506a99482799756a2f0dcba",
+                  "quote": "As of September 30, 2026, the aggregate unamortized portion of the fair value of the forward contracts for the Rate Lock Agreements was a $\n40.6\n million net gain."
+                },
+                "metric_type": "other",
+                "reconciliation": []
+              }
+            ],
+            "qa": [],
+            "market_consensus": [],
+            "quote_validation_issues": [
+              "facts.cards[1]:quote_not_found_in_sec_edgar:0000319201-26-000034:klac-20260930.htm"
+            ],
+            "extraction_batch_count": 19,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "none",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "model": null
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.151,
+                  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/KLAC-2027-Q1",
+                  "reason": "no_eligible_official_documents"
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 2.904,
+                  "documents": 9,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.144,
+                  "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/KLAC-2027-Q1"
+                }
+              ],
+              "ir_retrieval_last_at": "2026-11-10T15:27:14-05:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 10,
+                "kinds": {
+                  "other": 3,
+                  "financial_results": 7
+                },
+                "sources": {
+                  "sec_edgar": 1,
+                  "official_ir": 9
+                },
+                "has_primary_results": true,
+                "has_official_ir": true,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-11-10T15:27:14-05:00",
+              "official_ir_checked_at": "2026-11-10T15:27:14-05:00",
+              "official_ir_check_count": 22,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-11-11T03:27:14-05:00"
+            },
+            "deterministic_validation_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q1 FY2027 營收與營運現金流顯著增長，且下季指引持續上揚",
+                "why_it_matters": "顯示半導體設備製造與產能擴充需求維持高檔，支持中期 earnings power 擴張。",
+                "fact_basis": [
+                  "Q1 FY2027 營收達到 $4,136.015M（去年同期為 $3,209.696M）",
+                  "Q1 FY2027 營運現金流為 $1,530.939M（去年同期為 $1,161.591M）",
+                  "Q2 FY2027 營收指引區間為 $4.7B +/- $200M"
+                ],
+                "inference": "產能持續擴建與客戶下單動能強勁，支撐未來 1–3 年獲利基期墊高。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q1 FY2027 營收為 $4,136.015M，較去年同期的 $3,209.696M 成長",
+                "Services 業務占 Q1 FY2027 總營收約 20%"
+              ],
+              "margin_unit_economics": [
+                "Q1 FY2027 淨利為 $1,548.588M",
+                "Q2 FY2027 Non-GAAP 毛利率指引為 62.5% +/- 1.0%（區間 61.5% - 63.5%）"
+              ],
+              "cash_capital_intensity": [
+                "Q1 FY2027 營運現金流達到 $1,530.939M，優於去年同期的 $1,161.591M",
+                "截至 2026 年 9 月 30 日，採購承諾（包含材料、服務與資產）約為 $8.87B，顯示持續投入供應鏈與產能備料"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 FY2027 營收指引為 $4.7B +/- $200M（區間 $4.5B - $4.9B）",
+              "Q2 FY2027 Non-GAAP Diluted EPS 指引為 $1.44 +/- $0.11（區間 $1.33 - $1.55）；GAAP Diluted EPS 指引為 $1.41 +/- $0.11（區間 $1.30 - $1.52）",
+              "Q2 FY2027 Non-GAAP 毛利率指引為 62.5% +/- 1.0%（區間 61.5% - 63.5%）；GAAP 毛利率指引為 61.8% +/- 1.0%（區間 60.8% - 62.8%）",
+              "管理層定性指引：預期隨著製造產能擴充與生產提升，營收將持續成長",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "Services 業務佔整體營收 20%，提供一定程度的高毛利常態性收入支持",
+              "應收帳款增加 6% 至 $3,072.087M（前季為 $2,889.208M），合約負債下降 4% 至 $1,707.802M（前季為 $1,775.139M）",
+              "封閉資料中缺乏客戶總數、NRR 或特定客戶集中度數據，無法判定客戶拓展廣度與深度變化"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "採購承諾高達 $8.87B，反映公司為滿足客戶需求持續鎖定供應鏈資源",
+              "資料未提供直接定價權、市占率變化或客戶轉移成本之結構性數據，無法僅憑高毛利判定莫特（Moat）與瓶頸控制力"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "合約負債自前季的 $1,775.139M 下降 4% 至 $1,707.802M，若未來持續縮減可能反映前置訂單動能放緩",
+              "金融機構擔保安排已開立 $147.2M（總額度 $180.6M），需留意潛在信用或合約履約風險",
+              "未來若出現下季營收低於 $4.5B 指引下限或毛利率低於 61.5% 的情況，將證偽成長加速假設"
+            ],
+            "watch_items": [
+              "觀察 Q2 FY2027 實際營收是否落在 $4.5B - $4.9B 指引區間",
+              "追蹤合約負債與應收帳款變動趨勢，確認客戶預付款項與拉貨節奏",
+              "關注 $8.87B 採購承諾的轉化效率與庫存管理"
+            ],
+            "confidence": 82,
+            "telegram_draft": "KLAC FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收與營運現金流顯著擴張，配合管理層對下季營收給出中樞 $4.7B 的強勁指引，顯示半導體檢測設備需求維持高檔，奠定中長期獲利基期上升結構。\n• 採購承諾高達 $8.87B 顯示公司積極備料以應對擴產，然合約負債微幅下滑仍需持續追蹤訂單轉化品質。\n\n📊 關鍵數據與財測:\n• 營收與獲利：本季營收為 $4,136.015M（高於去年同期的 $3,209.696M），本季淨利為 $1,548.588M；反映設備出貨動能強勁，帶動整體獲利基底上升。\n• 業務結構與資產負債：Services 業務占總營收約 20%；應收帳款較前季增加 6% 至 $3,072.087M，合約負債則下降 4% 至 $1,707.802M；顯示營收認列順暢但前置預付動能略微放緩，目前資料不足以判定客戶集中度與廣度變化。\n• 現金流與產能投資：本季營運現金流為 $1,530.939M（去年同期為 $1,161.591M），截至季末採購承諾達 $8.87B；反映現金產生能力優異，且為支持後續產能擴建持續鎖定供應鏈資源。\n• 下季指引：下季營收指引為 $4.7B +/- $200M（區間 $4.5B - $4.9B），Non-GAAP 毛利率指引為 62.5% +/- 1.0%（區間 61.5% - 63.5%），Non-GAAP Diluted EPS 指引為 $1.44 +/- $0.11（區間 $1.33 - $1.55）；管理層預期產能擴充將帶動營收持續成長。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動因素：管理層表示將透過擴建製造產能與提升生產水平以滿足客戶需求，Services 業務維持 20% 的營收佔比，提供長期穩定的常態性收入來源。\n• 本期未檢附法說會 Q&A 逐字稿資料，無法提供分析師攻防判讀。\n\n⚠️ 風險、反證與待驗證:\n• 合約負債由前季 $1,775.139M 降至 $1,707.802M，若後續季度持續下降，可能暗示新新增訂單動能面臨邊際放緩。\n• 金融機構擔保安排已開立 $147.2M（總額度 $180.6M），需留意相關營運履約或財務擔保風險。\n• 若下季實際營收低於指引下限 $4.5B 或 Non-GAAP 毛利率跌破 61.5%，將作為證偽營運加速擴張的直接反證指標。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "KLAC FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收與營運現金流顯著擴張，配合管理層給出強勁指引，顯示半導體檢測設備需求維持高檔，奠定中長期獲利基期上升結構。\n• 採購承諾高檔反映公司積極備料以應對擴產，然合約負債微幅下滑仍需追蹤訂單轉化品質。\n\n📊 關鍵數據與財測:\n• 營收與獲利：本季營收 $4,136.015M（去年同期 $3,209.696M），淨利 $1,548.588M，反映設備出貨動能帶動獲利基底上升。\n• 業務結構與營運資本：Services 業務占總營收約 20%；應收帳款升至 $3,072.087M，合約負債降至 $1,707.802M，顯示營收認列順暢但前置預付動能放緩。\n• 現金流與備料：營運現金流 $1,530.939M（去年同期 $1,161.591M），採購承諾達 $8.87B，反映現金產生能力優異且鎖定供應鏈資源。\n• 下季指引：下季營收指引 $4.7B +/- $200M（區間 $4.5B - $4.9B），Non-GAAP 毛利率指引 62.5% +/- 1.0%（區間 61.5% - 63.5%），Non-GAAP Diluted EPS 指引 $1.44 +/- $0.11（區間 $1.33 - $1.55）。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運驅動因素：管理層表示將透過擴建製造產能與提升生產水平滿足客戶需求，Services 業務提供穩定常態性收入支持。\n• 本期未檢附法說會 Q&A 逐字稿資料，無法提供分析師攻防判讀。\n\n⚠️ 風險、反證與待驗證:\n• 合約負債自前季 $1,775.139M 降至 $1,707.802M，若持續下降可能暗示新增訂單動能面臨邊際放緩。\n• 金融機構擔保安排已開立 $147.2M（總額度 $180.6M），需留意相關營運履約或財務擔保風險。\n• 若下季實際營收低於指引下限 $4.5B 或 Non-GAAP 毛利率跌破 61.5%，將作為證偽營運擴張假設之直接反證。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:下季指引：下季營收指引 $4.7B +/- $200M（區間 $4.5B - $4.9B），Non-GAAP 毛利率指引 62.5% +/- 1.0%（區間 61.5% - 63."
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
           }
         }
       },
