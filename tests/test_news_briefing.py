@@ -69,3 +69,32 @@ def test_rejects_unverified_article_and_deduplicates_model_output():
     result = validate_items(raw, [unverified, verified], now)
     assert len(result) == 1
     assert result[0].source == "Reuters"
+
+
+def test_all_gdelt_queries_unavailable_cannot_masquerade_as_zero_news(monkeypatch):
+    import pytest
+    import requests
+    from us_earnings_monitor import news_briefing as nb
+    now = datetime(2026, 11, 10, 23, tzinfo=UTC)
+    calls = []
+    def unavailable(session, query):
+        calls.append(query)
+        return None
+    monkeypatch.setattr(nb, "_gdelt_search", unavailable)
+    with pytest.raises(nb.NewsDiscoveryUnavailable, match="source unavailable"):
+        nb.discover_articles(now=now, session=requests.Session())
+    assert len(calls) == len(nb.SEARCHES)
+
+
+def test_partial_gdelt_failure_can_still_return_verified_articles(monkeypatch):
+    import requests
+    from us_earnings_monitor import news_briefing as nb
+    now = datetime(2026, 11, 10, 23, tzinfo=UTC)
+    class Response:
+        def json(self):
+            return {"articles": [{"url": "https://reuters.com/a", "title": "headline", "seendate": "20261110T220000Z"}]}
+    responses = iter([None, Response(), None])
+    monkeypatch.setattr(nb, "_gdelt_search", lambda *a, **k: next(responses))
+    monkeypatch.setattr(nb, "_page_metadata", lambda session, a: nb.Article(a.url,a.title,a.domain,a.seen_at,now,a.description,a.source_name))
+    got = nb.discover_articles(now=now, session=requests.Session())
+    assert len(got) == 1 and got[0].published_at == now
