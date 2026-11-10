@@ -21,6 +21,11 @@ MAX_SUMMARY_CHARS = 300
 REQUEST_TIMEOUT = 25
 GDELT_RETRIES = 3
 GDELT_ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
+
+
+class NewsDiscoveryUnavailable(RuntimeError):
+    """Do not misrepresent an upstream outage as no important news."""
+
 SEARCHES = (
     "(inflation OR CPI OR GDP OR PMI OR central bank OR interest rate OR tariff OR export control OR oil OR energy)",
     "(AI OR GPU OR semiconductor OR HBM OR memory OR foundry OR TSMC OR NVIDIA OR AMD OR ASML)",
@@ -232,10 +237,12 @@ def discover_articles(now: datetime | None = None, session: requests.Session | N
     start = now - timedelta(hours=24)
     session = session or requests.Session()
     found: dict[str, Article] = {}
+    successful_queries = 0
     for query in SEARCHES:
         response = _gdelt_search(session, query)
         if response is None:
             continue
+        successful_queries += 1
         for raw in response.json().get("articles", []):
             url = canonicalize_url(str(raw.get("url", "")))
             seen_at = _parse_gdelt_date(str(raw.get("seendate", "")))
@@ -247,6 +254,12 @@ def discover_articles(now: datetime | None = None, session: requests.Session | N
                 continue
             # GDELT seendate is discovery time, NOT verified publication time.
             found[url] = Article(url, title, domain, seen_at, None, source_name=_source_name(domain))
+    if successful_queries == 0:
+        # The old behavior treated repeated GDELT HTTP 429 as an empty day and
+        # could send a false no-news Telegram. Preserve a failed run instead.
+        raise NewsDiscoveryUnavailable("No GDELT news query succeeded; source unavailable, not a no-news day")
+    if successful_queries < len(SEARCHES):
+        print(f"NEWS_DISCOVERY_DEGRADED={successful_queries}/{len(SEARCHES)} successful GDELT queries")
     enriched = [_page_metadata(session, item) for item in found.values()]
     return sorted(
         (item for item in enriched if item.published_at is not None and start <= item.published_at <= now),
