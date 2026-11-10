@@ -131,6 +131,7 @@ class GeminiV2Client(GeminiClient):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self._search_circuit_reason: str | None = None
+        self._analysis_quota_blocked_models: set[str] = set()
 
     def _stage_models(self, stage: str) -> list[str]:
         if stage == "v5_extract_evidence_repair":
@@ -264,6 +265,9 @@ class GeminiV2Client(GeminiClient):
 
         last_error: Exception | None = None
         for model in self._stage_models(stage):
+            if model in self._analysis_quota_blocked_models:
+                LOG.warning("Gemini model=%s stage=%s skipped after prior explicit quota failure in this run", model, stage)
+                continue
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
             for attempt in range(max(1, attempts)):
                 body: dict[str, Any] = {
@@ -283,6 +287,13 @@ class GeminiV2Client(GeminiClient):
                         break
                     LOG.warning("Gemini model=%s stage=%s transient HTTP=%s attempt=%d detail=%s",
                                 model, stage, status, attempt + 1, detail)
+                    quota_exhausted = status == 429 and any(
+                        clue in detail.lower() for clue in ("exceeded your current quota", "quota exceeded", "resource_exhausted")
+                    )
+                    if quota_exhausted:
+                        self._analysis_quota_blocked_models.add(model)
+                        LOG.warning("Gemini model=%s marked quota-blocked for the remainder of this client run", model)
+                        break
                     if attempt + 1 < attempts:
                         time.sleep(backoff * (2 ** attempt))
                     continue

@@ -90,3 +90,30 @@ def test_malformed_json_retries_exact_prompt_without_heuristic_repair(monkeypatc
     assert value == {"facts": [{"value": 123}]}
     assert len(session.calls) == 2
     assert session.calls[0][1]["json"]["contents"] == session.calls[1][1]["json"]["contents"]
+
+
+class _QuotaResponse:
+    status_code = 429
+    def raise_for_status(self):
+        import requests
+        raise requests.HTTPError("quota", response=self)
+    def json(self):
+        return {"error": {"code": 429, "status": "RESOURCE_EXHAUSTED", "message": "You exceeded your current quota"}}
+
+
+def test_explicit_quota_failure_is_not_retried_and_model_is_skipped_on_later_stage(monkeypatch):
+    monkeypatch.setenv("GEMINI_ANALYSIS_MODEL", "gemini-3.5-flash-lite")
+    monkeypatch.setenv("GEMINI_ANALYSIS_FALLBACK_MODEL", "gemini-3.5-flash")
+    monkeypatch.setenv("GEMINI_ANALYSIS_TERTIARY_MODEL", "gemini-3.5-flash")
+    monkeypatch.setenv("GEMINI_ANALYSIS_QUATERNARY_MODEL", "gemini-3.5-flash")
+    monkeypatch.setenv("GEMINI_ANALYSIS_ATTEMPTS", "2")
+    monkeypatch.setenv("GEMINI_ANALYSIS_BACKOFF_SECONDS", "0")
+    session = _Session([_QuotaResponse(), _Response('{"ok":true}'), _Response('{"ok":true}')])
+    client = GeminiV2Client(api_key="test", session=session)
+    assert client._json("first", "facts_chunk") == {"ok": True}
+    assert client._json("second", "facts_chunk") == {"ok": True}
+    assert len(session.calls) == 3
+    assert "gemini-3.5-flash-lite" in session.calls[0][0]
+    assert "gemini-3.5-flash" in session.calls[1][0]
+    assert "gemini-3.5-flash" in session.calls[2][0]
+    assert "gemini-3.5-flash-lite" in client._analysis_quota_blocked_models

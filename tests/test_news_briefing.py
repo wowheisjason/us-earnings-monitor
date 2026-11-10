@@ -46,3 +46,26 @@ def test_split_telegram_respects_limit():
     chunks = split_telegram("a" * 200 + "\n\n---\n\n" + "b" * 200, limit=250)
     assert len(chunks) == 2
     assert all(len(chunk) <= 250 for chunk in chunks)
+
+
+def test_rejects_gdelt_discovery_date_without_confirmed_publication(monkeypatch):
+    from us_earnings_monitor import news_briefing as nb
+    import requests
+    now = datetime(2026, 11, 10, 23, tzinfo=UTC)
+    class SearchResponse:
+        def json(self):
+            return {"articles": [{"url": "https://reuters.com/late-discovery", "title": "A headline", "seendate": "20261110T220000Z"}]}
+    monkeypatch.setattr(nb, "_gdelt_search", lambda *a, **kw: SearchResponse())
+    monkeypatch.setattr(nb, "_page_metadata", lambda session, item: item)
+    assert nb.discover_articles(now=now, session=requests.Session()) == []
+
+
+def test_rejects_unverified_article_and_deduplicates_model_output():
+    now = datetime(2026, 11, 10, 23, tzinfo=UTC)
+    unverified = Article("https://reuters.com/unverified", "Unknown publication date", "reuters.com", now, None, "desc", "Reuters")
+    verified = Article("https://reuters.com/verified", "Verified article", "reuters.com", now, now, "desc", "Reuters")
+    row = {"url": verified.url, "headline": "重點", "fact": "新事實", "summary": "摘要", "source": "Invented Media"}
+    raw = [dict(row, url=unverified.url), row, row]
+    result = validate_items(raw, [unverified, verified], now)
+    assert len(result) == 1
+    assert result[0].source == "Reuters"
