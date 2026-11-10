@@ -1,0 +1,45 @@
+name: Optics delivery Furukawa Q2 data center optical 20261109 v1
+on:
+  push:
+    branches: [codex/optics-delivery-furukawa-q2-datacenter-optical-20261109-v1]
+    paths: [.github/workflows/optics-delivery-furukawa-q2-datacenter-optical-20261109-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-furukawa-q2-datacenter-optical-20261109-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat=os.environ.get('TELEGRAM_CHAT_ID')
+          if not token or not chat:
+              raise SystemExit('Telegram credentials unavailable')
+          message="【AI光通訊重大進展｜古河電工 5801｜2026/11/9】\n\n1) 重大變化及通知門檻\n古河電工以已實現的上半年業績、價格與供需證據，上修FY2026光解決方案營業利益430億→530億日圓（+100億、+23%），並揭露DFB雷射晶片以FY26期初為基準、至FY28下半年滿載達5倍。本次不只是展示或送樣，而是獲利上修、實際漲價、供給不足及具時程的量產擴能，足以改變營收／毛利與競爭地位判斷。\n\n2) 已確認事實\n• 事件／公告日：2026/11/9；DFB預計滿載：FY2028下半年（約2028/10–2029/3）。\n• FY26上半年：營收7,377億日圓（年增21%）、營業利益576億（+201%）。\n• 全年公司指引（管理層預測，非實績）：營收1.53兆→1.57兆；營業利益1,230億→1,360億；淨利1,050億→1,180億日圓。\n• 光解決方案：上半年營收910億→1,309億、營業利益7億→236億；全年指引營收2,650億→2,750億、營業利益430億→530億。\n• 官方Q&A：光解決方案上修的100億中，光纖纜線貢獻90億，MT ferrule與特殊光纖各5億；約45億來自價格、45億來自產品組合。部分漲價達雙位數百分比。\n• 公司明言需求仍強、供給能力不足；過半已完成調價的量有中長約支持，並爭取最低採購量或補償條款。\n• 產能（均為FY26期初比、滿載）：Rollable Ribbon Cable 2倍（FY28 H2起）、MT/TMT ferrule 2倍（FY28起）、海纜用光纖4倍（至FY29）、DFB雷射晶片5倍（FY28 H2滿載）。DFB欄位未標示FY26新增投資，故應視為既有／進行中計畫的最新確認，不是本日新下單。\n• DFB生產正穩步擴大、詢價強；但資訊元件全年營業利益指引仍為510億，沒有再上修。\n\n官方簡報：https://www.furukawaelectric.com/ir/library/finalreport/pdf/2027/20261109_pre.pdf\n官方Q&A：https://www.furukawaelectric.com/en/ir/library/finalreport/pdf/2027/20261109_online-qa.pdf\n官方財測修正：https://www.furukawaelectric.com/ir/library/finalreport/pdf/2027/20261109_1.pdf\n\n3) 受影響供應商與角色\n• 古河電工（東證5801）：直接曝險；光纖／高密度纜線、MT ferrule與DFB/SOA等光半導體。\n• 住友電工（5802）、藤倉（5803）、Corning（NYSE:GLW）：光纖／纜線或連接領域競爭者；Coherent（NYSE:COHR）等光元件商僅屬部分產品競爭／互補，產品與客戶組合不可直接等同。\n• 未公開終端客戶，不推測雲端業者。DFB亦不等於EML，且不能據此推論CPO外置CW雷射或整條InP鏈均短缺。\n\n4) 合理推論\n近期獲利槓桿主要是光纜漲價與高纖芯數產品組合，而非DFB營收突然跳升。若供需維持緊張且合約條款落實，FY27價格與稼動率可見度提高；FY28–29擴產投用後，量增可接續價格／組合效益。DFB 5倍若通過客戶認證並被訂單吸收，將強化其光半導體供應地位；在此之前不能量化新增營收。\n\n5) 投資機會與風險\n受益：古河電工直接受惠；設備、磊晶與封裝供應商可能間接受惠，但官方未具名，不能點名推定。催化劑為季度DFB出貨、光解決方案再上修、擴產按期投用。\n風險：AI資料中心資本支出放緩、光纜供給恢復後漲價回吐、FY27–28先支出後回收造成現金流緊、DFB認證／良率／客戶集中與5倍產能過剩。資訊元件利益未上修也是反證。未核對即時估值，不判斷股價是否已反映。\n\n6) 待驗證與追蹤\n追蹤DFB晶片實際月產／晶圓投片、良率、客戶認證與量產出貨；光解決方案價格延續率、訂單覆蓋、交期；FY27–29資本支出與各產線稼動率。公司未揭露DFB對應800G／1.6T、CPO／可插拔架構的產品占比，也未揭露客戶、訂單額或InP磊晶來源。"
+          payload=json.dumps({'chat_id':chat,'text':message,'link_preview_options':{'is_disabled':True}},ensure_ascii=False).encode()
+          req=urllib.request.Request('https://api.telegram.org/bot'+token+'/sendMessage',data=payload,headers={'Content-Type':'application/json'})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit('Telegram delivery failed or unknown; do not retry blindly')
+          mid=result.get('result',{}).get('message_id')
+          if result.get('ok') is not True or type(mid) is not int or mid<=0:
+              raise SystemExit('Telegram receipt invalid')
+          receipt={'accepted':True,'message_id':mid,'event':'furukawa-q2-datacenter-optical-20261109','version':1}
+          with open('telegram-receipt.json','w') as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
