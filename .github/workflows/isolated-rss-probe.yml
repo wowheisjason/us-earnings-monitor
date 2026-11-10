@@ -1,0 +1,47 @@
+name: Official RSS backup feed connectivity (NO SEND)
+on:
+  push:
+    branches:
+      - fix/20261111-daily-market-reliability
+    paths:
+      - '.github/workflows/isolated-rss-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rss:
+    if: github.ref == 'refs/heads/fix/20261111-daily-market-reliability'
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install requests==2.32.3
+      - name: Check official first-party feeds, no model and no Telegram
+        run: |
+          python - <<'PY'
+          import requests
+          from xml.etree import ElementTree as ET
+          feeds={
+            "US Federal Reserve Press": "https://www.federalreserve.gov/feeds/press_all.xml",
+            "BLS CPI": "https://www.bls.gov/feed/cpi.rss",
+            "BLS Employment": "https://www.bls.gov/feed/empsit.rss",
+          }
+          ok=0
+          for label,uri in feeds.items():
+              try:
+                  r=requests.get(uri,timeout=20,headers={"User-Agent":"InvestmentResearchFeedMonitor/1.0 (research)"})
+                  r.raise_for_status()
+                  root=ET.fromstring(r.content)
+                  items=root.findall(".//item")
+                  print("RSS_RESULT",label,"status",r.status_code,"items",len(items))
+                  for item in items[:2]:
+                      print("RSS_ITEM",label,(item.findtext("title") or "")[:100],(item.findtext("pubDate") or "")[:100])
+                  if items: ok+=1
+              except Exception as ex:
+                  print("RSS_FAILURE",label,type(ex).__name__,str(ex)[:180])
+          print("RSS_USABLE_FEEDS",ok)
+          if ok==0: raise SystemExit("All candidate official RSS feeds failed")
+          PY
