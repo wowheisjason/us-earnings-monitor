@@ -1,0 +1,45 @@
+name: Optics delivery LWLG Q3 volume delay 20261110 v1
+on:
+  push:
+    branches: [codex/optics-delivery-lwlg-q3-volume-delay-20261110-v1]
+    paths: [.github/workflows/optics-delivery-lwlg-q3-volume-delay-20261110-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-lwlg-q3-volume-delay-20261110-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat=os.environ.get('TELEGRAM_CHAT_ID')
+          if not token or not chat:
+              raise SystemExit('Telegram credentials unavailable')
+          message="【AI光通訊重大進展｜Lightwave Logic（LWLG）量產延後｜2026/11/10】\n\n1) 重大變化及門檻\nLWLG在Q3官方法說把電光聚合物／silicon-organic hybrid（SOH）調變器的量產起點，由先前目標「2027年下半年」延至「2028年」。原因不是需求下修，而是矽光子晶圓生產週期、PDK製程認證、良率、後段聚合物整合及客戶資格驗證均比預期久。這直接延後量產收入與權利金時間，屬足以改變營收前景與競爭判斷的重大負面修正。\n\n2) 已確認事實\n• 事件／法說日：2026/11/10（美東）；新量產目標只到「2028年」，未提供季度。\n• Q2法說曾以2027 H2開始量產為目標；最新改為2028年。\n• Foxconn光收發器展示仍是Stage 3：功能性原型已成立，但仍需新晶片迭代、整合、可靠度、產線準備、終端客戶認證及穩定良率。Stage 4才代表終端接受並可大量製造／出貨；目前沒有任何客戶被宣布進入Stage 4。\n• 已公開Stage 3客戶為Foxconn、Marvell及另3家未具名Fortune Global 500公司；不等於量產訂單。\n• 兩家晶圓夥伴Q3交付晶圓。其中一家晶片已用於Foxconn展示，預計2026年底再交付、客戶2027年初再跑最終產品配置；另一家發生製程問題，可用晶片有限，預計2027 H1由兩個廠區重作。\n• 第三家預計2026/12交付；第四家暫定2027 H1投片。\n• 公司已公開晶圓生態系包含GlobalFoundries、Tower、SilTerra及一家未具名夥伴，但未說明哪一家發生問題，不可歸責特定公司。\n• 晶圓級聚合物後段製程目前在Denver，公司正與專業代工夥伴洽談外包；尚未宣布簽約、認證或量產。\n• Q3營收約3.8萬美元、淨損約720萬美元；現金及有價證券約8,780萬美元。公司稱資金可支應至2028年，屬管理層說法。\n\n官方法說／重播：https://www.lightwavelogic.com/events-presentations\n前期SEC 10-Q：https://www.sec.gov/Archives/edgar/data/1325964/000107997326001097/lwlg_10q-063026.htm\n法說轉錄（補充，非公司正式文字稿）：https://www.benzinga.com/news/26/11/63126891/lightwave-logic-q3-2026-earnings-call-transcript\n\n3) 供應鏈與競合\n• LWLG：直接負面曝險；供應Perkinamine材料、製程IP及授權，不自行製造完整光模組。\n• Foxconn、Marvell：已公開開發夥伴，但未確認量產採用或訂單。\n• GFS、Tower、SilTerra：前段SiPho互補夥伴；本次不能判定個別廠商失誤。\n• 替代路線包括傳統矽PN調變器、InP／EML、薄膜鈮酸鋰等。SOH若延遲，競爭技術有更多時間完成客戶認證。\n• 公司稱EML短缺推動SiPho＋CW雷射興趣，但未提供產能、交期或價格數據；此說法不能證明整條InP／EML鏈缺貨。\n\n4) 合理推論\n量產收入至少向後移約半年以上，2027年收入更可能以材料、NRE、原型或開發費為主。若2027年完成晶圓廠PDK、可重複良率、晶圓級BEOL及終端認證，2028年仍可能進入量產；任何一環再延誤都會推遲商業化。Foxconn展示證明系統可運作，但不是可靠度或量產驗證。\n\n5) 機會與風險\n機會：200G／lane SOH若證實低功耗並完成認證，仍可切入1.6T及後續400G／lane。催化劑為首個Stage 4、第二份材料／授權合約、BEOL外包簽約、重作晶圓達標。\n風險：晶圓與PDK再延誤、良率／可靠度不足、客戶採用取消、現金消耗與增資、替代調變器先量產。未查即時價格，不判斷是否已反映。\n\n6) 待驗證\n追蹤每家晶圓夥伴的重作晶圓與良率、PDK release、BEOL外包方及認證、Foxconn終端客戶資格驗證、Stage 4與正式採購承諾，以及2028量產的明確季度／產量／權利金。"
+          payload=json.dumps({'chat_id':chat,'text':message,'link_preview_options':{'is_disabled':True}},ensure_ascii=False).encode()
+          req=urllib.request.Request('https://api.telegram.org/bot'+token+'/sendMessage',data=payload,headers={'Content-Type':'application/json'})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit('Telegram delivery failed or unknown; do not retry blindly')
+          mid=result.get('result',{}).get('message_id')
+          if result.get('ok') is not True or type(mid) is not int or mid<=0:
+              raise SystemExit('Telegram receipt invalid')
+          receipt={'accepted':True,'message_id':mid,'event':'lwlg-q3-volume-delay-20261110','version':1}
+          with open('telegram-receipt.json','w') as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
