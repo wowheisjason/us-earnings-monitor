@@ -1,0 +1,45 @@
+name: Optics delivery GIS laser OSAT Q3 20261109 v1
+on:
+  push:
+    branches: [codex/optics-delivery-gis-laser-osat-q3-20261109-v1]
+    paths: [.github/workflows/optics-delivery-gis-laser-osat-q3-20261109-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-gis-laser-osat-q3-20261109-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get('TELEGRAM_BOT_TOKEN')
+          chat=os.environ.get('TELEGRAM_CHAT_ID')
+          if not token or not chat:
+              raise SystemExit('Telegram credentials unavailable')
+          message="【AI光通訊重大進展｜GIS-KY雷射封裝量產與擴產｜2026/11/09】\n\n1) 重大變化及門檻\nGIS-KY（6456）在Q3法說把Laser OSAT從試產推進到明確的小量量產窗口：預計2026年11–12月開始，完整產能於2027年Q2底至Q3陸續開出；首期聚焦300–400mW以上高功率CW Laser，初期為1–2家客戶代工。公司今年核准約新台幣80億元資本支出，其中約40–50億元投入雷射封裝，規模足以改變公司產品組合、資本強度與競爭位置，因此達通知門檻。\n\n2) 已確認事實\n• 事件／法說日：2026/11/09。小量量產日為管理層預期，不是已完成出貨。\n• 雷射封裝產線自2026 Q2起建置；設備與客戶供料陸續到位，預計11–12月小量生產，2027 Q2底至Q3完整產能開出。\n• 初期聚焦300–400mW以上高功率CW Laser封裝，服務高速光通訊；市場報導亦稱目標涵蓋800G／1.6T，但公司未公布產品別台數、良率、ASP或營收。\n• 初期代工客戶為1–2家，均未具名；不能推測為特定模組廠、雲端客戶或NVIDIA供應鏈。\n• 約80億元核准CapEx中，約40–50億元用於Laser OSAT；約1/3相關布局在台灣，其餘主要在越南。前三季實際CapEx為26.33億元，核准額不等於已支出。\n• 公司另開發FAU被動元件，初期為Fiber Holder與Metalens；尚未公布量產或訂單。\n• Q3營收約144億元、毛利率4.5%；前三季營收約410億元、稅後淨損約19.8億元、EPS -5.93元。雷射封裝尚未成為已揭露營收來源。\n\n官方法說簡報：https://mopsov.twse.com.tw/nas/STR/645620261109M001.pdf\n官方法說音訊：https://youtu.be/UtwrB4tBIZo\n管理層發言交叉驗證（中央社）：https://tw.stock.yahoo.com/news/%E6%A5%AD%E6%88%90-%E9%AB%98%E5%8A%9F%E7%8E%87%E9%9B%B7%E5%B0%84%E5%B0%81%E8%A3%9D%E7%94%A2%E7%B7%9A%E6%9C%80%E5%BF%AB%E6%98%8E%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%BA%95%E6%94%BE%E9%87%8F-111056327.html\n\n3) 供應鏈與競合\n• GIS-KY：直接曝險，角色為CW Laser／可能涵蓋EML的封裝測試代工與FAU零件，不是InP磊晶、雷射晶片或完整光模組供應商。\n• 上游InP／CW雷射晶片與客供材料廠未具名，不能點名個別受益者。\n• 下游客戶僅確認1–2家未具名代工客戶，未確認終端hyperscaler。\n• 日月光、Amkor及專業光電封測商構成潛在競爭；實際製程、客戶與報價未公開，不能判定轉單。\n• 高功率CW Laser可用於SiPho外置光源、NPO或CPO，但也可能進入其他高速光通訊架構；此事件不是CPO量產證明，亦不代表EML或整條InP鏈缺貨。\n\n4) 合理推論\n40–50億元投資與1–2家客戶供料表示專案已超越純展示，但11–12月仍是小量爬坡。若2027年前完成良率、客戶認證及越南產能導入，光通訊封裝可降低GIS對觸控／顯示業務的依賴並改善高階製造定位；若良率或拉貨延遲，折舊將先於收入出現，反而壓迫毛利與現金流。\n\n5) 機會與風險\n機會：從消費電子加工切入AI光通訊Laser OSAT；台灣研發／試產加越南規模製造可能形成成本與地緣配置優勢。催化劑為首次實際出貨、光通訊營收單獨揭露、第二批客戶認證、2027 Q2–Q3產能開出。\n風險：小量量產延遲、良率與可靠度不達標、客戶集中、客供材料短缺、越南爬坡與折舊壓力、CW／EML封裝需求被其他光源架構替代。公司前三季仍虧損，投資回收尚無證據。未查即時估值，不判斷股價是否已反映。\n\n6) 待驗證\n追蹤11–12月是否有實際出貨與營收認列、月產能／良率／ASP、1–2家客戶認證、台灣與越南設備到位、40–50億元實際支出、產品究竟是CW Laser或EML及其功率／速率分布、是否真正用於800G／1.6T與CPO／NPO。"
+          payload=json.dumps({'chat_id':chat,'text':message,'link_preview_options':{'is_disabled':True}},ensure_ascii=False).encode()
+          req=urllib.request.Request('https://api.telegram.org/bot'+token+'/sendMessage',data=payload,headers={'Content-Type':'application/json'})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit('Telegram delivery failed or unknown; do not retry blindly')
+          mid=result.get('result',{}).get('message_id')
+          if result.get('ok') is not True or type(mid) is not int or mid<=0:
+              raise SystemExit('Telegram receipt invalid')
+          receipt={'accepted':True,'message_id':mid,'event':'gis-laser-osat-q3-20261109','version':1}
+          with open('telegram-receipt.json','w') as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
