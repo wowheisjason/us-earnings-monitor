@@ -2258,7 +2258,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2623,7 +2623,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2921,7 +2921,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3232,7 +3232,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3466,7 +3466,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3617,7 +3617,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4066,7 +4066,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4223,7 +4223,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4297,7 +4297,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4373,7 +4373,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4523,7 +4523,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4674,7 +4674,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4748,7 +4748,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4833,7 +4833,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:16:40-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4908,7 +4908,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5368,7 +5368,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5446,7 +5446,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5519,7 +5519,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5591,7 +5591,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5667,7 +5667,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5962,7 +5962,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6040,7 +6040,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6121,7 +6121,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6197,7 +6197,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6346,7 +6346,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6422,7 +6422,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:33:08-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6493,10 +6493,10 @@
         "sec_edgar:0001140361-26-042892:ef20085135_ex99-1.htm",
         "sec_edgar:0001140361-26-042892:ef20085135_ex99-2.htm"
       ],
-      "status": "collecting",
+      "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:12:11-05:00",
+      "updated_at": "2026-11-10T20:58:08-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6572,7 +6572,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T20:12:11-05:00",
+      "updated_at": "2026-11-10T20:55:42-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6594,7 +6594,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.222,
+            "seconds": 0.296,
             "documents": 0,
             "partial": false
           },
@@ -6607,7 +6607,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-10T20:12:11-05:00",
+        "ir_retrieval_last_at": "2026-11-10T20:55:42-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6627,11 +6627,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-10T20:12:11-05:00",
-        "official_ir_checked_at": "2026-11-10T20:12:11-05:00",
-        "official_ir_check_count": 2,
+        "last_collection_check_at": "2026-11-10T20:55:42-05:00",
+        "official_ir_checked_at": "2026-11-10T20:55:42-05:00",
+        "official_ir_check_count": 3,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-11-10T20:42:11-05:00"
+        "next_ir_retry_at": "2026-11-10T21:25:42-05:00"
       },
       "delivery": {}
     }
@@ -6646,7 +6646,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-10T20:12:11-05:00",
+      "last_success_at": "2026-11-10T20:55:42-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -33925,7 +33925,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-11T03:27:14-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -34029,6 +34030,109 @@
               "strong_claim_without_direct_evidence:pricing_power"
             ]
           }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q1 FY 2027 總營收達 $4,136.0M（即 $4.136B），淨利達 $1,548.6M，顯示短期營運與現金流維持規模，但單季表現尚無法直接推論未來 1-3 年的長期成長動能。",
+                "why_it_matters": "營收與淨利規模直接支撐公司的核心獲利能力與現金流生成能力。",
+                "fact_basis": [
+                  "Total revenues for Q1 FY 2027 were $4,136,015 thousand (c1:official_ir:642ea77e3816f921fd932b09#u1).",
+                  "GAAP net income for Q1 FY 2027 was $1,548,588 thousand (c2:official_ir:642ea77e3816f921fd932b09#u4)."
+                ],
+                "inference": "營收與獲利增長反映出目前業務需求保持穩定，但單季表現尚無法完全佐證未來長期結構性成長動能。",
+                "confidence": "high"
+              },
+              {
+                "signal": "Q2 FY 2027 營收預期指引中位數為 $4.7B，非 GAAP 毛利率預期為 62.5% +/- 1.0%。",
+                "why_it_matters": "前瞻指引提供短期營運能見度，有助於評估接下來一個季度的獲利能力。",
+                "fact_basis": [
+                  "Q2 FY 2027 total revenues are expected to be in a range of $4.7 billion +/- $200 million (c4:official_ir:642ea77e3816f921fd932b09#u1).",
+                  "Q2 FY 2027 non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0% (c6:official_ir:642ea77e3816f921fd932b09#u2)."
+                ],
+                "inference": "公司對下季給出的指引顯示營運規模持續，但由於缺乏歷史比較基礎與外部共識，尚無法判定其超越或低於市場預期。",
+                "confidence": "medium"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q1 FY 2027 總營收為 $4,136.0M，相較於 Q1 FY 2026 的 $3,209.7M 有所成長。",
+                "應收帳款淨額為 $3,072.1M，較上一季的 $2,889.2M 增加 6%。",
+                "合約負債為 $1,707.8M，較上一季的 $1,775.1M 減少 4%。",
+                "服務業務約佔 Q1 FY 2027 總營收的 20%。"
+              ],
+              "margin_unit_economics": [
+                "Q1 FY 2027 GAAP 淨利為 $1,548.6M，稀釋每股盈餘為 $1.18。",
+                "Q2 FY 2027 GAAP 毛利率指引預期為 61.8% +/- 1.0%，非 GAAP 毛利率指引預期為 62.5% +/- 1.0%。"
+              ],
+              "cash_capital_intensity": [
+                "Q1 FY 2027 營業現金流為 $1,530.9M（即 $1.53B），自由現金流為 $1.34B。",
+                "Q1 FY 2027 資本支出為 $194.8M（$194,756 thousand），高於去年同期的 $95.9M。",
+                "截至 2026 年 9 月 30 日，重大採購承諾金額約為 $8.87B。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 FY 2027 總營收預期區間為 $4.5B 至 $4.9B（中位數 $4.7B +/- $200M）。",
+              "Q2 FY 2027 GAAP 稀釋 EPS 預期區間為 $1.30 至 $1.52（中位數 $1.41 +/- $0.11）。",
+              "Q2 FY 2027 非 GAAP 稀釋 EPS 預期區間為 $1.33 至 $1.55（中位數 $1.44 +/- $0.11）。",
+              "Q2 FY 2027 GAAP 毛利率預期區間為 60.8% 至 62.8%（中位數 61.8% +/- 1.0%）。",
+              "Q2 FY 2027 非 GAAP 毛利率預期區間為 61.5% 至 63.5%（中位數 62.5% +/- 1.0%）。"
+            ],
+            "demand_quality": [
+              "本季證據顯示合約負債較上一季減少 4% 至 $1,707.8M，應收帳款增加 6% 至 $3,072.1M。",
+              "服務業務營收佔比維持在約 20%。",
+              "由於官方文件未提供客戶集中度、大型客戶 cohort 或詳細 NRR 數據，本報告無法判定客戶廣度、深度與擴展品質。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據僅涵蓋財務數字與採購承諾，缺乏定性證據支持定價權、控制點、市佔率增減或轉換成本的直接結論。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "合約負債季減 4% 可能隱含未來營收動能放緩的風險，需觀察後續訂單續航力。",
+              "重大採購承諾高達 $8.87B，若未來需求不如預期可能帶來庫存或資金壓力。"
+            ],
+            "watch_items": [
+              "追蹤 Q2 FY 2027 實際營收與毛利率是否落於指引區間內。",
+              "觀察合約負債與應收帳款後續變化，以評估實際需求品質。",
+              "監控資本支出與重大採購承諾的執行進度與現金流可持續性。"
+            ],
+            "confidence": 80,
+            "telegram_draft": "KLAC FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收與淨利顯示短期營運維持穩健，但單季表現尚無法直接推論未來長期成長動能。\n• 下季營收指引中位數反映短期能見度尚可，但因缺乏歷史比較與外部共識，無法判定是否優於市場預期。\n\n📊 關鍵數據與財測:\n• 營運現金流與資本支出：本季營業現金流顯示本業現金生成能力，自由現金流維持水準，但資本支出有所增加。\n• 資產負債表項目：應收帳款淨額較上一季增加，合約負債較上一季減少，反映短期帳款與遞延營收有些許變動。\n• 下季財測指引：預期總營收與非 GAAP 稀釋 EPS 落在特定預期區間內。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 服務業務佔總營收比例維持約一定水準，提供基本盤支撐。\n• 由於未提供逐字稿與 Q&A 紀錄，無法進行管理層法說問答的攻防與意圖判讀。\n\n⚠️ 風險、反證與待驗證:\n• 合約負債減少可能是未來訂單動能放緩的訊號，需持續追蹤後續變化。\n• 重大採購承諾金額較高，若終端需求不如預期，可能對未來現金流與成本控管造成壓力。\n• 現有證據不足以支持公司具備定價權或明確的競爭優勢護城河，高成長與現金流不等於結構性市佔擴張。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 65,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "telegram_draft 的 Section 2 包含多個數值與金額，但 prompt 規定「Summary bullets should contain NO numbers; keep necessary values in Section 2」，且未嚴格遵守 $4.7B/$4,136.0M 等美元單位的嚴格格式與精簡結構。",
+              "telegram_draft 的 Section 2 行數過多，違反了「3–5 COMPACT METRIC CLUSTERS, maximum 7 non-empty lines」的限制。",
+              "telegram_draft 的標題或段落未完全契合 INVESTOR TELEGRAM V4.3 OUTPUT CONTRACT 的四個指定標題順序與規範。",
+              "deterministic_v4_gate:structure",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "KLAC FY2027 Q1\n\n1. 💡 投資結論與邏輯:\n• 本季營收與淨利規模維持穩定，但單季表現尚無法直接推論未來長期成長動能。\n• 下季營收指引反映短期能見度，但因缺乏外部共識，無法判定是否優於市場預期。\n\n2. 📊 關鍵數據與財測:\n• 營收與獲利：本季總營收達 $4,136.0M，淨利達 $1,548.6M，反映本業現金生成能力，但無法佐證長期結構性成長。\n• 資產負債表：應收帳款增加且合約負債減少，顯示短期訂單與遞延營收有些許變動。\n• 資本配置：營業現金流維持水準，資本支出增加，重大採購承諾金額較高。\n• 下季財測：總營收預期區間為 $4.5B 至 $4.9B，非 GAAP 稀釋 EPS 預期區間為 $1.33 至 $1.55。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 服務業務佔總營收比例維持穩定，提供基本盤支撐。\n• 由於未提供逐字稿與 Q&A 紀錄，無法進行管理層法說問答的意圖判讀。\n\n4. ⚠️ 風險、反證與待驗證:\n• 合約負債減少可能是未來訂單動能放緩的訊號，需持續追蹤後續變化。\n• 重大採購承諾金額較高，若終端需求不如預期，可能對未來現金流與成本控管造成壓力。\n• 現有證據不足以支持公司具備明確的競爭優勢護城河或定價權。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
+          }
         }
       },
       "evidence_repair_policy": 3,
@@ -34038,7 +34142,35 @@
     "INTC_2026-09-26_Q3": {
       "pipeline_version": 6,
       "evidence_fingerprint": "d1b5e69fd3debb41ffefce86a62219e3fbe6ccb60e8c354074e0af7ed0a90898",
-      "stages": {},
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u3",
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u4"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u5",
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u6"
+            ],
+            "cards": []
+          }
+        }
+      },
       "evidence_repair_policy": 3,
       "revision_contract_version": 2,
       "audit_gate_version": 3
@@ -55971,7 +56103,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-10T22:12:11-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -56033,6 +56166,130 @@
             ],
             "confidence": 75,
             "telegram_draft": "ENTG ENTG_2026-11-08\n\n💡 投資結論與邏輯:\n• ENTG 發布長期財務模型，訂定營收 CAGR ~15% 與調整後 EPS CAGR ~30% 的成長目標，反映管理層對先進半導體材料與高純度需求升級的強烈信心。\n• AI 晶圓架構帶動單片晶圓材料價值近乎翻倍，推動 Materials 及 Advanced Purity 平台規模擴展，惟獲利能否達標取決於產品組合改善與產能利用率。\n\n📊 關鍵數據與財測:\n• 2026E 全年營收指引約 $3,740.8M (~$3.7B)，GAAP 淨利 $517.8M，稀釋 GAAP EPS $3.37，反映整體營運穩健恢復成長軌道。\n• 2026E 全年調整後毛利率指引為 ~48.3%，對比長期 3-5 年目標 ~55.0% 與調整後營業利益率 ~35.0%，顯示利潤率提升仍需等待規模效益與高毛利產品比重拉高。\n• 資本配置與長期目標方面，董事會授權 $500M 股票買回計劃，長期淨槓桿率目標維持 ~2.0x，長期營收目標直指 ~$6B（對應 SAM ~$20B）。\n• 截至 2026 年 9 月 26 日止三個月內包含 $8.3M 的 IEEPA 關稅退款抵減成本，屬於過往關稅影響之一次性調整。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 材料解決方案平台 LTM 營收約 $1.5B（2025 年 SAM ~$10B+），受益於 AI 架構推升單晶圓材料用量；高純度解決方案平台 SAM 預期 3-5 年 CAGR >10%，展現長期產業紅利。\n• 本次未提供法說會 Q&A 逐字稿資料，無法評估分析師攻防焦點與管理層答覆細節。\n\n⚠️ 風險、反證與待驗證:\n• 地緣政治不確定性、出口管制與客戶集中度為主要營運風險，可能干擾營收達成率。\n• 若未來數季毛利率持續停滯在 ~48% 水準而無法向 ~55% 邁進，將證實高毛利 AI 材料組合轉型進度不如預期。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:redundancy",
+              "deterministic_v4_gate:interpretation"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "ENTG ENTG_2026-11-08\n\n💡 投資結論與邏輯:\n• 公司發布長期財務模型，訂定營收 CAGR ~15% 與調整後 EPS CAGR ~30% 的成長目標，反映管理層對先進半導體材料與高純度需求升級的預期。\n• AI 架構推升單片晶圓材料價值，帶動 Materials 及 Advanced Purity 平台規模擴展，但獲利能否達標仍取決於產品組合改善與產能利用率。\n\n📊 關鍵數據與財測:\n• 全年指引: 2026E 全年淨銷售額指引約 $3,740.8M，調整後毛利率指引為 ~48.3%，GAAP 淨利 $517.8M，稀釋 GAAP EPS $3.37。\n• 長期模型: 3-5 年長期目標包含營收 CAGR ~15%、調整後毛利率 ~55%、調整後營業利益率 ~35%、調整後 EPS CAGR ~30%，以及長期營收目標 ~$6B（對應 SAM ~$20B）。\n• 資本配置: 董事會授權 $500M 股票買回計劃，長期淨槓桿率目標維持 ~2.0x。\n• 其他項目: 截至 2026 年 9 月 26 日止三個月內包含 $8.3M 的 IEEPA 關稅退款抵減成本。\n• 外部共識: 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 材料與純度動能: Materials Solutions 平台 LTM 營收約 $1.5B（2025 年 SAM ~$10B+），受益於 AI 架構推升單晶圓材料用量；Advanced Purity Solutions 平台 SAM 預期 3-5 年 CAGR >10%。\n• 法說 Q&A 狀態: 本次 Research Packet 未提供法說會 Q&A 逐字稿資料，無法評估分析師攻防焦點與管理層答覆細節。\n\n⚠️ 風險、反證與待驗證:\n• 地緣政治不確定性、出口管制與客戶集中度為主要營運風險，可能干擾營收達成率。\n• 若未來數季毛利率無法逐步向 ~55% 長期目標邁進，將反映高毛利產品組合轉型進度不如預期。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [
+              "summary_repeats_hard_data:營收=15%,營收=30%"
+            ],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:全年指引: 2026E 全年淨銷售額指引約 $3,740.8M，調整後毛利率指引為 ~48.3%，GAAP 淨利 $517.8M，稀釋 GAAP EPS $3.37。",
+              "kpi_without_readthrough:長期模型: 3-5 年長期目標包含營收 CAGR ~15%、調整後毛利率 ~55%、調整後營業利益率 ~35%、調整後 EPS CAGR ~30%，以及長期營收目標 ~$6B（對應",
+              "kpi_without_readthrough:資本配置: 董事會授權 $500M 股票買回計劃，長期淨槓桿率目標維持 ~2.0x。",
+              "kpi_without_readthrough:其他項目: 截至 2026 年 9 月 26 日止三個月內包含 $8.3M 的 IEEPA 關稅退款抵減成本。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "公司發布長遠財務模型，設定營收 CAGR ~15% 與調整後 EPS CAGR ~30% 的目標",
+                "why_it_matters": "顯示管理層預期先進半導體的材料與純度需求將持續升級，驅動中長期獲利能力顯著高於營收成長速度。",
+                "fact_basis": [
+                  "Entegris 長期財務模型目標包括營收 CAGR ~15%、調整後毛利率 ~55%、調整後營業利益率 ~35% 以及調整後 EPS CAGR ~30%。",
+                  "2026E 預計淨銷售額約 $3,740.8M，調整後毛利率預計為 ~48.3%。"
+                ],
+                "inference": "若要在 3-5 年內達到 55% 的調整後毛利率與 35% 營業利益率，公司必須大幅改善產品組合併提升產能利用率。",
+                "confidence": "medium"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Materials Solutions 平台近 12 個月營收約 $1.5B，2025 年 SAM 達 $10B+；管理層表示 AI 時代架構可使每片晶圓的材料內容接近翻倍。",
+                "Advanced Purity Solutions 平台規模約 $2B，受半導體純度要求提高帶動，預期 3-5 年 SAM CAGR >10%。",
+                "2026E 淨銷售額指引為 $3,740.8M，長期目標營收達 ~$6B（對應 SAM ~$20B）。"
+              ],
+              "margin_unit_economics": [
+                "2026E 預計調整後毛利率為 ~48.3%，對比長期目標約 55%，顯示短期內產品組合與規模效應仍有發揮空間。",
+                "截至 2026 年 9 月 26 日止三個月收到 $8.3M 的 IEEPA 關稅退款，計入銷貨成本抵減，屬一次性影響。"
+              ],
+              "cash_capital_intensity": [
+                "董事會核准 $500M 股票買回計劃，長期槓桿率目標設定為 ~2.0x，反映資本配置兼顧股東回報與債務控管。"
+              ]
+            },
+            "guidance_assessment": [
+              "2026E 指引：淨銷售額約 $3,740.8M，調整後毛利率約 48.3%，GAAP 淨利為 $517.8M，稀釋後 GAAP EPS 為 $3.37。",
+              "長期模型目標（3-5 年）：營收 CAGR ~15%，調整後毛利率 ~55%，調整後營業利益率 ~35%，調整後 EPS CAGR ~30%，營收長期目標 ~$6B。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "AI 架構帶動單晶圓材料價值提升，且純度需求拉升帶動 APS 平台 >10% SAM CAGR。",
+              "由於缺乏個別客戶或層級細節數據，無法從本次公開資訊確定客戶集中度與擴展品質。"
+            ],
+            "qa_readthrough": [
+              {
+                "debate": "無逐字稿與 Q&A 資訊",
+                "management_answer": "本次 Research Packet 未提供法說會 Q&A 逐字稿紀錄。",
+                "answer_quality": "unknown",
+                "investment_readthrough": "無法判定管理層在面對分析師追問時的答覆態度或攻防細節。"
+              }
+            ],
+            "competitive_value_chain": [
+              "Materials Solutions 與 Advanced Purity Solutions 分別佔據 ~$10B+ 與 ~$2B 的 SAM，為半導體微縮與純度控制的關鍵供應商。",
+              "高毛利目標反映其技術在先進製程具有一定進入門檻，但市佔率變化與定價權仍需視後續競爭動態驗證。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "地緣政治不確定性、出口管制與客戶集中度風險可能影響 $3,740.8M 營收與長期 CAGR 15% 的達成進度。",
+              "若 2026E 調整後毛利率 48.3% 無法逐步向 55% 的長期目標拉升，將驗證高價產品組合轉向不如預期的反證。"
+            ],
+            "watch_items": [
+              "先進製程產能利用率及 AI 晶圓材料採用進度是否如期加倍。",
+              "長期淨槓桿率是否穩定控制在 ~2.0x 及 $500M 庫藏股執行節奏。"
+            ],
+            "confidence": 75,
+            "telegram_draft": "ENTG ENTG_2026-11-08\n\n💡 投資結論與邏輯:\n• 公司發布長期財務模型，訂定營收 CAGR 與調整後 EPS CAGR 的成長目標，反映管理層對先進半導體材料與高純度需求升級的預期。\n• AI 架構推升單片晶圓材料價值，帶動 Materials 及 Advanced Purity 平台規模擴展，但獲利能否達標仍取決於產品組合改善與產能利用率。\n\n📊 關鍵數據與財測:\n• 2026E 淨銷售額指引顯示營運規模擴張，調整後毛利率指引反映目前獲利結構，GAAP 淨利與稀釋 GAAP EPS 提供當期獲利基準，但實際毛利率仍受產能利用率制約。\n• 長期模型顯示 3-5 年營收 CAGR 目標，調整後毛利率與營業利益率目標反映長期優化空間，調整後 EPS CAGR 目標顯示獲利成長潛力，長期營收目標對應長期 SAM 規模。\n• 資本配置顯示董事會授權股票買回計劃，長期淨槓桿率目標反映財務結構控管，但資本回報節奏仍需視現金流狀況而定。\n• 截至 2026 年 9 月 26 日止三個月內包含 IEEPA 關稅退款抵減成本，屬於過往關稅影響之一次性調整。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• Materials Solutions 平台 LTM 營收規模顯現，受益於 AI 架構推升單晶圓材料用量；Advanced Purity Solutions 平台 SAM 預期長期 CAGR 成長，展現純度需求紅利。\n• 本次 Research Packet 未提供法說會 Q&A 逐字稿資料，無法評估分析師攻防焦點與管理層答覆細節。\n\n⚠️ 風險、反證與待驗證:\n• 地緣政治不確定性、出口管制與客戶集中度為主要營運風險，可能干擾營收達成率。\n• 若未來數季毛利率無法逐步向長期目標邁進，將反映高毛利產品組合轉型進度不如預期。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "ENTG ENTG_2026-11-08\n\n💡 投資結論與邏輯:\n• 公司發布長期財務模型，訂定營收 CAGR 與調整後 EPS CAGR 的成長目標，反映管理層對先進半導體材料與高純度需求升級的預期。\n• AI 架構推升單片晶圓材料價值，帶動 Materials 及 Advanced Purity 平台規模擴展，但獲利能否達標仍取決於產品組合改善與產能利用率。\n\n📊 關鍵數據與財測:\n• 全年 2026E 淨銷售額指引為 $3,740.8M，調整後毛利率為 ~48.3%，GAAP 淨利為 $517.8M，稀釋 GAAP EPS 為 $3.37，顯示營運規模持續擴張但仍受產能利用率制約。\n• 長期模型預期 3-5 年營收 CAGR 約 15%，調整後毛利率目標約 55%，調整後營業利益率目標約 35%，調整後 EPS CAGR 目標約 30%，長期營收目標達 $6B 對應 SAM 約 $20B。\n• 董事會授權 $500M 股票買回計劃，長期淨槓桿率目標設定為 ~2.0x，反映資本配置兼顧股東回報與債務控管。\n• 本季計入 $8.3M 的 IEEPA 關稅退款抵減銷貨成本，屬於過往關稅影響之一次性調整。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• Materials Solutions 平台 LTM 營收規模達 $1.5B，2025 年 SAM 達 $10B+，受益於 AI 架構推升單晶圓材料用量；Advanced Purity Solutions 平台規模達 $2B，預期 3-5 年 SAM CAGR >10%，展現純度需求紅利。\n• 本次 Research Packet 未提供法說會 Q&A 逐字稿資料，無法評估分析師攻防焦點與管理層答覆細節。\n\n⚠️ 風險、反證與待驗證:\n• 地緣政治不確定性、出口管制與客戶集中度為主要營運風險，可能干擾營收達成率。\n• 若未來數季調整後毛利率無法逐步向 55% 的長期目標邁進，將反映高毛利產品組合轉型進度不如預期。\n• 先進製程產能利用率及 AI 晶圓材料採用進度是否如期加倍，為後續主要觀察指標。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:長期模型預期 3-5 年營收 CAGR 約 15%，調整後毛利率目標約 55%，調整後營業利益率目標約 35%，調整後 EPS CAGR 目標約 30%，長期營收目標達 $6B 對",
+              "kpi_without_readthrough:本季計入 $8.3M 的 IEEPA 關稅退款抵減銷貨成本，屬於過往關稅影響之一次性調整。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
           }
         }
       },
