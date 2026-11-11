@@ -2258,7 +2258,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2623,7 +2623,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2921,7 +2921,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3232,7 +3232,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3466,7 +3466,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3617,7 +3617,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4066,7 +4066,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4223,7 +4223,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4297,7 +4297,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4373,7 +4373,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4523,7 +4523,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4674,7 +4674,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4748,7 +4748,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4912,7 +4912,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5072,7 +5072,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5372,7 +5372,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5450,7 +5450,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5523,7 +5523,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5595,7 +5595,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5671,7 +5671,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5966,7 +5966,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6044,7 +6044,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6125,7 +6125,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6201,7 +6201,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6350,7 +6350,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6426,7 +6426,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6500,7 +6500,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6576,7 +6576,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-11T13:41:59-05:00",
+      "updated_at": "2026-11-11T15:10:13-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6598,7 +6598,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.191,
+            "seconds": 0.415,
             "documents": 0,
             "partial": false
           },
@@ -6611,7 +6611,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-11T12:12:51-05:00",
+        "ir_retrieval_last_at": "2026-11-11T15:10:13-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6631,11 +6631,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-11T12:12:51-05:00",
-        "official_ir_checked_at": "2026-11-11T12:12:51-05:00",
-        "official_ir_check_count": 7,
+        "last_collection_check_at": "2026-11-11T15:10:13-05:00",
+        "official_ir_checked_at": "2026-11-11T15:10:13-05:00",
+        "official_ir_check_count": 8,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-11T14:12:51-05:00"
+        "next_ir_retry_at": "2026-11-11T17:10:13-05:00"
       },
       "delivery": {}
     }
@@ -6650,7 +6650,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-11T12:12:51-05:00",
+      "last_success_at": "2026-11-11T15:10:13-05:00",
       "blocked_until": null
     },
     "public_transcript": {
