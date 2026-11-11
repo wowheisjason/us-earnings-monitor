@@ -2258,7 +2258,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2623,7 +2623,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2921,7 +2921,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3232,7 +3232,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3466,7 +3466,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3617,7 +3617,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4066,7 +4066,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4223,7 +4223,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4297,7 +4297,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4373,7 +4373,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4523,7 +4523,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4674,7 +4674,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4748,7 +4748,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4908,7 +4908,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5368,7 +5368,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5446,7 +5446,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5519,7 +5519,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5591,7 +5591,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5667,7 +5667,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5962,7 +5962,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6040,7 +6040,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6121,7 +6121,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6197,7 +6197,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6346,7 +6346,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6422,7 +6422,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6496,16 +6496,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T22:03:02-05:00",
+      "updated_at": "2026-11-11T01:29:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "seconds": 0.193,
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -6518,7 +6518,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.381,
+            "seconds": 0.435,
             "documents": 0,
             "partial": false
           },
@@ -6531,7 +6531,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-10T20:12:11-05:00",
+        "ir_retrieval_last_at": "2026-11-11T01:27:16-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6551,11 +6551,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-10T20:12:11-05:00",
-        "official_ir_checked_at": "2026-11-10T20:12:11-05:00",
-        "official_ir_check_count": 5,
+        "last_collection_check_at": "2026-11-11T01:27:16-05:00",
+        "official_ir_checked_at": "2026-11-11T01:27:16-05:00",
+        "official_ir_check_count": 6,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-10T22:12:11-05:00"
+        "next_ir_retry_at": "2026-11-11T03:27:16-05:00"
       },
       "delivery": {}
     },
@@ -6572,16 +6572,16 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-10T21:44:52-05:00",
+      "updated_at": "2026-11-11T01:27:16-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "none",
+            "provider": "gemini_search",
             "ok": false,
             "seconds": 0.0,
-            "documents": 0,
-            "model": null
+            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+            "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
@@ -6594,7 +6594,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.306,
+            "seconds": 0.511,
             "documents": 0,
             "partial": false
           },
@@ -6607,7 +6607,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-10T21:44:52-05:00",
+        "ir_retrieval_last_at": "2026-11-11T01:27:16-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6627,11 +6627,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-10T21:44:52-05:00",
-        "official_ir_checked_at": "2026-11-10T21:44:52-05:00",
-        "official_ir_check_count": 4,
+        "last_collection_check_at": "2026-11-11T01:27:16-05:00",
+        "official_ir_checked_at": "2026-11-11T01:27:16-05:00",
+        "official_ir_check_count": 5,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-10T23:44:52-05:00"
+        "next_ir_retry_at": "2026-11-11T03:27:16-05:00"
       },
       "delivery": {}
     }
@@ -6640,13 +6640,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-11-10T17:21:30-05:00",
-      "blocked_until": "2026-11-10T23:21:30-05:00",
+      "last_failure_at": "2026-11-11T01:27:16-05:00",
+      "blocked_until": "2026-11-11T07:27:16-05:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-10T21:44:52-05:00",
+      "last_success_at": "2026-11-11T01:27:16-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -31267,525 +31267,8 @@
     },
     "KLAC_2026-09-30_Q1": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "1b185df41b074ea3444a8ccad6030e3c26641fb2fdb640315ae32d5095fecaef",
-      "stages": {
-        "v5_extract_batch_1": {
-          "payload": {
-            "processed_unit_ids": [
-              "sec_edgar:0000319201-26-000034:klac-20260930.htm#u1",
-              "sec_edgar:0000319201-26-000034:klac-20260930.htm#u2"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_2": {
-          "payload": {
-            "processed_unit_ids": [
-              "sec_edgar:0000319201-26-000034:klac-20260930.htm#u3",
-              "sec_edgar:0000319201-26-000034:klac-20260930.htm#u4"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_3": {
-          "payload": {
-            "processed_unit_ids": [
-              "sec_edgar:0000319201-26-000034:klac-20260930.htm#u5",
-              "sec_edgar:0000319201-26-000034:klac-20260930.htm#u6"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_4": {
-          "payload": {
-            "processed_unit_ids": [
-              "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured"
-            ],
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $4,136,015 thousand for the period.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
-                "metric": "Revenue",
-                "value": "4,136,015",
-                "unit": "USD",
-                "metric_type": "other"
-              },
-              {
-                "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Net income loss was $1,548,588 thousand for the period.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:NetIncomeLoss",
-                "metric": "Net Income",
-                "value": "1,548,588",
-                "unit": "USD",
-                "metric_type": "other"
-              }
-            ]
-          }
-        },
-        "v5_evidence_repair_v3_4": {
-          "payload": {
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Net income was $763,061 thousand for the period.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:NetIncomeLoss",
-                "metric": "Net Income",
-                "value": "763061",
-                "unit": "USD",
-                "metric_type": "other",
-                "card_id": "c2:sec_edgar:0000319201-26-000034:klac-20260930.htm#structured",
-                "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0000319201-26-000034:klac-20260930.htm",
-                  "quote": "us-gaap:NetIncomeLoss"
-                }
-              }
-            ],
-            "processed_unit_ids": [
-              "sec_edgar:0000319201-26-000034:klac-20260930.htm#structured"
-            ],
-            "replace_only_invalid_cards": true
-          }
-        },
-        "v5_extract_batch_5": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:642ea77e3816f921fd932b09#u1",
-              "official_ir:642ea77e3816f921fd932b09#u2"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Total revenues for Q1 FY 2027 were $4.136 billion.",
-                "materiality_candidate": 5,
-                "quote": "Total Revenues\n$4,136 million\n$3,658 million\n$3,210 million",
-                "metric": "total_revenues",
-                "value": "4136",
-                "unit": "USD_millions",
-                "period": "Q1 FY 2027"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "GAAP net income for Q1 FY 2027 was $1.549 billion, with diluted EPS of $1.18.",
-                "materiality_candidate": 5,
-                "quote": "Net Income\n$1,549 million\n$1,363 million\n$1,121 million\nNet Income per Diluted Share\n(1)\n$1.18\n$1.04\n$0.85",
-                "metric": "gaap_diluted_eps",
-                "value": "1.18",
-                "unit": "USD",
-                "period": "Q1 FY 2027"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Non-GAAP net income for Q1 FY 2027 was $1.603 billion, with diluted EPS of $1.22.",
-                "materiality_candidate": 5,
-                "quote": "Net Income\n$1,603 million\n$1,386 million\n$1,167 million\nNet Income per Diluted Share\n(1)\n$1.22\n$1.05\n$0.88",
-                "metric": "non_gaap_diluted_eps",
-                "value": "1.22",
-                "unit": "USD",
-                "period": "Q1 FY 2027"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u1",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 total revenues are expected to be in a range of $4.7 billion +/- $200 million.",
-                "materiality_candidate": 5,
-                "quote": "Total revenues are expected to be in a range of $4.7 billion +/- $200 million",
-                "metric": "total_revenues",
-                "period": "Q2 FY 2027",
-                "guidance_type": "range",
-                "low": "4500",
-                "midpoint": "4700",
-                "high": "4900",
-                "unit": "USD_millions"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 GAAP gross margin is expected to be in a range of 61.8% +/- 1.0%.",
-                "materiality_candidate": 4,
-                "quote": "GAAP g\nross margin is expected to be in a range of 61.8% +/- 1.0%",
-                "metric": "gaap_gross_margin",
-                "period": "Q2 FY 2027",
-                "guidance_type": "range",
-                "low": "60.8",
-                "midpoint": "61.8",
-                "high": "62.8",
-                "unit": "percent"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%.",
-                "materiality_candidate": 4,
-                "quote": "Non-GAAP gross margin is expected to be in a range of 62.5% +/- 1.0%",
-                "metric": "non_gaap_gross_margin",
-                "period": "Q2 FY 2027",
-                "guidance_type": "range",
-                "low": "61.5",
-                "midpoint": "62.5",
-                "high": "63.5",
-                "unit": "percent"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11.",
-                "materiality_candidate": 5,
-                "quote": "GAAP diluted EPS is expected to be in a range of $1.41 +/- $0.11",
-                "metric": "gaap_diluted_eps",
-                "period": "Q2 FY 2027",
-                "guidance_type": "range",
-                "low": "1.30",
-                "midpoint": "1.41",
-                "high": "1.52",
-                "unit": "USD"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Q2 FY 2027 Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11.",
-                "materiality_candidate": 5,
-                "quote": "Non-GAAP diluted EPS is expected to be in a range of $1.44 +/- $0.11",
-                "metric": "non_gaap_diluted_eps",
-                "period": "Q2 FY 2027",
-                "guidance_type": "range",
-                "low": "1.33",
-                "midpoint": "1.44",
-                "high": "1.55",
-                "unit": "USD"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_6": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:642ea77e3816f921fd932b09#u3",
-              "official_ir:642ea77e3816f921fd932b09#u4"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand compared to $3,209,696 thousand for the three months ended September 30, 2025.",
-                "materiality_candidate": 5,
-                "quote": "Total revenues\n4,136,015\n3,657,556\n3,209,696",
-                "metric": "Total revenues",
-                "value": "4,136,015",
-                "unit": "thousand USD",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "3,209,696",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Product revenues for the three months ended September 30, 2026 were $3,285,469 thousand.",
-                "materiality_candidate": 4,
-                "quote": "Product\n$      3,285,469\n$      2,837,151\n$      2,465,006",
-                "metric": "Product revenue",
-                "value": "3,285,469",
-                "unit": "thousand USD",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "2,465,006",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Service revenues for the three months ended September 30, 2026 were $850,546 thousand.",
-                "materiality_candidate": 4,
-                "quote": "Service\n850,546\n820,405\n744,690",
-                "metric": "Service revenue",
-                "value": "850,546",
-                "unit": "thousand USD",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "744,690",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income for the three months ended September 30, 2026 was $1,548,588 thousand.",
-                "materiality_candidate": 5,
-                "quote": "Net income\n$      1,548,588\n$      1,363,059\n$      1,121,040",
-                "metric": "Net income",
-                "value": "1,548,588",
-                "unit": "thousand USD",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "1,121,040",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
-                "card_type": "capital",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Net cash provided by operating activities was $1,530,939 thousand for the three months ended September 30, 2026.",
-                "materiality_candidate": 5,
-                "quote": "Net cash provided by operating activities\n1,530,939\n906,430\n1,161,591",
-                "metric_type": "operating_cash_flow",
-                "metric": "Net cash provided by operating activities",
-                "value": "1,530,939",
-                "unit": "thousand USD",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "1,161,591",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u4",
-                "card_type": "capital",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Capital expenditures were $194,756 thousand for the three months ended September 30, 2026.",
-                "materiality_candidate": 4,
-                "quote": "Capital expenditures\n(194,756)\n(89,288)\n(95,894)",
-                "metric_type": "capex",
-                "metric": "Capital expenditures",
-                "value": "194,756",
-                "unit": "thousand USD",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "95,894",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_7": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:642ea77e3816f921fd932b09#u5",
-              "official_ir:642ea77e3816f921fd932b09#u6"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Total revenues for the three months ended September 30, 2026 were $4,136,015 thousand.",
-                "materiality_candidate": 4,
-                "quote": "Total revenues\n$      4,136,015",
-                "metric": "Total revenues",
-                "value": "4136015",
-                "unit": "USD $",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "3209696",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Semiconductor Process Control segment revenues were $3,754,254 thousand for the three months ended September 30, 2026.",
-                "materiality_candidate": 3,
-                "quote": "Semiconductor Process Control\n$      3,754,254\n$      3,256,781\n$      2,899,392",
-                "metric": "Semiconductor Process Control segment revenues",
-                "value": "3754254",
-                "unit": "USD $",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "2899392",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "GAAP net income was $1,548,588 thousand for the three months ended September 30, 2026.",
-                "materiality_candidate": 4,
-                "quote": "GAAP net income\n$   1,548,588\n$   1,363,059\n$   1,121,040",
-                "metric": "GAAP net income",
-                "value": "1548588",
-                "unit": "USD $",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "1121040",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Non-GAAP net income was $1,603,004 thousand for the three months ended September 30, 2026.",
-                "materiality_candidate": 4,
-                "quote": "Non-GAAP net income\n$   1,603,004\n$   1,385,749\n$   1,166,805",
-                "metric": "Non-GAAP net income",
-                "value": "1603004",
-                "unit": "USD $",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "1166805",
-                "comparison_period": "Three Months Ended September 30, 2025"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Free cash flow was $1,336,183 thousand for the three months ended September 30, 2026.",
-                "materiality_candidate": 4,
-                "quote": "Free cash flow\n$   1,336,183\n$     817,142\n$   1,065,697",
-                "metric_type": "standard_fcf",
-                "metric": "Free cash flow",
-                "value": "1336183",
-                "unit": "USD $",
-                "period": "Three Months Ended September 30, 2026",
-                "comparison_value": "1065697",
-                "comparison_period": "Three Months Ended September 30, 2025",
-                "reconciliation": [
-                  {
-                    "item": "Net cash provided by operating activities",
-                    "value": "1530939",
-                    "unit": "USD $",
-                    "evidence": {
-                      "quote": "Net cash provided by operating activities\n$   1,530,939"
-                    }
-                  },
-                  {
-                    "item": "Capital expenditures",
-                    "value": "-194756",
-                    "unit": "USD $",
-                    "evidence": {
-                      "quote": "Capital expenditures\n(194,756)"
-                    }
-                  }
-                ]
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u5",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Second Quarter Fiscal 2027 GAAP net income per diluted share guidance is a range of $1.30 to $1.52.",
-                "materiality_candidate": 5,
-                "quote": "GAAP net income per diluted share\n$1.30\n$1.52",
-                "metric": "GAAP net income per diluted share",
-                "period": "Three Months Ending December 31, 2026",
-                "guidance_type": "range",
-                "low": "1.30",
-                "high": "1.52",
-                "unit": "USD $"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Second Quarter Fiscal 2027 Non-GAAP net income per diluted share guidance is a range of $1.33 to $1.55.",
-                "materiality_candidate": 5,
-                "quote": "Non-GAAP net income per diluted share\n$1.33\n$1.55",
-                "metric": "Non-GAAP net income per diluted share",
-                "period": "Three Months Ending December 31, 2026",
-                "guidance_type": "range",
-                "low": "1.33",
-                "high": "1.55",
-                "unit": "USD $"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Second Quarter Fiscal 2027 GAAP gross margin guidance is a range of 60.8% to 62.8%.",
-                "materiality_candidate": 4,
-                "quote": "GAAP gross margin\n60.8 %\n62.8 %",
-                "metric": "GAAP gross margin",
-                "period": "Three Months Ending December 31, 2026",
-                "guidance_type": "range",
-                "low": "60.8",
-                "high": "62.8",
-                "unit": "%"
-              },
-              {
-                "unit_id": "official_ir:642ea77e3816f921fd932b09#u6",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Second Quarter Fiscal 2027 Non-GAAP gross margin guidance is a range of 61.5% to 63.5%.",
-                "materiality_candidate": 4,
-                "quote": "Non-GAAP gross margin\n61.5 %\n63.5 %",
-                "metric": "Non-GAAP gross margin",
-                "period": "Three Months Ending December 31, 2026",
-                "guidance_type": "range",
-                "low": "61.5",
-                "high": "63.5",
-                "unit": "%"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_8": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:642ea77e3816f921fd932b09#u7",
-              "official_ir:acb56e8b319f3dec71cdf264#u1"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_9": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:acb56e8b319f3dec71cdf264#u2",
-              "official_ir:acb56e8b319f3dec71cdf264#u3"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_10": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:acb56e8b319f3dec71cdf264#u4",
-              "official_ir:acb56e8b319f3dec71cdf264#u5"
-            ],
-            "cards": []
-          }
-        }
-      },
+      "evidence_fingerprint": "4512f8b6d6dd3853e393e9763d697e049b29c1ed7d0733cbe1b9c4d81528cd18",
+      "stages": {},
       "evidence_repair_policy": 3,
       "revision_contract_version": 2,
       "audit_gate_version": 3
@@ -31793,7 +31276,56 @@
     "INTC_2026-09-26_Q3": {
       "pipeline_version": 6,
       "evidence_fingerprint": "d1b5e69fd3debb41ffefce86a62219e3fbe6ccb60e8c354074e0af7ed0a90898",
-      "stages": {},
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Intel Form 10-Q filing for Q3 2026 period ended September 26, 2026.",
+                "materiality_candidate": 3,
+                "quote": "intc-20260926\n0000050863\n12-26\n2026\nQ3",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2",
+                "card_type": "fact",
+                "topic": "product_competition",
+                "fact_class": "objective_fact",
+                "statement": "Operating segments include Client Computing and Physical AI Group, Datacenter and AI, and Intel Foundry.",
+                "materiality_candidate": 3,
+                "quote": "intc:ClientComputingAndPhysicalAIGroupMember\nus-gaap:OperatingSegmentsMember\n2026-06-28\n2026-09-26",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u3",
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u4"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u5",
+              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u6"
+            ],
+            "cards": []
+          }
+        }
+      },
       "evidence_repair_policy": 3,
       "revision_contract_version": 2,
       "audit_gate_version": 3
@@ -55305,7 +54837,157 @@
             "qa": [],
             "market_consensus": [],
             "quote_validation_issues": [],
-            "extraction_batch_count": 4
+            "extraction_batch_count": 4,
+            "collection_status": {
+              "ir_retrieval_provider": "direct_ir",
+              "ir_retrieval_attempts": [
+                {
+                  "provider": "gemini_search",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
+                  "category": "search_quota_blocked"
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                },
+                {
+                  "provider": "direct_ir",
+                  "ok": true,
+                  "seconds": 0.511,
+                  "documents": 0,
+                  "partial": false
+                },
+                {
+                  "provider": "public_transcript",
+                  "ok": false,
+                  "seconds": 0.0,
+                  "documents": 0,
+                  "reason": "period_unavailable",
+                  "provenance": null
+                }
+              ],
+              "ir_retrieval_last_at": "2026-11-11T01:27:16-05:00",
+              "gemini_ir_research_notes": [],
+              "gemini_ir_grounding": {},
+              "gemini_ir_rejected_unofficial_urls": [],
+              "source_manifest": {
+                "document_count": 1,
+                "kinds": {
+                  "financial_results": 1
+                },
+                "sources": {
+                  "sec_edgar": 1
+                },
+                "has_primary_results": true,
+                "has_official_ir": false,
+                "has_transcript_or_qa": false,
+                "has_transcript_enrichment": false,
+                "has_financial_tables": false,
+                "has_performance_review": false,
+                "has_presentation": false
+              },
+              "last_collection_check_at": "2026-11-11T01:27:16-05:00",
+              "official_ir_checked_at": "2026-11-11T01:27:16-05:00",
+              "official_ir_check_count": 5,
+              "transcript_status": "NOT_FOUND_AFTER_RETRY",
+              "next_ir_retry_at": "2026-11-11T03:27:16-05:00"
+            },
+            "deterministic_validation_issues": []
+          }
+        },
+        "analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "營收持續高速增長與積壓訂單龐大，但自由現金流受限於極高資本支出",
+                "why_it_matters": "顯示市場對 AI 算力需求極強，但資本密集度居高不下，擴展階段的現金流與獲利結構承受重壓",
+                "fact_basis": [
+                  "Q3 2026 營收達 $3,661M，顯著高於 Q3 2025 的 $1,365M",
+                  "截至 2026 年 9 月 30 日，積壓訂單（Revenue backlog）達 $132.5B",
+                  "Q3 2026 資本支出（Purchases of property and equipment）達 $9,441M，營運現金流為 $1,975M"
+                ],
+                "inference": "業務規模雖然呈倍數擴張，但在維持高額算力基礎設施投資下，短期無法產生正向自由現金流，需持續仰賴外部融資或債務槓桿。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 營收 $3,661M（Q3 2025 為 $1,365M），9M 2026 營收達 $8,314M（9M 2025 為 $3,559M）。",
+                "截至 2026 年 9 月 30 日，積壓訂單（Revenue backlog）約為 $132.5B，提供中長期營收可見度。"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 Adjusted EBITDA 為 $2,256M（Margin 62%），高於 Q3 2025 的 $838M（Margin 61%）。",
+                "Q3 2026 營業利益為 $207M（Margin 6%），高於 Q3 2025 的 $52M（Margin 4%）。",
+                "Q3 2026 淨虧損（Net loss）擴大至 $709M（Q3 2025 淨虧損為 $110M），反映營業外支出或折舊負擔等成本壓力。"
+              ],
+              "cash_capital_intensity": [
+                "Q3 2026 營營活動現金流量為 $1,975M。",
+                "Q3 2026 資本支出（Purchases of property and equipment）高達 $9,441M，資本密集度極高。"
+              ]
+            },
+            "guidance_assessment": [
+              "FY 2026 全年營收指引上調至 $13.0B 至 $13.3B。",
+              "FY 2026 全年 Adjusted Operating Income 指引上調至 $1.275B 至 $1.375B（中點較前次指引增加 26%）。",
+              "FY 2026 全年 Capex 指引由原先的 $35B 至 $39B，將下限調升至 $37B 至 $39B。",
+              "2026 年底出場年化年化運行營收（Annualized run-rate revenue）指引上調至 $20B 至 $21B。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "積壓訂單達到 $132.5B，顯示合約覆蓋率極高，但 Packet 未提供客戶數量、客戶集中度或 NRR/RPO 細節，無法判定客戶拓展的廣度與深度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "目前數據僅顯示營收與積壓訂單高成長，尚無直接證據證明其具備定價權、轉置成本（switching cost）或獨佔競爭壁壘。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "淨虧損持續擴大（Q3 2026 淨虧損 $709M vs Q3 2025 $110M），若折舊與利息費用持續侵蝕利潤，營運槓桿效果可能不如預期。",
+              "Capex 規模（全年高達 $37B–$39B）遠超過營運現金流，融資成本升高的環境下流動性風險與資本結構承受考驗。",
+              "反證指標：若未來數季積壓訂單消耗速度慢於 Capex 交付速度，或 Adjusted EBITDA Margin 出現顯著下滑。"
+            ],
+            "watch_items": [
+              "FY 2026 全年營收與 Capex 執行狀況是否落於指引區間上緣（$13.3B 及 $39B）。",
+              "2026 年底離場年化運行營收（Run-rate revenue）能否順利達到 $20B–$21B 目標。",
+              "淨虧損是否因規模擴大而逐步收斂或進一步惡化。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "CRWV CRWV_2026-11-10\n\n💡 投資結論與邏輯:\n• 算力需求強勁推動營收與積壓訂單擴張，但高額資本支出導致現金流高度吃緊。\n• 營業利益與 Adjusted EBITDA 持續成長，但淨虧損擴大顯示非營運成本與折舊壓力正侵蝕獲利品質。\n\n📊 關鍵數據與財測:\n• Q3 營收 $3,661M（前期 $1,365M），9M 營收 $8,314M（前期 $3,559M），顯示交付規模持續擴大；但客戶集中度與廣度無法由現有數據判定。\n• Q3 積壓訂單達 $132.5B，顯示中長期需求可見度極高，但仍需觀察後續建置與轉化效率。\n• Q3 Adjusted EBITDA 為 $2,256M（Margin 62%），營業利益 $207M（Margin 6%），但淨虧損達 $709M（前期淨虧損 $110M），反映營運利潤仍被非營運成本侵蝕。\n• Q3 營運現金流 $1,975M，相較於資本支出 $9,441M，資本密集度維持在高位，現金流持續承壓。\n• 全年營收指引上調至 $13.0B–$13.3B； Adjusted Operating Income 指引上調至 $1.275B–$1.375B（中點較前次指引增加 26%）。\n• 全年 Capex 指引下限上調，範圍調整為 $37B–$39B（前次為 $35B–$39B）；2026 年底離場年化運行營收指引上調至 $20B–$21B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營收與年化運行營收指引同步上調，顯示基礎設施上線進度如期推進，但資本投入下限提升反映建置成本無法降低。\n• 本期未提供法說會逐字稿與 Q&A 紀錄，無法進行管理層答詢真實度與攻防評估。\n\n⚠️ 風險、反證與待驗證:\n• 淨虧損由 $110M 擴大至 $709M，若資本支出無法轉化為具備足夠營業利潤率的營收，獲利能力將持續受到懷疑。\n• 全年 Capex 預計達 $37B–$39B，遠高於當前營運現金流產生能力，仰賴外部融資可能帶來資本結構風險。\n• 若未來幾季離場年化運行營收未能如期邁向 $20B–$21B，將驗證算力產能轉化效率未達預期。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 85,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:density"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "CRWV Q3 2026\n\n💡 投資結論與邏輯:\n• 算力需求強勁帶動營收與積壓訂單倍速增長，但極高資本支出導致自由現金流吃緊。\n• Adjusted EBITDA 與營業利益持續成長，但淨虧損擴大反映非營運成本與折舊壓力正侵蝕獲利品質。\n\n📊 關鍵數據與財測:\n• 需求與規模：Q3 營收 $3,661M（前期 $1,365M），9M 營收 $8,314M（前期 $3,559M），顯示交付持續擴大；但客戶集中度與廣度無法由現有數據判定。\n• 訂單可見度：Q3 積壓訂單達 $132.5B，顯示中長期需求能見度極高，但仍需觀察後續建置與轉化效率。\n• 獲利結構：Q3 Adjusted EBITDA 為 $2,256M（Margin 62%），營業利益 $207M（Margin 6%），但淨虧損達 $709M（前期淨虧損 $110M），反映營運利潤仍被非營運成本侵蝕。\n• 現金流與資本密集度：Q3 營運現金流 $1,975M，相較於資本支出 $9,441M，資本密集度維持在高位，現金流持續承壓。\n• 財測調整：全年營收指引上調至 $13.0B–$13.3B；Adjusted Operating Income 指引上調至 $1.275B–$1.375B（中點較前次指引增加 26%）；Capex 指引範圍調整為 $37B–$39B（前次為 $35B–$39B）；2026 年底離場年化運行營收指引上調至 $20B–$21B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營收與年化運行營收指引同步上調，顯示基礎設施上線進度如期推進，但資本投入下限提升反映建置成本無法降低。\n• 本期未提供法說會逐字稿與 Q&A 紀錄，無法進行管理層答詢真實度與攻防評估。\n\n⚠️ 風險、反證與待驗證:\n• 淨虧損由 $110M 擴大至 $709M，若資本支出無法轉化為具備足夠營業利潤率的營收，獲利能力將持續受到懷疑。\n• 全年 Capex 預計達 $37B–$39B，遠高於當前營運現金流產生能力，仰賴外部融資可能帶來資本結構風險。\n• 若未來幾季離場年化運行營收未能如期邁向 $20B–$21B，將驗證算力產能轉化效率未達預期。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:現金流與資本密集度：Q3 營運現金流 $1,975M，相較於資本支出 $9,441M，資本密集度維持在高位，現金流持續承壓。",
+              "kpi_without_readthrough:財測調整：全年營收指引上調至 $13.0B–$13.3B；Adjusted Operating Income 指引上調至 $1.275B–$1.375B（中點較前次指引增加 26%"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [
+              "hard_data_too_many_clusters:6"
+            ],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
           }
         }
       },
