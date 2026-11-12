@@ -2298,7 +2298,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2663,7 +2663,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -2961,7 +2961,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3272,7 +3272,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3506,7 +3506,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3657,7 +3657,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4106,7 +4106,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4263,7 +4263,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4337,7 +4337,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4413,7 +4413,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4563,7 +4563,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4714,7 +4714,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4788,7 +4788,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4952,7 +4952,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5412,7 +5412,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5490,7 +5490,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5563,7 +5563,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5635,7 +5635,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5711,7 +5711,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6006,7 +6006,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6084,7 +6084,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6165,7 +6165,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6241,7 +6241,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6390,7 +6390,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6466,7 +6466,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6540,7 +6540,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6616,7 +6616,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:41:25-05:00",
+      "updated_at": "2026-11-12T14:00:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6693,7 +6693,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T12:36:20-05:00",
+      "updated_at": "2026-11-12T13:55:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6707,25 +6707,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.07,
+            "seconds": 0.319,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWV-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 1.019,
+            "seconds": 0.785,
             "documents": 1,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.024,
+            "seconds": 0.13,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWV-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-12T12:36:20-05:00",
+        "ir_retrieval_last_at": "2026-11-12T13:55:51-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6747,11 +6747,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-12T12:36:20-05:00",
-        "official_ir_checked_at": "2026-11-12T12:36:20-05:00",
-        "official_ir_check_count": 2,
+        "last_collection_check_at": "2026-11-12T13:55:51-05:00",
+        "official_ir_checked_at": "2026-11-12T13:55:51-05:00",
+        "official_ir_check_count": 3,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-11-12T13:06:20-05:00"
+        "next_ir_retry_at": "2026-11-12T14:25:51-05:00"
       },
       "delivery": {}
     }
@@ -6766,7 +6766,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-12T12:36:20-05:00",
+      "last_success_at": "2026-11-12T13:55:51-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -31387,7 +31387,7 @@
     },
     "INTC_2026-09-26_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "d1b5e69fd3debb41ffefce86a62219e3fbe6ccb60e8c354074e0af7ed0a90898",
+      "evidence_fingerprint": "f69caa42e132a40e136fefa25685f16077ca917311d1af576eff9e87b347e82a",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -31395,26 +31395,7 @@
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2"
             ],
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
-                "card_type": "fact",
-                "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Intel Form 10-Q filing metadata for Q3 ending September 26, 2026.",
-                "materiality_candidate": 1,
-                "quote": "intc-20260926"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2",
-                "card_type": "fact",
-                "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Intel operating segments and reporting units metadata from Form 10-Q.",
-                "materiality_candidate": 1,
-                "quote": "intc:IntelFoundryMember"
-              }
-            ]
+            "cards": []
           }
         },
         "v5_extract_batch_2": {
@@ -31429,7 +31410,7 @@
                 "card_type": "other",
                 "topic": "other",
                 "fact_class": "unknown",
-                "statement": "XBRL taxonomy and segment member definitions including DatacenterAndAIMember, MobileyeMember, IMSNanofabricationGmbHIMSMember, and SCIP arrangements.",
+                "statement": "XBRL taxonomy and segment member tags for Intel Form 10-Q.",
                 "materiality_candidate": 1,
                 "quote": "ndPhysicalAIGroupMember"
               },
@@ -31438,9 +31419,9 @@
                 "card_type": "other",
                 "topic": "other",
                 "fact_class": "unknown",
-                "statement": "XBRL taxonomy tags and dimensional references for restructuring plans, senior notes, credit facilities, and equity method investments.",
+                "statement": "XBRL taxonomy and notes context tags for Intel Form 10-Q.",
                 "materiality_candidate": 1,
-                "quote": "intc:DepartmentOfCommerceMember"
+                "quote": ":NondesignatedMember"
               }
             ]
           }
@@ -31467,7 +31448,7 @@
                 "fact_class": "objective_fact",
                 "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD for context c-3.",
                 "materiality_candidate": 3,
-                "quote": "us-gaap:RevenueFromRevenueFromContractWithCustomerExcludingAssessedTax",
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 16,513",
                 "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": "16,513",
                 "unit": "usd",
@@ -31486,7 +31467,7 @@
                 "fact_class": "objective_fact",
                 "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD for context c-3.",
                 "materiality_candidate": 3,
-                "quote": "Revenue from contract with customer excluding assessed tax was 16,513 million USD for context c-3.",
+                "quote": "intc-20260926",
                 "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": "16,513",
                 "unit": "usd",
@@ -31498,7 +31479,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "0000050863\n2025-06-29\n2025-09-27"
+                  "quote": "intc-20260926"
                 }
               }
             ],
@@ -31520,115 +31501,83 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Intel third-quarter 2026 revenue was $16.5 billion, up 21% year-over-year.",
+                "statement": "Third-quarter revenue was $16.5 billion, up 21% year-over-year.",
                 "materiality_candidate": 5,
                 "quote": "Third-quarter revenue was $16.5 billion, up 21% year-over-year (YoY).",
-                "metric": "Revenue",
+                "metric": "revenue",
                 "value": 16.5,
-                "unit": "$B",
+                "unit": "billion_usd",
                 "period": "Q3 2026",
-                "comparison_value": 13.7,
                 "comparison_period": "Q3 2025",
                 "reported_change": "up 21%"
               },
               {
                 "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
                 "card_type": "fact",
-                "topic": "demand_revenue",
+                "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Q3 2026 Data Center and AI (DCAI) revenue increased 78% YoY to $7.3 billion.",
+                "statement": "Third-quarter EPS was $0.60 and non-GAAP EPS was $0.52.",
                 "materiality_candidate": 5,
-                "quote": "Data Center and AI (DCAI)\n7.3\nup 78%",
-                "metric": "Data Center and AI Revenue",
-                "value": 7.3,
-                "unit": "$B",
-                "period": "Q3 2026",
-                "reported_change": "up 78%"
+                "quote": "Third-quarter earnings per share (EPS) attributable to Intel was $0.60; non-GAAP EPS attributable to Intel was $0.52.",
+                "metric": "diluted_eps",
+                "value": 0.6,
+                "unit": "usd",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion.",
+                "materiality_candidate": 5,
+                "quote": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion",
+                "metric": "revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": 15.0,
+                "high": 16.0,
+                "unit": "billion_usd"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting fourth-quarter GAAP EPS of $0.10 and non-GAAP EPS of $0.25.",
+                "materiality_candidate": 5,
+                "quote": "forecasting fourth-quarter EPS attributable to Intel of $0.10 and non-GAAP EPS attributable to Intel of $0.25.",
+                "metric": "diluted_eps",
+                "period": "Q4 2026",
+                "guidance_type": "point",
+                "value": 0.1,
+                "unit": "usd"
               },
               {
                 "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
                 "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Q3 2026 Non-GAAP EPS attributable to Intel was $0.52, up 126% YoY, and GAAP EPS was $0.60.",
-                "materiality_candidate": 4,
-                "quote": "Third-quarter earnings per share (EPS) attributable to Intel was $0.60; non-GAAP EPS attributable to Intel was $0.52.",
-                "metric": "Non-GAAP EPS",
-                "value": 0.52,
-                "unit": "USD",
-                "period": "Q3 2026",
-                "comparison_value": 0.23,
-                "comparison_period": "Q3 2025",
-                "reported_change": "up 126%"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
-                "card_type": "capital",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Intel generated $5.1 billion in cash from operations in the third quarter of 2026.",
+                "statement": "In the third quarter, the company generated $5.1 billion in cash from operations.",
                 "materiality_candidate": 4,
                 "quote": "In the third quarter, the company generated $5.1 billion in cash from operations.",
-                "metric": "Operating Cash Flow",
+                "metric": "operating_cash_flow",
                 "value": 5.1,
-                "unit": "$B",
+                "unit": "billion_usd",
                 "period": "Q3 2026",
                 "metric_type": "operating_cash_flow"
               },
               {
                 "unit_id": "official_ir:c16de595c99f19268b30020a#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Intel forecasts Q4 2026 revenue of $15.0 billion to $16.0 billion.",
-                "materiality_candidate": 5,
-                "quote": "Revenue ($B)\n$15.0 - $16.0",
-                "metric": "Revenue",
-                "period": "Q4 2026",
-                "guidance_type": "range",
-                "low": 15.0,
-                "high": 16.0,
-                "unit": "$B"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Intel guides Q4 2026 non-GAAP gross margin of 38.0% and GAAP gross margin of 37.1%.",
-                "materiality_candidate": 4,
-                "quote": "Gross margin\n37.1%\n38.0%",
-                "metric": "Non-GAAP Gross Margin",
-                "period": "Q4 2026",
-                "guidance_type": "point",
-                "value": 38.0,
-                "unit": "%"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Intel forecasts Q4 2026 non-GAAP EPS attributable to Intel of $0.25 and GAAP EPS of $0.10.",
-                "materiality_candidate": 5,
-                "quote": "Earnings (Loss) Per Share Attributable to Intel—Diluted\n$0.10\n$0.25",
-                "metric": "Non-GAAP EPS",
-                "period": "Q4 2026",
-                "guidance_type": "point",
-                "value": 0.25,
-                "unit": "USD"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u2",
                 "card_type": "capital",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Intel completed a $23 billion public equity offering to support future growth opportunities.",
+                "statement": "Completed a $23 billion public equity offering to support future growth opportunities.",
                 "materiality_candidate": 4,
                 "quote": "Completed a $23 billion public equity offering to support future growth opportunities while maintaining a strong balance sheet and investment-grade rating.",
-                "metric": "Public Equity Offering",
+                "metric": "public_equity_offering",
                 "value": 23.0,
-                "unit": "$B",
+                "unit": "billion_usd",
                 "period": "Q3 2026"
               }
             ]
@@ -31655,14 +31604,30 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Net revenue for the three months ended Sep 26, 2026 was $16,513 million compared to $13,653 million for the three months ended Sep 27, 2025.",
+                "statement": "Net revenue for the three months ended September 26, 2026 was $16,513 million compared to $13,653 million for the three months ended September 27, 2025.",
                 "materiality_candidate": 5,
                 "quote": "Net revenue\n$\n16,513\n$\n13,653",
                 "metric": "Net revenue",
-                "value": 16513,
-                "unit": "USD_M",
+                "value": "16,513",
+                "unit": "$M",
                 "period": "Q3 2026",
-                "comparison_value": 13653,
+                "comparison_value": "13,653",
+                "comparison_period": "Q3 2025",
+                "reported_change": "20.9%"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross profit for the three months ended September 26, 2026 was $7,096 million compared to $5,218 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Gross profit\n7,096\n5,218",
+                "metric": "Gross profit",
+                "value": "7,096",
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": "5,218",
                 "comparison_period": "Q3 2025"
               },
               {
@@ -31670,14 +31635,29 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross profit for the three months ended Sep 26, 2026 was $7,096 million compared to $5,218 million for the three months ended Sep 27, 2025.",
+                "statement": "Operating income for the three months ended September 26, 2026 was $2,522 million compared to $683 million for the three months ended September 27, 2025.",
                 "materiality_candidate": 4,
-                "quote": "Gross profit\n7,096\n5,218",
-                "metric": "Gross profit",
-                "value": 7096,
-                "unit": "USD_M",
+                "quote": "Operating income (loss)\n2,522\n683",
+                "metric": "Operating income",
+                "value": "2,522",
+                "unit": "$M",
                 "period": "Q3 2026",
-                "comparison_value": 5218,
+                "comparison_value": "683",
+                "comparison_period": "Q3 2025"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income attributable to Intel for the three months ended September 26, 2026 was $3,320 million compared to $4,063 million for the three months ended September 27, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Net income (loss) attributable to Intel\n$\n3,320\n$\n4,063",
+                "metric": "Net income attributable to Intel",
+                "value": "3,320",
+                "unit": "$M",
+                "period": "Q3 2026",
+                "comparison_value": "4,063",
                 "comparison_period": "Q3 2025"
               },
               {
@@ -31685,16 +31665,15 @@
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Net cash provided by operating activities for the nine months ended Sep 26, 2026 was $13,184 million compared to $5,409 million for the nine months ended Sep 27, 2025.",
+                "statement": "Net cash provided by operating activities for the nine months ended September 26, 2026 was $13,184 million compared to $5,409 million for the nine months ended September 27, 2025.",
                 "materiality_candidate": 5,
                 "quote": "Net cash provided by (used for) operating activities\n13,184\n5,409",
-                "metric": "Net cash provided by operating activities",
-                "value": 13184,
-                "unit": "USD_M",
+                "metric": "Net cash provided by (used for) operating activities",
+                "value": "13,184",
+                "unit": "$M",
                 "period": "9M 2026",
-                "comparison_value": 5409,
-                "comparison_period": "9M 2025",
-                "metric_type": "operating_cash_flow"
+                "comparison_value": "5,409",
+                "comparison_period": "9M 2025"
               }
             ]
           }
@@ -31728,548 +31707,172 @@
           }
         },
         "v5_extract_batch_9": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:c16de595c99f19268b30020a#u9",
-              "official_ir:c16de595c99f19268b30020a#u10"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u9",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "GAAP gross profit was $7,096 million for the three months ended Sep 26, 2026, compared to $5,218 million for the three months ended Sep 27, 2025.",
-                "materiality_candidate": 4,
-                "quote": "GAAP gross profit\n$\n7,096\n$\n5,218",
-                "metric": "GAAP gross profit",
-                "value": "7096",
-                "unit": "USD_$M",
-                "period": "Q3 2026",
-                "comparison_value": "5218",
-                "comparison_period": "Q3 2025"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u9",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Non-GAAP gross profit was $7,284 million for Q3 2026 compared to $5,456 million for Q3 2025.",
-                "materiality_candidate": 4,
-                "quote": "Non-GAAP gross profit\n$\n7,284\n$\n5,456",
-                "metric": "Non-GAAP gross profit",
-                "value": "7284",
-                "unit": "USD_$M",
-                "period": "Q3 2026",
-                "comparison_value": "5456",
-                "comparison_period": "Q3 2025"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u9",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Adjusted free cash flow was $1,639 million for Q3 2026 compared to $896 million for Q3 2025.",
-                "materiality_candidate": 5,
-                "quote": "Adjusted free cash flow\n$\n1,639\n$\n896",
-                "metric_type": "adjusted_fcf",
-                "metric": "Adjusted free cash flow",
-                "value": "1639",
-                "unit": "USD_$M",
-                "period": "Q3 2026",
-                "comparison_value": "896",
-                "comparison_period": "Q3 2025",
-                "reconciliation": [
-                  {
-                    "item": "GAAP net cash provided by (used for) operating activities",
-                    "value": "5082",
-                    "unit": "USD_$M",
-                    "evidence": {
-                      "quote": "GAAP net cash provided by (used for) operating activities\n$\n5,082\n$\n2,546"
-                    }
-                  },
-                  {
-                    "item": "Additions to property, plant, and equipment (gross capital expenditures)",
-                    "value": "-4219",
-                    "unit": "USD_$M",
-                    "evidence": {
-                      "quote": "Additions to property, plant, and equipment (gross capital expenditures)\n(4,219\n)\n(2,956\n)"
-                    }
-                  },
-                  {
-                    "item": "Proceeds from capital-related government incentives",
-                    "value": "48",
-                    "unit": "USD_$M",
-                    "evidence": {
-                      "quote": "Proceeds from capital-related government incentives\n48\n54"
-                    }
-                  },
-                  {
-                    "item": "Partner contributions, net",
-                    "value": "847",
-                    "unit": "USD_$M",
-                    "evidence": {
-                      "quote": "Partner contributions, net\n847\n1,346"
-                    }
-                  },
-                  {
-                    "item": "Payments on finance leases",
-                    "value": "-119",
-                    "unit": "USD_$M",
-                    "evidence": {
-                      "quote": "Payments on finance leases\n(119\n)\n(94\n)"
-                    }
-                  }
-                ]
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u10",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Q4 2026 outlook includes approximately 37.1% GAAP gross margin percentage.",
-                "materiality_candidate": 4,
-                "quote": "GAAP gross margin percentage\n37.1\n%",
-                "metric": "GAAP gross margin percentage",
-                "period": "Q4 2026",
-                "guidance_type": "point",
-                "value": "37.1",
-                "unit": "percent"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u10",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Q4 2026 outlook includes approximately 38.0% Non-GAAP gross margin percentage.",
-                "materiality_candidate": 4,
-                "quote": "Non-GAAP gross margin percentage\n38.0\n%",
-                "metric": "Non-GAAP gross margin percentage",
-                "period": "Q4 2026",
-                "guidance_type": "point",
-                "value": "38.0",
-                "unit": "percent"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_10": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:e6dc875b4aad3053774eb619#u1",
-              "official_ir:e6dc875b4aad3053774eb619#u2"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_11": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:e6dc875b4aad3053774eb619#u3",
-              "official_ir:e6dc875b4aad3053774eb619#u4"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#u3",
-                "card_type": "other",
-                "topic": "other",
-                "fact_class": "unknown",
-                "statement": "Filing metadata and XBRL context tags for segments and entities.",
-                "materiality_candidate": 1,
-                "quote": "ndPhysicalAIGroupMember"
-              },
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#u4",
-                "card_type": "other",
-                "topic": "other",
-                "fact_class": "unknown",
-                "statement": "Continuation of XBRL context tags and filing identifiers.",
-                "materiality_candidate": 1,
-                "quote": "intc:DepartmentOfCommerceMember"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_12": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:e6dc875b4aad3053774eb619#u5",
-              "official_ir:e6dc875b4aad3053774eb619#u6"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_13": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:e6dc875b4aad3053774eb619#structured"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax is 16,513 million USD for context c-3.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
-                "metric": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
-                "value": "16,513",
-                "unit": "usd"
-              }
-            ]
-          }
-        },
-        "v5_evidence_repair_v3_13": {
-          "payload": {
-            "cards": [
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax is 16,513 million USD for context c-3.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
-                "metric": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
-                "value": "16513",
-                "unit": "usd",
-                "card_id": "c1:official_ir:e6dc875b4aad3053774eb619#structured",
-                "document_key": "official_ir:e6dc875b4aad3053774eb619",
-                "source": "official_ir",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "official_ir:e6dc875b4aad3053774eb619",
-                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
-                }
-              }
-            ],
-            "processed_unit_ids": [
-              "official_ir:e6dc875b4aad3053774eb619#structured"
-            ],
-            "replace_only_invalid_cards": true
-          }
-        },
-        "v5_extract_batch_14": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:711dc1ead9e37fb24f6e9240#u1",
-              "official_ir:711dc1ead9e37fb24f6e9240#u2"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u1",
-                "card_type": "fact",
-                "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Intel had 5,315 million shares of common stock outstanding as of October 23, 2026.",
-                "materiality_candidate": 3,
-                "quote": "As of October 23, 2026, the registrant had outstanding 5,315 million shares of common stock.",
-                "metric": "common stock outstanding",
-                "value": 5315,
-                "unit": "million shares",
-                "period": "as of October 23, 2026"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_15": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:711dc1ead9e37fb24f6e9240#u3",
-              "official_ir:711dc1ead9e37fb24f6e9240#u4"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u3",
-                "card_type": "risk",
-                "topic": "risk",
-                "fact_class": "objective_fact",
-                "statement": "Intel highlights risks surrounding international trade policies, tariffs, export controls, external foundry design wins, and U.S. government equity acquisitions.",
-                "materiality_candidate": 3,
-                "quote": "recently elevated geopolitical tensions, volatility and uncertainty with respect to international trade policies, including tariffs and export controls, impacting our business, themarkets in which we compete and the world economy"
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u4",
-                "card_type": "risk",
-                "topic": "risk",
-                "fact_class": "objective_fact",
-                "statement": "In September 2026, the court entered final judgment in favor of Intel in the 'Downfall' consumer class action, which plaintiffs have appealed to the Ninth Circuit.",
-                "materiality_candidate": 3,
-                "quote": "In September 2026, the court entered final judgment in our favor based on plaintiffs' failureto plead a viable claim. Plaintiffs have appealed the judgment to the Ninth Circuit."
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u4",
-                "card_type": "risk",
-                "topic": "risk",
-                "fact_class": "objective_fact",
-                "statement": "In July 2025, the district court dismissed the second amended complaint in the internal foundry model securities class action in defendants' favor, which plaintiffs have appealed.",
-                "materiality_candidate": 3,
-                "quote": "in July 2025 dismissed plaintiffs' second amended complaint and entered judgment in defendants' favor, again finding that plaintiffs failed to plead any false ormisleading statements. Plaintiffs have appealed."
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_16": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:711dc1ead9e37fb24f6e9240#u5",
-              "official_ir:711dc1ead9e37fb24f6e9240#u6"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u6",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Intel issued approximately 242 million shares of common stock through a public offering on August 12, 2026, with net proceeds of $22.6 billion intended for general corporate purposes.",
-                "materiality_candidate": 4,
-                "quote": "On August 12, 2026, we issued approximately 242 million shares of our common stock through a public offering. We intend to use the net proceeds of $22.6 billion for general corporate purposes, including capital expenditures and working capital.",
-                "metric": "net proceeds",
-                "value": "22.6",
-                "unit": "USD_B",
-                "period": "Q3 2026",
-                "metric_type": "other"
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u6",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Data center product demand remained strong in Q3 2026 amid AI infrastructure investments and is expected to continue into Q4 2026 and beyond.",
-                "materiality_candidate": 4,
-                "quote": "In Q3 2026 and YTD 2026, demand for our data center products remained strong amid continued investments in AI infrastructure. We expect strong demand to continue into Q4 2026 and beyond."
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u6",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Client market demand declined in Q3 2026 compared to the first half of 2026 due to higher component prices, constrained IT budgets, and tighter inventory management, with these trends expected to worsen in Q4 2026 and persist in 2027.",
-                "materiality_candidate": 4,
-                "quote": "In the client market, demand for our products declined in Q3 2026 as compared to the first half of 2026 due to industry-wide impacts from higher component prices, particularly memory, constrained IT budgets and tighter inventory management. We expect these trends to worsen in Q4 2026 and persist in 2027."
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_17": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:711dc1ead9e37fb24f6e9240#u7",
-              "official_ir:711dc1ead9e37fb24f6e9240#u8"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u7",
-                "card_type": "risk",
-                "topic": "supply_capacity",
-                "fact_class": "management_claim",
-                "statement": "Industry-wide shortages of substrates, memory, and critical components are expected to persist into next year, limiting the ability to meet demand.",
-                "materiality_candidate": 4,
-                "quote": "We expect the industry-wide shortages of substrates, memory and other critical components to persist intonext year, which may limit our ability to fully meet demand in some areas"
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u7",
-                "card_type": "management_claim",
-                "topic": "demand_revenue",
-                "fact_class": "management_claim",
-                "statement": "During Q3 2026, client product demand eased compared to H1, while data center product demand continued to exceed available supply.",
-                "materiality_candidate": 4,
-                "quote": "customer demand for certain client products eased as compared to the first half of the year, while demand forcertain data center products continued to exceed available supply."
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u8",
-                "card_type": "risk",
-                "topic": "supply_capacity",
-                "fact_class": "management_claim",
-                "statement": "An mid-October 2026 accident at the Kiryat Gat, Israel facility suspended operations for approximately two weeks, which is expected to adversely impact manufacturing costs, gross profit, and operating results in Q4 2026 and H1 2027.",
-                "materiality_candidate": 5,
-                "quote": "expect the reduced production volumes and operating inefficiencies during the stoppage and restoration period to adversely affect manufacturing costs, gross profit andoperating results in Q4 2026 and through the first half of 2027."
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u8",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Recognized a $1.0 billion gain in Q3 2026 related to the net change in fair value of common stock released from and held in escrow for the U.S. government.",
-                "materiality_candidate": 3,
-                "metric": "Escrowed shares net fair value gain",
-                "value": 1.0,
-                "unit": "USD $B",
-                "period": "Q3 2026",
-                "quote": "we recognized a $1.0 billion gain related to the net change in the fair value of shares of our common stock released from escrow during the quarter"
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u8",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Recognized a YTD 2026 loss of $12.6 billion from the net change in fair value of escrowed shares due to an increase in stock price on a year-to-date basis.",
-                "materiality_candidate": 3,
-                "metric": "Escrowed shares net fair value loss",
-                "value": 12.6,
-                "unit": "USD $B",
-                "period": "YTD 2026",
-                "quote": "In YTD 2026, we recognized a loss of $12.6 billion related to the net change in the fair value of escrowed shares"
-              },
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u8",
-                "card_type": "risk",
-                "topic": "supply_capacity",
-                "fact_class": "management_claim",
-                "statement": "Iranian strikes on two energy fields in Qatar caused a global shortage of helium essential to semiconductor manufacturing.",
-                "materiality_candidate": 4,
-                "quote": "Iranian strikes on two energy fields in Qatar that supply a meaningful percentage of the global supply of helium have resulted in a global shortage of this gas that is essential to the semiconductor manufacturing process."
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_18": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:711dc1ead9e37fb24f6e9240#u9",
-              "official_ir:e16822b2695c6ec335fd5219#u1"
-            ],
-            "cards": [
-              {
-                "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u9",
-                "card_type": "risk",
-                "topic": "risk",
-                "fact_class": "management_claim",
-                "statement": "Intel identified operational threats in the Middle East targeting facilities in retaliation for strikes on Iran.",
-                "materiality_candidate": 4,
-                "quote": "with operations in the Middle East whose facilities they indicated they would target in retaliation for continued strikeson Iran, with Intel being near the top of that list"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_19": {
-          "payload": {
-            "processed_unit_ids": [
-              "official_ir:1b61a4b651a35fe1dc05ed3b#u1",
-              "official_ir:7bf5b516c340bc4db64f7e77#u1"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_20": {
           "payload": [
             {
               "processed_unit_ids": [
-                "official_ir:995d59b508f909faee25fecd#u1",
-                "official_ir:995d59b508f909faee25fecd#u2"
+                "official_ir:c16de595c99f19268b30020a#u9",
+                "official_ir:c16de595c99f19268b30020a#u10"
               ],
               "cards": [
                 {
-                  "unit_id": "official_ir:995d59b508f909faee25fecd#u1",
-                  "card_type": "guidance",
-                  "topic": "guidance",
-                  "fact_class": "company_guidance",
-                  "statement": "Intel forecasts Q4 2026 revenue between $15.0 billion and $16.0 billion.",
-                  "materiality_candidate": 5,
-                  "quote": "forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion",
-                  "metric": "revenue",
-                  "period": "Q4 2026",
-                  "guidance_type": "range",
-                  "low": "15.0",
-                  "high": "16.0",
-                  "unit": "USD $B"
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u9",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "GAAP gross profit for Q3 2026 was $7,096M compared to $5,218M in Q3 2025, with non-GAAP gross profit reaching $7,284M versus $5,456M in the prior year.",
+                  "materiality_candidate": 4,
+                  "quote": "Non-GAAP gross profit\n$\n7,284\n$\n5,456",
+                  "metric": "Non-GAAP gross profit",
+                  "value": 7284,
+                  "unit": "USD $M",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": 5456,
+                  "comparison_period": "Three Months Ended Sep 27, 2025"
                 },
                 {
-                  "unit_id": "official_ir:995d59b508f909faee25fecd#u1",
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u9",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "Non-GAAP gross margin percentage was 44.1% for Q3 2026 compared to 40.0% in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Non-GAAP gross margin percentage\n44.1\n%\n40.0\n%",
+                  "metric": "Non-GAAP gross margin percentage",
+                  "value": 44.1,
+                  "unit": "%",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": 40.0,
+                  "comparison_period": "Three Months Ended Sep 27, 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u9",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "Non-GAAP operating income for Q3 2026 was $3,234M (19.6% non-GAAP operating margin) compared to $1,524M (11.2% non-GAAP operating margin) in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Non-GAAP operating income (loss)\n$\n3,234\n$\n1,524",
+                  "metric": "Non-GAAP operating income",
+                  "value": 3234,
+                  "unit": "USD $M",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": 1524,
+                  "comparison_period": "Three Months Ended Sep 27, 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u9",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Non-GAAP diluted EPS attributable to Intel for Q3 2026 was $0.52 compared to $0.23 in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Non-GAAP earnings (loss) per share attributable to Intel—diluted\n$\n0.52\n$\n0.23",
+                  "metric": "Non-GAAP diluted EPS",
+                  "value": 0.52,
+                  "unit": "USD",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": 0.23,
+                  "comparison_period": "Three Months Ended Sep 27, 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u9",
+                  "card_type": "capital",
+                  "topic": "cash_capex",
+                  "fact_class": "objective_fact",
+                  "statement": "Adjusted free cash flow for Q3 2026 was $1,639M, supported by GAAP net operating cash flow of $5,082M and offset by gross capital expenditures of $(4,219)M.",
+                  "materiality_candidate": 4,
+                  "quote": "Adjusted free cash flow\n$\n1,639\n$\n896",
+                  "metric": "Adjusted free cash flow",
+                  "value": 1639,
+                  "unit": "USD $M",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": 896,
+                  "comparison_period": "Three Months Ended Sep 27, 2025",
+                  "metric_type": "adjusted_fcf",
+                  "reconciliation": [
+                    {
+                      "item": "GAAP net cash provided by (used for) operating activities",
+                      "value": 5082,
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "GAAP net cash provided by (used for) operating activities\n$\n5,082\n$\n2,546"
+                      }
+                    },
+                    {
+                      "item": "Additions to property, plant, and equipment (gross capital expenditures)",
+                      "value": -4219,
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "Additions to property, plant, and equipment (gross capital expenditures)\n(4,219\n)\n(2,956\n)"
+                      }
+                    },
+                    {
+                      "item": "Proceeds from capital-related government incentives",
+                      "value": 48,
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "Proceeds from capital-related government incentives\n48\n54"
+                      }
+                    },
+                    {
+                      "item": "Partner contributions, net",
+                      "value": 847,
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "Partner contributions, net\n847\n1,346"
+                      }
+                    },
+                    {
+                      "item": "Payments on finance leases",
+                      "value": -119,
+                      "unit": "USD $M",
+                      "evidence": {
+                        "quote": "Payments on finance leases\n(119\n)\n(94\n)"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u10",
                   "card_type": "guidance",
                   "topic": "guidance",
                   "fact_class": "company_guidance",
-                  "statement": "Intel forecasts Q4 2026 GAAP diluted EPS of $0.10 and non-GAAP diluted EPS of $0.25.",
+                  "statement": "For Q4 2026, Intel expects GAAP gross margin percentage of approximately 37.1% and non-GAAP gross margin percentage of approximately 38.0% based on the mid-point of the revenue range.",
                   "materiality_candidate": 5,
-                  "quote": "forecasting fourth-quarter EPS attributable to Intel of $0.10 and non-GAAP EPS attributable to Intel of $0.25",
-                  "metric": "EPS attributable to Intel",
+                  "quote": "Non-GAAP gross margin percentage\n38.0\n%",
+                  "metric": "Non-GAAP gross margin percentage",
                   "period": "Q4 2026",
                   "guidance_type": "point",
-                  "value": "0.10",
+                  "value": 38.0,
+                  "unit": "%"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u10",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "fact_class": "company_guidance",
+                  "statement": "Intel guides Q4 2026 GAAP diluted EPS to approximately $0.10 and non-GAAP diluted EPS to approximately $0.25.",
+                  "materiality_candidate": 5,
+                  "quote": "Non-GAAP earnings (loss) per share attributable to Intel—diluted\n$\n0.25",
+                  "metric": "Non-GAAP diluted EPS",
+                  "period": "Q4 2026",
+                  "guidance_type": "point",
+                  "value": 0.25,
                   "unit": "USD"
                 },
                 {
-                  "unit_id": "official_ir:995d59b508f909faee25fecd#u1",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "fact_class": "objective_fact",
-                  "statement": "Q3 2026 revenue was $16.5 billion, up 21% year-over-year.",
-                  "materiality_candidate": 4,
-                  "quote": "Third-quarter revenue was $16.5 billion, up 21% year-over-year (YoY).",
-                  "metric": "revenue",
-                  "value": "16.5",
-                  "unit": "USD $B",
-                  "period": "Q3 2026",
-                  "comparison_value": "13.7",
-                  "comparison_period": "Q3 2025",
-                  "reported_change": "up 21%"
-                },
-                {
-                  "unit_id": "official_ir:995d59b508f909faee25fecd#u1",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "fact_class": "objective_fact",
-                  "statement": "Q3 2026 Data Center and AI (DCAI) revenue was $7.3 billion, up 78% YoY.",
-                  "materiality_candidate": 4,
-                  "quote": "Data Center and AI (DCAI)\n7.3\nup 78%",
-                  "metric": "Data Center and AI (DCAI) revenue",
-                  "value": "7.3",
-                  "unit": "USD $B",
-                  "period": "Q3 2026",
-                  "comparison_period": "Q3 2025",
-                  "reported_change": "up 78%"
-                },
-                {
-                  "unit_id": "official_ir:995d59b508f909faee25fecd#u1",
-                  "card_type": "capital",
-                  "topic": "cash_capex",
-                  "fact_class": "objective_fact",
-                  "statement": "Generated $5.1 billion in cash from operations in Q3 2026.",
-                  "materiality_candidate": 4,
-                  "quote": "In the third quarter, the company generated $5.1 billion in cash from operations.",
-                  "metric": "cash from operations",
-                  "value": "5.1",
-                  "unit": "USD $B",
-                  "period": "Q3 2026",
-                  "metric_type": "operating_cash_flow"
-                },
-                {
-                  "unit_id": "official_ir:995d59b508f909faee25fecd#u1",
-                  "card_type": "management_claim",
-                  "topic": "demand_revenue",
-                  "fact_class": "management_claim",
-                  "statement": "CFO Zinsner states the PC slowdown is expected to continue at least through the first half of next year.",
-                  "materiality_candidate": 4,
-                  "quote": "we see the PC slowdown continuing at least through the first half of next year",
-                  "speaker": "David Zinsner"
-                },
-                {
-                  "unit_id": "official_ir:995d59b508f909faee25fecd#u2",
-                  "card_type": "capital",
-                  "topic": "cash_capex",
-                  "fact_class": "objective_fact",
-                  "statement": "Completed a $23 billion public equity offering to support growth opportunities.",
-                  "materiality_candidate": 4,
-                  "quote": "Completed a $23 billion public equity offering to support future growth opportunities",
-                  "metric": "public equity offering",
-                  "value": "23",
-                  "unit": "USD $B"
-                },
-                {
-                  "unit_id": "official_ir:995d59b508f909faee25fecd#u2",
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u10",
                   "card_type": "guidance",
-                  "topic": "margin_unit_economics",
+                  "topic": "guidance",
                   "fact_class": "company_guidance",
-                  "statement": "Intel guides Q4 2026 GAAP gross margin to 37.1% and non-GAAP gross margin to 38.0%.",
-                  "materiality_candidate": 4,
-                  "quote": "Gross margin\n37.1%\n38.0%",
-                  "metric": "gross margin",
+                  "statement": "Intel projects Q4 2026 non-GAAP operating expenses of approximately $4.4 billion and full-year 2026 non-GAAP operating expenses of approximately $16.3 billion.",
+                  "materiality_candidate": 5,
+                  "quote": "Non-GAAP operating expenses\n$\n4.4\n$\n16.3",
+                  "metric": "Non-GAAP operating expenses",
                   "period": "Q4 2026",
                   "guidance_type": "point",
-                  "value": "37.1%",
-                  "unit": "%"
+                  "value": 4.4,
+                  "unit": "USD $B"
                 }
               ]
             }
