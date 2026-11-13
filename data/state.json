@@ -2364,7 +2364,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2729,7 +2729,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3027,7 +3027,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3338,7 +3338,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3572,7 +3572,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3723,7 +3723,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4172,7 +4172,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4329,7 +4329,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4403,7 +4403,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4479,7 +4479,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4629,7 +4629,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4780,7 +4780,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4854,7 +4854,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5018,7 +5018,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5478,7 +5478,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5556,7 +5556,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5629,7 +5629,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5701,7 +5701,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5777,7 +5777,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6072,7 +6072,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6150,7 +6150,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6231,7 +6231,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6307,7 +6307,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6456,7 +6456,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6532,7 +6532,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6606,7 +6606,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6682,7 +6682,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6759,7 +6759,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:46:19-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6834,7 +6834,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6909,7 +6909,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-12T20:48:48-05:00",
+      "updated_at": "2026-11-12T20:59:39-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -31675,7 +31675,7 @@
     },
     "INTC_2026-09-26_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "dc8a7dd45c0ee43bda1a14b1460269762a02988315a1f9e10f988c87c54e1284",
+      "evidence_fingerprint": "2043fe2cac53be90b711e8abe7c083e714c4d94fbfbb0f8937007b23790dc610",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -31686,21 +31686,21 @@
             "cards": [
               {
                 "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
-                "card_type": "other",
+                "card_type": "fact",
                 "topic": "other",
                 "fact_class": "objective_fact",
-                "statement": "Intel Form 10-Q filing metadata for Q3 2026 period ending September 26, 2026.",
-                "materiality_candidate": 1,
-                "quote": "intc-20260926"
+                "statement": "Intel Form 10-Q filing metadata for Q3 ending September 26, 2026.",
+                "materiality_candidate": 3,
+                "quote": "intc-20260926\n0000050863\n12-26\n2026\nQ3"
               },
               {
                 "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2",
-                "card_type": "other",
+                "card_type": "fact",
                 "topic": "other",
                 "fact_class": "objective_fact",
-                "statement": "Intel Form 10-Q segment and filing disclosures continuation.",
-                "materiality_candidate": 1,
-                "quote": "intc:IntelFoundryMember"
+                "statement": "Intel Form 10-Q segment and reporting entity metadata including Intel Foundry, Client Computing, and Datacenter and AI segments.",
+                "materiality_candidate": 3,
+                "quote": "intc:IntelFoundryMember\nintc:AssemblyAndTestMember"
               }
             ]
           }
@@ -31711,7 +31711,26 @@
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u3",
               "sec_edgar:0000050863-26-000191:intc-20260926.htm#u4"
             ],
-            "cards": []
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u3",
+                "card_type": "other",
+                "topic": "other",
+                "fact_class": "unknown",
+                "statement": "XBRL taxonomy context tag references for Intel Form 10-Q covering segments, subsidiaries, and financial instruments.",
+                "materiality_candidate": 1,
+                "quote": "ndPhysicalAIGroupMember"
+              },
+              {
+                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u4",
+                "card_type": "other",
+                "topic": "other",
+                "fact_class": "unknown",
+                "statement": "Continuation of XBRL taxonomy context tag references for Intel Form 10-Q.",
+                "materiality_candidate": 1,
+                "quote": ":NondesignatedMember"
+              }
+            ]
           }
         },
         "v5_extract_batch_3": {
@@ -31734,28 +31753,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD for context c-3.",
+                "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD.",
                 "materiality_candidate": 3,
                 "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 16,513",
-                "metric": "Revenue",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": "16,513",
-                "unit": "USD",
-                "period": "c-3",
-                "metric_type": "other"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Gross profit was 7,096 million USD for context c-3.",
-                "materiality_candidate": 3,
-                "quote": "us-gaap:GrossProfit, 7,096",
-                "metric": "GrossProfit",
-                "value": "7,096",
-                "unit": "USD",
-                "period": "c-3",
-                "metric_type": "other"
+                "unit": "usd"
               }
             ]
           }
@@ -31768,38 +31771,13 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was 16,513 million USD for context c-3.",
+                "statement": "Revenue from contract with customer excluding assessed tax was not explicitly available as a continuous exact text substring in the truncated XBRL text block.",
                 "materiality_candidate": 3,
                 "quote": "intc-20260926",
-                "metric": "Revenue",
+                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": "16,513",
-                "unit": "USD",
-                "period": "c-3",
-                "metric_type": "other",
+                "unit": "usd",
                 "card_id": "c1:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                " position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "intc-20260926"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Gross profit was 7,096 million USD for context c-3.",
-                "materiality_candidate": 3,
-                "quote": "intc-20260926",
-                "metric": "GrossProfit",
-                "value": "7,096",
-                "unit": "USD",
-                "period": "c-3",
-                "metric_type": "other",
-                "card_id": "c2:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
                 "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
                 "source": "sec_edgar",
                 "provenance": "primary_or_official",
@@ -31831,10 +31809,11 @@
                 "statement": "Third-quarter revenue was $16.5 billion, up 21% year-over-year.",
                 "materiality_candidate": 5,
                 "quote": "Third-quarter revenue was $16.5 billion, up 21% year-over-year (YoY).",
-                "metric": "revenue",
-                "value": "16.5",
-                "unit": "USD_B",
+                "metric": "Revenue",
+                "value": 16.5,
+                "unit": "billion",
                 "period": "Q3 2026",
+                "comparison_value": 13.7,
                 "comparison_period": "Q3 2025",
                 "reported_change": "up 21%"
               },
@@ -31847,7 +31826,7 @@
                 "materiality_candidate": 5,
                 "quote": "Third-quarter earnings per share (EPS) attributable to Intel was $0.60; non-GAAP EPS attributable to Intel was $0.52.",
                 "metric": "EPS",
-                "value": "0.60",
+                "value": 0.6,
                 "unit": "USD",
                 "period": "Q3 2026"
               },
@@ -31859,53 +31838,26 @@
                 "statement": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion.",
                 "materiality_candidate": 5,
                 "quote": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion",
-                "metric": "revenue",
+                "metric": "Revenue",
                 "period": "Q4 2026",
                 "guidance_type": "range",
-                "low": "15.0",
-                "high": "16.0",
-                "unit": "USD_B"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Forecasting fourth-quarter GAAP EPS of $0.10 and non-GAAP EPS of $0.25.",
-                "materiality_candidate": 5,
-                "quote": "forecasting fourth-quarter EPS attributable to Intel of $0.10 and non-GAAP EPS attributable to Intel of $0.25.",
-                "metric": "EPS",
-                "period": "Q4 2026",
-                "guidance_type": "point",
-                "value": "0.10",
-                "unit": "USD"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "In the third quarter, the company generated $5.1 billion in cash from operations.",
-                "materiality_candidate": 4,
-                "quote": "In the third quarter, the company generated $5.1 billion in cash from operations.",
-                "metric": "operating_cash_flow",
-                "value": "5.1",
-                "unit": "USD_B",
-                "period": "Q3 2026",
-                "metric_type": "operating_cash_flow"
+                "low": 15.0,
+                "high": 16.0,
+                "unit": "billion"
               },
               {
                 "unit_id": "official_ir:c16de595c99f19268b30020a#u2",
-                "card_type": "capital",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Completed a $23 billion public equity offering to support future growth opportunities.",
-                "materiality_candidate": 4,
-                "quote": "Completed a $23 billion public equity offering to support future growth opportunities while maintaining a strong balance sheet and investment-grade rating.",
-                "metric": "public_equity_offering",
-                "value": "23",
-                "unit": "USD_B",
-                "period": "Q3 2026"
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting fourth-quarter 2026 GAAP EPS of $0.10 and non-GAAP EPS of $0.25.",
+                "materiality_candidate": 5,
+                "quote": "Earnings (Loss) Per Share Attributable to Intel—Diluted\n$0.10\n$0.25",
+                "metric": "EPS",
+                "period": "Q4 2026",
+                "guidance_type": "point",
+                "value": 0.25,
+                "unit": "USD"
               }
             ]
           }
@@ -31939,9 +31891,7 @@
                 "unit": "USD_$M",
                 "period": "Q3 2026",
                 "comparison_value": 13653,
-                "comparison_period": "Q3 2025",
-                "reported_change": "20.9%",
-                "metric_type": "other"
+                "comparison_period": "Q3 2025"
               },
               {
                 "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
@@ -31956,43 +31906,7 @@
                 "unit": "USD_$M",
                 "period": "Q3 2026",
                 "comparison_value": 5218,
-                "comparison_period": "Q3 2025",
-                "reported_change": "36.0%",
-                "metric_type": "other"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income attributable to Intel for the three months ended September 26, 2026 was $3,320 million compared to $4,063 million for the three months ended September 27, 2025.",
-                "materiality_candidate": 5,
-                "quote": "Net income (loss) attributable to Intel\n$\n3,320\n$\n4,063",
-                "metric": "Net income attributable to Intel",
-                "value": 3320,
-                "unit": "USD_$M",
-                "period": "Q3 2026",
-                "comparison_value": 4063,
-                "comparison_period": "Q3 2025",
-                "reported_change": "-18.3%",
-                "metric_type": "other"
-              },
-              {
-                "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Net cash provided by operating activities for the nine months ended September 26, 2026 was $13,184 million compared to $5,409 million for the nine months ended September 27, 2025.",
-                "materiality_candidate": 5,
-                "quote": "Net cash provided by (used for) operating activities\n13,184\n5,409",
-                "metric": "Net cash provided by operating activities",
-                "value": 13184,
-                "unit": "USD_$M",
-                "period": "9M 2026",
-                "comparison_value": 5409,
-                "comparison_period": "9M 2025",
-                "reported_change": "143.7%",
-                "metric_type": "operating_cash_flow"
+                "comparison_period": "Q3 2025"
               },
               {
                 "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
@@ -32007,9 +31921,7 @@
                 "unit": "USD_$M",
                 "period": "9M 2026",
                 "comparison_value": -11158,
-                "comparison_period": "9M 2025",
-                "reported_change": "-8.4%",
-                "metric_type": "capex"
+                "comparison_period": "9M 2025"
               }
             ]
           }
@@ -32026,18 +31938,18 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Projected non-GAAP tax rates for 2026 and 2025 are 11% and 12%, respectively.",
+                "statement": "Projected non-GAAP tax rates for 2026 and 2025 are determined to be 11% and 12%, respectively.",
                 "materiality_candidate": 3,
                 "quote": "For 2026 and 2025, we determined the projected non-GAAP tax rate to be 11% and 12%, respectively."
               },
               {
                 "unit_id": "official_ir:c16de595c99f19268b30020a#u8",
                 "card_type": "fact",
-                "topic": "margin_unit_economics",
+                "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Q3 2026 and Q3 2025 per share calculations exclude a gain of $120 million and a loss of $2 million, respectively, related to the mark-to-market of contingent Escrowed Shares.",
+                "statement": "Q3 2026 and Q3 2025 per share calculations exclude the gain of $120 million and loss of $2 million, respectively, related to the mark-to-market of contingent Escrowed Shares.",
                 "materiality_candidate": 3,
-                "quote": "Q3 2026 and Q3 2025 per share calculations exclude the gain of $120 million and loss of $2 million, respectively, related to the mark-to-market of contingent Escrowed Shares"
+                "quote": "Q3 2026 and Q3 2025 per share calculations exclude the gain of $120 million and loss of $2 million, respectively, related to the mark-to-market of contingent Escrowed Shares that were included in the weighted average shares of common stock outstanding-diluted during the period."
               }
             ]
           }
@@ -32059,7 +31971,7 @@
                 "quote": "GAAP gross profit\n$\n7,096\n$\n5,218",
                 "metric": "GAAP gross profit",
                 "value": "7096",
-                "unit": "$M",
+                "unit": "USD_$M",
                 "period": "Q3 2026",
                 "comparison_value": "5218",
                 "comparison_period": "Q3 2025"
@@ -32069,12 +31981,12 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Non-GAAP gross profit was $7,284 million for the three months ended Sep 26, 2026, compared to $5,456 million for the three months ended Sep 27, 2025.",
+                "statement": "Non-GAAP gross profit was $7,284 million for Q3 2026 compared to $5,456 million for Q3 2025.",
                 "materiality_candidate": 4,
                 "quote": "Non-GAAP gross profit\n$\n7,284\n$\n5,456",
                 "metric": "Non-GAAP gross profit",
                 "value": "7284",
-                "unit": "$M",
+                "unit": "USD_$M",
                 "period": "Q3 2026",
                 "comparison_value": "5456",
                 "comparison_period": "Q3 2025"
@@ -32084,13 +31996,13 @@
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Adjusted free cash flow was $1,639 million for the three months ended Sep 26, 2026, compared to $896 million for the three months ended Sep 27, 2025.",
+                "statement": "Adjusted free cash flow was $1,639 million for Q3 2026 compared to $896 million for Q3 2025.",
                 "materiality_candidate": 5,
                 "quote": "Adjusted free cash flow\n$\n1,639\n$\n896",
+                "metric": "adjusted_fcf",
                 "metric_type": "adjusted_fcf",
-                "metric": "Adjusted free cash flow",
                 "value": "1639",
-                "unit": "$M",
+                "unit": "USD_$M",
                 "period": "Q3 2026",
                 "comparison_value": "896",
                 "comparison_period": "Q3 2025",
@@ -32098,7 +32010,7 @@
                   {
                     "item": "GAAP net cash provided by (used for) operating activities",
                     "value": "5082",
-                    "unit": "$M",
+                    "unit": "USD_$M",
                     "evidence": {
                       "quote": "GAAP net cash provided by (used for) operating activities\n$\n5,082\n$\n2,546"
                     }
@@ -32106,7 +32018,7 @@
                   {
                     "item": "Additions to property, plant, and equipment (gross capital expenditures)",
                     "value": "-4219",
-                    "unit": "$M",
+                    "unit": "USD_$M",
                     "evidence": {
                       "quote": "Additions to property, plant, and equipment (gross capital expenditures)\n(4,219\n)\n(2,956\n)"
                     }
@@ -32114,7 +32026,7 @@
                   {
                     "item": "Proceeds from capital-related government incentives",
                     "value": "48",
-                    "unit": "$M",
+                    "unit": "USD_$M",
                     "evidence": {
                       "quote": "Proceeds from capital-related government incentives\n48\n54"
                     }
@@ -32122,7 +32034,7 @@
                   {
                     "item": "Partner contributions, net",
                     "value": "847",
-                    "unit": "$M",
+                    "unit": "USD_$M",
                     "evidence": {
                       "quote": "Partner contributions, net\n847\n1,346"
                     }
@@ -32130,7 +32042,7 @@
                   {
                     "item": "Payments on finance leases",
                     "value": "-119",
-                    "unit": "$M",
+                    "unit": "USD_$M",
                     "evidence": {
                       "quote": "Payments on finance leases\n(119\n)\n(94\n)"
                     }
@@ -32186,21 +32098,21 @@
             "cards": [
               {
                 "unit_id": "official_ir:e6dc875b4aad3053774eb619#u3",
-                "card_type": "fact",
+                "card_type": "other",
                 "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Filing metadata references Datacenter and AI member for the period ending 2025-09-27.",
+                "fact_class": "unknown",
+                "statement": "XBRL tagging and metadata reference unit containing various segment and subsidiary members.",
                 "materiality_candidate": 1,
-                "quote": "intc:DatacenterAndAIMember\n2024-12-29\n2025-09-27"
+                "quote": "ndPhysicalAIGroupMember"
               },
               {
                 "unit_id": "official_ir:e6dc875b4aad3053774eb619#u4",
-                "card_type": "fact",
+                "card_type": "other",
                 "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Filing metadata references Senior Notes member for the period ending 2026-06-27.",
+                "fact_class": "unknown",
+                "statement": "XBRL tagging continuation reference unit containing financial notes and subsidiary definitions.",
                 "materiality_candidate": 1,
-                "quote": "us-gaap:SeniorNotesMember\n2026-06-27"
+                "quote": "intc:DepartmentOfCommerceMember"
               }
             ]
           }
@@ -32225,52 +32137,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $16,513 million.",
+                "statement": "Revenue from contract with customer excluding assessed tax is 16,513 million USD for context c-3.",
                 "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, 16,513",
-                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "metric": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": "16,513",
-                "unit": "usd",
-                "metric_type": "other"
-              },
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Gross profit was $7,096 million.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:GrossProfit, 7,096",
-                "metric": "GrossProfit",
-                "value": "7,096",
-                "unit": "usd",
-                "metric_type": "other"
-              },
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Operating income loss was $2,522 million.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:OperatingIncomeLoss, 2,522",
-                "metric": "OperatingIncomeLoss",
-                "value": "2,522",
-                "unit": "usd",
-                "metric_type": "other"
-              },
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#structured",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Cash and cash equivalents at carrying value was $21,846 million.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 21,846",
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
-                "value": "21,846",
-                "unit": "usd",
-                "metric_type": "other"
+                "unit": "usd"
               }
             ]
           }
@@ -32283,80 +32155,13 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was not available in document text.",
+                "statement": "Revenue from contract with customer excluding assessed tax is not disclosed in the provided excerpt fragment.",
                 "materiality_candidate": 5,
                 "quote": "intc-20260926",
-                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "metric": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
                 "value": null,
                 "unit": "usd",
-                "metric_type": "other",
                 "card_id": "c1:official_ir:e6dc875b4aad3053774eb619#structured",
-                "document_key": "official_ir:e6dc875b4aad3053774eb619",
-                "source": "official_ir",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "official_ir:e6dc875b4aad3053774eb619",
-                  "quote": "intc-20260926"
-                }
-              },
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Gross profit was not available in document text.",
-                "materiality_candidate": 5,
-                "quote": "intc-20260926",
-                "metric": "GrossProfit",
-                "value": null,
-                "unit": "usd",
-                "metric_type": "other",
-                "card_id": "c2:official_ir:e6dc875b4aad3053774eb619#structured",
-                "document_key": "official_ir:e6dc875b4aad3053774eb619",
-                "source": "official_ir",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "official_ir:e6dc875b4aad3053774eb619",
-                  "quote": "intc-20260926"
-                }
-              },
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Operating income loss was not available in document text.",
-                "materiality_candidate": 5,
-                "quote": "intc-20260926",
-                "metric": "OperatingIncomeLoss",
-                "value": null,
-                "unit": "usd",
-                "metric_type": "other",
-                "card_id": "c3:official_ir:e6dc875b4aad3053774eb619#structured",
-                "document_key": "official_ir:e6dc875b4aad3053774eb619",
-                "source": "official_ir",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "official_ir:e6dc875b4aad3053774eb619",
-                  "quote": "intc-20260926"
-                }
-              },
-              {
-                "unit_id": "official_ir:e6dc875b4aad3053774eb619#structured",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Cash and cash equivalents at carrying value was not available in document text.",
-                "materiality_candidate": 4,
-                "quote": "intc-20260926",
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
-                "value": null,
-                "unit": "usd",
-                "metric_type": "other",
-                "card_id": "c4:official_ir:e6dc875b4aad3053774eb619#structured",
                 "document_key": "official_ir:e6dc875b4aad3053774eb619",
                 "source": "official_ir",
                 "provenance": "primary_or_official",
@@ -32385,14 +32190,13 @@
                 "card_type": "fact",
                 "topic": "other",
                 "fact_class": "objective_fact",
-                "statement": "Intel Corporation had 5,315 million shares of common stock outstanding as of October 23, 2026.",
+                "statement": "Intel Corporation reported 5,315 million shares of common stock outstanding as of October 23, 2026.",
                 "materiality_candidate": 3,
                 "quote": "As of October 23, 2026, the registrant had outstanding 5,315 million shares of common stock.",
                 "metric": "shares_outstanding",
-                "value": 5315,
+                "value": "5315",
                 "unit": "million",
-                "period": "as of October 23, 2026",
-                "metric_type": "other"
+                "period": "as_of_2026-10-23"
               }
             ]
           }
@@ -32409,20 +32213,18 @@
                 "card_type": "risk",
                 "topic": "risk",
                 "fact_class": "objective_fact",
-                "statement": "Risks include manufacturing expansion investments, alternative financing, government grants, U.S. government equity interests, product demand and margins, macroeconomic and geopolitical tensions, and trade policies/tariffs/export controls.",
+                "statement": "Intel outlines risk factors including investments in manufacturing expansion, external customer demand commitments, alternative financing, government grants, U.S. government equity interests, product demand and margins, geopolitical tensions, tariffs, and export controls.",
                 "materiality_candidate": 3,
-                "quote": "stments in manufacturing expansion projects to manufacture products usingsuch technologies and our efforts to secure product design wins with and demand commitments from potential significant external customers for the manufacture of productsusing such technologies;",
-                "metric": "geopolitical_and_trade_risks"
+                "quote": "stments in manufacturing expansion projects to manufacture products usingsuch technologies and our efforts to secure product design wins with and demand commitments from potential significant external customers for the manufacture of productsusing such technologies;"
               },
               {
                 "unit_id": "official_ir:711dc1ead9e37fb24f6e9240#u4",
                 "card_type": "risk",
                 "topic": "risk",
                 "fact_class": "objective_fact",
-                "statement": "Consumer class actions regarding Spectre, Meltdown, and Downfall vulnerabilities, as well as securities class actions and derivative lawsuits related to segment reporting and internal foundry model modifications, are pending or on appeal with unable-to-estimate potential losses.",
+                "statement": "Intel reports on ongoing legal proceedings including consumer class action lawsuits related to security vulnerabilities such as Downfall and Spectre/Meltdown, as well as securities class action and derivative lawsuits related to segment reporting and the internal foundry model.",
                 "materiality_candidate": 3,
-                "quote": "Consumer class action lawsuits are pending against us in the U.S. and Canada. The plaintiffs, who purport to represent various classes of purchasers of our products, generallyclaim to have been harmed by our actions and/or omissions in connection with Spectre, Meltdown, and other variants of this class of security vulnerabilities",
-                "metric": "litigation_risk"
+                "quote": "Consumer class action lawsuits are pending against us in the U.S. and Canada. The plaintiffs, who purport to represent various classes of purchasers of our products, generallyclaim to have been harmed by our actions and/or omissions in connection with Spectre, Meltdown, and other variants of this class of security vulnerabilities"
               }
             ]
           }
@@ -57700,7 +57502,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-12T22:46:19-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -57778,6 +57581,96 @@
             ],
             "pass": false,
             "corrected_telegram_draft": "CRWV Q3\n\n1. 💡 投資結論與邏輯:\n• 公司全面上修全年營收與調整後營業利益指引，反映核心業務動能延續，但資本支出同步大幅擴張，對現金流轉化效率與未來資本回報率形成壓力。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n2. 📊 關鍵數據與財測:\n• Q3 營收報 $3,661M，對比去年同期 $1,365M；Revenue backlog 達 $132.5B，支撐中期交貨動能。\n• 獲利表現方面，Q3 營業利益為 $207M（營業利益率 6%），調整後 EBITDA 達 $2,256M（利潤率 62%），淨損擴大至 $709M。\n• 現金流與資本支出顯示，Q3 營業現金流為 $1,975M，物業與設備購置達 $9,441M。\n• 全年財測上修：FY 2026 營收指引調升至 $13.0B 至 $13.3B；調整後營業利益指引調升至 $1.275B 至 $1.375B；資本支出指引調升至 $37B 至 $39B；Q4 出口之 annualized run-rate revenue 指引調升至 $20B 至 $21B。\n\n3. 🧭 營運動能與法說攻防:\n• 營收與 backlog 規模顯示訂單能見度延伸，但本研究範圍未包含正式 Q&A 逐字稿紀錄，故法說會攻防細節從略。\n\n4. ⚠️ 風險、反證與待驗證:\n• 資本支出大幅上修至 $37B 至 $39B，若後續需求不如預期，將對自由現金流與資本報酬率造成負面影響。\n• 淨損擴大至 $709M 反映帳面獲利與現金流存在差異，需持續觀察本業獲利轉化品質與費用結構。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "營收與獲利指引全面上修，帶動中期 earnings power 顯著提升，但資本支出同樣大幅擴張。",
+                "why_it_matters": "反映需求端動能強勁，推升 FY 2026 營收與調整後營業利益預期，但高額 capex 對現金流與未來資本回報率帶來壓力。",
+                "fact_basis": [
+                  "Q3 2026 營收為 $3,661M，較去年同期 $1,365M 大幅成長。",
+                  "全維度上修 FY 2026 營收指引至 $13.0B 至 $13.3B，調整後營業利益指引至 $1.275B 至 $1.375B。",
+                  "調升 FY 2026 資本支出指引至 $37B 至 $39B（前次低標為 $35B）。"
+                ],
+                "inference": "判讀為公司短期需求能見度極高，帶動營收與獲利預期上修，但擴產伴隨的高額現金流出仍需持續檢視其轉換效率。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 營收達 $3,661M，對比 Q3 2025 之 $1,365M顯著擴張。",
+                "截至 2026 年 9 月 30 日，Revenue backlog 約為 $132.5B，支撐未來交貨動能。",
+                "管理層預期 Q4 2026 出口之 annualized run-rate revenue 將達到 $20B 至 $21B。"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 營業利益為 $207M（營業利益率 6%），對比 Q3 2025 之 $52M（營業利益率 4%）有所改善。",
+                "Q3 2026 調整後 EBITDA 達 $2,256M，調整後 EBITDA margin 為 62%，高於去年同期的 61%。",
+                "Q3 2026 淨損擴大至 $709M（去年同期淨損 $110M），主要受非營業項目或相關成本影響，需留意會計項目結構。"
+              ],
+              "cash_capital_intensity": [
+                "Q3 2026 營業活動淨現金流入為 $1,975M，高於去年同期的 $1,689M。",
+                "Q3 2026 物業與設備購置（包含資本化內部使用軟體）達 $9,441M，對比去年同期的 $3,279M 大幅增加，反映基礎設施投資力道強烈。",
+                "期末現金及約當現金為 $4,122M。"
+              ]
+            },
+            "guidance_assessment": [
+              "FY 2026 全年營收指引上修至 $13.0B 至 $13.3B。",
+              "FY 2026 全年調整後營業利益指引上修至 $1.275B 至 $1.375B，中位數較前次指引增加 26%。",
+              "FY 2026 全年資本支出指引上修至 $37B 至 $39B，前次低標為 $35B。",
+              "Q4 2026 出口之 annualized run-rate revenue 指引上修至 $20B 至 $21B。"
+            ],
+            "demand_quality": [
+              "無法從現有數據判定客戶集中度、新客戶成長與現有客戶擴張（NRR）的細部結構，證據不足故不予過度推論。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "現有證據僅顯示營收與 backlog 大幅成長，無法直接支持定價能力或具體護城河結論。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "資本支出由低標 $35B 上修至 $37B 至 $39B，若未來需求成長未能如預期消化擴產產能，將對自由現金流與資產報酬率構成顯著壓力。",
+              "淨損由 Q3 2025 的 $110M 擴大至 Q3 2026 的 $709M，營業利益率雖微幅上升至 6%，但整體獲利結構仍受相關費用影響，需持續追蹤本業實際轉化能力。"
+            ],
+            "watch_items": [
+              "全年資本支出 $37B 至 $39B 的實際執行進度與現金流耗用狀況。",
+              "Revenue backlog $132.5B 的實際轉換為營收的時程。",
+              "Q4 2026 annualized run-rate revenue $20B 至 $21B 目標之達成情形。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "CRWV Q3\n\n1. 💡 投資結論與邏輯:\n• 公司全面上修全年營收與調整後營業利益指引，反映核心業務動能延續，但資本支出同步大幅擴張，對現金流轉化效率與未來資本回報率形成壓力。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n2. 📊 關鍵數據與財測:\n• Q3 營收報 $3,661M，對比去年同期 $1,365M；Revenue backlog 達 $132.5B，顯示訂單能見度延伸。\n• 獲利與利潤率方面，Q3 營業利益為 $207M（營業利益率 6%），調整後 EBITDA 達 $2,256M（利潤率 62%），淨損擴大至 $709M。\n• 現金流與資本支出方面，Q3 營業現金流為 $1,975M，物業與設備購置達 $9,441M。\n• 全年財測上修：FY 2026 營收指引調升至 $13.0B 至 $13.3B；調整後營業利益指引調升至 $1.275B 至 $1.375B；資本支出指引調升至 $37B 至 $39B；Q4 出口之 annualized run-rate revenue 指引調升至 $20B 至 $21B。\n\n3. 🧭 營運動能與法說攻防:\n• 營收與 backlog 規模顯示訂單動能，但本研究範圍未包含正式 Q&A 逐字稿紀錄，故法說會攻防細節從略。\n\n4. ⚠️ 風險、反證與待驗證:\n• 資本支出大幅上修至 $37B 至 $39B，若後續需求不如預期，將對自由現金流與資本報酬率造成負面影響。\n• 淨損擴大至 $709M 反映帳面獲利與現金流存在差異，需持續觀察本業獲利轉化品質與費用結構。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 75,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [
+              "Analyst output telegram draft does not strictly follow the INVESTOR TELEGRAM V4.3 exact section header order and bullet point styling rules."
+            ],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Telegram draft needs strict formatting alignment with INVESTOR TELEGRAM V4.3 output contract (exact four sections, flat bullets, strict USD monetary units format without conversion to 中文億/兆).",
+              "deterministic_v5_gate:missing_material_points",
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:structure"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "CRWV Q3\n\n1. 💡 投資結論與邏輯:\n• 公司全面上修全年營收與調整後營業利益指引，反映核心業務動能延續，但資本支出同步大幅擴張，對現金流轉化效率與未來資本回報率形成壓力。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n2. 📊 關鍵數據與財測:\n• Q3 營收報 $3,661M，對比去年同期 $1,365M；Revenue backlog 達 $132.5B，顯示訂單能見度延伸。\n• 獲利與利潤率方面，Q3 營業利益為 $207M（營業利益率 6%），調整後 EBITDA 達 $2,256M（利潤率 62%），淨損擴大至 $709M。\n• 現金流與資本支出方面，Q3 營業現金流為 $1,975M，物業與設備購置達 $9,441M。\n• 全年財測上修：FY 2026 營收指引調升至 $13.0B 至 $13.3B；調整後營業利益指引調升至 $1.275B 至 $1.375B；資本支出指引調升至 $37B 至 $39B；Q4 出口之 annualized run-rate revenue 指引調升至 $20B 至 $21B。\n\n3. 🧭 營運動能與法說攻防:\n• 營收與 backlog 規模顯示訂單動能，但本研究範圍未包含正式 Q&A 逐字稿紀錄，故法說會攻防細節從略。\n\n4. ⚠️ 風險、反證與待驗證:\n• 資本支出大幅上修至 $37B 至 $39B，若後續需求不如預期，將對自由現金流與資本報酬率造成負面影響。\n• 淨損擴大至 $709M 反映帳面獲利與現金流存在差異，需持續觀察本業獲利轉化品質與費用結構。",
             "structure_errors": [
               "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
             ],
