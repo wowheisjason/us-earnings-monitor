@@ -1,0 +1,47 @@
+name: Ta Liang CPO equipment Q3 delivery
+on:
+  push:
+    branches: [codex/optics-delivery-ta-liang-cpo-equipment-q3-20261111-v1]
+    paths: [.github/workflows/optics-delivery-ta-liang-cpo-equipment-q3-20261111-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-ta-liang-cpo-equipment-q3-20261111-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜大量科技（3167）切入CPO整合設備首條產線｜v1\n\n1) 重大變化\n大量科技11/11法說確認，子公司大量先進智能已與一線客戶共同開發CPO一體化設備，客戶2026年建置首條產線，目標2027年第3季量產。管理層稱該設備整合光引擎裸晶前處理、量測／檢測與後段流程，ASP約為公司一般晶圓端量測設備的3至4倍。具體客戶共同開發、首線建置、量產窗口與顯著ASP差，已超越展示階段，達通知門檻。\n\n2) 已確認事實\n事件日：2026-11-11；媒體公告日：11/12；2027 Q3為客戶量產目標，非已完成量產或營收認列。\n官方簡報把CPO Inspection Sorting Machine列入產品線，並明載「與一線客戶共同開發一體化設備、布局矽光子」。媒體轉述法說稱客戶為國際Tier-1美系半導體廠，但未具名，無客戶端獨立確認，不能猜測身分。\nQ3全公司營收36.713億元、毛利率50.17%、營業利益13.147億元、稅後淨利9.047億元、EPS 9.94元；前三季營收84.767億元、毛利率46.36%、稅後淨利17.299億元、EPS 19.24元。這些是全公司實績，不能歸因於CPO。\n官方簡報：https://mopsov.twse.com.tw/nas/STR/316720261111M001.pdf\n公司法說公告：https://openapi.twse.com.tw/v1/opendata/t187ap04_L\n補充：https://money.udn.com/money/story/5710/9872626\n\n3) 供應鏈角色\n大量科技（3167）：CPO製程整合、量測與檢測設備，直接曝險；不是PIC、雷射、光模組或交換器廠。一線未具名客戶：共同開發及首線建置方，是否為設備採購者、晶片商或終端客戶仍待確認。矽光子PIC、光引擎、FAU、InP光源及封測廠為互補環節；大銀微系統（4576）等定位平台商可能互補或局部競爭，無轉單證據。\n\n4) 合理推論\n若首線按時驗收並在2027 Q3量產，高ASP設備可能提高半導體設備營收與毛利組合，並建立CPO量產線的先行認證地位。傳導條件是客戶完成光引擎良率、系統驗證、設備驗收及後續複製線採購。單一首線不等於CPO全面普及，也不能推論InP／EML短缺。\n\n5) 投資機會與風險\n直接受益候選為大量科技；催化劑包括首線設備驗收、正式訂單金額、第二條線／第二家客戶及2027 Q3量產落實。風險包括單一客戶集中、量產延後、設備客製化成本、良率不達標、後續複製線不確定，以及把全公司2027產能滿載誤解成CPO產能滿載。未核對即時估值。\n\n6) 待驗證\n追蹤設備台數、單價／訂單、驗收與收入認列季度；客戶角色及終端應用；首線良率、節拍與量產時間；是否擴至多客戶。現階段屬供應商端聲明，尚無具名客戶確認。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"ta-liang-cpo-equipment-q3-20261111","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
