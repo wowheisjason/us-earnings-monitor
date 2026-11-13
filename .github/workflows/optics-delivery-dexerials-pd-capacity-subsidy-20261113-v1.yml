@@ -1,0 +1,46 @@
+name: Optics delivery Dexerials PD capacity subsidy 20261113 v1
+on:
+  push:
+    branches: [codex/optics-delivery-dexerials-pd-capacity-subsidy-20261113-v1]
+    paths: [.github/workflows/optics-delivery-dexerials-pd-capacity-subsidy-20261113-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-dexerials-pd-capacity-subsidy-20261113-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message=json.loads(r'''"AI光通訊重大進展｜Dexerials高速PD擴產與200G量產\n事件鍵：dexerials-pd-capacity-subsidy-20261113｜v1\n\n1）重大變化與通知門檻\nDexerials（東證Prime 4980）11/13公告，旗下DXPS的AI／次世代資料中心高速光電二極體（PD）與監控PD兩據點擴產案，獲日本經產省大型成長投資補助計畫選定。專案總經費62.51億日圓，預定補助約20.84億日圓，涵蓋北海道恵庭與宮城登米的產能、製程自動化及基礎設施。這是有明確金額、量產據點與政府名單交叉確認的產能投資，且緊接200G/lane PD開始小量量產及InP基板供應不足，足以影響公司營收容量與競爭位置。\n\n2）已確認事實\n• 事件日：日本補助計畫11/10公布入選名單；公司11/13公告。\n• 公司口徑：專案經費6,251百萬日圓；補助相關金額2,084百萬日圓。但「入選」不等於最終交付決定，金額仍須申請與審查。\n• 政府名單確認DXPS入選，執行地為北海道、宮城，計畫用途為強化生成式AI／次世代資料中心用高速PD、監控PD國內供給力。\n• 11/11官方半期財報確認：資料中心光收發器用光半導體需求擴大，但部分產品InP基板採購低於計畫、已影響銷量；2026/4–9光半導體仍增收。\n• 11/12管理層說法經TECH+報導：恵庭的200G/lane高速PD已取得客戶認證，10月開始小量量產；登米仍在認證，目標12月量產、約2027年2月後貢獻營收。此部分是專業媒體轉述，未見公司正式逐字稿，須與後續官方資料核對。\n• 同一報導稱100G/lane產品所需InP基板實得量不足需求六成，2027年度供應仍未完全確保；公司認為全面改善可能到2028下半年至2029年。這是公司管理層估計，不代表整體InP或EML市場皆短缺。\n• 公司11/13公告誤稱120件獲選；補助計畫官方頁顯示163件申請、53件最終獲選，120件只是進入二次審查。本文採政府官方數字。\n\n3）供應鏈角色與曝險\n• Dexerials／DXPS（4980.JP）：接收端高速PD與雷射輸出監控PD供應商，屬光元件層；不是InP基板、EML、CW雷射、矽光子PIC、光模組或CPO交換器供應商。\n• 200G/lane PD可支援1.6T模組每通道200G接收端，但公司未披露客戶、訂單額、模組架構或CPO客戶。\n• 上游InP基板供應商未具名。公司稱正向包含歐洲業者在內的多家供應商採購，但磊晶製程暫不分散；不得猜測特定美日台廠取得訂單。\n\n4）合理推論\n政府補助可分攤擴產資金並提高恵庭／登米自動化與供應韌性；若登米認證完成、InP基板到位，200G PD可自2027起擴大對1.6T接收端的營收貢獻。相反地，基板不足會使設備投資無法完全轉成出貨，短期仍可能出現需求高於可供量、固定成本先發生的情況。補助尚未最終交付，且未披露新增片數、良率、ASP或客戶訂單，不能量化獲利。\n\n5）投資機會與風險\n直接受益候選為Dexerials：催化劑包括補助正式交付、登米客戶認證、200G量產與銷售開始、InP到貨改善、光子業務營收與毛利揭露。風險包括補助縮減／延後、InP瓶頸、單一磊晶來源、認證或良率延遲、擴產折舊、需求轉向矽光子整合接收器及客戶集中。未查即時估值，不判斷股價是否已反映。\n\n6）待驗證與追蹤\n追蹤最終補助交付額與投資時程、兩廠新增產能與利用率、登米認證／量產日、200G出貨量與ASP、光子業務營收／毛利、2027年InP供貨覆蓋率及第二來源認證。\n\n官方公司：https://www.dexerials.jp/news/2026/news26059.html\n政府名單：https://chukentou-seichotoushi-hojo.jp/assets/documents/common/list_6ji.pdf\n官方財報：https://www.dexerials.jp/news/pdf/2026/news26058.pdf\n媒體補充：https://news.mynavi.jp/techplus/article/20261112-5310387/"''')
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"dexerials-pd-capacity-subsidy-20261113","version":1}
+          with open("telegram-receipt.json","w") as f:
+              json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-dexerials-pd-capacity-subsidy-20261113-v1
+          path: telegram-receipt.json
