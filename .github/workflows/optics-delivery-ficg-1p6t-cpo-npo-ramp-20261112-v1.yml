@@ -1,0 +1,47 @@
+name: Optics delivery FICG 1.6T CPO NPO ramp v1
+on:
+  push:
+    branches: [codex/optics-delivery-ficg-1p6t-cpo-npo-ramp-20261112-v1]
+    paths: [.github/workflows/optics-delivery-ficg-1p6t-cpo-npo-ramp-20261112-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-ficg-1p6t-cpo-npo-ramp-20261112-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜大眾控（3701）1.6T量產、CPO/NPO試產與海外擴產｜v1\n\n1) 重大變化\n大眾控11/12法說首次明確確認：800G、800G Flip Chip、1.6T及1.6T Flip Chip高速光通訊產品已量產出貨；3.2T、3.2T Flip Chip、1.6T XBO、3.2T CPO及6.4T NPO已陸續進入試產。公司並表示現有擴產規模仍與客戶需求有明顯差距。這是從規劃／驗證進入1.6T實際量產出貨，且伴隨產能缺口與資金投入，足以影響營收結構及競爭位置，達通知門檻。\n\n2) 已確認事實\n事件日：2026-11-12；主要媒體公告日：11/13。1.6T及1.6T Flip Chip為公司管理層所稱已量產出貨；3.2T CPO及6.4T NPO僅為試產，尚非量產或營收認列。\n官方簡報顯示馬來西亞PRO3C基地2025/11通過客戶驗證、2025年底投入生產、2026 Q1進入量產；2026年聚焦量產出貨，2027依訂單節奏擴充。公司10/15官方資料顯示新山廠現有8條SMT線。\nQ3營收26.96億元，季增28.65%、年增17.54%；10月營收11.90億元，月增18.62%、年增93.95%。但前三季營收67.19億元、毛利7.46億元、營業損失5.41億元、歸母淨損4.62億元、EPS -1.95元；Q3單季毛利率約9.8%。公司未揭露1.6T出貨量、ASP、良率、光通訊收入或毛利，不能把全部營收回升歸因於1.6T。\n官方簡報：https://mopsov.twse.com.tw/nas/STR/370120261111M001.pdf\n公司新山廠：https://www.ficg.com.tw/ficg-pro3c-grand-opening-js-sez/\n政府客戶／產能資料：https://investtaiwan.nat.gov.tw/doisNewsPage632189cht?lang=cht&search=632189&source=foreign\n法說補充：https://ec.ltn.com.tw/amp/article/breakingnews/5639236\n\n3) 供應鏈角色\n大眾控（3701）透過中國PRIME與馬來西亞PRO3C從事光收發模組的製造、組裝、測試及交付，屬EMS／製造平台，不是InP磊晶、雷射晶片、SiPho PIC或交換器ASIC供應商。政府資料確認Coherent為新山廠客戶，但未確認本次1.6T、CPO或NPO產品均屬Coherent，也未披露訂單額。上游DSP、TIA／Driver、EML／CW雷射、PIC、FAU及PCB供應商可能受益，但均未具名。800G／1.6T可插拔模組、CPO與NPO是不同架構，不能混為同一量產階段。\n\n4) 合理推論\n1.6T量產及10月營收加速顯示新山廠已由驗證轉向商業出貨；若良率、交期與客戶拉貨維持，光通訊占比提高可帶動2027營收。但目前毛利率低、前三季仍虧損，意味新廠折舊、爬坡成本及產品組合尚未轉成獲利。3.2T CPO／6.4T NPO的商業貢獻仍取決於客戶認證、良率、設備投資與正式訂單。\n\n5) 投資機會與風險\n直接受益候選為大眾控；Coherent（NYSE:COHR）為已公開的新山廠客戶，但本事件對其訂單或營收貢獻不可量化。催化劑是1.6T出貨量／光通訊營收開始揭露、毛利率回升、新山產能擴充、CPO/NPO由試產進入認證量產。風險包括單一大客戶集中、良率與交期、擴產折舊先於收入、私募稀釋、模組價格競爭，以及CPO/NPO架構或客戶時程改變。未核對即時估值。\n\n6) 待驗證\n追蹤1.6T月出貨量、ASP、良率及毛利；光通訊營收占比；新山SMT線數、稼動率與擴產時程；私募實際金額及用途；3.2T CPO、6.4T NPO的客戶認證、正式訂單與量產季度。未公開供應商及終端客戶不得推測。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"ficg-1p6t-cpo-npo-ramp-20261112","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
