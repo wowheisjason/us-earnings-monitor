@@ -2364,7 +2364,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2729,7 +2729,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3027,7 +3027,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3338,7 +3338,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3572,7 +3572,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3723,7 +3723,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4172,7 +4172,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4329,7 +4329,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4403,7 +4403,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4479,7 +4479,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4629,7 +4629,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4780,7 +4780,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4854,7 +4854,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5018,7 +5018,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5478,7 +5478,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5556,7 +5556,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5629,7 +5629,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5701,7 +5701,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5777,7 +5777,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6072,7 +6072,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6150,7 +6150,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6231,7 +6231,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6307,7 +6307,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6456,7 +6456,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6532,7 +6532,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6606,7 +6606,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6682,7 +6682,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6759,7 +6759,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6834,7 +6834,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6909,7 +6909,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T01:51:51-05:00",
+      "updated_at": "2026-11-13T02:08:11-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -31675,268 +31675,8 @@
     },
     "INTC_2026-09-26_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "1e7332f2136d8c25c44f491a6893f4bf21453a3de59bfebb476660854ae472f2",
-      "stages": {
-        "v5_extract_batch_1": {
-          "payload": {
-            "processed_unit_ids": [
-              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
-              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2"
-            ],
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u1",
-                "card_type": "fact",
-                "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Intel Form 10-Q filing metadata for Q3 2026 period ended September 26, 2026.",
-                "materiality_candidate": 3,
-                "quote": "intc-20260926\n0000050863\n12-26\n2026\nQ3"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u2",
-                "card_type": "fact",
-                "topic": "other",
-                "fact_class": "objective_fact",
-                "statement": "Intel Form 10-Q segment and operating entity disclosures including Intel Foundry, Client Computing, and Datacenter and AI segments.",
-                "materiality_candidate": 3,
-                "quote": "intc:IntelFoundryMember\nintc:AssemblyAndTestMember\n2026-06-28\n2026-09-26"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_2": {
-          "payload": {
-            "processed_unit_ids": [
-              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u3",
-              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u4"
-            ],
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u3",
-                "card_type": "other",
-                "topic": "other",
-                "fact_class": "unknown",
-                "statement": "XBRL taxonomy context strings and segment metadata tags.",
-                "materiality_candidate": 1,
-                "quote": "ndPhysicalAIGroupMember"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#u4",
-                "card_type": "other",
-                "topic": "other",
-                "fact_class": "unknown",
-                "statement": "XBRL taxonomy context strings and segment metadata tags continuation.",
-                "materiality_candidate": 1,
-                "quote": "intc:DepartmentOfCommerceMember"
-              }
-            ]
-          }
-        },
-        "v5_extract_batch_3": {
-          "payload": {
-            "processed_unit_ids": [
-              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u5",
-              "sec_edgar:0000050863-26-000191:intc-20260926.htm#u6"
-            ],
-            "cards": []
-          }
-        },
-        "v5_extract_batch_4": {
-          "payload": {
-            "processed_unit_ids": [
-              "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured"
-            ],
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $16,513M for the period.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 16,513",
-                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
-                "value": "16,513",
-                "unit": "usd",
-                "period": "c-3"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Gross profit was $7,096M for the period.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:GrossProfit, value: 7,096",
-                "metric": "GrossProfit",
-                "value": "7,096",
-                "unit": "usd",
-                "period": "c-3"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Operating income loss was $2,522M for the period.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:OperatingIncomeLoss, value: 2,522",
-                "metric": "OperatingIncomeLoss",
-                "value": "2,522",
-                "unit": "usd",
-                "period": "c-3"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Cash and cash equivalents at carrying value was $21,846M.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, value: 21,846",
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
-                "value": "21,846",
-                "unit": "usd",
-                "period": "c-9"
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Inventory net was $13,068M.",
-                "materiality_candidate": 3,
-                "quote": "us-gaap:InventoryNet, value: 13,068",
-                "metric": "InventoryNet",
-                "value": "13,068",
-                "unit": "usd",
-                "period": "c-9"
-              }
-            ]
-          }
-        },
-        "v5_evidence_repair_v3_4": {
-          "payload": {
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $16,513M for the period.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 16,513",
-                "metric": "RevenueFromContractWithCustomerExcludingAssessedTax",
-                "value": "16,513",
-                "unit": "usd",
-                "period": "c-3",
-                "card_id": "c1:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax, value: 16,513"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Gross profit was $7,096M for the period.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:GrossProfit, value: 7,096",
-                "metric": "GrossProfit",
-                "value": "7,096",
-                "unit": "usd",
-                "period": "c-3",
-                "card_id": "c2:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "us-gaap:GrossProfit, value: 7,096"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Operating income loss was $2,522M for the period.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:OperatingIncomeLoss, value: 2,522",
-                "metric": "OperatingIncomeLoss",
-                "value": "2,522",
-                "unit": "usd",
-                "period": "c-3",
-                "card_id": "c3:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "us-gaap:OperatingIncomeLoss, value: 2,522"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Cash and cash equivalents at carrying value was $21,846M.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, value: 21,846",
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
-                "value": "21,846",
-                "unit": "usd",
-                "period": "c-9",
-                "card_id": "c4:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, value: 21,846"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Inventory net was $13,068M.",
-                "materiality_candidate": 3,
-                "quote": "us-gaap:InventoryNet, value: 13,068",
-                "metric": "InventoryNet",
-                "value": "13,068",
-                "unit": "usd",
-                "period": "c-9",
-                "card_id": "c5:sec_edgar:0000050863-26-000191:intc-20260926.htm#structured",
-                "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0000050863-26-000191:intc-20260926.htm",
-                  "quote": "us-gaap:InventoryNet, value: 13,068"
-                }
-              }
-            ],
-            "processed_unit_ids": [
-              "sec_edgar:0000050863-26-000191:intc-20260926.htm#structured"
-            ],
-            "replace_only_invalid_cards": true
-          }
-        }
-      },
+      "evidence_fingerprint": "2043fe2cac53be90b711e8abe7c083e714c4d94fbfbb0f8937007b23790dc610",
+      "stages": {},
       "evidence_repair_policy": 3,
       "revision_contract_version": 2,
       "audit_gate_version": 3
