@@ -1,0 +1,47 @@
+name: IET InP APD HBT Q3 delivery
+on:
+  push:
+    branches: [codex/optics-delivery-iet-inp-apd-hbt-q3-20261112-v1]
+    paths: [.github/workflows/optics-delivery-iet-inp-apd-hbt-q3-20261112-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-iet-inp-apd-hbt-q3-20261112-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜IET-KY（4971）InP供應瓶頸與新產品量產時程｜v1\n\n1) 重大變化\nIET-KY 11/12法說顯示：InP磊晶需求仍增加，但基板供應限制產出；Q3 InP營收占比由Q2的48.7%降至33.4%，光纖網路應用占比由36.6%降至24.6%。公司同時首次明確表示，APD與HBT磊晶片開發測試獲新興客戶滿意，準備於2027年導入量產。這是實際產品組合變化、供應瓶頸及量產時程，足以改變營收上限與競爭判斷。\n\n2) 已確認事實\n事件／公告日：2026-11-12；2027量產為管理層指引，非已出貨。\nQ3營收3.193億元、毛利率38.72%、營業利益5,799萬元、稅後淨利5,933萬元、EPS 1.26元；營收季增24.6%、年增26.8%。Q3 InP占33.4%，低於Q2 48.7%及2025全年49.6%；GaAs升至36.5%，GaSb及勞務為26.5%，顯示本季成長並非由InP帶動。\n公司簡報稱InP大廠需求逐步增高、持續開發基板供應源；媒體轉述管理層稱PIN-PD訂單增加但產出受基板短缺限制，並正協助歐洲供應商改善良率、回收研磨基板。供應商與客戶未具名。\n獨立上游證據：AXT 10/29稱InP需求異常強勁、Q3營收7,340萬美元；10/28融資最高5.45億美元擴充InP基板，並稱需求超過供給。這支持上游偏緊，但不能證明IET的個別來源或整條鏈都缺貨。\n官方簡報：https://mopsov.twse.com.tw/nas/STR/497120261112M001.pdf\n公司法說：https://www.intelliepi.com.tw/news.html\nAXT：https://investors.axt.com/Investors/news/news-details/2026/AXT-Inc--Announces-Third-Quarter-2026-Financial-Results/default.aspx\n\n3) 供應鏈角色\nIET-KY：InP/GaAs/GaSb MBE磊晶，直接受基板瓶頸影響。AXT（NASDAQ:AXTI）、住友電工（5802）、JX金屬（5016）等為InP基板供應者／競爭生態，但IET未具名供應商。光聖（6442）為策略夥伴及下游光通訊元件廠；本次沒有具名客戶或訂單金額。APD/PIN為接收端元件，HBT為高速電子元件，不能與EML、CW雷射或CPO量產混為一談。\n\n4) 合理推論\nInP占比連續下滑且公司仍尋找基板來源，顯示短期營收可能受供給而非需求約束；若替代基板通過客戶認證、良率改善，2027 APD/HBT量產可恢復InP成長。若基板問題未解，需求增加也未必轉成出貨，新增產品時程可能延後。\n\n5) 投資機會與風險\n受益候選為IET及非中國InP基板供應商；催化劑是基板配額、第二來源認證、APD/HBT首次量產出貨及InP占比回升。風險包括出口限制、基板漲價、良率／認證延誤、客戶集中，以及Q3獲利改善主要由GaAs/GaSb組合推動而非InP。未核對即時估值，不判斷是否已反映。\n\n6) 待驗證\n追蹤InP基板月供應量、價格、第二來源與良率；PIN/APD/HBT客戶認證、量產季度、出貨及毛利；InP與光纖網路營收占比是否回升。未公開客戶不得推測。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"iet-inp-apd-hbt-q3-20261112","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
