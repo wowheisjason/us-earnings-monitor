@@ -2364,7 +2364,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2729,7 +2729,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3027,7 +3027,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3338,7 +3338,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3572,7 +3572,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3723,7 +3723,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4172,7 +4172,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4329,7 +4329,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4403,7 +4403,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4479,7 +4479,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4629,7 +4629,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4780,7 +4780,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4854,7 +4854,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5018,7 +5018,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5178,7 +5178,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5478,7 +5478,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5556,7 +5556,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5629,7 +5629,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5701,7 +5701,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5777,7 +5777,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6072,7 +6072,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6150,7 +6150,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6231,7 +6231,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:28:12-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6307,7 +6307,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6456,7 +6456,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6532,7 +6532,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6606,7 +6606,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6682,7 +6682,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6759,7 +6759,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6834,7 +6834,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6856,7 +6856,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.125,
+            "seconds": 1.394,
             "documents": 0,
             "partial": false
           },
@@ -6869,7 +6869,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-13T13:31:21-05:00",
+        "ir_retrieval_last_at": "2026-11-13T15:53:58-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6889,10 +6889,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-13T13:31:21-05:00",
+        "last_collection_check_at": "2026-11-13T15:53:58-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-13T13:31:21-05:00",
-        "next_ir_retry_at": "2026-11-13T15:31:21-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-13T15:53:58-05:00",
+        "next_ir_retry_at": "2026-11-13T17:53:58-05:00"
       },
       "delivery": {}
     },
@@ -6909,7 +6909,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T15:30:39-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6931,7 +6931,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.273,
+            "seconds": 1.504,
             "documents": 0,
             "partial": false
           },
@@ -6944,7 +6944,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-13T13:31:21-05:00",
+        "ir_retrieval_last_at": "2026-11-13T15:53:58-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6964,10 +6964,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-13T13:31:21-05:00",
+        "last_collection_check_at": "2026-11-13T15:53:58-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-13T13:31:21-05:00",
-        "next_ir_retry_at": "2026-11-13T15:31:21-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-13T15:53:58-05:00",
+        "next_ir_retry_at": "2026-11-13T17:53:58-05:00"
       },
       "delivery": {}
     },
@@ -6984,7 +6984,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-13T13:31:21-05:00",
+      "updated_at": "2026-11-13T15:53:58-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6998,25 +6998,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.125,
+            "seconds": 0.174,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CBRS-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.059,
+            "seconds": 1.163,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.061,
+            "seconds": 0.126,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CBRS-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-13T13:31:21-05:00",
+        "ir_retrieval_last_at": "2026-11-13T15:53:58-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7036,10 +7036,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-13T13:31:21-05:00",
+        "last_collection_check_at": "2026-11-13T15:53:58-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-13T13:31:21-05:00",
-        "next_ir_retry_at": "2026-11-13T15:31:21-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-13T15:53:58-05:00",
+        "next_ir_retry_at": "2026-11-13T17:53:58-05:00"
       },
       "delivery": {}
     }
@@ -50575,7 +50575,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-14T03:28:12-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -50629,6 +50630,122 @@
             ],
             "confidence": 85,
             "telegram_draft": "AMD FY2026 Q3\n\n💡 投資結論與邏輯:\n• Data Center segment 營收創下 $8.5B 紀錄，年增 97%，推升本季總營收達 $13,377M（年增 45%），顯示高階運算需求強勁帶動短期盈餘能力擴張。\n• 公司預估 Q4 營收約為 $17B（上下浮動 3%），延續成長動能，但資本支出增加導致自由現金流下滑，需持續觀察現金轉換效率。\n\n📊 關鍵數據與財測:\n• 營收表現：Q3 總營收 $13,377M，年增 45%；其中 Data Center segment 營收 $8.5B（或 $8,546M），年增 97%，反映主要成長引擎表現。\n• 毛利率與獲利：Q3 GAAP 毛利率 54%、Non-GAAP 毛利率 56%，較去年同期分別提升 2 ppts；營業利益為 $2,832M，淨利為 $2,428M。\n• 現金流狀況：Q3 自由現金流為 $554M（由營運現金流 $1,202M 減去資本支出 $648M），低於去年同期的 $1,530M，顯示資本開支擴大。\n• 財務預測：預期 Q4 營收約 $17B（範圍 $16,490M 至 $17,510M）。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能主要由 Data Center segment 97% 的年增率驅動，帶動整體毛利與營業利益增長。\n• 本研究包未提供具體的管理層 Q&A 逐字稿與問答紀錄，故無法進行法說攻防與逐題解讀。\n\n⚠️ 風險、反證與待驗證:\n• 現金流收斂風險：Q3 自由現金流降至 $554M，若資本支出持續攀升，可能對現金轉化率造成壓力。\n• 毛利率停滯：GAAP 與 Non-GAAP 毛利率季對季持平（分別為 54% 與 56%），顯示規模放大尚未直接帶動毛利率進一步走揚。\n• 證據侷限性：現有數據尚不足以全面驗證客戶集中度、長期定價能力或市占率結構性變動。"
+          }
+        },
+        "audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "AMD FY2026 Q3\n\n💡 投資結論與邏輯:\n• 核心成長動能來自 Data Center 業務大幅擴張，帶動單季總營收與營業獲利顯著提升，延續短期盈餘擴張趨勢。\n• 儘管下季營收指引持續走揚，但資本支出擴大壓低自由現金流轉化效率，且毛利率季對季持平，顯示規模放大尚未轉化為毛利率進一步走揚。\n\n📊 關鍵數據與財測:\n• 營收成長：本季總營收 $13,377M（年增 45%），其中 Data Center 業務營收 $8.5B（年增 97%），顯示主要成長引擎具備強勁拉貨動能，但無法據此單獨推論長期結構性定價能力。\n• 利潤率表現：本季 GAAP 毛利率 54%、Non-GAAP 毛利率 56%（均年增 2 ppts、季持平），營業利益達 $2,832M、淨利達 $2,428M，反映獲利規模擴大但單價結構效益仍待觀察。\n• 現金流與資本支出：本季自由現金流降至 $554M（營運現金流 $1,202M 扣除資本支出 $648M），低於去年同期的 $1,530M，反映資本開支強度上升對現金轉化形成短期壓力。\n• 財測指引：下季預期營收約 $17B（上下浮動 3%，對應範圍 $16,490M 至 $17,510M）。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能由 Data Center 業務 97% 年增率主導，帶動整體營業利益走揚。\n• 本研究包未包含經驗證之管理層 Q&A 逐字稿，無法進行法說問答與動態攻防解讀。\n\n⚠️ 風險、反證與待驗證:\n• 現金轉換壓力：若資本支出維持高檔而營運現金流成長放緩，自由現金流將持續承壓。\n• 毛利率邊際停滯：GAAP 與 Non-GAAP 毛利率季對季持平，顯示營收規模放大量能尚未帶動利潤率二次擴張。\n• 數據涵蓋局限：缺乏具體客戶集中度、續約率與產品組合明細，無法評估客戶擴展廣度與長期防禦壁壘。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:財測指引：下季預期營收約 $17B（上下浮動 3%，對應範圍 $16,490M 至 $17,510M）。外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Data Center segment revenue reached $8.5B, driving total net revenue to $13,377M, while Q4 revenue is guided to approximately $17B.",
+                "why_it_matters": "The expansion in Data Center top-line expands near-term earnings power, though long-term unit economics depend on cash conversion.",
+                "fact_basis": [
+                  "Data Center segment revenue was a record $8.5 billion, up 97% year-over-year.",
+                  "Total net revenue was $13,377 million for the three months ended September 26, 2026, up 45% year-over-year.",
+                  "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%."
+                ],
+                "inference": "Top-line momentum remains solid, but flat sequential gross margins and lower free cash flow indicate that capital intensity is offsetting gross profitability expansion.",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Total net revenue grew 45% YoY to $13,377M in Q3 2026, supported by Data Center segment revenue of $8.5B (up 97% YoY).",
+                "Q4 2026 revenue is guided to approximately $17B (range of $16,490M to $17,510M)."
+              ],
+              "margin_unit_economics": [
+                "GAAP gross margin was 54% and non-GAAP gross margin was 56% in Q3 2026, flat sequentially compared to June 27, 2026, and up 2 ppts YoY.",
+                "Gross profit reached $7,210M, operating income reached $2,832M, and net income reached $2,428M."
+              ],
+              "cash_capital_intensity": [
+                "Free cash flow was $554M for Q3 2026, calculated from GAAP operating cash flow of $1,202M less property and equipment purchases of $648M."
+              ]
+            },
+            "guidance_assessment": [
+              "For the fourth quarter of 2026, AMD expects revenue to be approximately $17 billion, plus or minus 3%, implying a range of $16,490M to $17,510M.",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "Data Center segment revenue reached $8.5B (up 97% YoY).",
+              "Detailed customer concentration and cohort metrics are not provided in the current source data, so customer expansion breadth cannot be determined."
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "Data Center segment growth demonstrates revenue scaling, but direct evidence of structural pricing power, customer switching costs, or long-term control points is not established in the verified facts."
+            ],
+            "risks_and_disconfirming_evidence": [
+              "Free cash flow declined to $554M due to operating cash flow dynamics and property and equipment purchases of $648M.",
+              "Sequential gross margins remained flat (GAAP 54%, Non-GAAP 56%), indicating revenue growth has not yet expanded gross margin percentages."
+            ],
+            "watch_items": [
+              "Q4 revenue performance relative to the $17B guidance range.",
+              "Free cash flow conversion relative to property and equipment purchases.",
+              "Gross margin trajectory relative to current 54% (GAAP) / 56% (Non-GAAP) levels."
+            ],
+            "confidence": 85,
+            "telegram_draft": "AMD FY2026 Q3\n\n💡 投資結論與邏輯:\n• 核心成長動能來自 Data Center 業務大幅擴張，帶動單季總營收與營業獲利提升，延續短期盈餘擴張趨勢。\n• 儘管下季營收指引持續走揚，但資本支出擴大壓低自由現金流轉化效率，且毛利率季對季持平，顯示規模擴大尚未轉化為毛利率走揚。\n\n📊 關鍵數據與財測:\n• 營收成長：本季總營收 $13,377M（年增 45%），其中 Data Center 業務營收 $8.5B（或 $8,546M，年增 97%），顯示主要成長引擎拉貨動能，但仍不能據此單獨推論長期結構性定價能力。\n• 利潤率表現：本季 GAAP 毛利率 54%、Non-GAAP 毛利率 56%（均年增 2 ppts、季持平），營業利益 $2,832M、淨利 $2,428M，反映獲利規模擴大，但單價與產品組合效益仍不能直接證實。\n• 現金流與資本支出：本季自由現金流 $554M（營運現金流 $1,202M 扣除購買不動產與設備 $648M），低於去年同期的 $1,530M，反映資本開支強度增加對現金轉化形成壓力。\n• 財測指引：下季預期營收約 $17B（上下浮動 3%，對應範圍 $16,490M 至 $17,510M）。外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能由 Data Center 業務 97% 年增率主導，帶動整體營業利益走揚。\n• 本研究包未包含經驗證之管理層 Q&A 逐字稿，無法進行法說問答與動態攻防解讀。\n\n⚠️ 風險、反證與待驗證:\n• 現金轉化可觀察指標：需觀察未來營運現金流與購買不動產與設備 $648M 之相對變化，以驗證自由現金流是否持續承壓。\n• 毛利率可觀察指標：需觀察下季 GAAP 與 Non-GAAP 毛利率能否突破目前 54% 與 56% 水準，以驗證規模效益是否顯現。\n• 數據涵蓋局限：缺乏具體客戶集中度與產品組合明細，仍不能評估客戶擴展廣度與防禦壁壘。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "Analyst output telegram_draft violates the V4.3 OUTPUT CONTRACT structure (uses nested emojis/headers like 💡 投資結論與邏輯 inside text block rather than strictly following the required section headers and flat bullet points constraint without redundant paragraphs).",
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:structure",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "AMD FY2026 Q3\n\n1. 💡 投資結論與邏輯:\n• Data Center 業務強勁擴張推動總營收成長，但毛利率季對季持平且自由現金流因資本支出增加而下滑，顯示規模放大尚未同步轉化為毛利率或現金轉換效率的提升。\n\n2. 📊 關鍵數據與財測:\n• 營收成長：本季總營收達 $13,377M（年增 45%），其中 Data Center 業務營收達 $8.5B（或 $8,546M，年增 97%），反映主要需求動能強勁，但結構性定價能力與市占歸屬仍無法直接證實。\n• 利潤表現：GAAP 毛利率 54%、Non-GAAP 毛利率 56%（均年增 2 ppts、季持平），營業利益 $2,832M，淨利 $2,428M，反映獲利絕對金額擴大。\n• 現金流量：自由現金流為 $554M（營運現金流 $1,202M 減去購買不動產與設備 $648M），低於去年同期水準，顯示資本開支對現金流形成壓抑。\n• 營運財測：預期下季營收約 $17B（上下浮動 3%，範圍 $16,490M 至 $17,510M）；外部市場共識未納入，本報告不判定 Beat/Miss。\n\n3. 🧭 營運動能與法說攻防:\n• 營運動能由 Data Center 業務之 97% 年增率主導；本研究包未包含經外部驗證之管理層 Q&A 逐字稿，不進行假設性法說問答解讀。\n\n4. ⚠️ 風險、反證與待驗證:\n• 資本支出與現金流壓力：需持續觀察營運現金流與購買不動產與設備 $648M 之相對變化，以驗證自由現金流承壓是否為長期趨勢。\n• 毛利率動能驗證：需觀察下季毛利率能否突破目前 GAAP 54% 與 Non-GAAP 56% 之水準，以評估規模效益。",
+            "structure_errors": [
+              "missing_v4_sections:💡 投資結論與邏輯,📊 關鍵數據與財測,🧭 營運動能與法說攻防,⚠️ 風險、反證與待驗證"
+            ],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
           }
         }
       },
