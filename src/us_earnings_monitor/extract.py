@@ -119,6 +119,8 @@ def _xlsx_relevant_text(blob: bytes, max_chars: int = 60_000) -> str:
 
 def _effective_kind(disclosure: Disclosure) -> str:
     kind = str(disclosure.document_kind or "other").casefold()
+    if kind == "media_qa_report":
+        return kind
     probe = f"{kind} {disclosure.title}".casefold()
     if any(hint in probe for hint in _TRANSCRIPT_HINTS):
         return "transcript" if kind not in {"qa", "prepared_remarks"} else kind
@@ -154,6 +156,9 @@ def _metadata(
         "selection_mode": selection_mode,
         "retrieval_excerpt": retrieval_excerpt,
         "provenance": disclosure.metadata.get("provenance"),
+        "published_at": disclosure.published_at,
+        "retrieved_at": disclosure.metadata.get("retrieved_at"),
+        "outlet": disclosure.metadata.get("outlet"),
         "qualitative_only": bool(disclosure.metadata.get("qualitative_only", False)),
     }
 
@@ -174,6 +179,18 @@ class EvidenceExtractor:
                     disclosure, raw_chars=len(text), extracted_chars=len(text), truncated=False,
                     selection_mode="retrieval_provider_excerpt", retrieval_excerpt=True,
                 ),
+            )
+
+        if disclosure.document_kind == "media_qa_report":
+            raw = str(disclosure.metadata.get("media_text", ""))
+            selected, truncated = _bounded_full_text(raw, 60_000)
+            prefix = ("[Secondary media report; qualitative only. Preserve named attribution. "
+                      "Commentary and analyst questions are not management statements; "
+                      "only explicitly attributed verbatim quotations may be quoted.]\n")
+            return Evidence(
+                disclosure.key, disclosure.title, disclosure.url, prefix + selected, [],
+                _metadata(disclosure, raw_chars=len(raw), extracted_chars=len(selected),
+                          truncated=truncated, selection_mode="bounded_media_report"),
             )
 
         if disclosure.source in {"alpha_vantage_transcript", "third_party_transcript"}:

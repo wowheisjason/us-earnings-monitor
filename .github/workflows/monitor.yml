@@ -2,6 +2,10 @@ name: US earnings monitor
 
 on:
   schedule:
+    # 24/7 heartbeat: <=4-hour poll interval, including weekends and US nights.
+    # SEC/IR availability and GitHub scheduling delays can still affect SLA.
+    - cron: "5 0,4,8,12,16,20 * * *"
+      timezone: "America/New_York"
     # America/New_York handles DST natively.
     # After-hours cadence is intentionally dense through 19:35 ET so the
     # SEC-first v1 has enough runtime to reach Telegram before 09:00 JST.

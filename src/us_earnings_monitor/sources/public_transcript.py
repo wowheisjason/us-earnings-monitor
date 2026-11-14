@@ -48,13 +48,19 @@ class PublicTranscriptAdapter:
     @staticmethod
     def _looks_like_transcript(text: str, company: Company, event: EarningsEvent) -> bool:
         lower = text.casefold()
-        company_tokens = [company.ticker.casefold(), company.name.casefold().split()[0]]
-        has_company = any(token and token in lower for token in company_tokens)
+        company_tokens = [company.name.casefold(), company.name.casefold().split()[0]]
+        has_company = any(len(token) >= 3 and token in lower for token in company_tokens)
         has_call = "earnings call transcript" in lower or "conference call" in lower
         has_dialogue = any(marker in lower for marker in (
             "question-and-answer", "question and answer", "operator", "your line is open", "open up the call for questions",
         ))
-        return len(text) >= 5_000 and has_company and has_call and has_dialogue
+        # Require period in the opening identity block, not a requested URL or a
+        # sidebar/link to the requested quarter on an unrelated transcript page.
+        header = lower[:1500]
+        period = PublicTranscriptAdapter._period(event)
+        has_period = bool(period and re.search(rf"\b{period[0]}\b", header)
+                          and re.search(rf"\bq{period[1]}\b", header))
+        return len(text) >= 5_000 and has_company and has_call and has_dialogue and has_period
 
     def fetch(self, company: Company, event: EarningsEvent, now: datetime) -> tuple[list[Disclosure], dict]:
         if os.getenv("PUBLIC_TRANSCRIPT_FALLBACK_ENABLED", "1") == "0":
@@ -84,7 +90,7 @@ class PublicTranscriptAdapter:
             source_id=source_id,
             ticker=company.ticker,
             title=f"{company.name} FY{fy} Q{q} Earnings Call Transcript (third-party: {self.provider})",
-            published_at=now.isoformat(),
+            published_at="",  # Provider publication time unavailable; retrieval is not publication.
             url=url,
             document_url=None,
             fiscal_year=fy,
@@ -99,6 +105,7 @@ class PublicTranscriptAdapter:
                 "provenance": "third_party_transcript",
                 "qualitative_only": True,
                 "retrieved_at": now.isoformat(),
+                "publication_time_status": "unknown",
             },
         )
         return [disclosure], {

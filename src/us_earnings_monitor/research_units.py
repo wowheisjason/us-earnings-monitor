@@ -77,6 +77,8 @@ def _bounded_blocks(parts: Iterable[str], max_chars: int = DEFAULT_UNIT_CHARS) -
 
 
 def _is_transcript(item: Evidence) -> bool:
+    if _kind(item) == "media_qa_report":
+        return False
     return _kind(item) in {"transcript", "qa", "prepared_remarks"} or any(
         marker in item.title.casefold() for marker in TRANSCRIPT_MARKERS
     )
@@ -138,6 +140,11 @@ def unitize_evidence(evidence: list[Evidence], max_chars: int = DEFAULT_UNIT_CHA
                 "title": item.title,
                 "url": item.url,
                 "source": source,
+                "provenance": (item.metadata or {}).get("provenance"),
+                "published_at": (item.metadata or {}).get("published_at"),
+                "retrieved_at": (item.metadata or {}).get("retrieved_at"),
+                "outlet": (item.metadata or {}).get("outlet"),
+                "qualitative_only": bool((item.metadata or {}).get("qualitative_only")),
                 "document_kind": kind,
                 "phase": unit_phase,
                 "position": index,
@@ -151,6 +158,11 @@ def unitize_evidence(evidence: list[Evidence], max_chars: int = DEFAULT_UNIT_CHA
                 "title": item.title,
                 "url": item.url,
                 "source": source,
+                "provenance": (item.metadata or {}).get("provenance"),
+                "published_at": (item.metadata or {}).get("published_at"),
+                "retrieved_at": (item.metadata or {}).get("retrieved_at"),
+                "outlet": (item.metadata or {}).get("outlet"),
+                "qualitative_only": bool((item.metadata or {}).get("qualitative_only")),
                 "document_kind": "structured_facts",
                 "phase": "structured_facts",
                 "position": 0,
