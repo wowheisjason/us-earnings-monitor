@@ -1,0 +1,56 @@
+name: Investor pipeline isolated cloud probe (NO SEND)
+on:
+  push:
+    branches:
+      - fix/20261111-daily-market-reliability
+    paths:
+      - '.github/workflows/isolated-market-probe.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    if: github.ref == 'refs/heads/fix/20261111-daily-market-reliability'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Real SEC discovery; no model and no send
+        env:
+          PYTHONPATH: src
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: |
+          set -o pipefail
+          python -m us_earnings_monitor --tickers AMD --dry-run \
+            --state /tmp/cloud-market-us-no-send-state.json \
+            --at 2026-11-10T19:30:00-05:00 2>&1 | tee /tmp/us-discovery.log
+          grep -q 'RUN_RESULT' /tmp/us-discovery.log
+      - name: Gemini minimal inference and grounding availability
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_ANALYSIS_MODEL: ${{ vars.GEMINI_ANALYSIS_MODEL || 'gemini-3.5-flash-lite' }}
+          GEMINI_IR_MODEL: ${{ vars.GEMINI_IR_MODEL || 'gemini-3.6-flash' }}
+        run: python scripts/provider_preflight.py | tee /tmp/gemini-provider-preflight.json
+      - name: Actual GDELT discovery and source publication-date filter (NO SEND)
+        env:
+          PYTHONPATH: src
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timezone
+          from us_earnings_monitor.news_briefing import discover_articles, dedupe_and_limit
+          items = dedupe_and_limit(discover_articles(datetime.now(timezone.utc)))
+          print('NEWS_CANDIDATES_WITH_CONFIRMED_DATE=',len(items))
+          for a in items[:5]:
+              print('NEWS_SOURCE=',a.source_name,'ARTICLE_DATE=',a.published_at.isoformat() if a.published_at else None)
+          assert all(a.published_at is not None for a in items)
+          PY
+      - name: Verify no Telegram write and no production state change
+        run: |
+          test ! -e /tmp/cloud-market-us-no-send-state.json
+          git diff --exit-code -- data/state.json

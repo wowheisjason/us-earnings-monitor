@@ -21,6 +21,11 @@ MAX_SUMMARY_CHARS = 300
 REQUEST_TIMEOUT = 25
 GDELT_RETRIES = 3
 GDELT_ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
+
+
+class NewsDiscoveryUnavailable(RuntimeError):
+    """Do not misrepresent an upstream outage as no important news."""
+
 SEARCHES = (
     "(inflation OR CPI OR GDP OR PMI OR central bank OR interest rate OR tariff OR export control OR oil OR energy)",
     "(AI OR GPU OR semiconductor OR HBM OR memory OR foundry OR TSMC OR NVIDIA OR AMD OR ASML)",
@@ -37,6 +42,7 @@ PREFERRED_DOMAINS = {
     "asia.nikkei.com": 90,
     "federalreserve.gov": 88,
     "sec.gov": 88,
+    "bls.gov": 88,
     "ecb.europa.eu": 88,
     "boj.or.jp": 88,
     "mof.go.jp": 88,
@@ -124,6 +130,7 @@ def _source_name(domain: str) -> str:
         "asia.nikkei.com": "Nikkei Asia",
         "federalreserve.gov": "Federal Reserve",
         "sec.gov": "SEC",
+        "bls.gov": "U.S. Bureau of Labor Statistics",
         "ecb.europa.eu": "ECB",
         "boj.or.jp": "日本銀行",
         "mof.go.jp": "日本財務省",
@@ -230,23 +237,32 @@ def discover_articles(now: datetime | None = None, session: requests.Session | N
     start = now - timedelta(hours=24)
     session = session or requests.Session()
     found: dict[str, Article] = {}
+    successful_queries = 0
     for query in SEARCHES:
         response = _gdelt_search(session, query)
         if response is None:
             continue
+        successful_queries += 1
         for raw in response.json().get("articles", []):
             url = canonicalize_url(str(raw.get("url", "")))
             seen_at = _parse_gdelt_date(str(raw.get("seendate", "")))
             domain = urlparse(url).netloc.removeprefix("www.").lower()
             title = str(raw.get("title", "")).strip()
-            if not url.startswith("https://") or not seen_at or not title or not domain:
+            if not url.startswith("https://") or not seen_at or not title or not domain or _domain_score(domain) <= 50:
                 continue
             if not start <= seen_at <= now or url in found:
                 continue
-            found[url] = Article(url, title, domain, seen_at, seen_at, source_name=_source_name(domain))
+            # GDELT seendate is discovery time, NOT verified publication time.
+            found[url] = Article(url, title, domain, seen_at, None, source_name=_source_name(domain))
+    if successful_queries == 0:
+        # The old behavior treated repeated GDELT HTTP 429 as an empty day and
+        # could send a false no-news Telegram. Preserve a failed run instead.
+        raise NewsDiscoveryUnavailable("No GDELT news query succeeded; source unavailable, not a no-news day")
+    if successful_queries < len(SEARCHES):
+        print(f"NEWS_DISCOVERY_DEGRADED={successful_queries}/{len(SEARCHES)} successful GDELT queries")
     enriched = [_page_metadata(session, item) for item in found.values()]
     return sorted(
-        (item for item in enriched if start <= item.effective_date <= now),
+        (item for item in enriched if item.published_at is not None and start <= item.published_at <= now),
         key=lambda item: (_domain_score(item.domain), item.effective_date),
         reverse=True,
     )
@@ -337,17 +353,19 @@ def validate_items(raw_items: Iterable[dict[str, Any]], evidence: Iterable[Artic
     by_url = {a.url: a for a in evidence}
     start = now - timedelta(hours=24)
     result: list[BriefingItem] = []
+    seen_urls: set[str] = set()
     for raw in raw_items:
         url = canonicalize_url(str(raw.get("url", "")))
         article = by_url.get(url)
-        if not article or not start <= article.effective_date <= now:
+        if not article or article.published_at is None or not start <= article.published_at <= now or url in seen_urls:
             continue
         headline = str(raw.get("headline", "")).strip()
         fact = str(raw.get("fact", "")).strip()
         summary = str(raw.get("summary", "")).strip()
-        source = str(raw.get("source", article.source_name)).strip() or article.source_name
+        source = article.source_name  # The model may not invent or rename a source.
         if not headline or not fact or not summary or len(summary) > MAX_SUMMARY_CHARS:
             continue
+        seen_urls.add(url)
         result.append(BriefingItem(
             emoji=str(raw.get("emoji", "📰"))[:2] or "📰",
             headline=headline,
