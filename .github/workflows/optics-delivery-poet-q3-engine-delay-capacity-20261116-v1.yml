@@ -1,0 +1,74 @@
+name: Deliver POET optics event v1
+
+on:
+  push:
+    branches:
+      - 'codex/optics-delivery-poet-q3-engine-delay-capacity-20261116-v1'
+    paths:
+      - '.github/workflows/optics-delivery-poet-q3-engine-delay-capacity-20261116-v1.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: optics-delivery-poet-q3-engine-delay-capacity-20261116-v1
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    if: ${{ github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      EVENT_KEY: 'poet-q3-engine-delay-capacity-20261116'
+      EVENT_VERSION: '1'
+    steps:
+      - name: Send verified report once
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.parse
+          import urllib.request
+
+          report = "【AI光通訊重大進展｜POET Q3：3萬顆光引擎出貨延至2027Q2，產能擴張進入執行】\n\n1) 重大變化與門檻\n公告日／事件日：2026-11-16（Q3結果與營運更新）；預計量產／出貨日：原定2026年的30,000顆光引擎，現延至2027年第二季前完成。公司明確把延誤歸因於晶圓與元件供應收緊，以及新生產技術的良率爬坡。這不是展示或一般行銷，而是已改變短期出貨／營收時點與2027年執行風險；同時公司啟動約10倍晶圓能力與檳城組裝擴產，足以改變中期營收承載能力，故達通知門檻。相較既有可存取的光通訊通知分支，未找到同一POET事件／版本；無法保證涵蓋不可存取的外部歷史。\n\n2) 已確認事實\n• Q3營收1,026,087美元，季增80%、年增244%，為連續第7季成長；淨損760萬美元。季末現金及短期投資7.743億美元，Q3營運現金流出1,270萬美元。這是實績，但營收主要仍為NRE／產品收入，不能視為大規模光引擎量產證明。\n• 30,000顆原定2026年出貨的光引擎延至2027Q2；Q4出貨預期高於前九個月合計屬管理層指引，非實績。\n• 季內取得既有客戶240萬美元採購單，並與一家Tier 1雷射公司簽外部光源引擎開發協議；季後再取得另一家Tier 1雷射製造商首張採購單。客戶名稱與訂單對應產品／交期未公開。\n• 目前9個活躍客戶、16個專案；管理層預期其中7個於2027年進入採用POET引擎的生產。四名客戶各有逾100萬美元訂單；均屬公司披露，尚非全數營收認列。\n• 晶圓處理能力由2025年月均約50片增至2026年月均約120片；已承諾設備對應約1,250片／月，生產力改善後約1,500片／月。檳城兩階段引擎組裝擴產第一階段執行中，第二階段預計2027年底完成；15,000平方英尺Class 1K潔淨室已建成，規劃2027年再增一倍。新線投資逾4,500萬美元，設備預計安裝至2027年4月，目標2027年中可製造。\n• 1.6T光引擎預定2027年爬坡；Blazar混合雷射預計2027上半年送樣、2028年初量產。以上為時程指引，不是已量產。\n官方來源：\n公司新聞稿（2026-11-16）：https://www.globenewswire.com/news-release/2026/11/16/3403353/0/en/poet-technologies-reports-record-q3-2026-revenue-of-1-03m-up-244.html\nSEC MD&A（2026-11-16）：https://www.sec.gov/Archives/edgar/data/1437424/000149315226051994/ex99-2.htm\n\n3) 受影響供應商與角色\n• POET Technologies（NASDAQ: POET）：矽光子光學中介層、800G／1.6T光引擎與外部光源；直接承受供應／良率延誤，也直接受益於新增訂單與擴產。\n• Globetronics Manufacturing與NationGate Solution：SEC文件已披露的馬來西亞製造合作方；與POET檳城量產體系互補，但本次公告未量化各自新增訂單或營收，不能直接歸因。\n• 晶圓、雷射／元件供應商：公司未具名，不能猜測InP、EML或CW雷射供應者，也不能由POET個案推論整條光通訊鏈缺貨。\n\n4) 合理推論\n短期（至2027Q2）：30,000顆遞延會把原可望於2026認列的產品收入後移，並增加客戶驗證、模組改版與良率爬坡風險。中期（2027下半年起）：若1,250–1,500片／月能力、組裝線與7個量產專案同步落地，營收上限與交付能力可顯著提高；但「設備能力」不等於有效產能，仍需良率、材料供應與客戶資格認證成立。新增Tier 1合作與採購單提高商業可信度，但未公開客戶、數量與時程，不能推導市占或收入規模。\n\n5) 投資機會與風險\n機會：POET的新增訂單、1.6T爬坡與外部光源合作，若在2027轉成重複量產訂單，可能改善產品收入占比與固定成本吸收；馬來西亞封裝／組裝生態系可能間接受益。\n風險：30,000顆延遲、良率／供應瓶頸、客戶認證延長、設備閒置或2027–2028產能過剩；可插拔EML、矽光子外部CW雷射、CPO／NPO等架構彼此競爭或互補，不能混為單一路線。現金充足降低融資壓力，但擴產投資與持續虧損仍可能壓低資本效率。未查即時估值，不判斷市場是否已反映。\n\n6) 待驗證與追蹤\n追蹤30,000顆的實際季度出貨／收入、Q4出貨是否超過前九月合計、240萬美元PO的產品與交期、兩家Tier 1客戶是否公開、晶圓與元件交期／良率、2027年中設備ready後的有效稼動率，以及7個預期量產專案實際轉單數。反證包括再度延後、訂單取消／縮量、設備到位但良率不達標，或客戶改採替代架構。"
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          chat_id = os.environ["TELEGRAM_CHAT_ID"]
+          url = f"https://api.telegram.org/bot{token}/sendMessage"
+          payload = urllib.parse.urlencode({
+              "chat_id": chat_id,
+              "text": report,
+              "disable_web_page_preview": "true",
+          }).encode("utf-8")
+
+          try:
+              request = urllib.request.Request(url, data=payload, method="POST")
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  data = json.loads(response.read().decode("utf-8"))
+              message_id = data.get("result", {}).get("message_id")
+              if data.get("ok") is not True or not isinstance(message_id, int) or message_id <= 0:
+                  raise RuntimeError(f"Telegram did not confirm delivery: {data}")
+              receipt = {
+                  "accepted": True,
+                  "message_id": message_id,
+                  "event": os.environ["EVENT_KEY"],
+                  "version": int(os.environ["EVENT_VERSION"]),
+              }
+              with open("telegram-receipt.json", "w", encoding="utf-8") as handle:
+                  json.dump(receipt, handle, ensure_ascii=False, indent=2)
+              print(json.dumps(receipt, ensure_ascii=False))
+          except Exception as exc:
+              print(f"Delivery status unknown or failed; do not retry blindly: {exc}", file=sys.stderr)
+              raise
+          PY
+      - name: Save delivery receipt
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
+          if-no-files-found: error
+          retention-days: 90
