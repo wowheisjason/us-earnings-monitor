@@ -1,0 +1,74 @@
+name: Deliver Lambda NVIDIA CPO deployment v1
+
+on:
+  push:
+    branches:
+      - 'codex/optics-delivery-lambda-nvidia-cpo-10000gpu-deployment-20261116-v1'
+    paths:
+      - '.github/workflows/optics-delivery-lambda-nvidia-cpo-10000gpu-deployment-20261116-v1.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: optics-delivery-lambda-nvidia-cpo-10000gpu-deployment-20261116-v1
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    if: ${{ github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      EVENT_KEY: 'lambda-nvidia-cpo-10000gpu-deployment-20261116'
+      EVENT_VERSION: '1'
+    steps:
+      - name: Send verified report once
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.parse
+          import urllib.request
+
+          report = "【AI光通訊重大進展｜Lambda完成逾1萬顆GPU的NVIDIA CPO大型部署】\n\n1) 重大變化與門檻\n公告日：2026-11-16；部署狀態：Lambda與NVIDIA均稱已在加拿大魁北克AI資料中心實際使用／完成部署。Lambda以NVIDIA Photonics共同封裝光學（CPO）交換器連接逾10,000顆NVIDIA Blackwell Ultra GPU，並公布與可插拔光學的實機比較。2025年11月僅為規劃採用，2026年3月仍屬早期部署預告；本次新增證據是大規模生產環境落地及量化運行結果，屬實質客戶採用與里程碑落實，達通知門檻。已查可存取的optics delivery分支，未見同一事件／版本；不可存取的外部歷史無法保證全面去重。\n\n2) 已確認事實\n• 客戶／場址：Lambda魁北克園區；逾10,000顆GB300 NVL72／Blackwell Ultra GPU。\n• 網路設備：NVIDIA Quantum-X Photonics CPO交換器；每台144個800Gb/s埠、液冷、18個可現場更換的外部光源（ELS）。光引擎與交換ASIC同封裝，不是800G前面板可插拔模組。\n• Lambda公司測試：相較傳統可插拔光學，吞吐量相同；延遲在機架層低3.8%、pod層低10.1%；光學元件溫度中位數36°C，對照51°C，且訊號完整性更穩定。\n• NVIDIA宣稱最高5倍電力效率、最高15倍可靠度；這是供應商／客戶測試與產品主張，未見第三方長期故障資料，不能當成獨立驗證。\n• 未披露交換器數量、單價、採購金額、外部光源更換率或對NVIDIA單季營收貢獻。\n官方來源：\nLambda（2026-11-16）：https://lambda.com/blog/worlds-first-large-scale-deployment-of-nvidia-photonics-switches-with-cpo\nNVIDIA（2026-11-16）：https://blogs.nvidia.com/blog/lambda-photonics/\nNVIDIA CPO供應鏈公告：https://nvidianews.nvidia.com/news/nvidia-spectrum-x-co-packaged-optics-networking-switches-ai-factories\n\n3) 受影響供應商與角色\n• NVIDIA（NASDAQ: NVDA）：CPO交換器、Quantum-X InfiniBand平台及網路軟體；直接受益於首個可量化的大型生產部署。\n• Lambda（私人公司）：實際AI資料中心客戶／營運商；本次為採用與測試證據，不等同公開採購金額。\n• Coherent（NYSE: COHR）：NVIDIA已明確披露其供應Photonic交換器使用的可更換外部雷射模組，屬直接光源曝險；本次未披露供貨數量或收入。\n• 台積電（TWSE: 2330／NYSE: TSM）：NVIDIA披露其矽光子與COUPE整合製程支援CPO光引擎，屬直接製造平台曝險，但本部署的晶圓／封裝收入未量化。\n• NVIDIA公開CPO生態系另包括Lumentum、SPIL／日月光、鴻海、Fabrinet、Corning、Browave、SENKO、住友電工與TFC；屬不同層級的雷射、封裝、系統、光纖／連接器合作關係，不能把名單等同本次訂單或營收認列。\n\n4) 合理推論\n大於一萬顆GPU的生產部署，把CPO由「客戶計畫／送樣」推進至實際AI叢集運行，降低CPO在熱管理、訊號穩定與維修性上的商用驗證風險。若結果可在其他雲端客戶複製，NVIDIA網路平台、外部CW雷射、矽光子晶圓、光學封裝與高密度連接器需求可隨CPO交換器放量；成立條件是長期故障率、維修成本、良率及系統總成本持續優於可插拔架構。本事件只驗證Quantum-X交換層CPO，不能推論所有800G／1.6T可插拔模組會被取代。\n\n5) 投資機會與風險\n受益候選為NVDA及其已公開的CPO製造／雷射／封裝生態系，催化劑是CoreWeave、OCI、Meta、Microsoft等後續部署規模與交換器收入披露。受壓風險主要在交換器端可插拔光學的部分需求與retimer價值，但機架間、長距離及非CPO設備仍需可插拔模組。\n風險包括：客戶自測偏差、缺乏長期現場MTBF資料、ELS或封裝良率瓶頸、液冷與維修複雜度、單一平台鎖定、CPO成本高於預期，以及NPO/LPO或下一代可插拔技術改善。未查即時股價／估值，不判斷已反映或低估。\n\n6) 待驗證與追蹤\n追蹤實際交換器台數、訂單金額、CPO網路承載的正式付費工作負載、12個月MTBF／中斷率、ELS更換頻率、實測每bit功耗與總持有成本；以及其他首批客戶是否由「規劃採用」進入可量化部署。若後續顯示部署僅為局部試驗、可靠度未達宣稱或擴展停滯，將構成反證。"
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          chat_id = os.environ["TELEGRAM_CHAT_ID"]
+          url = f"https://api.telegram.org/bot{token}/sendMessage"
+          payload = urllib.parse.urlencode({
+              "chat_id": chat_id,
+              "text": report,
+              "disable_web_page_preview": "true",
+          }).encode("utf-8")
+
+          try:
+              request = urllib.request.Request(url, data=payload, method="POST")
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  data = json.loads(response.read().decode("utf-8"))
+              message_id = data.get("result", {}).get("message_id")
+              if data.get("ok") is not True or not isinstance(message_id, int) or message_id <= 0:
+                  raise RuntimeError(f"Telegram did not confirm delivery: {data}")
+              receipt = {
+                  "accepted": True,
+                  "message_id": message_id,
+                  "event": os.environ["EVENT_KEY"],
+                  "version": int(os.environ["EVENT_VERSION"]),
+              }
+              with open("telegram-receipt.json", "w", encoding="utf-8") as handle:
+                  json.dump(receipt, handle, ensure_ascii=False, indent=2)
+              print(json.dumps(receipt, ensure_ascii=False))
+          except Exception as exc:
+              print(f"Delivery status unknown or failed; do not retry blindly: {exc}", file=sys.stderr)
+              raise
+          PY
+      - name: Save delivery receipt
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
+          if-no-files-found: error
+          retention-days: 90
