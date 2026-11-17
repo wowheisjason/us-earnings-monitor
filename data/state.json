@@ -2364,7 +2364,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2729,7 +2729,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3027,7 +3027,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3338,7 +3338,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3572,7 +3572,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3723,7 +3723,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4172,7 +4172,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4329,7 +4329,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4403,7 +4403,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4479,7 +4479,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4629,7 +4629,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4780,7 +4780,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4854,7 +4854,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5018,7 +5018,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5178,7 +5178,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T22:43:48-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5478,7 +5478,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5556,7 +5556,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5629,7 +5629,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5701,7 +5701,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5777,7 +5777,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5853,39 +5853,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T11:59:34-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
             "provider": "gemini_search",
             "ok": false,
-            "seconds": 0.0,
+            "seconds": 0.212,
             "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
             "category": "search_quota_blocked"
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.057,
+            "seconds": 0.054,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/FN-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.095,
+            "seconds": 1.194,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.073,
+            "seconds": 0.05,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/FN-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5905,10 +5905,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-16T11:59:34-05:00",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-17T00:03:28-05:00",
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -5925,7 +5925,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T11:59:34-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5939,25 +5939,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.105,
+            "seconds": 0.038,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AAPL-2026-Q4",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.18,
+            "seconds": 0.389,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.095,
+            "seconds": 0.027,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AAPL-2026-Q4"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -5977,11 +5977,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 22,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 23,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -5998,7 +5998,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T11:59:34-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6012,25 +6012,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.133,
+            "seconds": 0.026,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/PLTR-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.035,
+            "seconds": 0.048,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.098,
+            "seconds": 0.025,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/PLTR-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6050,11 +6050,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 22,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 23,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6072,7 +6072,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6094,7 +6094,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.159,
+            "seconds": 0.308,
             "documents": 0,
             "partial": false
           },
@@ -6107,7 +6107,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6127,11 +6127,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 20,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 21,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6150,7 +6150,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6164,25 +6164,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.136,
+            "seconds": 0.021,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/LITE-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.289,
+            "seconds": 0.732,
             "documents": 2,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.067,
+            "seconds": 0.019,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/LITE-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6204,11 +6204,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 20,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 21,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6231,7 +6231,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6245,25 +6245,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.101,
+            "seconds": 0.025,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMD-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.586,
+            "seconds": 0.681,
             "documents": 7,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.076,
+            "seconds": 0.034,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/AMD-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6286,11 +6286,11 @@
           "has_performance_review": false,
           "has_presentation": true
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 20,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 21,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6307,7 +6307,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6329,7 +6329,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.086,
+            "seconds": 1.089,
             "documents": 0,
             "partial": false
           },
@@ -6342,7 +6342,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6362,10 +6362,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-16T11:59:34-05:00",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-17T00:03:28-05:00",
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6382,7 +6382,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T11:59:34-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6396,25 +6396,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.064,
+            "seconds": 0.024,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/Q-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.042,
+            "seconds": 1.097,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.091,
+            "seconds": 0.019,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/Q-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6434,10 +6434,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-16T11:59:34-05:00",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-17T00:03:28-05:00",
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6456,7 +6456,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6470,25 +6470,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.067,
+            "seconds": 0.031,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/COHR-2027-Q1",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.577,
+            "seconds": 0.309,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.036,
+            "seconds": 0.025,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/COHR-2027-Q1"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6509,11 +6509,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 20,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 21,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6532,7 +6532,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6546,25 +6546,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.125,
+            "seconds": 0.018,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/NET-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.073,
+            "seconds": 1.065,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.084,
+            "seconds": 0.02,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/NET-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6585,10 +6585,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-16T11:59:34-05:00",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-17T00:03:28-05:00",
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6606,7 +6606,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6628,7 +6628,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.284,
+            "seconds": 0.598,
             "documents": 0,
             "partial": false
           },
@@ -6641,7 +6641,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6661,11 +6661,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 13,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 14,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6682,7 +6682,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6704,7 +6704,7 @@
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.25,
+            "seconds": 0.485,
             "documents": 0,
             "partial": false
           },
@@ -6717,7 +6717,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6737,11 +6737,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 13,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 14,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6759,7 +6759,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6773,25 +6773,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.034,
+            "seconds": 0.02,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWV-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.412,
+            "seconds": 0.492,
             "documents": 1,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.074,
+            "seconds": 0.033,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWV-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6813,11 +6813,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_checked_at": "2026-11-16T11:59:34-05:00",
-        "official_ir_check_count": 9,
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_checked_at": "2026-11-17T00:03:28-05:00",
+        "official_ir_check_count": 10,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6834,7 +6834,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6856,7 +6856,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.205,
+            "seconds": 1.114,
             "documents": 0,
             "partial": false
           },
@@ -6869,7 +6869,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6889,10 +6889,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-16T11:59:34-05:00",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-17T00:03:28-05:00",
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6909,7 +6909,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T23:48:32-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6931,7 +6931,7 @@
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.252,
+            "seconds": 1.088,
             "documents": 0,
             "partial": false
           },
@@ -6944,7 +6944,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -6964,10 +6964,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-16T11:59:34-05:00",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-17T00:03:28-05:00",
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     },
@@ -6984,7 +6984,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-16T11:59:34-05:00",
+      "updated_at": "2026-11-17T00:03:28-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6998,25 +6998,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.032,
+            "seconds": 0.017,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CBRS-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.092,
+            "seconds": 1.054,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.031,
+            "seconds": 0.059,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CBRS-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-16T11:59:34-05:00",
+        "ir_retrieval_last_at": "2026-11-17T00:03:28-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7036,10 +7036,10 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-16T11:59:34-05:00",
+        "last_collection_check_at": "2026-11-17T00:03:28-05:00",
         "transcript_status": "UNKNOWN",
-        "official_ir_last_attempt_incomplete": "2026-11-16T11:59:34-05:00",
-        "next_ir_retry_at": "2026-11-16T23:59:34-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-17T00:03:28-05:00",
+        "next_ir_retry_at": "2026-11-17T12:03:28-05:00"
       },
       "delivery": {}
     }
@@ -7048,13 +7048,13 @@
   "provider_health": {
     "gemini_search": {
       "status": "search_quota_blocked",
-      "last_failure_at": "2026-11-16T11:59:34-05:00",
-      "blocked_until": "2026-11-16T17:59:34-05:00",
+      "last_failure_at": "2026-11-17T00:03:28-05:00",
+      "blocked_until": "2026-11-17T06:03:28-05:00",
       "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}"
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-16T11:59:34-05:00",
+      "last_success_at": "2026-11-17T00:03:28-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -35591,7 +35591,8 @@
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
               "next_ir_retry_at": "2026-11-13T13:49:13-05:00"
             },
-            "deterministic_validation_issues": []
+            "deterministic_validation_issues": [],
+            "deterministic_report_issues": []
           }
         },
         "analysis": {
@@ -35695,6 +35696,108 @@
               "unbacked_derived_rate:20.9%"
             ],
             "strong_claim_errors": []
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "本季營收與毛利率年對年顯著成長，但客戶需求結構出現分化：Data Center 產品需求超越可用供應，而 Client 產品需求較上半年放緩。",
+                "why_it_matters": "反映雖然部分高階運算需求強勁支撐營收，但 PC 端面臨零組件價格、預算及庫存管理壓力，需求持續性存疑。",
+                "fact_basis": [
+                  "Third-quarter revenue was $16.5 billion, up 21% year-over-year.",
+                  "During Q3 2026, customer demand for certain client products eased as compared to the first half of the year, while demand for certain data center products continued to exceed available supply."
+                ],
+                "inference": "營收成長主要受特定資料中心相關需求驅動，但 Client 端動能放緩與供應鏈限制可能壓抑未來幾季的成長廣度。",
+                "confidence": "high"
+              },
+              {
+                "signal": "營運現金流與調整後自由現金流改善，且完成現金增資強化資本結構，但產業整體面臨關鍵零組件短缺及廠房事故影響。",
+                "why_it_matters": "雖然現金與營運現金流擴大提升短期財務韌性，但供應鏈瓶頸與突發製造中斷可能實質限制出貨能力。",
+                "fact_basis": [
+                  "Net cash provided by operating activities for the nine months ended September 26, 2026 was $13,184 million.",
+                  "We expect the industry-wide shortages of substrates, memory and other critical components to persist into next year.",
+                  "An October 2026 accident at our manufacturing facility in Kiryat Gat, Israel resulted in employee casualties and injuries and halted manufacturing operations for about two weeks."
+                ],
+                "inference": "資本結構因增資而大幅強化，但產能供給面的不確定性增加，短期內可能抵銷部分需求紅利。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q3 2026 淨營收為 $16,513M，較去年同期之 $13,653M 成長 20.9%。",
+                "Data Center 需求強勁且超過可用供應，Client 產品需求則因零組件價格與預算緊縮而較上半年減弱。"
+              ],
+              "margin_unit_economics": [
+                "Q3 2026 GAAP 毛利率為 43.0%，非 GAAP 毛利率為 44.1%，較去年同期分別提升 4.8 及 4.1 個百分點。",
+                "GAAP 毛利為 $7,096M，非 GAAP 毛利為 $7,284M。"
+              ],
+              "cash_capital_intensity": [
+                "前九個月營運現金流為 $13,184M，Q3 單季營運現金流為 $5.1B。",
+                "Q3 調整後自由現金流 (Adjusted FCF) 為 $1,639M，高於去年同期的 $896M。",
+                "8月完成普通股現金增資，淨募得資金達 $22.6B。"
+              ]
+            },
+            "guidance_assessment": [
+              "預估 Q4 2026 營收介於 $15.0B 至 $16.0B 之間。",
+              "預估 Q4 2026 GAAP 稀釋每股盈餘為 $0.10，非 GAAP 稀釋每股盈餘為 $0.25。"
+            ],
+            "demand_quality": [
+              "Data Center 產品需求持續超過可用供應，顯示運算需求具備深度，但受限於記憶體等零組件供給。",
+              "Client 市場需求因元件價格高漲、IT 預算受限及嚴格庫存管理而下滑，無法判定全面性擴張品質。",
+              "無法從現有證據中取得客戶集中度、NRR 或大規模客戶 cohort 的具體數據。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "Data Center 產品需求強勁反映基礎設施投資浪潮下的市占與需求支撐，但未有直接證據顯示具備定價權或絕對 control point。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "產業面臨基板、記憶體等關鍵零組件短缺，預期將持續至明年，可能進一步限制出貨與營收實現。",
+              "以色列 Kiryat Gat 製造廠於 2026 年 10 月發生事故並暫停營運約兩週，對短期產能造成負面衝擊。",
+              "中東地區地緣政治風險可能使相關營運設施面臨潛在威脅。"
+            ],
+            "watch_items": [
+              "Q4 2026 財測目標（營收 $15.0B 至 $16.0B）之達成情況。",
+              "關鍵零組件短缺問題在未來幾季對營收的實質限制程度。",
+              "以色列廠復工後的產能恢復進度與實際良率影響。"
+            ],
+            "confidence": 85,
+            "telegram_draft": "INTC FY2026 Q3\n\n💡 投資結論與邏輯:\n• 本季營收雙位數成長且毛利率顯著改善，顯示獲利能力谷底回升；但需求結構出現分化，Data Center 產品需求超越可用供應，Client 端需求則因零組件價格與預算緊縮而放緩。\n• 營運現金流與調整後自由現金流改善，且完成大規模現金增資大幅強化財務結構；然而產業關鍵零組件瓶頸與突發工安事故仍為短期營運帶來潛在變數。\n\n📊 關鍵數據與財測:\n• 營收與需求：Q3 淨營收顯示為 $16,513M，年增 20.9%；Data Center 產品需求持續超過可用供應，但 Client 產品需求較上半年放緩，反映成長廣度受限。\n• 利潤率表現：Q3 GAAP 毛利率顯示為 43.0% (年增 4.8 ppts)，非 GAAP 毛利率顯示為 44.1% (年增 4.1 ppts)；GAAP 毛利顯示為 $7,096M，非 GAAP 毛利顯示為 $7,284M，反映毛利絕對額擴張但仍不能證實定價權提升。\n• 現金流與資本結構：Q3 營運現金流顯示為 $5.1B，前九月累計達 $13,184M；Q3 調整後自由現金流顯示為 $1,639M (去年同期為 $896M)；8月完成普通股增資，淨募得資金顯示為 $22.6B。\n• 營運指引：預估 Q4 營收介於 $15.0B 至 $16.0B 之間；預估 Q4 GAAP 稀釋每股盈餘為 $0.10，非 GAAP 稀釋每股盈餘為 $0.25。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 管理層表示營運動能主要受惠於基礎設施相關需求，帶動 Data Center 產品供不應求；但 Client 市場受到關鍵零組件價格高漲與企業庫存控管壓抑。\n• 原始資料未包含法說會 Q&A 逐字稿，無管理層問答攻防紀錄。\n\n⚠️ 風險、反證與待驗證:\n• 供應鏈短缺風險：基板與記憶體等關鍵零組件短缺預計持續至明年，可能限制出貨與營收實現。\n• 製造端突發事故：2026年10月以色列 Kiryat Gat 廠房發生事故暫停營運約兩週，可能對短期供給與成本造成負面影響。\n• 待驗證指標：Q4 營收目標是否能落實於指引區間中位數，以及零組件短缺對毛利率的實質侵蝕程度。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 80,
+            "unsupported_claims": [],
+            "numerical_errors": [],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [],
+            "critical_issues": [
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:numeric_provenance",
+              "deterministic_v4_gate:strong_claim"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "INTC FY2026 Q3\n\n💡 投資結論與邏輯:\n• 本季營收與毛利率年對年顯著成長，但需求結構出現分化：Data Center 產品需求超越可用供應，而 Client 產品需求則因零組件價格與預算緊縮而較上半年放緩。\n• 營運現金流與調整後自由現金流改善，且完成現金增資強化資本結構，但產業整體面臨關鍵零組件短缺及廠房事故影響，限制短期出貨動能。\n\n📊 關鍵數據與財測:\n• 營收表現：Q3 淨營收為 $16,513M，年增 20.9%；Data Center 產品需求持續超過可用供應，但 Client 產品需求較上半年放緩，反映成長廣度受限。\n• 毛利與獲利：Q3 GAAP 毛利率為 43.0% (年增 4.8 ppts)，非 GAAP 毛利率為 44.1% (年增 4.1 ppts)；GAAP 毛利為 $7,096M，非 GAAP 毛利為 $7,284M，反映絕對額擴張但尚不足以證實定價權提升。\n• 現金流與資金額度：Q3 營運現金流為 $5.1B (前九月累計 $13,184M)；Q3 調整後自由現金流為 $1,639M (去年同期為 $896M)；8月完成普通股現金增資，淨募得 $22.6B。\n• 營運指引：預估 Q4 營收介於 $15.0B 至 $16.0B 之間；預估 Q4 GAAP 稀釋每股盈餘為 $0.10，非 GAAP 稀釋每股盈餘為 $0.25。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能：管理層表示資料中心相關需求在 AI 基礎設施投資下持續強勁，帶動產品供不應求；但 Client 市場受到零組件價格高漲與庫存控管壓抑。\n• 問答紀錄：原始資料未包含法說會 Q&A 逐字稿，無管理層問答攻防紀錄。\n\n⚠️ 風險、反證與待驗證:\n• 供應鏈短缺風險：基板與記憶體等關鍵零組件短缺預計持續至明年，可能限制出貨與營收實現。\n• 製造端突發事故：2026年10月以色列 Kiryat Gat 廠房發生事故暫停營運約兩週，可能對短期供給與成本造成負面影響。\n• 待驗證指標：Q4 營收目標是否能落實於指引區間中位數，以及零組件短缺對毛利率的實質侵蝕程度。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [
+              "kpi_without_readthrough:現金流與資金額度：Q3 營運現金流為 $5.1B (前九月累計 $13,184M)；Q3 調整後自由現金流為 $1,639M (去年同期為 $896M)；8月完成普通股現金增資，淨",
+              "kpi_without_readthrough:營運指引：預估 Q4 營收介於 $15.0B 至 $16.0B 之間；預估 Q4 GAAP 稀釋每股盈餘為 $0.10，非 GAAP 稀釋每股盈餘為 $0.25。"
+            ],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:20.9%"
+            ],
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
           }
         }
       },
