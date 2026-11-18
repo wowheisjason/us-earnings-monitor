@@ -167,14 +167,14 @@ def test_event_clock_analyzes_immediately_when_transcript_found():
     assert ready_for_analysis(event, now)
 
 
-def test_event_clock_waits_for_short_collection_window_then_allows_v1():
+def test_event_clock_allows_verified_first_report_while_qa_collection_continues():
     first_seen = datetime(2026, 9, 1, 7, 0, tzinfo=ZoneInfo("America/New_York"))
     event = dell_event(first_seen.isoformat())
     event.collection_status = {
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
         "official_ir_checked_at": first_seen.isoformat(),
     }
-    assert not ready_for_analysis(event, first_seen + timedelta(hours=2))
+    assert ready_for_analysis(event, first_seen + timedelta(minutes=1))
     assert ready_for_analysis(event, first_seen + timedelta(hours=4, minutes=1))
 
 
