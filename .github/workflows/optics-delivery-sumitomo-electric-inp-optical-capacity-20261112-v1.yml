@@ -1,0 +1,75 @@
+name: Deliver Sumitomo InP optical capacity v1
+
+on:
+  push:
+    branches:
+      - 'codex/optics-delivery-sumitomo-electric-inp-optical-capacity-20261112-v1'
+    paths:
+      - '.github/workflows/optics-delivery-sumitomo-electric-inp-optical-capacity-20261112-v1.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: optics-delivery-sumitomo-electric-inp-optical-capacity-20261112-v1
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    if: ${{ github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      EVENT_KEY: 'sumitomo-electric-inp-optical-capacity-20261112'
+      EVENT_VERSION: '1'
+    steps:
+      - name: Send verified report once
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.parse
+          import urllib.request
+
+          report = "【住友電工：資料中心光元件與InP擴產目標上調，新增2028–2029量化路線】\n\n1) 重大變化及門檻\n公告／簡報日：2026-11-12。住友電工（5802.T）在官方中期決算說明會，首次把AI資料中心相關擴產與中期財務目標量化：DC棟內光元件產能規劃至2029年達2024年約7倍，InP基板產能（按尺寸標準化、含非DC用途）約4.5倍；資訊通信部門2028年度目標為營收9,700億日圓、營業利益2,400億日圓，對比2026年度公司預估5,100億／1,560億日圓。這不是出貨實績，但屬重大產能與營收前景的新指引，足以改變對住友電工在InP、EML、CW雷射及CPO光源競爭地位的判斷，達通知門檻。\n\n相較上次通知（事件sumitomo-electric-q2-optical-ai-20261030 v1），新增的是2028–2029量化產能／財務路線及CPO/NPO時間軸；不是重複上半年實績與全年上修。\n\n2) 已確認事實\n• 光元件產能：以2024為基準，2026約2倍、2028再約2倍、2029再約1.7倍；公司圖示總計約7倍（分段相乘約6.8倍，為四捨五入）。\n• InP基板產能：2029約為2024的4.5倍；圖示分段約1.8倍、1.7倍、1.5倍（相乘約4.6倍）。此口徑按基板尺寸標準化且包含非資料中心用途，不能全部視為AI光通訊產能。\n• 公司稱已開發並量產DC光配線用光元件，例包括200G/波EML及Scale-up高功率CW-LD；另把350mW級CW-LD列為次世代技術。簡報沒有披露絕對月產能、良率、ASP或具名客戶。\n• 產品路線：102.4Tb/s第一代CPO/NPO自2027年、204.8Tb/s第二代CPO自2030年；這是公司規劃，不是已完成客戶量產認證。\n• 財務目標：資訊通信部門2026年度預估營收5,100億日圓、營業利益1,560億；2028年度目標9,700億、2,400億。後者為管理層目標，尚非實績。\n官方IR頁（2026-11-12會議）：https://sumitomoelectric.com/jp/ir/library\n官方簡報：https://sumitomoelectric.com/sites/default/files/2026-11/download_documents/20261112_ceo_data.pdf\n\n3) 受影響供應商與角色\n• 住友電工／SEDI（5802.T）：InP基板、磊晶／EML、CW-LD、可調諧雷射及光纖連接器的垂直整合供應商，直接曝險。\n• JX Advanced Metals（5016.T）、AXT（NASDAQ: AXTI）：InP基板競爭者；JX已另行公布最高1,200億日圓、4年擴產政策，顯示上游供給正在擴張，但不能由單一公司推論全產業仍短缺。\n• Coherent（NYSE: COHR）、Lumentum（NASDAQ: LITE）、Mitsubishi Electric（6503.T）：在200G EML、高功率CW雷射或相關光元件競爭；本事件未證明其訂單得失。\n• 矽光PIC、光引擎、封裝、模組及交換器商屬互補／替代環節；住友未公開客戶或BOM，不能指定台美廠已取得訂單。\n\n4) 合理推論\n若7倍光元件與4.5倍InP擴產按期、良率與利用率達標，住友的材料到雷射垂直整合可降低供應風險，並同時承接可插拔EML與矽光／CPO外置CW光源需求。簡報引用LightCounting估計，2028年DC內雷射晶片數量組合可能為EML 19%、CW-LD 73%、高功率CW 8%；這是外部市場預測，不是住友實際訂單。即使EML占比下降，總量成長仍可能讓EML出貨增加，不能直接判定EML供應商受壓。\n\n5) 投資機會及風險\n機會：住友可受惠於InP基板、200G EML、CW-LD與CPO/NPO光源多路徑成長；催化劑是絕對產能、量產良率、1.6T／CPO認證、具名長約及資訊通信部門再上修。競爭者擴產也可能擴大設備、磊晶與基板生態系需求。\n風險：此為前瞻目標而非訂單；InP口徑含非DC用途；擴產折舊、4–6吋良率、客戶集中與ASP下滑可能壓毛利。若CPO延後，350mW級CW-LD需求可能後移；若各家同步擴產，2028–2029可能由短缺轉為過剩。未查即時估值，不判斷股價已反映或低估。\n\n6) 待驗證及追蹤\n追蹤各年度資本支出、廠區與設備到位日、InP片數／月、EML與CW-LD顆數／月、良率與稼動率、200G單波／1.6T實際出貨、CPO具名客戶及營收拆分。公司未披露客戶與訂單，第三方也尚未獨立驗證7倍／4.5倍產能落實；若後續削減資本支出、延後投產或利用率下滑，將構成反證。"
+          if len(report) > 4096:
+              raise RuntimeError("Telegram report exceeds 4096 characters")
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          chat_id = os.environ["TELEGRAM_CHAT_ID"]
+          url = f"https://api.telegram.org/bot{token}/sendMessage"
+          payload = urllib.parse.urlencode({
+              "chat_id": chat_id,
+              "text": report,
+              "disable_web_page_preview": "true",
+          }).encode("utf-8")
+          try:
+              request = urllib.request.Request(url, data=payload, method="POST")
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  data = json.loads(response.read().decode("utf-8"))
+              message_id = data.get("result", {}).get("message_id")
+              if data.get("ok") is not True or not isinstance(message_id, int) or message_id <= 0:
+                  raise RuntimeError(f"Telegram did not confirm delivery: {data}")
+              receipt = {
+                  "accepted": True,
+                  "message_id": message_id,
+                  "event": os.environ["EVENT_KEY"],
+                  "version": int(os.environ["EVENT_VERSION"]),
+              }
+              with open("telegram-receipt.json", "w", encoding="utf-8") as handle:
+                  json.dump(receipt, handle, ensure_ascii=False, indent=2)
+              print(json.dumps(receipt, ensure_ascii=False))
+          except Exception as exc:
+              print(f"Delivery status unknown or failed; do not retry blindly: {exc}", file=sys.stderr)
+              raise
+          PY
+      - name: Save delivery receipt
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
+          if-no-files-found: error
+          retention-days: 90
