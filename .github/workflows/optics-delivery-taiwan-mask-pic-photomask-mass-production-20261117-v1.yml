@@ -1,0 +1,118 @@
+name: Deliver Taiwan Mask PIC photomask update v1
+
+on:
+  push:
+    branches:
+      - codex/optics-delivery-taiwan-mask-pic-photomask-mass-production-20261117-v1
+    paths:
+      - .github/workflows/optics-delivery-taiwan-mask-pic-photomask-mass-production-20261117-v1.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: optics-delivery-taiwan-mask-pic-photomask-mass-production-20261117-v1
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    if: ${{ github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - name: Send verified report to Telegram
+        env:
+          REPORT: |-
+          【重大更新｜台灣光罩 PIC 光罩首位客戶進入量產】
+          事件鍵：taiwan-mask-pic-photomask-mass-production-20261117｜v1
+          
+          1) 重大變化與門檻
+          台灣光罩（2338）於 2026-11-17 法說揭露：PIC（光子積體電路）光罩已有首位客戶進入量產，另有客戶合作／洽談；管理層並預期 2027 年光罩本業營收成長約 20%，高於 2026 年約 10%。「量產客戶＋量化營收指引」已超越展示、送樣或一般行銷，足以改變其營收成長判斷，故達通知門檻。重要限制：20% 是整體光罩本業指引，動能亦包括大尺寸光罩、新客戶與日本服務等，不能全數歸因於矽光子。
+          
+          2) 已確認事實
+          • 公告日／法說日：2026-11-17；官方 IR 平台確認當日 14:00 由富邦證券邀請舉行法說，並提供中英文資料入口。
+          • 公司說法（尚非客戶獨立驗證）：2026 年導入 2–3 家 PIC 光罩客戶，其中 1 家已進入量產；上半年完成逾 40 個開發案。公開製程節點包括 180／150／130nm；EIC 尚未進入。
+          • 管理層指引、非實績：2027 年光罩本業營收預期約增 20%；2026 年約增 10%。
+          • 產能：2026 年月產能約 69,000 片，2027 年預計約 75,000 片，增幅約 8.7%。
+          • 資本支出：2027 年初步規劃新台幣 5–10 億元。
+          • 未披露：客戶名稱、量產光罩片數、價格、PIC 營收／毛利占比、終端是 CPO 或可插拔模組。
+          
+          官方來源（2026-11-17）：
+          IR Engage：https://irengage.taiwanindex.com.tw/conferenceList
+          公司法說頁：https://www.tmcnet.com.tw/tw/Investors/Conference
+          管理層發言交叉核對：
+          CNA：https://www.cna.com.tw/news/afe/202611170283.aspx
+          經濟日報：https://money.udn.com/money/story/5612/9884747
+          
+          3) 受影響供應鏈
+          • 台灣光罩（TWSE 2338）：PIC／矽光子光罩供應商，屬直接曝險；本次只確認光罩端商業量產，不代表 CPO 光引擎或 800G／1.6T 模組同步量產。
+          • 矽光子晶圓代工、光引擎／模組商：屬下游間接曝險；公司未公布客戶，不能推定為台積電、聯電、NVIDIA 或特定模組商。
+          • 國際光罩供應商：可能面臨台灣在地替代競爭，但未有客戶重疊、價格或市占證據，暫不量化競爭影響。
+          
+          4) 合理推論
+          若首位量產客戶產生重複光罩訂單，且其餘客戶於 2027 年完成認證，PIC 將由近零基期轉為可見營收；配合月產能增 8.7%，固定成本吸收可能改善。但營收增幅高於產能增幅也可能來自產品組合、價格、大尺寸光罩或其他客戶，不能直接推為 PIC 單價／需求大增。傳導時間以 2027 年為主，成立條件是量產客戶持續 tape-out、追加 mask set，且良率與認證不延誤。
+          
+          5) 投資機會與風險
+          機會：2338 若把開發案轉成重複量產訂單，直接受益於矽光子 PIC 商用化；較低的 2027 年資本支出規劃，若不影響擴產，可能有利現金流。
+          風險：20% 指引含非矽光子業務；單一量產客戶的訂單規模及持續性未知；光罩開發案不等於終端模組出貨；客戶集中、認證延遲、良率、價格競爭、替代供應商與產能閒置均可能削弱效益。未查即時股價與估值，不判斷市場是否已反映。
+          
+          6) 待驗證與追蹤
+          下一步追蹤：PIC 量產客戶數、重複 mask set／tape-out、PIC 營收與毛利占比、月產能利用率、12 吋及大尺寸光罩組合、2027 年月營收與資本支出落地。客戶名稱與 CPO／800G／1.6T 終端關係在官方揭露前維持未知。
+          
+          去重：未發現同事件／版本既有投遞分支或收據；已排除 2026-10-17 Semtech／Tower（message_id 548）、POET Q3（665）及 Lambda／NVIDIA CPO 部署（666）。
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          chat_id = os.environ["TELEGRAM_CHAT_ID"]
+          report = os.environ["REPORT"]
+
+          payload = urllib.parse.urlencode({
+              "chat_id": chat_id,
+              "text": report,
+              "disable_web_page_preview": "true",
+          }).encode("utf-8")
+          request = urllib.request.Request(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data=payload,
+              method="POST",
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              body = json.loads(response.read().decode("utf-8"))
+
+          message_id = body.get("result", {}).get("message_id")
+          if body.get("ok") is not True or not isinstance(message_id, int) or message_id <= 0:
+              raise RuntimeError("Telegram did not return ok=true and a positive integer message_id")
+
+          receipt = {
+              "ok": True,
+              "message_id": message_id,
+              "event_key": "taiwan-mask-pic-photomask-mass-production-20261117",
+              "version": 1,
+              "repository": os.environ.get("GITHUB_REPOSITORY"),
+              "run_id": os.environ.get("GITHUB_RUN_ID"),
+              "run_attempt": os.environ.get("GITHUB_RUN_ATTEMPT"),
+              "commit_sha": os.environ.get("GITHUB_SHA"),
+          }
+          Path("telegram-receipt.json").write_text(
+              json.dumps(receipt, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          print(json.dumps(receipt, ensure_ascii=False))
+          PY
+
+      - name: Upload Telegram receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
+          retention-days: 90
+          if-no-files-found: error
