@@ -80,3 +80,21 @@ def test_unproven_hypothesis_is_not_a_positive_strong_claim():
     assert strong_claim_errors('仍不能證實其定價權。', facts) == []
     assert strong_claim_errors('公司已建立定價權，但長期需求仍待驗證。', facts)
     assert strong_claim_errors('不能判定是否具有定價權。公司已形成瓶頸供應商地位。', facts)
+
+
+def test_human_review_hold_does_not_mark_rejected_report_as_published():
+    event = EarningsEvent("HELD", "HELD", 2027, "Q1", "2026-11-10T00:00:00+00:00", documents=["source-a"])
+    event.status = "needs_human_review"
+    event.collection_status["review_blocked_document_count"] = 1
+    assert runner._review_blocked_unchanged(event) is True
+    assert event.last_analyzed_document_count == 0
+    event.documents.append("source-b")
+    assert runner._review_blocked_unchanged(event) is False
+
+
+def test_human_review_hold_cleared_by_manual_reset():
+    event = EarningsEvent("HELD", "HELD", 2027, "Q1", "2026-11-10T00:00:00+00:00", documents=["source-a"])
+    event.status = "needs_human_review"
+    event.collection_status["review_blocked_document_count"] = 1
+    event.collection_status.pop("review_blocked_document_count")
+    assert runner._review_blocked_unchanged(event) is False
