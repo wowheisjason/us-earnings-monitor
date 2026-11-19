@@ -2430,7 +2430,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2795,7 +2795,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3093,7 +3093,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3404,7 +3404,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3638,7 +3638,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3789,7 +3789,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4238,7 +4238,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4395,7 +4395,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4469,7 +4469,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4545,7 +4545,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4695,7 +4695,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4846,7 +4846,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4920,7 +4920,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5084,7 +5084,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5244,7 +5244,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5544,7 +5544,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5622,7 +5622,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5695,7 +5695,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5767,7 +5767,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5843,7 +5843,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6138,7 +6138,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6216,7 +6216,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6297,7 +6297,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6373,7 +6373,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6522,7 +6522,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6598,7 +6598,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6673,7 +6673,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6749,7 +6749,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6826,7 +6826,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6901,7 +6901,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6977,7 +6977,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7128,7 +7128,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-19T16:27:52-05:00",
+      "updated_at": "2026-11-19T17:08:44-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -46567,7 +46567,7 @@
     },
     "LITE_2026-09-26_Q1": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "860449bf009999ddc27a2cb4947fa5c3aabd478dd0221a68dfcdba65eaf784e1",
+      "evidence_fingerprint": "7f4338eb6fac5cfa7a344768bcb955c6fea48172aa1f881c297f3e043654f5d6",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -46607,187 +46607,54 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer including assessed tax was $1,262.6 million.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax, 1,262.6",
-                "metric": "RevenueFromContractWithCustomerIncludingAssessedTax",
-                "value": "1,262.6",
-                "unit": "usd",
-                "period": "c-1"
-              },
-              {
-                "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Gross profit was $644.0 million.",
+                "statement": "Revenue from contract with customer including assessed tax was $1,262.6M.",
                 "materiality_candidate": 4,
-                "quote": "us-gaap:GrossProfit, 644.0",
-                "metric": "GrossProfit",
-                "value": "644.0",
-                "unit": "usd",
-                "period": "c-1"
-              },
-              {
-                "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "margin_unit_economics",
-                "fact_class": "objective_fact",
-                "statement": "Operating income was $359.8 million.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:OperatingIncomeLoss, 359.8",
-                "metric": "OperatingIncomeLoss",
-                "value": "359.8",
-                "unit": "usd",
-                "period": "c-1"
-              },
-              {
-                "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income loss was $360.3 million.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:NetIncomeLoss, 360.3",
-                "metric": "NetIncomeLoss",
-                "value": "360.3",
-                "unit": "usd",
-                "period": "c-1"
-              },
-              {
-                "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "cash_capex",
-                "fact_class": "objective_fact",
-                "statement": "Cash and cash equivalents at carrying value was $1,272.2 million.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 1,272.2",
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
-                "value": "1,272.2",
-                "unit": "usd",
-                "period": "c-5"
-              }
-            ]
-          }
-        },
-        "v5_evidence_repair_v3_4": {
-          "payload": {
-            "cards": [
-              {
-                "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer including assessed tax was $1,262.6 million.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax, 1,262.6",
-                "metric": "RevenueFromContractWithCustomerIncludingAssessedTax",
+                "quote": "1,262.6",
+                "metric": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
                 "value": "1262.6",
                 "unit": "usd",
-                "period": "c-1",
-                "card_id": "c1:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax, 1,262.6"
-                }
+                "metric_type": "other"
               },
               {
                 "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross profit was $644.0 million.",
+                "statement": "Gross profit was $644.0M.",
                 "materiality_candidate": 4,
-                "quote": "us-gaap:GrossProfit, 644.0",
-                "metric": "GrossProfit",
+                "quote": "644.0",
+                "metric": "us-gaap:GrossProfit",
                 "value": "644.0",
                 "unit": "usd",
-                "period": "c-1",
-                "card_id": "c2:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:GrossProfit, 644.0"
-                }
+                "metric_type": "other"
               },
               {
                 "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Operating income was $359.8 million.",
+                "statement": "Operating income loss was $359.8M.",
                 "materiality_candidate": 4,
-                "quote": "us-gaap:OperatingIncomeLoss, 359.8",
-                "metric": "OperatingIncomeLoss",
+                "quote": "359.8",
+                "metric": "us-gaap:OperatingIncomeLoss",
                 "value": "359.8",
                 "unit": "usd",
-                "period": "c-1",
-                "card_id": "c3:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:OperatingIncomeLoss, 359.8"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income loss was $360.3 million.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:NetIncomeLoss, 360.3",
-                "metric": "NetIncomeLoss",
-                "value": "360.3",
-                "unit": "usd",
-                "period": "c-1",
-                "card_id": "c4:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:NetIncomeLoss, 360.3"
-                }
+                "metric_type": "other"
               },
               {
                 "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Cash and cash equivalents at carrying value was $1,272.2 million.",
+                "statement": "Cash and cash equivalents at carrying value was $1,272.2M.",
                 "materiality_candidate": 4,
-                "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 1,272.2",
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
+                "quote": "1,272.2",
+                "metric": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
                 "value": "1272.2",
                 "unit": "usd",
-                "period": "c-5",
-                "card_id": "c5:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 1,272.2"
-                }
+                "metric_type": "other"
               }
-            ],
-            "processed_unit_ids": [
-              "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured"
-            ],
-            "replace_only_invalid_cards": true
+            ]
           }
         },
         "v5_extract_batch_5": {
@@ -46824,18 +46691,18 @@
                 "metric": "Net revenue",
                 "period": "Q2_FY2027",
                 "guidance_type": "range",
-                "low": "1575.0",
-                "high": "1625.0",
+                "low": "1575",
+                "high": "1625",
                 "unit": "USD_millions"
               },
               {
-                "unit_id": "official_ir:b5e23586ebea91999aecf447#u1",
+                "unit_id": "official_ir:b5e23586ebea91999aecf447#u2",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Forecasting second quarter of fiscal year 2027 non-GAAP operating margin of 45.0% to 46.0%.",
-                "materiality_candidate": 5,
-                "quote": "non-GAAP operating margin of 45.0% to 46.0%",
+                "statement": "Lumentum expects second quarter of fiscal year 2027 non-GAAP operating margin of 45.0% to 46.0%.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP operating margin of 45.0% to 46.0%",
                 "metric": "Non-GAAP operating margin",
                 "period": "Q2_FY2027",
                 "guidance_type": "range",
@@ -46844,14 +46711,14 @@
                 "unit": "percent"
               },
               {
-                "unit_id": "official_ir:b5e23586ebea91999aecf447#u1",
+                "unit_id": "official_ir:b5e23586ebea91999aecf447#u2",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Forecasting second quarter of fiscal year 2027 non-GAAP diluted net income per share of $5.90 to $6.20.",
+                "statement": "Lumentum expects second quarter of fiscal year 2027 non-GAAP diluted earnings per share of $5.90 to $6.20.",
                 "materiality_candidate": 5,
-                "quote": "non-GAAP diluted net income per share of $5.90 to $6.20.",
-                "metric": "Non-GAAP diluted net income per share",
+                "quote": "Non-GAAP diluted earnings per share of $5.90 to $6.20",
+                "metric": "Non-GAAP diluted EPS",
                 "period": "Q2_FY2027",
                 "guidance_type": "range",
                 "low": "5.90",
@@ -46878,11 +46745,10 @@
                 "quote": "Net revenue\n$\n1,262.6\n$\n533.8",
                 "metric": "Net revenue",
                 "value": "1262.6",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "533.8",
-                "comparison_period": "Q1 2026",
-                "metric_type": "other"
+                "comparison_period": "Q1 2026"
               },
               {
                 "unit_id": "official_ir:b5e23586ebea91999aecf447#u3",
@@ -46894,27 +46760,25 @@
                 "quote": "Gross profit\n644.0\n181.5",
                 "metric": "Gross profit",
                 "value": "644.0",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "181.5",
-                "comparison_period": "Q1 2026",
-                "metric_type": "other"
+                "comparison_period": "Q1 2026"
               },
               {
                 "unit_id": "official_ir:b5e23586ebea91999aecf447#u4",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross profit on GAAP basis was $644.0 million for the three months ended September 26, 2026, $477.3 million for June 27, 2026, and $181.5 million for September 27, 2025.",
+                "statement": "Gross profit on a GAAP basis was $644.0 million for the three months ended September 26, 2026, $477.3 million for the three months ended June 27, 2026, and $181.5 million for the three months ended September 27, 2025.",
                 "materiality_candidate": 4,
                 "quote": "Gross profit on GAAP basis\n$\n644.0\n$\n477.3\n$\n181.5",
                 "metric": "Gross profit on GAAP basis",
                 "value": "644.0",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "477.3",
-                "comparison_period": "Q4 2026",
-                "metric_type": "other"
+                "comparison_period": "Q4 2026"
               }
             ]
           }
@@ -46932,40 +46796,178 @@
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
                 "statement": "Gross profit on non-GAAP basis was $671.2 million for the three months ended September 26, 2026.",
-                "materiality_candidate": 3,
-                "quote": "Gross profit on non-GAAP basis\n$\n671.2",
-                "metric": "Gross profit on non-GAAP basis",
+                "materiality_candidate": 4,
+                "quote": "Gross profit on non-GAAP basis\n$\n671.2\n$\n506.9\n$\n210.3",
+                "metric": "Gross profit",
                 "value": "671.2",
-                "unit": "USD_millions",
-                "period": "Q1 2027"
+                "unit": "USD_M",
+                "period": "Q1 2027",
+                "metric_type": "other_adjusted"
               },
               {
                 "unit_id": "official_ir:b5e23586ebea91999aecf447#u5",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross margin on non-GAAP basis was 53.2% for the three months ended September 26, 2026.",
-                "materiality_candidate": 3,
-                "quote": "Gross margin on non-GAAP basis\n53.2\n%",
-                "metric": "Gross margin on non-GAAP basis",
-                "value": "53.2",
-                "unit": "percent",
-                "period": "Q1 2027"
+                "statement": "Non-GAAP net income was $461.1 million, with non-GAAP net income per share of $4.57 for Q1 2027.",
+                "materiality_candidate": 4,
+                "quote": "Net income on non-GAAP basis\n$\n461.1\n$\n326.3\n$\n86.4\nNet income per share on non-GAAP basis\n$\n4.57",
+                "metric": "Net income on non-GAAP basis",
+                "value": "461.1",
+                "unit": "USD_M",
+                "period": "Q1 2027",
+                "metric_type": "other_adjusted"
               },
               {
                 "unit_id": "official_ir:b5e23586ebea91999aecf447#u6",
                 "card_type": "fact",
-                "topic": "margin_unit_economics",
+                "topic": "cash_capex",
                 "fact_class": "objective_fact",
                 "statement": "Adjusted EBITDA was $578.0 million for the three months ended September 26, 2026.",
                 "materiality_candidate": 4,
-                "quote": "Adjusted EBITDA\n$\n578.0",
+                "quote": "Adjusted EBITDA\n$\n578.0\n$\n406.4\n$\n127.6",
                 "metric": "Adjusted EBITDA",
                 "value": "578.0",
-                "unit": "USD_millions",
-                "period": "Q1 2027"
+                "unit": "USD_M",
+                "period": "Q1 2027",
+                "metric_type": "other_adjusted"
               }
             ]
+          }
+        },
+        "v5_evidence_repair_v3_7": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:b5e23586ebea91999aecf447#u6",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted EBITDA was $578.0 million for the three months ended September 26, 2026.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted EBITDA\n$\n578.0\n$\n406.4\n$\n127.6",
+                "metric": "Adjusted EBITDA",
+                "value": "578.0",
+                "unit": "USD_M",
+                "period": "Q1 2027",
+                "metric_type": "other_adjusted",
+                "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u6",
+                "document_key": "official_ir:b5e23586ebea91999aecf447",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "official_ir:b5e23586ebea91999aecf447",
+                  "quote": "Adjusted EBITDA\n$\n578.0\n$\n406.4\n$\n127.6"
+                },
+                "reconciliation": [
+                  {
+                    "item": "GAAP net income (loss)",
+                    "value": "360.3",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "GAAP net income (loss)\n$\n360.3\n$\n(7,161.7\n)\n$\n4.2"
+                    }
+                  },
+                  {
+                    "item": "Interest expense",
+                    "value": "2.4",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Interest expense\n2.4\n3.6\n5.7"
+                    }
+                  },
+                  {
+                    "item": "Interest and other income, net",
+                    "value": "-12.9",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Interest and other income, net\n(12.9\n)\n(22.6\n)\n(4.2\n)"
+                    }
+                  },
+                  {
+                    "item": "Income tax provision (benefit)",
+                    "value": "10.0",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Income tax provision (benefit)\n10.0\n(296.6\n)\n1.0"
+                    }
+                  },
+                  {
+                    "item": "Depreciation expense",
+                    "value": "43.6",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Depreciation expense\n43.6\n37.6\n27.8"
+                    }
+                  },
+                  {
+                    "item": "Amortization of acquired intangibles",
+                    "value": "32.8",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Amortization of acquired intangibles\n32.8\n33.5\n34.4"
+                    }
+                  },
+                  {
+                    "item": "Stock-based compensation and related payroll taxes",
+                    "value": "146.7",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Stock-based compensation and related payroll taxes\n146.7\n50.1\n46.5"
+                    }
+                  },
+                  {
+                    "item": "Integration related costs (income), net",
+                    "value": "0.3",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Integration related costs (income), net\n0.3\n0.5\n(0.8\n)"
+                    }
+                  },
+                  {
+                    "item": "Gain on sale of business, net",
+                    "value": "-6.9",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Gain on sale of business, net\n(6.9\n)\n—\n—"
+                    }
+                  },
+                  {
+                    "item": "Other charges, net",
+                    "value": "1.7",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Other charges, net\n1.7\n0.5\n3.4"
+                    }
+                  }
+                ]
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:b5e23586ebea91999aecf447#u6"
+            ],
+            "replace_only_invalid_cards": true
           }
         },
         "v5_extract_batch_8": {
@@ -47000,8 +47002,8 @@
                   "title": "Lumentum Announces Fiscal First Quarter 2027 Financial Results of Q1 2027, aspx file, (opens in new window)",
                   "document_kind": "financial_results",
                   "selection_mode": "full",
-                  "raw_chars": 24501,
-                  "extracted_chars": 24501,
+                  "raw_chars": 24665,
+                  "extracted_chars": 24665,
                   "source_truncated": false,
                   "raw_paragraphs": 1,
                   "relevant_paragraphs": 1,
@@ -47013,8 +47015,8 @@
                   "title": "View All News Lumentum Announces First Quarter of Fiscal Year 2027 Financial Results",
                   "document_kind": "financial_results",
                   "selection_mode": "full",
-                  "raw_chars": 1788,
-                  "extracted_chars": 1788,
+                  "raw_chars": 1624,
+                  "extracted_chars": 1624,
                   "source_truncated": false,
                   "raw_paragraphs": 1,
                   "relevant_paragraphs": 1,
@@ -47079,21 +47081,21 @@
                 "source_truncated_documents": []
               },
               "topic_inventory": {
-                "cash_capex": 1,
-                "demand_revenue": 4,
+                "cash_capex": 2,
+                "demand_revenue": 3,
                 "guidance": 3,
-                "margin_unit_economics": 7
+                "margin_unit_economics": 6
               },
               "selection": {
-                "raw_card_count": 15,
-                "deduped_card_count": 15,
-                "selected_card_count": 15,
+                "raw_card_count": 14,
+                "deduped_card_count": 14,
+                "selected_card_count": 14,
                 "omitted_low_materiality_card_count": 0,
                 "selected_topic_counts": {
-                  "cash_capex": 1,
-                  "demand_revenue": 4,
+                  "cash_capex": 2,
+                  "demand_revenue": 3,
                   "guidance": 3,
-                  "margin_unit_economics": 5
+                  "margin_unit_economics": 6
                 }
               },
               "cards": [
@@ -47124,7 +47126,7 @@
                   "statement": "Net revenue for the three months ended September 26, 2026 was $1,262.6 million compared to $533.8 million for the three months ended September 27, 2025.",
                   "metric": "Net revenue",
                   "value": "1262.6",
-                  "unit": "USD_M",
+                  "unit": "USD_millions",
                   "period": "Q1 2027",
                   "comparison_value": "533.8",
                   "comparison_period": "Q1 2026",
@@ -47134,42 +47136,24 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:b5e23586ebea91999aecf447#u3",
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Net revenue\n$\n1,262.6\n$\n533.8",
-                  "metric_type": "other"
+                  "quote": "Net revenue\n$\n1,262.6\n$\n533.8"
                 },
                 {
                   "card_id": "c1:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "Revenue from contract with customer including assessed tax was $1,262.6 million.",
-                  "metric": "RevenueFromContractWithCustomerIncludingAssessedTax",
+                  "statement": "Revenue from contract with customer including assessed tax was $1,262.6M.",
+                  "metric": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
                   "value": "1262.6",
                   "unit": "usd",
-                  "period": "c-1",
-                  "materiality_candidate": 5,
+                  "materiality_candidate": 4,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
                   "provenance": "primary_or_official",
                   "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax, 1,262.6"
-                },
-                {
-                  "card_id": "c4:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "statement": "Net income loss was $360.3 million.",
-                  "metric": "NetIncomeLoss",
-                  "value": "360.3",
-                  "unit": "usd",
-                  "period": "c-1",
-                  "materiality_candidate": 5,
-                  "fact_class": "objective_fact",
-                  "source": "sec_edgar",
-                  "provenance": "primary_or_official",
-                  "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:NetIncomeLoss, 360.3"
+                  "quote": "1,262.6",
+                  "metric_type": "other"
                 },
                 {
                   "card_id": "c2:official_ir:b5e23586ebea91999aecf447#u1",
@@ -47179,8 +47163,8 @@
                   "metric": "Net revenue",
                   "unit": "USD_millions",
                   "period": "Q2_FY2027",
-                  "low": "1575.0",
-                  "high": "1625.0",
+                  "low": "1575",
+                  "high": "1625",
                   "materiality_candidate": 5,
                   "fact_class": "company_guidance",
                   "source": "official_ir",
@@ -47191,30 +47175,11 @@
                   "guidance_type": "range"
                 },
                 {
-                  "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u1",
+                  "card_id": "c4:official_ir:b5e23586ebea91999aecf447#u2",
                   "card_type": "guidance",
                   "topic": "guidance",
-                  "statement": "Forecasting second quarter of fiscal year 2027 non-GAAP operating margin of 45.0% to 46.0%.",
-                  "metric": "Non-GAAP operating margin",
-                  "unit": "percent",
-                  "period": "Q2_FY2027",
-                  "low": "45.0",
-                  "high": "46.0",
-                  "materiality_candidate": 5,
-                  "fact_class": "company_guidance",
-                  "source": "official_ir",
-                  "provenance": "primary_or_official",
-                  "unit_id": "official_ir:b5e23586ebea91999aecf447#u1",
-                  "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "non-GAAP operating margin of 45.0% to 46.0%",
-                  "guidance_type": "range"
-                },
-                {
-                  "card_id": "c4:official_ir:b5e23586ebea91999aecf447#u1",
-                  "card_type": "guidance",
-                  "topic": "guidance",
-                  "statement": "Forecasting second quarter of fiscal year 2027 non-GAAP diluted net income per share of $5.90 to $6.20.",
-                  "metric": "Non-GAAP diluted net income per share",
+                  "statement": "Lumentum expects second quarter of fiscal year 2027 non-GAAP diluted earnings per share of $5.90 to $6.20.",
+                  "metric": "Non-GAAP diluted EPS",
                   "unit": "USD",
                   "period": "Q2_FY2027",
                   "low": "5.90",
@@ -47223,9 +47188,28 @@
                   "fact_class": "company_guidance",
                   "source": "official_ir",
                   "provenance": "primary_or_official",
-                  "unit_id": "official_ir:b5e23586ebea91999aecf447#u1",
+                  "unit_id": "official_ir:b5e23586ebea91999aecf447#u2",
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "non-GAAP diluted net income per share of $5.90 to $6.20.",
+                  "quote": "Non-GAAP diluted earnings per share of $5.90 to $6.20",
+                  "guidance_type": "range"
+                },
+                {
+                  "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "statement": "Lumentum expects second quarter of fiscal year 2027 non-GAAP operating margin of 45.0% to 46.0%.",
+                  "metric": "Non-GAAP operating margin",
+                  "unit": "percent",
+                  "period": "Q2_FY2027",
+                  "low": "45.0",
+                  "high": "46.0",
+                  "materiality_candidate": 4,
+                  "fact_class": "company_guidance",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:b5e23586ebea91999aecf447#u2",
+                  "document_key": "official_ir:b5e23586ebea91999aecf447",
+                  "quote": "Non-GAAP operating margin of 45.0% to 46.0%",
                   "guidance_type": "range"
                 },
                 {
@@ -47235,7 +47219,7 @@
                   "statement": "Gross profit for the three months ended September 26, 2026 was $644.0 million compared to $181.5 million for the three months ended September 27, 2025.",
                   "metric": "Gross profit",
                   "value": "644.0",
-                  "unit": "USD_M",
+                  "unit": "USD_millions",
                   "period": "Q1 2027",
                   "comparison_value": "181.5",
                   "comparison_period": "Q1 2026",
@@ -47245,17 +47229,16 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:b5e23586ebea91999aecf447#u3",
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Gross profit\n644.0\n181.5",
-                  "metric_type": "other"
+                  "quote": "Gross profit\n644.0\n181.5"
                 },
                 {
                   "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u4",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
-                  "statement": "Gross profit on GAAP basis was $644.0 million for the three months ended September 26, 2026, $477.3 million for June 27, 2026, and $181.5 million for September 27, 2025.",
+                  "statement": "Gross profit on a GAAP basis was $644.0 million for the three months ended September 26, 2026, $477.3 million for the three months ended June 27, 2026, and $181.5 million for the three months ended September 27, 2025.",
                   "metric": "Gross profit on GAAP basis",
                   "value": "644.0",
-                  "unit": "USD_M",
+                  "unit": "USD_millions",
                   "period": "Q1 2027",
                   "comparison_value": "477.3",
                   "comparison_period": "Q4 2026",
@@ -47265,17 +47248,86 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:b5e23586ebea91999aecf447#u4",
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Gross profit on GAAP basis\n$\n644.0\n$\n477.3\n$\n181.5",
+                  "quote": "Gross profit on GAAP basis\n$\n644.0\n$\n477.3\n$\n181.5"
+                },
+                {
+                  "card_id": "c1:official_ir:b5e23586ebea91999aecf447#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross profit on non-GAAP basis was $671.2 million for the three months ended September 26, 2026.",
+                  "metric": "Gross profit",
+                  "value": "671.2",
+                  "unit": "USD_M",
+                  "period": "Q1 2027",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:b5e23586ebea91999aecf447#u5",
+                  "document_key": "official_ir:b5e23586ebea91999aecf447",
+                  "quote": "Gross profit on non-GAAP basis\n$\n671.2\n$\n506.9\n$\n210.3",
+                  "metric_type": "other_adjusted"
+                },
+                {
+                  "card_id": "c2:official_ir:b5e23586ebea91999aecf447#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Non-GAAP net income was $461.1 million, with non-GAAP net income per share of $4.57 for Q1 2027.",
+                  "metric": "Net income on non-GAAP basis",
+                  "value": "461.1",
+                  "unit": "USD_M",
+                  "period": "Q1 2027",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:b5e23586ebea91999aecf447#u5",
+                  "document_key": "official_ir:b5e23586ebea91999aecf447",
+                  "quote": "Net income on non-GAAP basis\n$\n461.1\n$\n326.3\n$\n86.4\nNet income per share on non-GAAP basis\n$\n4.57",
+                  "metric_type": "other_adjusted"
+                },
+                {
+                  "card_id": "c2:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Gross profit was $644.0M.",
+                  "metric": "us-gaap:GrossProfit",
+                  "value": "644.0",
+                  "unit": "usd",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
+                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
+                  "quote": "644.0",
                   "metric_type": "other"
                 },
                 {
-                  "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u6",
+                  "card_id": "c3:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
+                  "statement": "Operating income loss was $359.8M.",
+                  "metric": "us-gaap:OperatingIncomeLoss",
+                  "value": "359.8",
+                  "unit": "usd",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "sec_edgar",
+                  "provenance": "primary_or_official",
+                  "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
+                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
+                  "quote": "359.8",
+                  "metric_type": "other"
+                },
+                {
+                  "card_id": "c1:official_ir:b5e23586ebea91999aecf447#u6",
+                  "card_type": "fact",
+                  "topic": "cash_capex",
                   "statement": "Adjusted EBITDA was $578.0 million for the three months ended September 26, 2026.",
                   "metric": "Adjusted EBITDA",
                   "value": "578.0",
-                  "unit": "USD_millions",
+                  "unit": "USD_M",
                   "period": "Q1 2027",
                   "materiality_candidate": 4,
                   "fact_class": "objective_fact",
@@ -47283,92 +47335,127 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:b5e23586ebea91999aecf447#u6",
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Adjusted EBITDA\n$\n578.0"
+                  "quote": "Adjusted EBITDA\n$\n578.0\n$\n406.4\n$\n127.6",
+                  "metric_type": "other_adjusted",
+                  "reconciliation": [
+                    {
+                      "item": "GAAP net income (loss)",
+                      "value": "360.3",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "GAAP net income (loss)\n$\n360.3\n$\n(7,161.7\n)\n$\n4.2"
+                      }
+                    },
+                    {
+                      "item": "Interest expense",
+                      "value": "2.4",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Interest expense\n2.4\n3.6\n5.7"
+                      }
+                    },
+                    {
+                      "item": "Interest and other income, net",
+                      "value": "-12.9",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Interest and other income, net\n(12.9\n)\n(22.6\n)\n(4.2\n)"
+                      }
+                    },
+                    {
+                      "item": "Income tax provision (benefit)",
+                      "value": "10.0",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Income tax provision (benefit)\n10.0\n(296.6\n)\n1.0"
+                      }
+                    },
+                    {
+                      "item": "Depreciation expense",
+                      "value": "43.6",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Depreciation expense\n43.6\n37.6\n27.8"
+                      }
+                    },
+                    {
+                      "item": "Amortization of acquired intangibles",
+                      "value": "32.8",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Amortization of acquired intangibles\n32.8\n33.5\n34.4"
+                      }
+                    },
+                    {
+                      "item": "Stock-based compensation and related payroll taxes",
+                      "value": "146.7",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Stock-based compensation and related payroll taxes\n146.7\n50.1\n46.5"
+                      }
+                    },
+                    {
+                      "item": "Integration related costs (income), net",
+                      "value": "0.3",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Integration related costs (income), net\n0.3\n0.5\n(0.8\n)"
+                      }
+                    },
+                    {
+                      "item": "Gain on sale of business, net",
+                      "value": "-6.9",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Gain on sale of business, net\n(6.9\n)\n—\n—"
+                      }
+                    },
+                    {
+                      "item": "Other charges, net",
+                      "value": "1.7",
+                      "unit": "USD_M",
+                      "period": "Q1 2027",
+                      "evidence": {
+                        "document_key": "official_ir:b5e23586ebea91999aecf447",
+                        "quote": "Other charges, net\n1.7\n0.5\n3.4"
+                      }
+                    }
+                  ]
                 },
                 {
-                  "card_id": "c2:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                  "card_type": "fact",
-                  "topic": "margin_unit_economics",
-                  "statement": "Gross profit was $644.0 million.",
-                  "metric": "GrossProfit",
-                  "value": "644.0",
-                  "unit": "usd",
-                  "period": "c-1",
-                  "materiality_candidate": 4,
-                  "fact_class": "objective_fact",
-                  "source": "sec_edgar",
-                  "provenance": "primary_or_official",
-                  "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:GrossProfit, 644.0"
-                },
-                {
-                  "card_id": "c3:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                  "card_type": "fact",
-                  "topic": "margin_unit_economics",
-                  "statement": "Operating income was $359.8 million.",
-                  "metric": "OperatingIncomeLoss",
-                  "value": "359.8",
-                  "unit": "usd",
-                  "period": "c-1",
-                  "materiality_candidate": 4,
-                  "fact_class": "objective_fact",
-                  "source": "sec_edgar",
-                  "provenance": "primary_or_official",
-                  "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:OperatingIncomeLoss, 359.8"
-                },
-                {
-                  "card_id": "c1:official_ir:b5e23586ebea91999aecf447#u5",
-                  "card_type": "fact",
-                  "topic": "margin_unit_economics",
-                  "statement": "Gross profit on non-GAAP basis was $671.2 million for the three months ended September 26, 2026.",
-                  "metric": "Gross profit on non-GAAP basis",
-                  "value": "671.2",
-                  "unit": "USD_millions",
-                  "period": "Q1 2027",
-                  "materiality_candidate": 3,
-                  "fact_class": "objective_fact",
-                  "source": "official_ir",
-                  "provenance": "primary_or_official",
-                  "unit_id": "official_ir:b5e23586ebea91999aecf447#u5",
-                  "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Gross profit on non-GAAP basis\n$\n671.2"
-                },
-                {
-                  "card_id": "c2:official_ir:b5e23586ebea91999aecf447#u5",
-                  "card_type": "fact",
-                  "topic": "margin_unit_economics",
-                  "statement": "Gross margin on non-GAAP basis was 53.2% for the three months ended September 26, 2026.",
-                  "metric": "Gross margin on non-GAAP basis",
-                  "value": "53.2",
-                  "unit": "percent",
-                  "period": "Q1 2027",
-                  "materiality_candidate": 3,
-                  "fact_class": "objective_fact",
-                  "source": "official_ir",
-                  "provenance": "primary_or_official",
-                  "unit_id": "official_ir:b5e23586ebea91999aecf447#u5",
-                  "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Gross margin on non-GAAP basis\n53.2\n%"
-                },
-                {
-                  "card_id": "c5:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
+                  "card_id": "c4:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                   "card_type": "fact",
                   "topic": "cash_capex",
-                  "statement": "Cash and cash equivalents at carrying value was $1,272.2 million.",
-                  "metric": "CashAndCashEquivalentsAtCarryingValue",
+                  "statement": "Cash and cash equivalents at carrying value was $1,272.2M.",
+                  "metric": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
                   "value": "1272.2",
                   "unit": "usd",
-                  "period": "c-5",
                   "materiality_candidate": 4,
                   "fact_class": "objective_fact",
                   "source": "sec_edgar",
                   "provenance": "primary_or_official",
                   "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 1,272.2"
+                  "quote": "1,272.2",
+                  "metric_type": "other"
                 }
               ]
             },
@@ -47378,13 +47465,13 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer including assessed tax was $1,262.6 million.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax, 1,262.6",
-                "metric": "RevenueFromContractWithCustomerIncludingAssessedTax",
+                "statement": "Revenue from contract with customer including assessed tax was $1,262.6M.",
+                "materiality_candidate": 4,
+                "quote": "1,262.6",
+                "metric": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
                 "value": "1262.6",
                 "unit": "usd",
-                "period": "c-1",
+                "metric_type": "other",
                 "card_id": "c1:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                 "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
                 "source": "sec_edgar",
@@ -47392,7 +47479,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax, 1,262.6"
+                  "quote": "1,262.6"
                 }
               },
               {
@@ -47400,13 +47487,13 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross profit was $644.0 million.",
+                "statement": "Gross profit was $644.0M.",
                 "materiality_candidate": 4,
-                "quote": "us-gaap:GrossProfit, 644.0",
-                "metric": "GrossProfit",
+                "quote": "644.0",
+                "metric": "us-gaap:GrossProfit",
                 "value": "644.0",
                 "unit": "usd",
-                "period": "c-1",
+                "metric_type": "other",
                 "card_id": "c2:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                 "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
                 "source": "sec_edgar",
@@ -47414,7 +47501,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:GrossProfit, 644.0"
+                  "quote": "644.0"
                 }
               },
               {
@@ -47422,13 +47509,13 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Operating income was $359.8 million.",
+                "statement": "Operating income loss was $359.8M.",
                 "materiality_candidate": 4,
-                "quote": "us-gaap:OperatingIncomeLoss, 359.8",
-                "metric": "OperatingIncomeLoss",
+                "quote": "359.8",
+                "metric": "us-gaap:OperatingIncomeLoss",
                 "value": "359.8",
                 "unit": "usd",
-                "period": "c-1",
+                "metric_type": "other",
                 "card_id": "c3:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                 "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
                 "source": "sec_edgar",
@@ -47436,29 +47523,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:OperatingIncomeLoss, 359.8"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income loss was $360.3 million.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:NetIncomeLoss, 360.3",
-                "metric": "NetIncomeLoss",
-                "value": "360.3",
-                "unit": "usd",
-                "period": "c-1",
-                "card_id": "c4:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
-                "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:NetIncomeLoss, 360.3"
+                  "quote": "359.8"
                 }
               },
               {
@@ -47466,21 +47531,21 @@
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Cash and cash equivalents at carrying value was $1,272.2 million.",
+                "statement": "Cash and cash equivalents at carrying value was $1,272.2M.",
                 "materiality_candidate": 4,
-                "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 1,272.2",
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
+                "quote": "1,272.2",
+                "metric": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
                 "value": "1272.2",
                 "unit": "usd",
-                "period": "c-5",
-                "card_id": "c5:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
+                "metric_type": "other",
+                "card_id": "c4:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured",
                 "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
                 "source": "sec_edgar",
                 "provenance": "primary_or_official",
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 1,272.2"
+                  "quote": "1,272.2"
                 }
               },
               {
@@ -47519,8 +47584,8 @@
                 "metric": "Net revenue",
                 "period": "Q2_FY2027",
                 "guidance_type": "range",
-                "low": "1575.0",
-                "high": "1625.0",
+                "low": "1575",
+                "high": "1625",
                 "unit": "USD_millions",
                 "card_id": "c2:official_ir:b5e23586ebea91999aecf447#u1",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
@@ -47533,51 +47598,51 @@
                 }
               },
               {
-                "unit_id": "official_ir:b5e23586ebea91999aecf447#u1",
+                "unit_id": "official_ir:b5e23586ebea91999aecf447#u2",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Forecasting second quarter of fiscal year 2027 non-GAAP operating margin of 45.0% to 46.0%.",
-                "materiality_candidate": 5,
-                "quote": "non-GAAP operating margin of 45.0% to 46.0%",
+                "statement": "Lumentum expects second quarter of fiscal year 2027 non-GAAP operating margin of 45.0% to 46.0%.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP operating margin of 45.0% to 46.0%",
                 "metric": "Non-GAAP operating margin",
                 "period": "Q2_FY2027",
                 "guidance_type": "range",
                 "low": "45.0",
                 "high": "46.0",
                 "unit": "percent",
-                "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u1",
+                "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u2",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
                 "source": "official_ir",
                 "provenance": "primary_or_official",
-                "position": 1,
+                "position": 2,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "non-GAAP operating margin of 45.0% to 46.0%"
+                  "quote": "Non-GAAP operating margin of 45.0% to 46.0%"
                 }
               },
               {
-                "unit_id": "official_ir:b5e23586ebea91999aecf447#u1",
+                "unit_id": "official_ir:b5e23586ebea91999aecf447#u2",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Forecasting second quarter of fiscal year 2027 non-GAAP diluted net income per share of $5.90 to $6.20.",
+                "statement": "Lumentum expects second quarter of fiscal year 2027 non-GAAP diluted earnings per share of $5.90 to $6.20.",
                 "materiality_candidate": 5,
-                "quote": "non-GAAP diluted net income per share of $5.90 to $6.20.",
-                "metric": "Non-GAAP diluted net income per share",
+                "quote": "Non-GAAP diluted earnings per share of $5.90 to $6.20",
+                "metric": "Non-GAAP diluted EPS",
                 "period": "Q2_FY2027",
                 "guidance_type": "range",
                 "low": "5.90",
                 "high": "6.20",
                 "unit": "USD",
-                "card_id": "c4:official_ir:b5e23586ebea91999aecf447#u1",
+                "card_id": "c4:official_ir:b5e23586ebea91999aecf447#u2",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
                 "source": "official_ir",
                 "provenance": "primary_or_official",
-                "position": 1,
+                "position": 2,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "non-GAAP diluted net income per share of $5.90 to $6.20."
+                  "quote": "Non-GAAP diluted earnings per share of $5.90 to $6.20"
                 }
               },
               {
@@ -47590,11 +47655,10 @@
                 "quote": "Net revenue\n$\n1,262.6\n$\n533.8",
                 "metric": "Net revenue",
                 "value": "1262.6",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "533.8",
                 "comparison_period": "Q1 2026",
-                "metric_type": "other",
                 "card_id": "c1:official_ir:b5e23586ebea91999aecf447#u3",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
                 "source": "official_ir",
@@ -47615,11 +47679,10 @@
                 "quote": "Gross profit\n644.0\n181.5",
                 "metric": "Gross profit",
                 "value": "644.0",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "181.5",
                 "comparison_period": "Q1 2026",
-                "metric_type": "other",
                 "card_id": "c2:official_ir:b5e23586ebea91999aecf447#u3",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
                 "source": "official_ir",
@@ -47635,16 +47698,15 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross profit on GAAP basis was $644.0 million for the three months ended September 26, 2026, $477.3 million for June 27, 2026, and $181.5 million for September 27, 2025.",
+                "statement": "Gross profit on a GAAP basis was $644.0 million for the three months ended September 26, 2026, $477.3 million for the three months ended June 27, 2026, and $181.5 million for the three months ended September 27, 2025.",
                 "materiality_candidate": 4,
                 "quote": "Gross profit on GAAP basis\n$\n644.0\n$\n477.3\n$\n181.5",
                 "metric": "Gross profit on GAAP basis",
                 "value": "644.0",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "477.3",
                 "comparison_period": "Q4 2026",
-                "metric_type": "other",
                 "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u4",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
                 "source": "official_ir",
@@ -47661,12 +47723,13 @@
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
                 "statement": "Gross profit on non-GAAP basis was $671.2 million for the three months ended September 26, 2026.",
-                "materiality_candidate": 3,
-                "quote": "Gross profit on non-GAAP basis\n$\n671.2",
-                "metric": "Gross profit on non-GAAP basis",
+                "materiality_candidate": 4,
+                "quote": "Gross profit on non-GAAP basis\n$\n671.2\n$\n506.9\n$\n210.3",
+                "metric": "Gross profit",
                 "value": "671.2",
-                "unit": "USD_millions",
+                "unit": "USD_M",
                 "period": "Q1 2027",
+                "metric_type": "other_adjusted",
                 "card_id": "c1:official_ir:b5e23586ebea91999aecf447#u5",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
                 "source": "official_ir",
@@ -47674,7 +47737,7 @@
                 "position": 5,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Gross profit on non-GAAP basis\n$\n671.2"
+                  "quote": "Gross profit on non-GAAP basis\n$\n671.2\n$\n506.9\n$\n210.3"
                 }
               },
               {
@@ -47682,13 +47745,14 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Gross margin on non-GAAP basis was 53.2% for the three months ended September 26, 2026.",
-                "materiality_candidate": 3,
-                "quote": "Gross margin on non-GAAP basis\n53.2\n%",
-                "metric": "Gross margin on non-GAAP basis",
-                "value": "53.2",
-                "unit": "percent",
+                "statement": "Non-GAAP net income was $461.1 million, with non-GAAP net income per share of $4.57 for Q1 2027.",
+                "materiality_candidate": 4,
+                "quote": "Net income on non-GAAP basis\n$\n461.1\n$\n326.3\n$\n86.4\nNet income per share on non-GAAP basis\n$\n4.57",
+                "metric": "Net income on non-GAAP basis",
+                "value": "461.1",
+                "unit": "USD_M",
                 "period": "Q1 2027",
+                "metric_type": "other_adjusted",
                 "card_id": "c2:official_ir:b5e23586ebea91999aecf447#u5",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
                 "source": "official_ir",
@@ -47696,96 +47760,186 @@
                 "position": 5,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Gross margin on non-GAAP basis\n53.2\n%"
+                  "quote": "Net income on non-GAAP basis\n$\n461.1\n$\n326.3\n$\n86.4\nNet income per share on non-GAAP basis\n$\n4.57"
                 }
               },
               {
                 "unit_id": "official_ir:b5e23586ebea91999aecf447#u6",
                 "card_type": "fact",
-                "topic": "margin_unit_economics",
+                "topic": "cash_capex",
                 "fact_class": "objective_fact",
                 "statement": "Adjusted EBITDA was $578.0 million for the three months ended September 26, 2026.",
                 "materiality_candidate": 4,
-                "quote": "Adjusted EBITDA\n$\n578.0",
+                "quote": "Adjusted EBITDA\n$\n578.0\n$\n406.4\n$\n127.6",
                 "metric": "Adjusted EBITDA",
                 "value": "578.0",
-                "unit": "USD_millions",
+                "unit": "USD_M",
                 "period": "Q1 2027",
-                "card_id": "c3:official_ir:b5e23586ebea91999aecf447#u6",
+                "metric_type": "other_adjusted",
+                "card_id": "c1:official_ir:b5e23586ebea91999aecf447#u6",
                 "document_key": "official_ir:b5e23586ebea91999aecf447",
                 "source": "official_ir",
                 "provenance": "primary_or_official",
                 "position": 6,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Adjusted EBITDA\n$\n578.0"
-                }
+                  "quote": "Adjusted EBITDA\n$\n578.0\n$\n406.4\n$\n127.6"
+                },
+                "reconciliation": [
+                  {
+                    "item": "GAAP net income (loss)",
+                    "value": "360.3",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "GAAP net income (loss)\n$\n360.3\n$\n(7,161.7\n)\n$\n4.2"
+                    }
+                  },
+                  {
+                    "item": "Interest expense",
+                    "value": "2.4",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Interest expense\n2.4\n3.6\n5.7"
+                    }
+                  },
+                  {
+                    "item": "Interest and other income, net",
+                    "value": "-12.9",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Interest and other income, net\n(12.9\n)\n(22.6\n)\n(4.2\n)"
+                    }
+                  },
+                  {
+                    "item": "Income tax provision (benefit)",
+                    "value": "10.0",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Income tax provision (benefit)\n10.0\n(296.6\n)\n1.0"
+                    }
+                  },
+                  {
+                    "item": "Depreciation expense",
+                    "value": "43.6",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Depreciation expense\n43.6\n37.6\n27.8"
+                    }
+                  },
+                  {
+                    "item": "Amortization of acquired intangibles",
+                    "value": "32.8",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Amortization of acquired intangibles\n32.8\n33.5\n34.4"
+                    }
+                  },
+                  {
+                    "item": "Stock-based compensation and related payroll taxes",
+                    "value": "146.7",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Stock-based compensation and related payroll taxes\n146.7\n50.1\n46.5"
+                    }
+                  },
+                  {
+                    "item": "Integration related costs (income), net",
+                    "value": "0.3",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Integration related costs (income), net\n0.3\n0.5\n(0.8\n)"
+                    }
+                  },
+                  {
+                    "item": "Gain on sale of business, net",
+                    "value": "-6.9",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Gain on sale of business, net\n(6.9\n)\n—\n—"
+                    }
+                  },
+                  {
+                    "item": "Other charges, net",
+                    "value": "1.7",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Other charges, net\n1.7\n0.5\n3.4"
+                    }
+                  }
+                ]
               }
             ],
             "facts": [
               {
-                "metric": "RevenueFromContractWithCustomerIncludingAssessedTax",
+                "metric": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
                 "value": "1262.6",
                 "unit": "usd",
-                "period": "c-1",
+                "period": null,
                 "comparison_value": null,
                 "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax, 1,262.6"
+                  "quote": "1,262.6"
                 }
               },
               {
-                "metric": "GrossProfit",
+                "metric": "us-gaap:GrossProfit",
                 "value": "644.0",
                 "unit": "usd",
-                "period": "c-1",
+                "period": null,
                 "comparison_value": null,
                 "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:GrossProfit, 644.0"
+                  "quote": "644.0"
                 }
               },
               {
-                "metric": "OperatingIncomeLoss",
+                "metric": "us-gaap:OperatingIncomeLoss",
                 "value": "359.8",
                 "unit": "usd",
-                "period": "c-1",
+                "period": null,
                 "comparison_value": null,
                 "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:OperatingIncomeLoss, 359.8"
+                  "quote": "359.8"
                 }
               },
               {
-                "metric": "NetIncomeLoss",
-                "value": "360.3",
-                "unit": "usd",
-                "period": "c-1",
-                "comparison_value": null,
-                "comparison_period": null,
-                "reported_change": null,
-                "evidence": {
-                  "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:NetIncomeLoss, 360.3"
-                }
-              },
-              {
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
+                "metric": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
                 "value": "1272.2",
                 "unit": "usd",
-                "period": "c-5",
+                "period": null,
                 "comparison_value": null,
                 "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 1,272.2"
+                  "quote": "1,272.2"
                 }
               },
               {
@@ -47804,7 +47958,7 @@
               {
                 "metric": "Net revenue",
                 "value": "1262.6",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "533.8",
                 "comparison_period": "Q1 2026",
@@ -47817,7 +47971,7 @@
               {
                 "metric": "Gross profit",
                 "value": "644.0",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "181.5",
                 "comparison_period": "Q1 2026",
@@ -47830,7 +47984,7 @@
               {
                 "metric": "Gross profit on GAAP basis",
                 "value": "644.0",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q1 2027",
                 "comparison_value": "477.3",
                 "comparison_period": "Q4 2026",
@@ -47841,42 +47995,42 @@
                 }
               },
               {
-                "metric": "Gross profit on non-GAAP basis",
+                "metric": "Gross profit",
                 "value": "671.2",
-                "unit": "USD_millions",
+                "unit": "USD_M",
                 "period": "Q1 2027",
                 "comparison_value": null,
                 "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Gross profit on non-GAAP basis\n$\n671.2"
+                  "quote": "Gross profit on non-GAAP basis\n$\n671.2\n$\n506.9\n$\n210.3"
                 }
               },
               {
-                "metric": "Gross margin on non-GAAP basis",
-                "value": "53.2",
-                "unit": "percent",
+                "metric": "Net income on non-GAAP basis",
+                "value": "461.1",
+                "unit": "USD_M",
                 "period": "Q1 2027",
                 "comparison_value": null,
                 "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Gross margin on non-GAAP basis\n53.2\n%"
+                  "quote": "Net income on non-GAAP basis\n$\n461.1\n$\n326.3\n$\n86.4\nNet income per share on non-GAAP basis\n$\n4.57"
                 }
               },
               {
                 "metric": "Adjusted EBITDA",
                 "value": "578.0",
-                "unit": "USD_millions",
+                "unit": "USD_M",
                 "period": "Q1 2027",
                 "comparison_value": null,
                 "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "Adjusted EBITDA\n$\n578.0"
+                  "quote": "Adjusted EBITDA\n$\n578.0\n$\n406.4\n$\n127.6"
                 }
               }
             ],
@@ -47886,9 +48040,9 @@
                 "period": "Q2_FY2027",
                 "guidance_type": "range",
                 "value": null,
-                "low": "1575.0",
+                "low": "1575",
                 "midpoint": null,
-                "high": "1625.0",
+                "high": "1625",
                 "unit": "USD_millions",
                 "previous_low": null,
                 "previous_midpoint": null,
@@ -47914,11 +48068,11 @@
                 "change": null,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "non-GAAP operating margin of 45.0% to 46.0%"
+                  "quote": "Non-GAAP operating margin of 45.0% to 46.0%"
                 }
               },
               {
-                "metric": "Non-GAAP diluted net income per share",
+                "metric": "Non-GAAP diluted EPS",
                 "period": "Q2_FY2027",
                 "guidance_type": "range",
                 "value": null,
@@ -47932,36 +48086,146 @@
                 "change": null,
                 "evidence": {
                   "document_key": "official_ir:b5e23586ebea91999aecf447",
-                  "quote": "non-GAAP diluted net income per share of $5.90 to $6.20."
+                  "quote": "Non-GAAP diluted earnings per share of $5.90 to $6.20"
                 }
               }
             ],
             "cash_flow_and_capex": [
               {
-                "metric": "CashAndCashEquivalentsAtCarryingValue",
+                "metric": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
                 "value": "1272.2",
                 "unit": "usd",
-                "period": "c-5",
+                "period": null,
                 "comparison_value": null,
                 "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001628280-26-069615:lite-20260926.htm",
-                  "quote": "us-gaap:CashAndCashEquivalentsAtCarryingValue, 1,272.2"
+                  "quote": "1,272.2"
                 },
                 "metric_type": "other",
                 "reconciliation": []
+              },
+              {
+                "metric": "Adjusted EBITDA",
+                "value": "578.0",
+                "unit": "USD_M",
+                "period": "Q1 2027",
+                "comparison_value": null,
+                "comparison_period": null,
+                "reported_change": null,
+                "evidence": {
+                  "document_key": "official_ir:b5e23586ebea91999aecf447",
+                  "quote": "Adjusted EBITDA\n$\n578.0\n$\n406.4\n$\n127.6"
+                },
+                "metric_type": "other_adjusted",
+                "reconciliation": [
+                  {
+                    "item": "GAAP net income (loss)",
+                    "value": "360.3",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "GAAP net income (loss)\n$\n360.3\n$\n(7,161.7\n)\n$\n4.2"
+                    }
+                  },
+                  {
+                    "item": "Interest expense",
+                    "value": "2.4",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Interest expense\n2.4\n3.6\n5.7"
+                    }
+                  },
+                  {
+                    "item": "Interest and other income, net",
+                    "value": "-12.9",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Interest and other income, net\n(12.9\n)\n(22.6\n)\n(4.2\n)"
+                    }
+                  },
+                  {
+                    "item": "Income tax provision (benefit)",
+                    "value": "10.0",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Income tax provision (benefit)\n10.0\n(296.6\n)\n1.0"
+                    }
+                  },
+                  {
+                    "item": "Depreciation expense",
+                    "value": "43.6",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Depreciation expense\n43.6\n37.6\n27.8"
+                    }
+                  },
+                  {
+                    "item": "Amortization of acquired intangibles",
+                    "value": "32.8",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Amortization of acquired intangibles\n32.8\n33.5\n34.4"
+                    }
+                  },
+                  {
+                    "item": "Stock-based compensation and related payroll taxes",
+                    "value": "146.7",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Stock-based compensation and related payroll taxes\n146.7\n50.1\n46.5"
+                    }
+                  },
+                  {
+                    "item": "Integration related costs (income), net",
+                    "value": "0.3",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Integration related costs (income), net\n0.3\n0.5\n(0.8\n)"
+                    }
+                  },
+                  {
+                    "item": "Gain on sale of business, net",
+                    "value": "-6.9",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Gain on sale of business, net\n(6.9\n)\n—\n—"
+                    }
+                  },
+                  {
+                    "item": "Other charges, net",
+                    "value": "1.7",
+                    "unit": "USD_M",
+                    "period": "Q1 2027",
+                    "evidence": {
+                      "document_key": "official_ir:b5e23586ebea91999aecf447",
+                      "quote": "Other charges, net\n1.7\n0.5\n3.4"
+                    }
+                  }
+                ]
               }
             ],
             "qa": [],
             "market_consensus": [],
-            "quote_validation_issues": [
-              "facts.cards[0]:quote_not_found_in_sec_edgar:0001628280-26-069615:lite-20260926.htm",
-              "facts.cards[1]:quote_not_found_in_sec_edgar:0001628280-26-069615:lite-20260926.htm",
-              "facts.cards[2]:quote_not_found_in_sec_edgar:0001628280-26-069615:lite-20260926.htm",
-              "facts.cards[3]:quote_not_found_in_sec_edgar:0001628280-26-069615:lite-20260926.htm",
-              "facts.cards[4]:quote_not_found_in_sec_edgar:0001628280-26-069615:lite-20260926.htm"
-            ],
+            "quote_validation_issues": [],
             "extraction_batch_count": 8,
             "collection_status": {
               "ir_retrieval_provider": "direct_ir",
@@ -48030,58 +48294,59 @@
           "payload": {
             "investment_thesis": [
               {
-                "signal": "本季 Net revenue 達到 $1,262.6M，年增 136.5%，帶動 GAAP gross profit 擴大至 $644.0M，顯示營收規模快速跳升。",
-                "why_it_matters": "營收與毛利絕對金額顯著放大，直接改變公司的單季 earnings power，但因缺乏細部的 volume、price 或 mix 拆解，尚無法完全證明結構性需求或毛利率擴張的長期可持續性。",
+                "signal": "Q1 2027 營收達 $1,262.6M（年增 136.5%），且下季營收指引大幅提升至 $1.575B–$1.625B。",
+                "why_it_matters": "顯示短期內光通訊與AI相關需求加速釋放，推升整體營收規模進入新階梯。",
                 "fact_basis": [
-                  "Net revenue for the first quarter of fiscal year 2027 was $1,262.6 million compared to $533.8 million for Q1_FY2026.",
-                  "Gross profit on GAAP basis was $644.0 million for the three months ended September 26, 2026."
+                  "Q1 2027 Net revenue: $1,262.6M vs Q1 2026 $533.8M (YoY +136.5%)",
+                  "Q2 2027 Guidance revenue: $1.575B–$1.625B"
                 ],
-                "inference": "營收的高速增長反映業務規模擴張，但由於缺乏客戶集中度與訂單組成的直接證據，目前僅能視為短期業績實現，不能直接推論為長期的護城河或定價能力。",
-                "confidence": "medium"
+                "inference": "營收爆發性成長反映客戶提貨力道強勁，但由於缺少產品組合與客戶集中度細節，無法確認利潤率推升是否能長期維持。",
+                "confidence": "high"
               }
             ],
             "earnings_power_bridge": {
               "revenue_demand": [
-                "Net revenue for Q1 FY2027 報 $1,262.6M，較去年同期的 $533.8M 顯著成長 136.5%。",
-                "缺乏 volume、price、mix 或 backlog 的詳細揭露，無法進一步拆解需求驅動因子。"
+                "Q1 2027 營收 $1,262.6M，相較 Q1 2026 的 $533.8M 年增 136.5%，呈現強勁營收規模擴張。",
+                "缺少產量、單價（ASP）、訂單積壓（Backlog）或 RPO 等細節資料，無法拆解量價影響。"
               ],
               "margin_unit_economics": [
-                "GAAP gross profit 達 $644.0M，較前一季的 $477.3M 及去年同期的 $181.5M 大幅成長。",
-                "Non-GAAP gross profit 報 $671.2M，non-GAAP gross margin 報 53.2%。",
-                "Operating income 報 $359.8M，Adjusted EBITDA 報 $578.0M。"
+                "Q1 2027 GAAP 毛利達 $644.0M（前季 Q4 2026 為 $477.3M，去年同期 Q1 2026 為 $181.5M）；Non-GAAP 毛利達 $671.2M。",
+                "Non-GAAP 淨利達 $461.1M（Non-GAAP EPS $4.57）；然而 GAAP 營業利益（Operating Income Loss）記錄為 $359.8M，且包含股權激勵費用 $146.7M 與無形資產攤銷 $32.8M 等調整項目，需關注 GAAP 與 Non-GAAP 獲利差距之原因。"
               ],
               "cash_capital_intensity": [
-                "截至期末之 Cash and cash equivalents at carrying value 為 $1,272.2M。",
-                "未提供完整的 CFO、FCF 或 capex 細節，無法完整評估資本密集度與現金流的可持續性。"
+                "Q1 2027 Adjusted EBITDA 達 $578.0M（前季 $406.4M，去年同期 $127.6M）。",
+                "期末現金與現金等價物達 $1,272.2M。本季未揭露自由現金流（FCF）與資本支出（Capex）數據，無法完整評估資本支出強度與現金轉換效率。"
               ]
             },
             "guidance_assessment": [
-              "公司預估 Q2 FY2027 Net revenue 介於 $1.575B 至 $1.625B。",
-              "公司預估 Q2 FY2027 Non-GAAP operating margin 介於 45.0% 至 46.0%。",
-              "公司預估 Q2 FY2027 Non-GAAP diluted net income per share 介於 $5.90 至 $6.20。"
+              "Q2 2027 指引：預估營收 $1.575B–$1.625B。",
+              "Q2 2027 指引：預估 Non-GAAP 營業利益率 45.0%–46.0%。",
+              "Q2 2027 指引：預估 Non-GAAP 稀釋後 EPS $5.90–$6.20。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
             ],
             "demand_quality": [
-              "研究包中未提供客戶數、大客戶 cohort、NRR、RPO 或 usage 等詳細數據，無法判定需求廣度、深度、擴展品質及集中度。"
+              "缺乏客戶總數、大客戶數量、NRR 或訂單集中度等結構性資料，無法判定客戶拓展廣度與深度。"
             ],
             "qa_readthrough": [],
             "competitive_value_chain": [
-              "現有證據僅顯示營收與毛利規模大幅成長，但缺乏直接證據支持定價權、control point、share gain/loss 或 switching cost，故無法判定其競爭優勢或價值鏈地位。"
+              "本季未提供直接證據（如市占率變化、訂價能力或客戶轉換成本），無法下護城河或價值擷取能力之結論。"
             ],
             "risks_and_disconfirming_evidence": [
-              "高成長可能伴隨短期訂單波動，若缺乏長期的 backlog 或 NRR 數據支持，未來幾季的營收續航力仍有不確定性。",
-              "缺乏資本支出與現金流量細節，無法確認產能擴充所需之資本投入是否會對未來現金流造成壓力。"
+              "GAAP 與 Non-GAAP 盈餘差異過大：GAAP 營業利益虧損 $359.8M，受股權激勵費用（$146.7M）及其他營業費用影響，若未來 Non-GAAP 調整無法收斂，將稀釋實際股東權益。",
+              "欠缺單一客戶集中度與訂單持續性證據，若高成長僅來自少數客戶短期拉貨，未來動能可能驟減。"
             ],
             "watch_items": [
-              "Q2 FY2027 財測目標（$1.575B 至 $1.625B 營收）的實際達成情況。",
-              "後續財報是否補充客戶集中度、RPO 或更完整的現金流量表與資本支出資訊。"
+              "下季（Q2 2027）實際營收是否落在指引 $1.575B–$1.625B 高端。",
+              "Non-GAAP 營業利益率能否達到指引之 45.0%–46.0%。",
+              "後續財報是否補充 Capex、FCF 及客戶集中度等數據。"
             ],
             "confidence": 75,
-            "telegram_draft": "LITE FY2027 Q2\n\n💡 投資結論與邏輯:\n• 本季 Net revenue 達到 $1,262.6M，年增 136.5%，帶動 GAAP gross profit 擴大至 $644.0M，顯示單季 earnings power 顯著提升。\n• 營收與毛利雖大幅成長，但因缺乏 volume、price、mix 與客戶集中度的直接證據，尚無法確認其長期需求結構與護城河。\n\n📊 關鍵數據與財測:\n• 營收與獲利: Q1 FY2027 Net revenue $1,262.6M（年增 136.5%）；GAAP gross profit $644.0M；Non-GAAP gross profit $671.2M（margin 53.2%）；Adjusted EBITDA $578.0M；Operating income $359.8M。\n• 現金水位: 期末 Cash and cash equivalents 為 $1,272.2M，反映基本流動性，但缺乏完整 CFO 與 capex 數據以評估資本密集度。\n• 下季財測 (Q2 FY2027): 預估 Net revenue 介於 $1.575B 至 $1.625B；Non-GAAP operating margin 介於 45.0% 至 46.0%；Non-GAAP diluted EPS 介於 $5.90 至 $6.20。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能: 營收與毛利絕對金額顯著跳升，反映出營運規模擴張，但缺乏產品組合或終端市場細分數據，無法進一步驗證成長動能的組成品質。\n• 法說 Q&A: 本研究包未包含 Q&A 逐字稿或管理層問答紀錄，故無法呈現分析師追問與管理層回應之細節。\n\n⚠️ 風險、反證與待驗證:\n• 缺乏長期需求驗證: 缺乏 NRR、RPO、客戶數與訂單能見度，無法排除短期拉貨造成的營收波動風險。\n• 成本與資本支出不明: 現有證據未充分揭露現金流與 capex 細節，資本密集度與自由現金流可持續性仍待後續財報驗證。"
+            "telegram_draft": "LITE FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收展現強勁年成長，配合下季營收與 Non-GAAP 營業利益率指引大幅提升，顯示短期營運進入高擴張期。\n• 然而 GAAP 營業利益仍呈現虧損，且欠缺 Capex 與客戶集中度數據，無法證明產品定價權與結構性獲利能力。\n\n📊 關鍵數據與財測:\n• 營收與毛利成長：本季營收 $1,262.6M（年增 136.5%），GAAP 毛利 $644.0M，反映業務規模快速擴展，但未揭露量價結構。\n• 獲利與調整項目：Non-GAAP 淨利 $461.1M（EPS $4.57），Adjusted EBITDA $578.0M；但 GAAP 營業利益虧損 $359.8M，主因包含股權激勵費用 $146.7M 等調整。\n• 下季財測指引：預估下季營收 $1.575B–$1.625B，Non-GAAP 營業利益率 45.0%–46.0%，Non-GAAP EPS $5.90–$6.20，預示獲利能力持續擴大。\n• 共識說明：外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 本季無公開法說會 Q&A 逐字稿資料，無法評估管理層對營運細節之回應。\n• 期末現金及現金等價物為 $1,272.2M，營運資金充沛，惟現金流量表與 Capex 數據缺失，限制資本效率分析。\n\n⚠️ 風險、反證與待驗證:\n• GAAP 與 Non-GAAP 獲利差距顯著，需持續觀察股權激勵費用對長期股東權益之稀釋。\n• 缺乏客戶數、NRR 及訂單集中度數據，無法驗證需求來自廣泛客戶或少數大廠拉貨。\n• 缺少 Capex 數據，無法確定目前營收高成長是否伴隨過度激進的資本投入風險。"
           }
         },
         "audit": {
           "payload": {
-            "overall_score": 78,
+            "overall_score": 85,
             "unsupported_claims": [],
             "numerical_errors": [],
             "missing_material_points": [],
@@ -48089,110 +48354,112 @@
             "qa_interpretation_errors": [],
             "accounting_guidance_errors": [],
             "critical_issues": [
-              "Quote validation failed for multiple sec_edgar facts (cards 0-4), indicating a mismatch between cited text and SEC EDGAR source strings.",
-              "deterministic_v5_gate:unverified_source_quotes",
-              "deterministic_v4_gate:interpretation"
-            ],
-            "pass": false,
-            "corrected_telegram_draft": "LITE FY2027 Q2\n\n💡 投資結論與邏輯:\n• 本季營收與毛利大幅擴張，單季 earnings power 顯著提升，但因缺乏 volume、price 或 mix 的詳細拆解，尚無法直接證明長期需求結構與護城河。\n\n📊 關鍵數據與財測:\n• 營收與獲利: Q1 Net revenue $1,262.6M（年增 136.5%）；GAAP gross profit $644.0M；Non-GAAP gross profit $671.2M（margin 53.2%）；Adjusted EBITDA $578.0M；Operating income $359.8M。\n• 現金水位: 期末 Cash and cash equivalents 為 $1,272.2M，反映基本流動性，但缺乏完整 CFO 與 capex 細節以評估資本密集度。\n• 下季財測 (Q2): 預估 Net revenue 介於 $1.575B 至 $1.625B；Non-GAAP operating margin 介於 45.0% 至 46.0%；Non-GAAP diluted EPS 介於 $5.90 至 $6.20。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能: 營收與毛利絕對金額顯著跳升，反映出營運規模擴張，但缺乏產品組合或終端市場細分數據，無法進一步驗證成長動能的組成品質。\n• 法說 Q&A: 本研究包未包含 Q&A 逐字稿或管理層問答紀錄，故無法呈現分析師追問與管理層回應之細節。\n\n⚠️ 風險、反證與待驗證:\n• 缺乏長期需求驗證: 缺乏 NRR、RPO、客戶數與訂單能見度，無法排除短期拉貨造成的營收波動風險。\n• 成本與資本支出不明: 現有證據未充分揭露現金流與 capex 細節，資本密集度與自由現金流可持續性仍待後續財報驗證。",
-            "structure_errors": [],
-            "bullet_format_errors": [],
-            "redundancy_errors": [],
-            "period_label_errors": [],
-            "interpretation_errors": [
-              "kpi_without_readthrough:營收與獲利: Q1 Net revenue $1,262.6M（年增 136.5%）；GAAP gross profit $644.0M；Non-GAAP gross profit",
-              "kpi_without_readthrough:下季財測 (Q2): 預估 Net revenue 介於 $1.575B 至 $1.625B；Non-GAAP operating margin 介於 45.0% 至 46.0%；"
-            ],
-            "customer_readthrough_errors": [],
-            "density_errors": [],
-            "numeric_provenance_errors": [],
-            "strong_claim_errors": []
-          }
-        },
-        "revision_analysis": {
-          "payload": {
-            "investment_thesis": [
-              {
-                "signal": "本季營收與毛利顯著增長，單季營運規模擴大，反映出營收絕對金額的跳升。",
-                "why_it_matters": "營收與毛利擴大直接提升了單季的 earnings power，但因缺乏詳細的 volume、price 或 mix 拆解，尚無法完全證明長期需求結構與毛利率擴張的可持續性。",
-                "fact_basis": [
-                  "Net revenue for the first quarter of fiscal year 2027 was $1,262.6 million compared to $533.8 million for Q1_FY2026.",
-                  "Gross profit on GAAP basis was $644.0 million for the three months ended September 26, 2026."
-                ],
-                "inference": "營收的高速增長反映業務規模擴張，但由於缺乏客戶集中度與訂單組成的直接證據，目前僅能視為短期業績實現，不能直接推論為長期的定價能力。",
-                "confidence": "medium"
-              }
-            ],
-            "earnings_power_bridge": {
-              "revenue_demand": [
-                "Net revenue for Q1 FY2027 報 $1,262.6M，較去年同期的 $533.8M 成長 136.5%。",
-                "缺乏 volume、price、mix 或 backlog 的詳細揭露，無法進一步拆解需求驅動因子。"
-              ],
-              "margin_unit_economics": [
-                "GAAP gross profit 達 $644.0M，較前一季的 $477.3M 及去年同期的 $181.5M 增加。",
-                "Non-GAAP gross profit 報 $671.2M，non-GAAP gross margin 報 53.2%。",
-                "Operating income 報 $359.8M，Adjusted EBITDA 報 $578.0M。"
-              ],
-              "cash_capital_intensity": [
-                "截至期末之 Cash and cash equivalents at carrying value 為 $1,272.2M。",
-                "未提供完整的 CFO、FCF 或 capex 細節，無法完整評估資本密集度與現金流的可持續性。"
-              ]
-            },
-            "guidance_assessment": [
-              "公司預估 Q2 FY2027 Net revenue 介於 $1.575B 至 $1.625B。",
-              "公司預估 Q2 FY2027 Non-GAAP operating margin 介於 45.0% 至 46.0%。",
-              "公司預估 Q2 FY2027 Non-GAAP diluted net income per share 介於 $5.90 至 $6.20。"
-            ],
-            "demand_quality": [
-              "研究包中未提供客戶數、大客戶 cohort、NRR、RPO 或 usage 等詳細數據，無法判定需求廣度、深度、擴展品質及集中度。"
-            ],
-            "qa_readthrough": [],
-            "competitive_value_chain": [
-              "現有證據僅顯示營收與毛利規模大幅成長，但缺乏直接證據支持定價權、control point、share gain/loss 或 switching cost，故無法判定其競爭優勢或價值鏈地位。"
-            ],
-            "risks_and_disconfirming_evidence": [
-              "高成長可能伴隨短期訂單波動，若缺乏長期的 backlog 或 NRR 數據支持，未來幾季的營收續航力仍有不確定性。",
-              "缺乏資本支出與現金流量細節，無法確認產能擴充所需之資本投入是否會對未來現金流造成壓力。"
-            ],
-            "watch_items": [
-              "Q2 FY2027 財測目標（$1.575B 至 $1.625B 營收）的實際達成情況。",
-              "後續財報是否補充客戶集中度、RPO 或更完整的現金流量表與資本支出資訊。"
-            ],
-            "confidence": 75,
-            "telegram_draft": "LITE FY2027 Q2\n\n💡 投資結論與邏輯:\n• 本季營收與毛利規模大幅擴張，單季 earnings power 顯著提升，但因缺乏 volume、price 或 mix 的詳細拆解，尚無法直接證明長期需求結構與護城河。\n\n📊 關鍵數據與財測:\n• 營收與獲利: Q1 Net revenue 顯示為 $1,262.6M（年增 136.5%），帶動 GAAP gross profit 達 $644.0M；Non-GAAP gross profit 顯示為 $671.2M（margin 53.2%）；Operating income 顯示為 $359.8M；Adjusted EBITDA 顯示為 $578.0M，反映單季獲利規模擴張，但缺乏產品組合細節。\n• 現金水位: 期末 Cash and cash equivalents 顯示為 $1,272.2M，顯示基本流動性，但缺乏完整 CFO 與 capex 數據以評估資本密集度。\n• 下季財測: 公司預估 Q2 Net revenue 介於 $1.575B 至 $1.625B；Non-GAAP operating margin 介於 45.0% 至 46.0%；Non-GAAP diluted EPS 介於 $5.90 至 $6.20，反映管理層預期，但高指引不等同於已實現。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能: 營收與毛利絕對金額顯著跳升，反映出營運規模擴張，但缺乏產品組合或終端市場細分數據，無法進一步驗證成長動能的組成品質。\n• 法說 Q&A: 本研究包未包含 Q&A 逐字稿或管理層問答紀錄，故無法呈現分析師追問與管理層回應之細節。\n\n⚠️ 風險、反證與待驗證:\n• 缺乏長期需求驗證: 缺乏 NRR、RPO、客戶數與訂單能見度，無法排除短期拉貨造成的營收波動風險。\n• 成本與資本支出不明: 現有證據未充分揭露現金流與 capex 細節，資本密集度與自由現金流可持續性仍待後續財報驗證。"
-          }
-        },
-        "revision_audit": {
-          "payload": {
-            "overall_score": 68,
-            "unsupported_claims": [],
-            "numerical_errors": [],
-            "missing_material_points": [],
-            "causal_reasoning_errors": [],
-            "qa_interpretation_errors": [],
-            "accounting_guidance_errors": [],
-            "critical_issues": [
-              "Telegram draft does not strictly follow the INVESTOR TELEGRAM V4.3 OUTPUT CONTRACT structure and line limits (Section 2 exceeds line limits, section formatting issues).",
-              "Quote validation issues present in EDGAR source references.",
-              "deterministic_v5_gate:unverified_source_quotes",
-              "deterministic_v4_gate:interpretation",
               "deterministic_v4_gate:strong_claim"
             ],
             "pass": false,
-            "corrected_telegram_draft": "LITE FY2027 Q2\n\n💡 投資結論與邏輯:\n• 本季營收與毛利顯著擴張，帶動 earnings power 提升，但缺乏結構性拆解，尚無法直接證明長期需求與護城河。\n• 現有證據顯示短期業績實現，但因缺乏客戶集中度與訂單組成的直接支援，暫無法推論為長期的定價能力。\n\n📊 關鍵數據與財測:\n• Q1 Net revenue 報 $1,262.6M（年增 136.5%），反映業務規模擴張，但缺乏細部 volume 或 mix 拆解。\n• GAAP gross profit 達 $644.0M（non-GAAP gross profit 報 $671.2M，non-GAAP gross margin 報 53.2%），顯示毛利絕對金額增加，但產品組合細節尚待補足。\n• Operating income 報 $359.8M，Adjusted EBITDA 報 $578.0M，期末 Cash and cash equivalents 報 $1,272.2M，流動性穩健但缺乏完整 CFO 與 capex 評估細節。\n• 公司預估 Q2 Net revenue 介於 $1.575B 至 $1.625B，Non-GAAP operating margin 介於 45.0% 至 46.0%，Non-GAAP diluted EPS 介於 $5.90 至 $6.20。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營運動能: 營收與毛利絕對金額顯著跳升，反映單季營運規模放大，但因缺乏終端市場細分與長期 backlog 數據，成長動能組成品質仍待驗證。\n• 法說 Q&A: 本研究包未包含 Q&A 逐字稿或管理層問答紀錄，故無法呈現分析師追問與管理層回應之細節。\n\n⚠️ 風險、反證與待驗證:\n• 缺乏長期需求驗證: 缺乏 NRR、RPO 與客戶數等數據，無法排除短期拉貨波動風險。\n• 資本與現金流不明: 缺少完整的自由現金流量與資本支出細節，資本密集度與可持續性仍待後續財報驗證。",
+            "corrected_telegram_draft": "LITE FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收展現強勁年成長，配合下季營收與 Non-GAAP 營業利益率指引大幅提升，顯示短期營運進入高擴張期。\n• 然而 GAAP 營業利益仍呈現虧損，且欠缺 Capex 與客戶集中度數據，無法證明產品定價權與結構性獲利能力。\n\n📊 關鍵數據與財測:\n• 營收規模擴充：本季營收 $1,262.6M（年增 136.5%），顯示業務規模快速擴張，但因缺乏單價與產量資料，無法拆解量價結構。\n• 獲利與調整差距：Non-GAAP 淨利 $461.1M（EPS $4.57），Adjusted EBITDA $578.0M；但 GAAP 營業利益虧損 $359.8M，主因包含股權激勵費用 $146.7M 與無形資產攤銷 $32.8M 等調整，顯示實際獲利品質受稀釋影響。\n• 下季指引展望：預估下季營收 $1.575B–$1.625B，Non-GAAP 營業利益率 45.0%–46.0%，Non-GAAP EPS $5.90–$6.20，指引顯示獲利能力預期擴大。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 本季無公開法說會 Q&A 逐字稿資料，無法評估管理層對營運細節之回應。\n• 期末現金及現金等價物為 $1,272.2M，營運資金充沛，惟現金流量表與 Capex 數據缺失，限制資本效率分析。\n\n⚠️ 風險、反證與待驗證:\n• GAAP 與 Non-GAAP 獲利差距顯著，需持續觀察股權激勵費用對長期股東權益之稀釋。\n• 缺乏客戶數、NRR 及訂單集中度數據，無法驗證需求來自廣泛客戶或少數大廠拉貨。\n• 缺少 Capex 數據，無法確定目前營收高成長是否伴隨過度激進的資本投入風險。",
             "structure_errors": [],
             "bullet_format_errors": [],
             "redundancy_errors": [],
             "period_label_errors": [],
-            "interpretation_errors": [
-              "kpi_without_readthrough:公司預估 Q2 Net revenue 介於 $1.575B 至 $1.625B，Non-GAAP operating margin 介於 45.0% 至 46.0%，Non-GA"
-            ],
+            "interpretation_errors": [],
             "customer_readthrough_errors": [],
             "density_errors": [],
             "numeric_provenance_errors": [],
             "strong_claim_errors": [
               "strong_claim_without_direct_evidence:pricing_power"
             ]
+          }
+        },
+        "revision_analysis": {
+          "payload": {
+            "investment_thesis": [
+              {
+                "signal": "Q1 2027 營收達 $1,262.6M（年增 136.5%），且下季營收指引大幅提升至 $1.575B–$1.625B。",
+                "why_it_matters": "顯示短期內光通訊需求擴張，推升整體營收規模進入新階梯。",
+                "fact_basis": [
+                  "Q1 2027 Net revenue: $1,262.6M vs Q1 2026 $533.8M (YoY +136.5%)",
+                  "Q2 2027 Guidance revenue: $1.575B–$1.625B"
+                ],
+                "inference": "營收成長反映客戶提貨力道強勁，但由於缺少產品組合與客戶集中度細節，無法確認利潤率推升是否能長期維持。",
+                "confidence": "high"
+              }
+            ],
+            "earnings_power_bridge": {
+              "revenue_demand": [
+                "Q1 2027 營收 $1,262.6M，相較 Q1 2026 的 $533.8M 年增 136.5%，呈現強勁營收規模擴張。",
+                "缺少產量、單價（ASP）、訂單積壓（Backlog）或 RPO 等細節資料，無法拆解量價影響。"
+              ],
+              "margin_unit_economics": [
+                "Q1 2027 GAAP 毛利達 $644.0M（前季 Q4 2026 為 $477.3M，去年同期 Q1 2026 為 $181.5M）；Non-GAAP 毛利達 $671.2M。",
+                "Non-GAAP 淨利達 $461.1M（Non-GAAP EPS $4.57）；然而 GAAP 營業利益記錄為 $359.8M，且包含股權激勵費用 $146.7M 與無形資產攤銷 $32.8M 等調整項目，需關注 GAAP 與 Non-GAAP 獲利差距之原因。"
+              ],
+              "cash_capital_intensity": [
+                "Q1 2027 Adjusted EBITDA 達 $578.0M（前季 $406.4M，去年同期 $127.6M）。",
+                "期末現金與現金等價物達 $1,272.2M。本季未揭露自由現金流（FCF）與資本支出（Capex）數據，無法完整評估資本支出強度與現金轉換效率。"
+              ]
+            },
+            "guidance_assessment": [
+              "Q2 2027 指引：預估營收 $1.575B–$1.625B。",
+              "Q2 2027 指引：預估 Non-GAAP 營業利益率 45.0%–46.0%。",
+              "Q2 2027 指引：預估 Non-GAAP 稀釋後 EPS $5.90–$6.20。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
+            ],
+            "demand_quality": [
+              "缺乏客戶總數、大客戶數量、NRR 或訂單集中度等結構性資料，無法判定客戶拓展廣度與深度。"
+            ],
+            "qa_readthrough": [],
+            "competitive_value_chain": [
+              "本季未提供直接證據（如市占率變化、訂價能力或客戶轉換成本），無法下護城河或價值擷取能力之結論。"
+            ],
+            "risks_and_disconfirming_evidence": [
+              "GAAP 與 Non-GAAP 盈餘差異過大：GAAP 營業利益記錄 $359.8M，受股權激勵費用（$146.7M）及其他營業費用影響，若未來 Non-GAAP 調整無法收斂，將稀釋實際股東權益。",
+              "欠缺單一客戶集中度與訂單持續性證據，若高成長僅來自少數客戶短期拉貨，未來動能可能驟減。"
+            ],
+            "watch_items": [
+              "下季（Q2 2027）實際營收是否落在指引 $1.575B–$1.625B 高端。",
+              "Non-GAAP 營業利益率能否達到指引之 45.0%–46.0%。",
+              "後續財報是否補充 Capex、FCF 及客戶集中度等數據。"
+            ],
+            "confidence": 75,
+            "telegram_draft": "LITE FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收展現強勁年成長，配合下季營收與 Non-GAAP 營業利益率指引大幅提升，顯示短期營運進入擴張期。\n• 然而 GAAP 營業利益與 Non-GAAP 差距顯著，且欠缺 Capex 與客戶集中度數據，無法證明結構性獲利能力。\n\n📊 關鍵數據與財測:\n• 營收規模擴充：本季營收 $1,262.6M（年增 136.5%），顯示業務規模快速擴張，但因缺乏單價與產量資料，仍不能拆解量價結構。\n• 獲利與調整差距：Non-GAAP 淨利 $461.1M（EPS $4.57），Adjusted EBITDA $578.0M；但 GAAP 營業利益記錄 $359.8M，主因包含股權激勵費用 $146.7M 與無形資產攤銷 $32.8M 等調整，反映實際獲利品質受調整項目影響。\n• 下季指引展望：預估下季營收 $1.575B–$1.625B，Non-GAAP 營業利益率 45.0%–46.0%，Non-GAAP EPS $5.90–$6.20，指引顯示獲利能力預期擴大。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 本季無公開法說會 Q&A 逐字稿資料，無法評估管理層對營運細節之回應。\n• 期末現金及現金等價物為 $1,272.2M，營運資金充沛，惟現金流量表與 Capex 數據缺失，仍不能完整評估資本效率分析。\n\n⚠️ 風險、反證與待驗證:\n• GAAP 與 Non-GAAP 獲利差距顯著，需持續觀察股權激勵費用對長期股東權益之稀釋。\n• 缺乏客戶數、NRR 及訂單集中度數據，仍不能驗證需求來自廣泛客戶或少數大廠拉貨。\n• 缺少 Capex 數據，無法確定目前營收高成長是否伴隨過度激進的資本投入風險。"
+          }
+        },
+        "revision_audit": {
+          "payload": {
+            "overall_score": 75,
+            "unsupported_claims": [
+              "Analyst output 與 telegram_draft 將 SEC 申報資料中的 GAAP Operating Loss（$359.8M）錯誤陳述為 GAAP Operating Income（$359.8M）。卡片 c3:sec_edgar:0001628280-26-069615:lite-20260926.htm#structured 標記為 us-gaap:OperatingIncomeLoss 值為 359.8M，且在對比 GAAP Net Income 與 reconciliation 時顯示公司實際上處於營業虧損或本期特殊項目調整狀態，將 Operating Loss 寫成 Operating Income 為嚴重不實陳述。"
+            ],
+            "numerical_errors": [
+              "將 GAAP Operating Loss $359.8M 寫為 GAAP 營業利益 $359.8M。"
+            ],
+            "missing_material_points": [],
+            "causal_reasoning_errors": [
+              "在 GAAP 與 Non-GAAP 差距分析中，忽視了 GAAP 營業損益的真實正負向，將虧損/費用項誤認為利益後進行推理。"
+            ],
+            "qa_interpretation_errors": [],
+            "accounting_guidance_errors": [
+              "GAAP Operating Loss 與 GAAP Operating Income 分類混淆。"
+            ],
+            "critical_issues": [
+              "GAAP 財務指標方向性錯誤：把 GAAP 營業虧損（Operating Income Loss）誤報為正向 GAAP 營業利益（GAAP 營業利益記錄為 $359.8M）。",
+              "deterministic_v5_gate:unsupported_claims",
+              "deterministic_v5_gate:numerical_errors",
+              "deterministic_v5_gate:causal_reasoning_errors",
+              "deterministic_v5_gate:accounting_guidance_errors"
+            ],
+            "pass": false,
+            "corrected_telegram_draft": "LUMENTUM FY2027 Q1\n\n💡 投資結論與邏輯:\n• 本季營收展現強勁年成長，且下季營收與 Non-GAAP 營業利益率指引持續擴張，顯示營運規模進入新階段。\n• 惟 GAAP 營業損益與 Non-GAAP 盈餘差距顯著，加上缺乏 Capex 與客戶集中度數據，仍無法確定結構性獲利能力。\n\n📊 關鍵數據與財測:\n• 營收規模擴張：本季營收 $1,262.6M（年增 136.5%），反映業務規模擴大，但因欠缺單價與產量資料，仍不能拆解量價結構。\n• 獲利與調整差距：Non-GAAP 淨利 $461.1M（Non-GAAP EPS $4.57），Adjusted EBITDA $578.0M；但 GAAP 營業損益記錄為虧損 $359.8M，主因包含股權激勵費用 $146.7M 與無形資產攤銷 $32.8M 等調整，反映實際獲利品質受調整項目影響。\n• 下季指引展望：預估下季營收 $1.575B–$1.625B，Non-GAAP 營業利益率 45.0%–46.0%，Non-GAAP EPS $5.90–$6.20，指引顯示獲利預期擴增。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 本季無公開法說會 Q&A 逐字稿資料，無法評估管理層對營運細節之回應。\n• 期末現金及現金等價物為 $1,272.2M，資金儲備充足，惟現金流量表與 Capex 數據缺失，仍不能完整評估資本效率。\n\n⚠️ 風險、反證與待驗證:\n• GAAP 與 Non-GAAP 獲利差距顯著，需持續觀察股權激勵費用對長期股東權益之稀釋。\n• 缺乏客戶數、NRR 及訂單集中度數據，仍不能驗證需求來自廣泛客戶或少數大廠拉貨。\n• 缺少 Capex 數據，無法確定目前營收高成長是否伴隨過度激進的資本投入風險。",
+            "structure_errors": [],
+            "bullet_format_errors": [],
+            "redundancy_errors": [],
+            "period_label_errors": [],
+            "interpretation_errors": [],
+            "customer_readthrough_errors": [],
+            "density_errors": [],
+            "numeric_provenance_errors": [],
+            "strong_claim_errors": []
           }
         }
       },
