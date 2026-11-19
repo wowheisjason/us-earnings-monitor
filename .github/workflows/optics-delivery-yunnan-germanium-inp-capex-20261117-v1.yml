@@ -1,0 +1,47 @@
+name: Deliver Yunnan Germanium InP capex report v1
+on:
+  push:
+    branches: [codex/optics-delivery-yunnan-germanium-inp-capex-20261117-v1]
+    paths: [.github/workflows/optics-delivery-yunnan-germanium-inp-capex-20261117-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-yunnan-germanium-inp-capex-20261117-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified Yunnan Germanium InP report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AI光通訊重大進展｜雲南鍺業追加InP擴產投資並提高大尺寸占比】\n\n1）重大變化及通知門檻\n雲南鍺業（002428.SZ）於2026/11/17晚間披露，將控股子公司雲南鑫耀的高品質InP單晶片項目總投資由1.8856億元人民幣提高至2.6999億元，增加8,143萬元、約43.2%；除設備漲價外，新增294台（套）設備以提高大尺寸產品產出占比。項目已完成租賃廠房改造，部分核心設備已採購、安裝與調試。這不是11/3 AOI長約的重刊，而是把大尺寸InP需求轉為新增設備與資本投入的實質里程碑，足以影響產能執行、資本報酬與競爭地位判斷。\n\n2）已確認事實\n• 事件日：董事會2026/11/16通過；公告時間：11/17晚間（公告文件日期11/18）。尚未宣布量產完成。\n• 調整後總投資2.6999億元，原1.8856億元；固定資產投資由1.5250億元增至2.3393億元，鋪底流動資金3,606萬元。資金來源為自有資金及金融機構貸款。\n• 增額拆分：設備市場漲價3,433萬元；為提高大尺寸占比而調整配置並新增294台（套）設備4,256萬元；安裝費增加454萬元。\n• 名目產能目標未提高：原案仍為新增年產30萬片（折4吋，含6,000片6吋），最終達45萬片／年（折4吋）；原建設期18個月。新公告未更新完工日。\n• 11/10公司紀錄稱，現有及在建InP產能已由客戶鎖定至2027年底；6吋在手訂單約1.3萬片、約3億元，主要來自海外頭部下游客戶，部分已取得出口許可並持續交付。這是公司披露，不等於全部已認列營收。\n• AAOI（NASDAQ: AAOI）11/5向SEC披露11/2簽署五年關鍵原料框架與年度採購合約；年度採購上限約1.944億美元、預付款最高4,000萬美元，取決於中國出口核准。雲南鍺業公告確認供應品為4吋N型InP襯底，2027年度18萬片；2027–2031框架合計預計90萬片。框架數量仍受年度訂單與出口許可約束。\n\n官方來源：\n雲南鍺業11/18投資調整公告\nhttps://static.cninfo.com.cn/finalpage/2026-11-18/1225676124.PDF\n雲南鍺業11/10投資者紀錄\nhttps://static.cninfo.com.cn/finalpage/2026-11-10/1225665965.PDF\n原擴產案（2026/4/4）\nhttps://static.cninfo.com.cn/finalpage/2026-04-04/1225079758.PDF\nAAOI 2026 Q3 10-Q\nhttps://www.sec.gov/Archives/edgar/data/1158114/000143774926035282/aaoi20260930_10q.htm\n\n3）受影響供應商與角色\n雲南鍺業／雲南鑫耀是InP襯底上游，直接曝險於大尺寸晶圓產能、良率與出口許可；AAOI是已確認客戶，角色涵蓋InP雷射／光元件及800G、1.6T光模組。光智科技／先銳（300489.SZ）、AXT（NASDAQ: AXTI）、住友電工（5802.T）為襯底競爭者。AAOI先前稱已有多個InP基板來源，因此本合約不代表獨家供應或其他供應商失單。\n\n4）合理推論\n若294台設備按期裝機、大尺寸良率達標、出口許可持續取得，雲南鑫耀可提高6吋產品組合與單位晶圓產出效率，強化AI光互連所需InP上游的競爭位置；已量化訂單則降低純投機擴產風險。傳導至營收仍須經完工、認證、出貨與驗收，最快應觀察2027年。反面是總產能目標未上修，新增投資部分來自設備漲價，可能提高折舊與資本報酬門檻。\n\n5）潛在機會與風險\n受益條件：6吋良率與出貨爬坡、AOI及其他客戶按約拉貨、出口許可順利、設備利用率提升。\n主要風險：出口管制或許可延誤、AOI可取消受影響訂單並要求退款、客戶集中、建設或良率不及預期、借款與折舊先於收入、競爭者同步擴產造成2027年後供給過剩。這些證據只支持雲南鑫耀特定InP產能緊張，不能外推整條EML、CPO或光模組鏈全面缺貨。未查即時股價，不判斷是否已反映。\n\n6）待驗證與下一步\n追蹤實際大尺寸產品占比、6吋月產能／良率／ASP、294台設備到位與投產時間、45萬片產能驗收、AOI預付款與2027採購執行、出口許可覆蓋量、分部收入與毛利。未公開的其他客戶不猜測。去重：既有AAOI v1/v2通知聚焦Tier-1 1.6T合約與模組產能；本次為雲南鑫耀新增資本與大尺寸InP供應落實，屬不同事件。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"yunnan-germanium-inp-capex-20261117","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-yunnan-germanium-inp-capex-20261117-v1
+          path: telegram-receipt.json
