@@ -1,0 +1,45 @@
+name: Optics delivery TE Connectivity CPO FAU capacity 20261112 v1
+on:
+  push:
+    branches: [codex/optics-delivery-te-connectivity-cpo-fau-capacity-20261112-v1]
+    paths: [.github/workflows/optics-delivery-te-connectivity-cpo-fau-capacity-20261112-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-te-connectivity-cpo-fau-capacity-20261112-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜TE Connectivity擴建CPO光纖耦合產能\n事件／公告日：2026-11-12；預計啟用：2027年春；擴產期：至2031年。\n\n1) 重大變化及門檻\nTE Connectivity（NYSE: TEL）宣布投入逾6,000萬美元，在美國紐約州Henrietta建立約13.5萬平方英尺研發與製造據點，量產其收購RAM Photonics後取得的高密度光纖陣列單元（FAU）。州政府以逾860個新增職位及最高2,200萬美元、與就業掛鉤的稅額抵減覆核專案規模。這是有金額、廠房、就業與啟用時程的實質CPO供應鏈產能投資，足以改變TEL在近晶片光纖耦合的長期競爭地位，達通知門檻。\n\n2) 已確認事實\n• 公司公告：投資逾US$60m；廠房135,000平方英尺；預計2027年春啟用，製造能力到2031年逐步爬坡；目標產品為高密度FAU，服務超大規模AI資料中心與雲端業者。\n• TEL稱已看到資料中心客戶的顯著興趣，新廠將支援「design awards」與預期成長；但未揭露客戶、得標金額、單位產能、良率、價格或已承諾訂單，因此這仍是公司宣稱與前瞻規劃，不是出貨或營收實績。\n• 地方政府文件獨立確認既有約13.3萬平方英尺建物將翻修並安裝製造、實驗室及工程設備；紐約州補助最高US$22m，須以逾860個職位為條件。\n• RAM於2025年曾宣稱其2D光纖陣列已進入量產；本次新廠是TE擴大研發／製造能力，不能等同新廠已量產。\n\n3) 供應鏈與競爭關係\n• TEL：直接受益者，角色由連接器／感測器供應商延伸至CPO近晶片FAU與被動光路；RAM已被TEL收購，非獨立上市標的。\n• 矽光子光引擎、交換器ASIC與系統整合商：屬間接受益，前提是TEL的FAU通過客戶可靠度、耦合損耗與量產良率驗證。\n• 這項FAU投資與InP／CW雷射、矽光子調變器及外置雷射光源是互補關係；它不是EML，也不是800G／1.6T可插拔光模組出貨，不能推論InP或EML全面短缺。官方未提供可核實的競品得失，故不猜測具名受壓供應商。\n\n4) 合理推論\n若設計導入轉為量產、爬坡按期且良率達標，TEL可把收購的自動化主動對準與光纖熔接能力放大到CPO量產，增加每套AI交換／運算平台的光學連接內容，並降低單靠銅互連的曝險。營收貢獻最早要等2027年啟用後，且可能隨2031年前的分期擴產逐步出現；US$60m投資相對TEL整體規模不代表短期財測必然上修。\n\n5) 潛在機會與風險\n機會：設計獎轉正式訂單、2027年設備進場／啟用、就業與產能爬坡、揭露具名雲端客戶或量產規格，均可能提高光學業務能見度。\n風險：CPO部署慢於預期、可插拔方案延長壽命、耦合良率／可靠度不達標、客戶集中、擴產過剩、成本超支，以及未達就業條件影響補助。未查即時股價，不判斷估值是否已反映。\n\n6) 待驗證與追蹤\n追蹤新廠實際啟用日、每月FAU產能與良率、design award轉換率、客戶認證、首批量產出貨／營收認列、資本支出與補助到位，以及產品是否用於具體CPO／OCS平台。未公開客戶不得猜測。\n\n官方來源（2026-11-12）：\nTE：https://www.te.com/en/about-te/news-center/corporate-news/2026/2026-11-12-te-connectivity-invests-in-new-york-state-r-d-and-manufacturing-facility-to-develop-next-generation-optical-connectivity-products.html\n地方政府：https://monroecountybusiness.org/wp-content/uploads/Public-Notice-TE-Connectivity.pdf\nRAM量產背景（2025-03-20）：https://www.ramphotonics.com/ram-photonics-industrial-launches-mass-production-of-2d-fiber-arrays-for-ocs-and-cpo/"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"te-connectivity-cpo-fau-capacity-20261112","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-te-connectivity-cpo-fau-capacity-20261112-v1
+          path: telegram-receipt.json
