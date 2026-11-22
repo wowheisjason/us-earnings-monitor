@@ -37,13 +37,16 @@ def _remove_qa_section(value: str) -> str:
 
 
 def _is_pending_qa_complaint(value: Any) -> bool:
-    text = str(value).casefold()
-    topic = any(token in text for token in ("q&a", "法說", "逐字稿", "transcript"))
-    absence = any(token in text for token in (
-        "缺少", "未提供", "未取得", "尚未提供", "沒有", "佔位", "占位", "placeholder",
-        "missing", "not provided", "not available",
-    ))
-    return topic and absence
+    # Fail closed: topic + "missing" also matches fabricated/unsupported quotes.
+    # Only known absence-only diagnostics may be waived; safety findings survive.
+    text = str(value).strip().casefold().rstrip(".。")
+    return text in {
+        "缺少具投資意義的法說 q&a 內容",
+        "缺少法說 q&a，因逐字稿尚未提供",
+        "缺少 q&a",
+        "transcript q&a not available",
+        "telegram 含目前未取得 q&a 的佔位文字",
+    }
 
 
 def _harden_audit_result(value: dict[str, Any]) -> dict[str, Any]:
@@ -81,7 +84,7 @@ def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> d
         return value
 
     normalized = dict(value)
-    for key in ("missing_material_points", "misleading_inferences", "critical_issues"):
+    for key in ("missing_material_points", "critical_issues"):
         normalized[key] = [item for item in (normalized.get(key) or []) if not _is_pending_qa_complaint(item)]
     draft = str(normalized.get("corrected_telegram_draft") or "")
     if draft:
@@ -90,7 +93,11 @@ def _normalize_pending_transcript_audit(value: dict[str, Any], facts: dict) -> d
     blocking: list[Any] = []
     for key in _AUDIT_ERROR_KEYS:
         blocking.extend(normalized.get(key) or [])
-    if not blocking:
+    removed_absence_issue = any(
+        normalized.get(key) != value.get(key) and value.get(key)
+        for key in ("missing_material_points", "critical_issues")
+    )
+    if not blocking and removed_absence_issue:
         normalized["pass"] = True
         normalized["overall_score"] = max(90, int(normalized.get("overall_score", 0) or 0))
     return normalized

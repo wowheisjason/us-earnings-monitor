@@ -26,6 +26,7 @@ _SOURCE_PRIORITY = {
     "company_ir": 94,
     "alpha_vantage_transcript": 65,
     "third_party_transcript": 55,
+    "credible_media_qa": 40,
 }
 
 
@@ -45,6 +46,8 @@ def _materiality(card: dict[str, Any]) -> int:
 def _source_score(card: dict[str, Any]) -> int:
     source = str(card.get("source") or "").casefold()
     provenance = str(card.get("provenance") or "").casefold()
+    if provenance == "credible_media_qa":
+        return 40
     if provenance == "third_party_transcript":
         return _SOURCE_PRIORITY["third_party_transcript"]
     return _SOURCE_PRIORITY.get(source, 70)
@@ -89,7 +92,7 @@ def _compact_card(card: dict[str, Any]) -> dict[str, Any]:
         "comparison_value", "comparison_period", "reported_change", "low", "midpoint", "high",
         "previous_low", "previous_midpoint", "previous_high", "materiality_candidate", "fact_class",
         "speaker", "analyst", "management_speaker", "question_summary", "answer_summary", "answer_quality",
-        "customer", "product", "use_case", "outcome", "quantified_result", "source", "provenance",
+        "customer", "product", "use_case", "outcome", "quantified_result", "source", "provenance", "qualitative_only", "url", "published_at", "retrieved_at", "outlet",
         "unit_id", "document_key", "quote", "guidance_type", "metric_type", "reconciliation",
     )
     output = {key: card.get(key) for key in keep if card.get(key) not in (None, "", [], {})}

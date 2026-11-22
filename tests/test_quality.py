@@ -42,8 +42,8 @@ def test_missing_transcript_is_pending_during_collection_window_when_ir_is_healt
     update_collection_status(current, [result_doc()], now, official_ir_checked=True)
     assert current.collection_status["transcript_status"] == TRANSCRIPT_EXPECTED
     allowed, reasons, _ = publication_gate(current, [result_doc()], now)
-    assert not allowed
-    assert "transcript_collection_window_open" in reasons
+    assert allowed
+    assert reasons == []
 
 
 def test_sec_first_v1_is_allowed_immediately_after_incomplete_ir_attempt():
@@ -96,12 +96,12 @@ def test_openai_grounded_transcript_counts_as_official_ir():
     assert manifest["has_transcript_or_qa"] is True
 
 
-def test_official_ir_artifact_forces_v2_after_sec_alert():
+def test_official_ir_artifact_requires_materiality_review_after_sec_alert():
     current = event()
     current.status = "published_sec_pending"
     current.last_analyzed_document_count = 1
     docs = [result_doc(), transcript_doc()]
-    assert requires_deterministic_enrichment_followup(current, docs)
+    assert not requires_deterministic_enrichment_followup(current, docs)
 
 
 def test_no_new_ir_artifact_does_not_force_duplicate_v2():
@@ -109,3 +109,24 @@ def test_no_new_ir_artifact_does_not_force_duplicate_v2():
     current.status = "published_sec_pending"
     current.last_analyzed_document_count = 1
     assert not requires_deterministic_enrichment_followup(current, [result_doc()])
+
+
+def test_prepared_remarks_publish_but_keep_transcript_retry_open():
+    from us_earnings_monitor.retrieval import schedule_next_ir_retry, should_attempt_ir
+    current = event()
+    now = datetime(2026, 9, 1, 16, 10, tzinfo=ET)
+    prepared = transcript_doc()
+    prepared.document_kind = "prepared_remarks"
+    docs = [result_doc(), prepared]
+    update_collection_status(current, docs, now, official_ir_checked=True)
+    assert current.collection_status["transcript_status"] == TRANSCRIPT_EXPECTED
+    assert not source_manifest(docs)["has_transcript_or_qa"]
+    assert publication_gate(current, docs, now)[0]
+    assert should_attempt_ir(current, now)
+    schedule_next_ir_retry(current, now)
+    assert current.collection_status["next_ir_retry_at"]
+
+
+def test_prepared_remarks_transcript_title_does_not_claim_qa():
+    from us_earnings_monitor.grouping import classify_document
+    assert classify_document("Earnings Call Transcript - Prepared Remarks") == "prepared_remarks"
