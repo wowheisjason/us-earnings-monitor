@@ -2528,7 +2528,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2893,7 +2893,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3191,7 +3191,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3502,7 +3502,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3736,7 +3736,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3887,7 +3887,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4336,7 +4336,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4493,7 +4493,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4567,7 +4567,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4643,7 +4643,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4793,7 +4793,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4944,7 +4944,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5018,7 +5018,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5182,7 +5182,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5642,7 +5642,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5720,7 +5720,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5793,7 +5793,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5865,7 +5865,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5941,7 +5941,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6236,7 +6236,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6314,7 +6314,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6395,7 +6395,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6471,7 +6471,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6620,7 +6620,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6696,7 +6696,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6771,7 +6771,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6847,7 +6847,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6999,7 +6999,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7075,7 +7075,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7226,7 +7226,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:16:28-05:00",
+      "updated_at": "2026-11-23T16:29:23-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7303,39 +7303,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T14:13:54-05:00",
+      "updated_at": "2026-11-23T16:26:51-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.063,
+            "seconds": 0.2,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
-            "ok": true,
-            "seconds": 1.586,
-            "documents": 3,
+            "ok": false,
+            "seconds": 1.157,
+            "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.055,
+            "seconds": 0.05,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-23T14:13:54-05:00",
+        "ir_retrieval_last_at": "2026-11-23T16:26:51-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7356,11 +7356,12 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-23T14:13:54-05:00",
+        "last_collection_check_at": "2026-11-23T16:26:51-05:00",
         "official_ir_checked_at": "2026-11-23T14:13:54-05:00",
         "official_ir_check_count": 1,
         "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-11-23T14:28:54-05:00"
+        "next_ir_retry_at": "2026-11-23T16:56:51-05:00",
+        "official_ir_last_attempt_incomplete": "2026-11-23T16:26:51-05:00"
       },
       "delivery": {}
     }
@@ -32078,6 +32079,252 @@
             ],
             "replace_only_invalid_cards": true
           }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:c16de595c99f19268b30020a#u1",
+              "official_ir:c16de595c99f19268b30020a#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third-quarter 2026 revenue was $16.5 billion, up 21% YoY.",
+                "materiality_candidate": 4,
+                "quote": "Third-quarter revenue was $16.5 billion, up 21% year-over-year (YoY).",
+                "metric": "Revenue",
+                "value": "16.5",
+                "unit": "USD B",
+                "period": "Q3 2026",
+                "comparison_value": "13.7",
+                "comparison_period": "Q3 2025",
+                "reported_change": "up 21%"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting Q4 2026 revenue between $15.0 billion and $16.0 billion.",
+                "materiality_candidate": 5,
+                "quote": "Forecasting fourth-quarter 2026 revenue of $15.0 billion to $16.0 billion",
+                "metric": "Revenue",
+                "period": "Q4 2026",
+                "guidance_type": "range",
+                "low": "15.0",
+                "high": "16.0",
+                "unit": "USD B"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting Q4 2026 non-GAAP EPS attributable to Intel of $0.25.",
+                "materiality_candidate": 5,
+                "quote": "non-GAAP EPS attributable to Intel of $0.25.",
+                "metric": "Non-GAAP EPS",
+                "period": "Q4 2026",
+                "guidance_type": "point",
+                "value": "0.25",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Data Center and AI (DCAI) revenue increased 78% YoY to $7.3 billion in Q3 2026.",
+                "materiality_candidate": 4,
+                "quote": "Data Center and AI (DCAI)\n7.3\nup 78%",
+                "metric": "Data Center and AI Revenue",
+                "value": "7.3",
+                "unit": "USD B",
+                "period": "Q3 2026",
+                "reported_change": "up 78%"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Intel generated $5.1 billion in cash from operations in Q3 2026.",
+                "materiality_candidate": 3,
+                "quote": "In the third quarter, the company generated $5.1 billion in cash from operations.",
+                "metric": "Operating Cash Flow",
+                "value": "5.1",
+                "unit": "USD B",
+                "period": "Q3 2026",
+                "metric_type": "operating_cash_flow"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u1",
+                "card_type": "management_claim",
+                "topic": "demand_revenue",
+                "fact_class": "management_claim",
+                "statement": "Intel expects the PC market slowdown to persist through at least the first half of 2027.",
+                "materiality_candidate": 4,
+                "quote": "Looking ahead, we see the PC slowdown continuing at least through the first half of next year",
+                "speaker": "David Zinsner"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u2",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Completed a $23 billion public equity offering.",
+                "materiality_candidate": 4,
+                "quote": "Completed a $23 billion public equity offering to support future growth opportunities while maintaining a strong balance sheet",
+                "metric": "Public Equity Offering Proceeds",
+                "value": "23",
+                "unit": "USD B",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "official_ir:c16de595c99f19268b30020a#u2",
+                "card_type": "guidance",
+                "topic": "margin_unit_economics",
+                "fact_class": "company_guidance",
+                "statement": "Forecasting Q4 2026 Non-GAAP Gross Margin of 38.0%.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP\nRevenue ($B)\n$15.0 - $16.0\nGross margin\n37.1%\n38.0%",
+                "metric": "Non-GAAP Gross Margin",
+                "period": "Q4 2026",
+                "guidance_type": "point",
+                "value": "38.0",
+                "unit": "%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:c16de595c99f19268b30020a#u3",
+              "official_ir:c16de595c99f19268b30020a#u4"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": [
+            {
+              "processed_unit_ids": [
+                "official_ir:c16de595c99f19268b30020a#u5",
+                "official_ir:c16de595c99f19268b30020a#u6"
+              ],
+              "cards": [
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Intel reported Net Revenue of $16,513 million for the three months ended September 26, 2026, compared to $13,653 million for the prior year period.",
+                  "materiality_candidate": 4,
+                  "quote": "Net revenue\n$\n16,513\n$\n13,653",
+                  "metric": "Net revenue",
+                  "value": 16513,
+                  "unit": "USD M",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": 13653,
+                  "comparison_period": "Three Months Ended Sep 27, 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "Intel reported Operating Income of $2,522 million for the three months ended September 26, 2026, up from $683 million for the prior year period.",
+                  "materiality_candidate": 4,
+                  "quote": "Operating income (loss)\n2,522\n683",
+                  "metric": "Operating income",
+                  "value": 2522,
+                  "unit": "USD M",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": 683,
+                  "comparison_period": "Three Months Ended Sep 27, 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Diluted Earnings per Share attributable to Intel was $0.60 for the three months ended September 26, 2026, compared to $0.90 in the prior year period.",
+                  "materiality_candidate": 4,
+                  "quote": "Earnings (loss) per share attributable to Intel—diluted\n1\n$\n0.60\n$\n0.90",
+                  "metric": "Earnings per share attributable to Intel—diluted",
+                  "value": 0.6,
+                  "unit": "USD",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": 0.9,
+                  "comparison_period": "Three Months Ended Sep 27, 2025"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                  "card_type": "capital",
+                  "topic": "cash_capex",
+                  "fact_class": "objective_fact",
+                  "statement": "Intel generated $13,184 million in net cash provided by operating activities for the nine months ended September 26, 2026, compared to $5,409 million for the prior year period.",
+                  "materiality_candidate": 4,
+                  "quote": "Net cash provided by (used for) operating activities\n13,184\n5,409",
+                  "metric": "Net cash provided by operating activities",
+                  "value": 13184,
+                  "unit": "USD M",
+                  "period": "Nine Months Ended Sep 26, 2026",
+                  "comparison_value": 5409,
+                  "comparison_period": "Nine Months Ended Sep 27, 2025",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                  "card_type": "capital",
+                  "topic": "cash_capex",
+                  "fact_class": "objective_fact",
+                  "statement": "Capital expenditures (Additions to property, plant, and equipment) were $(10,216) million for the nine months ended September 26, 2026, compared to $(11,158) million for the prior year period.",
+                  "materiality_candidate": 4,
+                  "quote": "Additions to property, plant, and equipment\n(10,216\n)\n(11,158\n)",
+                  "metric": "Additions to property, plant, and equipment",
+                  "value": -10216,
+                  "unit": "USD M",
+                  "period": "Nine Months Ended Sep 26, 2026",
+                  "comparison_value": -11158,
+                  "comparison_period": "Nine Months Ended Sep 27, 2025",
+                  "metric_type": "capex"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Intel Products segment revenue was $15,415 million for the three months ended September 26, 2026, including CCPG revenue of $8,097 million and DCAI revenue of $7,318 million.",
+                  "materiality_candidate": 4,
+                  "quote": "Total Intel Products\n$\n8,097\n$\n7,318\n$\n15,415",
+                  "metric": "Intel Products Revenue",
+                  "value": 15415,
+                  "unit": "USD M",
+                  "period": "Three Months Ended Sep 26, 2026"
+                },
+                {
+                  "unit_id": "official_ir:c16de595c99f19268b30020a#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "Intel Foundry reported segment revenue of $6,697 million and an operating loss of $(1,853) million for the three months ended September 26, 2026.",
+                  "materiality_candidate": 4,
+                  "quote": "Intel Foundry\nAll Other\n2\nCorporate Unallocated\nIntersegment Eliminations\nTotal Consolidated\nRevenue\n$\n8,097\n$\n7,318\n$\n15,415\n$\n6,697\n$\n692\n$\n—\n$\n(6,291\n)\n$\n16,513\nCost of sales and operating expenses\n5,812\n4,279\n10,091\n8,550\n513\n1,058\n(6,221\n)\n13,991\nOperating income (loss)\n$\n2,285\n$\n3,039\n$\n5,324\n$\n(1,853\n)",
+                  "metric": "Intel Foundry Operating Loss",
+                  "value": -1853,
+                  "unit": "USD M",
+                  "period": "Three Months Ended Sep 26, 2026",
+                  "comparison_value": -2321,
+                  "comparison_period": "Three Months Ended Sep 27, 2025"
+                }
+              ]
+            }
+          ]
         }
       },
       "evidence_repair_policy": 3,
@@ -55087,6 +55334,254 @@
             ],
             "cards": []
           }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $3,661 million for the quarter.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+                "metric": "Revenue",
+                "value": "3,661",
+                "unit": "USD",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Operating income was $207 million for the quarter.",
+                "materiality_candidate": 4,
+                "quote": "us-gaap:OperatingIncomeLoss",
+                "metric": "Operating Income",
+                "value": "207",
+                "unit": "USD",
+                "period": "Q3 2026"
+              },
+              {
+                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $709 million for the quarter.",
+                "materiality_candidate": 5,
+                "quote": "us-gaap:NetIncomeLoss",
+                "metric": "Net Income",
+                "value": "709",
+                "unit": "USD",
+                "period": "Q3 2026"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_4": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue from contract with customer excluding assessed tax was $3,661 million for the quarter.",
+                "materiality_candidate": 5,
+                "metric": "Revenue",
+                "value": "3,661",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c1:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
+                  "quote": "Revenue from contract with customer excluding assessed tax was $3,661 million"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Operating income was $207 million for the quarter.",
+                "materiality_candidate": 4,
+                "metric": "Operating Income",
+                "value": "207",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c2:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
+                  "quote": "Operating income was $207 million"
+                }
+              },
+              {
+                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income was $709 million for the quarter.",
+                "materiality_candidate": 5,
+                "metric": "Net Income",
+                "value": "709",
+                "unit": "USD",
+                "period": "Q3 2026",
+                "card_id": "c3:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
+                "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 0,
+                "evidence": {
+                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
+                  "quote": "Net income was $709 million"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": [
+            {
+              "processed_unit_ids": [
+                "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
+                "official_ir:0c4c1d901b6b86b3e92f8a16#u2"
+              ],
+              "cards": [
+                {
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "CoreWeave reported Q3 2026 revenue of $3,661 million, up from $1,365 million in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Revenue\n$\n3,661\n$\n1,365",
+                  "metric": "Revenue",
+                  "value": "3,661",
+                  "unit": "USD M",
+                  "period": "Q3 2026",
+                  "comparison_value": "1,365",
+                  "comparison_period": "Q3 2025"
+                },
+                {
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "Q3 2026 Adjusted Operating Income reached $379 million (10% margin) compared to $217 million (16% margin) in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Adjusted operating income\n$\n379\n$\n217",
+                  "metric": "Adjusted operating income",
+                  "value": "379",
+                  "unit": "USD M",
+                  "period": "Q3 2026",
+                  "comparison_value": "217",
+                  "comparison_period": "Q3 2025"
+                },
+                {
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Revenue backlog reached approximately $132.5 billion as of September 30, 2026.",
+                  "materiality_candidate": 5,
+                  "quote": "Revenue backlog\n1\nwas approximately $132.5 billion as of September 30, 2026.",
+                  "metric": "Revenue backlog",
+                  "value": "132.5",
+                  "unit": "USD B",
+                  "period": "as of September 30, 2026"
+                },
+                {
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
+                  "card_type": "management_claim",
+                  "topic": "cash_capex",
+                  "fact_class": "management_claim",
+                  "statement": "Management expects approximately $9 billion in customer prepayments and deposits in the next three months.",
+                  "materiality_candidate": 4,
+                  "quote": "approximately $9 billion in customer prepayments and deposits expected in the next three months alone",
+                  "speaker": "Michael Intrator"
+                },
+                {
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "fact_class": "company_guidance",
+                  "statement": "CoreWeave raised full year 2026 revenue guidance to a range of $13.0 billion to $13.3 billion.",
+                  "materiality_candidate": 5,
+                  "quote": "raising our full year 2026 revenue guidance to a range of $13.0 billion to $13.3 billion.",
+                  "metric": "Revenue",
+                  "period": "FY 2026",
+                  "guidance_type": "range",
+                  "low": "13.0",
+                  "high": "13.3",
+                  "unit": "USD B"
+                },
+                {
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "fact_class": "company_guidance",
+                  "statement": "CoreWeave raised FY 2026 adjusted operating income guidance to $1.275 billion to $1.375 billion.",
+                  "materiality_candidate": 5,
+                  "quote": "raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion",
+                  "metric": "Adjusted Operating Income",
+                  "period": "FY 2026",
+                  "guidance_type": "range",
+                  "low": "1.275",
+                  "high": "1.375",
+                  "unit": "USD B"
+                },
+                {
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u2",
+                  "card_type": "guidance",
+                  "topic": "cash_capex",
+                  "fact_class": "company_guidance",
+                  "statement": "CoreWeave raised the low end of full year 2026 capital expenditure guidance to $37 billion to $39 billion from prior $35 billion to $39 billion.",
+                  "materiality_candidate": 5,
+                  "quote": "now expect full year 2026 capital expenditures of $37 billion to $39 billion, raising the low end of our prior guidance range of $35 billion to $39 billion.",
+                  "metric": "Capital Expenditures",
+                  "period": "FY 2026",
+                  "guidance_type": "range",
+                  "low": "37",
+                  "high": "39",
+                  "unit": "USD B",
+                  "previous_low": "35",
+                  "previous_high": "39"
+                },
+                {
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u2",
+                  "card_type": "guidance",
+                  "topic": "guidance",
+                  "fact_class": "company_guidance",
+                  "statement": "CoreWeave raised annualized run-rate revenue guidance to $20 billion to $21 billion to exit 2026.",
+                  "materiality_candidate": 5,
+                  "quote": "raising our annualized run-rate revenue\n3\nguidance to $20 billion to $21 billion to exit 2026.",
+                  "metric": "Annualized run-rate revenue",
+                  "period": "Exit 2026",
+                  "guidance_type": "range",
+                  "low": "20",
+                  "high": "21",
+                  "unit": "USD B"
+                }
+              ]
+            }
+          ]
         }
       },
       "evidence_repair_policy": 3,
