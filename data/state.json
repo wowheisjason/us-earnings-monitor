@@ -2896,7 +2896,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -3261,7 +3261,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3559,7 +3559,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3870,7 +3870,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4104,7 +4104,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4255,7 +4255,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4704,7 +4704,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4861,7 +4861,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4935,7 +4935,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5011,7 +5011,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5161,7 +5161,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5312,7 +5312,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5386,7 +5386,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5550,7 +5550,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5710,7 +5710,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6010,7 +6010,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6088,7 +6088,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6161,7 +6161,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6233,7 +6233,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6309,7 +6309,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6604,7 +6604,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6682,7 +6682,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6763,7 +6763,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6839,7 +6839,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6988,7 +6988,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7064,7 +7064,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7139,7 +7139,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7215,7 +7215,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7292,39 +7292,39 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.102,
+            "seconds": 0.265,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWV-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.363,
+            "seconds": 0.587,
             "documents": 1,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.05,
+            "seconds": 0.053,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWV-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-24T04:57:30-05:00",
+        "ir_retrieval_last_at": "2026-11-24T17:59:38-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7346,11 +7346,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-24T04:57:30-05:00",
-        "official_ir_checked_at": "2026-11-24T04:57:30-05:00",
-        "official_ir_check_count": 18,
+        "last_collection_check_at": "2026-11-24T17:59:38-05:00",
+        "official_ir_checked_at": "2026-11-24T17:59:38-05:00",
+        "official_ir_check_count": 19,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-24T16:57:30-05:00"
+        "next_ir_retry_at": "2026-11-25T05:59:38-05:00"
       },
       "delivery": {}
     },
@@ -7367,16 +7367,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
@@ -7388,8 +7388,8 @@
           },
           {
             "provider": "direct_ir",
-            "ok": true,
-            "seconds": 1.015,
+            "ok": false,
+            "seconds": 1.248,
             "documents": 0,
             "partial": false
           },
@@ -7402,7 +7402,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-24T04:57:30-05:00",
+        "ir_retrieval_last_at": "2026-11-24T17:59:38-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7422,11 +7422,12 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-24T04:57:30-05:00",
+        "last_collection_check_at": "2026-11-24T17:59:38-05:00",
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-24T16:57:30-05:00",
+        "next_ir_retry_at": "2026-11-25T05:59:38-05:00",
         "official_ir_checked_at": "2026-11-24T04:57:30-05:00",
-        "official_ir_check_count": 4
+        "official_ir_check_count": 4,
+        "official_ir_last_attempt_incomplete": "2026-11-24T17:59:38-05:00"
       },
       "delivery": {}
     },
@@ -7443,16 +7444,16 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
@@ -7464,8 +7465,8 @@
           },
           {
             "provider": "direct_ir",
-            "ok": true,
-            "seconds": 0.283,
+            "ok": false,
+            "seconds": 1.195,
             "documents": 0,
             "partial": false
           },
@@ -7478,7 +7479,7 @@
             "provenance": null
           }
         ],
-        "ir_retrieval_last_at": "2026-11-24T04:57:30-05:00",
+        "ir_retrieval_last_at": "2026-11-24T17:59:38-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7498,11 +7499,12 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-24T04:57:30-05:00",
+        "last_collection_check_at": "2026-11-24T17:59:38-05:00",
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-24T16:57:30-05:00",
+        "next_ir_retry_at": "2026-11-25T05:59:38-05:00",
         "official_ir_checked_at": "2026-11-24T04:57:30-05:00",
-        "official_ir_check_count": 4
+        "official_ir_check_count": 4,
+        "official_ir_last_attempt_incomplete": "2026-11-24T17:59:38-05:00"
       },
       "delivery": {}
     },
@@ -7519,39 +7521,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T04:57:30-05:00",
+      "updated_at": "2026-11-24T17:59:38-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.045,
+            "seconds": 0.056,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CBRS-2026-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
-            "ok": true,
-            "seconds": 0.418,
+            "ok": false,
+            "seconds": 1.07,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.064,
+            "seconds": 0.098,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CBRS-2026-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-24T04:57:30-05:00",
+        "ir_retrieval_last_at": "2026-11-24T17:59:38-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7571,11 +7573,12 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-24T04:57:30-05:00",
+        "last_collection_check_at": "2026-11-24T17:59:38-05:00",
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-24T16:57:30-05:00",
+        "next_ir_retry_at": "2026-11-25T05:59:38-05:00",
         "official_ir_checked_at": "2026-11-24T04:57:30-05:00",
-        "official_ir_check_count": 4
+        "official_ir_check_count": 4,
+        "official_ir_last_attempt_incomplete": "2026-11-24T17:59:38-05:00"
       },
       "delivery": {}
     },
@@ -7594,39 +7597,39 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T16:13:10-05:00",
+      "updated_at": "2026-11-24T18:03:26-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.05,
+            "seconds": 0.057,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/NVDA-2027-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": true,
-            "seconds": 0.36,
+            "seconds": 0.313,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.045,
+            "seconds": 0.082,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/NVDA-2027-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-24T04:57:30-05:00",
+        "ir_retrieval_last_at": "2026-11-24T17:59:38-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7646,11 +7649,11 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-24T04:57:30-05:00",
-        "official_ir_checked_at": "2026-11-24T04:57:30-05:00",
-        "official_ir_check_count": 14,
+        "last_collection_check_at": "2026-11-24T17:59:38-05:00",
+        "official_ir_checked_at": "2026-11-24T17:59:38-05:00",
+        "official_ir_check_count": 15,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-24T16:57:30-05:00"
+        "next_ir_retry_at": "2026-11-25T05:59:38-05:00"
       },
       "delivery": {}
     },
@@ -7913,7 +7916,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-24T16:11:14-05:00",
+      "last_success_at": "2026-11-24T17:59:38-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -75251,7 +75254,7 @@
     },
     "DELL_2026-11-24_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "95600e3b8320b606f02a773926c0dc08bdd2a954aa8bbe1366c1a18ecd204581",
+      "evidence_fingerprint": "d47e2e14ec13a5099751147c61f213c6dc157f2da29bebfaa77873f1c4d16bef",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -75262,49 +75265,18 @@
             "cards": [
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Third quarter net revenue was $54,937 million, up 103% year over year.",
-                "materiality_candidate": 5,
-                "quote": "Net revenue\n$\n54,937\n$\n27,005\n103%",
-                "metric": "Net revenue",
-                "value": "54,937",
-                "unit": "USD_millions",
-                "period": "Q3FY27",
-                "comparison_value": "27,005",
-                "comparison_period": "Q3FY26",
-                "reported_change": "103%"
-              },
-              {
-                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Fourth-quarter FY27 revenue guidance is $56.3 billion, up 69% year over year.",
-                "materiality_candidate": 4,
-                "quote": "Revenue\n$\n56.3\n69\n%",
-                "metric": "Revenue",
-                "period": "Q4FY27",
-                "guidance_type": "point",
-                "value": "56.3",
-                "unit": "USD_billions",
-                "reported_change": "69%"
-              },
-              {
-                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Full-year FY27 revenue guidance updated to $202.0 billion from $192.0 billion, up 78% year over year.",
+                "statement": "Dell raised its full-year FY27 net revenue guidance to $202.0 billion, representing 78% year-over-year growth.",
                 "materiality_candidate": 5,
-                "quote": "Revenue\n$\n192.0\n$\n202.0\n78\n%",
+                "quote": "Full-year FY27 revenue guidance of $202.0 billion, up 78% year over year",
                 "metric": "Revenue",
                 "period": "FY27",
                 "guidance_type": "point",
                 "value": "202.0",
-                "unit": "USD_billions",
-                "previous_midpoint": "192.0",
+                "unit": "USD $B",
+                "previous_high": "192.0",
                 "reported_change": "78%"
               },
               {
@@ -75312,79 +75284,187 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Full-year FY27 GAAP diluted EPS guidance updated to $28.24 from $24.37.",
-                "materiality_candidate": 4,
-                "quote": "GAAP diluted EPS\n$\n24.37\n$\n28.24\n225\n%",
-                "metric": "GAAP diluted EPS",
+                "statement": "Dell updated its full-year FY27 AI-Optimized Servers revenue guidance to $78.0 billion (216% Y/Y growth) from $74.0 billion previously.",
+                "materiality_candidate": 5,
+                "quote": "AI-Optimized Servers revenue\n$\n74.0\n$\n78.0\n216\n%",
+                "metric": "AI-Optimized Servers revenue",
                 "period": "FY27",
                 "guidance_type": "point",
-                "value": "28.24",
-                "unit": "USD",
-                "previous_midpoint": "24.37",
-                "reported_change": "225%"
+                "value": "78.0",
+                "unit": "USD $B",
+                "previous_high": "74.0",
+                "reported_change": "216%"
               },
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Full-year FY27 non-GAAP diluted EPS guidance updated to $29.68 from $25.50.",
+                "statement": "Dell expects Q4 FY27 net revenue of $56.3 billion, representing 69% year-over-year growth.",
                 "materiality_candidate": 4,
-                "quote": "Non-GAAP diluted EPS\n$\n25.50\n$\n29.68\n188\n%",
-                "metric": "Non-GAAP diluted EPS",
-                "period": "FY27",
+                "quote": "Revenue\n$\n56.3\n69\n%",
+                "metric": "Revenue",
+                "period": "Q4 FY27",
                 "guidance_type": "point",
-                "value": "29.68",
-                "unit": "USD",
-                "previous_midpoint": "25.50",
-                "reported_change": "188%"
+                "value": "56.3",
+                "unit": "USD $B",
+                "reported_change": "69%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+                "card_type": "management_claim",
+                "topic": "demand_revenue",
+                "fact_class": "management_claim",
+                "statement": "Dell ended Q3 FY27 with a record $132.3 billion AI backlog after booking $60.2 billion of orders.",
+                "materiality_candidate": 5,
+                "quote": "We ended the quarter with a record\n$132.3 billion\nAI backlog after booking\n$60.2 billion\nof orders",
+                "speaker": "Jeff Clarke"
               },
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
                 "card_type": "fact",
                 "topic": "demand_revenue",
-                "fact_class": "management_claim",
-                "statement": "Ended the quarter with a record $132.3 billion AI backlog after booking $60.2 billion of orders.",
-                "materiality_candidate": 5,
-                "quote": "$132.3 billion\nAI backlog after booking\n$60.2 billion\nof orders",
-                "metric": "AI backlog",
-                "value": "132.3",
-                "unit": "USD_billions",
-                "period": "Q3FY27"
+                "fact_class": "objective_fact",
+                "statement": "Dell reported Q3 FY27 net revenue of $54,937 million, up 103% year-over-year.",
+                "materiality_candidate": 4,
+                "quote": "Net revenue\n$\n54,937\n$\n27,005\n103%",
+                "metric": "Net revenue",
+                "value": "54937",
+                "unit": "USD $M",
+                "period": "Q3 FY27",
+                "comparison_value": "27005",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Dell generated record Q3 FY27 cash flow from operations of $4,459 million, an increase of 280% year-over-year.",
+                "materiality_candidate": 4,
+                "quote": "Change in cash from operating activities\n$\n4,459\n$\n1,172\n280%",
+                "metric": "Change in cash from operating activities",
+                "value": "4459",
+                "unit": "USD $M",
+                "period": "Q3 FY27",
+                "comparison_value": "1172",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "280%",
+                "metric_type": "operating_cash_flow"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Dell generated $4,288 million of adjusted free cash flow in Q3 FY27, up 157% year-over-year.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted free cash flow\n$\n4,288\n$\n1,670\n157%",
+                "metric": "Adjusted free cash flow",
+                "value": "4288",
+                "unit": "USD $M",
+                "period": "Q3 FY27",
+                "comparison_value": "1670",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "157%",
+                "metric_type": "adjusted_fcf"
               },
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Infrastructure Solutions Group (ISG) third quarter net revenue was $41,974 million, up 198% year over year.",
+                "statement": "ISG AI-Optimized Servers net revenue reached $22,031 million in Q3 FY27, up 291% year-over-year.",
                 "materiality_candidate": 5,
-                "quote": "Total ISG net revenue\n$\n41,974\n$\n14,107\n198%",
-                "metric": "Total ISG net revenue",
-                "value": "41,974",
-                "unit": "USD_millions",
-                "period": "Q3FY27",
-                "comparison_value": "14,107",
-                "comparison_period": "Q3FY26",
-                "reported_change": "198%"
-              },
-              {
-                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Client Solutions Group (CSG) third quarter net revenue was $12,886 million, up 3% year over year.",
-                "materiality_candidate": 3,
-                "quote": "Total CSG net revenue\n$\n12,886\n$\n12,478\n3%",
-                "metric": "Total CSG net revenue",
-                "value": "12,886",
-                "unit": "USD_millions",
-                "period": "Q3FY27",
-                "comparison_value": "12,478",
-                "comparison_period": "Q3FY26",
-                "reported_change": "3%"
+                "quote": "AI-Optimized Servers\n$\n22,031\n$\n5,641\n291%",
+                "metric": "AI-Optimized Servers Net Revenue",
+                "value": "22031",
+                "unit": "USD $M",
+                "period": "Q3 FY27",
+                "comparison_value": "5641",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "291%"
               }
             ]
+          }
+        },
+        "v5_evidence_repair_v3_1": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Dell generated $4,288 million of adjusted free cash flow in Q3 FY27, up 157% year-over-year.",
+                "materiality_candidate": 4,
+                "quote": "Cash flow from operations\n$\n4,459\n$\n1,172\n280\n%\n$\n10,765\n$\n6,511\n65\n%\nNon-GAAP adjustments:\nCapital expenditures and capitalized software development costs, net (a)\n(985)\n(666)\n(3,187)\n(1,909)\nFree cash flow\n$\n3,474\n$\n506\n587\n%\n$\n7,578\n$\n4,602\n65\n%\nFree cash flow\n$\n3,474\n$\n506\n587\n%\n$\n7,578\n$\n4,602\n65\n%\nNon-GAAP adjustments:\nFinancing receivables (b)\n661\n1,135\n7,065\n1,704\nEquipment under operating leases (c)\n153\n29\n959\n114\nAdjusted free cash flow\n$\n4,288\n$\n1,670\n157\n%",
+                "metric": "Adjusted free cash flow",
+                "value": "4288",
+                "unit": "USD $M",
+                "period": "Q3 FY27",
+                "comparison_value": "1670",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "157%",
+                "metric_type": "adjusted_fcf",
+                "card_id": "c7:sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2",
+                "document_key": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+                  "quote": "Adjusted free cash flow\n$\n4,288\n$\n1,670\n157\n%"
+                },
+                "reconciliation": [
+                  {
+                    "item": "Cash flow from operations",
+                    "value": "4459",
+                    "unit": "USD $M",
+                    "period": "Q3 FY27",
+                    "evidence": {
+                      "document_key": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+                      "quote": "Cash flow from operations\n$\n4,459"
+                    }
+                  },
+                  {
+                    "item": "Capital expenditures and capitalized software development costs, net (a)",
+                    "value": "-985",
+                    "unit": "USD $M",
+                    "period": "Q3 FY27",
+                    "evidence": {
+                      "document_key": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+                      "quote": "Capital expenditures and capitalized software development costs, net (a)\n(985)"
+                    }
+                  },
+                  {
+                    "item": "Financing receivables (b)",
+                    "value": "661",
+                    "unit": "USD $M",
+                    "period": "Q3 FY27",
+                    "evidence": {
+                      "document_key": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+                      "quote": "Financing receivables (b)\n661"
+                    }
+                  },
+                  {
+                    "item": "Equipment under operating leases (c)",
+                    "value": "153",
+                    "unit": "USD $M",
+                    "period": "Q3 FY27",
+                    "evidence": {
+                      "document_key": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+                      "quote": "Equipment under operating leases (c)\n153"
+                    }
+                  }
+                ]
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2"
+            ],
+            "replace_only_invalid_cards": true
           }
         },
         "v5_extract_batch_2": {
@@ -75399,16 +75479,16 @@
                 "card_type": "risk",
                 "topic": "risk",
                 "fact_class": "management_claim",
-                "statement": "Dell details risk factors including global economic conditions, competitive pressures, supplier reliance, and demand effects related to AI solutions.",
+                "statement": "Dell details risk factors including global economic conditions, competitive pressures, supplier dependencies, AI demand effects, and cost efficiency execution.",
                 "materiality_candidate": 3,
-                "quote": "competitive pressures; Dell Technologies’ ability to successfully execute its strategy; Dell Technologies’ relationships with third-party suppliers for products and components; Dell Technologies’ use of single-source or limited-source suppliers; effects on Dell Technologies’ operating performance related to demand for AI solutions"
+                "quote": "Dell Technologies’ results or events in future periods could differ materially from those expressed or implied by these forward-looking statements because of risks, uncertainties, and other factors"
               },
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u4",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Total net revenue for Q3 ended October 30, 2026 was $54,937 million, up 103% compared to $27,005 million in the prior year period.",
+                "statement": "Total net revenue for Q3 fiscal 2027 reached $54,937 million, up 103% year-over-year.",
                 "materiality_candidate": 5,
                 "quote": "Total net revenue\n54,937\n27,005\n103%",
                 "metric": "Total net revenue",
@@ -75424,7 +75504,7 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Operating income for Q3 ended October 30, 2026 was $7,442 million, an increase of 251% from $2,119 million in the prior year period.",
+                "statement": "Operating income for Q3 fiscal 2027 was $7,442 million, representing a 251% year-over-year increase.",
                 "materiality_candidate": 4,
                 "quote": "Operating income\n7,442\n2,119\n251%",
                 "metric": "Operating income",
@@ -75440,7 +75520,7 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Diluted earnings per share for Q3 ended October 30, 2026 was $8.82, up 287% from $2.28 in the prior year period.",
+                "statement": "Diluted earnings per share for Q3 fiscal 2027 was $8.82, up 287% year-over-year.",
                 "materiality_candidate": 5,
                 "quote": "Diluted\n$\n8.82\n$\n2.28\n287%",
                 "metric": "Diluted EPS",
@@ -75456,7 +75536,7 @@
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Cash and cash equivalents reached $13,553 million as of October 30, 2026 compared to $11,528 million as of January 30, 2026.",
+                "statement": "Cash and cash equivalents as of October 30, 2026 stood at $13,553 million.",
                 "materiality_candidate": 3,
                 "quote": "Cash and cash equivalents\n$\n13,553\n$\n11,528",
                 "metric": "Cash and cash equivalents",
@@ -75481,70 +75561,140 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "AI-Optimized Servers net revenue was $22,031 million for the three months ended October 30, 2026, up 291% year-over-year.",
+                "statement": "AI-Optimized Servers net revenue for the three months ended October 30, 2026 was $22,031 million, up 291% year-over-year.",
                 "materiality_candidate": 5,
                 "quote": "AI-Optimized Servers\n$\n22,031\n$\n5,641\n291%",
-                "metric": "AI-Optimized Servers net revenue",
+                "metric": "AI-Optimized Servers Net Revenue",
+                "metric_type": "other",
                 "value": "22031",
-                "unit": "USD $M",
+                "unit": "USD Millions",
                 "period": "Three Months Ended October 30, 2026",
                 "comparison_value": "5641",
                 "comparison_period": "Three Months Ended October 31, 2025",
-                "reported_change": "291%",
-                "metric_type": "other"
+                "reported_change": "291%"
               },
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u5",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Total ISG net revenue was $41,974 million for the three months ended October 30, 2026, an increase of 198% year-over-year.",
-                "materiality_candidate": 5,
+                "statement": "Total ISG net revenue for the three months ended October 30, 2026 was $41,974 million, up 198% year-over-year.",
+                "materiality_candidate": 4,
                 "quote": "Total ISG net revenue\n$\n41,974\n$\n14,107\n198%",
-                "metric": "Total ISG net revenue",
+                "metric": "Total ISG Net Revenue",
+                "metric_type": "other",
                 "value": "41974",
-                "unit": "USD $M",
+                "unit": "USD Millions",
                 "period": "Three Months Ended October 30, 2026",
                 "comparison_value": "14107",
                 "comparison_period": "Three Months Ended October 31, 2025",
-                "reported_change": "198%",
-                "metric_type": "other"
+                "reported_change": "198%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total CSG net revenue for the three months ended October 30, 2026 was $12,886 million, up 3% year-over-year.",
+                "materiality_candidate": 3,
+                "quote": "Total CSG net revenue\n$\n12,886\n$\n12,478\n3%",
+                "metric": "Total CSG Net Revenue",
+                "metric_type": "other",
+                "value": "12886",
+                "unit": "USD Millions",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "12478",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "3%"
               },
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Total consolidated net revenue was $54,937 million for the three months ended October 30, 2026, up 103% year-over-year.",
+                "statement": "Total consolidated net revenue for the three months ended October 30, 2026 was $54,937 million, up 103% year-over-year.",
                 "materiality_candidate": 5,
-                "quote": "Total consolidated net revenue\n$\n54,937\n$\n27,005\n$\n145,750\n$\n80,159",
-                "metric": "Total consolidated net revenue",
+                "quote": "Total consolidated net revenue\n$\n54,937\n$\n27,005\n103%",
+                "metric": "Total Consolidated Net Revenue",
+                "metric_type": "other",
                 "value": "54937",
-                "unit": "USD $M",
+                "unit": "USD Millions",
                 "period": "Three Months Ended October 30, 2026",
                 "comparison_value": "27005",
                 "comparison_period": "Three Months Ended October 31, 2025",
-                "reported_change": "103%",
-                "metric_type": "other"
+                "reported_change": "103%"
               },
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Non-GAAP diluted earnings per share was $9.45 for the three months ended October 30, 2026, compared to $2.59 in the prior year period.",
+                "statement": "Non-GAAP operating income for the three months ended October 30, 2026 was $7,826 million, up 213% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Non-GAAP operating income\n$\n7,826\n$\n2,503\n213%",
+                "metric": "Non-GAAP Operating Income",
+                "metric_type": "other",
+                "value": "7826",
+                "unit": "USD Millions",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "2503",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "213%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP diluted earnings per share for the three months ended October 30, 2026 was $9.45, up 265% year-over-year.",
                 "materiality_candidate": 5,
                 "quote": "Non-GAAP earnings per share — diluted\n$\n9.45\n$\n2.59\n265%",
-                "metric": "Non-GAAP diluted earnings per share",
+                "metric": "Non-GAAP Diluted EPS",
+                "metric_type": "other",
                 "value": "9.45",
                 "unit": "USD",
                 "period": "Three Months Ended October 30, 2026",
                 "comparison_value": "2.59",
                 "comparison_period": "Three Months Ended October 31, 2025",
-                "reported_change": "265%",
-                "metric_type": "other"
+                "reported_change": "265%"
               }
             ]
+          }
+        },
+        "v5_evidence_repair_v3_3": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total consolidated net revenue for the three months ended October 30, 2026 was $54,937 million, up 103% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Total net revenue\n54,937\n27,005\n103%",
+                "metric": "Total Consolidated Net Revenue",
+                "metric_type": "other",
+                "value": "54937",
+                "unit": "USD Millions",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "27005",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "103%",
+                "card_id": "c4:sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6",
+                "document_key": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+                "source": "sec_edgar",
+                "provenance": "primary_or_official",
+                "position": 6,
+                "evidence": {
+                  "document_key": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+                  "quote": "Total net revenue\n54,937\n27,005\n103%"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6"
+            ],
+            "replace_only_invalid_cards": true
           }
         },
         "v5_extract_batch_4": {
@@ -75557,19 +75707,34 @@
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u7",
                 "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP gross margin was $11,659 million for the three months ended October 30, 2026, up 105% compared to $5,686 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP gross margin\n$\n11,659\n$\n5,686\n105%",
+                "metric": "Non-GAAP gross margin",
+                "value": "11659",
+                "unit": "$M",
+                "period": "Q3 FY27",
+                "comparison_value": "5686",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "105%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u7",
+                "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
                 "statement": "Cash flow from operations was $4,459 million for the three months ended October 30, 2026, up 280% compared to $1,172 million for the three months ended October 31, 2025.",
                 "materiality_candidate": 4,
-                "quote": "Cash flow from operations\n$\n4,459\n$\n1,172\n280\n%\n$\n10,765\n$\n6,511\n65\n%",
+                "quote": "Cash flow from operations\n$\n4,459\n$\n1,172\n280\n%",
                 "metric": "Cash flow from operations",
                 "value": "4459",
                 "unit": "$M",
-                "period": "Three Months Ended October 30, 2026",
+                "period": "Q3 FY27",
                 "comparison_value": "1172",
-                "comparison_period": "Three Months Ended October 31, 2025",
-                "reported_change": "280%",
-                "metric_type": "operating_cash_flow"
+                "comparison_period": "Q3 FY26",
+                "reported_change": "280%"
               },
               {
                 "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u7",
@@ -75578,15 +75743,14 @@
                 "fact_class": "objective_fact",
                 "statement": "Free cash flow was $3,474 million for the three months ended October 30, 2026, compared to $506 million for the three months ended October 31, 2025.",
                 "materiality_candidate": 4,
-                "quote": "Free cash flow\n$\n3,474\n$\n506\n587\n%\n$\n7,578\n$\n4,602\n65\n%",
+                "quote": "Free cash flow\n$\n3,474\n$\n506\n587\n%",
                 "metric": "Free cash flow",
                 "value": "3474",
                 "unit": "$M",
-                "period": "Three Months Ended October 30, 2026",
+                "period": "Q3 FY27",
                 "comparison_value": "506",
-                "comparison_period": "Three Months Ended October 31, 2025",
-                "reported_change": "587%",
-                "metric_type": "standard_fcf"
+                "comparison_period": "Q3 FY26",
+                "reported_change": "587%"
               }
             ]
           }
@@ -75603,44 +75767,46 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Record third-quarter net revenue of $54.9 billion, up 103% year over year.",
+                "statement": "Third quarter fiscal 2027 net revenue was $54,937 million, up 103% year-over-year.",
                 "materiality_candidate": 5,
-                "quote": "Record revenue of $54.9 billion, up 103% year over year",
+                "quote": "Net revenue\n$\n54,937\n$\n27,005\n103\n%",
                 "metric": "Net revenue",
-                "value": "54.9",
-                "unit": "B",
+                "value": "54937",
+                "unit": "$M",
                 "period": "Q3FY27",
+                "comparison_value": "27005",
                 "comparison_period": "Q3FY26",
                 "reported_change": "103%"
-              },
-              {
-                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Record diluted EPS of $8.82 and non-GAAP diluted EPS of $9.45 for Q3.",
-                "materiality_candidate": 4,
-                "quote": "Record diluted earnings per share (EPS) of $8.82, up 287% year over year, and record non-GAAP diluted EPS of $9.45, up 265%",
-                "metric": "diluted EPS",
-                "value": "8.82",
-                "unit": "$",
-                "period": "Q3FY27",
-                "comparison_period": "Q3FY26",
-                "reported_change": "287%"
               },
               {
                 "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Full-year FY27 revenue guidance of $202.0 billion, up 78% year over year.",
+                "statement": "Fourth-quarter fiscal 2027 revenue guidance is $56.3 billion, up 69% year-over-year.",
                 "materiality_candidate": 5,
-                "quote": "Full-year FY27 revenue guidance of $202.0 billion, up 78% year over year",
-                "metric": "revenue",
+                "quote": "Revenue\n$\n56.3\n69\n%",
+                "metric": "Revenue",
+                "period": "Q4FY27",
+                "guidance_type": "point",
+                "value": "56.3",
+                "unit": "$B",
+                "reported_change": "69%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full-year fiscal 2027 revenue guidance updated to $202.0 billion from previous $192.0 billion, up 78% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n192.0\n$\n202.0\n78\n%",
+                "metric": "Revenue",
                 "period": "FY27",
                 "guidance_type": "point",
                 "value": "202.0",
-                "unit": "B",
+                "unit": "$B",
+                "previous_midpoint": "192.0",
                 "reported_change": "78%"
               },
               {
@@ -75648,106 +75814,87 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Full-year FY27 diluted EPS guidance of $28.24 and non-GAAP diluted EPS guidance of $29.68.",
+                "statement": "Full-year fiscal 2027 AI-Optimized Servers revenue guidance updated to $78.0 billion from previous $74.0 billion.",
                 "materiality_candidate": 5,
-                "quote": "Full-year FY27 diluted EPS guidance of $28.24 and non-GAAP diluted EPS guidance of $29.68, up 225% and 188% year over year, respectively",
-                "metric": "diluted EPS",
+                "quote": "AI-Optimized Servers revenue\n$\n74.0\n$\n78.0\n216\n%",
+                "metric": "AI-Optimized Servers revenue",
                 "period": "FY27",
                 "guidance_type": "point",
-                "value": "28.24",
-                "unit": "$",
-                "reported_change": "225%"
-              },
-              {
-                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
-                "card_type": "management_claim",
-                "topic": "demand_revenue",
-                "fact_class": "management_claim",
-                "statement": "Jeff Clarke states the company ended the quarter with a record $132.3 billion AI backlog after booking $60.2 billion of orders.",
-                "materiality_candidate": 5,
-                "quote": "We ended the quarter with a record $132.3 billion AI backlog after booking $60.2 billion of orders, each rigorously vetted for customer quality and access to capital, land and power.",
-                "speaker": "Jeff Clarke"
+                "value": "78.0",
+                "unit": "$B",
+                "previous_midpoint": "74.0",
+                "reported_change": "216%"
               },
               {
                 "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Infrastructure Solutions Group (ISG) revenue reached $42.0 billion, up 198% year over year, with AI-Optimized Servers revenue at $22.0 billion.",
+                "statement": "Infrastructure Solutions Group (ISG) third-quarter net revenue was $41,974 million, up 198% year-over-year.",
                 "materiality_candidate": 5,
-                "quote": "Record revenue: $42.0 billion, up 198% year over year\nRecord AI-Optimized Servers revenue: $22.0 billion, up 291% year over year",
-                "metric": "ISG net revenue",
-                "value": "42.0",
-                "unit": "B",
+                "quote": "Total ISG net revenue\n$\n41,974\n$\n14,107\n198\n%",
+                "metric": "Total ISG net revenue",
+                "value": "41974",
+                "unit": "$M",
                 "period": "Q3FY27",
+                "comparison_value": "14107",
                 "comparison_period": "Q3FY26",
                 "reported_change": "198%"
               },
               {
-                "unit_id": "official_ir:ba01a58d24e504366d219199#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Fourth-quarter revenue guidance is $56.3 billion, GAAP diluted EPS $7.90, and Non-GAAP diluted EPS $8.40.",
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Client Solutions Group (CSG) third-quarter net revenue was $12,886 million, up 3% year-over-year.",
+                "materiality_candidate": 4,
+                "quote": "Total CSG net revenue\n$\n12,886\n$\n12,478\n3\n%",
+                "metric": "Total CSG net revenue",
+                "value": "12886",
+                "unit": "$M",
+                "period": "Q3FY27",
+                "comparison_value": "12478",
+                "comparison_period": "Q3FY26",
+                "reported_change": "3%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "management_claim",
+                "topic": "demand_revenue",
+                "fact_class": "management_claim",
+                "statement": "Ended the quarter with a record $132.3 billion AI backlog after booking $60.2 billion of orders.",
                 "materiality_candidate": 5,
-                "quote": "Revenue $\n56.3\nGAAP diluted EPS $\n7.90\nNon-GAAP diluted EPS $\n8.40",
-                "metric": "revenue",
-                "period": "Q4FY27",
-                "guidance_type": "point",
-                "value": "56.3",
-                "unit": "B",
-                "reported_change": "69%"
+                "quote": "We ended the quarter with a record $132.3 billion AI backlog after booking $60.2 billion of orders, each rigorously vetted for customer quality and access to capital, land and power.",
+                "speaker": "Jeff Clarke"
               },
               {
                 "unit_id": "official_ir:ba01a58d24e504366d219199#u2",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Full-year FY27 revenue guidance updated to $202.0 billion from previous $192.0 billion.",
+                "statement": "Fourth-quarter fiscal 2027 GAAP diluted EPS guidance is $7.90 and non-GAAP diluted EPS guidance is $8.40.",
                 "materiality_candidate": 5,
-                "quote": "Revenue $\n192.0\n$\n202.0\n78\n%",
-                "metric": "revenue",
-                "period": "FY27",
-                "guidance_type": "point",
-                "value": "202.0",
-                "unit": "B",
-                "previous_midpoint": "192.0"
-              }
-            ]
-          }
-        },
-        "v5_evidence_repair_v3_5": {
-          "payload": {
-            "cards": [
-              {
-                "unit_id": "official_ir:ba01a58d24e504366d219199#u2",
-                "card_type": "guidance",
-                "topic": "guidance",
-                "fact_class": "company_guidance",
-                "statement": "Fourth-quarter revenue guidance is $56.3 billion, GAAP diluted EPS $7.90, and Non-GAAP diluted EPS $8.40.",
-                "materiality_candidate": 5,
-                "quote": "Revenue\n$\n56.3\n69\n%\nGAAP diluted EPS\n$\n7.90\n134\n%\nNon-GAAP diluted EPS\n$\n8.40\n116\n%",
-                "metric": "revenue",
+                "quote": "GAAP diluted EPS\n$\n7.90\n134\n%\nNon-GAAP diluted EPS\n$\n8.40\n116\n%",
+                "metric": "Non-GAAP diluted EPS",
                 "period": "Q4FY27",
                 "guidance_type": "point",
-                "value": "56.3",
-                "unit": "B",
-                "reported_change": "69%",
-                "card_id": "c7:official_ir:ba01a58d24e504366d219199#u2",
-                "document_key": "official_ir:ba01a58d24e504366d219199",
-                "source": "official_ir",
-                "provenance": "primary_or_official",
-                "position": 2,
-                "evidence": {
-                  "document_key": "official_ir:ba01a58d24e504366d219199",
-                  "quote": "Revenue\n$\n56.3\n69\n%\nGAAP diluted EPS\n$\n7.90\n134\n%\nNon-GAAP diluted EPS\n$\n8.40\n116\n%"
-                }
+                "value": "8.40",
+                "unit": "$",
+                "reported_change": "116%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "customer",
+                "topic": "customer_usage",
+                "fact_class": "management_claim",
+                "statement": "More than 7,500 customers are deploying Dell AI Factories.",
+                "materiality_candidate": 4,
+                "quote": "Demand continues to accelerate and broaden globally, with more than 7,500 customers deploying Dell AI Factories.",
+                "customer": "Multiple customers",
+                "use_case": "Dell AI Factories deployment",
+                "quantified_result": "7,500+ customers"
               }
-            ],
-            "processed_unit_ids": [
-              "official_ir:ba01a58d24e504366d219199#u2"
-            ],
-            "replace_only_invalid_cards": true
+            ]
           }
         },
         "v5_extract_batch_6": {
@@ -75809,111 +75956,2068 @@
           }
         },
         "v5_extract_batch_7": {
-          "payload": [
-            {
-              "processed_unit_ids": [
-                "official_ir:ba01a58d24e504366d219199#u5",
-                "official_ir:ba01a58d24e504366d219199#u6"
-              ],
-              "cards": [
-                {
-                  "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "fact_class": "objective_fact",
-                  "statement": "ISG AI-Optimized Servers net revenue reached $22,031 million in Q3 2026, up 291% year-over-year.",
-                  "materiality_candidate": 5,
-                  "quote": "AI-Optimized Servers\n$\n22,031\n$\n5,641\n291\n%",
-                  "metric": "AI-Optimized Servers Net Revenue",
-                  "value": "22,031",
-                  "unit": "USD M",
-                  "period": "Three Months Ended October 30, 2026",
-                  "comparison_value": "5,641",
-                  "comparison_period": "Three Months Ended October 31, 2025",
-                  "reported_change": "291%"
-                },
-                {
-                  "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "fact_class": "objective_fact",
-                  "statement": "Total ISG net revenue grew 198% year-over-year to $41,974 million in Q3 2026.",
-                  "materiality_candidate": 4,
-                  "quote": "Total ISG net revenue\n$\n41,974\n$\n14,107\n198\n%",
-                  "metric": "Total ISG Net Revenue",
-                  "value": "41,974",
-                  "unit": "USD M",
-                  "period": "Three Months Ended October 30, 2026",
-                  "comparison_value": "14,107",
-                  "comparison_period": "Three Months Ended October 31, 2025",
-                  "reported_change": "198%"
-                },
-                {
-                  "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
-                  "card_type": "capital",
-                  "topic": "cash_capex",
-                  "fact_class": "objective_fact",
-                  "statement": "Dell recorded operating cash flows of $4,459 million and capital expenditures of $985 million for the three months ended October 30, 2026.",
-                  "materiality_candidate": 4,
-                  "quote": "Change in cash from operating activities\n4,459\n1,172",
-                  "metric": "Operating Cash Flow",
-                  "value": "4,459",
-                  "unit": "USD M",
-                  "period": "Three Months Ended October 30, 2026",
-                  "comparison_value": "1,172",
-                  "comparison_period": "Three Months Ended October 31, 2025",
-                  "metric_type": "operating_cash_flow"
-                },
-                {
-                  "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "fact_class": "objective_fact",
-                  "statement": "Total CSG net revenue increased 3% year-over-year to $12,886 million in Q3 2026.",
-                  "materiality_candidate": 4,
-                  "quote": "Total CSG net revenue\n$\n12,886\n$\n12,478\n3\n%",
-                  "metric": "Total CSG Net Revenue",
-                  "value": "12,886",
-                  "unit": "USD M",
-                  "period": "Three Months Ended October 30, 2026",
-                  "comparison_value": "12,478",
-                  "comparison_period": "Three Months Ended October 31, 2025",
-                  "reported_change": "3%"
-                },
-                {
-                  "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "fact_class": "objective_fact",
-                  "statement": "Total consolidated net revenue doubled, growing 103% year-over-year to $54,937 million in Q3 2026.",
-                  "materiality_candidate": 4,
-                  "quote": "Total consolidated net revenue\n$\n54,937\n$\n27,005",
-                  "metric": "Total Consolidated Net Revenue",
-                  "value": "54,937",
-                  "unit": "USD M",
-                  "period": "Three Months Ended October 30, 2026",
-                  "comparison_value": "27,005",
-                  "comparison_period": "Three Months Ended October 31, 2025",
-                  "reported_change": "103%"
-                },
-                {
-                  "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
-                  "card_type": "fact",
-                  "topic": "margin_unit_economics",
-                  "fact_class": "objective_fact",
-                  "statement": "Consolidated operating income rose to $7,442 million in Q3 2026 from $2,119 million in Q3 2025.",
-                  "materiality_candidate": 4,
-                  "quote": "Total consolidated operating income (f)\n$\n7,442\n$\n2,119",
-                  "metric": "Total Consolidated Operating Income",
-                  "value": "7,442",
-                  "unit": "USD M",
-                  "period": "Three Months Ended October 30, 2026",
-                  "comparison_value": "2,119",
-                  "comparison_period": "Three Months Ended October 31, 2025"
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ba01a58d24e504366d219199#u5",
+              "official_ir:ba01a58d24e504366d219199#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Infrastructure Solutions Group (ISG) AI-Optimized Servers net revenue was $22,031 million for the three months ended October 30, 2026, up 291% compared to $5,641 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 5,
+                "quote": "AI-Optimized Servers\n$\n22,031\n$\n5,641\n291\n%",
+                "metric": "AI-Optimized Servers Net Revenue",
+                "value": 22031,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 5641,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "291%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Infrastructure Solutions Group (ISG) Traditional Servers and Networking net revenue was $15,013 million for the three months ended October 30, 2026, up 235% compared to $4,484 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Traditional Servers and Networking\n15,013\n4,484\n235\n%",
+                "metric": "Traditional Servers and Networking Net Revenue",
+                "value": 15013,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 4484,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "235%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Infrastructure Solutions Group (ISG) Storage net revenue was $4,930 million for the three months ended October 30, 2026, up 24% compared to $3,982 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Storage\n4,930\n3,982\n24\n%",
+                "metric": "Storage Net Revenue",
+                "value": 4930,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 3982,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "24%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total ISG net revenue was $41,974 million for the three months ended October 30, 2026, up 198% compared to $14,107 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Total ISG net revenue\n$\n41,974\n$\n14,107\n198\n%",
+                "metric": "Total ISG Net Revenue",
+                "value": 41974,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 14107,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "198%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Client Solutions Group (CSG) Commercial net revenue was $11,300 million for the three months ended October 30, 2026, up 6% compared to $10,621 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 3,
+                "quote": "Commercial\n$\n11,300\n$\n10,621\n6\n%",
+                "metric": "CSG Commercial Net Revenue",
+                "value": 11300,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 10621,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "6%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Client Solutions Group (CSG) Consumer net revenue was $1,586 million for the three months ended October 30, 2026, down 15% compared to $1,857 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 3,
+                "quote": "Consumer\n1,586\n1,857\n(15\n)%",
+                "metric": "CSG Consumer Net Revenue",
+                "value": 1586,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 1857,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "(15)%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total consolidated net revenue was $54,937 million for the three months ended October 30, 2026, up 103% compared to $27,005 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Net revenue\n$\n54,937\n$\n27,005\n103\n%",
+                "metric": "Consolidated Net Revenue",
+                "value": 54937,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 27005,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP gross margin was $11,659 million for the three months ended October 30, 2026, up 105% compared to $5,686 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Non-GAAP gross margin\n$\n11,659\n$\n5,686\n105\n",
+                "metric": "Non-GAAP Gross Margin",
+                "value": 11659,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 5686,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "105%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_8": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ba01a58d24e504366d219199#u7",
+              "official_ir:ba01a58d24e504366d219199#u8"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u7",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow for the three months ended October 30, 2026 was $3,474 million compared to $506 million in the prior year period.",
+                "materiality_candidate": 4,
+                "quote": "Free cash flow\n$\n3,474\n$\n506\n587\n%",
+                "metric": "free_cash_flow",
+                "metric_type": "standard_fcf",
+                "value": "3474",
+                "unit": "USD_Millions",
+                "period": "Q3_2027",
+                "comparison_value": "506",
+                "comparison_period": "Q3_2026",
+                "reported_change": "587%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u7",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP diluted earnings per share was $9.45 for the three months ended October 30, 2026, compared to $2.59 for the three months ended October 31, 2025.",
+                "materiality_candidate": 5,
+                "quote": "Non-GAAP earnings per share — diluted\n$\n9.45\n$\n2.59\n265\n%",
+                "metric": "non_gaap_diluted_eps",
+                "value": "9.45",
+                "unit": "USD",
+                "period": "Q3_2027",
+                "comparison_value": "2.59",
+                "comparison_period": "Q3_2026",
+                "reported_change": "265%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u8",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Updated fiscal year 2027 diluted earnings per share guidance is $24.37 and Non-GAAP diluted earnings per share guidance is $29.68.",
+                "materiality_candidate": 5,
+                "quote": "Fiscal Year Ending\nJanuary 29, 2027\nUpdated\nEarnings per share — diluted\n$\n28.24\n...\nNon-GAAP earnings per share — diluted\n$\n29.68",
+                "metric": "non_gaap_diluted_eps",
+                "period": "FY2027",
+                "guidance_type": "point",
+                "value": "29.68",
+                "unit": "USD",
+                "previous_midpoint": "25.50"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_8": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u8",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Updated fiscal year 2027 non-GAAP diluted earnings per share guidance is $29.68, compared to previous guidance of $25.50.",
+                "materiality_candidate": 5,
+                "quote": "DELL TECHNOLOGIES INC.\nReconciliation of Non-GAAP Financial Measures in Summary Guidance\n(unaudited)\nThree Months Ending\nFiscal Year Ending\nJanuary 29, 2027\nJanuary 29, 2027\nPrevious\nUpdated\nEarnings per share — diluted\n$\n7.90\n$\n24.37\n$\n28.24\nNon-GAAP adjustments:\nAmortization of intangibles (a)\n0.15\n0.60\n0.61\nStock-based compensation\n0.30\n1.16\n1.15\nOther corporate expenses (b)\n—\n0.84\n0.99\nFair value adjustments on equity investments (c)\n—\n(1.08\n)\n(1.18\n)\nAggregate adjustment for income taxes (d)\n0.05\n(0.39\n)\n(0.13\n)\nNon-GAAP earnings per share — diluted\n$\n8.40\n$\n25.50\n$\n29.68",
+                "metric": "non_gaap_diluted_eps",
+                "period": "FY2027",
+                "guidance_type": "point",
+                "value": "29.68",
+                "unit": "USD",
+                "previous_midpoint": "25.50",
+                "card_id": "c3:official_ir:ba01a58d24e504366d219199#u8",
+                "document_key": "official_ir:ba01a58d24e504366d219199",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 8,
+                "evidence": {
+                  "document_key": "official_ir:ba01a58d24e504366d219199",
+                  "quote": "DELL TECHNOLOGIES INC.\nReconciliation of Non-GAAP Financial Measures in Summary Guidance\n(unaudited)\nThree Months Ending\nFiscal Year Ending\nJanuary 29, 2027\nJanuary 29, 2027\nPrevious\nUpdated\nEarnings per share — diluted\n$\n7.90\n$\n24.37\n$\n28.24\nNon-GAAP adjustments:\nAmortization of intangibles (a)\n0.15\n0.60\n0.61\nStock-based compensation\n0.30\n1.16\n1.15\nOther corporate expenses (b)\n—\n0.84\n0.99\nFair value adjustments on equity investments (c)\n—\n(1.08\n)\n(1.18\n)\nAggregate adjustment for income taxes (d)\n0.05\n(0.39\n)\n(0.13\n)\nNon-GAAP earnings per share — diluted\n$\n8.40\n$\n25.50\n$\n29.68"
                 }
-              ]
-            }
-          ]
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:ba01a58d24e504366d219199#u8"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_9": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u1",
+              "official_ir:ab6a22c7a5b9e878269b51c4#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record revenue of $54.9B, up +103% Y/Y in Q3.",
+                "materiality_candidate": 5,
+                "quote": "• Record revenue of $54.9B, up +103% Y/Y, fueled by growth across our businesses",
+                "metric": "revenue",
+                "value": "54.9",
+                "unit": "B",
+                "period": "Q3",
+                "reported_change": "+103%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record diluted EPS of $8.82, up +287% Y/Y, and record non-GAAP diluted EPS of $9.45, up +265% Y/Y in Q3.",
+                "materiality_candidate": 5,
+                "quote": "• Record diluted EPS1 of $8.82, up +287% Y/Y, and record non-GAAP diluted EPS1,2 of $9.45, up +265% Y/Y",
+                "metric": "diluted_eps",
+                "value": "8.82",
+                "unit": "USD",
+                "period": "Q3",
+                "reported_change": "+287%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "AI Server revenue is expected to be $78B in FY27, growing over 3x Y/Y.",
+                "materiality_candidate": 5,
+                "quote": "• AI Server revenue is expected to be $78B in FY274, growing over 3x Y/Y",
+                "metric": "ai_server_revenue",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "78",
+                "unit": "B"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AI Server demand evidenced by $60.2B orders in Q3 and $132.3B backlog.",
+                "materiality_candidate": 5,
+                "quote": "AI Server demand continues to accelerate, evidenced by $60.2B orders in Q3 and $132.3B backlog",
+                "metric": "ai_server_orders",
+                "value": "60.2",
+                "unit": "B",
+                "period": "Q3"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u2",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Strong cash flow generation of $4.5B Q3 CFOps, and a record $10.8B YTD.",
+                "materiality_candidate": 4,
+                "quote": "Strong cash flow generation, $4.5B Q3 CFOps, a record $10.8B YTD with significant return to shareholders",
+                "metric": "operating_cash_flow",
+                "value": "4.5",
+                "unit": "B",
+                "period": "Q3"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_10": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u3",
+              "official_ir:ab6a22c7a5b9e878269b51c4#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 FY27 Revenue was $54,937 million, up 103% Y/Y.",
+                "materiality_candidate": 5,
+                "quote": "Revenue 54,937 103%",
+                "metric": "Revenue",
+                "value": "54937",
+                "unit": "USD_M",
+                "period": "Q3FY27",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q4 FY27 guidance for Revenue of $56.25B +/- $0.5B.",
+                "materiality_candidate": 5,
+                "quote": "$56.25B ± $0.5B",
+                "metric": "Revenue",
+                "period": "Q4FY27",
+                "guidance_type": "range",
+                "low": "55.75",
+                "high": "56.75",
+                "unit": "USD_B"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "FY27 guidance for Revenue raised by $10B to $202.0B +/- $0.5B.",
+                "materiality_candidate": 5,
+                "quote": "$202.0B ± $0.5B",
+                "metric": "Revenue",
+                "period": "FY27",
+                "guidance_type": "range",
+                "low": "201.5",
+                "high": "202.5",
+                "unit": "USD_B",
+                "previous_low": "191.5",
+                "previous_high": "192.5"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q4 FY27 Non-GAAP diluted EPS guidance of $8.40 +/- $0.10.",
+                "materiality_candidate": 4,
+                "quote": "$8.40 ± $0.10",
+                "metric": "Non-GAAP diluted EPS",
+                "period": "Q4FY27",
+                "guidance_type": "range",
+                "low": "8.30",
+                "high": "8.50",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "FY27 Non-GAAP diluted EPS guidance raised to $29.68 +/- $0.10.",
+                "materiality_candidate": 4,
+                "quote": "$29.68 ± $0.10",
+                "metric": "Non-GAAP diluted EPS",
+                "period": "FY27",
+                "guidance_type": "range",
+                "low": "29.58",
+                "high": "29.78",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "ISG Revenue was $42.0B in Q3, up 198% Y/Y and 32% Q/Q.",
+                "materiality_candidate": 5,
+                "quote": "$42.0B\n+198% Y/Y\n+32% Q/Q",
+                "metric": "ISG Revenue",
+                "value": "42.0",
+                "unit": "USD_B",
+                "period": "Q3FY27",
+                "reported_change": "+198% Y/Y"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_11": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u5",
+              "official_ir:ab6a22c7a5b9e878269b51c4#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u5",
+                "card_type": "competitive",
+                "topic": "product_competition",
+                "fact_class": "objective_fact",
+                "statement": "Dell is the #1 rack-scale infrastructure provider in CY2025 with 2X the number of rack-scale servers shipped than the closest competitor.",
+                "materiality_candidate": 3,
+                "quote": "#1 rack-scale infrastructure provider in CY20251 2X the number of rack-scale servers shipped than the closest competitor1"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u5",
+                "card_type": "fact",
+                "topic": "product_competition",
+                "fact_class": "objective_fact",
+                "statement": "Dell gained approximately 9 points of share over the past decade and is #1 in mainstream server revenue.",
+                "materiality_candidate": 3,
+                "quote": "• Gained ~9 points of share over the past decade1\n• #1 in mainstream server revenue1"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Client Solutions Group (CSG) revenue grew +3% Y/Y to $12.5B, driven by Commercial revenue growth of +6% Y/Y.",
+                "materiality_candidate": 4,
+                "quote": "CSG revenue grew +3% Y/Y driven by growth in Commercial",
+                "metric": "CSG revenue",
+                "value": "12.5",
+                "unit": "$B",
+                "reported_change": "+3% Y/Y"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Commercial revenue grew +6% Y/Y, marking the ninth consecutive quarter of revenue growth.",
+                "materiality_candidate": 3,
+                "quote": "COMMERCIAL\n+6% Y/Y, the ninth consecutive quarter of revenue growth.",
+                "reported_change": "+6% Y/Y"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_12": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u7",
+              "official_ir:ab6a22c7a5b9e878269b51c4#u8"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Long-term financial framework targeting 7-9% revenue growth and 15%+ diluted EPS growth.",
+                "materiality_candidate": 5,
+                "quote": "7 – 9%\nRevenue growth\n15%+\nDiluted EPS growth",
+                "metric": "Revenue growth",
+                "guidance_type": "range",
+                "low": "7%",
+                "high": "9%",
+                "unit": "%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Long-term financial framework targeting 100%+ net income to adjusted FCF conversion.",
+                "materiality_candidate": 4,
+                "quote": "100%+\nNI to adj. FCF \nconversion",
+                "metric": "NI to adj. FCF conversion",
+                "guidance_type": "lower_bound",
+                "value": "100%",
+                "unit": "%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Target return of 80%+ of adjusted FCF to shareholders and 10%+ dividend growth rate FY26-FY30.",
+                "materiality_candidate": 4,
+                "quote": "80%+\nTarget return of adj. FCF \nto shareholders\n10%+\nDividend growth rate \nFY26-FY303",
+                "metric": "Target return of adj. FCF to shareholders",
+                "guidance_type": "lower_bound",
+                "value": "80%",
+                "unit": "%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u8",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AI-optimized Server revenue reached $24.7B in FY26, up over 150% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "$24.7B AI-optimized Server \nrevenue in FY26, up +$15B \nand over 150% Y/Y",
+                "metric": "AI-optimized Server revenue",
+                "value": "24.7",
+                "unit": "$B",
+                "period": "FY26",
+                "reported_change": "over 150%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u8",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Core Debt Leverage exited FY26 at 1.4x.",
+                "materiality_candidate": 4,
+                "quote": "Core Debt Leverage \nat 1.4x4\nexiting FY26",
+                "metric": "Core Debt Leverage",
+                "value": "1.4x",
+                "period": "FY26"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_13": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u9",
+              "official_ir:ab6a22c7a5b9e878269b51c4#u10"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Revenue was 54,937 million in 3Q27, up 103% year-over-year and 17% quarter-over-quarter.",
+                "materiality_candidate": 5,
+                "quote": "Revenue 27,005 33,379 43,842 46,971 54,937 103% 17%",
+                "metric": "Revenue",
+                "value": 54937,
+                "unit": "USD $M",
+                "period": "3Q27",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u9",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross margin was 11,559 million (21.0% of revenue) in 3Q27, compared to 5,593 million (20.7%) in 3Q26.",
+                "materiality_candidate": 4,
+                "quote": "Gross Margin 5,593 6,730 7,782 9,830 11,559 107% 18%\nGross margin as a % of revenue 20.7% 20.2% 17.8% 20.9% 21.0%",
+                "metric": "Gross Margin",
+                "value": 11559,
+                "unit": "USD $M",
+                "period": "3Q27",
+                "reported_change": "107%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Infrastructure Solutions Group (ISG) revenue reached 41,974 million in 3Q27, up 198% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "ISG Revenue 14,107 19,602 29,009 31,782 41,974 198% 32%",
+                "metric": "ISG Revenue",
+                "value": 41974,
+                "unit": "USD $M",
+                "period": "3Q27",
+                "reported_change": "198%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AI-Optimized Servers revenue was 22,031 million in 3Q27, up 291% year-over-year and 34% quarter-over-quarter.",
+                "materiality_candidate": 5,
+                "quote": "AI-Optimized Servers Revenue 5,641 8,952 16,132 16,401 22,031 291% 34%",
+                "metric": "AI-Optimized Servers Revenue",
+                "value": 22031,
+                "unit": "USD $M",
+                "period": "3Q27",
+                "reported_change": "291%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Client Solutions Group (CSG) revenue was 12,886 million in 3Q27, down 3% year-over-year and 14% quarter-over-quarter.",
+                "materiality_candidate": 3,
+                "quote": "CSG Revenue 12,478 13,494 14,609 15,034 12,886 3% -14%",
+                "metric": "CSG Revenue",
+                "value": 12886,
+                "unit": "USD $M",
+                "period": "3Q27",
+                "reported_change": "3%"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u10",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Total debt principal amount was 38.0 billion in 3Q27, with Total Core Debt at 16.7 billion.",
+                "materiality_candidate": 3,
+                "quote": "Total Core Debt 2 17.9 17.0 16.7 14.0 16.7\nOther 0.1 0.1 0.1 0.1 0.1\nDFS Debt 8.9 9.1 9.3 9.6 9.6\nDFS Allocated Debt 4.7 5.5 5.3 11.0 11.6\nTotal DFS Related Debt 13.6 14.6 14.6 20.7 21.2\nTotal Debt, principal amount 31.5 31.8 31.4 34.7 38.0",
+                "metric": "Total Debt principal amount",
+                "value": 38.0,
+                "unit": "USD $B",
+                "period": "3Q27"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_14": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u11",
+              "official_ir:ab6a22c7a5b9e878269b51c4#u12"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u11",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP operating income was $7,442 million and non-GAAP operating income was $7,826 million in 3Q27.",
+                "materiality_candidate": 3,
+                "quote": "GAAP operating income 2,119 3,092 3,656 5,385 7,442\nNon-GAAP adjustments:\nAmortization of intangibles 1 121 125 97 96 101\nStock-based compensation 165 189 189 184 184\nOther corporate expenses 2 98 132 293 264 99\nTotal adjustments to operating income 384 446 579 544 384\nNon-GAAP operating income 2,503 3,538 4,235 5,929 7,826",
+                "metric": "Non-GAAP operating income",
+                "value": "7826",
+                "unit": "USD_M",
+                "period": "3Q27",
+                "metric_type": "other_adjusted"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u11",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted EBITDA was $8,501 million in 3Q27, representing 15.5% of revenue.",
+                "materiality_candidate": 3,
+                "quote": "Adjusted EBITDA 3,138 4,186 4,896 6,587 8,501\nAdjusted EBITDA as a % of revenue 11.6% 12.5% 11.2% 14.0% 15.5%",
+                "metric": "Adjusted EBITDA",
+                "value": "8501",
+                "unit": "USD_M",
+                "period": "3Q27",
+                "metric_type": "other_adjusted"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u12",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash flow from operations was $4,459 million and adjusted free cash flow was $4,288 million in 3Q27.",
+                "materiality_candidate": 3,
+                "quote": "Cash flow from operations 1,172 4,674 4,081 2,225 4,459\nAdjustments:\nCapital expenditures and capitalized software development costs, net 1 (666) (721) (963) (1,239) (985)\nFree cash flow 506 3,953 3,118 986 3,474\nAdjustments:\nFinancing receivables 2 1,135 1,036 (263) 6,667 661\nEquipment under operating leases 3 29 99 310 496 153\nAdjusted free cash flow 1,670 5,088 3,165 8,149 4,288",
+                "metric": "Adjusted free cash flow",
+                "value": "4288",
+                "unit": "USD_M",
+                "period": "3Q27",
+                "metric_type": "adjusted_fcf"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_14": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u12",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash flow from operations was $4,459 million and adjusted free cash flow was $4,288 million in 3Q27.",
+                "materiality_candidate": 3,
+                "quote": "Cash flow from operations 1,172 4,674 4,081 2,225 4,459\nAdjustments:\nCapital expenditures and capitalized software development costs, net 1 (666) (721) (963) (1,239) (985)\nFree cash flow 506 3,953 3,118 986 3,474\nAdjustments:\nFinancing receivables 2 1,135 1,036 (263) 6,667 661\nEquipment under operating leases 3 29 99 310 496 153\nAdjusted free cash flow 1,670 5,088 3,165 8,149 4,288",
+                "metric": "Adjusted free cash flow",
+                "value": "4288",
+                "unit": "USD_M",
+                "period": "3Q27",
+                "metric_type": "adjusted_fcf",
+                "card_id": "c3:official_ir:ab6a22c7a5b9e878269b51c4#u12",
+                "document_key": "official_ir:ab6a22c7a5b9e878269b51c4",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 12,
+                "evidence": {
+                  "document_key": "official_ir:ab6a22c7a5b9e878269b51c4",
+                  "quote": "Cash flow from operations 1,172 4,674 4,081 2,225 4,459\nAdjustments:\nCapital expenditures and capitalized software development costs, net 1 (666) (721) (963) (1,239) (985)\nFree cash flow 506 3,953 3,118 986 3,474\nAdjustments:\nFinancing receivables 2 1,135 1,036 (263) 6,667 661\nEquipment under operating leases 3 29 99 310 496 153\nAdjusted free cash flow 1,670 5,088 3,165 8,149 4,288"
+                },
+                "reconciliation": [
+                  {
+                    "item": "Cash flow from operations",
+                    "value": 4459,
+                    "unit": "USD_M",
+                    "period": "3Q27",
+                    "evidence": {
+                      "document_key": "official_ir:ab6a22c7a5b9e878269b51c4",
+                      "quote": "Cash flow from operations 1,172 4,674 4,081 2,225 4,459"
+                    }
+                  },
+                  {
+                    "item": "Capital expenditures and capitalized software development costs, net",
+                    "value": -985,
+                    "unit": "USD_M",
+                    "period": "3Q27",
+                    "evidence": {
+                      "document_key": "official_ir:ab6a22c7a5b9e878269b51c4",
+                      "quote": "Capital expenditures and capitalized software development costs, net 1 (666) (721) (963) (1,239) (985)"
+                    }
+                  },
+                  {
+                    "item": "Financing receivables",
+                    "value": 661,
+                    "unit": "USD_M",
+                    "period": "3Q27",
+                    "evidence": {
+                      "document_key": "official_ir:ab6a22c7a5b9e878269b51c4",
+                      "quote": "Financing receivables 2 1,135 1,036 (263) 6,667 661"
+                    }
+                  },
+                  {
+                    "item": "Equipment under operating leases",
+                    "value": 153,
+                    "unit": "USD_M",
+                    "period": "3Q27",
+                    "evidence": {
+                      "document_key": "official_ir:ab6a22c7a5b9e878269b51c4",
+                      "quote": "Equipment under operating leases 3 29 99 310 496 153"
+                    }
+                  }
+                ]
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u12"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_15": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u13",
+              "official_ir:ab6a22c7a5b9e878269b51c4#u14"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u13",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "FY26 Non-GAAP revenue was $113,538 million.",
+                "materiality_candidate": 3,
+                "quote": "Non-GAAP revenue 86,776 101,229 102,301 88,425 95,567 113,538",
+                "metric": "Non-GAAP revenue",
+                "value": "113538",
+                "unit": "$M",
+                "period": "FY26"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u13",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "3Q27 Cash and cash equivalents was $13,553 million.",
+                "materiality_candidate": 3,
+                "quote": "Cash and cash equivalents 9,569 11,528 11,578 11,569 13,553",
+                "metric": "Cash and cash equivalents",
+                "value": "13553",
+                "unit": "$M",
+                "period": "3Q27"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "4Q27 GAAP diluted EPS guidance is $7.80 to $8.00.",
+                "materiality_candidate": 4,
+                "quote": "GAAP guidance $7.80 - $8.00",
+                "metric": "Diluted EPS",
+                "period": "4Q27",
+                "guidance_type": "range",
+                "low": "7.80",
+                "high": "8.00",
+                "unit": "$"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "4Q27 Non-GAAP diluted EPS guidance is $8.30 to $8.50.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP guidance $8.30 - $8.50",
+                "metric": "Diluted EPS",
+                "period": "4Q27",
+                "guidance_type": "range",
+                "low": "8.30",
+                "high": "8.50",
+                "unit": "$"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "FY27 GAAP diluted EPS guidance is $28.14 to $28.34.",
+                "materiality_candidate": 4,
+                "quote": "GAAP guidance $7.80 - $8.00 $28.14 - $28.34",
+                "metric": "Diluted EPS",
+                "period": "FY27",
+                "guidance_type": "range",
+                "low": "28.14",
+                "high": "28.34",
+                "unit": "$"
+              },
+              {
+                "unit_id": "official_ir:ab6a22c7a5b9e878269b51c4#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "FY27 Non-GAAP diluted EPS guidance is $29.58 to $29.78.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP guidance $8.30 - $8.50 $29.58 - $29.78",
+                "metric": "Diluted EPS",
+                "period": "FY27",
+                "guidance_type": "range",
+                "low": "29.58",
+                "high": "29.78",
+                "unit": "$"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_16": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u15",
+              "official_ir:ab6a22c7a5b9e878269b51c4#u16"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_17": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ab6a22c7a5b9e878269b51c4#u17",
+              "official_ir:80db0b782f407f15ff14fa1d#u1"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net revenue for the three months ended October 30, 2026 was $54,937 million, up 103% year-over-year from $27,005 million.",
+                "materiality_candidate": 5,
+                "quote": "Total net revenue  54,937    27,005   103%",
+                "metric": "Total net revenue",
+                "value": "54937",
+                "unit": "USD Millions",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "27005",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for the three months ended October 30, 2026 was $7,442 million, up 251% year-over-year from $2,119 million.",
+                "materiality_candidate": 5,
+                "quote": "Operating income  7,442    2,119   251%",
+                "metric": "Operating income",
+                "value": "7442",
+                "unit": "USD Millions",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "2119",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "251%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Net income for the three months ended October 30, 2026 was $5,673 million, up 266% year-over-year from $1,548 million.",
+                "materiality_candidate": 5,
+                "quote": "Net income $ 5,673   $ 1,548   266%",
+                "metric": "Net income",
+                "value": "5673",
+                "unit": "USD Millions",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "1548",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "266%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u1",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Diluted earnings per share for the three months ended October 30, 2026 was $8.82, up 287% year-over-year from $2.28.",
+                "materiality_candidate": 5,
+                "quote": "Diluted $ 8.82   $ 2.28   287%",
+                "metric": "Diluted earnings per share",
+                "value": "8.82",
+                "unit": "USD",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "2.28",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "287%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_18": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:80db0b782f407f15ff14fa1d#u2",
+              "official_ir:80db0b782f407f15ff14fa1d#u3"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Infrastructure Solutions Group (ISG) net revenue for AI-Optimized Servers was $22,031 million for the three months ended October 30, 2026, up 291% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "AI-Optimized Servers $ 22,031   $ 5,641   291%",
+                "metric": "AI-Optimized Servers Net Revenue",
+                "metric_type": "other",
+                "value": 22031,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 5641,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "291%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total ISG net revenue was $41,974 million for the three months ended October 30, 2026, up 198% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Total ISG net revenue $ 41,974   $ 14,107   198%",
+                "metric": "Total ISG Net Revenue",
+                "metric_type": "other",
+                "value": 41974,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 14107,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "198%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total Client Solutions Group (CSG) net revenue was $12,886 million for the three months ended October 30, 2026, up 3% year-over-year.",
+                "materiality_candidate": 4,
+                "quote": "Total CSG net revenue $ 12,886   $ 12,478   3%",
+                "metric": "Total CSG Net Revenue",
+                "metric_type": "other",
+                "value": 12886,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 12478,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "3%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total consolidated net revenue was $54,937 million for the three months ended October 30, 2026, compared to $27,005 million in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Total consolidated net revenue $ 54,937   $ 27,005",
+                "metric": "Total Consolidated Net Revenue",
+                "metric_type": "other",
+                "value": 54937,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 27005,
+                "comparison_period": "Q3 FY26"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total consolidated operating income was $7,442 million for the three months ended October 30, 2026, compared to $2,119 million in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Total consolidated operating income (f) $ 7,442   $ 2,119",
+                "metric": "Total Consolidated Operating Income",
+                "metric_type": "other",
+                "value": 7442,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 2119,
+                "comparison_period": "Q3 FY26"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP operating income was $7,826 million for the three months ended October 30, 2026, up 213% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Non-GAAP operating income $ 7,826   $ 2,503   213%",
+                "metric": "Non-GAAP Operating Income",
+                "metric_type": "other",
+                "value": 7826,
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": 2503,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "213%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP diluted earnings per share was $9.45 for the three months ended October 30, 2026, compared to $2.59 in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Non-GAAP earnings per share — diluted  $ 9.45   $ 2.59   265%",
+                "metric": "Non-GAAP Diluted EPS",
+                "metric_type": "other",
+                "value": 9.45,
+                "unit": "USD",
+                "period": "Q3 FY27",
+                "comparison_value": 2.59,
+                "comparison_period": "Q3 FY26",
+                "reported_change": "265%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_19": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:80db0b782f407f15ff14fa1d#u4",
+              "official_ir:80db0b782f407f15ff14fa1d#u5"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Gross margin for the three months ended October 30, 2026 was $11,559 million, compared to $5,593 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Gross margin $ 11,559   $ 5,593   107%",
+                "metric": "Gross margin",
+                "value": "11559",
+                "unit": "$M",
+                "period": "Q3 FY27",
+                "comparison_value": "5593",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "107%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for the three months ended October 30, 2026 was $7,442 million, compared to $2,119 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Operating income $ 7,442   $ 2,119   251%",
+                "metric": "Operating income",
+                "value": "7442",
+                "unit": "$M",
+                "period": "Q3 FY27",
+                "comparison_value": "2119",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "251%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash flow from operations for the three months ended October 30, 2026 was $4,459 million, compared to $1,172 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Cash flow from operations $ 4,459   $ 1,172    280 %",
+                "metric": "operating_cash_flow",
+                "value": "4459",
+                "unit": "$M",
+                "period": "Q3 FY27",
+                "comparison_value": "1172",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "280%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted free cash flow for the three months ended October 30, 2026 was $4,288 million, compared to $1,670 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted free cash flow $ 4,288   $ 1,670    157 %",
+                "metric": "adjusted_fcf",
+                "value": "4288",
+                "unit": "$M",
+                "period": "Q3 FY27",
+                "comparison_value": "1670",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "157%"
+              },
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u5",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Updated diluted earnings per share guidance for the fiscal year ending January 29, 2027 is $28.24.",
+                "materiality_candidate": 5,
+                "quote": "Earnings per share — diluted  $ 7.90   $ 24.37   $ 28.24",
+                "metric": "Diluted EPS",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "28.24",
+                "unit": "USD",
+                "previous_low": "24.37"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_19": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:80db0b782f407f15ff14fa1d#u5",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted free cash flow for the three months ended October 30, 2026 was $4,288 million, compared to $1,670 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Adjusted free cash flow $ 4,288   $ 1,670    157 %",
+                "metric": "adjusted_fcf",
+                "value": "4288",
+                "unit": "$M",
+                "period": "Q3 FY27",
+                "comparison_value": "1670",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "157%",
+                "reconciliation": [
+                  {
+                    "item": "Free cash flow",
+                    "value": "3474",
+                    "unit": "$M",
+                    "period": "Q3 FY27",
+                    "evidence": {
+                      "document_key": "official_ir:80db0b782f407f15ff14fa1d",
+                      "quote": "Free cash flow $ 3,474   $ 506    587 %"
+                    }
+                  },
+                  {
+                    "item": "Financing receivables (b)",
+                    "value": "661",
+                    "unit": "$M",
+                    "period": "Q3 FY27",
+                    "evidence": {
+                      "document_key": "official_ir:80db0b782f407f15ff14fa1d",
+                      "quote": "Financing receivables (b)  661    1,135      7,065    1,704"
+                    }
+                  },
+                  {
+                    "item": "Equipment under operating leases (c)",
+                    "value": "153",
+                    "unit": "$M",
+                    "period": "Q3 FY27",
+                    "evidence": {
+                      "document_key": "official_ir:80db0b782f407f15ff14fa1d",
+                      "quote": "Equipment under operating leases (c)  153    29      959    114"
+                    }
+                  }
+                ],
+                "card_id": "c4:official_ir:80db0b782f407f15ff14fa1d#u5",
+                "document_key": "official_ir:80db0b782f407f15ff14fa1d",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 5,
+                "evidence": {
+                  "document_key": "official_ir:80db0b782f407f15ff14fa1d",
+                  "quote": "Adjusted free cash flow $ 4,288   $ 1,670    157 %"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:80db0b782f407f15ff14fa1d#u5"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_20": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:6b7771b22c3cd4ddb438b850#u1",
+              "official_ir:6b7771b22c3cd4ddb438b850#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 FY27 revenue was a record $54.9 billion, up 103% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Revenue was a record $54.9 billion, up 103%.",
+                "metric": "Revenue",
+                "value": "54.9",
+                "unit": "B",
+                "period": "Q3 FY27",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Q3 FY27 diluted earnings per share was a record $9.45, up 265% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Diluted earnings per share was a record $9.45, up 265%.",
+                "metric": "Diluted EPS",
+                "value": "9.45",
+                "unit": "USD",
+                "period": "Q3 FY27",
+                "reported_change": "265%"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u1",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Generated $4.5 billion of cash flow from operations in Q3 FY27.",
+                "materiality_candidate": 4,
+                "quote": "We generated $4.5 billion of cash flow from operations and returned a record $4.9 billion to shareholders.",
+                "metric": "Cash flow from operations",
+                "value": "4.5",
+                "unit": "B",
+                "period": "Q3 FY27",
+                "metric_type": "operating_cash_flow"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Orders momentum reached $180 billion over the past four quarters, with a majority based on Nvidia's Vera Rubin NVL72.",
+                "materiality_candidate": 5,
+                "quote": "The proof point is our orders momentum, $180 billion over the past four quarters, with a majority of our new orders based on Nvidia’s Vera Rubin NVL72.",
+                "metric": "Orders",
+                "value": "180",
+                "unit": "B",
+                "period": "Last 4 quarters"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_21": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:6b7771b22c3cd4ddb438b850#u3",
+              "official_ir:6b7771b22c3cd4ddb438b850#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "ISG revenue increased 198% to a record $42.0 billion with operating income of $7.1 billion and an operating income rate of 17.0%.",
+                "materiality_candidate": 5,
+                "quote": "Starting with ISG, revenue increased 198% to a record $42.0 billion. Operating income \nwas $7.1 billion with an operating income rate of 17.0%.",
+                "metric": "ISG revenue",
+                "value": "42.0",
+                "unit": "billion",
+                "period": "Q3",
+                "reported_change": "198%"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Booked $60.2 billion in AI orders, recognized a record $22.0 billion in AI server revenue, and exited with a record $132.3 billion of AI server backlog.",
+                "materiality_candidate": 5,
+                "quote": "In Q3, we booked $60.2 billion in AI orders and recognized a record $22.0 billion in AI \nserver revenue. \n◦ We exited the quarter with a record $132.3 billion of AI server backlog.",
+                "metric": "AI server backlog",
+                "value": "132.3",
+                "unit": "billion",
+                "period": "Q3"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u3",
+                "card_type": "customer",
+                "topic": "customer_usage",
+                "fact_class": "objective_fact",
+                "statement": "Dell has over 7,500 Dell AI Factory customers spanning neoclouds, sovereigns, and enterprises.",
+                "materiality_candidate": 4,
+                "quote": "We now have over 7,500 Dell AI Factory customers. \n◦ Our customer base spans neoclouds, sovereigns, and enterprises.",
+                "customer": "Dell AI Factory customers",
+                "use_case": "AI infrastructure and workloads"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Traditional Servers revenue was up 235% as demand remained exceptionally strong.",
+                "materiality_candidate": 4,
+                "quote": "Moving to Traditional Servers, revenue was up 235% as demand remained exceptionally \nstrong, supported by multiple growth drivers that are expanding our TAM.",
+                "metric": "Traditional Servers revenue",
+                "reported_change": "235%",
+                "period": "Q3"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u3",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Storage revenue was up 24%, driven by strong demand for the Dell-IP portfolio.",
+                "materiality_candidate": 4,
+                "quote": "Turning to Storage, revenue was up 24%, as strong demand for our Dell-IP portfolio \ndrove revenue growth and improved profitability.",
+                "metric": "Storage revenue",
+                "reported_change": "24%",
+                "period": "Q3"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "CSG revenue grew 3% in a softer PC unit market.",
+                "materiality_candidate": 3,
+                "quote": "Revenue grew 3% in a softer PC unit market as the industry adjusts to higher price \npoints.",
+                "metric": "CSG revenue",
+                "reported_change": "3%",
+                "period": "Q3"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total revenue was up 103% to $54.9 billion, gross margin dollars grew 105% to $11.7 billion, and gross margin rate was 21.2%, up 10 bps.",
+                "materiality_candidate": 5,
+                "quote": "Total revenue was up 103%, to $54.9 billion. \n• Gross margin dollars grew 105%, to $11.7 billion. \n• G ross margin rate was 21.2%, up 10 bps.",
+                "metric": "Total revenue",
+                "value": "54.9",
+                "unit": "billion",
+                "period": "Q3",
+                "reported_change": "103%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_22": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:6b7771b22c3cd4ddb438b850#u5",
+              "official_ir:6b7771b22c3cd4ddb438b850#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "ISG delivered record Q3 revenue of $42.0 billion, up 198% year-over-year, marking eleven consecutive quarters of double-digit or better growth.",
+                "materiality_candidate": 4,
+                "quote": "ISG delivered record revenue of $42.0 billion, up 198%",
+                "metric": "ISG revenue",
+                "value": "42.0",
+                "unit": "USD $B",
+                "period": "Q3",
+                "reported_change": "up 198%"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AI server performance reached $60.2 billion in Q3 orders, $22.0 billion in record revenue, and $132.3 billion in ending backlog.",
+                "materiality_candidate": 5,
+                "quote": "◦ $60.2 billion in orders, our 2nd quarter with orders above $60 billion; \n◦ a record $22.0 billion in revenue; \n◦ and $132.3 billion in ending backlog",
+                "metric": "AI server revenue",
+                "value": "22.0",
+                "unit": "USD $B",
+                "period": "Q3"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u5",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "ISG operating income reached a record $7.1 billion, up 308%, with operating margin rising 460 bps to 17.0%.",
+                "materiality_candidate": 4,
+                "quote": "ISG’s Q3 operating income surpassed what we delivered in FY26 and was a record $7.1 \nbillion, up 308%",
+                "metric": "ISG operating income",
+                "value": "7.1",
+                "unit": "USD $B",
+                "period": "Q3",
+                "reported_change": "up 308%"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u5",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Operating cash flow was $4.5 billion for the quarter, ending with $16.3 billion in cash and investments and returning a record $4.9 billion to shareholders.",
+                "materiality_candidate": 4,
+                "quote": "cash flow from operations of $4.5 billion driven \nprimarily by sequential revenue growth and higher profitability.",
+                "metric": "cash flow from operations",
+                "value": "4.5",
+                "unit": "USD $B",
+                "period": "Q3",
+                "metric_type": "operating_cash_flow"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u6",
+                "card_type": "capital",
+                "topic": "cash_capex",
+                "fact_class": "company_guidance",
+                "statement": "The Board of Directors approved a $25 billion increase in share repurchase authorization, committed to returning at least 80% of Adjusted free cash flow.",
+                "materiality_candidate": 4,
+                "quote": "approved a $25 billion increase in our share repurchase \nauthorization",
+                "metric": "share repurchase authorization increase",
+                "value": "25",
+                "unit": "USD $B"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q4 revenue expected to be $56.25 billion at the midpoint, up 69% Y/Y, driven by ISG growth of roughly 120% and AI server revenue of roughly $23.5 billion.",
+                "materiality_candidate": 5,
+                "quote": "We expect $56.25 billion revenue at the midpoint, up 69% Y/Y, driven by ISG growth of roughly \n120% with AI Server revenue up sequentially to roughly $23.5 billion.",
+                "metric": "Revenue",
+                "period": "Q4",
+                "guidance_type": "point",
+                "midpoint": "56.25",
+                "unit": "USD $B",
+                "reported_change": "up 69% Y/Y"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Q4 diluted non-GAAP EPS expected to be $8.40 at the midpoint, up roughly 115%.",
+                "materiality_candidate": 5,
+                "quote": "Diluted non-GAAP EPS is expected to be $8.40 at the midpoint, up roughly 115%.",
+                "metric": "Diluted non-GAAP EPS",
+                "period": "Q4",
+                "guidance_type": "point",
+                "midpoint": "8.40",
+                "unit": "USD",
+                "reported_change": "up roughly 115%"
+              },
+              {
+                "unit_id": "official_ir:6b7771b22c3cd4ddb438b850#u6",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full year FY27 guidance implies record revenue of $202 billion (up nearly 80%) and non-GAAP diluted EPS of $29.68 (up nearly 190% at the midpoint).",
+                "materiality_candidate": 5,
+                "quote": "Our Q4 guidance implies a record FY27, with record revenue of $202 billion, up nearly 80%.",
+                "metric": "Revenue",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "202",
+                "unit": "USD $B",
+                "reported_change": "up nearly 80%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_23": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:f190070f7bb2c112fc35f38d#u1",
+              "official_ir:2cf300ddc0a5890cb3e4434a#u1"
+            ],
+            "cards": []
+          }
+        },
+        "v5_extract_batch_24": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u2",
+              "official_ir:2cf300ddc0a5890cb3e4434a#u3"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record revenue of $54.9B, up +103% Y/Y in Q3.",
+                "materiality_candidate": 5,
+                "quote": "• Record revenue of $54.9B, up +103% Y/Y, fueled by growth across our businesses",
+                "metric": "revenue",
+                "value": "54.9",
+                "unit": "B",
+                "period": "Q3",
+                "reported_change": "+103% Y/Y"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AI Server demand orders of $60.2B in Q3 with $132.3B backlog.",
+                "materiality_candidate": 5,
+                "quote": "AI Server demand continues to accelerate, evidenced by $60.2B orders in Q3 and $132.3B backlog",
+                "metric": "AI Server orders",
+                "value": "60.2",
+                "unit": "B",
+                "period": "Q3"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "4Q27 Revenue guidance of $56.25B +/- $0.5B.",
+                "materiality_candidate": 4,
+                "quote": "$56.25B ± $0.5B",
+                "metric": "revenue",
+                "period": "4Q27",
+                "guidance_type": "range",
+                "low": "55.75",
+                "midpoint": "56.25",
+                "high": "56.75",
+                "unit": "B"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "4Q27 Non-GAAP diluted EPS guidance of $8.40 +/- $0.10.",
+                "materiality_candidate": 4,
+                "quote": "$8.40 ± $0.10",
+                "metric": "non_gaap_diluted_eps",
+                "period": "4Q27",
+                "guidance_type": "range",
+                "low": "8.30",
+                "midpoint": "8.40",
+                "high": "8.50",
+                "unit": "$"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "FY27 Revenue guidance raised by $10B to $202.0B +/- $0.5B.",
+                "materiality_candidate": 5,
+                "quote": "$202.0B ± $0.5B",
+                "metric": "revenue",
+                "period": "FY27",
+                "guidance_type": "range",
+                "low": "201.5",
+                "midpoint": "202.0",
+                "high": "202.5",
+                "unit": "B"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u3",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "FY27 Non-GAAP diluted EPS guidance lifted to $29.68 +/- $0.10.",
+                "materiality_candidate": 5,
+                "quote": "$29.68 ± $0.10",
+                "metric": "non_gaap_diluted_eps",
+                "period": "FY27",
+                "guidance_type": "range",
+                "low": "29.58",
+                "midpoint": "29.68",
+                "high": "29.78",
+                "unit": "$"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_25": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u4",
+              "official_ir:2cf300ddc0a5890cb3e4434a#u5"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u4",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "FY27E AI server revenue expected to be $78B",
+                "materiality_candidate": 5,
+                "quote": "FY27E AI server revenue expected to be $78B1",
+                "metric": "AI server revenue",
+                "period": "FY27E",
+                "guidance_type": "point",
+                "value": "$78B",
+                "unit": "USD"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "ISG generated 83% of operating income over the last four quarters (TTM)",
+                "materiality_candidate": 4,
+                "quote": "ISG has generated 83% of our operating income1 over the last four quarters (TTM)",
+                "metric": "ISG operating income share",
+                "value": "83",
+                "unit": "%",
+                "period": "TTM"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Traditional Server revenue up +235% Y/Y",
+                "materiality_candidate": 4,
+                "quote": "Record Traditional Server revenue, up +235% Y/Y",
+                "metric": "Traditional Server revenue growth",
+                "reported_change": "+235% Y/Y",
+                "period": "Q3CY27"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Storage revenue grew +24% Y/Y",
+                "materiality_candidate": 3,
+                "quote": "Storage revenue grew +24% Y/Y",
+                "metric": "Storage revenue growth",
+                "reported_change": "+24% Y/Y"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_26": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u6",
+              "official_ir:2cf300ddc0a5890cb3e4434a#u7"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Client Solutions Group (CSG) revenue grew 3% Y/Y driven by growth in Commercial, while budget-conscious customers delayed refreshes amid inflation-driven price increases.",
+                "materiality_candidate": 3,
+                "quote": "CSG revenue grew +3% Y/Y driven by growth in Commercial",
+                "metric": "CSG revenue growth",
+                "value": "3",
+                "unit": "%",
+                "reported_change": "+3% Y/Y"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u7",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Long-term financial framework targets 7-9% revenue growth, 15%+ diluted EPS growth, 100%+ NI to adj. FCF conversion, 80%+ target return of adj. FCF to shareholders, and 10%+ dividend growth rate FY26-FY30.",
+                "materiality_candidate": 4,
+                "quote": "7 – 9%\nRevenue growth\n15%+\nDiluted EPS growth\n100%+\nNI to adj. FCF \nconversion\n80%+\nTarget return of adj. FCF \nto shareholders\n10%+\nDividend growth rate \nFY26-FY303",
+                "metric": "Revenue growth",
+                "guidance_type": "range",
+                "low": "7",
+                "high": "9",
+                "unit": "%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_27": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u8",
+              "official_ir:2cf300ddc0a5890cb3e4434a#u9"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u8",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AI-optimized Server revenue in FY26 was $24.7B, up +$15B and over 150% Y/Y.",
+                "materiality_candidate": 4,
+                "quote": "$24.7B AI-optimized Server \nrevenue in FY26, up +$15B \nand over 150% Y/Y",
+                "metric": "AI-optimized Server revenue",
+                "value": "24.7",
+                "unit": "B",
+                "period": "FY26",
+                "reported_change": "over 150%"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u8",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Core Debt Leverage was at 1.4x exiting FY26.",
+                "materiality_candidate": 3,
+                "quote": "Core Debt Leverage \nat 1.4x4\nexiting FY26",
+                "metric": "Core Debt Leverage",
+                "value": "1.4",
+                "unit": "x",
+                "period": "FY26"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "3Q27 Consolidated GAAP Revenue was $54,937 million, up 103% Y/Y and 17% Q/Q.",
+                "materiality_candidate": 4,
+                "quote": "Revenue 27,005 33,379 43,842 46,971 54,937 103% 17%",
+                "metric": "Revenue",
+                "value": "54937",
+                "unit": "$M",
+                "period": "3Q27",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u9",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "3Q27 Consolidated GAAP Gross Margin was $11,559 million (21.0% of revenue).",
+                "materiality_candidate": 4,
+                "quote": "Gross Margin 5,593 6,730 7,782 9,830 11,559 107% 18%",
+                "metric": "Gross Margin",
+                "value": "11559",
+                "unit": "$M",
+                "period": "3Q27",
+                "reported_change": "107%"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "3Q27 Infrastructure Solutions Group (ISG) Revenue was $41,974 million, up 198% Y/Y and 32% Q/Q.",
+                "materiality_candidate": 5,
+                "quote": "ISG Revenue 14,107 19,602 29,009 31,782 41,974 198% 32%",
+                "metric": "ISG Revenue",
+                "value": "41974",
+                "unit": "$M",
+                "period": "3Q27",
+                "reported_change": "198%"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "3Q27 AI-Optimized Servers Revenue was $22,031 million, up 291% Y/Y and 34% Q/Q.",
+                "materiality_candidate": 5,
+                "quote": "AI-Optimized Servers Revenue 5,641 8,952 16,132 16,401 22,031 291% 34%",
+                "metric": "AI-Optimized Servers Revenue",
+                "value": "22031",
+                "unit": "$M",
+                "period": "3Q27",
+                "reported_change": "291%"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u9",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "3Q27 Client Solutions Group (CSG) Revenue was $12,886 million, down -14% Q/Q.",
+                "materiality_candidate": 3,
+                "quote": "CSG Revenue 12,478 13,494 14,609 15,034 12,886 3% -14%",
+                "metric": "CSG Revenue",
+                "value": "12886",
+                "unit": "$M",
+                "period": "3Q27",
+                "reported_change": "3%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_28": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u10",
+              "official_ir:2cf300ddc0a5890cb3e4434a#u11"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u10",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "GAAP gross margin was 11,559 million USD in 3Q27, with non-GAAP gross margin at 11,659 million USD (21.2% of revenue).",
+                "materiality_candidate": 3,
+                "quote": "GAAP gross margin 5,593 6,730 7,782 9,830 11,559\nAmortization of intangibles 1 41 41 26 31 30\nStock-based compensation 38 43 44 43 46\nOther corporate expenses 2 14 30 95 25 24\nTotal adjustments to gross margin 93 114 165 99 100\nNon-GAAP gross margin 5,686 6,844 7,947 9,929 11,659\nNon-GAAP gross margin as a % of revenue 21.1% 20.5% 18.1% 21.1% 21.2%",
+                "metric": "Non-GAAP gross margin",
+                "value": 11659,
+                "unit": "$M",
+                "period": "3Q27",
+                "metric_type": "other_adjusted"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u11",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Adjusted EBITDA was 8,501 million USD in 3Q27, representing 15.5% of revenue.",
+                "materiality_candidate": 3,
+                "quote": "Adjusted EBITDA 3,138 4,186 4,896 6,587 8,501\nAdjusted EBITDA as a % of revenue 11.6% 12.5% 11.2% 14.0% 15.5%",
+                "metric": "Adjusted EBITDA",
+                "value": 8501,
+                "unit": "$M",
+                "period": "3Q27",
+                "metric_type": "other_adjusted"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_29": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u12",
+              "official_ir:2cf300ddc0a5890cb3e4434a#u13"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u12",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "3Q27 Cash flow from operations was $4,459 million, capital expenditures and capitalized software development costs, net was $(985) million, resulting in Free cash flow of $3,474 million and Adjusted free cash flow of $4,288 million.",
+                "materiality_candidate": 3,
+                "quote": "Cash flow from operations 1,172 4,674 4,081 2,225 4,459\nAdjustments:\nCapital expenditures and capitalized software development costs, net 1 (666) (721) (963) (1,239) (985)\nFree cash flow 506 3,953 3,118 986 3,474\nAdjustments:\nFinancing receivables 2 1,135 1,036 (263) 6,667 661\nEquipment under operating leases 3 29 99 310 496 153\nAdjusted free cash flow 1,670 5,088 3,165 8,149 4,288",
+                "metric": "adjusted_free_cash_flow",
+                "metric_type": "adjusted_fcf",
+                "value": 4288,
+                "unit": "$M",
+                "period": "3Q27"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u13",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "FY26 Revenue was $113,538 million and Non-GAAP revenue was $113,538 million.",
+                "materiality_candidate": 3,
+                "quote": "Revenue 86,670 101,197 102,301 88,425 95,567 113,538\nImpact of purchase accounting 1 106 32 — — — —\nNon-GAAP revenue 86,776 101,229 102,301 88,425 95,567 113,538",
+                "metric": "revenue",
+                "value": 113538,
+                "unit": "$M",
+                "period": "FY26"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_29": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u12",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "For 3Q27, Dell Technologies reported cash flow from operations of $4,459 million, capital expenditures and capitalized software development costs, net of $(985) million, free cash flow of $3,474 million, and adjusted free cash flow of $4,288 million.",
+                "materiality_candidate": 3,
+                "quote": "Cash flow from operations 1,172 4,674 4,081 2,225 4,459\nAdjustments:\nCapital expenditures and capitalized software development costs, net 1 (666) (721) (963) (1,239) (985)\nFree cash flow 506 3,953 3,118 986 3,474\nAdjustments:\nFinancing receivables 2 1,135 1,036 (263) 6,667 661\nEquipment under operating leases 3 29 99 310 496 153\nAdjusted free cash flow 1,670 5,088 3,165 8,149 4,288",
+                "metric": "adjusted_free_cash_flow",
+                "metric_type": "adjusted_fcf",
+                "value": 4288,
+                "unit": "$M",
+                "period": "3Q27",
+                "card_id": "c1:official_ir:2cf300ddc0a5890cb3e4434a#u12",
+                "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 12,
+                "reconciliation": [
+                  {
+                    "item": "Cash flow from operations",
+                    "value": 4459,
+                    "unit": "$M",
+                    "period": "3Q27",
+                    "evidence": {
+                      "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                      "quote": "Cash flow from operations 1,172 4,674 4,081 2,225 4,459"
+                    }
+                  },
+                  {
+                    "item": "Capital expenditures and capitalized software development costs, net",
+                    "value": -985,
+                    "unit": "$M",
+                    "period": "3Q27",
+                    "evidence": {
+                      "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                      "quote": "Capital expenditures and capitalized software development costs, net 1 (666) (721) (963) (1,239) (985)"
+                    }
+                  },
+                  {
+                    "item": "Financing receivables",
+                    "value": 661,
+                    "unit": "$M",
+                    "period": "3Q27",
+                    "evidence": {
+                      "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                      "quote": "Financing receivables 2 1,135 1,036 (263) 6,667 661"
+                    }
+                  },
+                  {
+                    "item": "Equipment under operating leases",
+                    "value": 153,
+                    "unit": "$M",
+                    "period": "3Q27",
+                    "evidence": {
+                      "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                      "quote": "Equipment under operating leases 3 29 99 310 496 153"
+                    }
+                  }
+                ],
+                "evidence": {
+                  "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                  "quote": "Cash flow from operations 1,172 4,674 4,081 2,225 4,459\nAdjustments:\nCapital expenditures and capitalized software development costs, net 1 (666) (721) (963) (1,239) (985)\nFree cash flow 506 3,953 3,118 986 3,474\nAdjustments:\nFinancing receivables 2 1,135 1,036 (263) 6,667 661\nEquipment under operating leases 3 29 99 310 496 153\nAdjusted free cash flow 1,670 5,088 3,165 8,149 4,288"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u12"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_30": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u14",
+              "official_ir:2cf300ddc0a5890cb3e4434a#u15"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Dell provides 4Q27 GAAP diluted EPS guidance of $7.80 to $8.00 and Non-GAAP diluted EPS guidance of $8.30 to $8.50.",
+                "materiality_candidate": 4,
+                "quote": "GAAP guidance $7.80 - $8.00 ... Non-GAAP guidance $8.30 - $8.50",
+                "metric": "Diluted EPS",
+                "period": "4Q27",
+                "guidance_type": "range",
+                "low": 8.3,
+                "high": 8.5,
+                "unit": "USD"
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Dell provides full year FY27 GAAP diluted EPS guidance of $28.14 to $28.34 and Non-GAAP diluted EPS guidance of $29.58 to $29.78.",
+                "materiality_candidate": 4,
+                "quote": "GAAP guidance $28.14 - $28.34 ... Non-GAAP guidance $29.58 - $29.78",
+                "metric": "Diluted EPS",
+                "period": "FY27",
+                "guidance_type": "range",
+                "low": 29.58,
+                "high": 29.78,
+                "unit": "USD"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_30": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Dell provides 4Q27 GAAP diluted EPS guidance of $7.80 to $8.00 and Non-GAAP diluted EPS guidance of $8.30 to $8.50.",
+                "materiality_candidate": 4,
+                "quote": "GAAP guidance $7.80 - $8.00 $28.14 - $28.34 \nEstimated adjustments for:\nAmortization of intangibles 2 0.15 0.61\nStock-based compensation 0.30 1.15\nOther corporate expenses 3 — 0.99\nFair value adjustments on equity investments 4 — (1.18)\nAggregate adjustment for income taxes 5 0.05 (0.13)\nNon-GAAP guidance $8.30 - $8.50 $29.58 - $29.78",
+                "metric": "Diluted EPS",
+                "period": "4Q27",
+                "guidance_type": "range",
+                "low": 8.3,
+                "high": 8.5,
+                "unit": "USD",
+                "card_id": "c1:official_ir:2cf300ddc0a5890cb3e4434a#u14",
+                "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "evidence": {
+                  "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                  "quote": "GAAP guidance $7.80 - $8.00 $28.14 - $28.34 \nEstimated adjustments for:\nAmortization of intangibles 2 0.15 0.61\nStock-based compensation 0.30 1.15\nOther corporate expenses 3 — 0.99\nFair value adjustments on equity investments 4 — (1.18)\nAggregate adjustment for income taxes 5 0.05 (0.13)\nNon-GAAP guidance $8.30 - $8.50 $29.58 - $29.78"
+                }
+              },
+              {
+                "unit_id": "official_ir:2cf300ddc0a5890cb3e4434a#u14",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Dell provides full year FY27 GAAP diluted EPS guidance of $28.14 to $28.34 and Non-GAAP diluted EPS guidance of $29.58 to $29.78.",
+                "materiality_candidate": 4,
+                "quote": "GAAP guidance $7.80 - $8.00 $28.14 - $28.34 \nEstimated adjustments for:\nAmortization of intangibles 2 0.15 0.61\nStock-based compensation 0.30 1.15\nOther corporate expenses 3 — 0.99\nFair value adjustments on equity investments 4 — (1.18)\nAggregate adjustment for income taxes 5 0.05 (0.13)\nNon-GAAP guidance $8.30 - $8.50 $29.58 - $29.78",
+                "metric": "Diluted EPS",
+                "period": "FY27",
+                "guidance_type": "range",
+                "low": 29.58,
+                "high": 29.78,
+                "unit": "USD",
+                "card_id": "c2:official_ir:2cf300ddc0a5890cb3e4434a#u14",
+                "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 14,
+                "evidence": {
+                  "document_key": "official_ir:2cf300ddc0a5890cb3e4434a",
+                  "quote": "GAAP guidance $7.80 - $8.00 $28.14 - $28.34 \nEstimated adjustments for:\nAmortization of intangibles 2 0.15 0.61\nStock-based compensation 0.30 1.15\nOther corporate expenses 3 — 0.99\nFair value adjustments on equity investments 4 — (1.18)\nAggregate adjustment for income taxes 5 0.05 (0.13)\nNon-GAAP guidance $8.30 - $8.50 $29.58 - $29.78"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:2cf300ddc0a5890cb3e4434a#u14"
+            ],
+            "replace_only_invalid_cards": true
+          }
         }
       },
       "evidence_repair_policy": 3,
