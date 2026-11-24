@@ -2533,6 +2533,352 @@
         "filing_date": "2026-11-23",
         "period_from_exhibit_filename": null
       }
+    },
+    "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm": {
+      "source": "sec_edgar",
+      "source_id": "0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+      "ticker": "DELL",
+      "title": "Dell Technologies Form 8-K — Earnings Release / Exhibit EX-99.1 — exhibit991earnings8kq3fy27.htm",
+      "published_at": "2026-11-24T21:09:13.000Z",
+      "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm",
+      "document_url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000050/exhibit991earnings8kq3fy27.htm",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "sec_edgar",
+        "cik": "0001571996",
+        "accession": "0001571996-26-000050",
+        "form": "8-K",
+        "document_type": "EX-99.1",
+        "filing_date": "2026-11-24",
+        "period_from_exhibit_filename": null
+      }
+    },
+    "official_ir:ba01a58d24e504366d219199": {
+      "source": "official_ir",
+      "source_id": "ba01a58d24e504366d219199",
+      "ticker": "DELL",
+      "title": "Earnings Release Q3 2027 HTML",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+      "document_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/"
+      }
+    },
+    "official_ir:ab6a22c7a5b9e878269b51c4": {
+      "source": "official_ir",
+      "source_id": "ab6a22c7a5b9e878269b51c4",
+      "ticker": "DELL",
+      "title": "Performance Review Q3 2027 PDF",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/_assets/_0f9cfb12d02468203f5253ccbb5d12d8/delltechnologies/db/3595/34778/performance_review/Q3_FY27_Performance_Review.pdf",
+      "document_url": "https://investors.delltechnologies.com/_assets/_0f9cfb12d02468203f5253ccbb5d12d8/delltechnologies/db/3595/34778/performance_review/Q3_FY27_Performance_Review.pdf",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "performance_review",
+      "metadata": {
+        "service": "official_ir",
+        "format": "pdf",
+        "index_url": "https://investors.delltechnologies.com/"
+      }
+    },
+    "official_ir:80db0b782f407f15ff14fa1d": {
+      "source": "official_ir",
+      "source_id": "80db0b782f407f15ff14fa1d",
+      "ticker": "DELL",
+      "title": "Financial Tables Q3 2027 PDF",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/_assets/_0f9cfb12d02468203f5253ccbb5d12d8/delltechnologies/db/3595/34778/financial_tables/Q3_FY27_Financial_Tables.pdf",
+      "document_url": "https://investors.delltechnologies.com/_assets/_0f9cfb12d02468203f5253ccbb5d12d8/delltechnologies/db/3595/34778/financial_tables/Q3_FY27_Financial_Tables.pdf",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_tables",
+      "metadata": {
+        "service": "official_ir",
+        "format": "pdf",
+        "index_url": "https://investors.delltechnologies.com/"
+      }
+    },
+    "official_ir:6b7771b22c3cd4ddb438b850": {
+      "source": "official_ir",
+      "source_id": "6b7771b22c3cd4ddb438b850",
+      "ticker": "DELL",
+      "title": "Prepared Remarks Q3 2027 PDF",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/_assets/_0f9cfb12d02468203f5253ccbb5d12d8/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf",
+      "document_url": "https://investors.delltechnologies.com/_assets/_0f9cfb12d02468203f5253ccbb5d12d8/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "prepared_remarks",
+      "metadata": {
+        "service": "official_ir",
+        "format": "pdf",
+        "index_url": "https://investors.delltechnologies.com/"
+      }
+    },
+    "official_ir:f190070f7bb2c112fc35f38d": {
+      "source": "official_ir",
+      "source_id": "f190070f7bb2c112fc35f38d",
+      "ticker": "DELL",
+      "title": "Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results Read Press Release",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results",
+      "document_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/"
+      }
+    },
+    "official_ir:2cf300ddc0a5890cb3e4434a": {
+      "source": "official_ir",
+      "source_id": "2cf300ddc0a5890cb3e4434a",
+      "ticker": "DELL",
+      "title": "Performance Review Q3 2027 PDF",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/_assets/_ac8eb2555e5a0153972bd8852ad15163/delltechnologies/db/3595/34778/performance_review/Q3_FY27_Performance_Review.pdf",
+      "document_url": "https://investors.delltechnologies.com/_assets/_ac8eb2555e5a0153972bd8852ad15163/delltechnologies/db/3595/34778/performance_review/Q3_FY27_Performance_Review.pdf",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "performance_review",
+      "metadata": {
+        "service": "official_ir",
+        "format": "pdf",
+        "index_url": "https://investors.delltechnologies.com/news-events/events/detail/20261124-dell-technologies-fiscal-year-2027-third-quarter-results"
+      }
+    },
+    "official_ir:75fed284592474d44dc9d41c": {
+      "source": "official_ir",
+      "source_id": "75fed284592474d44dc9d41c",
+      "ticker": "DELL",
+      "title": "Financial Tables Q3 2027 PDF",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/_assets/_ac8eb2555e5a0153972bd8852ad15163/delltechnologies/db/3595/34778/financial_tables/Q3_FY27_Financial_Tables.pdf",
+      "document_url": "https://investors.delltechnologies.com/_assets/_ac8eb2555e5a0153972bd8852ad15163/delltechnologies/db/3595/34778/financial_tables/Q3_FY27_Financial_Tables.pdf",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_tables",
+      "metadata": {
+        "service": "official_ir",
+        "format": "pdf",
+        "index_url": "https://investors.delltechnologies.com/news-events/events/detail/20261124-dell-technologies-fiscal-year-2027-third-quarter-results"
+      }
+    },
+    "official_ir:c86b3dac2495ea3f3c198873": {
+      "source": "official_ir",
+      "source_id": "c86b3dac2495ea3f3c198873",
+      "ticker": "DELL",
+      "title": "Prepared Remarks Q3 2027 PDF",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/_assets/_ac8eb2555e5a0153972bd8852ad15163/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf",
+      "document_url": "https://investors.delltechnologies.com/_assets/_ac8eb2555e5a0153972bd8852ad15163/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "prepared_remarks",
+      "metadata": {
+        "service": "official_ir",
+        "format": "pdf",
+        "index_url": "https://investors.delltechnologies.com/news-events/events/detail/20261124-dell-technologies-fiscal-year-2027-third-quarter-results"
+      }
+    },
+    "official_ir:8bd7ac5cf0a4be63411589ed": {
+      "source": "official_ir",
+      "source_id": "8bd7ac5cf0a4be63411589ed",
+      "ticker": "DELL",
+      "title": "Presentations",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/news-events/presentations",
+      "document_url": "https://investors.delltechnologies.com/news-events/presentations",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "presentation",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:4c94c52c42a453dcc6ae3304": {
+      "source": "official_ir",
+      "source_id": "4c94c52c42a453dcc6ae3304",
+      "ticker": "DELL",
+      "title": "Financial Results",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/financial-information/financial-results",
+      "document_url": "https://investors.delltechnologies.com/financial-information/financial-results",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:eda0deb0d43262d36bf313ea": {
+      "source": "official_ir",
+      "source_id": "eda0deb0d43262d36bf313ea",
+      "ticker": "DELL",
+      "title": "investors.delltechnologies.com Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results ROUND ROCK, Texas--(BUSINESS WIRE)-- Dell Technologies (NYSE: DE",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/",
+      "document_url": "https://investors.delltechnologies.com/",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:7971af5e746daf1a3047ece5": {
+      "source": "official_ir",
+      "source_id": "7971af5e746daf1a3047ece5",
+      "ticker": "DELL",
+      "title": "email Email Alerts Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/news-events/email-alerts",
+      "document_url": "https://investors.delltechnologies.com/news-events/email-alerts",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:fff3d5316742b1e5442657c7": {
+      "source": "official_ir",
+      "source_id": "fff3d5316742b1e5442657c7",
+      "ticker": "DELL",
+      "title": "location_city Company Profile Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/company-information",
+      "document_url": "https://investors.delltechnologies.com/company-information",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:b91642dd0b596992449c9495": {
+      "source": "official_ir",
+      "source_id": "b91642dd0b596992449c9495",
+      "ticker": "DELL",
+      "title": "contact_page Contacts Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/company-information/contacts",
+      "document_url": "https://investors.delltechnologies.com/company-information/contacts",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:55af41b0644998e0f5f8f33a": {
+      "source": "official_ir",
+      "source_id": "55af41b0644998e0f5f8f33a",
+      "ticker": "DELL",
+      "title": "rss_feed RSS News Feed Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/rss-news-feed",
+      "document_url": "https://investors.delltechnologies.com/rss-news-feed",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:8883a5f62c45a491ebfed4e0": {
+      "source": "official_ir",
+      "source_id": "8883a5f62c45a491ebfed4e0",
+      "ticker": "DELL",
+      "title": "Disclaimer Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/disclaimer",
+      "document_url": "https://investors.delltechnologies.com/disclaimer",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:f5b9ef37463cf4bf7eb39316": {
+      "source": "official_ir",
+      "source_id": "f5b9ef37463cf4bf7eb39316",
+      "ticker": "DELL",
+      "title": "Sitemap Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/sitemap",
+      "document_url": "https://investors.delltechnologies.com/sitemap",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+      }
+    },
+    "official_ir:c6ec5dbc4ec71993f0b8a9ae": {
+      "source": "official_ir",
+      "source_id": "c6ec5dbc4ec71993f0b8a9ae",
+      "ticker": "DELL",
+      "title": "Accessibility Statement Dell Technologies to Hold Conference Call Nov. 24 to Discuss Third Quarter Fiscal 2027 Financial Results",
+      "published_at": "2026-11-24T00:00:00-04:00",
+      "url": "https://investors.delltechnologies.com/accessibility-statement",
+      "document_url": "https://investors.delltechnologies.com/accessibility-statement",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "period_end": "2026-11-24",
+      "document_kind": "financial_results",
+      "metadata": {
+        "service": "official_ir",
+        "format": "unknown",
+        "index_url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results"
+      }
     }
   },
   "events": {
@@ -2550,7 +2896,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2915,7 +3261,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3213,7 +3559,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3524,7 +3870,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3758,7 +4104,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3909,7 +4255,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4358,7 +4704,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4515,7 +4861,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4589,7 +4935,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4665,7 +5011,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4815,7 +5161,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4966,7 +5312,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5040,7 +5386,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5204,7 +5550,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5364,7 +5710,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5664,7 +6010,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5742,7 +6088,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5815,7 +6161,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5887,7 +6233,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5963,7 +6309,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6258,7 +6604,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6336,7 +6682,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6417,7 +6763,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6493,7 +6839,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6642,7 +6988,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6718,7 +7064,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6793,7 +7139,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6869,7 +7215,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6946,7 +7292,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7021,7 +7367,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7097,7 +7443,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7248,7 +7594,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T15:11:42-05:00",
+      "updated_at": "2026-11-24T16:13:10-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7325,39 +7671,39 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T13:52:49-05:00",
+      "updated_at": "2026-11-24T16:11:14-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
-            "seconds": 0.244,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "seconds": 0.0,
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.058,
+            "seconds": 0.21,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.204,
+            "seconds": 1.389,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.047,
+            "seconds": 0.098,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-24T13:52:49-05:00",
+        "ir_retrieval_last_at": "2026-11-24T16:11:14-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7378,12 +7724,12 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-24T13:52:49-05:00",
+        "last_collection_check_at": "2026-11-24T16:11:14-05:00",
         "official_ir_checked_at": "2026-11-24T04:57:30-05:00",
         "official_ir_check_count": 3,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-24T15:52:49-05:00",
-        "official_ir_last_attempt_incomplete": "2026-11-24T13:52:49-05:00"
+        "next_ir_retry_at": "2026-11-25T04:11:14-05:00",
+        "official_ir_last_attempt_incomplete": "2026-11-24T16:11:14-05:00"
       },
       "delivery": {}
     },
@@ -7400,39 +7746,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T13:52:49-05:00",
+      "updated_at": "2026-11-24T16:11:14-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
             "seconds": 0.0,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.027,
+            "seconds": 0.138,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.085,
+            "seconds": 1.056,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.037,
+            "seconds": 0.074,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-24T13:52:49-05:00",
+        "ir_retrieval_last_at": "2026-11-24T16:11:14-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7452,12 +7798,107 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-24T13:52:49-05:00",
+        "last_collection_check_at": "2026-11-24T16:11:14-05:00",
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-24T15:52:49-05:00",
+        "next_ir_retry_at": "2026-11-24T18:11:14-05:00",
         "official_ir_checked_at": "2026-11-24T04:57:30-05:00",
         "official_ir_check_count": 2,
-        "official_ir_last_attempt_incomplete": "2026-11-24T13:52:49-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-24T16:11:14-05:00"
+      },
+      "delivery": {}
+    },
+    "DELL_2026-11-24_Q3": {
+      "event_id": "DELL_2026-11-24_Q3",
+      "ticker": "DELL",
+      "fiscal_year": 2027,
+      "quarter": "Q3",
+      "first_seen_at": "2026-11-24T16:11:14-05:00",
+      "period_end": "2026-11-24",
+      "documents": [
+        "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm",
+        "official_ir:ba01a58d24e504366d219199",
+        "official_ir:ab6a22c7a5b9e878269b51c4",
+        "official_ir:80db0b782f407f15ff14fa1d",
+        "official_ir:6b7771b22c3cd4ddb438b850",
+        "official_ir:f190070f7bb2c112fc35f38d",
+        "official_ir:2cf300ddc0a5890cb3e4434a",
+        "official_ir:75fed284592474d44dc9d41c",
+        "official_ir:c86b3dac2495ea3f3c198873",
+        "official_ir:8bd7ac5cf0a4be63411589ed",
+        "official_ir:4c94c52c42a453dcc6ae3304",
+        "official_ir:eda0deb0d43262d36bf313ea",
+        "official_ir:7971af5e746daf1a3047ece5",
+        "official_ir:fff3d5316742b1e5442657c7",
+        "official_ir:b91642dd0b596992449c9495",
+        "official_ir:55af41b0644998e0f5f8f33a",
+        "official_ir:8883a5f62c45a491ebfed4e0",
+        "official_ir:f5b9ef37463cf4bf7eb39316",
+        "official_ir:c6ec5dbc4ec71993f0b8a9ae"
+      ],
+      "status": "collecting",
+      "report_version": 0,
+      "last_analyzed_document_count": 0,
+      "updated_at": "2026-11-24T16:11:14-05:00",
+      "collection_status": {
+        "ir_retrieval_provider": "direct_ir",
+        "ir_retrieval_attempts": [
+          {
+            "provider": "none",
+            "ok": false,
+            "seconds": 0.0,
+            "documents": 0,
+            "model": null
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.086,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q3",
+            "reason": "no_eligible_official_documents"
+          },
+          {
+            "provider": "direct_ir",
+            "ok": true,
+            "seconds": 2.311,
+            "documents": 27,
+            "partial": false
+          },
+          {
+            "provider": "public_transcript",
+            "ok": false,
+            "seconds": 0.09,
+            "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/DELL-2027-Q3"
+          }
+        ],
+        "ir_retrieval_last_at": "2026-11-24T16:11:14-05:00",
+        "gemini_ir_research_notes": [],
+        "gemini_ir_grounding": {},
+        "gemini_ir_rejected_unofficial_urls": [],
+        "source_manifest": {
+          "document_count": 19,
+          "kinds": {
+            "financial_results": 12,
+            "performance_review": 2,
+            "financial_tables": 2,
+            "prepared_remarks": 2,
+            "presentation": 1
+          },
+          "sources": {
+            "sec_edgar": 1,
+            "official_ir": 18
+          },
+          "has_primary_results": true,
+          "has_official_ir": true,
+          "has_transcript_or_qa": true,
+          "has_transcript_enrichment": false,
+          "has_financial_tables": true,
+          "has_performance_review": true,
+          "has_presentation": true
+        },
+        "last_collection_check_at": "2026-11-24T16:11:14-05:00",
+        "official_ir_checked_at": "2026-11-24T16:11:14-05:00",
+        "official_ir_check_count": 1,
+        "transcript_status": "FOUND"
       },
       "delivery": {}
     }
@@ -7472,7 +7913,7 @@
     },
     "direct_ir": {
       "status": "healthy",
-      "last_success_at": "2026-11-24T04:57:30-05:00",
+      "last_success_at": "2026-11-24T16:11:14-05:00",
       "blocked_until": null
     },
     "public_transcript": {
@@ -74802,6 +75243,677 @@
             "numeric_provenance_errors": [],
             "strong_claim_errors": []
           }
+        }
+      },
+      "evidence_repair_policy": 3,
+      "revision_contract_version": 2,
+      "audit_gate_version": 3
+    },
+    "DELL_2026-11-24_Q3": {
+      "pipeline_version": 6,
+      "evidence_fingerprint": "95600e3b8320b606f02a773926c0dc08bdd2a954aa8bbe1366c1a18ecd204581",
+      "stages": {
+        "v5_extract_batch_1": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Third quarter net revenue was $54,937 million, up 103% year over year.",
+                "materiality_candidate": 5,
+                "quote": "Net revenue\n$\n54,937\n$\n27,005\n103%",
+                "metric": "Net revenue",
+                "value": "54,937",
+                "unit": "USD_millions",
+                "period": "Q3FY27",
+                "comparison_value": "27,005",
+                "comparison_period": "Q3FY26",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Fourth-quarter FY27 revenue guidance is $56.3 billion, up 69% year over year.",
+                "materiality_candidate": 4,
+                "quote": "Revenue\n$\n56.3\n69\n%",
+                "metric": "Revenue",
+                "period": "Q4FY27",
+                "guidance_type": "point",
+                "value": "56.3",
+                "unit": "USD_billions",
+                "reported_change": "69%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full-year FY27 revenue guidance updated to $202.0 billion from $192.0 billion, up 78% year over year.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n192.0\n$\n202.0\n78\n%",
+                "metric": "Revenue",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "202.0",
+                "unit": "USD_billions",
+                "previous_midpoint": "192.0",
+                "reported_change": "78%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full-year FY27 GAAP diluted EPS guidance updated to $28.24 from $24.37.",
+                "materiality_candidate": 4,
+                "quote": "GAAP diluted EPS\n$\n24.37\n$\n28.24\n225\n%",
+                "metric": "GAAP diluted EPS",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "28.24",
+                "unit": "USD",
+                "previous_midpoint": "24.37",
+                "reported_change": "225%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full-year FY27 non-GAAP diluted EPS guidance updated to $29.68 from $25.50.",
+                "materiality_candidate": 4,
+                "quote": "Non-GAAP diluted EPS\n$\n25.50\n$\n29.68\n188\n%",
+                "metric": "Non-GAAP diluted EPS",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "29.68",
+                "unit": "USD",
+                "previous_midpoint": "25.50",
+                "reported_change": "188%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "management_claim",
+                "statement": "Ended the quarter with a record $132.3 billion AI backlog after booking $60.2 billion of orders.",
+                "materiality_candidate": 5,
+                "quote": "$132.3 billion\nAI backlog after booking\n$60.2 billion\nof orders",
+                "metric": "AI backlog",
+                "value": "132.3",
+                "unit": "USD_billions",
+                "period": "Q3FY27"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Infrastructure Solutions Group (ISG) third quarter net revenue was $41,974 million, up 198% year over year.",
+                "materiality_candidate": 5,
+                "quote": "Total ISG net revenue\n$\n41,974\n$\n14,107\n198%",
+                "metric": "Total ISG net revenue",
+                "value": "41,974",
+                "unit": "USD_millions",
+                "period": "Q3FY27",
+                "comparison_value": "14,107",
+                "comparison_period": "Q3FY26",
+                "reported_change": "198%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u2",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Client Solutions Group (CSG) third quarter net revenue was $12,886 million, up 3% year over year.",
+                "materiality_candidate": 3,
+                "quote": "Total CSG net revenue\n$\n12,886\n$\n12,478\n3%",
+                "metric": "Total CSG net revenue",
+                "value": "12,886",
+                "unit": "USD_millions",
+                "period": "Q3FY27",
+                "comparison_value": "12,478",
+                "comparison_period": "Q3FY26",
+                "reported_change": "3%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_2": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u3",
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u3",
+                "card_type": "risk",
+                "topic": "risk",
+                "fact_class": "management_claim",
+                "statement": "Dell details risk factors including global economic conditions, competitive pressures, supplier reliance, and demand effects related to AI solutions.",
+                "materiality_candidate": 3,
+                "quote": "competitive pressures; Dell Technologies’ ability to successfully execute its strategy; Dell Technologies’ relationships with third-party suppliers for products and components; Dell Technologies’ use of single-source or limited-source suppliers; effects on Dell Technologies’ operating performance related to demand for AI solutions"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net revenue for Q3 ended October 30, 2026 was $54,937 million, up 103% compared to $27,005 million in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Total net revenue\n54,937\n27,005\n103%",
+                "metric": "Total net revenue",
+                "value": "54,937",
+                "unit": "USD $M",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "27,005",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for Q3 ended October 30, 2026 was $7,442 million, an increase of 251% from $2,119 million in the prior year period.",
+                "materiality_candidate": 4,
+                "quote": "Operating income\n7,442\n2,119\n251%",
+                "metric": "Operating income",
+                "value": "7,442",
+                "unit": "USD $M",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "2,119",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "251%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Diluted earnings per share for Q3 ended October 30, 2026 was $8.82, up 287% from $2.28 in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Diluted\n$\n8.82\n$\n2.28\n287%",
+                "metric": "Diluted EPS",
+                "value": "8.82",
+                "unit": "USD",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "2.28",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "287%"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u4",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash and cash equivalents reached $13,553 million as of October 30, 2026 compared to $11,528 million as of January 30, 2026.",
+                "materiality_candidate": 3,
+                "quote": "Cash and cash equivalents\n$\n13,553\n$\n11,528",
+                "metric": "Cash and cash equivalents",
+                "value": "13,553",
+                "unit": "USD $M",
+                "period": "October 30, 2026",
+                "comparison_value": "11,528",
+                "comparison_period": "January 30, 2026"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_3": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u5",
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "AI-Optimized Servers net revenue was $22,031 million for the three months ended October 30, 2026, up 291% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "AI-Optimized Servers\n$\n22,031\n$\n5,641\n291%",
+                "metric": "AI-Optimized Servers net revenue",
+                "value": "22031",
+                "unit": "USD $M",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "5641",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "291%",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u5",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total ISG net revenue was $41,974 million for the three months ended October 30, 2026, an increase of 198% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Total ISG net revenue\n$\n41,974\n$\n14,107\n198%",
+                "metric": "Total ISG net revenue",
+                "value": "41974",
+                "unit": "USD $M",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "14107",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "198%",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total consolidated net revenue was $54,937 million for the three months ended October 30, 2026, up 103% year-over-year.",
+                "materiality_candidate": 5,
+                "quote": "Total consolidated net revenue\n$\n54,937\n$\n27,005\n$\n145,750\n$\n80,159",
+                "metric": "Total consolidated net revenue",
+                "value": "54937",
+                "unit": "USD $M",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "27005",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "103%",
+                "metric_type": "other"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u6",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Non-GAAP diluted earnings per share was $9.45 for the three months ended October 30, 2026, compared to $2.59 in the prior year period.",
+                "materiality_candidate": 5,
+                "quote": "Non-GAAP earnings per share — diluted\n$\n9.45\n$\n2.59\n265%",
+                "metric": "Non-GAAP diluted earnings per share",
+                "value": "9.45",
+                "unit": "USD",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "2.59",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "265%",
+                "metric_type": "other"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_4": {
+          "payload": {
+            "processed_unit_ids": [
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u7",
+              "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u8"
+            ],
+            "cards": [
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Cash flow from operations was $4,459 million for the three months ended October 30, 2026, up 280% compared to $1,172 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Cash flow from operations\n$\n4,459\n$\n1,172\n280\n%\n$\n10,765\n$\n6,511\n65\n%",
+                "metric": "Cash flow from operations",
+                "value": "4459",
+                "unit": "$M",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "1172",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "280%",
+                "metric_type": "operating_cash_flow"
+              },
+              {
+                "unit_id": "sec_edgar:0001571996-26-000050:exhibit991earnings8kq3fy27.htm#u7",
+                "card_type": "fact",
+                "topic": "cash_capex",
+                "fact_class": "objective_fact",
+                "statement": "Free cash flow was $3,474 million for the three months ended October 30, 2026, compared to $506 million for the three months ended October 31, 2025.",
+                "materiality_candidate": 4,
+                "quote": "Free cash flow\n$\n3,474\n$\n506\n587\n%\n$\n7,578\n$\n4,602\n65\n%",
+                "metric": "Free cash flow",
+                "value": "3474",
+                "unit": "$M",
+                "period": "Three Months Ended October 30, 2026",
+                "comparison_value": "506",
+                "comparison_period": "Three Months Ended October 31, 2025",
+                "reported_change": "587%",
+                "metric_type": "standard_fcf"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_5": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ba01a58d24e504366d219199#u1",
+              "official_ir:ba01a58d24e504366d219199#u2"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record third-quarter net revenue of $54.9 billion, up 103% year over year.",
+                "materiality_candidate": 5,
+                "quote": "Record revenue of $54.9 billion, up 103% year over year",
+                "metric": "Net revenue",
+                "value": "54.9",
+                "unit": "B",
+                "period": "Q3FY27",
+                "comparison_period": "Q3FY26",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Record diluted EPS of $8.82 and non-GAAP diluted EPS of $9.45 for Q3.",
+                "materiality_candidate": 4,
+                "quote": "Record diluted earnings per share (EPS) of $8.82, up 287% year over year, and record non-GAAP diluted EPS of $9.45, up 265%",
+                "metric": "diluted EPS",
+                "value": "8.82",
+                "unit": "$",
+                "period": "Q3FY27",
+                "comparison_period": "Q3FY26",
+                "reported_change": "287%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full-year FY27 revenue guidance of $202.0 billion, up 78% year over year.",
+                "materiality_candidate": 5,
+                "quote": "Full-year FY27 revenue guidance of $202.0 billion, up 78% year over year",
+                "metric": "revenue",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "202.0",
+                "unit": "B",
+                "reported_change": "78%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full-year FY27 diluted EPS guidance of $28.24 and non-GAAP diluted EPS guidance of $29.68.",
+                "materiality_candidate": 5,
+                "quote": "Full-year FY27 diluted EPS guidance of $28.24 and non-GAAP diluted EPS guidance of $29.68, up 225% and 188% year over year, respectively",
+                "metric": "diluted EPS",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "28.24",
+                "unit": "$",
+                "reported_change": "225%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "management_claim",
+                "topic": "demand_revenue",
+                "fact_class": "management_claim",
+                "statement": "Jeff Clarke states the company ended the quarter with a record $132.3 billion AI backlog after booking $60.2 billion of orders.",
+                "materiality_candidate": 5,
+                "quote": "We ended the quarter with a record $132.3 billion AI backlog after booking $60.2 billion of orders, each rigorously vetted for customer quality and access to capital, land and power.",
+                "speaker": "Jeff Clarke"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u1",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Infrastructure Solutions Group (ISG) revenue reached $42.0 billion, up 198% year over year, with AI-Optimized Servers revenue at $22.0 billion.",
+                "materiality_candidate": 5,
+                "quote": "Record revenue: $42.0 billion, up 198% year over year\nRecord AI-Optimized Servers revenue: $22.0 billion, up 291% year over year",
+                "metric": "ISG net revenue",
+                "value": "42.0",
+                "unit": "B",
+                "period": "Q3FY27",
+                "comparison_period": "Q3FY26",
+                "reported_change": "198%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Fourth-quarter revenue guidance is $56.3 billion, GAAP diluted EPS $7.90, and Non-GAAP diluted EPS $8.40.",
+                "materiality_candidate": 5,
+                "quote": "Revenue $\n56.3\nGAAP diluted EPS $\n7.90\nNon-GAAP diluted EPS $\n8.40",
+                "metric": "revenue",
+                "period": "Q4FY27",
+                "guidance_type": "point",
+                "value": "56.3",
+                "unit": "B",
+                "reported_change": "69%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Full-year FY27 revenue guidance updated to $202.0 billion from previous $192.0 billion.",
+                "materiality_candidate": 5,
+                "quote": "Revenue $\n192.0\n$\n202.0\n78\n%",
+                "metric": "revenue",
+                "period": "FY27",
+                "guidance_type": "point",
+                "value": "202.0",
+                "unit": "B",
+                "previous_midpoint": "192.0"
+              }
+            ]
+          }
+        },
+        "v5_evidence_repair_v3_5": {
+          "payload": {
+            "cards": [
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u2",
+                "card_type": "guidance",
+                "topic": "guidance",
+                "fact_class": "company_guidance",
+                "statement": "Fourth-quarter revenue guidance is $56.3 billion, GAAP diluted EPS $7.90, and Non-GAAP diluted EPS $8.40.",
+                "materiality_candidate": 5,
+                "quote": "Revenue\n$\n56.3\n69\n%\nGAAP diluted EPS\n$\n7.90\n134\n%\nNon-GAAP diluted EPS\n$\n8.40\n116\n%",
+                "metric": "revenue",
+                "period": "Q4FY27",
+                "guidance_type": "point",
+                "value": "56.3",
+                "unit": "B",
+                "reported_change": "69%",
+                "card_id": "c7:official_ir:ba01a58d24e504366d219199#u2",
+                "document_key": "official_ir:ba01a58d24e504366d219199",
+                "source": "official_ir",
+                "provenance": "primary_or_official",
+                "position": 2,
+                "evidence": {
+                  "document_key": "official_ir:ba01a58d24e504366d219199",
+                  "quote": "Revenue\n$\n56.3\n69\n%\nGAAP diluted EPS\n$\n7.90\n134\n%\nNon-GAAP diluted EPS\n$\n8.40\n116\n%"
+                }
+              }
+            ],
+            "processed_unit_ids": [
+              "official_ir:ba01a58d24e504366d219199#u2"
+            ],
+            "replace_only_invalid_cards": true
+          }
+        },
+        "v5_extract_batch_6": {
+          "payload": {
+            "processed_unit_ids": [
+              "official_ir:ba01a58d24e504366d219199#u3",
+              "official_ir:ba01a58d24e504366d219199#u4"
+            ],
+            "cards": [
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u4",
+                "card_type": "fact",
+                "topic": "demand_revenue",
+                "fact_class": "objective_fact",
+                "statement": "Total net revenue for the three months ended October 30, 2026 was $54,937 million compared to $27,005 million in the prior year period, an increase of 103%.",
+                "materiality_candidate": 5,
+                "quote": "Total net revenue\n54,937\n27,005\n103\n%",
+                "metric": "Total net revenue",
+                "value": "54937",
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": "27005",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "103%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Operating income for the three months ended October 30, 2026 was $7,442 million compared to $2,119 million in the prior year period, an increase of 251%.",
+                "materiality_candidate": 5,
+                "quote": "Operating income\n7,442\n2,119\n251\n%",
+                "metric": "Operating income",
+                "value": "7442",
+                "unit": "USD_M",
+                "period": "Q3 FY27",
+                "comparison_value": "2119",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "251%"
+              },
+              {
+                "unit_id": "official_ir:ba01a58d24e504366d219199#u4",
+                "card_type": "fact",
+                "topic": "margin_unit_economics",
+                "fact_class": "objective_fact",
+                "statement": "Diluted earnings per share for the three months ended October 30, 2026 was $8.82 compared to $2.28 in the prior year period, an increase of 287%.",
+                "materiality_candidate": 5,
+                "quote": "Diluted\n$\n8.82\n$\n2.28\n287\n%",
+                "metric": "Diluted EPS",
+                "value": "8.82",
+                "unit": "USD",
+                "period": "Q3 FY27",
+                "comparison_value": "2.28",
+                "comparison_period": "Q3 FY26",
+                "reported_change": "287%"
+              }
+            ]
+          }
+        },
+        "v5_extract_batch_7": {
+          "payload": [
+            {
+              "processed_unit_ids": [
+                "official_ir:ba01a58d24e504366d219199#u5",
+                "official_ir:ba01a58d24e504366d219199#u6"
+              ],
+              "cards": [
+                {
+                  "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "ISG AI-Optimized Servers net revenue reached $22,031 million in Q3 2026, up 291% year-over-year.",
+                  "materiality_candidate": 5,
+                  "quote": "AI-Optimized Servers\n$\n22,031\n$\n5,641\n291\n%",
+                  "metric": "AI-Optimized Servers Net Revenue",
+                  "value": "22,031",
+                  "unit": "USD M",
+                  "period": "Three Months Ended October 30, 2026",
+                  "comparison_value": "5,641",
+                  "comparison_period": "Three Months Ended October 31, 2025",
+                  "reported_change": "291%"
+                },
+                {
+                  "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Total ISG net revenue grew 198% year-over-year to $41,974 million in Q3 2026.",
+                  "materiality_candidate": 4,
+                  "quote": "Total ISG net revenue\n$\n41,974\n$\n14,107\n198\n%",
+                  "metric": "Total ISG Net Revenue",
+                  "value": "41,974",
+                  "unit": "USD M",
+                  "period": "Three Months Ended October 30, 2026",
+                  "comparison_value": "14,107",
+                  "comparison_period": "Three Months Ended October 31, 2025",
+                  "reported_change": "198%"
+                },
+                {
+                  "unit_id": "official_ir:ba01a58d24e504366d219199#u5",
+                  "card_type": "capital",
+                  "topic": "cash_capex",
+                  "fact_class": "objective_fact",
+                  "statement": "Dell recorded operating cash flows of $4,459 million and capital expenditures of $985 million for the three months ended October 30, 2026.",
+                  "materiality_candidate": 4,
+                  "quote": "Change in cash from operating activities\n4,459\n1,172",
+                  "metric": "Operating Cash Flow",
+                  "value": "4,459",
+                  "unit": "USD M",
+                  "period": "Three Months Ended October 30, 2026",
+                  "comparison_value": "1,172",
+                  "comparison_period": "Three Months Ended October 31, 2025",
+                  "metric_type": "operating_cash_flow"
+                },
+                {
+                  "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Total CSG net revenue increased 3% year-over-year to $12,886 million in Q3 2026.",
+                  "materiality_candidate": 4,
+                  "quote": "Total CSG net revenue\n$\n12,886\n$\n12,478\n3\n%",
+                  "metric": "Total CSG Net Revenue",
+                  "value": "12,886",
+                  "unit": "USD M",
+                  "period": "Three Months Ended October 30, 2026",
+                  "comparison_value": "12,478",
+                  "comparison_period": "Three Months Ended October 31, 2025",
+                  "reported_change": "3%"
+                },
+                {
+                  "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
+                  "card_type": "fact",
+                  "topic": "demand_revenue",
+                  "fact_class": "objective_fact",
+                  "statement": "Total consolidated net revenue doubled, growing 103% year-over-year to $54,937 million in Q3 2026.",
+                  "materiality_candidate": 4,
+                  "quote": "Total consolidated net revenue\n$\n54,937\n$\n27,005",
+                  "metric": "Total Consolidated Net Revenue",
+                  "value": "54,937",
+                  "unit": "USD M",
+                  "period": "Three Months Ended October 30, 2026",
+                  "comparison_value": "27,005",
+                  "comparison_period": "Three Months Ended October 31, 2025",
+                  "reported_change": "103%"
+                },
+                {
+                  "unit_id": "official_ir:ba01a58d24e504366d219199#u6",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "fact_class": "objective_fact",
+                  "statement": "Consolidated operating income rose to $7,442 million in Q3 2026 from $2,119 million in Q3 2025.",
+                  "materiality_candidate": 4,
+                  "quote": "Total consolidated operating income (f)\n$\n7,442\n$\n2,119",
+                  "metric": "Total Consolidated Operating Income",
+                  "value": "7,442",
+                  "unit": "USD M",
+                  "period": "Three Months Ended October 30, 2026",
+                  "comparison_value": "2,119",
+                  "comparison_period": "Three Months Ended October 31, 2025"
+                }
+              ]
+            }
+          ]
         }
       },
       "evidence_repair_policy": 3,
