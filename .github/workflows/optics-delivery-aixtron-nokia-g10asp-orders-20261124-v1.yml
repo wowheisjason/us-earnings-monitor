@@ -1,0 +1,45 @@
+name: Optics delivery AIXTRON Nokia G10-AsP orders v1
+on:
+  push:
+    branches: [codex/optics-delivery-aixtron-nokia-g10asp-orders-20261124-v1]
+    paths: [.github/workflows/optics-delivery-aixtron-nokia-g10asp-orders-20261124-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: codex-optics-delivery-aixtron-nokia-g10asp-orders-20261124-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜AIXTRON取得Nokia多筆150 mm InP設備重複訂單\n\n1) 重大變化／通知門檻\nAIXTRON（Xetra：AIXA）於2026/11/24宣布，Nokia已追加「多筆」G10-AsP MOCVD系統訂單，設備將於2027年分批交付。相較2025年首台設備採購，本次由單台導入跨入多台擴產，且具名客戶確認用途為InP PIC高量產能力，屬可核實訂單與重大產能擴張，足以改變AIXTRON 2027光電設備營收能見度及150 mm InP製程競爭地位。\n\n2) 已確認事實\n• 公告／事件日：2026/11/24；預計交付期：2027全年。訂單實際簽署日未披露。\n• Nokia在2025年採購並於其後成功部署首台G10-AsP；本次為追加數台。AIXTRON未披露精確台數、單價、總金額、不可取消條款、驗收時點或收入認列季度。\n• G10-AsP支援150 mm（6吋）InP晶圓磊晶；AIXTRON稱大晶圓可提高輸出並降低單位成本，注入器與溫控使片內均勻性最高改善4倍，並具原位清洗、全自動卡匣搬送及長週期穩定性。這些性能數據為供應商宣稱，未見第三方量產良率數據。\n• Nokia營運與工程副總裁在公告中表示，穩定製造複雜150 mm InP PIC是下一代光學的必要條件；用途包含次世代相干光學及AI資料中心光子元件。\n• 此事件是磊晶設備及PIC產能，不等同EML、800G／1.6T模組或CPO已經出貨。AIXTRON與Nokia亦未公布終端雲端客戶。\n\n3) 供應鏈／競爭關係\n• AIXTRON（AIXA）：上游InP／GaAs MOCVD設備，直接取得訂單。\n• Nokia（NYSE：NOK；Nasdaq Helsinki：NOKIA）：設備買方及InP PIC／相干光學製造方，直接擴產。\n• Veeco（NASDAQ：VECO）為化合物半導體沉積設備競爭者；本事件證明AIXTRON在Nokia擴產中獲選，但未證明其全面取代競品。\n• AXT、Sumitomo Electric等InP基板供應商屬潛在互補環節；公告未具名基板供應商，不能確認個別受益。\n• Coherent、Lumentum等InP雷射／PIC業者可能與Nokia在不同產品市場競爭或互補，但本事件沒有其訂單或客戶關係證據。\n\n4) 合理推論\n若2027設備按期交付、安裝並驗收，訂單可增強AIXTRON既有InP積壓訂單轉收入的可見度；Nokia由首台轉為多台，亦是150 mm InP製程可複製性的客戶端佐證。對Nokia而言，較大晶圓與自動化有機會降低單位成本、提高PIC供應量，但成立條件包括InP基板供應、製程良率、設備稼動率及下游光學需求。\n不能從數台MOCVD訂單推論整條InP／EML鏈缺貨，也不能把相干光PIC擴產直接等同CPO量產。\n\n5) 投資機會與風險\n潛在催化劑：AIXTRON披露訂單金額、2027出貨／驗收節點、Nokia公布產能與產品收入、150 mm良率與利用率改善。受益首先是AIXTRON設備收入及Nokia自製PIC能力；基板與封裝供應商僅屬條件式受益。\n風險包括交付或驗收遞延、客戶資本支出調整、150 mm基板不足、良率未達標、設備集中與競爭、終端需求低於擴產，以及產能過剩。未查即時估值，不判斷股價是否已反映。\n\n6) 待驗證／去重\n追蹤精確台數與金額、訂單是否進入AIXTRON積壓訂單、各台驗收及收入認列季度、Nokia晶圓月產能／良率、基板來源、PIC產品與具名客戶。\n已比對既有AIXTRON Q3 InP訂單與Nokia Q3通知：本次新增的是具名客戶Nokia的多筆重複訂單及2027交付時程，非舊聞重刊；事件鍵aixtron-nokia-g10asp-orders-20261124，v1。\n\n官方：https://www.aixtron.com/en/investors/news/AIXTRON%20and%20Nokia%C2%A0expand%20collaboration%20to%20scale%C2%A0%20InP%C2%A0photonics%20for%20AI%20infrastructure_n8087995\n前次官方：https://www.aixtron.com/en/press/press-releases/AIXTRON%20delivers%20G10-AsP%20for%20production%20of%20next%20generation%20photonics%20to%20Nokia_n13685\n補充：https://evertiq.com/design/2026-11-24-nokia-orders-more-aixtron-systems-to-scale-up-inp-photonics"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"aixtron-nokia-g10asp-orders-20261124","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
