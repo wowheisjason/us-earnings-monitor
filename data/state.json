@@ -2550,7 +2550,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -2915,7 +2915,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3213,7 +3213,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3524,7 +3524,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3758,7 +3758,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3909,7 +3909,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4358,7 +4358,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4515,7 +4515,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4589,7 +4589,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4665,7 +4665,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4815,7 +4815,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4966,7 +4966,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5040,7 +5040,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5204,7 +5204,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5364,7 +5364,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5664,7 +5664,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5742,7 +5742,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5815,7 +5815,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5887,7 +5887,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5963,7 +5963,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6258,7 +6258,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6336,7 +6336,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6417,7 +6417,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6493,7 +6493,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6642,7 +6642,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6718,7 +6718,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6793,7 +6793,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6869,7 +6869,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6946,7 +6946,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7021,7 +7021,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7097,7 +7097,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7248,7 +7248,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:40:56-05:00",
+      "updated_at": "2026-11-23T22:20:40-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7325,7 +7325,7 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T19:47:48-05:00",
+      "updated_at": "2026-11-23T22:19:33-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7339,25 +7339,25 @@
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.08,
+            "seconds": 0.225,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
-            "ok": true,
-            "seconds": 1.894,
-            "documents": 3,
+            "ok": false,
+            "seconds": 1.097,
+            "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.051,
+            "seconds": 0.041,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-23T19:47:48-05:00",
+        "ir_retrieval_last_at": "2026-11-23T22:19:33-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7378,11 +7378,12 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-23T19:47:48-05:00",
+        "last_collection_check_at": "2026-11-23T22:19:33-05:00",
         "official_ir_checked_at": "2026-11-23T19:47:48-05:00",
         "official_ir_check_count": 2,
         "transcript_status": "NOT_FOUND_AFTER_RETRY",
-        "next_ir_retry_at": "2026-11-23T21:47:48-05:00"
+        "next_ir_retry_at": "2026-11-24T00:19:33-05:00",
+        "official_ir_last_attempt_incomplete": "2026-11-23T22:19:33-05:00"
       },
       "delivery": {}
     },
@@ -7399,39 +7400,39 @@
       "status": "collecting",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-23T20:39:48-05:00",
+      "updated_at": "2026-11-23T22:19:33-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
           {
-            "provider": "gemini_search",
+            "provider": "none",
             "ok": false,
-            "seconds": 0.247,
-            "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-            "category": "search_quota_blocked"
+            "seconds": 0.0,
+            "documents": 0,
+            "model": null
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.195,
+            "seconds": 0.036,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3",
             "reason": "no_eligible_official_documents"
           },
           {
             "provider": "direct_ir",
             "ok": false,
-            "seconds": 1.34,
+            "seconds": 1.043,
             "documents": 0,
             "partial": false
           },
           {
             "provider": "public_transcript",
             "ok": false,
-            "seconds": 0.106,
+            "seconds": 0.024,
             "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWD-2027-Q3"
           }
         ],
-        "ir_retrieval_last_at": "2026-11-23T20:39:48-05:00",
+        "ir_retrieval_last_at": "2026-11-23T22:19:33-05:00",
         "gemini_ir_research_notes": [],
         "gemini_ir_grounding": {},
         "gemini_ir_rejected_unofficial_urls": [],
@@ -7451,12 +7452,12 @@
           "has_performance_review": false,
           "has_presentation": false
         },
-        "last_collection_check_at": "2026-11-23T20:39:48-05:00",
-        "transcript_status": "EXPECTED_NOT_YET_AVAILABLE",
-        "next_ir_retry_at": "2026-11-23T21:09:48-05:00",
+        "last_collection_check_at": "2026-11-23T22:19:33-05:00",
+        "transcript_status": "NOT_FOUND_AFTER_RETRY",
+        "next_ir_retry_at": "2026-11-24T00:19:33-05:00",
         "official_ir_checked_at": "2026-11-23T19:47:48-05:00",
         "official_ir_check_count": 1,
-        "official_ir_last_attempt_incomplete": "2026-11-23T20:39:48-05:00"
+        "official_ir_last_attempt_incomplete": "2026-11-23T22:19:33-05:00"
       },
       "delivery": {}
     }
