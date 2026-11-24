@@ -1,0 +1,75 @@
+name: Optics delivery - Semight OE KGD revenue v1
+on:
+  push:
+    branches: [codex/optics-delivery-semight-oe-kgd-revenue-20261123-v1]
+    paths: [.github/workflows/optics-delivery-semight-oe-kgd-revenue-20261123-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-semight-oe-kgd-revenue-20261123-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="""AI光通訊重大進展｜聯訊儀器 OE 裸晶 KGD 測試設備跨入收入階段
+
+1) 重大變化／門檻
+聯訊儀器（688808.SH）在11月20日第三季業績說明會表示，用於光引擎（OE）裸晶測試的KGD分選測試系統已通過客戶驗證並實現收入；11月23日披露活動紀錄。這是從先前「展示／研發中」跨至「客戶驗證＋收入認列」的商業化里程碑，符合通知門檻。
+
+2) 已確認事實
+• 事件日：2026/11/20；活動紀錄公告日：2026/11/23；實際驗證完成日、出貨日及收入認列期間未公開。
+• 公司明確稱OE裸晶級KGD分選測試系統已通過客戶驗證並實現收入；未披露客戶、台數、訂單額或收入金額。
+• 公司稱CPO／NPO使測試從模組級前移到矽光PIC與OE晶片；但高速光電混合ATE仍僅完成初步技術預研，新一代2.4T／3.2T示波器與時鐘恢復產品仍屬近期送樣，不能視為量產或收入。
+• 2026年半年度報告仍把OE KGD系統列為「進行中」，預計研發投資6,500萬元；本次是其後新增的落地證據。上述均為公司披露，尚無具名客戶獨立驗證。
+
+3) 供應鏈／競爭位置
+• 聯訊儀器（688808.SH）：直接位於光模組、光晶片與CPO／NPO光引擎的測試設備環節。
+• 下游客戶未公開，不能推定為任何特定模組商、交換器商或雲端業者。
+• 同類方案可能由海外儀器、探針、分選與系統整合供應商組合提供；公司未揭露具名競品及同規格比較，暫不能判定市占替代幅度。
+
+4) 合理推論
+若客戶驗證可轉為重複訂單，OE封裝前的Known-Good-Die篩選有助降低把不良裸晶投入高價CPO／NPO封裝的損失，測試內容與設備需求可能增加，改善聯訊在光電測試的競爭位置。對營收與毛利的影響，仍取決於訂單台數、ASP、驗收節奏、服務收入及多客戶複製；目前無法量化。
+
+5) 投資機會與風險
+潛在催化劑是新增客戶認證、重複訂單、收入占比與海外導入。主要風險是本次收入可能僅為單台或小批驗收、客戶集中、產品良率／稼動率不明，以及大型海外測試平台競爭。此訊息不能推論InP、EML或整條光通訊鏈缺貨，也不代表CPO已全面量產。
+
+6) 待驗證／追蹤
+追蹤OE KGD訂單額與台數、收入認列期間、毛利率、第二家以上客戶認證、設備UPH／測試通道／良率數據，以及混合ATE由預研轉送樣、驗證、量產的節點。
+
+去重：既有投遞分支未見同公司／產品／里程碑事件；本版為v1。
+
+官方（上交所公司公告）：https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688808
+官方（11/20業績說明會入口）：https://eseb.cn/1CRlgl7UzN6
+官方（公司CPO/OE測試產品）：https://cn.semight.com/exhibition-information/502
+活動紀錄副本：https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=82400997&gather=1&id=12718168"""
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"semight-oe-kgd-revenue-20261123","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
