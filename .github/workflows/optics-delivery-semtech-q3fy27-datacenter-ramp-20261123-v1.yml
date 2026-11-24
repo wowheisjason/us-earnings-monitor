@@ -1,0 +1,45 @@
+name: Optics delivery Semtech Q3 FY27 data center ramp v1
+on:
+  push:
+    branches: [codex/optics-delivery-semtech-q3fy27-datacenter-ramp-20261123-v1]
+    paths: [.github/workflows/optics-delivery-semtech-q3fy27-datacenter-ramp-20261123-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: codex-optics-delivery-semtech-q3fy27-datacenter-ramp-20261123-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="AI光通訊重大進展｜Semtech資料中心營收創高，1.6T爬坡並給出NPO收入時程\n\n1) 重大變化／通知門檻\nSemtech（NASDAQ：SMTC）公布FY2027 Q3資料中心營收1.45億美元，季增45%、年增158%，並明確表示成長同時來自光學、銅互連及光子元件；1.6T FiberEdge／CopperEdge正在爬坡，NPO初始收入預計FY2028下半年出現。這是實際營收、高速產品量產爬坡與新架構收入時程同時落地，較10月僅有SiGe產能合作新增了可改變營收前景的證據。\n\n2) 已確認事實\n• 財季截至2026/10/25；結果及法說公告日為美國時間2026/11/23（日本時間11/24）。\n• 公司Q3總營收4.23億美元，季增24%、年增58%；其中資料中心營收1.45億美元，季增45%、年增158%。1.45億美元包含光學、主動銅線與光子元件，不能全數視為光通訊或InP收入。\n• 官方簡報稱800G FiberEdge已有顯著市占、1.6T FiberEdge與CopperEdge正在爬坡。管理層估FY2027資料中心營收將超過FY2026的2.3倍，並指引Q4資料中心營收約季增40%、年增222%；這是管理層預測，不是已實現收入。\n• NPO仍未認列收入；公司預計初始收入在FY2028下半年，且稱可插拔模組未來數年仍將是scale-out主力。故不能把本次1.6T爬坡等同CPO量產。\n• 光子產品方面，VHP雷射已能在50°C可靠輸出250 mW，公司稱單顆可驅動8通道矽光調變器，適用1.6T收發器與NPO光引擎；400 mW、結合SOA的UHP雷射仍在開發，目標為CPO scale-up外置光源，尚非送樣／認證／量產。\n• 公司稱gain chip與coherent-lite雷射在數家關鍵客戶取得進展，但未公布客戶、訂單、出貨量或光子收入。\n\n3) 供應鏈／競爭關係\n• Semtech（SMTC）：TIA、雷射驅動器、線性等化器及高功率雷射，對800G／1.6T可插拔、NPO及後續CPO有直接曝險。\n• Tower Semiconductor（NASDAQ/TASE：TSEM）：Semtech確認1.6T GN1834D TIA採Tower SiGe製程；屬已確認代工關係，但本季未拆分其晶圓收入。\n• Coherent（COHR）、Lumentum（LITE）與MACOM（MTSI）在高功率InP雷射、驅動／接收元件或光子平台存在競爭及互補；本事件沒有證明其市占同步增減。\n• 未公開模組商、NPO客戶及超大規模雲端客戶，禁止猜測。\n\n4) 合理推論\n實際資料中心營收高速成長與1.6T爬坡，支持Semtech由800G向1.6T延伸內容價值，而非只有未驗證的產品展示。若NPO設計導入按FY2028下半年轉收入、VHP雷射完成多客戶資格認證，產品組合可進一步涵蓋TIA／driver及外置光源，支撐營收與毛利。\n成立條件是1.6T模組需求、SiGe與InP供應、客戶認證及良率按期，且NPO規格不因客戶分歧而延後。資料中心收入包含銅互連，不能把全部成長歸因於光模組或InP。\n\n5) 投資機會與風險\n催化劑：1.6T出貨／收入拆分、NPO首筆量產收入、VHP具名客戶認證、400 mW UHP由開發轉送樣、光子產能利用率及FY2028指引。直接受益者是Semtech；Tower受益需由晶圓量或收入再驗證。\n風險包括NPO時程延後、客戶自研或多供應商導致市占低於目標、InP／晶圓供應限制、擴產成本壓毛利、可插拔與CPO架構替代速度不確定，以及高速元件價格競爭。未查即時估值，不判斷市場是否已反映。\n\n6) 待驗證／去重\n追蹤光學／銅／光子收入各自占比，1.6T TIA與driver出貨，NPO客戶數與收入，VHP／UHP量產資格、InP產能與良率、Tower晶圓量，以及FY2028資料中心指引。\n已比對semtech-tower-sige-20261013 v1（message_id 548）：前次是多年SiGe產能合作；本次新增Q3實績、1.6T爬坡、NPO收入時程及高功率雷射狀態，屬不同事件。事件鍵semtech-q3fy27-datacenter-ramp-20261123，v1。\n\n官方IR：https://investors.semtech.com/news/semtech-announces-third-quarter-of-fiscal-year-2027-results/1d4bfc37-9eae-49e8-ad80-a5796d2d0c56\n官方簡報：https://investors.semtech.com/media/document/248c840d-1688-4565-8c95-a113cacf3cda/assets/SMTC_Quarterly_Earnings_Presentation_Q327.pdf\nSEC：https://www.sec.gov/Archives/edgar/data/88941/000008894126000045/smtc-10252026x8k991.htm\n法說逐字稿補充：https://stockanalysis.com/stocks/smtc/transcripts/738755-q3-2027/"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"semtech-q3fy27-datacenter-ramp-20261123","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt
+          path: telegram-receipt.json
