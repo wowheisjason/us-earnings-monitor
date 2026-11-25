@@ -1,0 +1,47 @@
+name: Optics delivery AAOI second hyperscaler LTA v1
+on:
+  push:
+    branches: [codex/optics-delivery-aaoi-second-hyperscaler-lta-20261124-v1]
+    paths: [.github/workflows/optics-delivery-aaoi-second-hyperscaler-lta-20261124-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-aaoi-second-hyperscaler-lta-20261124-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AI光通訊重大進展｜AAOI第二份hyperscaler LTA：800G與雷射最低承諾約22億美元】\n\n1）重大變化及為何達門檻\nAOI（NASDAQ：AAOI）於2026/11/24宣布，已與第二家既有Tier‑1超大規模資料中心客戶簽署多年LTA。新增的約束性最低採購承諾為：2027年約15億美元800G收發器、2028–2029年約7億美元雷射二極體，合計約22億美元。相較11/5既有通知，當時第二份LTA僅為最後談判、產品與金額未定；本次已簽署並量化，且把雷射供應延伸至公司預期的CPO用途，足以實質改變營收能見度、產能配置與競爭地位。\n\n2）已確認事實\n公告／事件日：2026/11/24。協議供貨期：2026/12至2030/12。\n• 800G最低承諾：約15億美元，採購期為2027年。\n• 雷射二極體最低承諾：約7億美元，採購期為2028–2029年。\n• AOI支付一次性200萬美元以加速客戶認證；客戶未承諾投入資本。\n• AOI承諾2027年Q1起供應議定數量的美國製產品，並於2027年爬坡。\n• 管理層稱客戶四年需求預測逾100億美元，但公司明確表示這不是訂單、具約束承諾或營收指引；超過22億美元的部分仍取決於擴產及新增採購承諾。\n• 公司預期部分雷射自2028年起用於CPO架構，並計畫擴充德州雷射產能；這是管理層預期，非客戶公開確認、量產實績或已認列營收。\n官方IR（11/24）：\nhttps://investors.ao-inc.com/2026-11-24-AOI-Announces-Multi-Year-Long-Term-Agreement-with-Tier-1-Hyperscale-Datacenter-Customer\nSEC 10‑Q（11/5，前一份1.6T LTA與既有擴產背景）：\nhttps://www.sec.gov/Archives/edgar/data/1158114/000143774926035282/aaoi20260930_10q.htm\n補充專業媒體（11/24，含管理層訪談；非客戶獨立確認）：\nhttps://www.fierce-network.com/cloud/lasers-steal-show-aois-second-hyperscaler-win\n\n3）供應鏈與競合\nAAOI為直接受益者：垂直整合雷射二極體、光元件及800G／1.6T模組，並承擔認證、擴產及交付責任。未具名Tier‑1 hyperscaler為直接需求端；不得猜測為哪一家。\n800G可插拔模組與供CPO的外部／高功率雷射是不同產品層級：此協議顯示兩者在2027–2029可能並存，而非已證明CPO立即取代可插拔模組。Coherent、Lumentum等高功率CW／外部雷射供應商，以及Innolight、Eoptolink等800G模組商屬競爭或互補者；本案不證明其失單。未披露InP基板、磊晶、DSP、封裝測試供應商，不能外推整條InP／EML鏈全面缺貨。\n\n4）合理推論\n若客戶認證按時完成、最低承諾可執行、AAOI取得電力與設備並提升良率，22億美元承諾可顯著提高2027–2029收入可見度、產能利用率及固定成本吸收。雷射在2028年才開始支援預期CPO用途，意味營收傳導先由2027年800G模組、再由2028–2029年雷射承接。\n反之，合約條件、降價、產品組合、客戶部署及交付能力仍可能使實際收入低於公告承諾；逾100億美元只可視為需求情境，不可納入基準收入。\n\n5）投資機會及風險\n機會：AAOI獲得第二家hyperscaler的長期需求錨定，並把內製雷射由可插拔延伸至CPO光源；若德州量產與良率達標，模組與雷射收入組合可能改善規模效益。\n催化劑：2027年Q1美國製產品首批出貨、客戶認證完成、實際800G收入、德州雷射產能與良率、2028年CPO雷射正式量產／認列。\n風險：客戶集中、認證或部署延遲、產能與電力工程、良率、關鍵DSP／材料、合約降價、存貨與折舊先於收入、CPO架構或外部雷射規格改變，以及擴產後供過於求。未查即時股價，不判斷已反映或低估。\n\n6）待驗證與去重\n待追蹤：客戶端確認、LTA完整取消／減量條款、800G規格與reach、雷射是否為InP CW／ELSFP及功率、CPO平台與正式認證、實際台數／ASP／毛利、產能利用率與美國製占比。\n去重：已核對AAOI 11/5事件v1／v2；當時第二LTA仍未簽。本次為不同客戶與產品組合的獨立事件v1，未發現同鍵投遞分支。媒體轉載合併，不作獨立證據；客戶未公開確認，保留此限制。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"aaoi-second-hyperscaler-lta-20261124","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-aaoi-second-hyperscaler-lta-20261124-v1
+          path: telegram-receipt.json
