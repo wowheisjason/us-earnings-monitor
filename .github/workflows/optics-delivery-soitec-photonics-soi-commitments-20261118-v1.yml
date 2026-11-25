@@ -1,0 +1,47 @@
+name: Optics delivery Soitec Photonics SOI commitments v1
+on:
+  push:
+    branches: [codex/optics-delivery-soitec-photonics-soi-commitments-20261118-v1]
+    paths: [.github/workflows/optics-delivery-soitec-photonics-soi-commitments-20261118-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-soitec-photonics-soi-commitments-20261118-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AI光通訊重大進展｜Soitec取得約12億美元Photonics‑SOI承諾並加速擴產】\n\n1）重大變化及門檻\nSoitec（Euronext Paris：SOI）於2026/11/18量化AI光互連需求：多數Photonics‑SOI客戶已簽至少兩年的產能保留協議，未來數年客戶承諾約12億美元，且以現金押金支持。公司同時把FY27 Photonics‑SOI營收指引提高至逾3億美元、為FY26三倍以上，並把FY27資本支出由約1億歐元上調至1.3億歐元以擴產。這是已實現營收、現金押金、長約及擴產同步出現，足以改變上游材料供需與公司營收／競爭判斷。\n\n2）已確認事實\n公告日：2026/11/18；財務期間截至2026/9/30。\n• Q2 FY27 Photonics‑SOI營收約7,500萬美元；H1約1.25億美元，去年同期約5,000萬美元。\n• H1集團營收3.17億歐元，年增37%；H1毛利率33.3%。\n• 產能保留協議的客戶承諾約12億美元，多數Photonics‑SOI客戶已簽、期限多涵蓋至2028年；H1已收到的初始Photonics‑SOI現金押金為8,600萬歐元。12億美元是合約承諾總額，不等於已收現金或已認列營收。\n• 管理層指引：Q3 Photonics‑SOI營收約9,000萬美元，去年同期約2,500萬；FY27逾3億美元、為FY26三倍以上。均為前瞻指引。\n• FY27 CAPEX現預計約1.3億歐元，先前約1億；公司將先提高現有廠產出、於FY27下半年改造Bernin 4潔淨室，再依協議分階段配置新加坡擴建空間。\n• H2擴產轉換將有暫時性較高製程成本；公司指引FY27毛利率略高於30%。\n官方財報（11/18）：\nhttps://www.soitec.com/home/group/corporate/newsroom/press-releases/content/2026/11/18/soitec-reports-second-quarter-revenue-and-half-year-results-of-fiscal-year-2027\n官方半年報：\nhttps://www.soitec.com/docs/default-source/financial-reports/2026-2027/soitec_2026_rfs_en.pdf\n官方簡報：\nhttps://www.soitec.com/docs/default-source/financial-reports/2026-2027/2026-11-18---soitec-h1%2727-presentation.pdf?Status=Master\n\n3）供應鏈與競合\nSoitec是矽光子PIC的上游工程化SOI晶圓供應商，直接曝險於可插拔、NPO及CPO需求。下游矽光子晶圓代工、PIC／光引擎與模組商可因基板供應擴大而受益，但公司未揭露客戶名稱，不能指認Tower、GlobalFoundries、TSMC或特定模組商為本批承諾客戶。\nPhotonics‑SOI不等於完整光引擎，也不直接取代InP雷射、EML或外部CW雷射；不同架構仍需光源、驅動、FAU及封裝測試，屬互補或替代組合。\n\n4）合理推論\n現金押金與多年承諾降低純預測需求的可信度折扣，支持Photonics‑SOI由AI 800G／1.6T可插拔向NPO／CPO scale‑up延伸。若Bernin 4與新加坡產能按期爬坡、良率穩定，Soitec可提高收入能見度並受益於產品組合；但H2轉產成本可能先壓毛利，收入與現金流效益須待客戶實際提貨。\n成立條件包括AI資料中心部署持續、客戶不減量、PIC設計不轉向其他基板或不同光學架構，以及產能／品質驗證按期完成。\n\n5）投資機會及風險\n機會與催化劑：Q3達成9,000萬美元、FY27逾3億美元指引，Bernin 4轉線完成、新加坡設備決策、追加2028年後協議、押金轉為實際出貨。\n風險：客戶重複預留產能、合約減量或押金返還條件、轉產良率與成本、產能開出晚於需求、2028年後供過於求、CPO／NPO時程延後，以及替代材料或整合架構。未查即時價格，不判斷估值。\n\n6）待驗證與去重\n待追蹤晶圓尺寸、實際片數／ASP／良率、前十大客戶集中度、12億美元年度拆分、押金沒收／返還條款、Bernin 4與新加坡新增有效產能，以及下游客戶出貨是否轉為800G／1.6T、NPO或CPO營收。\n本事件公告於11/18，係本次7日重疊窗口補漏；已查既有通知分支，未發現Soitec或Photonics‑SOI同事件。客戶未具名且未有客戶端確認，不宣稱全面獨立驗證。"
+          if len(message)>4096:
+              raise SystemExit("Telegram message exceeds 4096 characters")
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"soitec-photonics-soi-commitments-20261118","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-soitec-photonics-soi-commitments-20261118-v1
+          path: telegram-receipt.json
