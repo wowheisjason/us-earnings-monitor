@@ -2896,7 +2896,7 @@
       "status": "needs_human_review",
       "report_version": 1,
       "last_analyzed_document_count": 1,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "source_manifest": {
           "document_count": 2,
@@ -3261,7 +3261,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3559,7 +3559,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -3870,7 +3870,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4104,7 +4104,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4255,7 +4255,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4704,7 +4704,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4861,7 +4861,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -4935,7 +4935,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5011,7 +5011,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5161,7 +5161,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5312,7 +5312,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5386,7 +5386,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5550,7 +5550,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -5710,7 +5710,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6010,7 +6010,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6088,7 +6088,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6161,7 +6161,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6233,7 +6233,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6309,7 +6309,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6604,7 +6604,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6682,7 +6682,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6763,7 +6763,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6839,7 +6839,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -6988,7 +6988,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7064,7 +7064,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7139,7 +7139,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7215,7 +7215,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7292,7 +7292,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7367,7 +7367,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7444,7 +7444,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7597,7 +7597,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7674,7 +7674,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -7840,7 +7840,7 @@
       "status": "needs_human_review",
       "report_version": 0,
       "last_analyzed_document_count": 0,
-      "updated_at": "2026-11-24T18:31:21-05:00",
+      "updated_at": "2026-11-24T20:25:00-05:00",
       "collection_status": {
         "ir_retrieval_provider": "direct_ir",
         "ir_retrieval_attempts": [
@@ -59997,7 +59997,7 @@
     },
     "CRWV_2026-09-30_Q3": {
       "pipeline_version": 6,
-      "evidence_fingerprint": "68cbcdda6ebe2d31b5c6f173fc19b9cf3b817033f47c53cb90a8992ff19e531d",
+      "evidence_fingerprint": "3837517289ca170a350ab7b561eca8e9ceca45032a08ecec183ec2c12dd03fcf",
       "stages": {
         "v5_extract_batch_1": {
           "payload": {
@@ -60037,37 +60037,11 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $3,661 million for the quarter.",
+                "statement": "CoreWeave reported revenue from contract with customer excluding assessed tax of $3,661M for the quarter.",
                 "materiality_candidate": 5,
                 "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
                 "metric": "Revenue",
                 "value": "3,661",
-                "unit": "USD",
-                "period": "Q3 2026"
-              },
-              {
-                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Operating income was $207 million for the quarter.",
-                "materiality_candidate": 4,
-                "quote": "us-gaap:OperatingIncomeLoss",
-                "metric": "Operating Income",
-                "value": "207",
-                "unit": "USD",
-                "period": "Q3 2026"
-              },
-              {
-                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income was $709 million for the quarter.",
-                "materiality_candidate": 5,
-                "quote": "us-gaap:NetIncomeLoss",
-                "metric": "Net Income",
-                "value": "709",
                 "unit": "USD",
                 "period": "Q3 2026"
               }
@@ -60082,8 +60056,9 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $3,661 million for the quarter.",
+                "statement": "CoreWeave reported revenue from contract with customer excluding assessed tax of $3,661M for the quarter.",
                 "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
                 "metric": "Revenue",
                 "value": "3,661",
                 "unit": "USD",
@@ -60095,49 +60070,7 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": "Revenue from contract with customer excluding assessed tax was $3,661 million"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Operating income was $207 million for the quarter.",
-                "materiality_candidate": 4,
-                "metric": "Operating Income",
-                "value": "207",
-                "unit": "USD",
-                "period": "Q3 2026",
-                "card_id": "c2:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": "Operating income was $207 million"
-                }
-              },
-              {
-                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income was $709 million for the quarter.",
-                "materiality_candidate": 5,
-                "metric": "Net Income",
-                "value": "709",
-                "unit": "USD",
-                "period": "Q3 2026",
-                "card_id": "c3:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": "Net income was $709 million"
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
                 }
               }
             ],
@@ -60159,12 +60092,12 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Q3 2026 revenue was $3,661 million, compared to $1,365 million in Q3 2025.",
+                "statement": "Revenue for the third quarter of 2026 was $3,661 million, compared to $1,365 million in the third quarter of 2025.",
                 "materiality_candidate": 5,
-                "quote": "Three Months Ended September 30,\n2026\n2025\nRevenue\n$\n3,661\n$\n1,365",
-                "metric": "Revenue",
+                "quote": "Revenue\n$\n3,661\n$\n1,365",
+                "metric": "revenue",
                 "value": 3661,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 1365,
                 "comparison_period": "Q3 2025"
@@ -60174,12 +60107,12 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Q3 2026 operating income was $207 million with a 6% margin, compared to $52 million and 4% in Q3 2025.",
+                "statement": "Operating income for the third quarter of 2026 was $207 million with an operating income margin of 6%.",
                 "materiality_candidate": 4,
                 "quote": "Operating income\n$\n207\n$\n52\nOperating income margin\n6\n%\n4\n%",
-                "metric": "Operating income",
+                "metric": "operating_income",
                 "value": 207,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 52,
                 "comparison_period": "Q3 2025"
@@ -60189,12 +60122,12 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Q3 2026 Adjusted EBITDA was $2,256 million with a 62% margin, compared to $838 million and 61% in Q3 2025.",
-                "materiality_candidate": 5,
+                "statement": "Adjusted EBITDA for the third quarter of 2026 was $2,256 million with an Adjusted EBITDA margin of 62%.",
+                "materiality_candidate": 4,
                 "quote": "Adjusted EBITDA\n$\n2,256\n$\n838\nAdjusted EBITDA margin\n62\n%\n61\n%",
-                "metric": "Adjusted EBITDA",
+                "metric": "adjusted_ebitda",
                 "value": 2256,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 838,
                 "comparison_period": "Q3 2025"
@@ -60207,9 +60140,9 @@
                 "statement": "Revenue backlog was approximately $132.5 billion as of September 30, 2026.",
                 "materiality_candidate": 5,
                 "quote": "Revenue backlog\n1\nwas approximately $132.5 billion as of September 30, 2026.",
-                "metric": "Revenue backlog",
+                "metric": "revenue_backlog",
                 "value": 132.5,
-                "unit": "$B",
+                "unit": "USD_B",
                 "period": "Q3 2026"
               },
               {
@@ -60223,9 +60156,9 @@
                 "metric": "revenue",
                 "period": "FY 2026",
                 "guidance_type": "range",
-                "low": 13.0,
-                "high": 13.3,
-                "unit": "$B"
+                "low": 13000,
+                "high": 13300,
+                "unit": "USD_M"
               },
               {
                 "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u2",
@@ -60234,30 +60167,30 @@
                 "fact_class": "company_guidance",
                 "statement": "Raising full year 2026 adjusted operating income guidance to a range of $1.275 billion to $1.375 billion.",
                 "materiality_candidate": 5,
-                "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion, representing a 26% increase at the midpoint compared with our prior guidance.",
-                "metric": "adjusted operating income",
+                "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion",
+                "metric": "adjusted_operating_income",
                 "period": "FY 2026",
                 "guidance_type": "range",
-                "low": 1.275,
-                "high": 1.375,
-                "unit": "$B"
+                "low": 1275,
+                "high": 1375,
+                "unit": "USD_M"
               },
               {
                 "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u2",
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Raising full year 2026 capital expenditures expected range to $37 billion to $39 billion.",
+                "statement": "Expecting full year 2026 capital expenditures of $37 billion to $39 billion, raising the low end of the prior guidance range.",
                 "materiality_candidate": 5,
                 "quote": "We now expect full year 2026 capital expenditures of $37 billion to $39 billion, raising the low end of our prior guidance range of $35 billion to $39 billion.",
-                "metric": "capital expenditures",
+                "metric": "capex",
                 "period": "FY 2026",
                 "guidance_type": "range",
-                "low": 37.0,
-                "high": 39.0,
-                "unit": "$B",
-                "previous_low": 35.0,
-                "previous_high": 39.0
+                "low": 37000,
+                "high": 39000,
+                "unit": "USD_M",
+                "previous_low": 35000,
+                "previous_high": 39000
               },
               {
                 "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u2",
@@ -60267,12 +60200,12 @@
                 "statement": "Raising annualized run-rate revenue guidance to $20 billion to $21 billion to exit 2026.",
                 "materiality_candidate": 5,
                 "quote": "Finally, we are raising our annualized run-rate revenue\n3\nguidance to $20 billion to $21 billion to exit 2026.",
-                "metric": "annualized run-rate revenue",
+                "metric": "annualized_run_rate_revenue",
                 "period": "Exit 2026",
                 "guidance_type": "range",
-                "low": 20.0,
-                "high": 21.0,
-                "unit": "$B"
+                "low": 20000,
+                "high": 21000,
+                "unit": "USD_M"
               }
             ]
           }
@@ -60285,61 +60218,49 @@
             ],
             "cards": [
               {
-                "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u3",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Annualized run-rate revenue (ARR) is defined as revenue from the last month of the quarter multiplied by 12.",
-                "materiality_candidate": 3,
-                "quote": "Annualized run-rate revenue (ARR) is calculated by taking revenue from the last month of the quarter multiplied by 12."
-              },
-              {
                 "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the three months ended September 30, 2025.",
+                "statement": "CoreWeave reported revenue of $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the same period in 2025.",
                 "materiality_candidate": 5,
                 "quote": "Revenue\n$\n3,661\n$\n1,365",
                 "metric": "Revenue",
                 "value": "3661",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "1365",
-                "comparison_period": "Q3 2025",
-                "metric_type": "revenue"
+                "comparison_period": "Q3 2025"
               },
               {
                 "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Operating income was $207 million for the three months ended September 30, 2026, compared to $52 million for the three months ended September 30, 2025.",
+                "statement": "CoreWeave reported operating income of $207 million for the three months ended September 30, 2026, compared to $52 million for the same period in 2025.",
                 "materiality_candidate": 5,
                 "quote": "Operating income\n207\n52",
                 "metric": "Operating income",
                 "value": "207",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "52",
-                "comparison_period": "Q3 2025",
-                "metric_type": "operating_income"
+                "comparison_period": "Q3 2025"
               },
               {
                 "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net loss was $709 million for the three months ended September 30, 2026, compared to $110 million for the three months ended September 30, 2025.",
+                "statement": "CoreWeave reported a net loss of $709 million for the three months ended September 30, 2026, compared to a net loss of $110 million for the same period in 2025.",
                 "materiality_candidate": 5,
-                "quote": "Net loss\n$\n(709\n)\n$\n(110",
+                "quote": "Net loss\n$\n(709\n)\n$\n(110\n)",
                 "metric": "Net loss",
                 "value": "-709",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "-110",
-                "comparison_period": "Q3 2025",
-                "metric_type": "net_income"
+                "comparison_period": "Q3 2025"
               }
             ]
           }
@@ -60359,8 +60280,7 @@
                 "statement": "Net cash provided by operating activities was $1,975 million for the three months ended September 30, 2026, compared to $1,689 million for the prior year period.",
                 "materiality_candidate": 4,
                 "quote": "Net cash provided by operating activities\n$\n1,975\n$\n1,689\n$\n5,638\n$\n1,499",
-                "metric": "operating_cash_flow",
-                "metric_type": "operating_cash_flow",
+                "metric": "Net cash provided by operating activities",
                 "value": 1975,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -60372,11 +60292,10 @@
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Purchases of property and equipment, including capitalized internal-use software, were $9,441 million for the three months ended September 30, 2026.",
+                "statement": "Purchases of property and equipment, including capitalized internal-use software, were $9,441 million for the three months ended September 30, 2026, compared to $3,279 million for the prior year period.",
                 "materiality_candidate": 4,
                 "quote": "Purchases of property and equipment, including capitalized internal-use software\n(\n9,441\n)\n(\n3,279\n)\n(\n23,558\n)\n(\n6,249\n)",
-                "metric": "capex",
-                "metric_type": "capex",
+                "metric": "Purchases of property and equipment, including capitalized internal-use software",
                 "value": -9441,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -60388,11 +60307,10 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Adjusted EBITDA was $2,256 million for the three months ended September 30, 2026, with an Adjusted EBITDA margin of 62%.",
+                "statement": "Adjusted EBITDA was $2,256 million (62% margin) for the three months ended September 30, 2026, compared to $838 million (61% margin) for the prior year period.",
                 "materiality_candidate": 5,
                 "quote": "Adjusted EBITDA\n$\n2,256\n$\n838\n$\n4,923\n$\n2,197\nRevenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559\nNet loss margin\n(\n19\n)%\n(\n8\n)%\n(\n25\n)%\n(\n20\n)%\nAdjusted EBITDA margin\n62\n%\n61\n%\n59\n%\n62\n%",
-                "metric": "adjusted_ebitda",
-                "metric_type": "other_adjusted",
+                "metric": "Adjusted EBITDA",
                 "value": 2256,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -60404,10 +60322,10 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the three months ended September 30, 2025.",
+                "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the prior year period.",
                 "materiality_candidate": 5,
                 "quote": "Revenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559",
-                "metric": "revenue",
+                "metric": "Revenue",
                 "value": 3661,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -60428,45 +60346,13 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Net loss was $(110) million for Q3 2026 compared to $(709) million for Q3 2025.",
-                "materiality_candidate": 3,
-                "quote": "Net loss\n$\n(709\n)\n$\n(110\n)",
-                "metric": "Net loss",
-                "value": "-110",
-                "unit": "USD $M",
-                "period": "Q3 2026",
-                "comparison_value": "-709",
-                "comparison_period": "Q3 2025"
-              },
-              {
-                "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Adjusted net loss was $(41) million for Q3 2026 compared to $(529) million for Q3 2025.",
-                "materiality_candidate": 3,
-                "quote": "Adjusted net loss\n$\n(529\n)\n$\n(41\n)",
-                "metric": "Adjusted net loss",
-                "value": "-41",
-                "unit": "USD $M",
-                "period": "Q3 2026",
-                "comparison_value": "-529",
-                "comparison_period": "Q3 2025"
-              },
-              {
-                "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Revenue was $1,365 million for Q3 2026 compared to $3,661 million for Q3 2025.",
+                "statement": "Revenue was $1,365 million for Q3 2026.",
                 "materiality_candidate": 4,
-                "quote": "Revenue\n$\n3,661\n$\n1,365",
+                "quote": "Revenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559",
                 "metric": "Revenue",
                 "value": "1365",
-                "unit": "USD $M",
-                "period": "Q3 2026",
-                "comparison_value": "3661",
-                "comparison_period": "Q3 2025"
+                "unit": "$M",
+                "period": "Q3 2026"
               }
             ]
           }
@@ -60494,8 +60380,8 @@
                   "title": "Press Release of Q3 2026, aspx file, (opens in new window) Quarterly Results",
                   "document_kind": "financial_results",
                   "selection_mode": "full",
-                  "raw_chars": 27602,
-                  "extracted_chars": 27602,
+                  "raw_chars": 27438,
+                  "extracted_chars": 27438,
                   "source_truncated": false,
                   "raw_paragraphs": 1,
                   "relevant_paragraphs": 1,
@@ -60559,18 +60445,18 @@
               },
               "topic_inventory": {
                 "cash_capex": 2,
-                "demand_revenue": 11,
+                "demand_revenue": 6,
                 "guidance": 4,
                 "margin_unit_economics": 5
               },
               "selection": {
-                "raw_card_count": 22,
-                "deduped_card_count": 22,
-                "selected_card_count": 22,
+                "raw_card_count": 17,
+                "deduped_card_count": 17,
+                "selected_card_count": 17,
                 "omitted_low_materiality_card_count": 0,
                 "selected_topic_counts": {
                   "cash_capex": 2,
-                  "demand_revenue": 8,
+                  "demand_revenue": 6,
                   "guidance": 4,
                   "margin_unit_economics": 5
                 }
@@ -60580,10 +60466,10 @@
                   "card_id": "c1:official_ir:0c4c1d901b6b86b3e92f8a16#u1",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "Q3 2026 revenue was $3,661 million, compared to $1,365 million in Q3 2025.",
-                  "metric": "Revenue",
+                  "statement": "Revenue for the third quarter of 2026 was $3,661 million, compared to $1,365 million in the third quarter of 2025.",
+                  "metric": "revenue",
                   "value": 3661,
-                  "unit": "$M",
+                  "unit": "USD_M",
                   "period": "Q3 2026",
                   "comparison_value": 1365,
                   "comparison_period": "Q3 2025",
@@ -60593,16 +60479,16 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Three Months Ended September 30,\n2026\n2025\nRevenue\n$\n3,661\n$\n1,365"
+                  "quote": "Revenue\n$\n3,661\n$\n1,365"
                 },
                 {
                   "card_id": "c4:official_ir:0c4c1d901b6b86b3e92f8a16#u1",
                   "card_type": "fact",
                   "topic": "demand_revenue",
                   "statement": "Revenue backlog was approximately $132.5 billion as of September 30, 2026.",
-                  "metric": "Revenue backlog",
+                  "metric": "revenue_backlog",
                   "value": 132.5,
-                  "unit": "$B",
+                  "unit": "USD_B",
                   "period": "Q3 2026",
                   "materiality_candidate": 5,
                   "fact_class": "objective_fact",
@@ -60613,13 +60499,13 @@
                   "quote": "Revenue backlog\n1\nwas approximately $132.5 billion as of September 30, 2026."
                 },
                 {
-                  "card_id": "c2:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
+                  "card_id": "c1:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the three months ended September 30, 2025.",
+                  "statement": "CoreWeave reported revenue of $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the same period in 2025.",
                   "metric": "Revenue",
                   "value": "3661",
-                  "unit": "USD_M",
+                  "unit": "USD_millions",
                   "period": "Q3 2026",
                   "comparison_value": "1365",
                   "comparison_period": "Q3 2025",
@@ -60629,15 +60515,14 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Revenue\n$\n3,661\n$\n1,365",
-                  "metric_type": "revenue"
+                  "quote": "Revenue\n$\n3,661\n$\n1,365"
                 },
                 {
                   "card_id": "c4:official_ir:0c4c1d901b6b86b3e92f8a16#u6",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the three months ended September 30, 2025.",
-                  "metric": "revenue",
+                  "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the prior year period.",
+                  "metric": "Revenue",
                   "value": 3661,
                   "unit": "USD_millions",
                   "period": "Q3 2026",
@@ -60655,7 +60540,7 @@
                   "card_id": "c1:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "Revenue from contract with customer excluding assessed tax was $3,661 million for the quarter.",
+                  "statement": "CoreWeave reported revenue from contract with customer excluding assessed tax of $3,661M for the quarter.",
                   "metric": "Revenue",
                   "value": "3,661",
                   "unit": "USD",
@@ -60665,109 +60550,25 @@
                   "source": "sec_edgar",
                   "provenance": "primary_or_official",
                   "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm"
-                },
-                {
-                  "card_id": "c3:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "statement": "Net income was $709 million for the quarter.",
-                  "metric": "Net Income",
-                  "value": "709",
-                  "unit": "USD",
-                  "period": "Q3 2026",
-                  "materiality_candidate": 5,
-                  "fact_class": "objective_fact",
-                  "source": "sec_edgar",
-                  "provenance": "primary_or_official",
-                  "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm"
-                },
-                {
-                  "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "statement": "Revenue was $1,365 million for Q3 2026 compared to $3,661 million for Q3 2025.",
-                  "metric": "Revenue",
-                  "value": "1365",
-                  "unit": "USD $M",
-                  "period": "Q3 2026",
-                  "comparison_value": "3661",
-                  "comparison_period": "Q3 2025",
-                  "materiality_candidate": 4,
-                  "fact_class": "objective_fact",
-                  "source": "official_ir",
-                  "provenance": "primary_or_official",
-                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Revenue\n$\n3,661\n$\n1,365"
-                },
-                {
-                  "card_id": "c2:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "statement": "Operating income was $207 million for the quarter.",
-                  "metric": "Operating Income",
-                  "value": "207",
-                  "unit": "USD",
-                  "period": "Q3 2026",
-                  "materiality_candidate": 4,
-                  "fact_class": "objective_fact",
-                  "source": "sec_edgar",
-                  "provenance": "primary_or_official",
-                  "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm"
-                },
-                {
-                  "card_id": "c1:official_ir:0c4c1d901b6b86b3e92f8a16#u3",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "statement": "Annualized run-rate revenue (ARR) is defined as revenue from the last month of the quarter multiplied by 12.",
-                  "materiality_candidate": 3,
-                  "fact_class": "objective_fact",
-                  "source": "official_ir",
-                  "provenance": "primary_or_official",
-                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u3",
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Annualized run-rate revenue (ARR) is calculated by taking revenue from the last month of the quarter multiplied by 12."
+                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
                 },
                 {
                   "card_id": "c1:official_ir:0c4c1d901b6b86b3e92f8a16#u7",
                   "card_type": "fact",
                   "topic": "demand_revenue",
-                  "statement": "Net loss was $(110) million for Q3 2026 compared to $(709) million for Q3 2025.",
-                  "metric": "Net loss",
-                  "value": "-110",
-                  "unit": "USD $M",
+                  "statement": "Revenue was $1,365 million for Q3 2026.",
+                  "metric": "Revenue",
+                  "value": "1365",
+                  "unit": "$M",
                   "period": "Q3 2026",
-                  "comparison_value": "-709",
-                  "comparison_period": "Q3 2025",
-                  "materiality_candidate": 3,
+                  "materiality_candidate": 4,
                   "fact_class": "objective_fact",
                   "source": "official_ir",
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u7",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Net loss\n$\n(709\n)\n$\n(110\n)"
-                },
-                {
-                  "card_id": "c2:official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                  "card_type": "fact",
-                  "topic": "demand_revenue",
-                  "statement": "Adjusted net loss was $(41) million for Q3 2026 compared to $(529) million for Q3 2025.",
-                  "metric": "Adjusted net loss",
-                  "value": "-41",
-                  "unit": "USD $M",
-                  "period": "Q3 2026",
-                  "comparison_value": "-529",
-                  "comparison_period": "Q3 2025",
-                  "materiality_candidate": 3,
-                  "fact_class": "objective_fact",
-                  "source": "official_ir",
-                  "provenance": "primary_or_official",
-                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Adjusted net loss\n$\n(529\n)\n$\n(41\n)"
+                  "quote": "Revenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559"
                 },
                 {
                   "card_id": "c5:official_ir:0c4c1d901b6b86b3e92f8a16#u2",
@@ -60775,10 +60576,10 @@
                   "topic": "guidance",
                   "statement": "Raising full year 2026 revenue guidance to a range of $13.0 billion to $13.3 billion.",
                   "metric": "revenue",
-                  "unit": "$B",
+                  "unit": "USD_M",
                   "period": "FY 2026",
-                  "low": 13.0,
-                  "high": 13.3,
+                  "low": 13000,
+                  "high": 13300,
                   "materiality_candidate": 5,
                   "fact_class": "company_guidance",
                   "source": "official_ir",
@@ -60793,32 +60594,32 @@
                   "card_type": "guidance",
                   "topic": "guidance",
                   "statement": "Raising full year 2026 adjusted operating income guidance to a range of $1.275 billion to $1.375 billion.",
-                  "metric": "adjusted operating income",
-                  "unit": "$B",
+                  "metric": "adjusted_operating_income",
+                  "unit": "USD_M",
                   "period": "FY 2026",
-                  "low": 1.275,
-                  "high": 1.375,
+                  "low": 1275,
+                  "high": 1375,
                   "materiality_candidate": 5,
                   "fact_class": "company_guidance",
                   "source": "official_ir",
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u2",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion, representing a 26% increase at the midpoint compared with our prior guidance.",
+                  "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion",
                   "guidance_type": "range"
                 },
                 {
                   "card_id": "c7:official_ir:0c4c1d901b6b86b3e92f8a16#u2",
                   "card_type": "guidance",
                   "topic": "guidance",
-                  "statement": "Raising full year 2026 capital expenditures expected range to $37 billion to $39 billion.",
-                  "metric": "capital expenditures",
-                  "unit": "$B",
+                  "statement": "Expecting full year 2026 capital expenditures of $37 billion to $39 billion, raising the low end of the prior guidance range.",
+                  "metric": "capex",
+                  "unit": "USD_M",
                   "period": "FY 2026",
-                  "low": 37.0,
-                  "high": 39.0,
-                  "previous_low": 35.0,
-                  "previous_high": 39.0,
+                  "low": 37000,
+                  "high": 39000,
+                  "previous_low": 35000,
+                  "previous_high": 39000,
                   "materiality_candidate": 5,
                   "fact_class": "company_guidance",
                   "source": "official_ir",
@@ -60833,11 +60634,11 @@
                   "card_type": "guidance",
                   "topic": "guidance",
                   "statement": "Raising annualized run-rate revenue guidance to $20 billion to $21 billion to exit 2026.",
-                  "metric": "annualized run-rate revenue",
-                  "unit": "$B",
+                  "metric": "annualized_run_rate_revenue",
+                  "unit": "USD_M",
                   "period": "Exit 2026",
-                  "low": 20.0,
-                  "high": 21.0,
+                  "low": 20000,
+                  "high": 21000,
                   "materiality_candidate": 5,
                   "fact_class": "company_guidance",
                   "source": "official_ir",
@@ -60848,32 +60649,13 @@
                   "guidance_type": "range"
                 },
                 {
-                  "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u1",
+                  "card_id": "c2:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
-                  "statement": "Q3 2026 Adjusted EBITDA was $2,256 million with a 62% margin, compared to $838 million and 61% in Q3 2025.",
-                  "metric": "Adjusted EBITDA",
-                  "value": 2256,
-                  "unit": "$M",
-                  "period": "Q3 2026",
-                  "comparison_value": 838,
-                  "comparison_period": "Q3 2025",
-                  "materiality_candidate": 5,
-                  "fact_class": "objective_fact",
-                  "source": "official_ir",
-                  "provenance": "primary_or_official",
-                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Adjusted EBITDA\n$\n2,256\n$\n838\nAdjusted EBITDA margin\n62\n%\n61\n%"
-                },
-                {
-                  "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
-                  "card_type": "fact",
-                  "topic": "margin_unit_economics",
-                  "statement": "Operating income was $207 million for the three months ended September 30, 2026, compared to $52 million for the three months ended September 30, 2025.",
+                  "statement": "CoreWeave reported operating income of $207 million for the three months ended September 30, 2026, compared to $52 million for the same period in 2025.",
                   "metric": "Operating income",
                   "value": "207",
-                  "unit": "USD_M",
+                  "unit": "USD_millions",
                   "period": "Q3 2026",
                   "comparison_value": "52",
                   "comparison_period": "Q3 2025",
@@ -60883,17 +60665,16 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Operating income\n207\n52",
-                  "metric_type": "operating_income"
+                  "quote": "Operating income\n207\n52"
                 },
                 {
-                  "card_id": "c4:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
+                  "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
-                  "statement": "Net loss was $709 million for the three months ended September 30, 2026, compared to $110 million for the three months ended September 30, 2025.",
+                  "statement": "CoreWeave reported a net loss of $709 million for the three months ended September 30, 2026, compared to a net loss of $110 million for the same period in 2025.",
                   "metric": "Net loss",
                   "value": "-709",
-                  "unit": "USD_M",
+                  "unit": "USD_millions",
                   "period": "Q3 2026",
                   "comparison_value": "-110",
                   "comparison_period": "Q3 2025",
@@ -60903,15 +60684,14 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Net loss\n$\n(709\n)\n$\n(110",
-                  "metric_type": "net_income"
+                  "quote": "Net loss\n$\n(709\n)\n$\n(110\n)"
                 },
                 {
                   "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u6",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
-                  "statement": "Adjusted EBITDA was $2,256 million for the three months ended September 30, 2026, with an Adjusted EBITDA margin of 62%.",
-                  "metric": "adjusted_ebitda",
+                  "statement": "Adjusted EBITDA was $2,256 million (62% margin) for the three months ended September 30, 2026, compared to $838 million (61% margin) for the prior year period.",
+                  "metric": "Adjusted EBITDA",
                   "value": 2256,
                   "unit": "USD_millions",
                   "period": "Q3 2026",
@@ -60923,17 +60703,16 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u6",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Adjusted EBITDA\n$\n2,256\n$\n838\n$\n4,923\n$\n2,197\nRevenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559\nNet loss margin\n(\n19\n)%\n(\n8\n)%\n(\n25\n)%\n(\n20\n)%\nAdjusted EBITDA margin\n62\n%\n61\n%\n59\n%\n62\n%",
-                  "metric_type": "other_adjusted"
+                  "quote": "Adjusted EBITDA\n$\n2,256\n$\n838\n$\n4,923\n$\n2,197\nRevenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559\nNet loss margin\n(\n19\n)%\n(\n8\n)%\n(\n25\n)%\n(\n20\n)%\nAdjusted EBITDA margin\n62\n%\n61\n%\n59\n%\n62\n%"
                 },
                 {
                   "card_id": "c2:official_ir:0c4c1d901b6b86b3e92f8a16#u1",
                   "card_type": "fact",
                   "topic": "margin_unit_economics",
-                  "statement": "Q3 2026 operating income was $207 million with a 6% margin, compared to $52 million and 4% in Q3 2025.",
-                  "metric": "Operating income",
+                  "statement": "Operating income for the third quarter of 2026 was $207 million with an operating income margin of 6%.",
+                  "metric": "operating_income",
                   "value": 207,
-                  "unit": "$M",
+                  "unit": "USD_M",
                   "period": "Q3 2026",
                   "comparison_value": 52,
                   "comparison_period": "Q3 2025",
@@ -60946,11 +60725,30 @@
                   "quote": "Operating income\n$\n207\n$\n52\nOperating income margin\n6\n%\n4\n%"
                 },
                 {
+                  "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u1",
+                  "card_type": "fact",
+                  "topic": "margin_unit_economics",
+                  "statement": "Adjusted EBITDA for the third quarter of 2026 was $2,256 million with an Adjusted EBITDA margin of 62%.",
+                  "metric": "adjusted_ebitda",
+                  "value": 2256,
+                  "unit": "USD_M",
+                  "period": "Q3 2026",
+                  "comparison_value": 838,
+                  "comparison_period": "Q3 2025",
+                  "materiality_candidate": 4,
+                  "fact_class": "objective_fact",
+                  "source": "official_ir",
+                  "provenance": "primary_or_official",
+                  "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
+                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
+                  "quote": "Adjusted EBITDA\n$\n2,256\n$\n838\nAdjusted EBITDA margin\n62\n%\n61\n%"
+                },
+                {
                   "card_id": "c1:official_ir:0c4c1d901b6b86b3e92f8a16#u5",
                   "card_type": "fact",
                   "topic": "cash_capex",
                   "statement": "Net cash provided by operating activities was $1,975 million for the three months ended September 30, 2026, compared to $1,689 million for the prior year period.",
-                  "metric": "operating_cash_flow",
+                  "metric": "Net cash provided by operating activities",
                   "value": 1975,
                   "unit": "USD_millions",
                   "period": "Q3 2026",
@@ -60962,15 +60760,14 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u5",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Net cash provided by operating activities\n$\n1,975\n$\n1,689\n$\n5,638\n$\n1,499",
-                  "metric_type": "operating_cash_flow"
+                  "quote": "Net cash provided by operating activities\n$\n1,975\n$\n1,689\n$\n5,638\n$\n1,499"
                 },
                 {
                   "card_id": "c2:official_ir:0c4c1d901b6b86b3e92f8a16#u5",
                   "card_type": "fact",
                   "topic": "cash_capex",
-                  "statement": "Purchases of property and equipment, including capitalized internal-use software, were $9,441 million for the three months ended September 30, 2026.",
-                  "metric": "capex",
+                  "statement": "Purchases of property and equipment, including capitalized internal-use software, were $9,441 million for the three months ended September 30, 2026, compared to $3,279 million for the prior year period.",
+                  "metric": "Purchases of property and equipment, including capitalized internal-use software",
                   "value": -9441,
                   "unit": "USD_millions",
                   "period": "Q3 2026",
@@ -60982,8 +60779,7 @@
                   "provenance": "primary_or_official",
                   "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u5",
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Purchases of property and equipment, including capitalized internal-use software\n(\n9,441\n)\n(\n3,279\n)\n(\n23,558\n)\n(\n6,249\n)",
-                  "metric_type": "capex"
+                  "quote": "Purchases of property and equipment, including capitalized internal-use software\n(\n9,441\n)\n(\n3,279\n)\n(\n23,558\n)\n(\n6,249\n)"
                 }
               ]
             },
@@ -60993,8 +60789,9 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue from contract with customer excluding assessed tax was $3,661 million for the quarter.",
+                "statement": "CoreWeave reported revenue from contract with customer excluding assessed tax of $3,661M for the quarter.",
                 "materiality_candidate": 5,
+                "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
                 "metric": "Revenue",
                 "value": "3,661",
                 "unit": "USD",
@@ -61006,65 +60803,20 @@
                 "position": 0,
                 "evidence": {
                   "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": ""
-                },
-                "quote": ""
-              },
-              {
-                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Operating income was $207 million for the quarter.",
-                "materiality_candidate": 4,
-                "metric": "Operating Income",
-                "value": "207",
-                "unit": "USD",
-                "period": "Q3 2026",
-                "card_id": "c2:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": ""
-                },
-                "quote": ""
-              },
-              {
-                "unit_id": "sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Net income was $709 million for the quarter.",
-                "materiality_candidate": 5,
-                "metric": "Net Income",
-                "value": "709",
-                "unit": "USD",
-                "period": "Q3 2026",
-                "card_id": "c3:sec_edgar:0001769628-26-000465:crwv-20260930.htm#structured",
-                "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                "source": "sec_edgar",
-                "provenance": "primary_or_official",
-                "position": 0,
-                "evidence": {
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": ""
-                },
-                "quote": ""
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+                }
               },
               {
                 "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u1",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Q3 2026 revenue was $3,661 million, compared to $1,365 million in Q3 2025.",
+                "statement": "Revenue for the third quarter of 2026 was $3,661 million, compared to $1,365 million in the third quarter of 2025.",
                 "materiality_candidate": 5,
-                "quote": "Three Months Ended September 30,\n2026\n2025\nRevenue\n$\n3,661\n$\n1,365",
-                "metric": "Revenue",
+                "quote": "Revenue\n$\n3,661\n$\n1,365",
+                "metric": "revenue",
                 "value": 3661,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 1365,
                 "comparison_period": "Q3 2025",
@@ -61075,7 +60827,7 @@
                 "position": 1,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Three Months Ended September 30,\n2026\n2025\nRevenue\n$\n3,661\n$\n1,365"
+                  "quote": "Revenue\n$\n3,661\n$\n1,365"
                 }
               },
               {
@@ -61083,12 +60835,12 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Q3 2026 operating income was $207 million with a 6% margin, compared to $52 million and 4% in Q3 2025.",
+                "statement": "Operating income for the third quarter of 2026 was $207 million with an operating income margin of 6%.",
                 "materiality_candidate": 4,
                 "quote": "Operating income\n$\n207\n$\n52\nOperating income margin\n6\n%\n4\n%",
-                "metric": "Operating income",
+                "metric": "operating_income",
                 "value": 207,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 52,
                 "comparison_period": "Q3 2025",
@@ -61107,12 +60859,12 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Q3 2026 Adjusted EBITDA was $2,256 million with a 62% margin, compared to $838 million and 61% in Q3 2025.",
-                "materiality_candidate": 5,
+                "statement": "Adjusted EBITDA for the third quarter of 2026 was $2,256 million with an Adjusted EBITDA margin of 62%.",
+                "materiality_candidate": 4,
                 "quote": "Adjusted EBITDA\n$\n2,256\n$\n838\nAdjusted EBITDA margin\n62\n%\n61\n%",
-                "metric": "Adjusted EBITDA",
+                "metric": "adjusted_ebitda",
                 "value": 2256,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 838,
                 "comparison_period": "Q3 2025",
@@ -61134,9 +60886,9 @@
                 "statement": "Revenue backlog was approximately $132.5 billion as of September 30, 2026.",
                 "materiality_candidate": 5,
                 "quote": "Revenue backlog\n1\nwas approximately $132.5 billion as of September 30, 2026.",
-                "metric": "Revenue backlog",
+                "metric": "revenue_backlog",
                 "value": 132.5,
-                "unit": "$B",
+                "unit": "USD_B",
                 "period": "Q3 2026",
                 "card_id": "c4:official_ir:0c4c1d901b6b86b3e92f8a16#u1",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
@@ -61159,9 +60911,9 @@
                 "metric": "revenue",
                 "period": "FY 2026",
                 "guidance_type": "range",
-                "low": 13.0,
-                "high": 13.3,
-                "unit": "$B",
+                "low": 13000,
+                "high": 13300,
+                "unit": "USD_M",
                 "card_id": "c5:official_ir:0c4c1d901b6b86b3e92f8a16#u2",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                 "source": "official_ir",
@@ -61179,13 +60931,13 @@
                 "fact_class": "company_guidance",
                 "statement": "Raising full year 2026 adjusted operating income guidance to a range of $1.275 billion to $1.375 billion.",
                 "materiality_candidate": 5,
-                "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion, representing a 26% increase at the midpoint compared with our prior guidance.",
-                "metric": "adjusted operating income",
+                "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion",
+                "metric": "adjusted_operating_income",
                 "period": "FY 2026",
                 "guidance_type": "range",
-                "low": 1.275,
-                "high": 1.375,
-                "unit": "$B",
+                "low": 1275,
+                "high": 1375,
+                "unit": "USD_M",
                 "card_id": "c6:official_ir:0c4c1d901b6b86b3e92f8a16#u2",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                 "source": "official_ir",
@@ -61193,7 +60945,7 @@
                 "position": 2,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion, representing a 26% increase at the midpoint compared with our prior guidance."
+                  "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion"
                 }
               },
               {
@@ -61201,17 +60953,17 @@
                 "card_type": "guidance",
                 "topic": "guidance",
                 "fact_class": "company_guidance",
-                "statement": "Raising full year 2026 capital expenditures expected range to $37 billion to $39 billion.",
+                "statement": "Expecting full year 2026 capital expenditures of $37 billion to $39 billion, raising the low end of the prior guidance range.",
                 "materiality_candidate": 5,
                 "quote": "We now expect full year 2026 capital expenditures of $37 billion to $39 billion, raising the low end of our prior guidance range of $35 billion to $39 billion.",
-                "metric": "capital expenditures",
+                "metric": "capex",
                 "period": "FY 2026",
                 "guidance_type": "range",
-                "low": 37.0,
-                "high": 39.0,
-                "unit": "$B",
-                "previous_low": 35.0,
-                "previous_high": 39.0,
+                "low": 37000,
+                "high": 39000,
+                "unit": "USD_M",
+                "previous_low": 35000,
+                "previous_high": 39000,
                 "card_id": "c7:official_ir:0c4c1d901b6b86b3e92f8a16#u2",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                 "source": "official_ir",
@@ -61230,12 +60982,12 @@
                 "statement": "Raising annualized run-rate revenue guidance to $20 billion to $21 billion to exit 2026.",
                 "materiality_candidate": 5,
                 "quote": "Finally, we are raising our annualized run-rate revenue\n3\nguidance to $20 billion to $21 billion to exit 2026.",
-                "metric": "annualized run-rate revenue",
+                "metric": "annualized_run_rate_revenue",
                 "period": "Exit 2026",
                 "guidance_type": "range",
-                "low": 20.0,
-                "high": 21.0,
-                "unit": "$B",
+                "low": 20000,
+                "high": 21000,
+                "unit": "USD_M",
                 "card_id": "c8:official_ir:0c4c1d901b6b86b3e92f8a16#u2",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                 "source": "official_ir",
@@ -61247,39 +60999,20 @@
                 }
               },
               {
-                "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u3",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Annualized run-rate revenue (ARR) is defined as revenue from the last month of the quarter multiplied by 12.",
-                "materiality_candidate": 3,
-                "quote": "Annualized run-rate revenue (ARR) is calculated by taking revenue from the last month of the quarter multiplied by 12.",
-                "card_id": "c1:official_ir:0c4c1d901b6b86b3e92f8a16#u3",
-                "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                "source": "official_ir",
-                "provenance": "primary_or_official",
-                "position": 3,
-                "evidence": {
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Annualized run-rate revenue (ARR) is calculated by taking revenue from the last month of the quarter multiplied by 12."
-                }
-              },
-              {
                 "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the three months ended September 30, 2025.",
+                "statement": "CoreWeave reported revenue of $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the same period in 2025.",
                 "materiality_candidate": 5,
                 "quote": "Revenue\n$\n3,661\n$\n1,365",
                 "metric": "Revenue",
                 "value": "3661",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "1365",
                 "comparison_period": "Q3 2025",
-                "metric_type": "revenue",
-                "card_id": "c2:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
+                "card_id": "c1:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                 "source": "official_ir",
                 "provenance": "primary_or_official",
@@ -61294,17 +61027,16 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Operating income was $207 million for the three months ended September 30, 2026, compared to $52 million for the three months ended September 30, 2025.",
+                "statement": "CoreWeave reported operating income of $207 million for the three months ended September 30, 2026, compared to $52 million for the same period in 2025.",
                 "materiality_candidate": 5,
                 "quote": "Operating income\n207\n52",
                 "metric": "Operating income",
                 "value": "207",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "52",
                 "comparison_period": "Q3 2025",
-                "metric_type": "operating_income",
-                "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
+                "card_id": "c2:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                 "source": "official_ir",
                 "provenance": "primary_or_official",
@@ -61319,24 +61051,23 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Net loss was $709 million for the three months ended September 30, 2026, compared to $110 million for the three months ended September 30, 2025.",
+                "statement": "CoreWeave reported a net loss of $709 million for the three months ended September 30, 2026, compared to a net loss of $110 million for the same period in 2025.",
                 "materiality_candidate": 5,
-                "quote": "Net loss\n$\n(709\n)\n$\n(110",
+                "quote": "Net loss\n$\n(709\n)\n$\n(110\n)",
                 "metric": "Net loss",
                 "value": "-709",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "-110",
                 "comparison_period": "Q3 2025",
-                "metric_type": "net_income",
-                "card_id": "c4:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
+                "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u4",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                 "source": "official_ir",
                 "provenance": "primary_or_official",
                 "position": 4,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Net loss\n$\n(709\n)\n$\n(110"
+                  "quote": "Net loss\n$\n(709\n)\n$\n(110\n)"
                 }
               },
               {
@@ -61347,8 +61078,7 @@
                 "statement": "Net cash provided by operating activities was $1,975 million for the three months ended September 30, 2026, compared to $1,689 million for the prior year period.",
                 "materiality_candidate": 4,
                 "quote": "Net cash provided by operating activities\n$\n1,975\n$\n1,689\n$\n5,638\n$\n1,499",
-                "metric": "operating_cash_flow",
-                "metric_type": "operating_cash_flow",
+                "metric": "Net cash provided by operating activities",
                 "value": 1975,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61369,11 +61099,10 @@
                 "card_type": "fact",
                 "topic": "cash_capex",
                 "fact_class": "objective_fact",
-                "statement": "Purchases of property and equipment, including capitalized internal-use software, were $9,441 million for the three months ended September 30, 2026.",
+                "statement": "Purchases of property and equipment, including capitalized internal-use software, were $9,441 million for the three months ended September 30, 2026, compared to $3,279 million for the prior year period.",
                 "materiality_candidate": 4,
                 "quote": "Purchases of property and equipment, including capitalized internal-use software\n(\n9,441\n)\n(\n3,279\n)\n(\n23,558\n)\n(\n6,249\n)",
-                "metric": "capex",
-                "metric_type": "capex",
+                "metric": "Purchases of property and equipment, including capitalized internal-use software",
                 "value": -9441,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61394,11 +61123,10 @@
                 "card_type": "fact",
                 "topic": "margin_unit_economics",
                 "fact_class": "objective_fact",
-                "statement": "Adjusted EBITDA was $2,256 million for the three months ended September 30, 2026, with an Adjusted EBITDA margin of 62%.",
+                "statement": "Adjusted EBITDA was $2,256 million (62% margin) for the three months ended September 30, 2026, compared to $838 million (61% margin) for the prior year period.",
                 "materiality_candidate": 5,
                 "quote": "Adjusted EBITDA\n$\n2,256\n$\n838\n$\n4,923\n$\n2,197\nRevenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559\nNet loss margin\n(\n19\n)%\n(\n8\n)%\n(\n25\n)%\n(\n20\n)%\nAdjusted EBITDA margin\n62\n%\n61\n%\n59\n%\n62\n%",
-                "metric": "adjusted_ebitda",
-                "metric_type": "other_adjusted",
+                "metric": "Adjusted EBITDA",
                 "value": 2256,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61419,10 +61147,10 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the three months ended September 30, 2025.",
+                "statement": "Revenue was $3,661 million for the three months ended September 30, 2026, compared to $1,365 million for the prior year period.",
                 "materiality_candidate": 5,
                 "quote": "Revenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559",
-                "metric": "revenue",
+                "metric": "Revenue",
                 "value": 3661,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61443,15 +61171,13 @@
                 "card_type": "fact",
                 "topic": "demand_revenue",
                 "fact_class": "objective_fact",
-                "statement": "Net loss was $(110) million for Q3 2026 compared to $(709) million for Q3 2025.",
-                "materiality_candidate": 3,
-                "quote": "Net loss\n$\n(709\n)\n$\n(110\n)",
-                "metric": "Net loss",
-                "value": "-110",
-                "unit": "USD $M",
+                "statement": "Revenue was $1,365 million for Q3 2026.",
+                "materiality_candidate": 4,
+                "quote": "Revenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559",
+                "metric": "Revenue",
+                "value": "1365",
+                "unit": "$M",
                 "period": "Q3 2026",
-                "comparison_value": "-709",
-                "comparison_period": "Q3 2025",
                 "card_id": "c1:official_ir:0c4c1d901b6b86b3e92f8a16#u7",
                 "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                 "source": "official_ir",
@@ -61459,55 +61185,7 @@
                 "position": 7,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Net loss\n$\n(709\n)\n$\n(110\n)"
-                }
-              },
-              {
-                "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Adjusted net loss was $(41) million for Q3 2026 compared to $(529) million for Q3 2025.",
-                "materiality_candidate": 3,
-                "quote": "Adjusted net loss\n$\n(529\n)\n$\n(41\n)",
-                "metric": "Adjusted net loss",
-                "value": "-41",
-                "unit": "USD $M",
-                "period": "Q3 2026",
-                "comparison_value": "-529",
-                "comparison_period": "Q3 2025",
-                "card_id": "c2:official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                "source": "official_ir",
-                "provenance": "primary_or_official",
-                "position": 7,
-                "evidence": {
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Adjusted net loss\n$\n(529\n)\n$\n(41\n)"
-                }
-              },
-              {
-                "unit_id": "official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                "card_type": "fact",
-                "topic": "demand_revenue",
-                "fact_class": "objective_fact",
-                "statement": "Revenue was $1,365 million for Q3 2026 compared to $3,661 million for Q3 2025.",
-                "materiality_candidate": 4,
-                "quote": "Revenue\n$\n3,661\n$\n1,365",
-                "metric": "Revenue",
-                "value": "1365",
-                "unit": "USD $M",
-                "period": "Q3 2026",
-                "comparison_value": "3661",
-                "comparison_period": "Q3 2025",
-                "card_id": "c3:official_ir:0c4c1d901b6b86b3e92f8a16#u7",
-                "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                "source": "official_ir",
-                "provenance": "primary_or_official",
-                "position": 7,
-                "evidence": {
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Revenue\n$\n3,661\n$\n1,365"
+                  "quote": "Revenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559"
                 }
               }
             ],
@@ -61522,52 +61200,26 @@
                 "reported_change": null,
                 "evidence": {
                   "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": ""
+                  "quote": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
                 }
               },
               {
-                "metric": "Operating Income",
-                "value": "207",
-                "unit": "USD",
-                "period": "Q3 2026",
-                "comparison_value": null,
-                "comparison_period": null,
-                "reported_change": null,
-                "evidence": {
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": ""
-                }
-              },
-              {
-                "metric": "Net Income",
-                "value": "709",
-                "unit": "USD",
-                "period": "Q3 2026",
-                "comparison_value": null,
-                "comparison_period": null,
-                "reported_change": null,
-                "evidence": {
-                  "document_key": "sec_edgar:0001769628-26-000465:crwv-20260930.htm",
-                  "quote": ""
-                }
-              },
-              {
-                "metric": "Revenue",
+                "metric": "revenue",
                 "value": 3661,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 1365,
                 "comparison_period": "Q3 2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Three Months Ended September 30,\n2026\n2025\nRevenue\n$\n3,661\n$\n1,365"
+                  "quote": "Revenue\n$\n3,661\n$\n1,365"
                 }
               },
               {
-                "metric": "Operating income",
+                "metric": "operating_income",
                 "value": 207,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 52,
                 "comparison_period": "Q3 2025",
@@ -61578,9 +61230,9 @@
                 }
               },
               {
-                "metric": "Adjusted EBITDA",
+                "metric": "adjusted_ebitda",
                 "value": 2256,
-                "unit": "$M",
+                "unit": "USD_M",
                 "period": "Q3 2026",
                 "comparison_value": 838,
                 "comparison_period": "Q3 2025",
@@ -61591,9 +61243,9 @@
                 }
               },
               {
-                "metric": "Revenue backlog",
+                "metric": "revenue_backlog",
                 "value": 132.5,
-                "unit": "$B",
+                "unit": "USD_B",
                 "period": "Q3 2026",
                 "comparison_value": null,
                 "comparison_period": null,
@@ -61606,7 +61258,7 @@
               {
                 "metric": "Revenue",
                 "value": "3661",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "1365",
                 "comparison_period": "Q3 2025",
@@ -61619,7 +61271,7 @@
               {
                 "metric": "Operating income",
                 "value": "207",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "52",
                 "comparison_period": "Q3 2025",
@@ -61632,18 +61284,18 @@
               {
                 "metric": "Net loss",
                 "value": "-709",
-                "unit": "USD_M",
+                "unit": "USD_millions",
                 "period": "Q3 2026",
                 "comparison_value": "-110",
                 "comparison_period": "Q3 2025",
                 "reported_change": null,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Net loss\n$\n(709\n)\n$\n(110"
+                  "quote": "Net loss\n$\n(709\n)\n$\n(110\n)"
                 }
               },
               {
-                "metric": "operating_cash_flow",
+                "metric": "Net cash provided by operating activities",
                 "value": 1975,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61656,7 +61308,7 @@
                 }
               },
               {
-                "metric": "capex",
+                "metric": "Purchases of property and equipment, including capitalized internal-use software",
                 "value": -9441,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61669,7 +61321,7 @@
                 }
               },
               {
-                "metric": "adjusted_ebitda",
+                "metric": "Adjusted EBITDA",
                 "value": 2256,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61682,7 +61334,7 @@
                 }
               },
               {
-                "metric": "revenue",
+                "metric": "Revenue",
                 "value": 3661,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61695,42 +61347,16 @@
                 }
               },
               {
-                "metric": "Net loss",
-                "value": "-110",
-                "unit": "USD $M",
-                "period": "Q3 2026",
-                "comparison_value": "-709",
-                "comparison_period": "Q3 2025",
-                "reported_change": null,
-                "evidence": {
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Net loss\n$\n(709\n)\n$\n(110\n)"
-                }
-              },
-              {
-                "metric": "Adjusted net loss",
-                "value": "-41",
-                "unit": "USD $M",
-                "period": "Q3 2026",
-                "comparison_value": "-529",
-                "comparison_period": "Q3 2025",
-                "reported_change": null,
-                "evidence": {
-                  "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Adjusted net loss\n$\n(529\n)\n$\n(41\n)"
-                }
-              },
-              {
                 "metric": "Revenue",
                 "value": "1365",
-                "unit": "USD $M",
+                "unit": "$M",
                 "period": "Q3 2026",
-                "comparison_value": "3661",
-                "comparison_period": "Q3 2025",
+                "comparison_value": null,
+                "comparison_period": null,
                 "reported_change": null,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "Revenue\n$\n3,661\n$\n1,365"
+                  "quote": "Revenue\n$\n3,661\n$\n1,365\n$\n8,314\n$\n3,559"
                 }
               }
             ],
@@ -61740,10 +61366,10 @@
                 "period": "FY 2026",
                 "guidance_type": "range",
                 "value": null,
-                "low": 13.0,
+                "low": 13000,
                 "midpoint": null,
-                "high": 13.3,
-                "unit": "$B",
+                "high": 13300,
+                "unit": "USD_M",
                 "previous_low": null,
                 "previous_midpoint": null,
                 "previous_high": null,
@@ -61754,35 +61380,35 @@
                 }
               },
               {
-                "metric": "adjusted operating income",
+                "metric": "adjusted_operating_income",
                 "period": "FY 2026",
                 "guidance_type": "range",
                 "value": null,
-                "low": 1.275,
+                "low": 1275,
                 "midpoint": null,
-                "high": 1.375,
-                "unit": "$B",
+                "high": 1375,
+                "unit": "USD_M",
                 "previous_low": null,
                 "previous_midpoint": null,
                 "previous_high": null,
                 "change": null,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
-                  "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion, representing a 26% increase at the midpoint compared with our prior guidance."
+                  "quote": "We are also raising our full year 2026 adjusted operating income\n2\nguidance to a range of $1.275 billion to $1.375 billion"
                 }
               },
               {
-                "metric": "capital expenditures",
+                "metric": "capex",
                 "period": "FY 2026",
                 "guidance_type": "range",
                 "value": null,
-                "low": 37.0,
+                "low": 37000,
                 "midpoint": null,
-                "high": 39.0,
-                "unit": "$B",
-                "previous_low": 35.0,
+                "high": 39000,
+                "unit": "USD_M",
+                "previous_low": 35000,
                 "previous_midpoint": null,
-                "previous_high": 39.0,
+                "previous_high": 39000,
                 "change": null,
                 "evidence": {
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
@@ -61790,14 +61416,14 @@
                 }
               },
               {
-                "metric": "annualized run-rate revenue",
+                "metric": "annualized_run_rate_revenue",
                 "period": "Exit 2026",
                 "guidance_type": "range",
                 "value": null,
-                "low": 20.0,
+                "low": 20000,
                 "midpoint": null,
-                "high": 21.0,
-                "unit": "$B",
+                "high": 21000,
+                "unit": "USD_M",
                 "previous_low": null,
                 "previous_midpoint": null,
                 "previous_high": null,
@@ -61810,7 +61436,7 @@
             ],
             "cash_flow_and_capex": [
               {
-                "metric": "operating_cash_flow",
+                "metric": "Net cash provided by operating activities",
                 "value": 1975,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61821,11 +61447,11 @@
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                   "quote": "Net cash provided by operating activities\n$\n1,975\n$\n1,689\n$\n5,638\n$\n1,499"
                 },
-                "metric_type": "operating_cash_flow",
+                "metric_type": "other",
                 "reconciliation": []
               },
               {
-                "metric": "capex",
+                "metric": "Purchases of property and equipment, including capitalized internal-use software",
                 "value": -9441,
                 "unit": "USD_millions",
                 "period": "Q3 2026",
@@ -61836,46 +61462,48 @@
                   "document_key": "official_ir:0c4c1d901b6b86b3e92f8a16",
                   "quote": "Purchases of property and equipment, including capitalized internal-use software\n(\n9,441\n)\n(\n3,279\n)\n(\n23,558\n)\n(\n6,249\n)"
                 },
-                "metric_type": "capex",
+                "metric_type": "other",
                 "reconciliation": []
               }
             ],
             "qa": [],
             "market_consensus": [],
-            "quote_validation_issues": [],
+            "quote_validation_issues": [
+              "facts.cards[0]:quote_not_found_in_sec_edgar:0001769628-26-000465:crwv-20260930.htm"
+            ],
             "extraction_batch_count": 8,
             "collection_status": {
               "ir_retrieval_provider": "direct_ir",
               "ir_retrieval_attempts": [
                 {
-                  "provider": "gemini_search",
+                  "provider": "none",
                   "ok": false,
                   "seconds": 0.0,
-                  "error": "GeminiSearchUnavailable: Gemini Search Grounding quota blocked: {\"code\": \"too_many_requests\", \"status\": null, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"details\": null}",
-                  "category": "search_quota_blocked"
+                  "documents": 0,
+                  "model": null
                 },
                 {
                   "provider": "public_transcript",
                   "ok": false,
-                  "seconds": 0.1,
+                  "seconds": 0.265,
                   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWV-2026-Q3",
                   "reason": "no_eligible_official_documents"
                 },
                 {
                   "provider": "direct_ir",
                   "ok": true,
-                  "seconds": 0.391,
+                  "seconds": 0.587,
                   "documents": 1,
                   "partial": false
                 },
                 {
                   "provider": "public_transcript",
                   "ok": false,
-                  "seconds": 0.05,
+                  "seconds": 0.053,
                   "error": "HTTPError: 429 Client Error: Too Many Requests for url: https://www.earningscall.ai/stock/transcript/CRWV-2026-Q3"
                 }
               ],
-              "ir_retrieval_last_at": "2026-11-23T14:13:54-05:00",
+              "ir_retrieval_last_at": "2026-11-24T17:59:38-05:00",
               "gemini_ir_research_notes": [],
               "gemini_ir_grounding": {},
               "gemini_ir_rejected_unofficial_urls": [],
@@ -61897,11 +61525,11 @@
                 "has_performance_review": false,
                 "has_presentation": false
               },
-              "last_collection_check_at": "2026-11-23T14:13:54-05:00",
-              "official_ir_checked_at": "2026-11-23T14:13:54-05:00",
-              "official_ir_check_count": 17,
+              "last_collection_check_at": "2026-11-24T17:59:38-05:00",
+              "official_ir_checked_at": "2026-11-24T17:59:38-05:00",
+              "official_ir_check_count": 19,
               "transcript_status": "NOT_FOUND_AFTER_RETRY",
-              "next_ir_retry_at": "2026-11-24T02:13:54-05:00"
+              "next_ir_retry_at": "2026-11-25T05:59:38-05:00"
             },
             "deterministic_validation_issues": [],
             "deterministic_report_issues": []
@@ -61911,73 +61539,69 @@
           "payload": {
             "investment_thesis": [
               {
-                "signal": "Q3 2026 營收年增大幅擴張且調升全年營收與調整後營運利益指引",
-                "why_it_matters": "顯示公司在當前週期中具備強勁的營收規模擴張動能，並同步拉高獲利預期。",
+                "signal": "CoreWeave Q3 2026 營收達 $3,661M（YoY +168%），但淨虧損擴大至 $709M，資本支出高達 $9,441M。",
+                "why_it_matters": "顯示算力需求極度強勁帶動營收與營運現金流成長，但急速擴展資料中心導致折舊與利息等成本大幅侵蝕淨利潤，自由現金流流出極鉅。",
                 "fact_basis": [
-                  "Q3 2026 營收為 $3,661M，對比 Q3 2025 之 $1,365M",
-                  "全年 2026 營收指引調升至 $13.0B 至 $13.3B",
-                  "全年 2026 調整後營運利益指引調升至 $1.275B 至 $1.375B"
+                  "Q3 2026 Revenue $3,661M vs Q3 2025 $1,365M",
+                  "Q3 2026 Net loss $709M vs Q3 2025 Net loss $110M",
+                  "Q3 2026 Capex (Purchases of property and equipment) $9,441M"
                 ],
-                "inference": "營收與調整後營運利益指引雙雙上修，反映目前業務規模與營運獲利能力持續朝正面發展。",
-                "confidence": "high"
-              },
-              {
-                "signal": "資本支出持續擴大以支應未來需求",
-                "why_it_matters": "資本密集的投入反映基礎建設擴張，但對現金流與未來資本回報率帶來壓力。",
-                "fact_basis": [
-                  "全年 2026 資本支出指引調整為 $37B 至 $39B（前次低端 $35B）",
-                  "Q3 2026 依據財報顯示物業與設備採購金額為 $(9,441)M"
-                ],
-                "inference": "資本支出增加顯示產能與基礎建設投資力道猛烈，但仍需觀察後續自由現金流的實質轉化率。",
+                "inference": "公司處於極度激進的算力資產擴張期，營收規模擴大可提升營運槓桿（Adjusted EBITDA 達 62%），但短期財務結構受高額 Capex 與淨損壓迫。",
                 "confidence": "high"
               }
             ],
             "earnings_power_bridge": {
               "revenue_demand": [
-                "Q3 2026 營收報 $3,661M，相較 Q3 2025 的 $1,365M 顯著成長。",
-                "截至 Q3 2026 之營收 backlog 約為 $132.5B。",
-                "公司調升全年 2026 營收指引至 $13.0B 至 $13.3B，並將 2026 年底出口之 ARR 指引調升至 $20B 至 $21B。"
+                "Q3 營收 $3,661M，顯著高於去年同期的 $1,365M。",
+                "截至 2026 年 9 月 30 日，合約未實現營收（Revenue backlog）達約 $132.5B，提供極高的中期營收可見度。"
               ],
               "margin_unit_economics": [
-                "Q3 2026 營業利益為 $207M（利率 6%），對比 Q3 2025 之 $52M（利率 4%）。",
-                "Q3 2026 調整後 EBITDA 為 $2,256M，margin 達 62%，高於 Q3 2025 的 $838M 與 61%。",
-                "Q3 2026 淨損為 $(110)M，對比 Q3 2025 之 $(709)M；調整後淨損為 $(41)M，對比 Q3 2025 之 $(529)M。"
+                "Q3 營運利潤（Operating income）為 $207M（Margin 6%），高於去年同期的 $52M（Margin 4%）。",
+                "Q3 Adjusted EBITDA 達 $2,256M（Margin 62%），去年同期為 $838M（Margin 61%），顯示基礎單元經濟效益穩定。",
+                "Q3 淨虧損（Net loss）擴大至 $709M（Net loss margin -19%），主要受非營運成本或高額折舊利息影響。"
               ],
               "cash_capital_intensity": [
-                "Q3 2026 營業活動現金流量為 $1,975M，高於去年同期的 $1,689M。",
-                "Q3 2026 物業與設備採購（含資本化內部使用軟體）為 $(9,441)M，高於 Q3 2025 的 $(3,279)M。",
-                "全年 2026 資本支出預估區間上修至 $37B 至 $39B，顯示資金投入強度持續攀升。"
+                "Q3 營運現金流（CFO）為 $1,975M，高於去年同期的 $1,689M。",
+                "Q3 資本支出（Purchases of property and equipment）高達 $9,441M，遠超營運現金流，導致單季 FCF 為負 $7,466M，極度依賴外部融資。"
               ]
             },
             "guidance_assessment": [
-              "全年 2026 營收指引調升至 $13.0B 至 $13.3B。",
-              "全年 2026 調整後營運利益指引調升至 $1.275B 至 $1.375B（較前次中位數增加 26%）。",
-              "全年 2026 資本支出指引調整為 $37B 至 $39B（前次低端 $35B，高端維持 $39B）。",
-              "全年 2026 出口之 ARR 指引調升至 $20B 至 $21B。"
+              "FY2026 全年營收指引上調至 $13.0B 至 $13.3B。",
+              "FY2026 全年 Adjusted Operating Income 指引上調至 $1.275B 至 $1.375B。",
+              "FY2026 離開率年化營收（Exit 2026 annualized run-rate revenue）指引上調至 $20.0B 至 $21.0B。",
+              "FY2026 全年 Capital Expenditures 下限上調，最新指引為 $37.0B 至 $39.0B（先前為 $35.0B 至 $39.0B）。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
             ],
             "demand_quality": [
-              "目前 Research Packet 未提供具體的客戶數、大客戶 cohort 分布或 NRR 明細，無法精確拆解新客戶獲取與現有客戶擴張的比例或集中度風險。"
+              "截至 Q3 2026 底 Revenue backlog 達到 $132.5B，顯示長期訂單鎖定能力強勁。",
+              "因缺乏客戶總數、NRR 或大型客戶集中度之數據，無法直接判定客戶擴展品質與廣度/深度結構。"
             ],
-            "qa_readthrough": [],
+            "qa_readthrough": [
+              {
+                "debate": "無逐字稿 Q&A 資料",
+                "management_answer": "本季度未提供 Q&A Transcript 數據。",
+                "answer_quality": "unknown",
+                "investment_readthrough": "無法從管理層問答中評估分析師對算力部署時程或客戶集中度之攻防細節。"
+              }
+            ],
             "competitive_value_chain": [
-              "現有證據主要來自官方財報之營收、backlog 與獲利數字，缺乏直接的定價權、轉換成本或市占率結構性數據，故暫無法直接論斷具體的控制點或護城河優勢。"
+              "尚未有直接數據證明 CoreWeave 具備對客戶的定價權（Pricing Power）或不可替代之控制點，高營收成長與高 Backlog 主要反映 AI 算力整體市場供不應求環境。"
             ],
             "risks_and_disconfirming_evidence": [
-              "資本支出大幅上修至 $37B 至 $39B，若未來需求成長未能同步消化龐大產能，可能對現金流與資產回報率造成壓抑。",
-              "淨利與調整後淨利雖較去年同期改善，但在 Q3 2026 仍處於淨損狀態（$(110)M），需持續追蹤本業轉盈的實際時點。"
+              "若未來 AI 算力需求放緩，高達 $132.5B 的 Backlog 若面臨客戶違約或重新談判，高額固定資產折舊將對獲利造成極大壓力。",
+              "FY2026 全年 Capex 指引下限提高至 $37.0B–$39.0B，強烈的資本密集度可能導致資產負債表承壓與持續稀釋風險。"
             ],
             "watch_items": [
-              "全年 2026 營收與調整後營運利益是否能達成上修後的指引範圍。",
-              "資本支出實際執行金額與後續自由現金流的變化趨勢。",
-              "ARR 於 2026 年底是否能如期達到 $20B 至 $21B 的預期目標。"
+              "觀察 FY2026 退出時 Run-rate revenue 是否如期達到 $20B–$21B 區間。",
+              "持續追蹤營運現金流能否隨著營收規模進一步擴大而顯著改善自由現金流。"
             ],
             "confidence": 85,
-            "telegram_draft": "CRWV FY2026 Q3\n\n💡 投資結論與邏輯:\n• Q3 2026 營收與獲利指標顯著擴張，帶動管理層全面上修全年營收與調整後營運利益指引，反映業務規模持續放大。\n• 資本支出預期同步調高，顯示基礎建設與產能投資力道加劇，但高資本密集度對現金流的長期影響仍需持續追蹤。\n\n📊 關鍵數據與財測:\n• Q3 2026 營收達 $3,661M，對比去年同期 $1,365M；調整後 EBITDA 達 $2,256M，margin 為 62%。\n• 截至 Q3 2026 之營收 backlog 約為 $132.5B，提供未來營收能見度。\n• 財測方面，調升全年 2026 營收指引至 $13.0B 至 $13.3B，並將全年調整後營運利益指引調升至 $1.275B 至 $1.375B。\n• 資本支出指引調整為 $37B 至 $39B（前次低端 $35B）；全年出口 ARR 指引上修至 $20B 至 $21B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營業活動現金流量在 Q3 2026 提升至 $1,975M，顯示本業現金生成能力隨規模擴大而增強。\n• 採購物業與設備等資本支出於 Q3 2026 達 $(9,441)M，反映公司正積極擴充硬體與基礎設施以支應訂單需求。\n• 本次 Research Packet 未包含正式逐字稿與 Q&A 紀錄，故無法呈現分析師提問與管理層答辯之細節。\n\n⚠️ 風險、反證與待驗證:\n• 資本支出上限維持在高檔且低端上修，若未來需求增速放緩，高額折舊與資本投入將對獲利與現金流帶來壓力。\n• 儘管營收與調整後指標大幅成長，Q3 2026 依 GAAP 仍呈現淨損 $(110)M，本業何時能全面轉為 GAAP 淨利仍待驗證。\n• 缺乏客戶集中度與 NRR 細節數據，暫無法排除部分大客戶營收貢獻過高之潛在波動風險。"
+            "telegram_draft": "CRWV FY2026 Q3\n\n💡 投資結論與邏輯:\n• 算力需求持續帶動規模化成長，積壓訂單提供強勁營收可見度，但資本支出激增使短期淨虧損大幅擴大。\n• 營運層面展現強勁槓桿能力，然龐大的資本投入意謂著企業轉化為正向自由現金流的時程仍受考驗。\n\n📊 關鍵數據與財測:\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n• Q3 營收 $3,661M（YoY +168%），反映算力租賃需求強勁，截至季末 Revenue backlog 達 $132.5B 顯示訂單能見度極高。\n• Q3 營運利潤 $207M（Margin 6%），Adjusted EBITDA 達 $2,256M（Margin 62%），顯示單元經濟效益穩定，但淨虧損擴大至 $709M，主要受資本擴張相關成本壓迫。\n• Q3 營運現金流 $1,975M，而購置物業及設備支出達 $9,441M，資本強度持續維持於極高水平。\n• 全年指引：上調 FY2026 營收至 $13.0B–$13.3B，Adjusted Operating Income 上調至 $1.275B–$1.375B，Exit 2026 年化 Run-rate 營收上調至 $20B–$21B；全年 Capex 指引下限上修為 $37B–$39B。\n\n🧭 營運動能與法說攻防:\n• 本季無公開 Q&A 逐字稿資料，無法評估法說會管理層攻防細節。\n• 營動能主要由算力資產持續上線與客戶合約履約所推動，Exit 2026 年化營收指引達 $20B–$21B 顯示第 4 季將持續進行大規模產能交付。\n\n⚠️ 風險、反證與待驗證:\n• 全年 Capex 高達 $37B–$39B，巨額資本支出對外部融資依存度高，需密切注意流動性與資產負債表結構。\n• 雖然 Revenue backlog 達 $132.5B，但缺乏客戶集中度與擴展深度數據，需觀察未來履約品質與客戶結構演變。"
           }
         },
         "audit": {
           "payload": {
-            "overall_score": 85,
+            "overall_score": 80,
             "unsupported_claims": [],
             "numerical_errors": [],
             "missing_material_points": [],
@@ -61985,23 +61609,25 @@
             "qa_interpretation_errors": [],
             "accounting_guidance_errors": [],
             "critical_issues": [
-              "deterministic_v4_gate:interpretation"
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:numeric_provenance"
             ],
             "pass": false,
-            "corrected_telegram_draft": "CRWV Q3 2026\n\n💡 投資結論與邏輯:\n• 本季營收與獲利指標顯著擴張，帶動管理層全面上修全年營收與調整後營運利益指引，反映業務規模持續放大。\n• 資本支出預期同步調高，顯示基礎建設與產能投資力道加劇，但高資本密集度對現金流的長期影響仍需持續追蹤。\n\n📊 關鍵數據與財測:\n• Q3 營收達 $3,661M，對比去年同期 $1,365M；調整後 EBITDA 達 $2,256M，margin 達 62%。\n• 截至本季末之營收 backlog 約為 $132.5B，提供未來營收能見度。\n• 財測方面，將全年營收指引調升至 $13.0B 至 $13.3B，全年調整後營運利益指引調升至 $1.275B 至 $1.375B。\n• 資本支出指引調整為 $37B 至 $39B（前次低端 $35B）；全年出口 ARR 指引上修至 $20B 至 $21B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營業活動現金流量在本季提升至 $1,975M，反映本業現金生成能力隨規模擴大而增強，但同期的物業與設備採購達 $(9,441)M，顯示硬體與基礎設施投入規模龐大。\n• 本次 Research Packet 未包含正式逐字稿與 Q&A 紀錄，故無法呈現分析師提問與管理層答辯之細節。\n\n⚠️ 風險、反證與待驗證:\n• 資本支出上限維持在高檔且低端上修，若未來需求增速放緩，高額折舊與資本投入將對獲利與現金流帶來壓力。\n• 儘管營收與調整後指標大幅成長，本季依 GAAP 仍呈現淨損 $(110)M，本業何時能全面轉為 GAAP 淨利仍待驗證。\n• 缺乏客戶集中度與 NRR 細節數據，暫無法排除部分大客戶營收貢獻過高之潛在波動風險。",
+            "corrected_telegram_draft": "CRWV Q3 2026\n\n💡 投資結論與邏輯:\n• 算力需求帶動營收高速成長與訂單能見度提升，惟資本支出持續處於高位使短期獲利與現金流承壓。\n• 營運槓桿推升營業利潤與 Adjusted EBITDA 規模，但大規模資產擴張帶來的營運費用與折舊成本，使轉化為正向自由現金流的時程仍具挑戰。\n\n📊 關鍵數據與財測:\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n• 營收達 $3,661M（YoY +168%），反映算力需求強勁；截至季末 Revenue backlog 達 $132.5B，顯示中期營收能見度極高。\n• 營業利潤為 $207M（Margin 6%），Adjusted EBITDA 達 $2,256M（Margin 62%），顯示單元經濟效益穩定，但淨虧損擴大至 $709M，反映資本擴張成本吞噬短期純益。\n• 營運現金流為 $1,975M，購置物業及設備支出達 $9,441M，資本強度高企導致單季自由現金流為負。\n• 全年指引：上調 FY2026 營收至 $13.0B–$13.3B，Adjusted Operating Income 上調至 $1.275B–$1.375B，Exit 2026 年化 Run-rate 營收上調至 $20B–$21B；Capex 指引下限上修，全年預計為 $37B–$39B。\n\n🧭 營運動能與法說攻防:\n• 本季無公開 Q&A 逐字稿資料，無法評估法說會管理層攻防細節。\n• 營運動能主要由算力資產持續上線與客戶合約交付推動，Exit 2026 年化營收指引反映第 4 季產能仍將加速交付。\n\n⚠️ 風險、反證與待驗證:\n• 全年 Capex 達 $37B–$39B，巨額資本支出對外部融資依存度高，需密切關注負債與流動性結構。\n• 雖然 Revenue backlog 達 $132.5B，但缺乏客戶集中度數據，仍無法確定單一客戶需求波動對訂單履約的影響程度。",
             "structure_errors": [],
             "bullet_format_errors": [],
             "redundancy_errors": [],
             "period_label_errors": [],
             "interpretation_errors": [
-              "kpi_without_readthrough:Q3 營收達 $3,661M，對比去年同期 $1,365M；調整後 EBITDA 達 $2,256M，margin 達 62%。",
-              "kpi_without_readthrough:截至本季末之營收 backlog 約為 $132.5B，提供未來營收能見度。",
-              "kpi_without_readthrough:財測方面，將全年營收指引調升至 $13.0B 至 $13.3B，全年調整後營運利益指引調升至 $1.275B 至 $1.375B。",
-              "kpi_without_readthrough:資本支出指引調整為 $37B 至 $39B（前次低端 $35B）；全年出口 ARR 指引上修至 $20B 至 $21B。"
+              "kpi_without_readthrough:營運現金流為 $1,975M，購置物業及設備支出達 $9,441M，資本強度高企導致單季自由現金流為負。",
+              "kpi_without_readthrough:全年指引：上調 FY2026 營收至 $13.0B–$13.3B，Adjusted Operating Income 上調至 $1.275B–$1.375B，Exit 2026 年"
             ],
             "customer_readthrough_errors": [],
             "density_errors": [],
-            "numeric_provenance_errors": [],
+            "numeric_provenance_errors": [
+              "unbacked_derived_rate:168%"
+            ],
             "strong_claim_errors": []
           }
         },
@@ -62009,68 +61635,64 @@
           "payload": {
             "investment_thesis": [
               {
-                "signal": "Q3 2026 營收年增擴張且管理層調升全年營收與調整後營運利益指引",
-                "why_it_matters": "顯示公司在當前週期中具備顯著的營收規模擴張動能，並同步拉高獲利預期。",
+                "signal": "CoreWeave 算力租賃需求推升營收規模與積壓訂單，但大規模資本擴張大幅推升折舊與利息費用，導致單季淨虧損顯著擴大。",
+                "why_it_matters": "營運層面呈現規模效益槓桿，但極高的資本支出嚴重侵蝕純益並造成自由現金流大量流出，企業長期轉化為正向現金流的能力受極大考驗。",
                 "fact_basis": [
-                  "Q3 2026 營收為 $3,661M，對比 Q3 2025 之 $1,365M",
-                  "全年 2026 營收指引調升至 $13.0B 至 $13.3B",
-                  "全年 2026 調整後營運利益指引調升至 $1.275B 至 $1.375B"
+                  "Q3 2026 Revenue $3,661M vs Q3 2025 $1,365M",
+                  "Q3 2026 Net loss $709M vs Q3 2025 Net loss $110M",
+                  "Q3 2026 Purchases of property and equipment $9,441M"
                 ],
-                "inference": "營收與調整後營運利益指引雙雙上修，反映業務規模與營運獲利能力持續擴大，但單憑營收與毛利數字仍不能證實定價權或長週期結構改變。",
-                "confidence": "high"
-              },
-              {
-                "signal": "資本支出持續擴大以支應未來需求",
-                "why_it_matters": "資本密集的投入反映基礎建設擴張，但對自由現金流與未來資本回報率帶來壓力。",
-                "fact_basis": [
-                  "全年 2026 資本支出指引調整為 $37B 至 $39B（前次低端 $35B）",
-                  "Q3 2026 物業與設備採購金額為 $(9,441)M"
-                ],
-                "inference": "資本支出增加顯示產能與基礎建設投資力道加劇，但仍需觀察後續自由現金流的實質轉化率。",
+                "inference": "公司正處於極度激進的基礎設施部署階段，雖然擴張帶動營收與營運現金流成長，但財務結構對外部融資依存度持續高企。",
                 "confidence": "high"
               }
             ],
             "earnings_power_bridge": {
               "revenue_demand": [
-                "Q3 2026 營收報 $3,661M，相較 Q3 2025 的 $1,365M 成長。",
-                "截至 Q3 2026 之營收 backlog 約為 $132.5B。",
-                "公司調升全年 2026 營收指引至 $13.0B 至 $13.3B，並將 2026 年底出口之 ARR 指引調升至 $20B 至 $21B。"
+                "Q3 營收 $3,661M，高於去年同期的 $1,365M。",
+                "截至 2026 年 9 月 30 日，合約未實現營收（Revenue backlog）達約 $132.5B，提供極高的中期營收可見度。"
               ],
               "margin_unit_economics": [
-                "Q3 2026 營業利益為 $207M（利率 6%），對比 Q3 2025 之 $52M（利率 4%）。",
-                "Q3 2026 調整後 EBITDA 為 $2,256M，margin 達 62%，高於 Q3 2025 的 $838M 與 61%。",
-                "Q3 2026 淨損為 $(110)M，對比 Q3 2025 之 $(709)M；調整後淨損為 $(41)M，對比 Q3 2025 之 $(529)M。"
+                "Q3 營業利潤為 $207M（Margin 6%），高於去年同期的 $52M（Margin 4%）。",
+                "Q3 Adjusted EBITDA 達 $2,256M（Margin 62%），去年同期為 $838M（Margin 61%）。",
+                "Q3 淨虧損擴大至 $709M（去年同期淨虧損 $110M），反映資本擴張帶來的非營運成本與折舊壓力。"
               ],
               "cash_capital_intensity": [
-                "Q3 2026 營業活動現金流量為 $1,975M，高於去年同期的 $1,689M。",
-                "Q3 2026 物業與設備採購金額為 $(9,441)M，高於 Q3 2025 的 $(3,279)M。",
-                "全年 2026 資本支出預估區間上修至 $37B 至 $39B，顯示資金投入強度持續攀升。"
+                "Q3 營運現金流為 $1,975M，高於去年同期的 $1,689M。",
+                "Q3 購置物業及設備支出達 $9,441M（去年同期為 $3,279M），支出遠超營運現金流導致單季自由現金流維持負數。"
               ]
             },
             "guidance_assessment": [
-              "全年 2026 營收指引調升至 $13.0B 至 $13.3B。",
-              "全年 2026 調整後營運利益指引調升至 $1.275B 至 $1.375B。",
-              "全年 2026 資本支出指引調整為 $37B 至 $39B（前次低端 $35B）。",
-              "全年 2026 出口之 ARR 指引調升至 $20B 至 $21B。"
+              "FY2026 全年營收指引上調至 $13.0B 至 $13.3B。",
+              "FY2026 全年 Adjusted Operating Income 指引上調至 $1.275B 至 $1.375B。",
+              "FY2026 Exit 2026 年化 Run-rate 營收指引上調至 $20.0B 至 $21.0B。",
+              "FY2026 全年 Capital Expenditures 指引下限上調，最新指引為 $37.0B 至 $39.0B（前次指引下限為 $35.0B）。",
+              "外部市場共識未納入，本報告不判定 Beat/Miss。"
             ],
             "demand_quality": [
-              "目前 Research Packet 未提供具體的客戶數、大客戶 cohort 分布或 NRR 明細，無法精確拆解新客戶獲取與現有客戶擴張的比例或集中度風險。"
+              "截至 Q3 底 Revenue backlog 達 $132.5B，顯示中長期訂單能見度強勁。",
+              "因缺少客戶總數、NRR 或大型客戶集中度數據，無法判定客戶擴展品質與結構集中度。"
             ],
-            "qa_readthrough": [],
+            "qa_readthrough": [
+              {
+                "debate": "無逐字稿 Q&A 資料",
+                "management_answer": "本季度未提供 Q&A Transcript 數據。",
+                "answer_quality": "unknown",
+                "investment_readthrough": "無法從管理層問答中評估算力部署時程與客戶集中度攻防細節。"
+              }
+            ],
             "competitive_value_chain": [
-              "現有證據主要來自官方財報之營收、backlog 與獲利數字，缺乏直接的定價權、轉換成本或市占率結構性數據，故暫無法直接論斷具體的控制點。"
+              "缺乏直接數據證明公司具備客戶定價權或不可替代之控制點，高營收成長與高 Backlog 主要反映算力市場供不應求環境。"
             ],
             "risks_and_disconfirming_evidence": [
-              "資本支出大幅上修至 $37B 至 $39B，若未來需求成長未能同步消化龐大產能，可能對現金流與資產回報率造成壓抑。",
-              "淨利與調整後淨利雖較去年同期改善，但在 Q3 2026 仍處於淨損狀態（$(110)M），需持續追蹤本業轉盈的實際時點。"
+              "FY2026 全年 Capex 指引下限上調至 $37.0B–$39.0B，巨額資本支出增加資產負債表壓力與外部融資需求。",
+              "若算力需求轉弱或客戶履約延遲，龐大固定資產折舊將對獲利能力造成顯著下行壓力。"
             ],
             "watch_items": [
-              "全年 2026 營收與調整後營運利益是否能達成上修後的指引範圍。",
-              "資本支出實際執行金額與後續自由現金流的變化趨勢。",
-              "ARR 於 2026 年底是否能如期達到 $20B 至 $21B 的預期目標。"
+              "觀察 Exit 2026 年化 Run-rate 營收是否如期達到 $20B–$21B 區間。",
+              "持續追蹤營運現金流成長能否縮減自由現金流缺口。"
             ],
             "confidence": 85,
-            "telegram_draft": "CRWV Q3 2026\n\n💡 投資結論與邏輯:\n• 本季營收與獲利指標顯著擴張，帶動管理層上修全年營收與調整後營運利益指引，反映業務規模放大，但仍不能證實結構性長週期改變。\n• 資本支出預期同步調高，顯示基礎建設與產能投資力道加劇，但高資本密集度對現金流的長期影響仍需持續追蹤。\n\n📊 關鍵數據與財測:\n• Q3 營收達 $3,661M，對比去年同期 $1,365M；調整後 EBITDA 達 $2,256M，margin 達 62%。\n• 截至本季末之營收 backlog 約為 $132.5B，提供未來營收能見度。\n• 財測方面，將全年營收指引調升至 $13.0B 至 $13.3B，全年調整後營運利益指引調升至 $1.275B 至 $1.375B。\n• 資本支出指引調整為 $37B 至 $39B（前次低端 $35B）；全年出口 ARR 指引上修至 $20B 至 $21B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 營業活動現金流量在本季提升至 $1,975M，反映本業現金生成能力隨規模擴大而增強，但同期的物業與設備採購達 $(9,441)M，顯示硬體與基礎設施投入規模龐大。\n• 本次 Research Packet 未包含正式逐字稿與 Q&A 紀錄，故無法呈現分析師提問與管理層答辯之細節。\n\n⚠️ 風險、反證與待驗證:\n• 資本支出上限維持在高檔且低端上修，若未來需求增速放緩，高額折舊與資本投入將對獲利與現金流帶來壓力。\n• 儘管營收與調整後指標大幅成長，本季依 GAAP 仍呈現淨損 $(110)M，本業何時能全面轉為 GAAP 淨利仍待驗證。\n• 缺乏客戶集中度與 NRR 細節數據，暫無法排除部分大客戶營收貢獻過高之潛在波動風險。"
+            "telegram_draft": "CRWV Q3 2026\n\n💡 投資結論與邏輯:\n• 算力租賃需求帶動營收成長與訂單能見度，惟資本支出持續處於高位使淨損與自由現金流承壓。\n• 營運槓桿推升營業利潤與 Adjusted EBITDA 規模，但大規模資產擴張帶來的營運費用與折舊成本，顯示轉化為正向自由現金流仍具挑戰。\n\n📊 關鍵數據與財測:\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n• 營收達 $3,661M，顯示算力租賃需求持續釋放；截至季末 Revenue backlog 達 $132.5B，反映中期營收能見度極高，但仍不能證實客戶集中度或定價權變動。\n• 營業利潤為 $207M（Margin 6%），Adjusted EBITDA 達 $2,256M（Margin 62%），顯示單元經濟效益穩定；但淨虧損擴大至 $709M，反映資本擴張相關折舊與利息費用侵蝕純益。\n• 營運現金流為 $1,975M，反映營運規模擴大帶來的現金挹注；但購置物業及設備支出達 $9,441M，顯示資本強度高企使單季現金流量面臨缺口。\n• 指引變動：下季指引未單獨列出；全年指引上調 FY2026 營收至 $13.0B–$13.3B，Adjusted Operating Income 上調至 $1.275B–$1.375B，Exit 2026 年化 Run-rate 營收上調至 $20B–$21B，Capex 指引下限上修為 $37B–$39B，反映管理層預期第 4 季產能交付加速但融資需求同步維持高位。\n\n🧭 營運動能與法說攻防:\n• 本季無公開 Q&A 逐字稿資料，無法評估法說會管理層攻防細節。\n• 營運動能主要由算力資產上線與客戶合約交付推動，Exit 2026 年化營收指引反映產能持續大規模交付。\n\n⚠️ 風險、反證與待驗證:\n• 全年 Capex 達 $37B–$39B，巨額資本支出對外部融資依存度高，需密切關注負債與流動性結構。\n• 雖然 Revenue backlog 達 $132.5B，但缺乏客戶集中度數據，仍無法確定單一客戶需求波動對訂單履約的影響程度。"
           }
         },
         "revision_audit": {
@@ -62083,25 +61705,26 @@
             "qa_interpretation_errors": [],
             "accounting_guidance_errors": [],
             "critical_issues": [
-              "Telegram draft Section 2 contains too many separate lines exceeding the compact metric clusters limit, and Section 1 includes repeated metrics.",
-              "Section headers order or bullet formats in telegram draft need strict alignment with V4.3 contract.",
-              "deterministic_v4_gate:interpretation"
+              "deterministic_v5_gate:unverified_source_quotes",
+              "deterministic_v4_gate:interpretation",
+              "deterministic_v4_gate:strong_claim"
             ],
             "pass": false,
-            "corrected_telegram_draft": "CRWV Q3 2026\n\n💡 投資結論與邏輯:\n• 本季營收與獲利指標顯著擴張，帶動管理層上修全年營收與調整後營運利益指引，反映業務規模放大，但仍不能證實結構性長週期改變。\n• 資本支出預期同步調高，顯示基礎建設與產能投資力道加劇，但高資本密集度對現金流的長期影響仍需持續追蹤。\n\n📊 關鍵數據與財測:\n• 營收與獲利：Q3 營收達 $3,661M，對比去年同期 $1,365M；調整後 EBITDA 達 $2,256M，margin 達 62%。\n• 訂單能見度：截至本季末之營收 backlog 約為 $132.5B。\n• 財測調整：全年營收指引調升至 $13.0B 至 $13.3B；調整後營運利益指引調升至 $1.275B 至 $1.375B；資本支出指引調整為 $37B 至 $39B；全年出口 ARR 指引上修至 $20B 至 $21B。\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n\n🧭 營運動能與法說攻防:\n• 現金流與資本投入：營業活動現金流量在本季提升至 $1,975M，反映本業現金生成能力隨規模擴大而增強，但同期的物業與設備採購達 $(9,441)M，顯示硬體與基礎設施投入規模龐大。\n• 來源限制：本次的研究數據未包含正式逐字稿與 Q&A 紀錄，故無法呈現分析師提問與管理層答辯之細節。\n\n⚠️ 風險、反證與待驗證:\n• 資本支出上限維持在高檔且低端上修，若未來需求增速放緩，高額折舊與資本投入將對獲利與現金流帶來壓力。\n• 儘管營收與調整後指標大幅成長，本季依 GAAP 仍呈現淨損 $(110)M，本業何時能全面轉為 GAAP 淨利仍待驗證。\n• 缺乏客戶集中度與 NRR 細節數據，暫無法排除部分大客戶營收貢獻過高之潛在波動風險。",
+            "corrected_telegram_draft": "CRWV Q3 2026\n\n💡 投資結論與邏輯:\n• 算力租賃需求推升營收與訂單規模，但大規模資本支出導致自由現金流流出並使淨虧損顯著擴大。\n• 營運槓桿帶動獲利指標增長，但極高強度的基礎設施部署對外部融資及資產負債表構成持續壓力。\n\n📊 關鍵數據與財測:\n• 外部市場共識未納入，本報告不判定 Beat/Miss。\n• 營收達 $3,661M，較去年同期 $1,365M 顯著成長；截至季末 Revenue backlog 達 $132.5B，反映中期能見度，但目前證據無法支持集中度或定價權之推論。\n• 營業利潤為 $207M（Margin 6%），Adjusted EBITDA 達 $2,256M（Margin 62%），顯示單元經濟穩定；但淨虧損擴大至 $709M，反映資本擴張帶來的折舊與利息壓力。\n• 營運現金流為 $1,975M，購置物業及設備支出達 $9,441M，資本強度高致使單季自由現金流維持負數。\n• 指引變動：全年營收指引上調至 $13.0B 至 $13.3B，Adjusted Operating Income 指引上調至 $1.275B 至 $1.375B，Exit 2026 年化 Run-rate 營收指引上調至 $20.0B 至 $21.0B，Capex 指引下限上修為 $37.0B 至 $39.0B。\n\n🧭 營運動能與法說攻防:\n• 本季無公開 Q&A 逐字稿資料，無法評估法說會管理層攻防細節。\n• 營運動能主要由算力資產上線與合約交付推動，Exit 2026 年化營收指引反映產能持續大規模交付。\n\n⚠️ 風險、反證與待驗證:\n• 全年 Capex 區間調整至 $37.0B 至 $39.0B，巨額資本支出對外部融資依存度高，需持續追蹤現金流與流動性結構。\n• 雖然 Revenue backlog 達 $132.5B，但缺乏客戶集中度及合約履約細節，無法排除單一客戶變動對營運的潛在影響。",
             "structure_errors": [],
             "bullet_format_errors": [],
             "redundancy_errors": [],
             "period_label_errors": [],
             "interpretation_errors": [
-              "kpi_without_readthrough:營收與獲利：Q3 營收達 $3,661M，對比去年同期 $1,365M；調整後 EBITDA 達 $2,256M，margin 達 62%。",
-              "kpi_without_readthrough:訂單能見度：截至本季末之營收 backlog 約為 $132.5B。",
-              "kpi_without_readthrough:財測調整：全年營收指引調升至 $13.0B 至 $13.3B；調整後營運利益指引調升至 $1.275B 至 $1.375B；資本支出指引調整為 $37B 至 $39B；全年出口 A"
+              "kpi_without_readthrough:營運現金流為 $1,975M，購置物業及設備支出達 $9,441M，資本強度高致使單季自由現金流維持負數。",
+              "kpi_without_readthrough:指引變動：全年營收指引上調至 $13.0B 至 $13.3B，Adjusted Operating Income 指引上調至 $1.275B 至 $1.375B，Exit 2026"
             ],
             "customer_readthrough_errors": [],
             "density_errors": [],
             "numeric_provenance_errors": [],
-            "strong_claim_errors": []
+            "strong_claim_errors": [
+              "strong_claim_without_direct_evidence:pricing_power"
+            ]
           }
         }
       },
