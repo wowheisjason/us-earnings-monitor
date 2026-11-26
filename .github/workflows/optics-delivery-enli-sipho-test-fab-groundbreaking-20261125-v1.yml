@@ -1,0 +1,45 @@
+name: Optics delivery - Enli SiPho test fab groundbreaking v1
+on:
+  push:
+    branches: [codex/optics-delivery-enli-sipho-test-fab-groundbreaking-20261125-v1]
+    paths: [.github/workflows/optics-delivery-enli-sipho-test-fab-groundbreaking-20261125-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-enli-sipho-test-fab-groundbreaking-20261125-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AI光通訊重大進展｜光焱科技矽光子檢測新廠動土｜2026/11/25】\n\n1) 重大變化與通知門檻\n光焱科技（7728.TWO）11月25日在南科高雄路竹園區正式動土，將既有9月董事會建廠決議推進到施工里程碑。公司披露現有租用廠房設備產能利用率已約90%，新廠投資約新台幣10億元，預定2027年Q4完工、2028年Q1投產；既有矽光子晶圓檢測設備已出貨並貢獻營收。這同時具備「既有產能緊張、已發生出貨、重大擴產與明確投產時程」，足以改變公司中期營收容量與競爭位置，達通知門檻。\n\n2) 已確認事實\n• 事件日／公告日：2026/11/25動土並由公司管理層對外說明；原始董事會核准日為2026/9/22。\n• 9/22公開資訊觀測站重訊：預估工程總價約新台幣10億元，實際價款仍待議價與簽約；用途為營運總部及主要生產據點、擴充矽光子檢測設備產能。\n• 新廠基地約1萬平方公尺、總樓地板約1.1萬平方公尺；目標2027年Q4完工、2028年Q1投產。\n• 現有租用廠房設備產能利用率約90%。公司表示NightJar已用於工程驗證／樣品測試、完成與量產線自動探針台整合；NightJar-H已完成POC與POT，目前仍是HVM導入評估，並非客戶量產認證或量產訂單。\n• 半導體檢測業務占營收比重由2025全年13.8%升至2026年前三季44.6%；公司稱矽光子設備今年已出貨並貢獻營收。前三季合併營收約新台幣3.21億元。\n• 公司提出新廠充分爬坡後年營收新台幣30億元目標；這是管理層目標，未披露達標年份、訂單覆蓋或產品組合，不是實績或財測承諾。\n\n3) 供應鏈角色與競爭\n光焱是PIC／矽光子晶圓級光學檢測設備商，直接曝險在晶圓測試與量產良率環節，不是InP、EML、CW雷射或光模組供應商。客戶僅揭露涵蓋台灣、美國及亞洲晶圓廠，未具名，不能推定為特定晶圓代工或AI客戶。對FormFactor（NASDAQ: FORM）、致茂（TWSE: 2360）等光子測試／探針設備供應商屬競爭或互補關係，未有同標案市占證據。\n\n4) 合理推論\n若NightJar-H完成HVM導入、客戶12吋矽光子產線如期放量，90%利用率加上2028年新產能可推升設備出貨、服務收入與規模效益；晶圓前段篩除缺陷也可能降低後段先進封裝報廢成本。成立條件是設備通過客戶量產驗證、客戶實際擴產且新廠按期爬坡。不能由此推論InP／EML或整條光通訊鏈皆短缺，也不能把檢測設備需求等同CPO終端量產。\n\n5) 投資機會與風險\n機會在於光焱由科研量測轉向量產檢測，收入結構已明顯改變；催化劑是HVM驗證完成、重複訂單、2027客戶放量及新廠如期完工。風險包括HVM驗證延誤、客戶資本支出轉弱、NPO／可插拔與CPO時程改變、10億元工程超支、2028前產能瓶頸，以及新廠產能過剩。未查即時估值，不宣稱股價已反映或低估。\n\n6) 待驗證與追蹤\n追蹤NightJar-H正式量產認證／訂單、設備台數與ASP、具名客戶或可核實採用、2027矽光子收入占比、工程契約最終金額、Q4 2027完工與Q1 2028投產、30億元年營收目標的達標年份與訂單覆蓋。\n\n去重：既有optics-delivery分支以公司、產品與事件鍵檢索，未見光焱／7728／NightJar同事件通知；9月建廠決議為舊事，本次新增證據是正式動土、90%利用率、已出貨貢獻營收及明確投產時程。可存取記錄不代表所有歷史通路，故不宣稱全面去重。\n\n官方來源：\n光焱法人說明會：https://enlitechnology.com/zh-hant/investor-conference/\n光焱矽光子檢測方案：https://enlitechnology.com/zh-hant/\n公開資訊觀測站：https://mops.twse.com.tw/\n交叉驗證：\n中央社（11/25）：https://www.cna.com.tw/news/afe/202611250164.aspx\n經濟日報（11/25）：https://money.udn.com/money/story/5612/9900637\nTaipei Times（11/26）：https://www.taipeitimes.com/News/biz/archives/2026/11/26/2003868389"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"enli-sipho-test-fab-groundbreaking-20261125","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-enli-sipho-test-fab-groundbreaking-20261125-v1
+          path: telegram-receipt.json
