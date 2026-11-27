@@ -1,0 +1,45 @@
+name: Optics delivery - Accton 1.6T liquid-cooled switch shipment v1
+on:
+  push:
+    branches: [codex/optics-delivery-accton-1p6t-liquid-cooled-switch-shipment-20261127-v1]
+    paths: [.github/workflows/optics-delivery-accton-1p6t-liquid-cooled-switch-shipment-20261127-v1.yml]
+permissions:
+  contents: read
+concurrency:
+  group: optics-delivery-accton-1p6t-liquid-cooled-switch-shipment-20261127-v1
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send verified optics report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request
+          token=os.environ.get("TELEGRAM_BOT_TOKEN")
+          chat=os.environ.get("TELEGRAM_CHAT_ID")
+          if not token or not chat:
+              raise SystemExit("Telegram credentials unavailable")
+          message="【AI光通訊重大進展｜智邦已出貨全液冷1.6T交換器系統｜2026/11/27揭露】\n\n1) 重大變化及通知門檻\n智邦科技（TWSE: 2345）在11月27日法說首次揭露：2026年初已出貨全液冷1.6T交換器系統；並承諾2026–2027年於台灣、越南、新加坡、馬來西亞及美國投入逾10億美元，2027年啟用新加坡與美國達拉斯新廠。這是已出貨而非展示／送樣，加上重大製造能力投資，足以改變1.6T系統級競爭位置與中期營收容量，達通知門檻。注意：出貨事件發生於2026年初，公告／法說日為2026/11/27；不是11/27才開始出貨。\n\n2) 已確認事實\n• 官方簡報發布日2026/11/26；法說事件日2026/11/27。管理層稱800G交換器自2024年初出貨且已進入成熟量產，2026年初出貨全液冷1.6T系統。\n• 未揭露1.6T出貨台數、客戶、ASP、訂單金額、認證狀態或收入認列金額，因此只能確認「已出貨」，不能認定大規模量產或具意義營收。\n• 管理層承諾2026–2027年資本支出逾10億美元，約68%位於海外；新加坡與達拉斯新廠預計2027年啟用，部分投資用於光學方案、散熱與機櫃級整合能力，不是全部用於1.6T或CPO。\n• 2026 Q3營收新台幣1,207.4億元；前三季交換器占營收48%、年增127%。Q3末存貨896億元、季增39%，其中成品428億元、原料382億元。這些是法說揭露的公司整體數字，非1.6T專屬實績。\n• 智邦稱以策略備料、自研測試工具及Avatar驗證系統縮短上市時間；持續監控PCB、記憶體、MLCC與ASIC。未量化缺口，亦未指稱InP、EML或整條光通訊鏈短缺。\n\n3) 供應鏈角色與競爭\n智邦是白牌／客製化交換器與AI網路系統整合商，對1.6T交換器、液冷與機櫃級整合為直接曝險；它不是InP、EML、CW雷射或光模組供應商。1.6T系統的客戶、交換ASIC、光模組、雷射及封裝供應商均未公開，不可猜測。智邦同時推進CPO、NPO、OCS與OWS合作，但本次已出貨系統的光學架構未披露，不能把它稱為CPO產品。對其他AI交換器ODM／品牌商屬系統級競爭；對光模組、矽光子與光引擎商可能是客戶或整合夥伴，但未具名。\n\n4) 合理推論\n已出貨全液冷1.6T系統，表示智邦至少跨過設計、散熱、訊號完整性與交付整合門檻；若後續取得客戶量產認證與重複訂單，可能提高高階交換器組合、單機內含價值與客戶黏著度。逾10億美元投資可支援2027年後跨國交付與光學／液冷製造，但成立條件是新廠按期爬坡、關鍵零件供應與客戶AI資本支出維持。管理層稱有助毛利屬公司判斷，尚無1.6T毛利或收入拆分可獨立驗證。\n\n5) 潛在投資機會及風險\n直接受益候選為智邦：催化劑是1.6T出貨量、具名客戶／認證、營收占比、新加坡與達拉斯量產爬坡。上游光模組、矽光子、光引擎、封裝測試供應商因未具名，暫不能指定受益者。風險包括Q3存貨季增39%、逾10億美元投資利用率不足、折舊與爬坡成本、客戶／美洲集中、關鍵零件限制、同業價格競爭，以及可插拔、NPO、CPO導入時程改變。本次未查即時估值，不宣稱股價已反映或低估。\n\n6) 待驗證及追蹤\n追蹤：1.6T台數與收入占比、量產認證與重複訂單、是否具名CSP／網通客戶、實際光學架構與光模組供應商、ASP／毛利差、PCB／Memory／MLCC／ASIC交期、896億元存貨轉為收入速度、2027新廠投產與良率、CPO／NPO由驗證轉為商用的具體里程碑。\n\n去重：既有通知分支以Accton／智邦／2345／1.6T事件鍵檢索，未見相同事件版本；與既有AOI、NVIDIA CPO及其他供應鏈通知不是同一事件。可存取紀錄不代表所有歷史通路，故不宣稱全面去重。\n\n官方來源：\n智邦法說簡報（MOPS，11/26）：https://mopsov.twse.com.tw/nas/STR/234520261126M001.pdf\n智邦法說音訊頁：https://www.accton.com.tw/investor-conference/\n交叉驗證：\n鉅亨（11/27）：https://m.cnyes.com/news/id/6673825\n中央社（11/27）：https://www.cna.com.tw/news/afe/202611270212.aspx"
+          payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}}).encode()
+          req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  result=json.load(response)
+          except Exception:
+              raise SystemExit("Telegram delivery failed or unknown; do not retry blindly")
+          mid=result.get("result",{}).get("message_id")
+          if result.get("ok") is not True or type(mid) is not int or mid<=0:
+              raise SystemExit("Telegram receipt invalid")
+          receipt={"accepted":True,"message_id":mid,"event":"accton-1p6t-liquid-cooled-switch-shipment-20261127","version":1}
+          with open("telegram-receipt.json","w") as f: json.dump(receipt,f)
+          print(json.dumps(receipt))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: optics-telegram-receipt-accton-1p6t-liquid-cooled-switch-shipment-20261127-v1
+          path: telegram-receipt.json
