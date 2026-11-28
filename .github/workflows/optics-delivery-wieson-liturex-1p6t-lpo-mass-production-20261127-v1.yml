@@ -19,36 +19,12 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python - <<'PY'
-          import os,json,urllib.request
+          import os,json,urllib.request,base64
           token=os.environ.get("TELEGRAM_BOT_TOKEN")
           chat=os.environ.get("TELEGRAM_CHAT_ID")
           if not token or not chat:
               raise SystemExit("Telegram credentials unavailable")
-          message="""AI光通訊重大進展｜驊陞（6272.TW）跨入自有品牌1.6T LPO量產交付｜2026/11/27
-
-1）重大變化與通知理由
-驊陞與光為科技共同開發的WIESON品牌400G／800G／1.6T光模組正式商業推出；公司稱符合OCTC規範的1.6T前面板可插拔LPO模組已進入量產交付。這是驊陞由高速銅連接器延伸為「銅＋光」方案商的可核實商業化里程碑，足以改變競爭定位。注意：重大訊息同時明示短期對財務與業務尚無重大影響，本通知不代表近期待認列營收已可量化。
-
-2）已確認事實
-事件日／公告日皆為2026/11/27。光為提供光模組設計；驊陞提供SI／EMI、高速電介面與系統整合，雙方共同開發並由驊陞以WIESON品牌銷售。官方產品表將400G／800G／1.6T列為1.5–50公尺、前面板可插拔、線性驅動與DSP-free optical path；1.6T狀態為「mass production & delivery」。這是公司宣稱，尚無客戶端獨立驗證。NPO僅實驗室驗證完成、系統級驗證中；3.2T為已送樣；6.4T與CPO僅評估中。未揭露客戶、訂單金額、出貨量、ASP、產能、良率或營收貢獻。
-
-3）受影響供應鏈
-驊陞（6272.TW）：品牌、SI／EMI、高速電介面與系統整合，直接曝險。光為科技（廣州，未上市）：光模組設計與共同研發，直接技術夥伴。公司稱以越南生產及菲律賓／馬來西亞專業代工供應北美；未公開InP／EML／CW雷射、PIC、Driver／TIA、代工與封測供應商，不能推定任何未具名公司受益。現量產產品屬可插拔LPO，不是NPO或CPO。
-
-4）合理推論
-若量產交付能轉為具名客戶認證、重複訂單與穩定良率，驊陞可提高單一AI伺服器／交換器系統的供應內容並擴大可服務市場；DSP-free LPO有機會降低功耗與成本。成立條件是主機端相容性、鏈路預算／FEC、BER與熱可靠度通過系統驗證，且量產規模與毛利足以抵銷新產品導入成本。時間軸目前無法量化。
-
-5）潛在機會與風險
-直接潛在受益者為驊陞，光為為未上市夥伴。催化劑包括具名客戶認證、出貨與營收占比、重複訂單、實測功耗／BER及NPO系統驗證。主要風險：公司已稱短期影響不重大；規模、良率與毛利未揭露；驊陞對光為設計能力的依賴；LPO互通性與距離限制；既有1.6T供應商競爭；NPO／CPO替代路徑；海外代工品質與產能。未查即時估值，不判斷股價是否已反映。
-
-6）待驗證與追蹤
-追蹤客戶／認證、訂單與出貨單位、ASP與毛利、量產地與月產能、良率、光源／PIC／Driver／TIA供應鏈、OCTC合規文件、lane數／波長／功耗／BER，以及NPO、3.2T、6.4T、CPO後續是否由展示／送樣轉為認證與量產。去重：未查到同事件版本既有投遞分支；歷史資料並非完整通知資料庫，故不宣稱全面去重。
-
-官方：
-WIESON（2026/11/27）https://www.wieson.com/news-view.php?lang=en&sn=82
-公開資訊觀測站：https://mops.twse.com.tw/
-公司新聞稿：https://www.prnewswire.com/apac/zh/news-releases/6272-302951639.html
-交叉驗證（經濟日報，2026/11/27）：https://money.udn.com/money/story/11799/9905921"""
+          message=base64.b64decode("QUnlhYnpgJroqIrph43lpKfpgLLlsZXvvZzpqYrpmZ7vvIg2MjcyLlRX77yJ6Leo5YWl6Ieq5pyJ5ZOB54mMMS42VCBMUE/ph4/nlKLkuqTku5jvvZwyMDI2LzExLzI3Cgox77yJ6YeN5aSn6K6K5YyW6IiH6YCa55+l55CG55SxCumpiumZnuiIh+WFieeCuuenkeaKgOWFseWQjOmWi+eZvOeahFdJRVNPTuWTgeeJjDQwMEfvvI84MDBH77yPMS42VOWFieaooee1hOato+W8j+WVhualreaOqOWHuu+8m+WFrOWPuOeoseespuWQiE9DVEPopo/nr4TnmoQxLjZU5YmN6Z2i5p2/5Y+v5o+S5ouUTFBP5qih57WE5bey6YCy5YWl6YeP55Si5Lqk5LuY44CC6YCZ5piv6amK6Zme55Sx6auY6YCf6YqF6YCj5o6l5Zmo5bu25Ly454K644CM6YqF77yL5YWJ44CN5pa55qGI5ZWG55qE5Y+v5qC45a+m5ZWG5qWt5YyW6YeM56iL56KR77yM6Laz5Lul5pS56K6K56u254it5a6a5L2N44CC5rOo5oSP77ya6YeN5aSn6KiK5oGv5ZCM5pmC5piO56S655+t5pyf5bCN6LKh5YuZ6IiH5qWt5YuZ5bCa54Sh6YeN5aSn5b2x6Z+/77yM5pys6YCa55+l5LiN5Luj6KGo6L+R5pyf5b6F6KqN5YiX54ef5pS25bey5Y+v6YeP5YyW44CCCgoy77yJ5bey56K66KqN5LqL5a+mCuS6i+S7tuaXpe+8j+WFrOWRiuaXpeeahueCujIwMjYvMTEvMjfjgILlhYnngrrmj5DkvpvlhYnmqKHntYToqK3oqIjvvJvpqYrpmZ7mj5DkvptTSe+8j0VNSeOAgemrmOmAn+mbu+S7i+mdouiIh+ezu+e1seaVtOWQiO+8jOmbmeaWueWFseWQjOmWi+eZvOS4pueUsempiumZnuS7pVdJRVNPTuWTgeeJjOmKt+WUruOAguWumOaWueeUouWTgeihqOWwhzQwMEfvvI84MDBH77yPMS42VOWIl+eCujEuNeKAkzUw5YWs5bC644CB5YmN6Z2i5p2/5Y+v5o+S5ouU44CB57ea5oCn6amF5YuV6IiHRFNQLWZyZWUgb3B0aWNhbCBwYXRo77ybMS42VOeLgOaFi+eCuuOAjG1hc3MgcHJvZHVjdGlvbiAmIGRlbGl2ZXJ544CN44CC6YCZ5piv5YWs5Y+45a6j56ix77yM5bCa54Sh5a6i5oi256uv542o56uL6amX6K2J44CCTlBP5YOF5a+m6amX5a6k6amX6K2J5a6M5oiQ44CB57O757Wx57Sa6amX6K2J5Lit77ybMy4yVOeCuuW3sumAgeaoo++8mzYuNFToiIdDUE/lg4XoqZXkvLDkuK3jgILmnKrmj63pnLLlrqLmiLbjgIHoqILllq7ph5HpoY3jgIHlh7rosqjph4/jgIFBU1DjgIHnlKLog73jgIHoia/njofmiJbnh5/mlLbosqLnjbvjgIIKCjPvvInlj5flvbHpn7/kvpvmh4npj4gK6amK6Zme77yINjI3Mi5UV++8ie+8muWTgeeJjOOAgVNJ77yPRU1J44CB6auY6YCf6Zu75LuL6Z2i6IiH57O757Wx5pW05ZCI77yM55u05o6l5pud6Zqq44CC5YWJ54K656eR5oqA77yI5buj5bee77yM5pyq5LiK5biC77yJ77ya5YWJ5qih57WE6Kit6KiI6IiH5YWx5ZCM56CU55m877yM55u05o6l5oqA6KGT5aSl5Ly044CC5YWs5Y+456ix5Lul6LaK5Y2X55Sf55Si5Y+K6I+y5b6L6LOT77yP6aas5L6G6KW/5Lqe5bCI5qWt5Luj5bel5L6b5oeJ5YyX576O77yb5pyq5YWs6ZaLSW5Q77yPRU1M77yPQ1fpm7flsITjgIFQSUPjgIFEcml2ZXLvvI9USUHjgIHku6Plt6XoiIflsIHmuKzkvpvmh4nllYbvvIzkuI3og73mjqjlrprku7vkvZXmnKrlhbflkI3lhazlj7jlj5fnm4rjgILnj77ph4/nlKLnlKLlk4Hlsazlj6/mj5Lmi5RMUE/vvIzkuI3mmK9OUE/miJZDUE/jgIIKCjTvvInlkIjnkIbmjqjoq5YK6Iul6YeP55Si5Lqk5LuY6IO96L2J54K65YW35ZCN5a6i5oi26KqN6K2J44CB6YeN6KSH6KiC5Zau6IiH56mp5a6a6Imv546H77yM6amK6Zme5Y+v5o+Q6auY5Zau5LiAQUnkvLrmnI3lmajvvI/kuqTmj5vlmajns7vntbHnmoTkvpvmh4nlhaflrrnkuKbmk7TlpKflj6/mnI3li5nluILloLTvvJtEU1AtZnJlZSBMUE/mnInmqZ/mnIPpmY3kvY7lip/ogJfoiIfmiJDmnKzjgILmiJDnq4vmop3ku7bmmK/kuLvmqZ/nq6/nm7jlrrnmgKfjgIHpj4jot6/poJDnrpfvvI9GRUPjgIFCRVLoiIfnhrHlj6/pnaDluqbpgJrpgY7ns7vntbHpqZforYnvvIzkuJTph4/nlKLopo/mqKHoiIfmr5vliKnotrPku6XmirXpirfmlrDnlKLlk4HlsI7lhaXmiJDmnKzjgILmmYLplpPou7jnm67liY3nhKHms5Xph4/ljJbjgIIKCjXvvInmvZvlnKjmqZ/mnIPoiIfpoqjpmqoK55u05o6l5r2b5Zyo5Y+X55uK6ICF54K66amK6Zme77yM5YWJ54K654K65pyq5LiK5biC5aSl5Ly044CC5YKs5YyW5YqR5YyF5ous5YW35ZCN5a6i5oi26KqN6K2J44CB5Ye66LKo6IiH54ef5pS25Y2g5q+U44CB6YeN6KSH6KiC5Zau44CB5a+m5ris5Yqf6ICX77yPQkVS5Y+KTlBP57O757Wx6amX6K2J44CC5Li76KaB6aKo6Zqq77ya5YWs5Y+45bey56ix55+t5pyf5b2x6Z+/5LiN6YeN5aSn77yb6KaP5qih44CB6Imv546H6IiH5q+b5Yip5pyq5o+t6Zyy77yb6amK6Zme5bCN5YWJ54K66Kit6KiI6IO95Yqb55qE5L6d6LO077ybTFBP5LqS6YCa5oCn6IiH6Led6Zui6ZmQ5Yi277yb5pei5pyJMS42VOS+m+aHieWVhuertueIre+8m05QT++8j0NQT+abv+S7o+i3r+W+ke+8m+a1t+WkluS7o+W3peWTgeizquiIh+eUouiDveOAguacquafpeWNs+aZguS8sOWAvO+8jOS4jeWIpOaWt+iCoeWDueaYr+WQpuW3suWPjeaYoOOAggoKNu+8ieW+hempl+itieiIh+i/vei5pArov73ouaTlrqLmiLbvvI/oqo3orYnjgIHoqILllq7oiIflh7rosqjllq7kvY3jgIFBU1DoiIfmr5vliKnjgIHph4/nlKLlnLDoiIfmnIjnlKLog73jgIHoia/njofjgIHlhYnmupDvvI9QSUPvvI9Ecml2ZXLvvI9USUHkvpvmh4npj4jjgIFPQ1RD5ZCI6KaP5paH5Lu244CBbGFuZeaVuO+8j+azoumVt++8j+WKn+iAl++8j0JFUu+8jOS7peWPik5QT+OAgTMuMlTjgIE2LjRU44CBQ1BP5b6M57qM5piv5ZCm55Sx5bGV56S677yP6YCB5qij6L2J54K66KqN6K2J6IiH6YeP55Si44CC5Y676YeN77ya5pyq5p+l5Yiw5ZCM5LqL5Lu254mI5pys5pei5pyJ5oqV6YGe5YiG5pSv77yb5q235Y+y6LOH5paZ5Lim6Z2e5a6M5pW06YCa55+l6LOH5paZ5bqr77yM5pWF5LiN5a6j56ix5YWo6Z2i5Y676YeN44CCCgrlrpjmlrnvvJoKV0lFU09O77yIMjAyNi8xMS8yN++8iWh0dHBzOi8vd3d3LndpZXNvbi5jb20vbmV3cy12aWV3LnBocD9sYW5nPWVuJnNuPTgyCuWFrOmWi+izh+ioiuingOa4rOerme+8mmh0dHBzOi8vbW9wcy50d3NlLmNvbS50dy8K5YWs5Y+45paw6IGe56i/77yaaHR0cHM6Ly93d3cucHJuZXdzd2lyZS5jb20vYXBhYy96aC9uZXdzLXJlbGVhc2VzLzYyNzItMzAyOTUxNjM5Lmh0bWwK5Lqk5Y+J6amX6K2J77yI57aT5r+f5pel5aCx77yMMjAyNi8xMS8yN++8ie+8mmh0dHBzOi8vbW9uZXkudWRuLmNvbS9tb25leS9zdG9yeS8xMTc5OS85OTA1OTIx").decode("utf-8")
           payload=json.dumps({"chat_id":chat,"text":message,"link_preview_options":{"is_disabled":True}},ensure_ascii=False).encode("utf-8")
           req=urllib.request.Request("https://api.telegram.org/bot"+token+"/sendMessage",data=payload,headers={"Content-Type":"application/json"})
           try:
