@@ -193,6 +193,18 @@ def _event_documents(event: EarningsEvent, store: StateStore) -> list[Disclosure
     return [store.get_document(key) for key in event.documents]
 
 
+def _review_blocked_unchanged(event: EarningsEvent) -> bool:
+    """Hold audited-but-rejected reports until new documents or manual reset.
+
+    Keep last_analyzed_document_count untouched so a rejected report is never
+    accidentally treated as successfully published.
+    """
+    return (
+        event.status == "needs_human_review"
+        and event.collection_status.get("review_blocked_document_count") == len(event.documents)
+    )
+
+
 def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClient, preview: bool, now: datetime) -> str:
     if event.delivery.get("status") == "sending":
         LOG.error("%s delivery_unknown: reconcile receipt before sending again", event.event_id)
@@ -332,6 +344,7 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
                 message_id = send_report(rendered, parse_mode="HTML")
                 event.delivery = {"status": "accepted", "message_id": message_id, "report_version": event.report_version + 1}
                 LOG.info("%s Telegram delivery accepted (message_id=%s)", event.event_id, message_id)
+            event.collection_status.pop("review_blocked_document_count", None)
             event.status = ("published_sec_pending"
                             if manifest["publication_mode"] == "sec_only_v1_ir_pending"
                             else "published")
@@ -345,6 +358,8 @@ def _run_analysis(event: EarningsEvent, store: StateStore, client: AnalysisClien
             return "preview_published" if preview else "published"
 
     event.status = "needs_human_review"
+    event.collection_status["review_blocked_document_count"] = len(event.documents)
+    LOG.warning("%s blocked by audit; manual review required before reprocessing unchanged evidence", event.event_id)
     event.updated_at = now_iso(now)
     store.put_event(event)
     if not preview:
@@ -467,6 +482,9 @@ def main() -> int:
         if event.ticker not in {company.ticker for company in companies}:
             continue
         if event.status not in {"collecting", "published", "published_sec_pending", "needs_human_review"} or len(event.documents) <= event.last_analyzed_document_count:
+            continue
+        if _review_blocked_unchanged(event):
+            LOG.info("%s: review_hold_unchanged (new evidence or manual reset required)", event.event_id)
             continue
         if ready_for_analysis(event, now):
             if args.dry_run:
